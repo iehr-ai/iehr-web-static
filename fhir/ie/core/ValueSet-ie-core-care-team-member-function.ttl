@@ -1,0 +1,1873 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-care-team-member-function"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-care-team-member-function</b></p><a name=\"ie-core-care-team-member-function\"> </a><a name=\"hcie-core-care-team-member-function\"> </a><a name=\"ie-core-care-team-member-function-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1012901000168106\">1012901000168106</a></td><td>Gynecologic oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1032781000168105\">1032781000168105</a></td><td>Kinesiology practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106289002\">106289002</a></td><td>Dentist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106292003\">106292003</a></td><td>Professional nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106293008\">106293008</a></td><td>Nursing personnel (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106294002\">106294002</a></td><td>Midwifery personnel (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106310008\">106310008</a></td><td>Worker in religion (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106311007\">106311007</a></td><td>Minister of religion/related member of religious order (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/106330007\">106330007</a></td><td>Philologist, translator/interpreter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/11015003\">11015003</a></td><td>Minister of religion (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/116154003\">116154003</a></td><td>Patient (person)</td></tr><tr><td><a href=\"http://snomed.info/id/11661002\">11661002</a></td><td>Neuropathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1172950003\">1172950003</a></td><td>Massage therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1186716007\">1186716007</a></td><td>Intellectual disability psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1186914001\">1186914001</a></td><td>Intellectual disability nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/11911009\">11911009</a></td><td>Nephrologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/119246008\">119246008</a></td><td>Imam (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/11935004\">11935004</a></td><td>Obstetrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1251537007\">1251537007</a></td><td>Sport medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1251542004\">1251542004</a></td><td>Medical coder (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1251548000\">1251548000</a></td><td>Neuroradiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1254982001\">1254982001</a></td><td>Medical surgical nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1254983006\">1254983006</a></td><td>Chronic care nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1254984000\">1254984000</a></td><td>Rehabilitation nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255370008\">1255370008</a></td><td>Specialist in naturopathy (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255371007\">1255371007</a></td><td>Specialist in homeopathy (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255372000\">1255372000</a></td><td>Phytotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255373005\">1255373005</a></td><td>Specialist in traditional Chinese medicine (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255374004\">1255374004</a></td><td>Clinical nutritionist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255514008\">1255514008</a></td><td>Regulatory affairs pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255515009\">1255515009</a></td><td>Pharmacogenomics pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255517001\">1255517001</a></td><td>Intern in healthcare (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255518006\">1255518006</a></td><td>Organizational and social psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255519003\">1255519003</a></td><td>Cardiopulmonary technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1255719001\">1255719001</a></td><td>Neurophysiology technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1256114007\">1256114007</a></td><td>Nuclear medicine technologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1259214004\">1259214004</a></td><td>Immunohemotherapy specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1259964002\">1259964002</a></td><td>Oral medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1268923002\">1268923002</a></td><td>Obstetric nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1271000175101\">1271000175101</a></td><td>Primary obstetrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1276561000168102\">1276561000168102</a></td><td>Prosthetist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1276571000168108\">1276571000168108</a></td><td>Orthotist and prosthetist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1287116005\">1287116005</a></td><td>Chaperone (person)</td></tr><tr><td><a href=\"http://snomed.info/id/1287641002\">1287641002</a></td><td>Oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1290289004\">1290289004</a></td><td>Fellow physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1304201007\">1304201007</a></td><td>Neurological physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1304209009\">1304209009</a></td><td>Cardiorespiratory physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1304210004\">1304210004</a></td><td>Musculoskeletal physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/133932002\">133932002</a></td><td>Caregiver (person)</td></tr><tr><td><a href=\"http://snomed.info/id/13580004\">13580004</a></td><td>School dental assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/1421009\">1421009</a></td><td>Specialized surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/14613005\">14613005</a></td><td>Ordained rabbi (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/14698002\">14698002</a></td><td>Medical microbiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158939004\">158939004</a></td><td>Child care officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158942005\">158942005</a></td><td>Residential child care worker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158943000\">158943000</a></td><td>Residential youth care worker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158965000\">158965000</a></td><td>Medical practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158966004\">158966004</a></td><td>Medical administrator - national (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158967008\">158967008</a></td><td>Consultant physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158968003\">158968003</a></td><td>Consultant surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158969006\">158969006</a></td><td>Consultant gynecology/obstetrics (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158971006\">158971006</a></td><td>Hospital registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158972004\">158972004</a></td><td>House officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158973009\">158973009</a></td><td>Occupational physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158974003\">158974003</a></td><td>Clinical medical officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158975002\">158975002</a></td><td>Medical practitioner - teaching (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158977005\">158977005</a></td><td>Dental administrator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158978000\">158978000</a></td><td>Dental consultant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158979008\">158979008</a></td><td>Dental general practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158980006\">158980006</a></td><td>Dental practitioner - teaching (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158983008\">158983008</a></td><td>Nurse administrator - national (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158984002\">158984002</a></td><td>Nursing officer - region (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158985001\">158985001</a></td><td>Nursing officer - district (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158986000\">158986000</a></td><td>Nursing administrator - professional body (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158987009\">158987009</a></td><td>Nursing officer - division (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158988004\">158988004</a></td><td>Nurse education director (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158989007\">158989007</a></td><td>Occupational health nursing officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158990003\">158990003</a></td><td>Nursing officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158992006\">158992006</a></td><td>Midwifery sister (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158993001\">158993001</a></td><td>Nursing sister (theater) (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158994007\">158994007</a></td><td>Staff nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158995008\">158995008</a></td><td>Staff midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158996009\">158996009</a></td><td>State enrolled nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158997000\">158997000</a></td><td>District nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158998005\">158998005</a></td><td>Private nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/158999002\">158999002</a></td><td>Community midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159001001\">159001001</a></td><td>Clinic nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159002008\">159002008</a></td><td>Practice nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159003003\">159003003</a></td><td>School nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159004009\">159004009</a></td><td>Nurse teacher (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159005005\">159005005</a></td><td>Student nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159006006\">159006006</a></td><td>Dental nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159007002\">159007002</a></td><td>Community pediatric nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159010009\">159010009</a></td><td>Hospital pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159011008\">159011008</a></td><td>Retail pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159012001\">159012001</a></td><td>Industrial pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159014000\">159014000</a></td><td>Trainee pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159016003\">159016003</a></td><td>Medical radiographer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159017007\">159017007</a></td><td>Diagnostic radiographer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159018002\">159018002</a></td><td>Therapeutic radiographer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159019005\">159019005</a></td><td>Trainee radiographer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159021000\">159021000</a></td><td>Ophthalmic optician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159022007\">159022007</a></td><td>Trainee optician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159025009\">159025009</a></td><td>Remedial gymnast (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159026005\">159026005</a></td><td>Speech/language therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159027001\">159027001</a></td><td>Orthoptist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159028006\">159028006</a></td><td>Trainee remedial therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159033005\">159033005</a></td><td>Dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159034004\">159034004</a></td><td>Podiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159035003\">159035003</a></td><td>Dental auxiliary (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159036002\">159036002</a></td><td>Electrocardiogram technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159037006\">159037006</a></td><td>Electroencephalogram technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159038001\">159038001</a></td><td>Artificial limb fitter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159039009\">159039009</a></td><td>Audiology technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159040006\">159040006</a></td><td>Pharmacy technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159041005\">159041005</a></td><td>Trainee medical technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159141008\">159141008</a></td><td>Geneticist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159148002\">159148002</a></td><td>Research chemist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159174008\">159174008</a></td><td>Civil engineer - research (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/159972006\">159972006</a></td><td>Surgical corset fitter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/160008000\">160008000</a></td><td>Dental technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/17561000\">17561000</a></td><td>Cardiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/184152007\">184152007</a></td><td>Care assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/184154008\">184154008</a></td><td>Care manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/18803008\">18803008</a></td><td>Dermatologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/18850004\">18850004</a></td><td>Laboratory hematologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/19244007\">19244007</a></td><td>Gerodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/20145008\">20145008</a></td><td>Removable prosthodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/21365001\">21365001</a></td><td>Specialized dentist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/21450003\">21450003</a></td><td>Neuropsychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224529009\">224529009</a></td><td>Clinical assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224530004\">224530004</a></td><td>Senior registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224531000\">224531000</a></td><td>Registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224532007\">224532007</a></td><td>Senior house officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224533002\">224533002</a></td><td>Medical officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224534008\">224534008</a></td><td>Health visitor, nurse/midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224535009\">224535009</a></td><td>Registered nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224536005\">224536005</a></td><td>Midwifery tutor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224537001\">224537001</a></td><td>Accident and Emergency nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224538006\">224538006</a></td><td>Triage nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224540001\">224540001</a></td><td>Community nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224541002\">224541002</a></td><td>Nursing continence advisor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224542009\">224542009</a></td><td>Coronary care nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224543004\">224543004</a></td><td>Diabetic nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224544005\">224544005</a></td><td>Family planning nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224545006\">224545006</a></td><td>Care of the elderly nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224546007\">224546007</a></td><td>Infection control nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224547003\">224547003</a></td><td>Intensive therapy nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224548008\">224548008</a></td><td>Learning disabilities nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224549000\">224549000</a></td><td>Neonatal nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224550000\">224550000</a></td><td>Neurology nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224551001\">224551001</a></td><td>Industrial nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224552008\">224552008</a></td><td>Oncology nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224554009\">224554009</a></td><td>Marie Curie nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224555005\">224555005</a></td><td>Pain control nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224556006\">224556006</a></td><td>Palliative care nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224557002\">224557002</a></td><td>Chemotherapy nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224558007\">224558007</a></td><td>Radiotherapy nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224559004\">224559004</a></td><td>Recovery nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224560009\">224560009</a></td><td>Stoma care nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224562001\">224562001</a></td><td>Pediatric nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224563006\">224563006</a></td><td>Mental health nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224564000\">224564000</a></td><td>Community mental health nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224565004\">224565004</a></td><td>Renal nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224566003\">224566003</a></td><td>Hemodialysis nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224567007\">224567007</a></td><td>Tissue viability nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224569005\">224569005</a></td><td>Nurse grade (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224570006\">224570006</a></td><td>Clinical nurse specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224571005\">224571005</a></td><td>Nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224572003\">224572003</a></td><td>Nursing sister (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224573008\">224573008</a></td><td>Charge nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224574002\">224574002</a></td><td>Ward manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224575001\">224575001</a></td><td>Nursing team leader (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224576000\">224576000</a></td><td>Nursing assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224577009\">224577009</a></td><td>Healthcare assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224578004\">224578004</a></td><td>Nursery nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224579007\">224579007</a></td><td>Healthcare service manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224580005\">224580005</a></td><td>Occupational health service manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224581009\">224581009</a></td><td>Community nurse manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224583007\">224583007</a></td><td>Behavior therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224584001\">224584001</a></td><td>Behavior therapy assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224585000\">224585000</a></td><td>Drama therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224586004\">224586004</a></td><td>Domiciliary occupational therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224587008\">224587008</a></td><td>Occupational therapy helper (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224588003\">224588003</a></td><td>Psychotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224589006\">224589006</a></td><td>Community-based physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224590002\">224590002</a></td><td>Play therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224591003\">224591003</a></td><td>Play specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224592005\">224592005</a></td><td>Play leader (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224593000\">224593000</a></td><td>Community-based speech/language therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224594006\">224594006</a></td><td>Speech/language assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224595007\">224595007</a></td><td>Professional counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224596008\">224596008</a></td><td>Marriage guidance counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224597004\">224597004</a></td><td>Trained nurse counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224598009\">224598009</a></td><td>Trained social worker counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224599001\">224599001</a></td><td>Trained personnel counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224600003\">224600003</a></td><td>Psychoanalyst (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224601004\">224601004</a></td><td>Assistant psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224602006\">224602006</a></td><td>Community-based podiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224603001\">224603001</a></td><td>Foot care worker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224604007\">224604007</a></td><td>Audiometrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224606009\">224606009</a></td><td>Technical healthcare occupation (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224607000\">224607000</a></td><td>Occupational therapy technical instructor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224608005\">224608005</a></td><td>Administrative healthcare staff (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224609002\">224609002</a></td><td>Complementary health worker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224610007\">224610007</a></td><td>Supporting services personnel (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224614003\">224614003</a></td><td>Research associate (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224615002\">224615002</a></td><td>Research nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224620002\">224620002</a></td><td>Human aid to communication (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224621003\">224621003</a></td><td>Palantypist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224622005\">224622005</a></td><td>Note taker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224623000\">224623000</a></td><td>Cuer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224624006\">224624006</a></td><td>Lipspeaker (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224625007\">224625007</a></td><td>Interpreter for British sign language (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224626008\">224626008</a></td><td>Interpreter for Signs supporting English (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/224936003\">224936003</a></td><td>General practitioner locum (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/22515006\">22515006</a></td><td>Medical assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/225725005\">225725005</a></td><td>Chaplain (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/225726006\">225726006</a></td><td>Lactation consultant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/225727002\">225727002</a></td><td>Midwife counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/22731001\">22731001</a></td><td>Orthopedic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/229774002\">229774002</a></td><td>Caregiver (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/22983004\">22983004</a></td><td>Thoracic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/23278007\">23278007</a></td><td>Community health physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/24430003\">24430003</a></td><td>Physical medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/24590004\">24590004</a></td><td>Urologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/25941000087102\">25941000087102</a></td><td>Adult gerontology primary care nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/25961008\">25961008</a></td><td>Electroencephalography specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/26031000087100\">26031000087100</a></td><td>Pediatric nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/26042002\">26042002</a></td><td>Dental hygienist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/26071000087103\">26071000087103</a></td><td>Primary health care nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/26091000087104\">26091000087104</a></td><td>Public health nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/26369006\">26369006</a></td><td>Public health nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/265937000\">265937000</a></td><td>Nursing occupation (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/265939002\">265939002</a></td><td>Medical/dental technicians (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/28229004\">28229004</a></td><td>Optometrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/283875005\">283875005</a></td><td>Parkinson's disease nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/28411006\">28411006</a></td><td>Neonatologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/28544002\">28544002</a></td><td>Medical biochemist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/302211009\">302211009</a></td><td>Specialist registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/303124005\">303124005</a></td><td>Member of mental health review tribunal (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/303129000\">303129000</a></td><td>Hospital manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/303133007\">303133007</a></td><td>Responsible medical officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/303134001\">303134001</a></td><td>Independent doctor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/304291006\">304291006</a></td><td>Bereavement counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/304292004\">304292004</a></td><td>Surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/307988006\">307988006</a></td><td>Medical technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/308002005\">308002005</a></td><td>Remedial therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309294001\">309294001</a></td><td>Emergency department physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309295000\">309295000</a></td><td>Clinical oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309296004\">309296004</a></td><td>Family planning doctor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309322005\">309322005</a></td><td>Associate general practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309323000\">309323000</a></td><td>Partner of general practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309324006\">309324006</a></td><td>General practitioner assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309326008\">309326008</a></td><td>Deputizing general practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309327004\">309327004</a></td><td>General practitioner registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309328009\">309328009</a></td><td>Ambulatory pediatrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309329001\">309329001</a></td><td>Community pediatrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309330006\">309330006</a></td><td>Pediatric cardiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309331005\">309331005</a></td><td>Pediatric endocrinologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309332003\">309332003</a></td><td>Pediatric gastroenterologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309333008\">309333008</a></td><td>Pediatric nephrologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309334002\">309334002</a></td><td>Pediatric neurologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309335001\">309335001</a></td><td>Pediatric rheumatologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309336000\">309336000</a></td><td>Pediatric oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309337009\">309337009</a></td><td>Pain management specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309338004\">309338004</a></td><td>Intensive care specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309339007\">309339007</a></td><td>Adult intensive care specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309340009\">309340009</a></td><td>Pediatric intensive care specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309341008\">309341008</a></td><td>Blood transfusion doctor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309342001\">309342001</a></td><td>Histopathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309343006\">309343006</a></td><td>Physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309345004\">309345004</a></td><td>Chest physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309346003\">309346003</a></td><td>Thoracic physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309347007\">309347007</a></td><td>Clinical hematologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309348002\">309348002</a></td><td>Clinical neurophysiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309349005\">309349005</a></td><td>Clinical physiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309350005\">309350005</a></td><td>Diabetologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309351009\">309351009</a></td><td>Andrologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309352002\">309352002</a></td><td>Neuroendocrinologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309353007\">309353007</a></td><td>Reproductive endocrinologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309354001\">309354001</a></td><td>Thyroidologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309355000\">309355000</a></td><td>Clinical geneticist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309356004\">309356004</a></td><td>Clinical cytogeneticist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309357008\">309357008</a></td><td>Clinical molecular geneticist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309358003\">309358003</a></td><td>Genitourinary medicine physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309359006\">309359006</a></td><td>Palliative care physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309360001\">309360001</a></td><td>Rehabilitation physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309361002\">309361002</a></td><td>Child and adolescent psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309362009\">309362009</a></td><td>Forensic psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309363004\">309363004</a></td><td>Liaison psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309364005\">309364005</a></td><td>Psychogeriatrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309366007\">309366007</a></td><td>Rehabilitation psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309367003\">309367003</a></td><td>Obstetrician and gynecologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309368008\">309368008</a></td><td>Breast surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309369000\">309369000</a></td><td>Cardiothoracic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309371000\">309371000</a></td><td>Cardiac surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309372007\">309372007</a></td><td>Ear, nose and throat surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309373002\">309373002</a></td><td>Endocrine surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309374008\">309374008</a></td><td>Thyroid surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309375009\">309375009</a></td><td>Pituitary surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309376005\">309376005</a></td><td>Gastrointestinal surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309377001\">309377001</a></td><td>General gastrointestinal surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309378006\">309378006</a></td><td>Upper gastrointestinal surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309379003\">309379003</a></td><td>Colorectal surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309380000\">309380000</a></td><td>Hand surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309381001\">309381001</a></td><td>Hepatobiliary surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309382008\">309382008</a></td><td>Ophthalmic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309383003\">309383003</a></td><td>Pediatric surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309384009\">309384009</a></td><td>Pancreatic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309385005\">309385005</a></td><td>Transplant surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309386006\">309386006</a></td><td>Trauma surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309388007\">309388007</a></td><td>Vascular surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309389004\">309389004</a></td><td>Medical practitioner grade (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309390008\">309390008</a></td><td>Hospital consultant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309391007\">309391007</a></td><td>Visiting specialist registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309392000\">309392000</a></td><td>Research registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309393005\">309393005</a></td><td>General practitioner grade (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309394004\">309394004</a></td><td>General practitioner principal (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309395003\">309395003</a></td><td>Hospital specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309396002\">309396002</a></td><td>Associate specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309397006\">309397006</a></td><td>Research fellow (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309398001\">309398001</a></td><td>Profession allied to medicine (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309399009\">309399009</a></td><td>Hospital-based dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309400002\">309400002</a></td><td>Domiciliary physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309401003\">309401003</a></td><td>General practitioner-based physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309402005\">309402005</a></td><td>Hospital-based physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309403000\">309403000</a></td><td>Private physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309404006\">309404006</a></td><td>Physiotherapy helper (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309409001\">309409001</a></td><td>Hospital-based speech and language therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309410006\">309410006</a></td><td>Arts therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309411005\">309411005</a></td><td>Dance therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309412003\">309412003</a></td><td>Music therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309413008\">309413008</a></td><td>Renal dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309414002\">309414002</a></td><td>Liver dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309415001\">309415001</a></td><td>Oncology dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309416000\">309416000</a></td><td>Pediatric dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309417009\">309417009</a></td><td>Diabetes dietitian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309418004\">309418004</a></td><td>Audiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309419007\">309419007</a></td><td>Hearing therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309420001\">309420001</a></td><td>Audiological scientist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309421002\">309421002</a></td><td>Hearing aid dispenser (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309422009\">309422009</a></td><td>Community-based occupational therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309423004\">309423004</a></td><td>Hospital-based occupational therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309427003\">309427003</a></td><td>Social services occupational therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309428008\">309428008</a></td><td>Orthotist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309429000\">309429000</a></td><td>Surgical fitter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309434001\">309434001</a></td><td>Hospital-based podiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309435000\">309435000</a></td><td>Podiatry assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309436004\">309436004</a></td><td>Lymphedema nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309437008\">309437008</a></td><td>Community learning disabilities nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309439006\">309439006</a></td><td>Clinical nurse teacher (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309440008\">309440008</a></td><td>Community practice nurse teacher (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309441007\">309441007</a></td><td>Nurse tutor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309442000\">309442000</a></td><td>Nurse teacher practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309443005\">309443005</a></td><td>Nurse lecturer practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309444004\">309444004</a></td><td>Outreach nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309445003\">309445003</a></td><td>Anesthetic nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309446002\">309446002</a></td><td>Nurse manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309450009\">309450009</a></td><td>Nurse administrator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309452001\">309452001</a></td><td>Midwifery grade (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309453006\">309453006</a></td><td>Registered midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309454000\">309454000</a></td><td>Student midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309455004\">309455004</a></td><td>Parentcraft sister (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309457007\">309457007</a></td><td>Vicar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309459005\">309459005</a></td><td>Healthcare professional grade (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/309460000\">309460000</a></td><td>Restorative dentist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310170009\">310170009</a></td><td>Pediatric audiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310171008\">310171008</a></td><td>Immunopathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310172001\">310172001</a></td><td>Audiological physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310173006\">310173006</a></td><td>Clinical pharmacologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310174000\">310174000</a></td><td>Private doctor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310175004\">310175004</a></td><td>Agency nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310176003\">310176003</a></td><td>Behavioral therapist nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310177007\">310177007</a></td><td>Cardiac rehabilitation nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310178002\">310178002</a></td><td>Genitourinary nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310179005\">310179005</a></td><td>Rheumatology nurse specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310180008\">310180008</a></td><td>Continence nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310181007\">310181007</a></td><td>Contact tracing nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310182000\">310182000</a></td><td>General nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310184004\">310184004</a></td><td>Liaison nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310185003\">310185003</a></td><td>Diabetic liaison nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310186002\">310186002</a></td><td>Nurse psychotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310187006\">310187006</a></td><td>Company nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310188001\">310188001</a></td><td>Hospital midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310189009\">310189009</a></td><td>Genetic counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310190000\">310190000</a></td><td>Mental health counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310191001\">310191001</a></td><td>Clinical psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310192008\">310192008</a></td><td>Educational psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310193003\">310193003</a></td><td>Coroner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310194009\">310194009</a></td><td>Appliance officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/310512001\">310512001</a></td><td>Medical oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/311441001\">311441001</a></td><td>School medical officer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/312485001\">312485001</a></td><td>Integrated midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/3430008\">3430008</a></td><td>Radiation therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/36682004\">36682004</a></td><td>Physiotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/37154003\">37154003</a></td><td>Periodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/372102007\">372102007</a></td><td>Registered nurse first assist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/373864002\">373864002</a></td><td>Outpatient (person)</td></tr><tr><td><a href=\"http://snomed.info/id/37504001\">37504001</a></td><td>Orthodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/3842006\">3842006</a></td><td>Chiropractor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/387619007\">387619007</a></td><td>Optician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/394572006\">394572006</a></td><td>Medical secretary (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/394618009\">394618009</a></td><td>Hospital nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/39677007\">39677007</a></td><td>Internal medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/397897005\">397897005</a></td><td>Paramedic (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/397903001\">397903001</a></td><td>Staff grade obstetrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/397908005\">397908005</a></td><td>Staff grade practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/3981000175106\">3981000175106</a></td><td>Nurse complex case manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/398130009\">398130009</a></td><td>Medical student (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/398238009\">398238009</a></td><td>Acting obstetric registrar (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/40127002\">40127002</a></td><td>Dietitian (general) (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/40204001\">40204001</a></td><td>Hematologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/404940000\">404940000</a></td><td>Physiotherapist technical instructor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405277009\">405277009</a></td><td>Resident physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405278004\">405278004</a></td><td>Certified registered nurse anesthetist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405279007\">405279007</a></td><td>Attending physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405623001\">405623001</a></td><td>Assigned practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405684005\">405684005</a></td><td>Professional initiating surgical case (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/405685006\">405685006</a></td><td>Professional providing staff relief during surgical procedure (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/40570005\">40570005</a></td><td>Interpreter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/407542009\">407542009</a></td><td>Informal caregiver (person)</td></tr><tr><td><a href=\"http://snomed.info/id/407543004\">407543004</a></td><td>Primary caregiver (person)</td></tr><tr><td><a href=\"http://snomed.info/id/408290003\">408290003</a></td><td>Diabetes key contact (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/408798009\">408798009</a></td><td>Consultant pediatrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/408799001\">408799001</a></td><td>Consultant neonatologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/409974004\">409974004</a></td><td>Health educator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/409975003\">409975003</a></td><td>Certified health education specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/413854007\">413854007</a></td><td>Circulating nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/415075003\">415075003</a></td><td>Perioperative nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/415506007\">415506007</a></td><td>Scrub nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/416034003\">416034003</a></td><td>Primary screener (person)</td></tr><tr><td><a href=\"http://snomed.info/id/416035002\">416035002</a></td><td>Secondary screener (person)</td></tr><tr><td><a href=\"http://snomed.info/id/416160000\">416160000</a></td><td>Fellow of American Academy of Osteopathy (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/4162009\">4162009</a></td><td>Dental assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/41672002\">41672002</a></td><td>Respiratory disease specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/416800000\">416800000</a></td><td>Inpatient (person)</td></tr><tr><td><a href=\"http://snomed.info/id/41904004\">41904004</a></td><td>Medical X-ray technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/420158005\">420158005</a></td><td>Performer of method (person)</td></tr><tr><td><a href=\"http://snomed.info/id/420409002\">420409002</a></td><td>Oculoplastic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/420678001\">420678001</a></td><td>Retinal surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/421841007\">421841007</a></td><td>Admitting physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/422140007\">422140007</a></td><td>Medical ophthalmologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/422234006\">422234006</a></td><td>Ophthalmologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/428024001\">428024001</a></td><td>Clinical trial participant (person)</td></tr><tr><td><a href=\"http://snomed.info/id/429577009\">429577009</a></td><td>Patient advocate (person)</td></tr><tr><td><a href=\"http://snomed.info/id/43018001\">43018001</a></td><td>Babysitter (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/432100008\">432100008</a></td><td>Health coach (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/43702002\">43702002</a></td><td>Occupational health nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/440051000124108\">440051000124108</a></td><td>Medical examiner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/442251000124100\">442251000124100</a></td><td>Licensed practical nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/442867008\">442867008</a></td><td>Respiratory therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/443090005\">443090005</a></td><td>Podiatric surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/444912007\">444912007</a></td><td>Hypnotherapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/445313000\">445313000</a></td><td>Asthma nurse specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/445451001\">445451001</a></td><td>Nurse case manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/445521000124102\">445521000124102</a></td><td>Advanced practice midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/445531000124104\">445531000124104</a></td><td>Lay midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/446050000\">446050000</a></td><td>Primary care physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/44652006\">44652006</a></td><td>Pharmaceutical assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/446701002\">446701002</a></td><td>Addiction medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/449161006\">449161006</a></td><td>Physician assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/450044741000087104\">450044741000087104</a></td><td>Acupuncturist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45181000087107\">45181000087107</a></td><td>Pediatric ophthalmologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45191000087109\">45191000087109</a></td><td>Pediatric otorhinolaryngologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45201000087106\">45201000087106</a></td><td>Pediatric urologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/453061000124100\">453061000124100</a></td><td>Pharmacist specialist (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453071000124107\">453071000124107</a></td><td>Primary care pharmacist (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453081000124105\">453081000124105</a></td><td>Infusion pharmacist (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453091000124108\">453091000124108</a></td><td>Receiving provider (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453101000124102\">453101000124102</a></td><td>Consultant pharmacist (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453111000124104\">453111000124104</a></td><td>Dispensing pharmacist (person)</td></tr><tr><td><a href=\"http://snomed.info/id/453121000124107\">453121000124107</a></td><td>Emergency department healthcare professional (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/453231000124104\">453231000124104</a></td><td>Primary care provider (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45440000\">45440000</a></td><td>Rheumatologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45544007\">45544007</a></td><td>Neurosurgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/457141000124107\">457141000124107</a></td><td>Locum tenens attending physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/457151000124109\">457151000124109</a></td><td>Locum tenens admitting physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/45956004\">45956004</a></td><td>Sanitarian (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/46255001\">46255001</a></td><td>Pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/471302004\">471302004</a></td><td>Government midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/48639005\">48639005</a></td><td>Ordained minister (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/48740002\">48740002</a></td><td>Philologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/49203003\">49203003</a></td><td>Dispensing optician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/49993003\">49993003</a></td><td>Oral surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/50149000\">50149000</a></td><td>Endodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/50681000087109\">50681000087109</a></td><td>Bariatric surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/5191000124109\">5191000124109</a></td><td>Private midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/5275007\">5275007</a></td><td>Auxiliary nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/53564008\">53564008</a></td><td>Ordained clergy (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/54503009\">54503009</a></td><td>Faith healer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/56397003\">56397003</a></td><td>Neurologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/56466003\">56466003</a></td><td>Public health physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/56542007\">56542007</a></td><td>Medical record administrator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/56545009\">56545009</a></td><td>Cardiovascular surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/57654006\">57654006</a></td><td>Fixed prosthodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/59058001\">59058001</a></td><td>General physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/59169001\">59169001</a></td><td>Orthopedic technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/59317003\">59317003</a></td><td>Dental prosthesis maker and repairer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/59944000\">59944000</a></td><td>Psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/60008001\">60008001</a></td><td>Public health nutritionist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/611581000124105\">611581000124105</a></td><td>Cognitive neuropsychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/611601000124100\">611601000124100</a></td><td>Neonatal nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/611611000124102\">611611000124102</a></td><td>Counseling psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/611621000124105\">611621000124105</a></td><td>Clinical neuropsychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/611701000124107\">611701000124107</a></td><td>Sleep psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/61207006\">61207006</a></td><td>Medical pathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/61246008\">61246008</a></td><td>Laboratory medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/61345009\">61345009</a></td><td>Otorhinolaryngologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/61894003\">61894003</a></td><td>Endocrinologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/62247001\">62247001</a></td><td>Family medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/63098009\">63098009</a></td><td>Clinical immunologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/64220005\">64220005</a></td><td>Religious worker (member of religious order) (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/651501000124106\">651501000124106</a></td><td>Pediatric emergency medicine physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/65803006\">65803006</a></td><td>Missionary (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/66476003\">66476003</a></td><td>Oral pathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/66862007\">66862007</a></td><td>Radiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/671101000124102\">671101000124102</a></td><td>Family nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/67811000052107\">67811000052107</a></td><td>Pediatric hematology and oncology physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/6816002\">6816002</a></td><td>Specialized nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/68191000052106\">68191000052106</a></td><td>Neuropsychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/6868009\">6868009</a></td><td>Hospital administrator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/68867008\">68867008</a></td><td>Public health dentist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/68950000\">68950000</a></td><td>Prosthodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/69280009\">69280009</a></td><td>Specialized physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/71838004\">71838004</a></td><td>Gastroenterologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/720503005\">720503005</a></td><td>Sleep medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721936008\">721936008</a></td><td>Occupation medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721937004\">721937004</a></td><td>Preventive medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721938009\">721938009</a></td><td>Tropical medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721939001\">721939001</a></td><td>Vascular medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721940004\">721940004</a></td><td>Legal medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721941000\">721941000</a></td><td>Health psychologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721942007\">721942007</a></td><td>Cardiovascular perfusionist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/721943002\">721943002</a></td><td>Clinical immunology and allergy specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/73265009\">73265009</a></td><td>Nursing aid (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/734293001\">734293001</a></td><td>Clinical pharmacist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/734294007\">734294007</a></td><td>Pharmacist prescriber (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/75271001\">75271001</a></td><td>Professional midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/76166008\">76166008</a></td><td>Practical aid (pharmacy) (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/76231001\">76231001</a></td><td>Osteopath (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/763292005\">763292005</a></td><td>Radiation oncologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768730001\">768730001</a></td><td>Home health aide (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768731002\">768731002</a></td><td>Home helper (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768732009\">768732009</a></td><td>School health educator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768733004\">768733004</a></td><td>Spiritual advisor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768734005\">768734005</a></td><td>Research study coordinator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768815003\">768815003</a></td><td>Investigative specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768816002\">768816002</a></td><td>Associate investigator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768817006\">768817006</a></td><td>Co-principal investigator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768818001\">768818001</a></td><td>Principal investigator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768819009\">768819009</a></td><td>Medically responsible investigator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768820003\">768820003</a></td><td>Care coordinator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768821004\">768821004</a></td><td>Care team coordinator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768822006\">768822006</a></td><td>Rehabilitation coordinator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768825008\">768825008</a></td><td>Doula (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768826009\">768826009</a></td><td>Crisis counselor (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768827000\">768827000</a></td><td>Nutritionist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768828005\">768828005</a></td><td>Epidemiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768829002\">768829002</a></td><td>Community dietician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768832004\">768832004</a></td><td>Case manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768833009\">768833009</a></td><td>Discharging physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768834003\">768834003</a></td><td>Disease manager (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768836001\">768836001</a></td><td>Patient navigator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768837005\">768837005</a></td><td>Hospitalist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/768839008\">768839008</a></td><td>Consultant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/76899008\">76899008</a></td><td>Infectious disease specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/769038007\">769038007</a></td><td>Researcher (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/78703002\">78703002</a></td><td>General surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/78729002\">78729002</a></td><td>Diagnostic radiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/789543004\">789543004</a></td><td>Sonographer (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/79898004\">79898004</a></td><td>Auxiliary midwife (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/79918004\">79918004</a></td><td>Ordained priest (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/80409005\">80409005</a></td><td>Translator (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/80546007\">80546007</a></td><td>Occupational therapist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/80584001\">80584001</a></td><td>Psychiatrist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/80933006\">80933006</a></td><td>Nuclear medicine specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/81464008\">81464008</a></td><td>Clinical pathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/82296001\">82296001</a></td><td>Pediatrician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/83273008\">83273008</a></td><td>Anatomic pathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/83685006\">83685006</a></td><td>Gynecologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/840583002\">840583002</a></td><td>Allied health assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/840584008\">840584008</a></td><td>Allied health student (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/85733003\">85733003</a></td><td>General pathologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/8724009\">8724009</a></td><td>Plastic surgeon (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/878785002\">878785002</a></td><td>Clinical respiratory physiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/878786001\">878786001</a></td><td>Operating room technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/878787005\">878787005</a></td><td>Anesthesia technician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/88189002\">88189002</a></td><td>Anesthesiologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/897187007\">897187007</a></td><td>Sexual assault nurse examiner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/90201008\">90201008</a></td><td>Pedodontist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/90655003\">90655003</a></td><td>Geriatrics specialist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/90981000221101\">90981000221101</a></td><td>Endoscopist physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/9371000175105\">9371000175105</a></td><td>Adolescent medicine specialist (occupation)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-ie-core-participation-function.html\"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.48.39" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreCareTeamMemberFunction"] ; # 
+  fhir:title [ fhir:v "IE Core Care Team Member Function"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of LOINC concepts to classify Care Team Member Function"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1012901000168106" ] ;
+         fhir:display [ fhir:v "Gynecologic oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1032781000168105" ] ;
+         fhir:display [ fhir:v "Kinesiology practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106289002" ] ;
+         fhir:display [ fhir:v "Dentist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106292003" ] ;
+         fhir:display [ fhir:v "Professional nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106293008" ] ;
+         fhir:display [ fhir:v "Nursing personnel (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106294002" ] ;
+         fhir:display [ fhir:v "Midwifery personnel (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106310008" ] ;
+         fhir:display [ fhir:v "Worker in religion (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106311007" ] ;
+         fhir:display [ fhir:v "Minister of religion/related member of religious order (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "106330007" ] ;
+         fhir:display [ fhir:v "Philologist, translator/interpreter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "11015003" ] ;
+         fhir:display [ fhir:v "Minister of religion (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "116154003" ] ;
+         fhir:display [ fhir:v "Patient (person)" ]
+       ] [
+         fhir:code [ fhir:v "11661002" ] ;
+         fhir:display [ fhir:v "Neuropathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1172950003" ] ;
+         fhir:display [ fhir:v "Massage therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1186716007" ] ;
+         fhir:display [ fhir:v "Intellectual disability psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1186914001" ] ;
+         fhir:display [ fhir:v "Intellectual disability nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "11911009" ] ;
+         fhir:display [ fhir:v "Nephrologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "119246008" ] ;
+         fhir:display [ fhir:v "Imam (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "11935004" ] ;
+         fhir:display [ fhir:v "Obstetrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1251537007" ] ;
+         fhir:display [ fhir:v "Sport medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1251542004" ] ;
+         fhir:display [ fhir:v "Medical coder (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1251548000" ] ;
+         fhir:display [ fhir:v "Neuroradiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1254982001" ] ;
+         fhir:display [ fhir:v "Medical surgical nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1254983006" ] ;
+         fhir:display [ fhir:v "Chronic care nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1254984000" ] ;
+         fhir:display [ fhir:v "Rehabilitation nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255370008" ] ;
+         fhir:display [ fhir:v "Specialist in naturopathy (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255371007" ] ;
+         fhir:display [ fhir:v "Specialist in homeopathy (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255372000" ] ;
+         fhir:display [ fhir:v "Phytotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255373005" ] ;
+         fhir:display [ fhir:v "Specialist in traditional Chinese medicine (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255374004" ] ;
+         fhir:display [ fhir:v "Clinical nutritionist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255514008" ] ;
+         fhir:display [ fhir:v "Regulatory affairs pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255515009" ] ;
+         fhir:display [ fhir:v "Pharmacogenomics pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255517001" ] ;
+         fhir:display [ fhir:v "Intern in healthcare (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255518006" ] ;
+         fhir:display [ fhir:v "Organizational and social psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255519003" ] ;
+         fhir:display [ fhir:v "Cardiopulmonary technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1255719001" ] ;
+         fhir:display [ fhir:v "Neurophysiology technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1256114007" ] ;
+         fhir:display [ fhir:v "Nuclear medicine technologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1259214004" ] ;
+         fhir:display [ fhir:v "Immunohemotherapy specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1259964002" ] ;
+         fhir:display [ fhir:v "Oral medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1268923002" ] ;
+         fhir:display [ fhir:v "Obstetric nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1271000175101" ] ;
+         fhir:display [ fhir:v "Primary obstetrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1276561000168102" ] ;
+         fhir:display [ fhir:v "Prosthetist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1276571000168108" ] ;
+         fhir:display [ fhir:v "Orthotist and prosthetist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1287116005" ] ;
+         fhir:display [ fhir:v "Chaperone (person)" ]
+       ] [
+         fhir:code [ fhir:v "1287641002" ] ;
+         fhir:display [ fhir:v "Oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1290289004" ] ;
+         fhir:display [ fhir:v "Fellow physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1304201007" ] ;
+         fhir:display [ fhir:v "Neurological physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1304209009" ] ;
+         fhir:display [ fhir:v "Cardiorespiratory physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1304210004" ] ;
+         fhir:display [ fhir:v "Musculoskeletal physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "133932002" ] ;
+         fhir:display [ fhir:v "Caregiver (person)" ]
+       ] [
+         fhir:code [ fhir:v "13580004" ] ;
+         fhir:display [ fhir:v "School dental assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "1421009" ] ;
+         fhir:display [ fhir:v "Specialized surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "14613005" ] ;
+         fhir:display [ fhir:v "Ordained rabbi (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "14698002" ] ;
+         fhir:display [ fhir:v "Medical microbiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158939004" ] ;
+         fhir:display [ fhir:v "Child care officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158942005" ] ;
+         fhir:display [ fhir:v "Residential child care worker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158943000" ] ;
+         fhir:display [ fhir:v "Residential youth care worker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158965000" ] ;
+         fhir:display [ fhir:v "Medical practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158966004" ] ;
+         fhir:display [ fhir:v "Medical administrator - national (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158967008" ] ;
+         fhir:display [ fhir:v "Consultant physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158968003" ] ;
+         fhir:display [ fhir:v "Consultant surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158969006" ] ;
+         fhir:display [ fhir:v "Consultant gynecology/obstetrics (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158971006" ] ;
+         fhir:display [ fhir:v "Hospital registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158972004" ] ;
+         fhir:display [ fhir:v "House officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158973009" ] ;
+         fhir:display [ fhir:v "Occupational physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158974003" ] ;
+         fhir:display [ fhir:v "Clinical medical officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158975002" ] ;
+         fhir:display [ fhir:v "Medical practitioner - teaching (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158977005" ] ;
+         fhir:display [ fhir:v "Dental administrator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158978000" ] ;
+         fhir:display [ fhir:v "Dental consultant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158979008" ] ;
+         fhir:display [ fhir:v "Dental general practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158980006" ] ;
+         fhir:display [ fhir:v "Dental practitioner - teaching (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158983008" ] ;
+         fhir:display [ fhir:v "Nurse administrator - national (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158984002" ] ;
+         fhir:display [ fhir:v "Nursing officer - region (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158985001" ] ;
+         fhir:display [ fhir:v "Nursing officer - district (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158986000" ] ;
+         fhir:display [ fhir:v "Nursing administrator - professional body (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158987009" ] ;
+         fhir:display [ fhir:v "Nursing officer - division (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158988004" ] ;
+         fhir:display [ fhir:v "Nurse education director (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158989007" ] ;
+         fhir:display [ fhir:v "Occupational health nursing officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158990003" ] ;
+         fhir:display [ fhir:v "Nursing officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158992006" ] ;
+         fhir:display [ fhir:v "Midwifery sister (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158993001" ] ;
+         fhir:display [ fhir:v "Nursing sister (theater) (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158994007" ] ;
+         fhir:display [ fhir:v "Staff nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158995008" ] ;
+         fhir:display [ fhir:v "Staff midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158996009" ] ;
+         fhir:display [ fhir:v "State enrolled nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158997000" ] ;
+         fhir:display [ fhir:v "District nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158998005" ] ;
+         fhir:display [ fhir:v "Private nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "158999002" ] ;
+         fhir:display [ fhir:v "Community midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159001001" ] ;
+         fhir:display [ fhir:v "Clinic nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159002008" ] ;
+         fhir:display [ fhir:v "Practice nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159003003" ] ;
+         fhir:display [ fhir:v "School nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159004009" ] ;
+         fhir:display [ fhir:v "Nurse teacher (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159005005" ] ;
+         fhir:display [ fhir:v "Student nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159006006" ] ;
+         fhir:display [ fhir:v "Dental nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159007002" ] ;
+         fhir:display [ fhir:v "Community pediatric nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159010009" ] ;
+         fhir:display [ fhir:v "Hospital pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159011008" ] ;
+         fhir:display [ fhir:v "Retail pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159012001" ] ;
+         fhir:display [ fhir:v "Industrial pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159014000" ] ;
+         fhir:display [ fhir:v "Trainee pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159016003" ] ;
+         fhir:display [ fhir:v "Medical radiographer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159017007" ] ;
+         fhir:display [ fhir:v "Diagnostic radiographer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159018002" ] ;
+         fhir:display [ fhir:v "Therapeutic radiographer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159019005" ] ;
+         fhir:display [ fhir:v "Trainee radiographer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159021000" ] ;
+         fhir:display [ fhir:v "Ophthalmic optician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159022007" ] ;
+         fhir:display [ fhir:v "Trainee optician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159025009" ] ;
+         fhir:display [ fhir:v "Remedial gymnast (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159026005" ] ;
+         fhir:display [ fhir:v "Speech/language therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159027001" ] ;
+         fhir:display [ fhir:v "Orthoptist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159028006" ] ;
+         fhir:display [ fhir:v "Trainee remedial therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159033005" ] ;
+         fhir:display [ fhir:v "Dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159034004" ] ;
+         fhir:display [ fhir:v "Podiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159035003" ] ;
+         fhir:display [ fhir:v "Dental auxiliary (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159036002" ] ;
+         fhir:display [ fhir:v "Electrocardiogram technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159037006" ] ;
+         fhir:display [ fhir:v "Electroencephalogram technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159038001" ] ;
+         fhir:display [ fhir:v "Artificial limb fitter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159039009" ] ;
+         fhir:display [ fhir:v "Audiology technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159040006" ] ;
+         fhir:display [ fhir:v "Pharmacy technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159041005" ] ;
+         fhir:display [ fhir:v "Trainee medical technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159141008" ] ;
+         fhir:display [ fhir:v "Geneticist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159148002" ] ;
+         fhir:display [ fhir:v "Research chemist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159174008" ] ;
+         fhir:display [ fhir:v "Civil engineer - research (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "159972006" ] ;
+         fhir:display [ fhir:v "Surgical corset fitter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "160008000" ] ;
+         fhir:display [ fhir:v "Dental technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "17561000" ] ;
+         fhir:display [ fhir:v "Cardiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "184152007" ] ;
+         fhir:display [ fhir:v "Care assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "184154008" ] ;
+         fhir:display [ fhir:v "Care manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "18803008" ] ;
+         fhir:display [ fhir:v "Dermatologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "18850004" ] ;
+         fhir:display [ fhir:v "Laboratory hematologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "19244007" ] ;
+         fhir:display [ fhir:v "Gerodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "20145008" ] ;
+         fhir:display [ fhir:v "Removable prosthodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "21365001" ] ;
+         fhir:display [ fhir:v "Specialized dentist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "21450003" ] ;
+         fhir:display [ fhir:v "Neuropsychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224529009" ] ;
+         fhir:display [ fhir:v "Clinical assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224530004" ] ;
+         fhir:display [ fhir:v "Senior registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224531000" ] ;
+         fhir:display [ fhir:v "Registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224532007" ] ;
+         fhir:display [ fhir:v "Senior house officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224533002" ] ;
+         fhir:display [ fhir:v "Medical officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224534008" ] ;
+         fhir:display [ fhir:v "Health visitor, nurse/midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224535009" ] ;
+         fhir:display [ fhir:v "Registered nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224536005" ] ;
+         fhir:display [ fhir:v "Midwifery tutor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224537001" ] ;
+         fhir:display [ fhir:v "Accident and Emergency nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224538006" ] ;
+         fhir:display [ fhir:v "Triage nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224540001" ] ;
+         fhir:display [ fhir:v "Community nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224541002" ] ;
+         fhir:display [ fhir:v "Nursing continence advisor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224542009" ] ;
+         fhir:display [ fhir:v "Coronary care nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224543004" ] ;
+         fhir:display [ fhir:v "Diabetic nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224544005" ] ;
+         fhir:display [ fhir:v "Family planning nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224545006" ] ;
+         fhir:display [ fhir:v "Care of the elderly nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224546007" ] ;
+         fhir:display [ fhir:v "Infection control nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224547003" ] ;
+         fhir:display [ fhir:v "Intensive therapy nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224548008" ] ;
+         fhir:display [ fhir:v "Learning disabilities nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224549000" ] ;
+         fhir:display [ fhir:v "Neonatal nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224550000" ] ;
+         fhir:display [ fhir:v "Neurology nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224551001" ] ;
+         fhir:display [ fhir:v "Industrial nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224552008" ] ;
+         fhir:display [ fhir:v "Oncology nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224554009" ] ;
+         fhir:display [ fhir:v "Marie Curie nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224555005" ] ;
+         fhir:display [ fhir:v "Pain control nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224556006" ] ;
+         fhir:display [ fhir:v "Palliative care nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224557002" ] ;
+         fhir:display [ fhir:v "Chemotherapy nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224558007" ] ;
+         fhir:display [ fhir:v "Radiotherapy nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224559004" ] ;
+         fhir:display [ fhir:v "Recovery nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224560009" ] ;
+         fhir:display [ fhir:v "Stoma care nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224562001" ] ;
+         fhir:display [ fhir:v "Pediatric nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224563006" ] ;
+         fhir:display [ fhir:v "Mental health nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224564000" ] ;
+         fhir:display [ fhir:v "Community mental health nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224565004" ] ;
+         fhir:display [ fhir:v "Renal nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224566003" ] ;
+         fhir:display [ fhir:v "Hemodialysis nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224567007" ] ;
+         fhir:display [ fhir:v "Tissue viability nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224569005" ] ;
+         fhir:display [ fhir:v "Nurse grade (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224570006" ] ;
+         fhir:display [ fhir:v "Clinical nurse specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224571005" ] ;
+         fhir:display [ fhir:v "Nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224572003" ] ;
+         fhir:display [ fhir:v "Nursing sister (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224573008" ] ;
+         fhir:display [ fhir:v "Charge nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224574002" ] ;
+         fhir:display [ fhir:v "Ward manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224575001" ] ;
+         fhir:display [ fhir:v "Nursing team leader (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224576000" ] ;
+         fhir:display [ fhir:v "Nursing assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224577009" ] ;
+         fhir:display [ fhir:v "Healthcare assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224578004" ] ;
+         fhir:display [ fhir:v "Nursery nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224579007" ] ;
+         fhir:display [ fhir:v "Healthcare service manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224580005" ] ;
+         fhir:display [ fhir:v "Occupational health service manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224581009" ] ;
+         fhir:display [ fhir:v "Community nurse manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224583007" ] ;
+         fhir:display [ fhir:v "Behavior therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224584001" ] ;
+         fhir:display [ fhir:v "Behavior therapy assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224585000" ] ;
+         fhir:display [ fhir:v "Drama therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224586004" ] ;
+         fhir:display [ fhir:v "Domiciliary occupational therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224587008" ] ;
+         fhir:display [ fhir:v "Occupational therapy helper (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224588003" ] ;
+         fhir:display [ fhir:v "Psychotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224589006" ] ;
+         fhir:display [ fhir:v "Community-based physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224590002" ] ;
+         fhir:display [ fhir:v "Play therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224591003" ] ;
+         fhir:display [ fhir:v "Play specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224592005" ] ;
+         fhir:display [ fhir:v "Play leader (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224593000" ] ;
+         fhir:display [ fhir:v "Community-based speech/language therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224594006" ] ;
+         fhir:display [ fhir:v "Speech/language assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224595007" ] ;
+         fhir:display [ fhir:v "Professional counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224596008" ] ;
+         fhir:display [ fhir:v "Marriage guidance counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224597004" ] ;
+         fhir:display [ fhir:v "Trained nurse counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224598009" ] ;
+         fhir:display [ fhir:v "Trained social worker counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224599001" ] ;
+         fhir:display [ fhir:v "Trained personnel counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224600003" ] ;
+         fhir:display [ fhir:v "Psychoanalyst (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224601004" ] ;
+         fhir:display [ fhir:v "Assistant psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224602006" ] ;
+         fhir:display [ fhir:v "Community-based podiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224603001" ] ;
+         fhir:display [ fhir:v "Foot care worker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224604007" ] ;
+         fhir:display [ fhir:v "Audiometrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224606009" ] ;
+         fhir:display [ fhir:v "Technical healthcare occupation (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224607000" ] ;
+         fhir:display [ fhir:v "Occupational therapy technical instructor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224608005" ] ;
+         fhir:display [ fhir:v "Administrative healthcare staff (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224609002" ] ;
+         fhir:display [ fhir:v "Complementary health worker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224610007" ] ;
+         fhir:display [ fhir:v "Supporting services personnel (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224614003" ] ;
+         fhir:display [ fhir:v "Research associate (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224615002" ] ;
+         fhir:display [ fhir:v "Research nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224620002" ] ;
+         fhir:display [ fhir:v "Human aid to communication (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224621003" ] ;
+         fhir:display [ fhir:v "Palantypist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224622005" ] ;
+         fhir:display [ fhir:v "Note taker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224623000" ] ;
+         fhir:display [ fhir:v "Cuer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224624006" ] ;
+         fhir:display [ fhir:v "Lipspeaker (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224625007" ] ;
+         fhir:display [ fhir:v "Interpreter for British sign language (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224626008" ] ;
+         fhir:display [ fhir:v "Interpreter for Signs supporting English (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "224936003" ] ;
+         fhir:display [ fhir:v "General practitioner locum (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "22515006" ] ;
+         fhir:display [ fhir:v "Medical assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "225725005" ] ;
+         fhir:display [ fhir:v "Chaplain (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "225726006" ] ;
+         fhir:display [ fhir:v "Lactation consultant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "225727002" ] ;
+         fhir:display [ fhir:v "Midwife counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "22731001" ] ;
+         fhir:display [ fhir:v "Orthopedic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "229774002" ] ;
+         fhir:display [ fhir:v "Caregiver (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "22983004" ] ;
+         fhir:display [ fhir:v "Thoracic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "23278007" ] ;
+         fhir:display [ fhir:v "Community health physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "24430003" ] ;
+         fhir:display [ fhir:v "Physical medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "24590004" ] ;
+         fhir:display [ fhir:v "Urologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "25941000087102" ] ;
+         fhir:display [ fhir:v "Adult gerontology primary care nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "25961008" ] ;
+         fhir:display [ fhir:v "Electroencephalography specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "26031000087100" ] ;
+         fhir:display [ fhir:v "Pediatric nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "26042002" ] ;
+         fhir:display [ fhir:v "Dental hygienist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "26071000087103" ] ;
+         fhir:display [ fhir:v "Primary health care nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "26091000087104" ] ;
+         fhir:display [ fhir:v "Public health nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "26369006" ] ;
+         fhir:display [ fhir:v "Public health nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "265937000" ] ;
+         fhir:display [ fhir:v "Nursing occupation (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "265939002" ] ;
+         fhir:display [ fhir:v "Medical/dental technicians (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "28229004" ] ;
+         fhir:display [ fhir:v "Optometrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "283875005" ] ;
+         fhir:display [ fhir:v "Parkinson's disease nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "28411006" ] ;
+         fhir:display [ fhir:v "Neonatologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "28544002" ] ;
+         fhir:display [ fhir:v "Medical biochemist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "302211009" ] ;
+         fhir:display [ fhir:v "Specialist registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "303124005" ] ;
+         fhir:display [ fhir:v "Member of mental health review tribunal (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "303129000" ] ;
+         fhir:display [ fhir:v "Hospital manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "303133007" ] ;
+         fhir:display [ fhir:v "Responsible medical officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "303134001" ] ;
+         fhir:display [ fhir:v "Independent doctor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "304291006" ] ;
+         fhir:display [ fhir:v "Bereavement counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "304292004" ] ;
+         fhir:display [ fhir:v "Surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "307988006" ] ;
+         fhir:display [ fhir:v "Medical technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "308002005" ] ;
+         fhir:display [ fhir:v "Remedial therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309294001" ] ;
+         fhir:display [ fhir:v "Emergency department physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309295000" ] ;
+         fhir:display [ fhir:v "Clinical oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309296004" ] ;
+         fhir:display [ fhir:v "Family planning doctor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309322005" ] ;
+         fhir:display [ fhir:v "Associate general practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309323000" ] ;
+         fhir:display [ fhir:v "Partner of general practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309324006" ] ;
+         fhir:display [ fhir:v "General practitioner assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309326008" ] ;
+         fhir:display [ fhir:v "Deputizing general practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309327004" ] ;
+         fhir:display [ fhir:v "General practitioner registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309328009" ] ;
+         fhir:display [ fhir:v "Ambulatory pediatrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309329001" ] ;
+         fhir:display [ fhir:v "Community pediatrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309330006" ] ;
+         fhir:display [ fhir:v "Pediatric cardiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309331005" ] ;
+         fhir:display [ fhir:v "Pediatric endocrinologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309332003" ] ;
+         fhir:display [ fhir:v "Pediatric gastroenterologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309333008" ] ;
+         fhir:display [ fhir:v "Pediatric nephrologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309334002" ] ;
+         fhir:display [ fhir:v "Pediatric neurologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309335001" ] ;
+         fhir:display [ fhir:v "Pediatric rheumatologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309336000" ] ;
+         fhir:display [ fhir:v "Pediatric oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309337009" ] ;
+         fhir:display [ fhir:v "Pain management specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309338004" ] ;
+         fhir:display [ fhir:v "Intensive care specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309339007" ] ;
+         fhir:display [ fhir:v "Adult intensive care specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309340009" ] ;
+         fhir:display [ fhir:v "Pediatric intensive care specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309341008" ] ;
+         fhir:display [ fhir:v "Blood transfusion doctor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309342001" ] ;
+         fhir:display [ fhir:v "Histopathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309343006" ] ;
+         fhir:display [ fhir:v "Physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309345004" ] ;
+         fhir:display [ fhir:v "Chest physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309346003" ] ;
+         fhir:display [ fhir:v "Thoracic physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309347007" ] ;
+         fhir:display [ fhir:v "Clinical hematologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309348002" ] ;
+         fhir:display [ fhir:v "Clinical neurophysiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309349005" ] ;
+         fhir:display [ fhir:v "Clinical physiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309350005" ] ;
+         fhir:display [ fhir:v "Diabetologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309351009" ] ;
+         fhir:display [ fhir:v "Andrologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309352002" ] ;
+         fhir:display [ fhir:v "Neuroendocrinologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309353007" ] ;
+         fhir:display [ fhir:v "Reproductive endocrinologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309354001" ] ;
+         fhir:display [ fhir:v "Thyroidologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309355000" ] ;
+         fhir:display [ fhir:v "Clinical geneticist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309356004" ] ;
+         fhir:display [ fhir:v "Clinical cytogeneticist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309357008" ] ;
+         fhir:display [ fhir:v "Clinical molecular geneticist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309358003" ] ;
+         fhir:display [ fhir:v "Genitourinary medicine physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309359006" ] ;
+         fhir:display [ fhir:v "Palliative care physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309360001" ] ;
+         fhir:display [ fhir:v "Rehabilitation physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309361002" ] ;
+         fhir:display [ fhir:v "Child and adolescent psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309362009" ] ;
+         fhir:display [ fhir:v "Forensic psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309363004" ] ;
+         fhir:display [ fhir:v "Liaison psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309364005" ] ;
+         fhir:display [ fhir:v "Psychogeriatrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309366007" ] ;
+         fhir:display [ fhir:v "Rehabilitation psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309367003" ] ;
+         fhir:display [ fhir:v "Obstetrician and gynecologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309368008" ] ;
+         fhir:display [ fhir:v "Breast surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309369000" ] ;
+         fhir:display [ fhir:v "Cardiothoracic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309371000" ] ;
+         fhir:display [ fhir:v "Cardiac surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309372007" ] ;
+         fhir:display [ fhir:v "Ear, nose and throat surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309373002" ] ;
+         fhir:display [ fhir:v "Endocrine surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309374008" ] ;
+         fhir:display [ fhir:v "Thyroid surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309375009" ] ;
+         fhir:display [ fhir:v "Pituitary surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309376005" ] ;
+         fhir:display [ fhir:v "Gastrointestinal surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309377001" ] ;
+         fhir:display [ fhir:v "General gastrointestinal surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309378006" ] ;
+         fhir:display [ fhir:v "Upper gastrointestinal surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309379003" ] ;
+         fhir:display [ fhir:v "Colorectal surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309380000" ] ;
+         fhir:display [ fhir:v "Hand surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309381001" ] ;
+         fhir:display [ fhir:v "Hepatobiliary surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309382008" ] ;
+         fhir:display [ fhir:v "Ophthalmic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309383003" ] ;
+         fhir:display [ fhir:v "Pediatric surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309384009" ] ;
+         fhir:display [ fhir:v "Pancreatic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309385005" ] ;
+         fhir:display [ fhir:v "Transplant surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309386006" ] ;
+         fhir:display [ fhir:v "Trauma surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309388007" ] ;
+         fhir:display [ fhir:v "Vascular surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309389004" ] ;
+         fhir:display [ fhir:v "Medical practitioner grade (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309390008" ] ;
+         fhir:display [ fhir:v "Hospital consultant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309391007" ] ;
+         fhir:display [ fhir:v "Visiting specialist registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309392000" ] ;
+         fhir:display [ fhir:v "Research registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309393005" ] ;
+         fhir:display [ fhir:v "General practitioner grade (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309394004" ] ;
+         fhir:display [ fhir:v "General practitioner principal (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309395003" ] ;
+         fhir:display [ fhir:v "Hospital specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309396002" ] ;
+         fhir:display [ fhir:v "Associate specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309397006" ] ;
+         fhir:display [ fhir:v "Research fellow (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309398001" ] ;
+         fhir:display [ fhir:v "Profession allied to medicine (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309399009" ] ;
+         fhir:display [ fhir:v "Hospital-based dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309400002" ] ;
+         fhir:display [ fhir:v "Domiciliary physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309401003" ] ;
+         fhir:display [ fhir:v "General practitioner-based physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309402005" ] ;
+         fhir:display [ fhir:v "Hospital-based physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309403000" ] ;
+         fhir:display [ fhir:v "Private physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309404006" ] ;
+         fhir:display [ fhir:v "Physiotherapy helper (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309409001" ] ;
+         fhir:display [ fhir:v "Hospital-based speech and language therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309410006" ] ;
+         fhir:display [ fhir:v "Arts therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309411005" ] ;
+         fhir:display [ fhir:v "Dance therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309412003" ] ;
+         fhir:display [ fhir:v "Music therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309413008" ] ;
+         fhir:display [ fhir:v "Renal dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309414002" ] ;
+         fhir:display [ fhir:v "Liver dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309415001" ] ;
+         fhir:display [ fhir:v "Oncology dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309416000" ] ;
+         fhir:display [ fhir:v "Pediatric dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309417009" ] ;
+         fhir:display [ fhir:v "Diabetes dietitian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309418004" ] ;
+         fhir:display [ fhir:v "Audiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309419007" ] ;
+         fhir:display [ fhir:v "Hearing therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309420001" ] ;
+         fhir:display [ fhir:v "Audiological scientist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309421002" ] ;
+         fhir:display [ fhir:v "Hearing aid dispenser (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309422009" ] ;
+         fhir:display [ fhir:v "Community-based occupational therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309423004" ] ;
+         fhir:display [ fhir:v "Hospital-based occupational therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309427003" ] ;
+         fhir:display [ fhir:v "Social services occupational therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309428008" ] ;
+         fhir:display [ fhir:v "Orthotist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309429000" ] ;
+         fhir:display [ fhir:v "Surgical fitter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309434001" ] ;
+         fhir:display [ fhir:v "Hospital-based podiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309435000" ] ;
+         fhir:display [ fhir:v "Podiatry assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309436004" ] ;
+         fhir:display [ fhir:v "Lymphedema nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309437008" ] ;
+         fhir:display [ fhir:v "Community learning disabilities nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309439006" ] ;
+         fhir:display [ fhir:v "Clinical nurse teacher (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309440008" ] ;
+         fhir:display [ fhir:v "Community practice nurse teacher (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309441007" ] ;
+         fhir:display [ fhir:v "Nurse tutor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309442000" ] ;
+         fhir:display [ fhir:v "Nurse teacher practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309443005" ] ;
+         fhir:display [ fhir:v "Nurse lecturer practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309444004" ] ;
+         fhir:display [ fhir:v "Outreach nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309445003" ] ;
+         fhir:display [ fhir:v "Anesthetic nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309446002" ] ;
+         fhir:display [ fhir:v "Nurse manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309450009" ] ;
+         fhir:display [ fhir:v "Nurse administrator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309452001" ] ;
+         fhir:display [ fhir:v "Midwifery grade (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309453006" ] ;
+         fhir:display [ fhir:v "Registered midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309454000" ] ;
+         fhir:display [ fhir:v "Student midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309455004" ] ;
+         fhir:display [ fhir:v "Parentcraft sister (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309457007" ] ;
+         fhir:display [ fhir:v "Vicar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309459005" ] ;
+         fhir:display [ fhir:v "Healthcare professional grade (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "309460000" ] ;
+         fhir:display [ fhir:v "Restorative dentist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310170009" ] ;
+         fhir:display [ fhir:v "Pediatric audiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310171008" ] ;
+         fhir:display [ fhir:v "Immunopathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310172001" ] ;
+         fhir:display [ fhir:v "Audiological physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310173006" ] ;
+         fhir:display [ fhir:v "Clinical pharmacologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310174000" ] ;
+         fhir:display [ fhir:v "Private doctor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310175004" ] ;
+         fhir:display [ fhir:v "Agency nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310176003" ] ;
+         fhir:display [ fhir:v "Behavioral therapist nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310177007" ] ;
+         fhir:display [ fhir:v "Cardiac rehabilitation nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310178002" ] ;
+         fhir:display [ fhir:v "Genitourinary nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310179005" ] ;
+         fhir:display [ fhir:v "Rheumatology nurse specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310180008" ] ;
+         fhir:display [ fhir:v "Continence nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310181007" ] ;
+         fhir:display [ fhir:v "Contact tracing nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310182000" ] ;
+         fhir:display [ fhir:v "General nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310184004" ] ;
+         fhir:display [ fhir:v "Liaison nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310185003" ] ;
+         fhir:display [ fhir:v "Diabetic liaison nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310186002" ] ;
+         fhir:display [ fhir:v "Nurse psychotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310187006" ] ;
+         fhir:display [ fhir:v "Company nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310188001" ] ;
+         fhir:display [ fhir:v "Hospital midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310189009" ] ;
+         fhir:display [ fhir:v "Genetic counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310190000" ] ;
+         fhir:display [ fhir:v "Mental health counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310191001" ] ;
+         fhir:display [ fhir:v "Clinical psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310192008" ] ;
+         fhir:display [ fhir:v "Educational psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310193003" ] ;
+         fhir:display [ fhir:v "Coroner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310194009" ] ;
+         fhir:display [ fhir:v "Appliance officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "310512001" ] ;
+         fhir:display [ fhir:v "Medical oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "311441001" ] ;
+         fhir:display [ fhir:v "School medical officer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "312485001" ] ;
+         fhir:display [ fhir:v "Integrated midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "3430008" ] ;
+         fhir:display [ fhir:v "Radiation therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "36682004" ] ;
+         fhir:display [ fhir:v "Physiotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "37154003" ] ;
+         fhir:display [ fhir:v "Periodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "372102007" ] ;
+         fhir:display [ fhir:v "Registered nurse first assist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "373864002" ] ;
+         fhir:display [ fhir:v "Outpatient (person)" ]
+       ] [
+         fhir:code [ fhir:v "37504001" ] ;
+         fhir:display [ fhir:v "Orthodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "3842006" ] ;
+         fhir:display [ fhir:v "Chiropractor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "387619007" ] ;
+         fhir:display [ fhir:v "Optician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "394572006" ] ;
+         fhir:display [ fhir:v "Medical secretary (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "394618009" ] ;
+         fhir:display [ fhir:v "Hospital nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "39677007" ] ;
+         fhir:display [ fhir:v "Internal medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "397897005" ] ;
+         fhir:display [ fhir:v "Paramedic (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "397903001" ] ;
+         fhir:display [ fhir:v "Staff grade obstetrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "397908005" ] ;
+         fhir:display [ fhir:v "Staff grade practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "3981000175106" ] ;
+         fhir:display [ fhir:v "Nurse complex case manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "398130009" ] ;
+         fhir:display [ fhir:v "Medical student (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "398238009" ] ;
+         fhir:display [ fhir:v "Acting obstetric registrar (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "40127002" ] ;
+         fhir:display [ fhir:v "Dietitian (general) (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "40204001" ] ;
+         fhir:display [ fhir:v "Hematologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "404940000" ] ;
+         fhir:display [ fhir:v "Physiotherapist technical instructor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405277009" ] ;
+         fhir:display [ fhir:v "Resident physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405278004" ] ;
+         fhir:display [ fhir:v "Certified registered nurse anesthetist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405279007" ] ;
+         fhir:display [ fhir:v "Attending physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405623001" ] ;
+         fhir:display [ fhir:v "Assigned practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405684005" ] ;
+         fhir:display [ fhir:v "Professional initiating surgical case (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "405685006" ] ;
+         fhir:display [ fhir:v "Professional providing staff relief during surgical procedure (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "40570005" ] ;
+         fhir:display [ fhir:v "Interpreter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "407542009" ] ;
+         fhir:display [ fhir:v "Informal caregiver (person)" ]
+       ] [
+         fhir:code [ fhir:v "407543004" ] ;
+         fhir:display [ fhir:v "Primary caregiver (person)" ]
+       ] [
+         fhir:code [ fhir:v "408290003" ] ;
+         fhir:display [ fhir:v "Diabetes key contact (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "408798009" ] ;
+         fhir:display [ fhir:v "Consultant pediatrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "408799001" ] ;
+         fhir:display [ fhir:v "Consultant neonatologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "409974004" ] ;
+         fhir:display [ fhir:v "Health educator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "409975003" ] ;
+         fhir:display [ fhir:v "Certified health education specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "413854007" ] ;
+         fhir:display [ fhir:v "Circulating nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "415075003" ] ;
+         fhir:display [ fhir:v "Perioperative nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "415506007" ] ;
+         fhir:display [ fhir:v "Scrub nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "416034003" ] ;
+         fhir:display [ fhir:v "Primary screener (person)" ]
+       ] [
+         fhir:code [ fhir:v "416035002" ] ;
+         fhir:display [ fhir:v "Secondary screener (person)" ]
+       ] [
+         fhir:code [ fhir:v "416160000" ] ;
+         fhir:display [ fhir:v "Fellow of American Academy of Osteopathy (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "4162009" ] ;
+         fhir:display [ fhir:v "Dental assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "41672002" ] ;
+         fhir:display [ fhir:v "Respiratory disease specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "416800000" ] ;
+         fhir:display [ fhir:v "Inpatient (person)" ]
+       ] [
+         fhir:code [ fhir:v "41904004" ] ;
+         fhir:display [ fhir:v "Medical X-ray technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "420158005" ] ;
+         fhir:display [ fhir:v "Performer of method (person)" ]
+       ] [
+         fhir:code [ fhir:v "420409002" ] ;
+         fhir:display [ fhir:v "Oculoplastic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "420678001" ] ;
+         fhir:display [ fhir:v "Retinal surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "421841007" ] ;
+         fhir:display [ fhir:v "Admitting physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "422140007" ] ;
+         fhir:display [ fhir:v "Medical ophthalmologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "422234006" ] ;
+         fhir:display [ fhir:v "Ophthalmologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "428024001" ] ;
+         fhir:display [ fhir:v "Clinical trial participant (person)" ]
+       ] [
+         fhir:code [ fhir:v "429577009" ] ;
+         fhir:display [ fhir:v "Patient advocate (person)" ]
+       ] [
+         fhir:code [ fhir:v "43018001" ] ;
+         fhir:display [ fhir:v "Babysitter (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "432100008" ] ;
+         fhir:display [ fhir:v "Health coach (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "43702002" ] ;
+         fhir:display [ fhir:v "Occupational health nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "440051000124108" ] ;
+         fhir:display [ fhir:v "Medical examiner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "442251000124100" ] ;
+         fhir:display [ fhir:v "Licensed practical nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "442867008" ] ;
+         fhir:display [ fhir:v "Respiratory therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "443090005" ] ;
+         fhir:display [ fhir:v "Podiatric surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "444912007" ] ;
+         fhir:display [ fhir:v "Hypnotherapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "445313000" ] ;
+         fhir:display [ fhir:v "Asthma nurse specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "445451001" ] ;
+         fhir:display [ fhir:v "Nurse case manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "445521000124102" ] ;
+         fhir:display [ fhir:v "Advanced practice midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "445531000124104" ] ;
+         fhir:display [ fhir:v "Lay midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "446050000" ] ;
+         fhir:display [ fhir:v "Primary care physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "44652006" ] ;
+         fhir:display [ fhir:v "Pharmaceutical assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "446701002" ] ;
+         fhir:display [ fhir:v "Addiction medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "449161006" ] ;
+         fhir:display [ fhir:v "Physician assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "450044741000087104" ] ;
+         fhir:display [ fhir:v "Acupuncturist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45181000087107" ] ;
+         fhir:display [ fhir:v "Pediatric ophthalmologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45191000087109" ] ;
+         fhir:display [ fhir:v "Pediatric otorhinolaryngologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45201000087106" ] ;
+         fhir:display [ fhir:v "Pediatric urologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "453061000124100" ] ;
+         fhir:display [ fhir:v "Pharmacist specialist (person)" ]
+       ] [
+         fhir:code [ fhir:v "453071000124107" ] ;
+         fhir:display [ fhir:v "Primary care pharmacist (person)" ]
+       ] [
+         fhir:code [ fhir:v "453081000124105" ] ;
+         fhir:display [ fhir:v "Infusion pharmacist (person)" ]
+       ] [
+         fhir:code [ fhir:v "453091000124108" ] ;
+         fhir:display [ fhir:v "Receiving provider (person)" ]
+       ] [
+         fhir:code [ fhir:v "453101000124102" ] ;
+         fhir:display [ fhir:v "Consultant pharmacist (person)" ]
+       ] [
+         fhir:code [ fhir:v "453111000124104" ] ;
+         fhir:display [ fhir:v "Dispensing pharmacist (person)" ]
+       ] [
+         fhir:code [ fhir:v "453121000124107" ] ;
+         fhir:display [ fhir:v "Emergency department healthcare professional (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "453231000124104" ] ;
+         fhir:display [ fhir:v "Primary care provider (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45440000" ] ;
+         fhir:display [ fhir:v "Rheumatologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45544007" ] ;
+         fhir:display [ fhir:v "Neurosurgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "457141000124107" ] ;
+         fhir:display [ fhir:v "Locum tenens attending physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "457151000124109" ] ;
+         fhir:display [ fhir:v "Locum tenens admitting physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "45956004" ] ;
+         fhir:display [ fhir:v "Sanitarian (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "46255001" ] ;
+         fhir:display [ fhir:v "Pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "471302004" ] ;
+         fhir:display [ fhir:v "Government midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "48639005" ] ;
+         fhir:display [ fhir:v "Ordained minister (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "48740002" ] ;
+         fhir:display [ fhir:v "Philologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "49203003" ] ;
+         fhir:display [ fhir:v "Dispensing optician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "49993003" ] ;
+         fhir:display [ fhir:v "Oral surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "50149000" ] ;
+         fhir:display [ fhir:v "Endodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "50681000087109" ] ;
+         fhir:display [ fhir:v "Bariatric surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "5191000124109" ] ;
+         fhir:display [ fhir:v "Private midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "5275007" ] ;
+         fhir:display [ fhir:v "Auxiliary nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "53564008" ] ;
+         fhir:display [ fhir:v "Ordained clergy (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "54503009" ] ;
+         fhir:display [ fhir:v "Faith healer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "56397003" ] ;
+         fhir:display [ fhir:v "Neurologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "56466003" ] ;
+         fhir:display [ fhir:v "Public health physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "56542007" ] ;
+         fhir:display [ fhir:v "Medical record administrator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "56545009" ] ;
+         fhir:display [ fhir:v "Cardiovascular surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "57654006" ] ;
+         fhir:display [ fhir:v "Fixed prosthodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "59058001" ] ;
+         fhir:display [ fhir:v "General physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "59169001" ] ;
+         fhir:display [ fhir:v "Orthopedic technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "59317003" ] ;
+         fhir:display [ fhir:v "Dental prosthesis maker and repairer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "59944000" ] ;
+         fhir:display [ fhir:v "Psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "60008001" ] ;
+         fhir:display [ fhir:v "Public health nutritionist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "611581000124105" ] ;
+         fhir:display [ fhir:v "Cognitive neuropsychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "611601000124100" ] ;
+         fhir:display [ fhir:v "Neonatal nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "611611000124102" ] ;
+         fhir:display [ fhir:v "Counseling psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "611621000124105" ] ;
+         fhir:display [ fhir:v "Clinical neuropsychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "611701000124107" ] ;
+         fhir:display [ fhir:v "Sleep psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "61207006" ] ;
+         fhir:display [ fhir:v "Medical pathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "61246008" ] ;
+         fhir:display [ fhir:v "Laboratory medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "61345009" ] ;
+         fhir:display [ fhir:v "Otorhinolaryngologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "61894003" ] ;
+         fhir:display [ fhir:v "Endocrinologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "62247001" ] ;
+         fhir:display [ fhir:v "Family medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "63098009" ] ;
+         fhir:display [ fhir:v "Clinical immunologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "64220005" ] ;
+         fhir:display [ fhir:v "Religious worker (member of religious order) (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "651501000124106" ] ;
+         fhir:display [ fhir:v "Pediatric emergency medicine physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "65803006" ] ;
+         fhir:display [ fhir:v "Missionary (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "66476003" ] ;
+         fhir:display [ fhir:v "Oral pathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "66862007" ] ;
+         fhir:display [ fhir:v "Radiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "671101000124102" ] ;
+         fhir:display [ fhir:v "Family nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "67811000052107" ] ;
+         fhir:display [ fhir:v "Pediatric hematology and oncology physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "6816002" ] ;
+         fhir:display [ fhir:v "Specialized nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "68191000052106" ] ;
+         fhir:display [ fhir:v "Neuropsychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "6868009" ] ;
+         fhir:display [ fhir:v "Hospital administrator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "68867008" ] ;
+         fhir:display [ fhir:v "Public health dentist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "68950000" ] ;
+         fhir:display [ fhir:v "Prosthodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "69280009" ] ;
+         fhir:display [ fhir:v "Specialized physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "71838004" ] ;
+         fhir:display [ fhir:v "Gastroenterologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "720503005" ] ;
+         fhir:display [ fhir:v "Sleep medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721936008" ] ;
+         fhir:display [ fhir:v "Occupation medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721937004" ] ;
+         fhir:display [ fhir:v "Preventive medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721938009" ] ;
+         fhir:display [ fhir:v "Tropical medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721939001" ] ;
+         fhir:display [ fhir:v "Vascular medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721940004" ] ;
+         fhir:display [ fhir:v "Legal medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721941000" ] ;
+         fhir:display [ fhir:v "Health psychologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721942007" ] ;
+         fhir:display [ fhir:v "Cardiovascular perfusionist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "721943002" ] ;
+         fhir:display [ fhir:v "Clinical immunology and allergy specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "73265009" ] ;
+         fhir:display [ fhir:v "Nursing aid (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "734293001" ] ;
+         fhir:display [ fhir:v "Clinical pharmacist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "734294007" ] ;
+         fhir:display [ fhir:v "Pharmacist prescriber (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "75271001" ] ;
+         fhir:display [ fhir:v "Professional midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "76166008" ] ;
+         fhir:display [ fhir:v "Practical aid (pharmacy) (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "76231001" ] ;
+         fhir:display [ fhir:v "Osteopath (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "763292005" ] ;
+         fhir:display [ fhir:v "Radiation oncologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768730001" ] ;
+         fhir:display [ fhir:v "Home health aide (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768731002" ] ;
+         fhir:display [ fhir:v "Home helper (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768732009" ] ;
+         fhir:display [ fhir:v "School health educator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768733004" ] ;
+         fhir:display [ fhir:v "Spiritual advisor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768734005" ] ;
+         fhir:display [ fhir:v "Research study coordinator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768815003" ] ;
+         fhir:display [ fhir:v "Investigative specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768816002" ] ;
+         fhir:display [ fhir:v "Associate investigator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768817006" ] ;
+         fhir:display [ fhir:v "Co-principal investigator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768818001" ] ;
+         fhir:display [ fhir:v "Principal investigator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768819009" ] ;
+         fhir:display [ fhir:v "Medically responsible investigator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768820003" ] ;
+         fhir:display [ fhir:v "Care coordinator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768821004" ] ;
+         fhir:display [ fhir:v "Care team coordinator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768822006" ] ;
+         fhir:display [ fhir:v "Rehabilitation coordinator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768825008" ] ;
+         fhir:display [ fhir:v "Doula (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768826009" ] ;
+         fhir:display [ fhir:v "Crisis counselor (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768827000" ] ;
+         fhir:display [ fhir:v "Nutritionist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768828005" ] ;
+         fhir:display [ fhir:v "Epidemiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768829002" ] ;
+         fhir:display [ fhir:v "Community dietician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768832004" ] ;
+         fhir:display [ fhir:v "Case manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768833009" ] ;
+         fhir:display [ fhir:v "Discharging physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768834003" ] ;
+         fhir:display [ fhir:v "Disease manager (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768836001" ] ;
+         fhir:display [ fhir:v "Patient navigator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768837005" ] ;
+         fhir:display [ fhir:v "Hospitalist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "768839008" ] ;
+         fhir:display [ fhir:v "Consultant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "76899008" ] ;
+         fhir:display [ fhir:v "Infectious disease specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "769038007" ] ;
+         fhir:display [ fhir:v "Researcher (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "78703002" ] ;
+         fhir:display [ fhir:v "General surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "78729002" ] ;
+         fhir:display [ fhir:v "Diagnostic radiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "789543004" ] ;
+         fhir:display [ fhir:v "Sonographer (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "79898004" ] ;
+         fhir:display [ fhir:v "Auxiliary midwife (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "79918004" ] ;
+         fhir:display [ fhir:v "Ordained priest (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "80409005" ] ;
+         fhir:display [ fhir:v "Translator (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "80546007" ] ;
+         fhir:display [ fhir:v "Occupational therapist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "80584001" ] ;
+         fhir:display [ fhir:v "Psychiatrist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "80933006" ] ;
+         fhir:display [ fhir:v "Nuclear medicine specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "81464008" ] ;
+         fhir:display [ fhir:v "Clinical pathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "82296001" ] ;
+         fhir:display [ fhir:v "Pediatrician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "83273008" ] ;
+         fhir:display [ fhir:v "Anatomic pathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "83685006" ] ;
+         fhir:display [ fhir:v "Gynecologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "840583002" ] ;
+         fhir:display [ fhir:v "Allied health assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "840584008" ] ;
+         fhir:display [ fhir:v "Allied health student (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "85733003" ] ;
+         fhir:display [ fhir:v "General pathologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "8724009" ] ;
+         fhir:display [ fhir:v "Plastic surgeon (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "878785002" ] ;
+         fhir:display [ fhir:v "Clinical respiratory physiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "878786001" ] ;
+         fhir:display [ fhir:v "Operating room technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "878787005" ] ;
+         fhir:display [ fhir:v "Anesthesia technician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "88189002" ] ;
+         fhir:display [ fhir:v "Anesthesiologist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "897187007" ] ;
+         fhir:display [ fhir:v "Sexual assault nurse examiner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "90201008" ] ;
+         fhir:display [ fhir:v "Pedodontist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "90655003" ] ;
+         fhir:display [ fhir:v "Geriatrics specialist (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "90981000221101" ] ;
+         fhir:display [ fhir:v "Endoscopist physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "9371000175105" ] ;
+         fhir:display [ fhir:v "Adolescent medicine specialist (occupation)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

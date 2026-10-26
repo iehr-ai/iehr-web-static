@@ -1,0 +1,628 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAdvanceDirectivesContentType",
+      "title" : "IE Core Advance Directives Content Type",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify Advance Directives Content",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.35"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.35"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-healthcare-directive-categories-grouper",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAdvanceHealthcareDirectiveCategoriesGrouper",
+      "title" : "IE Core Advance Healthcare Directive Categories Grouper",
+      "description" : "A set of LOINC concepts to classify Advance Healthcare Directive Categories Grouper",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.36"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.36"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAlcoholDrinkingStatus",
+      "title" : "IE Core Drinking Status",
+      "description" : "The Drinking Status value set includes values that may be used to represent an individual’s current behaviour of alcohol drinking.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.57"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.57"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAllergyIntoleranceSet",
+      "title" : "IE Core Allergy Intolerance Set",
+      "description" : "A set of IE Core, SNOMED_CT, and LOINC concepts to classify Allergy Intolerance Codes",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.52"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.52"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCareTeamMemberFunction",
+      "title" : "IE Core Care Team Member Function",
+      "description" : "A set of LOINC concepts to classify Care Team Member Function",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.39"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.39"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-note-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreClinicalNoteType",
+      "title" : "IE Core Clinical Note Type",
+      "description" : "The IE Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.3"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.3"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-result-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreClinicalResultObservationCategory",
+      "title" : "IE Core Clinical Result Observation Category",
+      "description" : "Used to classify the context of clinical result observations.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.4"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.4"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-condition-code",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreConditionCodes",
+      "title" : "IE Core Condition Codes",
+      "description" : "This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions). ICD-10 is appropriate for Diagnosis information.",
+      "systems" : [
+        "http://id.who.int/icd/release/11/mms",
+        "http://hl7.org/fhir/sid/icd-10"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.5"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.5"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-counties",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCounties",
+      "title" : "Ireland Counties",
+      "description" : "This value set defines county codes.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.2"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.2"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDiagnosticReportCategory",
+      "title" : "IE Core Diagnostic Report Category Codes",
+      "description" : "The IE Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.6"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.6"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-report-and-note-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreNonLaboratoryCodes",
+      "title" : "IE Core Non Laboratory Codes",
+      "description" : "This value set includes All LOINC codes defined as type \"clinical,\" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.7"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.7"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-discharge-disposition",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDischargeDisposition",
+      "title" : "IE Core Discharge Disposition",
+      "description" : "[National Uniform Billing Committee](http://www.nubc.org/), manual UB-04, UB form locator 17.",
+      "systems" : ["https://www.nubc.org/CodeSystem/PatDischargeStatus"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.8"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.8"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDocumentReferenceCategory",
+      "title" : "IE Core DocumentReference Category",
+      "description" : "The IE Core DocumentReferences Category Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-documentreference-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.9"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.9"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDocumentReferenceType",
+      "title" : "IE Core DocumentReference Type",
+      "description" : "The IE Core DocumentReference Type Value Set includes all LOINC values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'",
+      "systems" : [
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.10"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.10"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-encounter-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreEncounterType",
+      "title" : "IE Core Encounter Type",
+      "description" : "The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and codes from the Current Procedure and Terminology (CPT) found in the following CPT sections:\n- 99211-99499 E/M - 99500-99600 home health (mainly nonphysician, such as newborn care in home) - 99605-99607 medication management - 98966-98968 non physician telephone services\n(subscription to AMA Required)",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.11"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.11"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ethnicity",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreEthnicity",
+      "title" : "IE Core ethnicity",
+      "description" : "This extension applies to the Patient, Person, and RelatedPerson resources and is used to indicate Ethnicity.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.1"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.1"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-gender-identity",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreGenderIdentity",
+      "title" : "IE Core Gender Identity",
+      "description" : "Gender Identity",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.49"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.49"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-goal-description",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreGoalCodes",
+      "title" : "IE Core Goal Codes",
+      "description" : "Concepts from CPT and LOINC code systems that can be used to indicate the goal.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.12"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.12"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-healthcare-provider-taxonomy",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHealthcareProviderTaxonomy",
+      "title" : "IE Core Healthcare Provider Taxonomy",
+      "description" : "A set of concepts to classify Healthcare Provider Taxonomy",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-healthcare-provider-taxonomy-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.40"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.40"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-record-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierRecordStatus",
+      "title" : "IE Core Individual Healthcare Identifier Record Status",
+      "description" : "The Individual Healthcare Identifier Record Status value set includes values that may be used to describe the classification status of a record of an Individual Healthcare Identifier.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.31"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.31"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierStatus",
+      "title" : "IE Core Individual Healthcare Identifier Status",
+      "description" : "The Individual Healthcare Identifier Status value set includes values that may be used to describe the classification status of an Individual Healthcare Identifier.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.32"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.32"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-information-source-for-medication-adherence",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreInformationSourceForMedicationAdherence",
+      "title" : "IE Core Information Source for Medication Adherence",
+      "description" : "A set of concepts to classify Information Source for Medication Adherence",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.41"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.41"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-laboratory-test-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreLaboratoryTestCodes",
+      "title" : "IE Core Laboratory Test Codes",
+      "description" : "Laboratory LOINC codes: From the introduction to August 2022 LOINC Users' guide; \"The current scope of the existing laboratory portion of the LOINC  database includes all observations reported by clinical laboratories, including the specialty areas: chemistry, including therapeutic drug monitoring and toxicology; hematology; serology; blood bank; microbiology; cytology; surgical pathology; and fertility.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.13"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.13"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-location-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreLocationType",
+      "title" : "IE Core Location Type",
+      "description" : "Concepts representing locations and settings where healthcare services are provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.14"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.14"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-adherence",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreMedicationAdherence",
+      "title" : "IE Core Medication Adherence",
+      "description" : "A set of SNOMED concepts to classify Medication Adherence",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.55"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.55"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreMedicationCodes",
+      "title" : "IE Core Medication Codes",
+      "description" : "Codes providing Medication used in Ireland.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.53"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.53"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-narrative-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "NarrativeStatus",
+      "title" : "IE Core Narrative Status",
+      "description" : "The IE Core Narrative Status Value Set limits the text status for the resource narrative.",
+      "systems" : ["http://hl7.org/fhir/narrative-status"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.15"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.15"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-observation-smoking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreObservationSmokingStatus",
+      "title" : "IE Core Status for Smoking Status Observation",
+      "description" : "Codes providing the status of an observation for smoking status. Constrained to `final`and `entered-in-error`.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.16"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.16"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-payer-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePayerType",
+      "title" : "IE Core Payer Type",
+      "description" : "A set of concepts to classify Payer Type",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-payer-type-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.42"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.42"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-intent",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePregnancyIntentCodes",
+      "title" : "IE Core Pregnancy Intent Codes",
+      "description" : "This value set includes SNOMED CT codes and the HL7 V3 code for the concept \"unknown\".",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.17"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.17"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePregnancyStatusCodes",
+      "title" : "IE Core Pregnancy Status Codes",
+      "description" : "This value set includes SNOMED CT codes and the HL7 V3 code for the concept \"unknown\". These codes have historically been used to communicate the pregnancy status of a patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.18"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.18"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-problem-or-health-concern",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProblemOrHealthConcern",
+      "title" : "IE Core Problem or Health Concern",
+      "description" : "Code set for category codes for *IE Core Condition Problems and Health Concerns Profile* consisting of the concepts \"problem\" and \"health-concern\".",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/condition-category",
+        "http://iehr.ai/fhir/ie/core/CodeSystem/condition-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.19"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.19"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-procedure-code",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProcedureCodes",
+      "title" : "IE Core Procedure Codes",
+      "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+      "systems" : [
+        "http://www.ada.org/cdt",
+        "http://www.ama-assn.org/go/cpt",
+        "http://loinc.org",
+        "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "http://www.cms.gov/Medicare/Coding/ICD10",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.20"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.20"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-provenance-participant-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProvenancePaticipantTypeCodes",
+      "title" : "IE Core Provenance Participant Type Codes",
+      "description" : "The type of participation a provenance agent played for a given target.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.21"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.21"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-condition-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreScreeningAssessmentConditionCategory",
+      "title" : "IE Core Screening Assessment Condition Category",
+      "description" : "Category codes used in the IE Core Condition Screening Assessment Profile to help identify the type of IECDI Health Status/Assessment data class being reported.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.22"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.22"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreScreeningAssessmentObservationCategory",
+      "title" : "IE Core Screening Assessment Observation Category",
+      "description" : "Category codes used in the IE Core Observation Screening Assessment Profile to help identify the type of IECDI Health Status/Assessment data class being reported.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.23"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.23"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-servicerequest-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreServiceRequestCategoryCodes",
+      "title" : "IE Core ServiceRequest Category Codes",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify a requested service",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.24"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.24"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-sexual-orientation-including-data-absent-reason",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSexualOrientationIncludingNullsAndDataAbsentReason",
+      "title" : "IE Core Sexual Orientation Including nulls and Data Absent Reason",
+      "description" : "Sexual Orientation Including nulls and Data Absent Reason",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.43"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.43"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-simple-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSimpleObservationCategory",
+      "title" : "IE Core Simple Observation Category",
+      "description" : "Used to classify the context of a survey, screening or assessment for simple observations and may be used to assist with indexing and searching for appropriate instances.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+        "http://terminology.hl7.org/CodeSystem/observation-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.25"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.25"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatus",
+      "title" : "IE Core Smoking Status",
+      "description" : "The Smoking Status value set includes values that may be used to represent an individual’s current behaviour of tobacco smoking.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.51"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.51"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatusComprehensive",
+      "title" : "IE Core Smoking status comprehensive",
+      "description" : "A set of SNOMED concepts to classify Smoking status comprehensive",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.44"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.44"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatusType",
+      "title" : "IE Core Smoking Status Type",
+      "description" : "A set of LOINC concepts to classify Smoking Status Type",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.45"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.45"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-condition",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSpecimenCondition",
+      "title" : "IE Core Specimen Condition",
+      "description" : "This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0493",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.26"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.26"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSpecimenType",
+      "title" : "IE Core Specimen type",
+      "description" : "A set of SNOMED concepts to classify Specimen type",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.46"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.46"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-survey-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSurveyCodes",
+      "title" : "IE Core Survey Codes",
+      "description" : "This value set includes screening and assessment panel codes in LOINC (Refer to [Appendix A](https://loinc.org/kb/users-guide/loinc-database-structure/) of LOINC Users' Guide).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.27"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.27"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-v2-0203-extended",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHl7VSIdentifierTypeExtended",
+      "title" : "hl7VS-identifierType - IE Extended",
+      "description" : "Extended value set of identifier types for use in an Irish context. Includes HL7 international codes plus Irish additions to create a complete set. NOTE: codes contained LACN Laboratory Accession ID and ACN Accession ID are exclusive concepts and not consider related in this terminology.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.56"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.56"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreVaccines",
+      "title" : "IE Core Vaccines",
+      "description" : "A set of concepts to classify Vaccines Administered Vaccine Set",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.54"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.54"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vital-sign-result-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreVitalSignResultType",
+      "title" : "IE Core Vital Sign Result Type",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify Vital Sign Result Type",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.48"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.48"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-yes-no-unknowns",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreYesNoAndUnknowns",
+      "title" : "IE Core Yes, No, and Unknowns",
+      "description" : "Yes, No, and Unknowns",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.50"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.50"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/simple-language",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+      "title" : "Language codes with language and optionally a region modifier",
+      "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.29"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.29"]
+    }
+  ]
+}

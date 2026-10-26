@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-procedure-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-procedure-code</b></p><a name=\"ie-core-procedure-code\"> </a><a name=\"hcie-core-procedure-code\"> </a><a name=\"ie-core-procedure-code-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-CPT.html\"><code>http://www.ama-assn.org/go/cpt</code></a></li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 71388002 (Procedure)</li><li>Include all codes defined in <code>https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets</code></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10PCS.html\"><code>http://www.cms.gov/Medicare/Coding/ICD10</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-CDT.html\"><code>http://www.ada.org/cdt</code></a></li><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-procedure-code",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.20"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreProcedureCodes",
+  "title" : "IE Core Procedure Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.ama-assn.org/go/cpt"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "system" : "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets"
+    },
+    {
+      "system" : "http://www.cms.gov/Medicare/Coding/ICD10"
+    },
+    {
+      "system" : "http://www.ada.org/cdt"
+    },
+    {
+      "system" : "http://loinc.org"
+    }]
+  }
+}

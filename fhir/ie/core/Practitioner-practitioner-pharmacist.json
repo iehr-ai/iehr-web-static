@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-pharmacist",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Practitioner Pharmacist Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a pharmacist example using the *IE Core Practitioner Profile*."
+    }],
+    "profile" : ["http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-pharmacist</b></p><a name=\"practitioner-pharmacist\"> </a><a name=\"hcpractitioner-pharmacist\"> </a><a name=\"practitioner-pharmacist-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ie-core-practitioner.html\">IE Core Practitioner Profile</a></p></div><p><b>identifier</b>: <code>http://iehr.ai/fhir/sid/ie/crn</code>/3412549073</p><p><b>name</b>: Dispenser Douglas </p><p><b>address</b>: 1015 HEALTHCARE DR AMHERST Dublin D18 CV48 (work)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://iehr.ai/fhir/sid/ie/crn",
+    "value" : "3412549073"
+  }],
+  "name" : [{
+    "family" : "Douglas",
+    "given" : ["Dispenser"],
+    "prefix" : ["PharmD"]
+  }],
+  "address" : [{
+    "use" : "work",
+    "line" : ["1015 HEALTHCARE DR"],
+    "city" : "AMHERST",
+    "state" : "Dublin",
+    "postalCode" : "D18 CV48"
+  }]
+}

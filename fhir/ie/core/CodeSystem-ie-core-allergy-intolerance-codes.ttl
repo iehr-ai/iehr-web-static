@@ -1,0 +1,1776 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-allergy-intolerance-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-allergy-intolerance-codes</b></p><a name=\"ie-core-allergy-intolerance-codes\"> </a><a name=\"hcie-core-allergy-intolerance-codes\"> </a><a name=\"ie-core-allergy-intolerance-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1002293<a name=\"ie-core-allergy-intolerance-codes-1002293\"> </a></td><td>formoterol / mometasone</td></tr><tr><td style=\"white-space:nowrap\">1007388<a name=\"ie-core-allergy-intolerance-codes-1007388\"> </a></td><td>lactase / rennet</td></tr><tr><td style=\"white-space:nowrap\">1008298<a name=\"ie-core-allergy-intolerance-codes-1008298\"> </a></td><td>acetaminophen / caffeine / chlorpheniramine / hydrocodone / phenylephrine</td></tr><tr><td style=\"white-space:nowrap\">1008519<a name=\"ie-core-allergy-intolerance-codes-1008519\"> </a></td><td>guaiacolsulfonate / hydrocodone</td></tr><tr><td style=\"white-space:nowrap\">1009148<a name=\"ie-core-allergy-intolerance-codes-1009148\"> </a></td><td>ampicillin / sulbactam</td></tr><tr><td style=\"white-space:nowrap\">10109<a name=\"ie-core-allergy-intolerance-codes-10109\"> </a></td><td>streptomycin</td></tr><tr><td style=\"white-space:nowrap\">10154<a name=\"ie-core-allergy-intolerance-codes-10154\"> </a></td><td>succinylcholine</td></tr><tr><td style=\"white-space:nowrap\">10156<a name=\"ie-core-allergy-intolerance-codes-10156\"> </a></td><td>sucralfate</td></tr><tr><td style=\"white-space:nowrap\">10169<a name=\"ie-core-allergy-intolerance-codes-10169\"> </a></td><td>sulfacetamide</td></tr><tr><td style=\"white-space:nowrap\">10171<a name=\"ie-core-allergy-intolerance-codes-10171\"> </a></td><td>sulfadiazine</td></tr><tr><td style=\"white-space:nowrap\">10180<a name=\"ie-core-allergy-intolerance-codes-10180\"> </a></td><td>sulfamethoxazole</td></tr><tr><td style=\"white-space:nowrap\">10207<a name=\"ie-core-allergy-intolerance-codes-10207\"> </a></td><td>sulfisoxazole</td></tr><tr><td style=\"white-space:nowrap\">10223<a name=\"ie-core-allergy-intolerance-codes-10223\"> </a></td><td>sulfur</td></tr><tr><td style=\"white-space:nowrap\">10237<a name=\"ie-core-allergy-intolerance-codes-10237\"> </a></td><td>sulindac</td></tr><tr><td style=\"white-space:nowrap\">10324<a name=\"ie-core-allergy-intolerance-codes-10324\"> </a></td><td>tamoxifen</td></tr><tr><td style=\"white-space:nowrap\">10355<a name=\"ie-core-allergy-intolerance-codes-10355\"> </a></td><td>temazepam</td></tr><tr><td style=\"white-space:nowrap\">10368<a name=\"ie-core-allergy-intolerance-codes-10368\"> </a></td><td>terbutaline</td></tr><tr><td style=\"white-space:nowrap\">1037042<a name=\"ie-core-allergy-intolerance-codes-1037042\"> </a></td><td>dabigatran etexilate</td></tr><tr><td style=\"white-space:nowrap\">10379<a name=\"ie-core-allergy-intolerance-codes-10379\"> </a></td><td>testosterone</td></tr><tr><td style=\"white-space:nowrap\">10395<a name=\"ie-core-allergy-intolerance-codes-10395\"> </a></td><td>tetracycline</td></tr><tr><td style=\"white-space:nowrap\">103990<a name=\"ie-core-allergy-intolerance-codes-103990\"> </a></td><td>carbidopa / levodopa</td></tr><tr><td style=\"white-space:nowrap\">1040028<a name=\"ie-core-allergy-intolerance-codes-1040028\"> </a></td><td>lurasidone</td></tr><tr><td style=\"white-space:nowrap\">10438<a name=\"ie-core-allergy-intolerance-codes-10438\"> </a></td><td>theophylline</td></tr><tr><td style=\"white-space:nowrap\">10472<a name=\"ie-core-allergy-intolerance-codes-10472\"> </a></td><td>thimerosal</td></tr><tr><td style=\"white-space:nowrap\">10493<a name=\"ie-core-allergy-intolerance-codes-10493\"> </a></td><td>thiopental</td></tr><tr><td style=\"white-space:nowrap\">10502<a name=\"ie-core-allergy-intolerance-codes-10502\"> </a></td><td>thioridazine</td></tr><tr><td style=\"white-space:nowrap\">10510<a name=\"ie-core-allergy-intolerance-codes-10510\"> </a></td><td>thiothixene</td></tr><tr><td style=\"white-space:nowrap\">10582<a name=\"ie-core-allergy-intolerance-codes-10582\"> </a></td><td>levothyroxine</td></tr><tr><td style=\"white-space:nowrap\">10594<a name=\"ie-core-allergy-intolerance-codes-10594\"> </a></td><td>ticlopidine</td></tr><tr><td style=\"white-space:nowrap\">10600<a name=\"ie-core-allergy-intolerance-codes-10600\"> </a></td><td>timolol</td></tr><tr><td style=\"white-space:nowrap\">10627<a name=\"ie-core-allergy-intolerance-codes-10627\"> </a></td><td>tobramycin</td></tr><tr><td style=\"white-space:nowrap\">10636<a name=\"ie-core-allergy-intolerance-codes-10636\"> </a></td><td>tolmetin</td></tr><tr><td style=\"white-space:nowrap\">10689<a name=\"ie-core-allergy-intolerance-codes-10689\"> </a></td><td>tramadol</td></tr><tr><td style=\"white-space:nowrap\">10737<a name=\"ie-core-allergy-intolerance-codes-10737\"> </a></td><td>trazodone</td></tr><tr><td style=\"white-space:nowrap\">10759<a name=\"ie-core-allergy-intolerance-codes-10759\"> </a></td><td>triamcinolone</td></tr><tr><td style=\"white-space:nowrap\">107602<a name=\"ie-core-allergy-intolerance-codes-107602\"> </a></td><td>epinephrine / lidocaine</td></tr><tr><td style=\"white-space:nowrap\">10763<a name=\"ie-core-allergy-intolerance-codes-10763\"> </a></td><td>triamterene</td></tr><tr><td style=\"white-space:nowrap\">10767<a name=\"ie-core-allergy-intolerance-codes-10767\"> </a></td><td>triazolam</td></tr><tr><td style=\"white-space:nowrap\">10800<a name=\"ie-core-allergy-intolerance-codes-10800\"> </a></td><td>trifluoperazine</td></tr><tr><td style=\"white-space:nowrap\">108118<a name=\"ie-core-allergy-intolerance-codes-108118\"> </a></td><td>mometasone</td></tr><tr><td style=\"white-space:nowrap\">10829<a name=\"ie-core-allergy-intolerance-codes-10829\"> </a></td><td>trimethoprim</td></tr><tr><td style=\"white-space:nowrap\">10831<a name=\"ie-core-allergy-intolerance-codes-10831\"> </a></td><td>sulfamethoxazole / trimethoprim</td></tr><tr><td style=\"white-space:nowrap\">11124<a name=\"ie-core-allergy-intolerance-codes-11124\"> </a></td><td>vancomycin</td></tr><tr><td style=\"white-space:nowrap\">1114195<a name=\"ie-core-allergy-intolerance-codes-1114195\"> </a></td><td>rivaroxaban</td></tr><tr><td style=\"white-space:nowrap\">1116632<a name=\"ie-core-allergy-intolerance-codes-1116632\"> </a></td><td>ticagrelor</td></tr><tr><td style=\"white-space:nowrap\">11170<a name=\"ie-core-allergy-intolerance-codes-11170\"> </a></td><td>verapamil</td></tr><tr><td style=\"white-space:nowrap\">11248<a name=\"ie-core-allergy-intolerance-codes-11248\"> </a></td><td>vitamin B12</td></tr><tr><td style=\"white-space:nowrap\">11253<a name=\"ie-core-allergy-intolerance-codes-11253\"> </a></td><td>vitamin D</td></tr><tr><td style=\"white-space:nowrap\">11256<a name=\"ie-core-allergy-intolerance-codes-11256\"> </a></td><td>vitamin E</td></tr><tr><td style=\"white-space:nowrap\">11289<a name=\"ie-core-allergy-intolerance-codes-11289\"> </a></td><td>warfarin</td></tr><tr><td style=\"white-space:nowrap\">113588<a name=\"ie-core-allergy-intolerance-codes-113588\"> </a></td><td>erythromycin / sulfisoxazole</td></tr><tr><td style=\"white-space:nowrap\">11416<a name=\"ie-core-allergy-intolerance-codes-11416\"> </a></td><td>zinc</td></tr><tr><td style=\"white-space:nowrap\">11423<a name=\"ie-core-allergy-intolerance-codes-11423\"> </a></td><td>zinc oxide</td></tr><tr><td style=\"white-space:nowrap\">114477<a name=\"ie-core-allergy-intolerance-codes-114477\"> </a></td><td>levetiracetam</td></tr><tr><td style=\"white-space:nowrap\">114970<a name=\"ie-core-allergy-intolerance-codes-114970\"> </a></td><td>zafirlukast</td></tr><tr><td style=\"white-space:nowrap\">114979<a name=\"ie-core-allergy-intolerance-codes-114979\"> </a></td><td>rabeprazole</td></tr><tr><td style=\"white-space:nowrap\">1151<a name=\"ie-core-allergy-intolerance-codes-1151\"> </a></td><td>ascorbic acid</td></tr><tr><td style=\"white-space:nowrap\">115264<a name=\"ie-core-allergy-intolerance-codes-115264\"> </a></td><td>ibandronate</td></tr><tr><td style=\"white-space:nowrap\">115552<a name=\"ie-core-allergy-intolerance-codes-115552\"> </a></td><td>trovafloxacin</td></tr><tr><td style=\"white-space:nowrap\">115698<a name=\"ie-core-allergy-intolerance-codes-115698\"> </a></td><td>ziprasidone</td></tr><tr><td style=\"white-space:nowrap\">1191<a name=\"ie-core-allergy-intolerance-codes-1191\"> </a></td><td>aspirin</td></tr><tr><td style=\"white-space:nowrap\">119565<a name=\"ie-core-allergy-intolerance-codes-119565\"> </a></td><td>tolterodine</td></tr><tr><td style=\"white-space:nowrap\">1202<a name=\"ie-core-allergy-intolerance-codes-1202\"> </a></td><td>atenolol</td></tr><tr><td style=\"white-space:nowrap\">121191<a name=\"ie-core-allergy-intolerance-codes-121191\"> </a></td><td>rituximab</td></tr><tr><td style=\"white-space:nowrap\">1223<a name=\"ie-core-allergy-intolerance-codes-1223\"> </a></td><td>atropine</td></tr><tr><td style=\"white-space:nowrap\">1256<a name=\"ie-core-allergy-intolerance-codes-1256\"> </a></td><td>azathioprine</td></tr><tr><td style=\"white-space:nowrap\">1272<a name=\"ie-core-allergy-intolerance-codes-1272\"> </a></td><td>aztreonam</td></tr><tr><td style=\"white-space:nowrap\">1291<a name=\"ie-core-allergy-intolerance-codes-1291\"> </a></td><td>bacitracin</td></tr><tr><td style=\"white-space:nowrap\">1292<a name=\"ie-core-allergy-intolerance-codes-1292\"> </a></td><td>baclofen</td></tr><tr><td style=\"white-space:nowrap\">1310171<a name=\"ie-core-allergy-intolerance-codes-1310171\"> </a></td><td>gadolinium</td></tr><tr><td style=\"white-space:nowrap\">1311085<a name=\"ie-core-allergy-intolerance-codes-1311085\"> </a></td><td>xanthine</td></tr><tr><td style=\"white-space:nowrap\">1311524<a name=\"ie-core-allergy-intolerance-codes-1311524\"> </a></td><td>aspartame</td></tr><tr><td style=\"white-space:nowrap\">1311629<a name=\"ie-core-allergy-intolerance-codes-1311629\"> </a></td><td>nickel</td></tr><tr><td style=\"white-space:nowrap\">1314891<a name=\"ie-core-allergy-intolerance-codes-1314891\"> </a></td><td>latex</td></tr><tr><td style=\"white-space:nowrap\">1331<a name=\"ie-core-allergy-intolerance-codes-1331\"> </a></td><td>barium sulfate</td></tr><tr><td style=\"white-space:nowrap\">134615<a name=\"ie-core-allergy-intolerance-codes-134615\"> </a></td><td>brimonidine</td></tr><tr><td style=\"white-space:nowrap\">1347<a name=\"ie-core-allergy-intolerance-codes-1347\"> </a></td><td>beclomethasone</td></tr><tr><td style=\"white-space:nowrap\">135447<a name=\"ie-core-allergy-intolerance-codes-135447\"> </a></td><td>donepezil</td></tr><tr><td style=\"white-space:nowrap\">135775<a name=\"ie-core-allergy-intolerance-codes-135775\"> </a></td><td>zolmitriptan</td></tr><tr><td style=\"white-space:nowrap\">1359<a name=\"ie-core-allergy-intolerance-codes-1359\"> </a></td><td>belladonna alkaloids</td></tr><tr><td style=\"white-space:nowrap\">1362879<a name=\"ie-core-allergy-intolerance-codes-1362879\"> </a></td><td>sulfur dioxide</td></tr><tr><td style=\"white-space:nowrap\">1363043<a name=\"ie-core-allergy-intolerance-codes-1363043\"> </a></td><td>ethyl ether</td></tr><tr><td style=\"white-space:nowrap\">136411<a name=\"ie-core-allergy-intolerance-codes-136411\"> </a></td><td>sildenafil</td></tr><tr><td style=\"white-space:nowrap\">1364430<a name=\"ie-core-allergy-intolerance-codes-1364430\"> </a></td><td>apixaban</td></tr><tr><td style=\"white-space:nowrap\">138099<a name=\"ie-core-allergy-intolerance-codes-138099\"> </a></td><td>gemifloxacin</td></tr><tr><td style=\"white-space:nowrap\">139462<a name=\"ie-core-allergy-intolerance-codes-139462\"> </a></td><td>moxifloxacin</td></tr><tr><td style=\"white-space:nowrap\">1399<a name=\"ie-core-allergy-intolerance-codes-1399\"> </a></td><td>benzocaine</td></tr><tr><td style=\"white-space:nowrap\">140587<a name=\"ie-core-allergy-intolerance-codes-140587\"> </a></td><td>celecoxib</td></tr><tr><td style=\"white-space:nowrap\">1406<a name=\"ie-core-allergy-intolerance-codes-1406\"> </a></td><td>benzoin resin</td></tr><tr><td style=\"white-space:nowrap\">141626<a name=\"ie-core-allergy-intolerance-codes-141626\"> </a></td><td>colesevelam</td></tr><tr><td style=\"white-space:nowrap\">1418<a name=\"ie-core-allergy-intolerance-codes-1418\"> </a></td><td>benzoyl peroxide</td></tr><tr><td style=\"white-space:nowrap\">1424<a name=\"ie-core-allergy-intolerance-codes-1424\"> </a></td><td>benztropine</td></tr><tr><td style=\"white-space:nowrap\">1514<a name=\"ie-core-allergy-intolerance-codes-1514\"> </a></td><td>betamethasone</td></tr><tr><td style=\"white-space:nowrap\">153970<a name=\"ie-core-allergy-intolerance-codes-153970\"> </a></td><td>hyoscyamine</td></tr><tr><td style=\"white-space:nowrap\">1596450<a name=\"ie-core-allergy-intolerance-codes-1596450\"> </a></td><td>gentamicin</td></tr><tr><td style=\"white-space:nowrap\">15996<a name=\"ie-core-allergy-intolerance-codes-15996\"> </a></td><td>mirtazapine</td></tr><tr><td style=\"white-space:nowrap\">161<a name=\"ie-core-allergy-intolerance-codes-161\"> </a></td><td>acetaminophen</td></tr><tr><td style=\"white-space:nowrap\">16681<a name=\"ie-core-allergy-intolerance-codes-16681\"> </a></td><td>acarbose</td></tr><tr><td style=\"white-space:nowrap\">167<a name=\"ie-core-allergy-intolerance-codes-167\"> </a></td><td>acetazolamide</td></tr><tr><td style=\"white-space:nowrap\">17128<a name=\"ie-core-allergy-intolerance-codes-17128\"> </a></td><td>lansoprazole</td></tr><tr><td style=\"white-space:nowrap\">1727875<a name=\"ie-core-allergy-intolerance-codes-1727875\"> </a></td><td>tetanus immune globulin</td></tr><tr><td style=\"white-space:nowrap\">17300<a name=\"ie-core-allergy-intolerance-codes-17300\"> </a></td><td>alfuzosin</td></tr><tr><td style=\"white-space:nowrap\">17767<a name=\"ie-core-allergy-intolerance-codes-17767\"> </a></td><td>amlodipine</td></tr><tr><td style=\"white-space:nowrap\">1827<a name=\"ie-core-allergy-intolerance-codes-1827\"> </a></td><td>buspirone</td></tr><tr><td style=\"white-space:nowrap\">183379<a name=\"ie-core-allergy-intolerance-codes-183379\"> </a></td><td>rivastigmine</td></tr><tr><td style=\"white-space:nowrap\">1841<a name=\"ie-core-allergy-intolerance-codes-1841\"> </a></td><td>butorphanol</td></tr><tr><td style=\"white-space:nowrap\">18631<a name=\"ie-core-allergy-intolerance-codes-18631\"> </a></td><td>azithromycin</td></tr><tr><td style=\"white-space:nowrap\">187832<a name=\"ie-core-allergy-intolerance-codes-187832\"> </a></td><td>pregabalin</td></tr><tr><td style=\"white-space:nowrap\">1886<a name=\"ie-core-allergy-intolerance-codes-1886\"> </a></td><td>caffeine</td></tr><tr><td style=\"white-space:nowrap\">18867<a name=\"ie-core-allergy-intolerance-codes-18867\"> </a></td><td>benazepril</td></tr><tr><td style=\"white-space:nowrap\">1895<a name=\"ie-core-allergy-intolerance-codes-1895\"> </a></td><td>calcium</td></tr><tr><td style=\"white-space:nowrap\">1897<a name=\"ie-core-allergy-intolerance-codes-1897\"> </a></td><td>calcium carbonate</td></tr><tr><td style=\"white-space:nowrap\">18993<a name=\"ie-core-allergy-intolerance-codes-18993\"> </a></td><td>benzonatate</td></tr><tr><td style=\"white-space:nowrap\">190376<a name=\"ie-core-allergy-intolerance-codes-190376\"> </a></td><td>linezolid</td></tr><tr><td style=\"white-space:nowrap\">191831<a name=\"ie-core-allergy-intolerance-codes-191831\"> </a></td><td>infliximab</td></tr><tr><td style=\"white-space:nowrap\">19478<a name=\"ie-core-allergy-intolerance-codes-19478\"> </a></td><td>bismuth subsalicylate</td></tr><tr><td style=\"white-space:nowrap\">19552<a name=\"ie-core-allergy-intolerance-codes-19552\"> </a></td><td>cefprozil</td></tr><tr><td style=\"white-space:nowrap\">19711<a name=\"ie-core-allergy-intolerance-codes-19711\"> </a></td><td>amoxicillin / clavulanate</td></tr><tr><td style=\"white-space:nowrap\">19831<a name=\"ie-core-allergy-intolerance-codes-19831\"> </a></td><td>budesonide</td></tr><tr><td style=\"white-space:nowrap\">1998<a name=\"ie-core-allergy-intolerance-codes-1998\"> </a></td><td>captopril</td></tr><tr><td style=\"white-space:nowrap\">2002<a name=\"ie-core-allergy-intolerance-codes-2002\"> </a></td><td>carbamazepine</td></tr><tr><td style=\"white-space:nowrap\">20352<a name=\"ie-core-allergy-intolerance-codes-20352\"> </a></td><td>carvedilol</td></tr><tr><td style=\"white-space:nowrap\">20481<a name=\"ie-core-allergy-intolerance-codes-20481\"> </a></td><td>cefepime</td></tr><tr><td style=\"white-space:nowrap\">20489<a name=\"ie-core-allergy-intolerance-codes-20489\"> </a></td><td>cefpodoxime</td></tr><tr><td style=\"white-space:nowrap\">20610<a name=\"ie-core-allergy-intolerance-codes-20610\"> </a></td><td>cetirizine</td></tr><tr><td style=\"white-space:nowrap\">2101<a name=\"ie-core-allergy-intolerance-codes-2101\"> </a></td><td>carisoprodol</td></tr><tr><td style=\"white-space:nowrap\">21107<a name=\"ie-core-allergy-intolerance-codes-21107\"> </a></td><td>cilostazol</td></tr><tr><td style=\"white-space:nowrap\">21183<a name=\"ie-core-allergy-intolerance-codes-21183\"> </a></td><td>citric acid</td></tr><tr><td style=\"white-space:nowrap\">21212<a name=\"ie-core-allergy-intolerance-codes-21212\"> </a></td><td>clarithromycin</td></tr><tr><td style=\"white-space:nowrap\">214130<a name=\"ie-core-allergy-intolerance-codes-214130\"> </a></td><td>acetaminophen / butalbital / caffeine</td></tr><tr><td style=\"white-space:nowrap\">214153<a name=\"ie-core-allergy-intolerance-codes-214153\"> </a></td><td>acetaminophen / dichloralphenazone / isometheptene</td></tr><tr><td style=\"white-space:nowrap\">214160<a name=\"ie-core-allergy-intolerance-codes-214160\"> </a></td><td>aspirin / butalbital / caffeine / codeine</td></tr><tr><td style=\"white-space:nowrap\">214181<a name=\"ie-core-allergy-intolerance-codes-214181\"> </a></td><td>acetaminophen / diphenhydramine</td></tr><tr><td style=\"white-space:nowrap\">214182<a name=\"ie-core-allergy-intolerance-codes-214182\"> </a></td><td>acetaminophen / hydrocodone</td></tr><tr><td style=\"white-space:nowrap\">214183<a name=\"ie-core-allergy-intolerance-codes-214183\"> </a></td><td>acetaminophen / oxycodone</td></tr><tr><td style=\"white-space:nowrap\">214199<a name=\"ie-core-allergy-intolerance-codes-214199\"> </a></td><td>albuterol / ipratropium</td></tr><tr><td style=\"white-space:nowrap\">214223<a name=\"ie-core-allergy-intolerance-codes-214223\"> </a></td><td>amlodipine / benazepril</td></tr><tr><td style=\"white-space:nowrap\">214250<a name=\"ie-core-allergy-intolerance-codes-214250\"> </a></td><td>aspirin / caffeine</td></tr><tr><td style=\"white-space:nowrap\">214256<a name=\"ie-core-allergy-intolerance-codes-214256\"> </a></td><td>aspirin / oxycodone</td></tr><tr><td style=\"white-space:nowrap\">214257<a name=\"ie-core-allergy-intolerance-codes-214257\"> </a></td><td>aspirin / pentazocine</td></tr><tr><td style=\"white-space:nowrap\">214317<a name=\"ie-core-allergy-intolerance-codes-214317\"> </a></td><td>bisoprolol / hydrochlorothiazide</td></tr><tr><td style=\"white-space:nowrap\">214336<a name=\"ie-core-allergy-intolerance-codes-214336\"> </a></td><td>caffeine / ergotamine</td></tr><tr><td style=\"white-space:nowrap\">214354<a name=\"ie-core-allergy-intolerance-codes-214354\"> </a></td><td>candesartan</td></tr><tr><td style=\"white-space:nowrap\">214364<a name=\"ie-core-allergy-intolerance-codes-214364\"> </a></td><td>carbinoxamine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214392<a name=\"ie-core-allergy-intolerance-codes-214392\"> </a></td><td>chlorpheniramine / hydrocodone</td></tr><tr><td style=\"white-space:nowrap\">214442<a name=\"ie-core-allergy-intolerance-codes-214442\"> </a></td><td>codeine / guaifenesin</td></tr><tr><td style=\"white-space:nowrap\">214445<a name=\"ie-core-allergy-intolerance-codes-214445\"> </a></td><td>codeine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214488<a name=\"ie-core-allergy-intolerance-codes-214488\"> </a></td><td>dextromethorphan / guaifenesin</td></tr><tr><td style=\"white-space:nowrap\">214502<a name=\"ie-core-allergy-intolerance-codes-214502\"> </a></td><td>diclofenac / misoprostol</td></tr><tr><td style=\"white-space:nowrap\">214555<a name=\"ie-core-allergy-intolerance-codes-214555\"> </a></td><td>etanercept</td></tr><tr><td style=\"white-space:nowrap\">214558<a name=\"ie-core-allergy-intolerance-codes-214558\"> </a></td><td>ethinyl estradiol / levonorgestrel</td></tr><tr><td style=\"white-space:nowrap\">214565<a name=\"ie-core-allergy-intolerance-codes-214565\"> </a></td><td>fexofenadine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214599<a name=\"ie-core-allergy-intolerance-codes-214599\"> </a></td><td>guaifenesin / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214614<a name=\"ie-core-allergy-intolerance-codes-214614\"> </a></td><td>homatropine / hydrocodone</td></tr><tr><td style=\"white-space:nowrap\">214617<a name=\"ie-core-allergy-intolerance-codes-214617\"> </a></td><td>hydrochlorothiazide / irbesartan</td></tr><tr><td style=\"white-space:nowrap\">214618<a name=\"ie-core-allergy-intolerance-codes-214618\"> </a></td><td>hydrochlorothiazide / lisinopril</td></tr><tr><td style=\"white-space:nowrap\">214619<a name=\"ie-core-allergy-intolerance-codes-214619\"> </a></td><td>hydrochlorothiazide / losartan</td></tr><tr><td style=\"white-space:nowrap\">214626<a name=\"ie-core-allergy-intolerance-codes-214626\"> </a></td><td>hydrochlorothiazide / valsartan</td></tr><tr><td style=\"white-space:nowrap\">214627<a name=\"ie-core-allergy-intolerance-codes-214627\"> </a></td><td>hydrocodone / ibuprofen</td></tr><tr><td style=\"white-space:nowrap\">214631<a name=\"ie-core-allergy-intolerance-codes-214631\"> </a></td><td>hydrocodone / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214682<a name=\"ie-core-allergy-intolerance-codes-214682\"> </a></td><td>loratadine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">214721<a name=\"ie-core-allergy-intolerance-codes-214721\"> </a></td><td>naloxone / pentazocine</td></tr><tr><td style=\"white-space:nowrap\">214807<a name=\"ie-core-allergy-intolerance-codes-214807\"> </a></td><td>pseudoephedrine / triprolidine</td></tr><tr><td style=\"white-space:nowrap\">2176<a name=\"ie-core-allergy-intolerance-codes-2176\"> </a></td><td>cefaclor</td></tr><tr><td style=\"white-space:nowrap\">217627<a name=\"ie-core-allergy-intolerance-codes-217627\"> </a></td><td>hydrocortisone / neomycin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">2177<a name=\"ie-core-allergy-intolerance-codes-2177\"> </a></td><td>cefadroxil</td></tr><tr><td style=\"white-space:nowrap\">2180<a name=\"ie-core-allergy-intolerance-codes-2180\"> </a></td><td>cefazolin</td></tr><tr><td style=\"white-space:nowrap\">2189<a name=\"ie-core-allergy-intolerance-codes-2189\"> </a></td><td>cefoxitin</td></tr><tr><td style=\"white-space:nowrap\">2191<a name=\"ie-core-allergy-intolerance-codes-2191\"> </a></td><td>ceftazidime</td></tr><tr><td style=\"white-space:nowrap\">2193<a name=\"ie-core-allergy-intolerance-codes-2193\"> </a></td><td>ceftriaxone</td></tr><tr><td style=\"white-space:nowrap\">219314<a name=\"ie-core-allergy-intolerance-codes-219314\"> </a></td><td>polymyxin B / trimethoprim</td></tr><tr><td style=\"white-space:nowrap\">219315<a name=\"ie-core-allergy-intolerance-codes-219315\"> </a></td><td>iron polysaccharide</td></tr><tr><td style=\"white-space:nowrap\">2194<a name=\"ie-core-allergy-intolerance-codes-2194\"> </a></td><td>cefuroxime</td></tr><tr><td style=\"white-space:nowrap\">21949<a name=\"ie-core-allergy-intolerance-codes-21949\"> </a></td><td>cyclobenzaprine</td></tr><tr><td style=\"white-space:nowrap\">221147<a name=\"ie-core-allergy-intolerance-codes-221147\"> </a></td><td>polyethylene glycol 3350</td></tr><tr><td style=\"white-space:nowrap\">22299<a name=\"ie-core-allergy-intolerance-codes-22299\"> </a></td><td>daptomycin</td></tr><tr><td style=\"white-space:nowrap\">2231<a name=\"ie-core-allergy-intolerance-codes-2231\"> </a></td><td>cephalexin</td></tr><tr><td style=\"white-space:nowrap\">226716<a name=\"ie-core-allergy-intolerance-codes-226716\"> </a></td><td>aspirin / dipyridamole</td></tr><tr><td style=\"white-space:nowrap\">228476<a name=\"ie-core-allergy-intolerance-codes-228476\"> </a></td><td>gatifloxacin</td></tr><tr><td style=\"white-space:nowrap\">228790<a name=\"ie-core-allergy-intolerance-codes-228790\"> </a></td><td>dutasteride</td></tr><tr><td style=\"white-space:nowrap\">232158<a name=\"ie-core-allergy-intolerance-codes-232158\"> </a></td><td>rofecoxib</td></tr><tr><td style=\"white-space:nowrap\">233698<a name=\"ie-core-allergy-intolerance-codes-233698\"> </a></td><td>dronedarone</td></tr><tr><td style=\"white-space:nowrap\">2348<a name=\"ie-core-allergy-intolerance-codes-2348\"> </a></td><td>chloramphenicol</td></tr><tr><td style=\"white-space:nowrap\">2356<a name=\"ie-core-allergy-intolerance-codes-2356\"> </a></td><td>chlordiazepoxide</td></tr><tr><td style=\"white-space:nowrap\">2358<a name=\"ie-core-allergy-intolerance-codes-2358\"> </a></td><td>chlorhexidine</td></tr><tr><td style=\"white-space:nowrap\">236778<a name=\"ie-core-allergy-intolerance-codes-236778\"> </a></td><td>trospium</td></tr><tr><td style=\"white-space:nowrap\">237159<a name=\"ie-core-allergy-intolerance-codes-237159\"> </a></td><td>levalbuterol</td></tr><tr><td style=\"white-space:nowrap\">2393<a name=\"ie-core-allergy-intolerance-codes-2393\"> </a></td><td>chloroquine</td></tr><tr><td style=\"white-space:nowrap\">2400<a name=\"ie-core-allergy-intolerance-codes-2400\"> </a></td><td>chlorpheniramine</td></tr><tr><td style=\"white-space:nowrap\">2403<a name=\"ie-core-allergy-intolerance-codes-2403\"> </a></td><td>chlorpromazine</td></tr><tr><td style=\"white-space:nowrap\">2409<a name=\"ie-core-allergy-intolerance-codes-2409\"> </a></td><td>chlorthalidone</td></tr><tr><td style=\"white-space:nowrap\">2410<a name=\"ie-core-allergy-intolerance-codes-2410\"> </a></td><td>chlorzoxazone</td></tr><tr><td style=\"white-space:nowrap\">2418<a name=\"ie-core-allergy-intolerance-codes-2418\"> </a></td><td>cholecalciferol</td></tr><tr><td style=\"white-space:nowrap\">2447<a name=\"ie-core-allergy-intolerance-codes-2447\"> </a></td><td>cholestyramine resin</td></tr><tr><td style=\"white-space:nowrap\">24605<a name=\"ie-core-allergy-intolerance-codes-24605\"> </a></td><td>etodolac</td></tr><tr><td style=\"white-space:nowrap\">24947<a name=\"ie-core-allergy-intolerance-codes-24947\"> </a></td><td>ferrous sulfate</td></tr><tr><td style=\"white-space:nowrap\">25025<a name=\"ie-core-allergy-intolerance-codes-25025\"> </a></td><td>finasteride</td></tr><tr><td style=\"white-space:nowrap\">25033<a name=\"ie-core-allergy-intolerance-codes-25033\"> </a></td><td>cefixime</td></tr><tr><td style=\"white-space:nowrap\">25037<a name=\"ie-core-allergy-intolerance-codes-25037\"> </a></td><td>cefdinir</td></tr><tr><td style=\"white-space:nowrap\">25120<a name=\"ie-core-allergy-intolerance-codes-25120\"> </a></td><td>flunisolide</td></tr><tr><td style=\"white-space:nowrap\">25255<a name=\"ie-core-allergy-intolerance-codes-25255\"> </a></td><td>formoterol</td></tr><tr><td style=\"white-space:nowrap\">253157<a name=\"ie-core-allergy-intolerance-codes-253157\"> </a></td><td>bee pollen</td></tr><tr><td style=\"white-space:nowrap\">2541<a name=\"ie-core-allergy-intolerance-codes-2541\"> </a></td><td>cimetidine</td></tr><tr><td style=\"white-space:nowrap\">25480<a name=\"ie-core-allergy-intolerance-codes-25480\"> </a></td><td>gabapentin</td></tr><tr><td style=\"white-space:nowrap\">2551<a name=\"ie-core-allergy-intolerance-codes-2551\"> </a></td><td>ciprofloxacin</td></tr><tr><td style=\"white-space:nowrap\">2556<a name=\"ie-core-allergy-intolerance-codes-2556\"> </a></td><td>citalopram</td></tr><tr><td style=\"white-space:nowrap\">25789<a name=\"ie-core-allergy-intolerance-codes-25789\"> </a></td><td>glimepiride</td></tr><tr><td style=\"white-space:nowrap\">2582<a name=\"ie-core-allergy-intolerance-codes-2582\"> </a></td><td>clindamycin</td></tr><tr><td style=\"white-space:nowrap\">258337<a name=\"ie-core-allergy-intolerance-codes-258337\"> </a></td><td>hydrochlorothiazide / triamterene</td></tr><tr><td style=\"white-space:nowrap\">2598<a name=\"ie-core-allergy-intolerance-codes-2598\"> </a></td><td>clonazepam</td></tr><tr><td style=\"white-space:nowrap\">2599<a name=\"ie-core-allergy-intolerance-codes-2599\"> </a></td><td>clonidine</td></tr><tr><td style=\"white-space:nowrap\">260101<a name=\"ie-core-allergy-intolerance-codes-260101\"> </a></td><td>oseltamivir</td></tr><tr><td style=\"white-space:nowrap\">26225<a name=\"ie-core-allergy-intolerance-codes-26225\"> </a></td><td>ondansetron</td></tr><tr><td style=\"white-space:nowrap\">2623<a name=\"ie-core-allergy-intolerance-codes-2623\"> </a></td><td>clotrimazole</td></tr><tr><td style=\"white-space:nowrap\">2670<a name=\"ie-core-allergy-intolerance-codes-2670\"> </a></td><td>codeine</td></tr><tr><td style=\"white-space:nowrap\">2683<a name=\"ie-core-allergy-intolerance-codes-2683\"> </a></td><td>colchicine</td></tr><tr><td style=\"white-space:nowrap\">2685<a name=\"ie-core-allergy-intolerance-codes-2685\"> </a></td><td>colestipol</td></tr><tr><td style=\"white-space:nowrap\">27169<a name=\"ie-core-allergy-intolerance-codes-27169\"> </a></td><td>leflunomide</td></tr><tr><td style=\"white-space:nowrap\">274783<a name=\"ie-core-allergy-intolerance-codes-274783\"> </a></td><td>insulin glargine</td></tr><tr><td style=\"white-space:nowrap\">274786<a name=\"ie-core-allergy-intolerance-codes-274786\"> </a></td><td>telithromycin</td></tr><tr><td style=\"white-space:nowrap\">27723<a name=\"ie-core-allergy-intolerance-codes-27723\"> </a></td><td>iodinated glycerol</td></tr><tr><td style=\"white-space:nowrap\">278567<a name=\"ie-core-allergy-intolerance-codes-278567\"> </a></td><td>valdecoxib</td></tr><tr><td style=\"white-space:nowrap\">28031<a name=\"ie-core-allergy-intolerance-codes-28031\"> </a></td><td>itraconazole</td></tr><tr><td style=\"white-space:nowrap\">281<a name=\"ie-core-allergy-intolerance-codes-281\"> </a></td><td>acyclovir</td></tr><tr><td style=\"white-space:nowrap\">282422<a name=\"ie-core-allergy-intolerance-codes-282422\"> </a></td><td>aspirin / butalbital / caffeine</td></tr><tr><td style=\"white-space:nowrap\">283742<a name=\"ie-core-allergy-intolerance-codes-283742\"> </a></td><td>esomeprazole</td></tr><tr><td style=\"white-space:nowrap\">283809<a name=\"ie-core-allergy-intolerance-codes-283809\"> </a></td><td>travoprost</td></tr><tr><td style=\"white-space:nowrap\">28439<a name=\"ie-core-allergy-intolerance-codes-28439\"> </a></td><td>lamotrigine</td></tr><tr><td style=\"white-space:nowrap\">284635<a name=\"ie-core-allergy-intolerance-codes-284635\"> </a></td><td>fluticasone / salmeterol</td></tr><tr><td style=\"white-space:nowrap\">2878<a name=\"ie-core-allergy-intolerance-codes-2878\"> </a></td><td>cortisone</td></tr><tr><td style=\"white-space:nowrap\">28889<a name=\"ie-core-allergy-intolerance-codes-28889\"> </a></td><td>loratadine</td></tr><tr><td style=\"white-space:nowrap\">28981<a name=\"ie-core-allergy-intolerance-codes-28981\"> </a></td><td>loracarbef</td></tr><tr><td style=\"white-space:nowrap\">29046<a name=\"ie-core-allergy-intolerance-codes-29046\"> </a></td><td>lisinopril</td></tr><tr><td style=\"white-space:nowrap\">29542<a name=\"ie-core-allergy-intolerance-codes-29542\"> </a></td><td>mercury, ammoniated</td></tr><tr><td style=\"white-space:nowrap\">29561<a name=\"ie-core-allergy-intolerance-codes-29561\"> </a></td><td>meropenem</td></tr><tr><td style=\"white-space:nowrap\">296<a name=\"ie-core-allergy-intolerance-codes-296\"> </a></td><td>adenosine</td></tr><tr><td style=\"white-space:nowrap\">3008<a name=\"ie-core-allergy-intolerance-codes-3008\"> </a></td><td>cyclosporine</td></tr><tr><td style=\"white-space:nowrap\">301542<a name=\"ie-core-allergy-intolerance-codes-301542\"> </a></td><td>rosuvastatin</td></tr><tr><td style=\"white-space:nowrap\">306674<a name=\"ie-core-allergy-intolerance-codes-306674\"> </a></td><td>vardenafil</td></tr><tr><td style=\"white-space:nowrap\">3108<a name=\"ie-core-allergy-intolerance-codes-3108\"> </a></td><td>dapsone</td></tr><tr><td style=\"white-space:nowrap\">3143<a name=\"ie-core-allergy-intolerance-codes-3143\"> </a></td><td>prasterone</td></tr><tr><td style=\"white-space:nowrap\">31448<a name=\"ie-core-allergy-intolerance-codes-31448\"> </a></td><td>nabumetone</td></tr><tr><td style=\"white-space:nowrap\">31555<a name=\"ie-core-allergy-intolerance-codes-31555\"> </a></td><td>nebivolol</td></tr><tr><td style=\"white-space:nowrap\">31565<a name=\"ie-core-allergy-intolerance-codes-31565\"> </a></td><td>nefazodone</td></tr><tr><td style=\"white-space:nowrap\">31738<a name=\"ie-core-allergy-intolerance-codes-31738\"> </a></td><td>nickel sulfate</td></tr><tr><td style=\"white-space:nowrap\">318340<a name=\"ie-core-allergy-intolerance-codes-318340\"> </a></td><td>Aloe vera preparation</td></tr><tr><td style=\"white-space:nowrap\">321064<a name=\"ie-core-allergy-intolerance-codes-321064\"> </a></td><td>olmesartan</td></tr><tr><td style=\"white-space:nowrap\">321988<a name=\"ie-core-allergy-intolerance-codes-321988\"> </a></td><td>escitalopram</td></tr><tr><td style=\"white-space:nowrap\">322167<a name=\"ie-core-allergy-intolerance-codes-322167\"> </a></td><td>solifenacin</td></tr><tr><td style=\"white-space:nowrap\">3247<a name=\"ie-core-allergy-intolerance-codes-3247\"> </a></td><td>desipramine</td></tr><tr><td style=\"white-space:nowrap\">325642<a name=\"ie-core-allergy-intolerance-codes-325642\"> </a></td><td>ertapenem</td></tr><tr><td style=\"white-space:nowrap\">32592<a name=\"ie-core-allergy-intolerance-codes-32592\"> </a></td><td>oxaliplatin</td></tr><tr><td style=\"white-space:nowrap\">32613<a name=\"ie-core-allergy-intolerance-codes-32613\"> </a></td><td>oxaprozin</td></tr><tr><td style=\"white-space:nowrap\">32624<a name=\"ie-core-allergy-intolerance-codes-32624\"> </a></td><td>oxcarbazepine</td></tr><tr><td style=\"white-space:nowrap\">3264<a name=\"ie-core-allergy-intolerance-codes-3264\"> </a></td><td>dexamethasone</td></tr><tr><td style=\"white-space:nowrap\">32675<a name=\"ie-core-allergy-intolerance-codes-32675\"> </a></td><td>oxybutynin</td></tr><tr><td style=\"white-space:nowrap\">327361<a name=\"ie-core-allergy-intolerance-codes-327361\"> </a></td><td>adalimumab</td></tr><tr><td style=\"white-space:nowrap\">3289<a name=\"ie-core-allergy-intolerance-codes-3289\"> </a></td><td>dextromethorphan</td></tr><tr><td style=\"white-space:nowrap\">32937<a name=\"ie-core-allergy-intolerance-codes-32937\"> </a></td><td>paroxetine</td></tr><tr><td style=\"white-space:nowrap\">32968<a name=\"ie-core-allergy-intolerance-codes-32968\"> </a></td><td>clopidogrel</td></tr><tr><td style=\"white-space:nowrap\">3322<a name=\"ie-core-allergy-intolerance-codes-3322\"> </a></td><td>diazepam</td></tr><tr><td style=\"white-space:nowrap\">33408<a name=\"ie-core-allergy-intolerance-codes-33408\"> </a></td><td>phenyltoloxamine</td></tr><tr><td style=\"white-space:nowrap\">3355<a name=\"ie-core-allergy-intolerance-codes-3355\"> </a></td><td>diclofenac</td></tr><tr><td style=\"white-space:nowrap\">3356<a name=\"ie-core-allergy-intolerance-codes-3356\"> </a></td><td>dicloxacillin</td></tr><tr><td style=\"white-space:nowrap\">3361<a name=\"ie-core-allergy-intolerance-codes-3361\"> </a></td><td>dicyclomine</td></tr><tr><td style=\"white-space:nowrap\">33738<a name=\"ie-core-allergy-intolerance-codes-33738\"> </a></td><td>pioglitazone</td></tr><tr><td style=\"white-space:nowrap\">3393<a name=\"ie-core-allergy-intolerance-codes-3393\"> </a></td><td>diflunisal</td></tr><tr><td style=\"white-space:nowrap\">3407<a name=\"ie-core-allergy-intolerance-codes-3407\"> </a></td><td>digoxin</td></tr><tr><td style=\"white-space:nowrap\">341248<a name=\"ie-core-allergy-intolerance-codes-341248\"> </a></td><td>ezetimibe</td></tr><tr><td style=\"white-space:nowrap\">3418<a name=\"ie-core-allergy-intolerance-codes-3418\"> </a></td><td>dihydroergotamine</td></tr><tr><td style=\"white-space:nowrap\">3423<a name=\"ie-core-allergy-intolerance-codes-3423\"> </a></td><td>hydromorphone</td></tr><tr><td style=\"white-space:nowrap\">3443<a name=\"ie-core-allergy-intolerance-codes-3443\"> </a></td><td>diltiazem</td></tr><tr><td style=\"white-space:nowrap\">3444<a name=\"ie-core-allergy-intolerance-codes-3444\"> </a></td><td>dimenhydrinate</td></tr><tr><td style=\"white-space:nowrap\">3498<a name=\"ie-core-allergy-intolerance-codes-3498\"> </a></td><td>diphenhydramine</td></tr><tr><td style=\"white-space:nowrap\">35208<a name=\"ie-core-allergy-intolerance-codes-35208\"> </a></td><td>quinapril</td></tr><tr><td style=\"white-space:nowrap\">3521<a name=\"ie-core-allergy-intolerance-codes-3521\"> </a></td><td>dipyridamole</td></tr><tr><td style=\"white-space:nowrap\">352362<a name=\"ie-core-allergy-intolerance-codes-352362\"> </a></td><td>acetaminophen / tramadol</td></tr><tr><td style=\"white-space:nowrap\">35296<a name=\"ie-core-allergy-intolerance-codes-35296\"> </a></td><td>ramipril</td></tr><tr><td style=\"white-space:nowrap\">35382<a name=\"ie-core-allergy-intolerance-codes-35382\"> </a></td><td>resorcinol</td></tr><tr><td style=\"white-space:nowrap\">35636<a name=\"ie-core-allergy-intolerance-codes-35636\"> </a></td><td>risperidone</td></tr><tr><td style=\"white-space:nowrap\">358263<a name=\"ie-core-allergy-intolerance-codes-358263\"> </a></td><td>tadalafil</td></tr><tr><td style=\"white-space:nowrap\">35827<a name=\"ie-core-allergy-intolerance-codes-35827\"> </a></td><td>ketorolac</td></tr><tr><td style=\"white-space:nowrap\">35829<a name=\"ie-core-allergy-intolerance-codes-35829\"> </a></td><td>ranolazine</td></tr><tr><td style=\"white-space:nowrap\">36108<a name=\"ie-core-allergy-intolerance-codes-36108\"> </a></td><td>salsalate</td></tr><tr><td style=\"white-space:nowrap\">36117<a name=\"ie-core-allergy-intolerance-codes-36117\"> </a></td><td>salmeterol</td></tr><tr><td style=\"white-space:nowrap\">3616<a name=\"ie-core-allergy-intolerance-codes-3616\"> </a></td><td>dobutamine</td></tr><tr><td style=\"white-space:nowrap\">3638<a name=\"ie-core-allergy-intolerance-codes-3638\"> </a></td><td>doxepin</td></tr><tr><td style=\"white-space:nowrap\">3640<a name=\"ie-core-allergy-intolerance-codes-3640\"> </a></td><td>doxycycline</td></tr><tr><td style=\"white-space:nowrap\">36437<a name=\"ie-core-allergy-intolerance-codes-36437\"> </a></td><td>sertraline</td></tr><tr><td style=\"white-space:nowrap\">3648<a name=\"ie-core-allergy-intolerance-codes-3648\"> </a></td><td>droperidol</td></tr><tr><td style=\"white-space:nowrap\">36567<a name=\"ie-core-allergy-intolerance-codes-36567\"> </a></td><td>simvastatin</td></tr><tr><td style=\"white-space:nowrap\">37418<a name=\"ie-core-allergy-intolerance-codes-37418\"> </a></td><td>sumatriptan</td></tr><tr><td style=\"white-space:nowrap\">37617<a name=\"ie-core-allergy-intolerance-codes-37617\"> </a></td><td>tazobactam</td></tr><tr><td style=\"white-space:nowrap\">37798<a name=\"ie-core-allergy-intolerance-codes-37798\"> </a></td><td>terazosin</td></tr><tr><td style=\"white-space:nowrap\">37801<a name=\"ie-core-allergy-intolerance-codes-37801\"> </a></td><td>terbinafine</td></tr><tr><td style=\"white-space:nowrap\">3827<a name=\"ie-core-allergy-intolerance-codes-3827\"> </a></td><td>enalapril</td></tr><tr><td style=\"white-space:nowrap\">3829<a name=\"ie-core-allergy-intolerance-codes-3829\"> </a></td><td>enalaprilat</td></tr><tr><td style=\"white-space:nowrap\">38400<a name=\"ie-core-allergy-intolerance-codes-38400\"> </a></td><td>atomoxetine</td></tr><tr><td style=\"white-space:nowrap\">38404<a name=\"ie-core-allergy-intolerance-codes-38404\"> </a></td><td>topiramate</td></tr><tr><td style=\"white-space:nowrap\">38413<a name=\"ie-core-allergy-intolerance-codes-38413\"> </a></td><td>torsemide</td></tr><tr><td style=\"white-space:nowrap\">38574<a name=\"ie-core-allergy-intolerance-codes-38574\"> </a></td><td>trichloroacetaldehyde</td></tr><tr><td style=\"white-space:nowrap\">38685<a name=\"ie-core-allergy-intolerance-codes-38685\"> </a></td><td>trimethobenzamide</td></tr><tr><td style=\"white-space:nowrap\">389132<a name=\"ie-core-allergy-intolerance-codes-389132\"> </a></td><td>budesonide / formoterol</td></tr><tr><td style=\"white-space:nowrap\">3966<a name=\"ie-core-allergy-intolerance-codes-3966\"> </a></td><td>ephedrine</td></tr><tr><td style=\"white-space:nowrap\">39786<a name=\"ie-core-allergy-intolerance-codes-39786\"> </a></td><td>venlafaxine</td></tr><tr><td style=\"white-space:nowrap\">3992<a name=\"ie-core-allergy-intolerance-codes-3992\"> </a></td><td>epinephrine</td></tr><tr><td style=\"white-space:nowrap\">39993<a name=\"ie-core-allergy-intolerance-codes-39993\"> </a></td><td>zolpidem</td></tr><tr><td style=\"white-space:nowrap\">39998<a name=\"ie-core-allergy-intolerance-codes-39998\"> </a></td><td>zonisamide</td></tr><tr><td style=\"white-space:nowrap\">40048<a name=\"ie-core-allergy-intolerance-codes-40048\"> </a></td><td>carboplatin</td></tr><tr><td style=\"white-space:nowrap\">400674<a name=\"ie-core-allergy-intolerance-codes-400674\"> </a></td><td>dexbrompheniramine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">4025<a name=\"ie-core-allergy-intolerance-codes-4025\"> </a></td><td>ergotamine</td></tr><tr><td style=\"white-space:nowrap\">40254<a name=\"ie-core-allergy-intolerance-codes-40254\"> </a></td><td>valproate</td></tr><tr><td style=\"white-space:nowrap\">4053<a name=\"ie-core-allergy-intolerance-codes-4053\"> </a></td><td>erythromycin</td></tr><tr><td style=\"white-space:nowrap\">40575<a name=\"ie-core-allergy-intolerance-codes-40575\"> </a></td><td>zileuton</td></tr><tr><td style=\"white-space:nowrap\">40790<a name=\"ie-core-allergy-intolerance-codes-40790\"> </a></td><td>pantoprazole</td></tr><tr><td style=\"white-space:nowrap\">4083<a name=\"ie-core-allergy-intolerance-codes-4083\"> </a></td><td>estradiol</td></tr><tr><td style=\"white-space:nowrap\">4099<a name=\"ie-core-allergy-intolerance-codes-4099\"> </a></td><td>estrogens, conjugated (USP)</td></tr><tr><td style=\"white-space:nowrap\">41126<a name=\"ie-core-allergy-intolerance-codes-41126\"> </a></td><td>fluticasone</td></tr><tr><td style=\"white-space:nowrap\">41127<a name=\"ie-core-allergy-intolerance-codes-41127\"> </a></td><td>fluvastatin</td></tr><tr><td style=\"white-space:nowrap\">4124<a name=\"ie-core-allergy-intolerance-codes-4124\"> </a></td><td>ethinyl estradiol</td></tr><tr><td style=\"white-space:nowrap\">41397<a name=\"ie-core-allergy-intolerance-codes-41397\"> </a></td><td>lactase</td></tr><tr><td style=\"white-space:nowrap\">41493<a name=\"ie-core-allergy-intolerance-codes-41493\"> </a></td><td>meloxicam</td></tr><tr><td style=\"white-space:nowrap\">42330<a name=\"ie-core-allergy-intolerance-codes-42330\"> </a></td><td>terfenadine</td></tr><tr><td style=\"white-space:nowrap\">42331<a name=\"ie-core-allergy-intolerance-codes-42331\"> </a></td><td>misoprostol</td></tr><tr><td style=\"white-space:nowrap\">42347<a name=\"ie-core-allergy-intolerance-codes-42347\"> </a></td><td>bupropion</td></tr><tr><td style=\"white-space:nowrap\">42351<a name=\"ie-core-allergy-intolerance-codes-42351\"> </a></td><td>lithium carbonate</td></tr><tr><td style=\"white-space:nowrap\">42372<a name=\"ie-core-allergy-intolerance-codes-42372\"> </a></td><td>mupirocin</td></tr><tr><td style=\"white-space:nowrap\">42463<a name=\"ie-core-allergy-intolerance-codes-42463\"> </a></td><td>pravastatin</td></tr><tr><td style=\"white-space:nowrap\">4278<a name=\"ie-core-allergy-intolerance-codes-4278\"> </a></td><td>famotidine</td></tr><tr><td style=\"white-space:nowrap\">4316<a name=\"ie-core-allergy-intolerance-codes-4316\"> </a></td><td>felodipine</td></tr><tr><td style=\"white-space:nowrap\">4337<a name=\"ie-core-allergy-intolerance-codes-4337\"> </a></td><td>fentanyl</td></tr><tr><td style=\"white-space:nowrap\">435<a name=\"ie-core-allergy-intolerance-codes-435\"> </a></td><td>albuterol</td></tr><tr><td style=\"white-space:nowrap\">43611<a name=\"ie-core-allergy-intolerance-codes-43611\"> </a></td><td>latanoprost</td></tr><tr><td style=\"white-space:nowrap\">4419<a name=\"ie-core-allergy-intolerance-codes-4419\"> </a></td><td>fish oils</td></tr><tr><td style=\"white-space:nowrap\">4441<a name=\"ie-core-allergy-intolerance-codes-4441\"> </a></td><td>flecainide</td></tr><tr><td style=\"white-space:nowrap\">4450<a name=\"ie-core-allergy-intolerance-codes-4450\"> </a></td><td>fluconazole</td></tr><tr><td style=\"white-space:nowrap\">448<a name=\"ie-core-allergy-intolerance-codes-448\"> </a></td><td>ethanol</td></tr><tr><td style=\"white-space:nowrap\">4492<a name=\"ie-core-allergy-intolerance-codes-4492\"> </a></td><td>fluorouracil</td></tr><tr><td style=\"white-space:nowrap\">4493<a name=\"ie-core-allergy-intolerance-codes-4493\"> </a></td><td>fluoxetine</td></tr><tr><td style=\"white-space:nowrap\">4496<a name=\"ie-core-allergy-intolerance-codes-4496\"> </a></td><td>fluphenazine</td></tr><tr><td style=\"white-space:nowrap\">4500<a name=\"ie-core-allergy-intolerance-codes-4500\"> </a></td><td>flurandrenolide</td></tr><tr><td style=\"white-space:nowrap\">4530<a name=\"ie-core-allergy-intolerance-codes-4530\"> </a></td><td>formaldehyde</td></tr><tr><td style=\"white-space:nowrap\">4603<a name=\"ie-core-allergy-intolerance-codes-4603\"> </a></td><td>furosemide</td></tr><tr><td style=\"white-space:nowrap\">46041<a name=\"ie-core-allergy-intolerance-codes-46041\"> </a></td><td>alendronate</td></tr><tr><td style=\"white-space:nowrap\">461016<a name=\"ie-core-allergy-intolerance-codes-461016\"> </a></td><td>eszopiclone</td></tr><tr><td style=\"white-space:nowrap\">4637<a name=\"ie-core-allergy-intolerance-codes-4637\"> </a></td><td>galantamine</td></tr><tr><td style=\"white-space:nowrap\">465397<a name=\"ie-core-allergy-intolerance-codes-465397\"> </a></td><td>ciprofloxacin / dexamethasone</td></tr><tr><td style=\"white-space:nowrap\">466522<a name=\"ie-core-allergy-intolerance-codes-466522\"> </a></td><td>diphenhydramine / zinc acetate</td></tr><tr><td style=\"white-space:nowrap\">466541<a name=\"ie-core-allergy-intolerance-codes-466541\"> </a></td><td>neomycin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">466549<a name=\"ie-core-allergy-intolerance-codes-466549\"> </a></td><td>aspirin / caffeine / orphenadrine</td></tr><tr><td style=\"white-space:nowrap\">466553<a name=\"ie-core-allergy-intolerance-codes-466553\"> </a></td><td>penicillin G benzathine / penicillin G procaine</td></tr><tr><td style=\"white-space:nowrap\">466566<a name=\"ie-core-allergy-intolerance-codes-466566\"> </a></td><td>acetaminophen / dextromethorphan / diphenhydramine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">466584<a name=\"ie-core-allergy-intolerance-codes-466584\"> </a></td><td>acetaminophen / aspirin / caffeine</td></tr><tr><td style=\"white-space:nowrap\">4719<a name=\"ie-core-allergy-intolerance-codes-4719\"> </a></td><td>gemfibrozil</td></tr><tr><td style=\"white-space:nowrap\">475968<a name=\"ie-core-allergy-intolerance-codes-475968\"> </a></td><td>liraglutide</td></tr><tr><td style=\"white-space:nowrap\">477619<a name=\"ie-core-allergy-intolerance-codes-477619\"> </a></td><td>bacitracin / neomycin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">4815<a name=\"ie-core-allergy-intolerance-codes-4815\"> </a></td><td>glyburide</td></tr><tr><td style=\"white-space:nowrap\">48203<a name=\"ie-core-allergy-intolerance-codes-48203\"> </a></td><td>clavulanate</td></tr><tr><td style=\"white-space:nowrap\">4821<a name=\"ie-core-allergy-intolerance-codes-4821\"> </a></td><td>glipizide</td></tr><tr><td style=\"white-space:nowrap\">484139<a name=\"ie-core-allergy-intolerance-codes-484139\"> </a></td><td>chlorhexidine / isopropyl alcohol</td></tr><tr><td style=\"white-space:nowrap\">484211<a name=\"ie-core-allergy-intolerance-codes-484211\"> </a></td><td>ezetimibe / simvastatin</td></tr><tr><td style=\"white-space:nowrap\">4850<a name=\"ie-core-allergy-intolerance-codes-4850\"> </a></td><td>glucose</td></tr><tr><td style=\"white-space:nowrap\">4917<a name=\"ie-core-allergy-intolerance-codes-4917\"> </a></td><td>nitroglycerin</td></tr><tr><td style=\"white-space:nowrap\">49276<a name=\"ie-core-allergy-intolerance-codes-49276\"> </a></td><td>doxazosin</td></tr><tr><td style=\"white-space:nowrap\">50166<a name=\"ie-core-allergy-intolerance-codes-50166\"> </a></td><td>fosinopril</td></tr><tr><td style=\"white-space:nowrap\">5021<a name=\"ie-core-allergy-intolerance-codes-5021\"> </a></td><td>griseofulvin</td></tr><tr><td style=\"white-space:nowrap\">5032<a name=\"ie-core-allergy-intolerance-codes-5032\"> </a></td><td>guaifenesin</td></tr><tr><td style=\"white-space:nowrap\">5093<a name=\"ie-core-allergy-intolerance-codes-5093\"> </a></td><td>haloperidol</td></tr><tr><td style=\"white-space:nowrap\">51272<a name=\"ie-core-allergy-intolerance-codes-51272\"> </a></td><td>quetiapine</td></tr><tr><td style=\"white-space:nowrap\">519<a name=\"ie-core-allergy-intolerance-codes-519\"> </a></td><td>allopurinol</td></tr><tr><td style=\"white-space:nowrap\">52175<a name=\"ie-core-allergy-intolerance-codes-52175\"> </a></td><td>losartan</td></tr><tr><td style=\"white-space:nowrap\">5224<a name=\"ie-core-allergy-intolerance-codes-5224\"> </a></td><td>heparin</td></tr><tr><td style=\"white-space:nowrap\">52582<a name=\"ie-core-allergy-intolerance-codes-52582\"> </a></td><td>mesalamine</td></tr><tr><td style=\"white-space:nowrap\">5470<a name=\"ie-core-allergy-intolerance-codes-5470\"> </a></td><td>hydralazine</td></tr><tr><td style=\"white-space:nowrap\">5487<a name=\"ie-core-allergy-intolerance-codes-5487\"> </a></td><td>hydrochlorothiazide</td></tr><tr><td style=\"white-space:nowrap\">5489<a name=\"ie-core-allergy-intolerance-codes-5489\"> </a></td><td>hydrocodone</td></tr><tr><td style=\"white-space:nowrap\">5492<a name=\"ie-core-allergy-intolerance-codes-5492\"> </a></td><td>hydrocortisone</td></tr><tr><td style=\"white-space:nowrap\">5499<a name=\"ie-core-allergy-intolerance-codes-5499\"> </a></td><td>hydrogen peroxide</td></tr><tr><td style=\"white-space:nowrap\">5521<a name=\"ie-core-allergy-intolerance-codes-5521\"> </a></td><td>hydroxychloroquine</td></tr><tr><td style=\"white-space:nowrap\">5553<a name=\"ie-core-allergy-intolerance-codes-5553\"> </a></td><td>hydroxyzine</td></tr><tr><td style=\"white-space:nowrap\">5640<a name=\"ie-core-allergy-intolerance-codes-5640\"> </a></td><td>ibuprofen</td></tr><tr><td style=\"white-space:nowrap\">5691<a name=\"ie-core-allergy-intolerance-codes-5691\"> </a></td><td>imipramine</td></tr><tr><td style=\"white-space:nowrap\">56946<a name=\"ie-core-allergy-intolerance-codes-56946\"> </a></td><td>paclitaxel</td></tr><tr><td style=\"white-space:nowrap\">57258<a name=\"ie-core-allergy-intolerance-codes-57258\"> </a></td><td>tizanidine</td></tr><tr><td style=\"white-space:nowrap\">5764<a name=\"ie-core-allergy-intolerance-codes-5764\"> </a></td><td>indapamide</td></tr><tr><td style=\"white-space:nowrap\">5781<a name=\"ie-core-allergy-intolerance-codes-5781\"> </a></td><td>indomethacin</td></tr><tr><td style=\"white-space:nowrap\">588250<a name=\"ie-core-allergy-intolerance-codes-588250\"> </a></td><td>milnacipran</td></tr><tr><td style=\"white-space:nowrap\">59078<a name=\"ie-core-allergy-intolerance-codes-59078\"> </a></td><td>metaxalone</td></tr><tr><td style=\"white-space:nowrap\">591622<a name=\"ie-core-allergy-intolerance-codes-591622\"> </a></td><td>varenicline</td></tr><tr><td style=\"white-space:nowrap\">5933<a name=\"ie-core-allergy-intolerance-codes-5933\"> </a></td><td>iodine</td></tr><tr><td style=\"white-space:nowrap\">593411<a name=\"ie-core-allergy-intolerance-codes-593411\"> </a></td><td>sitagliptin</td></tr><tr><td style=\"white-space:nowrap\">594040<a name=\"ie-core-allergy-intolerance-codes-594040\"> </a></td><td>atropine / diphenoxylate</td></tr><tr><td style=\"white-space:nowrap\">5956<a name=\"ie-core-allergy-intolerance-codes-5956\"> </a></td><td>iohexol</td></tr><tr><td style=\"white-space:nowrap\">596<a name=\"ie-core-allergy-intolerance-codes-596\"> </a></td><td>alprazolam</td></tr><tr><td style=\"white-space:nowrap\">596723<a name=\"ie-core-allergy-intolerance-codes-596723\"> </a></td><td>cerivastatin</td></tr><tr><td style=\"white-space:nowrap\">597142<a name=\"ie-core-allergy-intolerance-codes-597142\"> </a></td><td>brimonidine / timolol</td></tr><tr><td style=\"white-space:nowrap\">5992<a name=\"ie-core-allergy-intolerance-codes-5992\"> </a></td><td>iron-dextran complex</td></tr><tr><td style=\"white-space:nowrap\">60207<a name=\"ie-core-allergy-intolerance-codes-60207\"> </a></td><td>dorzolamide</td></tr><tr><td style=\"white-space:nowrap\">6038<a name=\"ie-core-allergy-intolerance-codes-6038\"> </a></td><td>isoniazid</td></tr><tr><td style=\"white-space:nowrap\">60548<a name=\"ie-core-allergy-intolerance-codes-60548\"> </a></td><td>exenatide</td></tr><tr><td style=\"white-space:nowrap\">6057<a name=\"ie-core-allergy-intolerance-codes-6057\"> </a></td><td>isosorbide</td></tr><tr><td style=\"white-space:nowrap\">6058<a name=\"ie-core-allergy-intolerance-codes-6058\"> </a></td><td>isosorbide dinitrate</td></tr><tr><td style=\"white-space:nowrap\">611854<a name=\"ie-core-allergy-intolerance-codes-611854\"> </a></td><td>chlordiazepoxide / clidinium</td></tr><tr><td style=\"white-space:nowrap\">6130<a name=\"ie-core-allergy-intolerance-codes-6130\"> </a></td><td>ketamine</td></tr><tr><td style=\"white-space:nowrap\">6135<a name=\"ie-core-allergy-intolerance-codes-6135\"> </a></td><td>ketoconazole</td></tr><tr><td style=\"white-space:nowrap\">61381<a name=\"ie-core-allergy-intolerance-codes-61381\"> </a></td><td>olanzapine</td></tr><tr><td style=\"white-space:nowrap\">6142<a name=\"ie-core-allergy-intolerance-codes-6142\"> </a></td><td>ketoprofen</td></tr><tr><td style=\"white-space:nowrap\">6185<a name=\"ie-core-allergy-intolerance-codes-6185\"> </a></td><td>labetalol</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"ie-core-allergy-intolerance-codes-620\"> </a></td><td>amantadine</td></tr><tr><td style=\"white-space:nowrap\">6218<a name=\"ie-core-allergy-intolerance-codes-6218\"> </a></td><td>lactulose</td></tr><tr><td style=\"white-space:nowrap\">6227<a name=\"ie-core-allergy-intolerance-codes-6227\"> </a></td><td>lanolin</td></tr><tr><td style=\"white-space:nowrap\">6387<a name=\"ie-core-allergy-intolerance-codes-6387\"> </a></td><td>lidocaine</td></tr><tr><td style=\"white-space:nowrap\">639194<a name=\"ie-core-allergy-intolerance-codes-639194\"> </a></td><td>acetaminophen / propoxyphene</td></tr><tr><td style=\"white-space:nowrap\">6398<a name=\"ie-core-allergy-intolerance-codes-6398\"> </a></td><td>lincomycin</td></tr><tr><td style=\"white-space:nowrap\">6448<a name=\"ie-core-allergy-intolerance-codes-6448\"> </a></td><td>lithium</td></tr><tr><td style=\"white-space:nowrap\">645555<a name=\"ie-core-allergy-intolerance-codes-645555\"> </a></td><td>bacitracin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">6468<a name=\"ie-core-allergy-intolerance-codes-6468\"> </a></td><td>loperamide</td></tr><tr><td style=\"white-space:nowrap\">6470<a name=\"ie-core-allergy-intolerance-codes-6470\"> </a></td><td>lorazepam</td></tr><tr><td style=\"white-space:nowrap\">6472<a name=\"ie-core-allergy-intolerance-codes-6472\"> </a></td><td>lovastatin</td></tr><tr><td style=\"white-space:nowrap\">6574<a name=\"ie-core-allergy-intolerance-codes-6574\"> </a></td><td>magnesium</td></tr><tr><td style=\"white-space:nowrap\">6585<a name=\"ie-core-allergy-intolerance-codes-6585\"> </a></td><td>magnesium sulfate</td></tr><tr><td style=\"white-space:nowrap\">662263<a name=\"ie-core-allergy-intolerance-codes-662263\"> </a></td><td>dorzolamide / timolol</td></tr><tr><td style=\"white-space:nowrap\">6676<a name=\"ie-core-allergy-intolerance-codes-6676\"> </a></td><td>meclizine</td></tr><tr><td style=\"white-space:nowrap\">6691<a name=\"ie-core-allergy-intolerance-codes-6691\"> </a></td><td>medroxyprogesterone</td></tr><tr><td style=\"white-space:nowrap\">67108<a name=\"ie-core-allergy-intolerance-codes-67108\"> </a></td><td>enoxaparin</td></tr><tr><td style=\"white-space:nowrap\">6711<a name=\"ie-core-allergy-intolerance-codes-6711\"> </a></td><td>melatonin</td></tr><tr><td style=\"white-space:nowrap\">6719<a name=\"ie-core-allergy-intolerance-codes-6719\"> </a></td><td>memantine</td></tr><tr><td style=\"white-space:nowrap\">6750<a name=\"ie-core-allergy-intolerance-codes-6750\"> </a></td><td>menthol</td></tr><tr><td style=\"white-space:nowrap\">6754<a name=\"ie-core-allergy-intolerance-codes-6754\"> </a></td><td>meperidine</td></tr><tr><td style=\"white-space:nowrap\">6809<a name=\"ie-core-allergy-intolerance-codes-6809\"> </a></td><td>metformin</td></tr><tr><td style=\"white-space:nowrap\">6813<a name=\"ie-core-allergy-intolerance-codes-6813\"> </a></td><td>methadone</td></tr><tr><td style=\"white-space:nowrap\">6835<a name=\"ie-core-allergy-intolerance-codes-6835\"> </a></td><td>methimazole</td></tr><tr><td style=\"white-space:nowrap\">6845<a name=\"ie-core-allergy-intolerance-codes-6845\"> </a></td><td>methocarbamol</td></tr><tr><td style=\"white-space:nowrap\">6851<a name=\"ie-core-allergy-intolerance-codes-6851\"> </a></td><td>methotrexate</td></tr><tr><td style=\"white-space:nowrap\">6876<a name=\"ie-core-allergy-intolerance-codes-6876\"> </a></td><td>methyldopa</td></tr><tr><td style=\"white-space:nowrap\">689<a name=\"ie-core-allergy-intolerance-codes-689\"> </a></td><td>aminophylline</td></tr><tr><td style=\"white-space:nowrap\">689467<a name=\"ie-core-allergy-intolerance-codes-689467\"> </a></td><td>oxytetracycline / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">689518<a name=\"ie-core-allergy-intolerance-codes-689518\"> </a></td><td>aspirin / caffeine / propoxyphene</td></tr><tr><td style=\"white-space:nowrap\">689556<a name=\"ie-core-allergy-intolerance-codes-689556\"> </a></td><td>acetaminophen / aspirin / phenylpropanolamine</td></tr><tr><td style=\"white-space:nowrap\">689558<a name=\"ie-core-allergy-intolerance-codes-689558\"> </a></td><td>acetaminophen / brompheniramine / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">689561<a name=\"ie-core-allergy-intolerance-codes-689561\"> </a></td><td>acetaminophen / butalbital / caffeine / codeine</td></tr><tr><td style=\"white-space:nowrap\">689582<a name=\"ie-core-allergy-intolerance-codes-689582\"> </a></td><td>acetaminophen / chlorpheniramine / dextromethorphan / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">689606<a name=\"ie-core-allergy-intolerance-codes-689606\"> </a></td><td>atropine / hyoscyamine / phenobarbital / scopolamine</td></tr><tr><td style=\"white-space:nowrap\">689623<a name=\"ie-core-allergy-intolerance-codes-689623\"> </a></td><td>bacitracin / hydrocortisone / neomycin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">690077<a name=\"ie-core-allergy-intolerance-codes-690077\"> </a></td><td>benzalkonium / lidocaine</td></tr><tr><td style=\"white-space:nowrap\">6901<a name=\"ie-core-allergy-intolerance-codes-6901\"> </a></td><td>methylphenidate</td></tr><tr><td style=\"white-space:nowrap\">6902<a name=\"ie-core-allergy-intolerance-codes-6902\"> </a></td><td>methylprednisolone</td></tr><tr><td style=\"white-space:nowrap\">690693<a name=\"ie-core-allergy-intolerance-codes-690693\"> </a></td><td>diphenhydramine / phenylephrine</td></tr><tr><td style=\"white-space:nowrap\">690808<a name=\"ie-core-allergy-intolerance-codes-690808\"> </a></td><td>brompheniramine / dextromethorphan / pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">69120<a name=\"ie-core-allergy-intolerance-codes-69120\"> </a></td><td>tiotropium</td></tr><tr><td style=\"white-space:nowrap\">6915<a name=\"ie-core-allergy-intolerance-codes-6915\"> </a></td><td>metoclopramide</td></tr><tr><td style=\"white-space:nowrap\">6916<a name=\"ie-core-allergy-intolerance-codes-6916\"> </a></td><td>metolazone</td></tr><tr><td style=\"white-space:nowrap\">6918<a name=\"ie-core-allergy-intolerance-codes-6918\"> </a></td><td>metoprolol</td></tr><tr><td style=\"white-space:nowrap\">6922<a name=\"ie-core-allergy-intolerance-codes-6922\"> </a></td><td>metronidazole</td></tr><tr><td style=\"white-space:nowrap\">692794<a name=\"ie-core-allergy-intolerance-codes-692794\"> </a></td><td>gramicidin / neomycin / polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">6932<a name=\"ie-core-allergy-intolerance-codes-6932\"> </a></td><td>miconazole</td></tr><tr><td style=\"white-space:nowrap\">6960<a name=\"ie-core-allergy-intolerance-codes-6960\"> </a></td><td>midazolam</td></tr><tr><td style=\"white-space:nowrap\">69749<a name=\"ie-core-allergy-intolerance-codes-69749\"> </a></td><td>valsartan</td></tr><tr><td style=\"white-space:nowrap\">6980<a name=\"ie-core-allergy-intolerance-codes-6980\"> </a></td><td>minocycline</td></tr><tr><td style=\"white-space:nowrap\">6984<a name=\"ie-core-allergy-intolerance-codes-6984\"> </a></td><td>minoxidil</td></tr><tr><td style=\"white-space:nowrap\">703<a name=\"ie-core-allergy-intolerance-codes-703\"> </a></td><td>amiodarone</td></tr><tr><td style=\"white-space:nowrap\">704<a name=\"ie-core-allergy-intolerance-codes-704\"> </a></td><td>amitriptyline</td></tr><tr><td style=\"white-space:nowrap\">7052<a name=\"ie-core-allergy-intolerance-codes-7052\"> </a></td><td>morphine</td></tr><tr><td style=\"white-space:nowrap\">705258<a name=\"ie-core-allergy-intolerance-codes-705258\"> </a></td><td>acetaminophen / dextromethorphan / doxylamine</td></tr><tr><td style=\"white-space:nowrap\">7213<a name=\"ie-core-allergy-intolerance-codes-7213\"> </a></td><td>ipratropium</td></tr><tr><td style=\"white-space:nowrap\">72143<a name=\"ie-core-allergy-intolerance-codes-72143\"> </a></td><td>raloxifene</td></tr><tr><td style=\"white-space:nowrap\">72236<a name=\"ie-core-allergy-intolerance-codes-72236\"> </a></td><td>fosphenytoin</td></tr><tr><td style=\"white-space:nowrap\">723<a name=\"ie-core-allergy-intolerance-codes-723\"> </a></td><td>amoxicillin</td></tr><tr><td style=\"white-space:nowrap\">72302<a name=\"ie-core-allergy-intolerance-codes-72302\"> </a></td><td>ropinirole</td></tr><tr><td style=\"white-space:nowrap\">7233<a name=\"ie-core-allergy-intolerance-codes-7233\"> </a></td><td>nafcillin</td></tr><tr><td style=\"white-space:nowrap\">7238<a name=\"ie-core-allergy-intolerance-codes-7238\"> </a></td><td>nalbuphine</td></tr><tr><td style=\"white-space:nowrap\">7243<a name=\"ie-core-allergy-intolerance-codes-7243\"> </a></td><td>naltrexone</td></tr><tr><td style=\"white-space:nowrap\">725<a name=\"ie-core-allergy-intolerance-codes-725\"> </a></td><td>amphetamine</td></tr><tr><td style=\"white-space:nowrap\">7258<a name=\"ie-core-allergy-intolerance-codes-7258\"> </a></td><td>naproxen</td></tr><tr><td style=\"white-space:nowrap\">72625<a name=\"ie-core-allergy-intolerance-codes-72625\"> </a></td><td>duloxetine</td></tr><tr><td style=\"white-space:nowrap\">7299<a name=\"ie-core-allergy-intolerance-codes-7299\"> </a></td><td>neomycin</td></tr><tr><td style=\"white-space:nowrap\">73056<a name=\"ie-core-allergy-intolerance-codes-73056\"> </a></td><td>risedronate</td></tr><tr><td style=\"white-space:nowrap\">733<a name=\"ie-core-allergy-intolerance-codes-733\"> </a></td><td>ampicillin</td></tr><tr><td style=\"white-space:nowrap\">73494<a name=\"ie-core-allergy-intolerance-codes-73494\"> </a></td><td>telmisartan</td></tr><tr><td style=\"white-space:nowrap\">73645<a name=\"ie-core-allergy-intolerance-codes-73645\"> </a></td><td>valacyclovir</td></tr><tr><td style=\"white-space:nowrap\">7393<a name=\"ie-core-allergy-intolerance-codes-7393\"> </a></td><td>niacin</td></tr><tr><td style=\"white-space:nowrap\">7407<a name=\"ie-core-allergy-intolerance-codes-7407\"> </a></td><td>nicotine</td></tr><tr><td style=\"white-space:nowrap\">74169<a name=\"ie-core-allergy-intolerance-codes-74169\"> </a></td><td>piperacillin / tazobactam</td></tr><tr><td style=\"white-space:nowrap\">7417<a name=\"ie-core-allergy-intolerance-codes-7417\"> </a></td><td>nifedipine</td></tr><tr><td style=\"white-space:nowrap\">7454<a name=\"ie-core-allergy-intolerance-codes-7454\"> </a></td><td>nitrofurantoin</td></tr><tr><td style=\"white-space:nowrap\">746741<a name=\"ie-core-allergy-intolerance-codes-746741\"> </a></td><td>pramipexole</td></tr><tr><td style=\"white-space:nowrap\">7486<a name=\"ie-core-allergy-intolerance-codes-7486\"> </a></td><td>nitrous oxide</td></tr><tr><td style=\"white-space:nowrap\">7517<a name=\"ie-core-allergy-intolerance-codes-7517\"> </a></td><td>norfloxacin</td></tr><tr><td style=\"white-space:nowrap\">7531<a name=\"ie-core-allergy-intolerance-codes-7531\"> </a></td><td>nortriptyline</td></tr><tr><td style=\"white-space:nowrap\">7597<a name=\"ie-core-allergy-intolerance-codes-7597\"> </a></td><td>nystatin</td></tr><tr><td style=\"white-space:nowrap\">7623<a name=\"ie-core-allergy-intolerance-codes-7623\"> </a></td><td>ofloxacin</td></tr><tr><td style=\"white-space:nowrap\">7646<a name=\"ie-core-allergy-intolerance-codes-7646\"> </a></td><td>omeprazole</td></tr><tr><td style=\"white-space:nowrap\">7676<a name=\"ie-core-allergy-intolerance-codes-7676\"> </a></td><td>opium</td></tr><tr><td style=\"white-space:nowrap\">7715<a name=\"ie-core-allergy-intolerance-codes-7715\"> </a></td><td>orphenadrine</td></tr><tr><td style=\"white-space:nowrap\">77492<a name=\"ie-core-allergy-intolerance-codes-77492\"> </a></td><td>tamsulosin</td></tr><tr><td style=\"white-space:nowrap\">7804<a name=\"ie-core-allergy-intolerance-codes-7804\"> </a></td><td>oxycodone</td></tr><tr><td style=\"white-space:nowrap\">7821<a name=\"ie-core-allergy-intolerance-codes-7821\"> </a></td><td>oxytetracycline</td></tr><tr><td style=\"white-space:nowrap\">787390<a name=\"ie-core-allergy-intolerance-codes-787390\"> </a></td><td>tapentadol</td></tr><tr><td style=\"white-space:nowrap\">7975<a name=\"ie-core-allergy-intolerance-codes-7975\"> </a></td><td>penicillamine</td></tr><tr><td style=\"white-space:nowrap\">797541<a name=\"ie-core-allergy-intolerance-codes-797541\"> </a></td><td>isopropyl alcohol</td></tr><tr><td style=\"white-space:nowrap\">7980<a name=\"ie-core-allergy-intolerance-codes-7980\"> </a></td><td>penicillin G</td></tr><tr><td style=\"white-space:nowrap\">7984<a name=\"ie-core-allergy-intolerance-codes-7984\"> </a></td><td>penicillin V</td></tr><tr><td style=\"white-space:nowrap\">7994<a name=\"ie-core-allergy-intolerance-codes-7994\"> </a></td><td>pentamidine</td></tr><tr><td style=\"white-space:nowrap\">8001<a name=\"ie-core-allergy-intolerance-codes-8001\"> </a></td><td>pentazocine</td></tr><tr><td style=\"white-space:nowrap\">8120<a name=\"ie-core-allergy-intolerance-codes-8120\"> </a></td><td>phenazopyridine</td></tr><tr><td style=\"white-space:nowrap\">8134<a name=\"ie-core-allergy-intolerance-codes-8134\"> </a></td><td>phenobarbital</td></tr><tr><td style=\"white-space:nowrap\">815166<a name=\"ie-core-allergy-intolerance-codes-815166\"> </a></td><td>dextromethorphan / doxylamine</td></tr><tr><td style=\"white-space:nowrap\">8163<a name=\"ie-core-allergy-intolerance-codes-8163\"> </a></td><td>phenylephrine</td></tr><tr><td style=\"white-space:nowrap\">816346<a name=\"ie-core-allergy-intolerance-codes-816346\"> </a></td><td>dexlansoprazole</td></tr><tr><td style=\"white-space:nowrap\">8175<a name=\"ie-core-allergy-intolerance-codes-8175\"> </a></td><td>phenylpropanolamine</td></tr><tr><td style=\"white-space:nowrap\">817579<a name=\"ie-core-allergy-intolerance-codes-817579\"> </a></td><td>acetaminophen / codeine</td></tr><tr><td style=\"white-space:nowrap\">817958<a name=\"ie-core-allergy-intolerance-codes-817958\"> </a></td><td>aspirin / calcium carbonate</td></tr><tr><td style=\"white-space:nowrap\">8183<a name=\"ie-core-allergy-intolerance-codes-8183\"> </a></td><td>phenytoin</td></tr><tr><td style=\"white-space:nowrap\">82122<a name=\"ie-core-allergy-intolerance-codes-82122\"> </a></td><td>levofloxacin</td></tr><tr><td style=\"white-space:nowrap\">822929<a name=\"ie-core-allergy-intolerance-codes-822929\"> </a></td><td>amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate</td></tr><tr><td style=\"white-space:nowrap\">83367<a name=\"ie-core-allergy-intolerance-codes-83367\"> </a></td><td>atorvastatin</td></tr><tr><td style=\"white-space:nowrap\">8356<a name=\"ie-core-allergy-intolerance-codes-8356\"> </a></td><td>piroxicam</td></tr><tr><td style=\"white-space:nowrap\">83818<a name=\"ie-core-allergy-intolerance-codes-83818\"> </a></td><td>irbesartan</td></tr><tr><td style=\"white-space:nowrap\">84108<a name=\"ie-core-allergy-intolerance-codes-84108\"> </a></td><td>rosiglitazone</td></tr><tr><td style=\"white-space:nowrap\">8536<a name=\"ie-core-allergy-intolerance-codes-8536\"> </a></td><td>polymyxin B</td></tr><tr><td style=\"white-space:nowrap\">857974<a name=\"ie-core-allergy-intolerance-codes-857974\"> </a></td><td>saxagliptin</td></tr><tr><td style=\"white-space:nowrap\">8588<a name=\"ie-core-allergy-intolerance-codes-8588\"> </a></td><td>potassium</td></tr><tr><td style=\"white-space:nowrap\">8591<a name=\"ie-core-allergy-intolerance-codes-8591\"> </a></td><td>potassium chloride</td></tr><tr><td style=\"white-space:nowrap\">8610<a name=\"ie-core-allergy-intolerance-codes-8610\"> </a></td><td>povidone</td></tr><tr><td style=\"white-space:nowrap\">8611<a name=\"ie-core-allergy-intolerance-codes-8611\"> </a></td><td>povidone-iodine</td></tr><tr><td style=\"white-space:nowrap\">861634<a name=\"ie-core-allergy-intolerance-codes-861634\"> </a></td><td>pitavastatin</td></tr><tr><td style=\"white-space:nowrap\">8629<a name=\"ie-core-allergy-intolerance-codes-8629\"> </a></td><td>prazosin</td></tr><tr><td style=\"white-space:nowrap\">8638<a name=\"ie-core-allergy-intolerance-codes-8638\"> </a></td><td>prednisolone</td></tr><tr><td style=\"white-space:nowrap\">8640<a name=\"ie-core-allergy-intolerance-codes-8640\"> </a></td><td>prednisone</td></tr><tr><td style=\"white-space:nowrap\">8687<a name=\"ie-core-allergy-intolerance-codes-8687\"> </a></td><td>primaquine</td></tr><tr><td style=\"white-space:nowrap\">8691<a name=\"ie-core-allergy-intolerance-codes-8691\"> </a></td><td>primidone</td></tr><tr><td style=\"white-space:nowrap\">8698<a name=\"ie-core-allergy-intolerance-codes-8698\"> </a></td><td>probenecid</td></tr><tr><td style=\"white-space:nowrap\">8700<a name=\"ie-core-allergy-intolerance-codes-8700\"> </a></td><td>procainamide</td></tr><tr><td style=\"white-space:nowrap\">8701<a name=\"ie-core-allergy-intolerance-codes-8701\"> </a></td><td>procaine</td></tr><tr><td style=\"white-space:nowrap\">8703<a name=\"ie-core-allergy-intolerance-codes-8703\"> </a></td><td>fenofibrate</td></tr><tr><td style=\"white-space:nowrap\">8704<a name=\"ie-core-allergy-intolerance-codes-8704\"> </a></td><td>prochlorperazine</td></tr><tr><td style=\"white-space:nowrap\">8727<a name=\"ie-core-allergy-intolerance-codes-8727\"> </a></td><td>progesterone</td></tr><tr><td style=\"white-space:nowrap\">8745<a name=\"ie-core-allergy-intolerance-codes-8745\"> </a></td><td>promethazine</td></tr><tr><td style=\"white-space:nowrap\">8754<a name=\"ie-core-allergy-intolerance-codes-8754\"> </a></td><td>propafenone</td></tr><tr><td style=\"white-space:nowrap\">87636<a name=\"ie-core-allergy-intolerance-codes-87636\"> </a></td><td>fexofenadine</td></tr><tr><td style=\"white-space:nowrap\">8782<a name=\"ie-core-allergy-intolerance-codes-8782\"> </a></td><td>propofol</td></tr><tr><td style=\"white-space:nowrap\">8785<a name=\"ie-core-allergy-intolerance-codes-8785\"> </a></td><td>propoxyphene</td></tr><tr><td style=\"white-space:nowrap\">8787<a name=\"ie-core-allergy-intolerance-codes-8787\"> </a></td><td>propranolol</td></tr><tr><td style=\"white-space:nowrap\">8794<a name=\"ie-core-allergy-intolerance-codes-8794\"> </a></td><td>propylthiouracil</td></tr><tr><td style=\"white-space:nowrap\">88014<a name=\"ie-core-allergy-intolerance-codes-88014\"> </a></td><td>rizatriptan</td></tr><tr><td style=\"white-space:nowrap\">88249<a name=\"ie-core-allergy-intolerance-codes-88249\"> </a></td><td>montelukast</td></tr><tr><td style=\"white-space:nowrap\">883815<a name=\"ie-core-allergy-intolerance-codes-883815\"> </a></td><td>dexamethasone / tobramycin</td></tr><tr><td style=\"white-space:nowrap\">8896<a name=\"ie-core-allergy-intolerance-codes-8896\"> </a></td><td>pseudoephedrine</td></tr><tr><td style=\"white-space:nowrap\">89013<a name=\"ie-core-allergy-intolerance-codes-89013\"> </a></td><td>aripiprazole</td></tr><tr><td style=\"white-space:nowrap\">8928<a name=\"ie-core-allergy-intolerance-codes-8928\"> </a></td><td>psyllium</td></tr><tr><td style=\"white-space:nowrap\">8948<a name=\"ie-core-allergy-intolerance-codes-8948\"> </a></td><td>purified protein derivative of tuberculin</td></tr><tr><td style=\"white-space:nowrap\">90176<a name=\"ie-core-allergy-intolerance-codes-90176\"> </a></td><td>iron</td></tr><tr><td style=\"white-space:nowrap\">9068<a name=\"ie-core-allergy-intolerance-codes-9068\"> </a></td><td>quinidine</td></tr><tr><td style=\"white-space:nowrap\">9071<a name=\"ie-core-allergy-intolerance-codes-9071\"> </a></td><td>quinine</td></tr><tr><td style=\"white-space:nowrap\">91263<a name=\"ie-core-allergy-intolerance-codes-91263\"> </a></td><td>aloe extract</td></tr><tr><td style=\"white-space:nowrap\">9143<a name=\"ie-core-allergy-intolerance-codes-9143\"> </a></td><td>ranitidine</td></tr><tr><td style=\"white-space:nowrap\">9384<a name=\"ie-core-allergy-intolerance-codes-9384\"> </a></td><td>rifampin</td></tr><tr><td style=\"white-space:nowrap\">9524<a name=\"ie-core-allergy-intolerance-codes-9524\"> </a></td><td>sulfasalazine</td></tr><tr><td style=\"white-space:nowrap\">9601<a name=\"ie-core-allergy-intolerance-codes-9601\"> </a></td><td>scopolamine</td></tr><tr><td style=\"white-space:nowrap\">9778<a name=\"ie-core-allergy-intolerance-codes-9778\"> </a></td><td>silicones</td></tr><tr><td style=\"white-space:nowrap\">9793<a name=\"ie-core-allergy-intolerance-codes-9793\"> </a></td><td>silver sulfadiazine</td></tr><tr><td style=\"white-space:nowrap\">9947<a name=\"ie-core-allergy-intolerance-codes-9947\"> </a></td><td>sotalol</td></tr><tr><td style=\"white-space:nowrap\">9997<a name=\"ie-core-allergy-intolerance-codes-9997\"> </a></td><td>spironolactone</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.16.17" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreAllergyIntoleranceCodes"] ; # 
+  fhir:title [ fhir:v "IE Core Allergy Intolerance Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IE Core concepts to classify Allergy Intolerance Codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "563"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1002293" ] ;
+     fhir:display [ fhir:v "formoterol / mometasone" ]
+  ] [
+     fhir:code [ fhir:v "1007388" ] ;
+     fhir:display [ fhir:v "lactase / rennet" ]
+  ] [
+     fhir:code [ fhir:v "1008298" ] ;
+     fhir:display [ fhir:v "acetaminophen / caffeine / chlorpheniramine / hydrocodone / phenylephrine" ]
+  ] [
+     fhir:code [ fhir:v "1008519" ] ;
+     fhir:display [ fhir:v "guaiacolsulfonate / hydrocodone" ]
+  ] [
+     fhir:code [ fhir:v "1009148" ] ;
+     fhir:display [ fhir:v "ampicillin / sulbactam" ]
+  ] [
+     fhir:code [ fhir:v "10109" ] ;
+     fhir:display [ fhir:v "streptomycin" ]
+  ] [
+     fhir:code [ fhir:v "10154" ] ;
+     fhir:display [ fhir:v "succinylcholine" ]
+  ] [
+     fhir:code [ fhir:v "10156" ] ;
+     fhir:display [ fhir:v "sucralfate" ]
+  ] [
+     fhir:code [ fhir:v "10169" ] ;
+     fhir:display [ fhir:v "sulfacetamide" ]
+  ] [
+     fhir:code [ fhir:v "10171" ] ;
+     fhir:display [ fhir:v "sulfadiazine" ]
+  ] [
+     fhir:code [ fhir:v "10180" ] ;
+     fhir:display [ fhir:v "sulfamethoxazole" ]
+  ] [
+     fhir:code [ fhir:v "10207" ] ;
+     fhir:display [ fhir:v "sulfisoxazole" ]
+  ] [
+     fhir:code [ fhir:v "10223" ] ;
+     fhir:display [ fhir:v "sulfur" ]
+  ] [
+     fhir:code [ fhir:v "10237" ] ;
+     fhir:display [ fhir:v "sulindac" ]
+  ] [
+     fhir:code [ fhir:v "10324" ] ;
+     fhir:display [ fhir:v "tamoxifen" ]
+  ] [
+     fhir:code [ fhir:v "10355" ] ;
+     fhir:display [ fhir:v "temazepam" ]
+  ] [
+     fhir:code [ fhir:v "10368" ] ;
+     fhir:display [ fhir:v "terbutaline" ]
+  ] [
+     fhir:code [ fhir:v "1037042" ] ;
+     fhir:display [ fhir:v "dabigatran etexilate" ]
+  ] [
+     fhir:code [ fhir:v "10379" ] ;
+     fhir:display [ fhir:v "testosterone" ]
+  ] [
+     fhir:code [ fhir:v "10395" ] ;
+     fhir:display [ fhir:v "tetracycline" ]
+  ] [
+     fhir:code [ fhir:v "103990" ] ;
+     fhir:display [ fhir:v "carbidopa / levodopa" ]
+  ] [
+     fhir:code [ fhir:v "1040028" ] ;
+     fhir:display [ fhir:v "lurasidone" ]
+  ] [
+     fhir:code [ fhir:v "10438" ] ;
+     fhir:display [ fhir:v "theophylline" ]
+  ] [
+     fhir:code [ fhir:v "10472" ] ;
+     fhir:display [ fhir:v "thimerosal" ]
+  ] [
+     fhir:code [ fhir:v "10493" ] ;
+     fhir:display [ fhir:v "thiopental" ]
+  ] [
+     fhir:code [ fhir:v "10502" ] ;
+     fhir:display [ fhir:v "thioridazine" ]
+  ] [
+     fhir:code [ fhir:v "10510" ] ;
+     fhir:display [ fhir:v "thiothixene" ]
+  ] [
+     fhir:code [ fhir:v "10582" ] ;
+     fhir:display [ fhir:v "levothyroxine" ]
+  ] [
+     fhir:code [ fhir:v "10594" ] ;
+     fhir:display [ fhir:v "ticlopidine" ]
+  ] [
+     fhir:code [ fhir:v "10600" ] ;
+     fhir:display [ fhir:v "timolol" ]
+  ] [
+     fhir:code [ fhir:v "10627" ] ;
+     fhir:display [ fhir:v "tobramycin" ]
+  ] [
+     fhir:code [ fhir:v "10636" ] ;
+     fhir:display [ fhir:v "tolmetin" ]
+  ] [
+     fhir:code [ fhir:v "10689" ] ;
+     fhir:display [ fhir:v "tramadol" ]
+  ] [
+     fhir:code [ fhir:v "10737" ] ;
+     fhir:display [ fhir:v "trazodone" ]
+  ] [
+     fhir:code [ fhir:v "10759" ] ;
+     fhir:display [ fhir:v "triamcinolone" ]
+  ] [
+     fhir:code [ fhir:v "107602" ] ;
+     fhir:display [ fhir:v "epinephrine / lidocaine" ]
+  ] [
+     fhir:code [ fhir:v "10763" ] ;
+     fhir:display [ fhir:v "triamterene" ]
+  ] [
+     fhir:code [ fhir:v "10767" ] ;
+     fhir:display [ fhir:v "triazolam" ]
+  ] [
+     fhir:code [ fhir:v "10800" ] ;
+     fhir:display [ fhir:v "trifluoperazine" ]
+  ] [
+     fhir:code [ fhir:v "108118" ] ;
+     fhir:display [ fhir:v "mometasone" ]
+  ] [
+     fhir:code [ fhir:v "10829" ] ;
+     fhir:display [ fhir:v "trimethoprim" ]
+  ] [
+     fhir:code [ fhir:v "10831" ] ;
+     fhir:display [ fhir:v "sulfamethoxazole / trimethoprim" ]
+  ] [
+     fhir:code [ fhir:v "11124" ] ;
+     fhir:display [ fhir:v "vancomycin" ]
+  ] [
+     fhir:code [ fhir:v "1114195" ] ;
+     fhir:display [ fhir:v "rivaroxaban" ]
+  ] [
+     fhir:code [ fhir:v "1116632" ] ;
+     fhir:display [ fhir:v "ticagrelor" ]
+  ] [
+     fhir:code [ fhir:v "11170" ] ;
+     fhir:display [ fhir:v "verapamil" ]
+  ] [
+     fhir:code [ fhir:v "11248" ] ;
+     fhir:display [ fhir:v "vitamin B12" ]
+  ] [
+     fhir:code [ fhir:v "11253" ] ;
+     fhir:display [ fhir:v "vitamin D" ]
+  ] [
+     fhir:code [ fhir:v "11256" ] ;
+     fhir:display [ fhir:v "vitamin E" ]
+  ] [
+     fhir:code [ fhir:v "11289" ] ;
+     fhir:display [ fhir:v "warfarin" ]
+  ] [
+     fhir:code [ fhir:v "113588" ] ;
+     fhir:display [ fhir:v "erythromycin / sulfisoxazole" ]
+  ] [
+     fhir:code [ fhir:v "11416" ] ;
+     fhir:display [ fhir:v "zinc" ]
+  ] [
+     fhir:code [ fhir:v "11423" ] ;
+     fhir:display [ fhir:v "zinc oxide" ]
+  ] [
+     fhir:code [ fhir:v "114477" ] ;
+     fhir:display [ fhir:v "levetiracetam" ]
+  ] [
+     fhir:code [ fhir:v "114970" ] ;
+     fhir:display [ fhir:v "zafirlukast" ]
+  ] [
+     fhir:code [ fhir:v "114979" ] ;
+     fhir:display [ fhir:v "rabeprazole" ]
+  ] [
+     fhir:code [ fhir:v "1151" ] ;
+     fhir:display [ fhir:v "ascorbic acid" ]
+  ] [
+     fhir:code [ fhir:v "115264" ] ;
+     fhir:display [ fhir:v "ibandronate" ]
+  ] [
+     fhir:code [ fhir:v "115552" ] ;
+     fhir:display [ fhir:v "trovafloxacin" ]
+  ] [
+     fhir:code [ fhir:v "115698" ] ;
+     fhir:display [ fhir:v "ziprasidone" ]
+  ] [
+     fhir:code [ fhir:v "1191" ] ;
+     fhir:display [ fhir:v "aspirin" ]
+  ] [
+     fhir:code [ fhir:v "119565" ] ;
+     fhir:display [ fhir:v "tolterodine" ]
+  ] [
+     fhir:code [ fhir:v "1202" ] ;
+     fhir:display [ fhir:v "atenolol" ]
+  ] [
+     fhir:code [ fhir:v "121191" ] ;
+     fhir:display [ fhir:v "rituximab" ]
+  ] [
+     fhir:code [ fhir:v "1223" ] ;
+     fhir:display [ fhir:v "atropine" ]
+  ] [
+     fhir:code [ fhir:v "1256" ] ;
+     fhir:display [ fhir:v "azathioprine" ]
+  ] [
+     fhir:code [ fhir:v "1272" ] ;
+     fhir:display [ fhir:v "aztreonam" ]
+  ] [
+     fhir:code [ fhir:v "1291" ] ;
+     fhir:display [ fhir:v "bacitracin" ]
+  ] [
+     fhir:code [ fhir:v "1292" ] ;
+     fhir:display [ fhir:v "baclofen" ]
+  ] [
+     fhir:code [ fhir:v "1310171" ] ;
+     fhir:display [ fhir:v "gadolinium" ]
+  ] [
+     fhir:code [ fhir:v "1311085" ] ;
+     fhir:display [ fhir:v "xanthine" ]
+  ] [
+     fhir:code [ fhir:v "1311524" ] ;
+     fhir:display [ fhir:v "aspartame" ]
+  ] [
+     fhir:code [ fhir:v "1311629" ] ;
+     fhir:display [ fhir:v "nickel" ]
+  ] [
+     fhir:code [ fhir:v "1314891" ] ;
+     fhir:display [ fhir:v "latex" ]
+  ] [
+     fhir:code [ fhir:v "1331" ] ;
+     fhir:display [ fhir:v "barium sulfate" ]
+  ] [
+     fhir:code [ fhir:v "134615" ] ;
+     fhir:display [ fhir:v "brimonidine" ]
+  ] [
+     fhir:code [ fhir:v "1347" ] ;
+     fhir:display [ fhir:v "beclomethasone" ]
+  ] [
+     fhir:code [ fhir:v "135447" ] ;
+     fhir:display [ fhir:v "donepezil" ]
+  ] [
+     fhir:code [ fhir:v "135775" ] ;
+     fhir:display [ fhir:v "zolmitriptan" ]
+  ] [
+     fhir:code [ fhir:v "1359" ] ;
+     fhir:display [ fhir:v "belladonna alkaloids" ]
+  ] [
+     fhir:code [ fhir:v "1362879" ] ;
+     fhir:display [ fhir:v "sulfur dioxide" ]
+  ] [
+     fhir:code [ fhir:v "1363043" ] ;
+     fhir:display [ fhir:v "ethyl ether" ]
+  ] [
+     fhir:code [ fhir:v "136411" ] ;
+     fhir:display [ fhir:v "sildenafil" ]
+  ] [
+     fhir:code [ fhir:v "1364430" ] ;
+     fhir:display [ fhir:v "apixaban" ]
+  ] [
+     fhir:code [ fhir:v "138099" ] ;
+     fhir:display [ fhir:v "gemifloxacin" ]
+  ] [
+     fhir:code [ fhir:v "139462" ] ;
+     fhir:display [ fhir:v "moxifloxacin" ]
+  ] [
+     fhir:code [ fhir:v "1399" ] ;
+     fhir:display [ fhir:v "benzocaine" ]
+  ] [
+     fhir:code [ fhir:v "140587" ] ;
+     fhir:display [ fhir:v "celecoxib" ]
+  ] [
+     fhir:code [ fhir:v "1406" ] ;
+     fhir:display [ fhir:v "benzoin resin" ]
+  ] [
+     fhir:code [ fhir:v "141626" ] ;
+     fhir:display [ fhir:v "colesevelam" ]
+  ] [
+     fhir:code [ fhir:v "1418" ] ;
+     fhir:display [ fhir:v "benzoyl peroxide" ]
+  ] [
+     fhir:code [ fhir:v "1424" ] ;
+     fhir:display [ fhir:v "benztropine" ]
+  ] [
+     fhir:code [ fhir:v "1514" ] ;
+     fhir:display [ fhir:v "betamethasone" ]
+  ] [
+     fhir:code [ fhir:v "153970" ] ;
+     fhir:display [ fhir:v "hyoscyamine" ]
+  ] [
+     fhir:code [ fhir:v "1596450" ] ;
+     fhir:display [ fhir:v "gentamicin" ]
+  ] [
+     fhir:code [ fhir:v "15996" ] ;
+     fhir:display [ fhir:v "mirtazapine" ]
+  ] [
+     fhir:code [ fhir:v "161" ] ;
+     fhir:display [ fhir:v "acetaminophen" ]
+  ] [
+     fhir:code [ fhir:v "16681" ] ;
+     fhir:display [ fhir:v "acarbose" ]
+  ] [
+     fhir:code [ fhir:v "167" ] ;
+     fhir:display [ fhir:v "acetazolamide" ]
+  ] [
+     fhir:code [ fhir:v "17128" ] ;
+     fhir:display [ fhir:v "lansoprazole" ]
+  ] [
+     fhir:code [ fhir:v "1727875" ] ;
+     fhir:display [ fhir:v "tetanus immune globulin" ]
+  ] [
+     fhir:code [ fhir:v "17300" ] ;
+     fhir:display [ fhir:v "alfuzosin" ]
+  ] [
+     fhir:code [ fhir:v "17767" ] ;
+     fhir:display [ fhir:v "amlodipine" ]
+  ] [
+     fhir:code [ fhir:v "1827" ] ;
+     fhir:display [ fhir:v "buspirone" ]
+  ] [
+     fhir:code [ fhir:v "183379" ] ;
+     fhir:display [ fhir:v "rivastigmine" ]
+  ] [
+     fhir:code [ fhir:v "1841" ] ;
+     fhir:display [ fhir:v "butorphanol" ]
+  ] [
+     fhir:code [ fhir:v "18631" ] ;
+     fhir:display [ fhir:v "azithromycin" ]
+  ] [
+     fhir:code [ fhir:v "187832" ] ;
+     fhir:display [ fhir:v "pregabalin" ]
+  ] [
+     fhir:code [ fhir:v "1886" ] ;
+     fhir:display [ fhir:v "caffeine" ]
+  ] [
+     fhir:code [ fhir:v "18867" ] ;
+     fhir:display [ fhir:v "benazepril" ]
+  ] [
+     fhir:code [ fhir:v "1895" ] ;
+     fhir:display [ fhir:v "calcium" ]
+  ] [
+     fhir:code [ fhir:v "1897" ] ;
+     fhir:display [ fhir:v "calcium carbonate" ]
+  ] [
+     fhir:code [ fhir:v "18993" ] ;
+     fhir:display [ fhir:v "benzonatate" ]
+  ] [
+     fhir:code [ fhir:v "190376" ] ;
+     fhir:display [ fhir:v "linezolid" ]
+  ] [
+     fhir:code [ fhir:v "191831" ] ;
+     fhir:display [ fhir:v "infliximab" ]
+  ] [
+     fhir:code [ fhir:v "19478" ] ;
+     fhir:display [ fhir:v "bismuth subsalicylate" ]
+  ] [
+     fhir:code [ fhir:v "19552" ] ;
+     fhir:display [ fhir:v "cefprozil" ]
+  ] [
+     fhir:code [ fhir:v "19711" ] ;
+     fhir:display [ fhir:v "amoxicillin / clavulanate" ]
+  ] [
+     fhir:code [ fhir:v "19831" ] ;
+     fhir:display [ fhir:v "budesonide" ]
+  ] [
+     fhir:code [ fhir:v "1998" ] ;
+     fhir:display [ fhir:v "captopril" ]
+  ] [
+     fhir:code [ fhir:v "2002" ] ;
+     fhir:display [ fhir:v "carbamazepine" ]
+  ] [
+     fhir:code [ fhir:v "20352" ] ;
+     fhir:display [ fhir:v "carvedilol" ]
+  ] [
+     fhir:code [ fhir:v "20481" ] ;
+     fhir:display [ fhir:v "cefepime" ]
+  ] [
+     fhir:code [ fhir:v "20489" ] ;
+     fhir:display [ fhir:v "cefpodoxime" ]
+  ] [
+     fhir:code [ fhir:v "20610" ] ;
+     fhir:display [ fhir:v "cetirizine" ]
+  ] [
+     fhir:code [ fhir:v "2101" ] ;
+     fhir:display [ fhir:v "carisoprodol" ]
+  ] [
+     fhir:code [ fhir:v "21107" ] ;
+     fhir:display [ fhir:v "cilostazol" ]
+  ] [
+     fhir:code [ fhir:v "21183" ] ;
+     fhir:display [ fhir:v "citric acid" ]
+  ] [
+     fhir:code [ fhir:v "21212" ] ;
+     fhir:display [ fhir:v "clarithromycin" ]
+  ] [
+     fhir:code [ fhir:v "214130" ] ;
+     fhir:display [ fhir:v "acetaminophen / butalbital / caffeine" ]
+  ] [
+     fhir:code [ fhir:v "214153" ] ;
+     fhir:display [ fhir:v "acetaminophen / dichloralphenazone / isometheptene" ]
+  ] [
+     fhir:code [ fhir:v "214160" ] ;
+     fhir:display [ fhir:v "aspirin / butalbital / caffeine / codeine" ]
+  ] [
+     fhir:code [ fhir:v "214181" ] ;
+     fhir:display [ fhir:v "acetaminophen / diphenhydramine" ]
+  ] [
+     fhir:code [ fhir:v "214182" ] ;
+     fhir:display [ fhir:v "acetaminophen / hydrocodone" ]
+  ] [
+     fhir:code [ fhir:v "214183" ] ;
+     fhir:display [ fhir:v "acetaminophen / oxycodone" ]
+  ] [
+     fhir:code [ fhir:v "214199" ] ;
+     fhir:display [ fhir:v "albuterol / ipratropium" ]
+  ] [
+     fhir:code [ fhir:v "214223" ] ;
+     fhir:display [ fhir:v "amlodipine / benazepril" ]
+  ] [
+     fhir:code [ fhir:v "214250" ] ;
+     fhir:display [ fhir:v "aspirin / caffeine" ]
+  ] [
+     fhir:code [ fhir:v "214256" ] ;
+     fhir:display [ fhir:v "aspirin / oxycodone" ]
+  ] [
+     fhir:code [ fhir:v "214257" ] ;
+     fhir:display [ fhir:v "aspirin / pentazocine" ]
+  ] [
+     fhir:code [ fhir:v "214317" ] ;
+     fhir:display [ fhir:v "bisoprolol / hydrochlorothiazide" ]
+  ] [
+     fhir:code [ fhir:v "214336" ] ;
+     fhir:display [ fhir:v "caffeine / ergotamine" ]
+  ] [
+     fhir:code [ fhir:v "214354" ] ;
+     fhir:display [ fhir:v "candesartan" ]
+  ] [
+     fhir:code [ fhir:v "214364" ] ;
+     fhir:display [ fhir:v "carbinoxamine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214392" ] ;
+     fhir:display [ fhir:v "chlorpheniramine / hydrocodone" ]
+  ] [
+     fhir:code [ fhir:v "214442" ] ;
+     fhir:display [ fhir:v "codeine / guaifenesin" ]
+  ] [
+     fhir:code [ fhir:v "214445" ] ;
+     fhir:display [ fhir:v "codeine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214488" ] ;
+     fhir:display [ fhir:v "dextromethorphan / guaifenesin" ]
+  ] [
+     fhir:code [ fhir:v "214502" ] ;
+     fhir:display [ fhir:v "diclofenac / misoprostol" ]
+  ] [
+     fhir:code [ fhir:v "214555" ] ;
+     fhir:display [ fhir:v "etanercept" ]
+  ] [
+     fhir:code [ fhir:v "214558" ] ;
+     fhir:display [ fhir:v "ethinyl estradiol / levonorgestrel" ]
+  ] [
+     fhir:code [ fhir:v "214565" ] ;
+     fhir:display [ fhir:v "fexofenadine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214599" ] ;
+     fhir:display [ fhir:v "guaifenesin / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214614" ] ;
+     fhir:display [ fhir:v "homatropine / hydrocodone" ]
+  ] [
+     fhir:code [ fhir:v "214617" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide / irbesartan" ]
+  ] [
+     fhir:code [ fhir:v "214618" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide / lisinopril" ]
+  ] [
+     fhir:code [ fhir:v "214619" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide / losartan" ]
+  ] [
+     fhir:code [ fhir:v "214626" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide / valsartan" ]
+  ] [
+     fhir:code [ fhir:v "214627" ] ;
+     fhir:display [ fhir:v "hydrocodone / ibuprofen" ]
+  ] [
+     fhir:code [ fhir:v "214631" ] ;
+     fhir:display [ fhir:v "hydrocodone / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214682" ] ;
+     fhir:display [ fhir:v "loratadine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "214721" ] ;
+     fhir:display [ fhir:v "naloxone / pentazocine" ]
+  ] [
+     fhir:code [ fhir:v "214807" ] ;
+     fhir:display [ fhir:v "pseudoephedrine / triprolidine" ]
+  ] [
+     fhir:code [ fhir:v "2176" ] ;
+     fhir:display [ fhir:v "cefaclor" ]
+  ] [
+     fhir:code [ fhir:v "217627" ] ;
+     fhir:display [ fhir:v "hydrocortisone / neomycin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "2177" ] ;
+     fhir:display [ fhir:v "cefadroxil" ]
+  ] [
+     fhir:code [ fhir:v "2180" ] ;
+     fhir:display [ fhir:v "cefazolin" ]
+  ] [
+     fhir:code [ fhir:v "2189" ] ;
+     fhir:display [ fhir:v "cefoxitin" ]
+  ] [
+     fhir:code [ fhir:v "2191" ] ;
+     fhir:display [ fhir:v "ceftazidime" ]
+  ] [
+     fhir:code [ fhir:v "2193" ] ;
+     fhir:display [ fhir:v "ceftriaxone" ]
+  ] [
+     fhir:code [ fhir:v "219314" ] ;
+     fhir:display [ fhir:v "polymyxin B / trimethoprim" ]
+  ] [
+     fhir:code [ fhir:v "219315" ] ;
+     fhir:display [ fhir:v "iron polysaccharide" ]
+  ] [
+     fhir:code [ fhir:v "2194" ] ;
+     fhir:display [ fhir:v "cefuroxime" ]
+  ] [
+     fhir:code [ fhir:v "21949" ] ;
+     fhir:display [ fhir:v "cyclobenzaprine" ]
+  ] [
+     fhir:code [ fhir:v "221147" ] ;
+     fhir:display [ fhir:v "polyethylene glycol 3350" ]
+  ] [
+     fhir:code [ fhir:v "22299" ] ;
+     fhir:display [ fhir:v "daptomycin" ]
+  ] [
+     fhir:code [ fhir:v "2231" ] ;
+     fhir:display [ fhir:v "cephalexin" ]
+  ] [
+     fhir:code [ fhir:v "226716" ] ;
+     fhir:display [ fhir:v "aspirin / dipyridamole" ]
+  ] [
+     fhir:code [ fhir:v "228476" ] ;
+     fhir:display [ fhir:v "gatifloxacin" ]
+  ] [
+     fhir:code [ fhir:v "228790" ] ;
+     fhir:display [ fhir:v "dutasteride" ]
+  ] [
+     fhir:code [ fhir:v "232158" ] ;
+     fhir:display [ fhir:v "rofecoxib" ]
+  ] [
+     fhir:code [ fhir:v "233698" ] ;
+     fhir:display [ fhir:v "dronedarone" ]
+  ] [
+     fhir:code [ fhir:v "2348" ] ;
+     fhir:display [ fhir:v "chloramphenicol" ]
+  ] [
+     fhir:code [ fhir:v "2356" ] ;
+     fhir:display [ fhir:v "chlordiazepoxide" ]
+  ] [
+     fhir:code [ fhir:v "2358" ] ;
+     fhir:display [ fhir:v "chlorhexidine" ]
+  ] [
+     fhir:code [ fhir:v "236778" ] ;
+     fhir:display [ fhir:v "trospium" ]
+  ] [
+     fhir:code [ fhir:v "237159" ] ;
+     fhir:display [ fhir:v "levalbuterol" ]
+  ] [
+     fhir:code [ fhir:v "2393" ] ;
+     fhir:display [ fhir:v "chloroquine" ]
+  ] [
+     fhir:code [ fhir:v "2400" ] ;
+     fhir:display [ fhir:v "chlorpheniramine" ]
+  ] [
+     fhir:code [ fhir:v "2403" ] ;
+     fhir:display [ fhir:v "chlorpromazine" ]
+  ] [
+     fhir:code [ fhir:v "2409" ] ;
+     fhir:display [ fhir:v "chlorthalidone" ]
+  ] [
+     fhir:code [ fhir:v "2410" ] ;
+     fhir:display [ fhir:v "chlorzoxazone" ]
+  ] [
+     fhir:code [ fhir:v "2418" ] ;
+     fhir:display [ fhir:v "cholecalciferol" ]
+  ] [
+     fhir:code [ fhir:v "2447" ] ;
+     fhir:display [ fhir:v "cholestyramine resin" ]
+  ] [
+     fhir:code [ fhir:v "24605" ] ;
+     fhir:display [ fhir:v "etodolac" ]
+  ] [
+     fhir:code [ fhir:v "24947" ] ;
+     fhir:display [ fhir:v "ferrous sulfate" ]
+  ] [
+     fhir:code [ fhir:v "25025" ] ;
+     fhir:display [ fhir:v "finasteride" ]
+  ] [
+     fhir:code [ fhir:v "25033" ] ;
+     fhir:display [ fhir:v "cefixime" ]
+  ] [
+     fhir:code [ fhir:v "25037" ] ;
+     fhir:display [ fhir:v "cefdinir" ]
+  ] [
+     fhir:code [ fhir:v "25120" ] ;
+     fhir:display [ fhir:v "flunisolide" ]
+  ] [
+     fhir:code [ fhir:v "25255" ] ;
+     fhir:display [ fhir:v "formoterol" ]
+  ] [
+     fhir:code [ fhir:v "253157" ] ;
+     fhir:display [ fhir:v "bee pollen" ]
+  ] [
+     fhir:code [ fhir:v "2541" ] ;
+     fhir:display [ fhir:v "cimetidine" ]
+  ] [
+     fhir:code [ fhir:v "25480" ] ;
+     fhir:display [ fhir:v "gabapentin" ]
+  ] [
+     fhir:code [ fhir:v "2551" ] ;
+     fhir:display [ fhir:v "ciprofloxacin" ]
+  ] [
+     fhir:code [ fhir:v "2556" ] ;
+     fhir:display [ fhir:v "citalopram" ]
+  ] [
+     fhir:code [ fhir:v "25789" ] ;
+     fhir:display [ fhir:v "glimepiride" ]
+  ] [
+     fhir:code [ fhir:v "2582" ] ;
+     fhir:display [ fhir:v "clindamycin" ]
+  ] [
+     fhir:code [ fhir:v "258337" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide / triamterene" ]
+  ] [
+     fhir:code [ fhir:v "2598" ] ;
+     fhir:display [ fhir:v "clonazepam" ]
+  ] [
+     fhir:code [ fhir:v "2599" ] ;
+     fhir:display [ fhir:v "clonidine" ]
+  ] [
+     fhir:code [ fhir:v "260101" ] ;
+     fhir:display [ fhir:v "oseltamivir" ]
+  ] [
+     fhir:code [ fhir:v "26225" ] ;
+     fhir:display [ fhir:v "ondansetron" ]
+  ] [
+     fhir:code [ fhir:v "2623" ] ;
+     fhir:display [ fhir:v "clotrimazole" ]
+  ] [
+     fhir:code [ fhir:v "2670" ] ;
+     fhir:display [ fhir:v "codeine" ]
+  ] [
+     fhir:code [ fhir:v "2683" ] ;
+     fhir:display [ fhir:v "colchicine" ]
+  ] [
+     fhir:code [ fhir:v "2685" ] ;
+     fhir:display [ fhir:v "colestipol" ]
+  ] [
+     fhir:code [ fhir:v "27169" ] ;
+     fhir:display [ fhir:v "leflunomide" ]
+  ] [
+     fhir:code [ fhir:v "274783" ] ;
+     fhir:display [ fhir:v "insulin glargine" ]
+  ] [
+     fhir:code [ fhir:v "274786" ] ;
+     fhir:display [ fhir:v "telithromycin" ]
+  ] [
+     fhir:code [ fhir:v "27723" ] ;
+     fhir:display [ fhir:v "iodinated glycerol" ]
+  ] [
+     fhir:code [ fhir:v "278567" ] ;
+     fhir:display [ fhir:v "valdecoxib" ]
+  ] [
+     fhir:code [ fhir:v "28031" ] ;
+     fhir:display [ fhir:v "itraconazole" ]
+  ] [
+     fhir:code [ fhir:v "281" ] ;
+     fhir:display [ fhir:v "acyclovir" ]
+  ] [
+     fhir:code [ fhir:v "282422" ] ;
+     fhir:display [ fhir:v "aspirin / butalbital / caffeine" ]
+  ] [
+     fhir:code [ fhir:v "283742" ] ;
+     fhir:display [ fhir:v "esomeprazole" ]
+  ] [
+     fhir:code [ fhir:v "283809" ] ;
+     fhir:display [ fhir:v "travoprost" ]
+  ] [
+     fhir:code [ fhir:v "28439" ] ;
+     fhir:display [ fhir:v "lamotrigine" ]
+  ] [
+     fhir:code [ fhir:v "284635" ] ;
+     fhir:display [ fhir:v "fluticasone / salmeterol" ]
+  ] [
+     fhir:code [ fhir:v "2878" ] ;
+     fhir:display [ fhir:v "cortisone" ]
+  ] [
+     fhir:code [ fhir:v "28889" ] ;
+     fhir:display [ fhir:v "loratadine" ]
+  ] [
+     fhir:code [ fhir:v "28981" ] ;
+     fhir:display [ fhir:v "loracarbef" ]
+  ] [
+     fhir:code [ fhir:v "29046" ] ;
+     fhir:display [ fhir:v "lisinopril" ]
+  ] [
+     fhir:code [ fhir:v "29542" ] ;
+     fhir:display [ fhir:v "mercury, ammoniated" ]
+  ] [
+     fhir:code [ fhir:v "29561" ] ;
+     fhir:display [ fhir:v "meropenem" ]
+  ] [
+     fhir:code [ fhir:v "296" ] ;
+     fhir:display [ fhir:v "adenosine" ]
+  ] [
+     fhir:code [ fhir:v "3008" ] ;
+     fhir:display [ fhir:v "cyclosporine" ]
+  ] [
+     fhir:code [ fhir:v "301542" ] ;
+     fhir:display [ fhir:v "rosuvastatin" ]
+  ] [
+     fhir:code [ fhir:v "306674" ] ;
+     fhir:display [ fhir:v "vardenafil" ]
+  ] [
+     fhir:code [ fhir:v "3108" ] ;
+     fhir:display [ fhir:v "dapsone" ]
+  ] [
+     fhir:code [ fhir:v "3143" ] ;
+     fhir:display [ fhir:v "prasterone" ]
+  ] [
+     fhir:code [ fhir:v "31448" ] ;
+     fhir:display [ fhir:v "nabumetone" ]
+  ] [
+     fhir:code [ fhir:v "31555" ] ;
+     fhir:display [ fhir:v "nebivolol" ]
+  ] [
+     fhir:code [ fhir:v "31565" ] ;
+     fhir:display [ fhir:v "nefazodone" ]
+  ] [
+     fhir:code [ fhir:v "31738" ] ;
+     fhir:display [ fhir:v "nickel sulfate" ]
+  ] [
+     fhir:code [ fhir:v "318340" ] ;
+     fhir:display [ fhir:v "Aloe vera preparation" ]
+  ] [
+     fhir:code [ fhir:v "321064" ] ;
+     fhir:display [ fhir:v "olmesartan" ]
+  ] [
+     fhir:code [ fhir:v "321988" ] ;
+     fhir:display [ fhir:v "escitalopram" ]
+  ] [
+     fhir:code [ fhir:v "322167" ] ;
+     fhir:display [ fhir:v "solifenacin" ]
+  ] [
+     fhir:code [ fhir:v "3247" ] ;
+     fhir:display [ fhir:v "desipramine" ]
+  ] [
+     fhir:code [ fhir:v "325642" ] ;
+     fhir:display [ fhir:v "ertapenem" ]
+  ] [
+     fhir:code [ fhir:v "32592" ] ;
+     fhir:display [ fhir:v "oxaliplatin" ]
+  ] [
+     fhir:code [ fhir:v "32613" ] ;
+     fhir:display [ fhir:v "oxaprozin" ]
+  ] [
+     fhir:code [ fhir:v "32624" ] ;
+     fhir:display [ fhir:v "oxcarbazepine" ]
+  ] [
+     fhir:code [ fhir:v "3264" ] ;
+     fhir:display [ fhir:v "dexamethasone" ]
+  ] [
+     fhir:code [ fhir:v "32675" ] ;
+     fhir:display [ fhir:v "oxybutynin" ]
+  ] [
+     fhir:code [ fhir:v "327361" ] ;
+     fhir:display [ fhir:v "adalimumab" ]
+  ] [
+     fhir:code [ fhir:v "3289" ] ;
+     fhir:display [ fhir:v "dextromethorphan" ]
+  ] [
+     fhir:code [ fhir:v "32937" ] ;
+     fhir:display [ fhir:v "paroxetine" ]
+  ] [
+     fhir:code [ fhir:v "32968" ] ;
+     fhir:display [ fhir:v "clopidogrel" ]
+  ] [
+     fhir:code [ fhir:v "3322" ] ;
+     fhir:display [ fhir:v "diazepam" ]
+  ] [
+     fhir:code [ fhir:v "33408" ] ;
+     fhir:display [ fhir:v "phenyltoloxamine" ]
+  ] [
+     fhir:code [ fhir:v "3355" ] ;
+     fhir:display [ fhir:v "diclofenac" ]
+  ] [
+     fhir:code [ fhir:v "3356" ] ;
+     fhir:display [ fhir:v "dicloxacillin" ]
+  ] [
+     fhir:code [ fhir:v "3361" ] ;
+     fhir:display [ fhir:v "dicyclomine" ]
+  ] [
+     fhir:code [ fhir:v "33738" ] ;
+     fhir:display [ fhir:v "pioglitazone" ]
+  ] [
+     fhir:code [ fhir:v "3393" ] ;
+     fhir:display [ fhir:v "diflunisal" ]
+  ] [
+     fhir:code [ fhir:v "3407" ] ;
+     fhir:display [ fhir:v "digoxin" ]
+  ] [
+     fhir:code [ fhir:v "341248" ] ;
+     fhir:display [ fhir:v "ezetimibe" ]
+  ] [
+     fhir:code [ fhir:v "3418" ] ;
+     fhir:display [ fhir:v "dihydroergotamine" ]
+  ] [
+     fhir:code [ fhir:v "3423" ] ;
+     fhir:display [ fhir:v "hydromorphone" ]
+  ] [
+     fhir:code [ fhir:v "3443" ] ;
+     fhir:display [ fhir:v "diltiazem" ]
+  ] [
+     fhir:code [ fhir:v "3444" ] ;
+     fhir:display [ fhir:v "dimenhydrinate" ]
+  ] [
+     fhir:code [ fhir:v "3498" ] ;
+     fhir:display [ fhir:v "diphenhydramine" ]
+  ] [
+     fhir:code [ fhir:v "35208" ] ;
+     fhir:display [ fhir:v "quinapril" ]
+  ] [
+     fhir:code [ fhir:v "3521" ] ;
+     fhir:display [ fhir:v "dipyridamole" ]
+  ] [
+     fhir:code [ fhir:v "352362" ] ;
+     fhir:display [ fhir:v "acetaminophen / tramadol" ]
+  ] [
+     fhir:code [ fhir:v "35296" ] ;
+     fhir:display [ fhir:v "ramipril" ]
+  ] [
+     fhir:code [ fhir:v "35382" ] ;
+     fhir:display [ fhir:v "resorcinol" ]
+  ] [
+     fhir:code [ fhir:v "35636" ] ;
+     fhir:display [ fhir:v "risperidone" ]
+  ] [
+     fhir:code [ fhir:v "358263" ] ;
+     fhir:display [ fhir:v "tadalafil" ]
+  ] [
+     fhir:code [ fhir:v "35827" ] ;
+     fhir:display [ fhir:v "ketorolac" ]
+  ] [
+     fhir:code [ fhir:v "35829" ] ;
+     fhir:display [ fhir:v "ranolazine" ]
+  ] [
+     fhir:code [ fhir:v "36108" ] ;
+     fhir:display [ fhir:v "salsalate" ]
+  ] [
+     fhir:code [ fhir:v "36117" ] ;
+     fhir:display [ fhir:v "salmeterol" ]
+  ] [
+     fhir:code [ fhir:v "3616" ] ;
+     fhir:display [ fhir:v "dobutamine" ]
+  ] [
+     fhir:code [ fhir:v "3638" ] ;
+     fhir:display [ fhir:v "doxepin" ]
+  ] [
+     fhir:code [ fhir:v "3640" ] ;
+     fhir:display [ fhir:v "doxycycline" ]
+  ] [
+     fhir:code [ fhir:v "36437" ] ;
+     fhir:display [ fhir:v "sertraline" ]
+  ] [
+     fhir:code [ fhir:v "3648" ] ;
+     fhir:display [ fhir:v "droperidol" ]
+  ] [
+     fhir:code [ fhir:v "36567" ] ;
+     fhir:display [ fhir:v "simvastatin" ]
+  ] [
+     fhir:code [ fhir:v "37418" ] ;
+     fhir:display [ fhir:v "sumatriptan" ]
+  ] [
+     fhir:code [ fhir:v "37617" ] ;
+     fhir:display [ fhir:v "tazobactam" ]
+  ] [
+     fhir:code [ fhir:v "37798" ] ;
+     fhir:display [ fhir:v "terazosin" ]
+  ] [
+     fhir:code [ fhir:v "37801" ] ;
+     fhir:display [ fhir:v "terbinafine" ]
+  ] [
+     fhir:code [ fhir:v "3827" ] ;
+     fhir:display [ fhir:v "enalapril" ]
+  ] [
+     fhir:code [ fhir:v "3829" ] ;
+     fhir:display [ fhir:v "enalaprilat" ]
+  ] [
+     fhir:code [ fhir:v "38400" ] ;
+     fhir:display [ fhir:v "atomoxetine" ]
+  ] [
+     fhir:code [ fhir:v "38404" ] ;
+     fhir:display [ fhir:v "topiramate" ]
+  ] [
+     fhir:code [ fhir:v "38413" ] ;
+     fhir:display [ fhir:v "torsemide" ]
+  ] [
+     fhir:code [ fhir:v "38574" ] ;
+     fhir:display [ fhir:v "trichloroacetaldehyde" ]
+  ] [
+     fhir:code [ fhir:v "38685" ] ;
+     fhir:display [ fhir:v "trimethobenzamide" ]
+  ] [
+     fhir:code [ fhir:v "389132" ] ;
+     fhir:display [ fhir:v "budesonide / formoterol" ]
+  ] [
+     fhir:code [ fhir:v "3966" ] ;
+     fhir:display [ fhir:v "ephedrine" ]
+  ] [
+     fhir:code [ fhir:v "39786" ] ;
+     fhir:display [ fhir:v "venlafaxine" ]
+  ] [
+     fhir:code [ fhir:v "3992" ] ;
+     fhir:display [ fhir:v "epinephrine" ]
+  ] [
+     fhir:code [ fhir:v "39993" ] ;
+     fhir:display [ fhir:v "zolpidem" ]
+  ] [
+     fhir:code [ fhir:v "39998" ] ;
+     fhir:display [ fhir:v "zonisamide" ]
+  ] [
+     fhir:code [ fhir:v "40048" ] ;
+     fhir:display [ fhir:v "carboplatin" ]
+  ] [
+     fhir:code [ fhir:v "400674" ] ;
+     fhir:display [ fhir:v "dexbrompheniramine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "4025" ] ;
+     fhir:display [ fhir:v "ergotamine" ]
+  ] [
+     fhir:code [ fhir:v "40254" ] ;
+     fhir:display [ fhir:v "valproate" ]
+  ] [
+     fhir:code [ fhir:v "4053" ] ;
+     fhir:display [ fhir:v "erythromycin" ]
+  ] [
+     fhir:code [ fhir:v "40575" ] ;
+     fhir:display [ fhir:v "zileuton" ]
+  ] [
+     fhir:code [ fhir:v "40790" ] ;
+     fhir:display [ fhir:v "pantoprazole" ]
+  ] [
+     fhir:code [ fhir:v "4083" ] ;
+     fhir:display [ fhir:v "estradiol" ]
+  ] [
+     fhir:code [ fhir:v "4099" ] ;
+     fhir:display [ fhir:v "estrogens, conjugated (USP)" ]
+  ] [
+     fhir:code [ fhir:v "41126" ] ;
+     fhir:display [ fhir:v "fluticasone" ]
+  ] [
+     fhir:code [ fhir:v "41127" ] ;
+     fhir:display [ fhir:v "fluvastatin" ]
+  ] [
+     fhir:code [ fhir:v "4124" ] ;
+     fhir:display [ fhir:v "ethinyl estradiol" ]
+  ] [
+     fhir:code [ fhir:v "41397" ] ;
+     fhir:display [ fhir:v "lactase" ]
+  ] [
+     fhir:code [ fhir:v "41493" ] ;
+     fhir:display [ fhir:v "meloxicam" ]
+  ] [
+     fhir:code [ fhir:v "42330" ] ;
+     fhir:display [ fhir:v "terfenadine" ]
+  ] [
+     fhir:code [ fhir:v "42331" ] ;
+     fhir:display [ fhir:v "misoprostol" ]
+  ] [
+     fhir:code [ fhir:v "42347" ] ;
+     fhir:display [ fhir:v "bupropion" ]
+  ] [
+     fhir:code [ fhir:v "42351" ] ;
+     fhir:display [ fhir:v "lithium carbonate" ]
+  ] [
+     fhir:code [ fhir:v "42372" ] ;
+     fhir:display [ fhir:v "mupirocin" ]
+  ] [
+     fhir:code [ fhir:v "42463" ] ;
+     fhir:display [ fhir:v "pravastatin" ]
+  ] [
+     fhir:code [ fhir:v "4278" ] ;
+     fhir:display [ fhir:v "famotidine" ]
+  ] [
+     fhir:code [ fhir:v "4316" ] ;
+     fhir:display [ fhir:v "felodipine" ]
+  ] [
+     fhir:code [ fhir:v "4337" ] ;
+     fhir:display [ fhir:v "fentanyl" ]
+  ] [
+     fhir:code [ fhir:v "435" ] ;
+     fhir:display [ fhir:v "albuterol" ]
+  ] [
+     fhir:code [ fhir:v "43611" ] ;
+     fhir:display [ fhir:v "latanoprost" ]
+  ] [
+     fhir:code [ fhir:v "4419" ] ;
+     fhir:display [ fhir:v "fish oils" ]
+  ] [
+     fhir:code [ fhir:v "4441" ] ;
+     fhir:display [ fhir:v "flecainide" ]
+  ] [
+     fhir:code [ fhir:v "4450" ] ;
+     fhir:display [ fhir:v "fluconazole" ]
+  ] [
+     fhir:code [ fhir:v "448" ] ;
+     fhir:display [ fhir:v "ethanol" ]
+  ] [
+     fhir:code [ fhir:v "4492" ] ;
+     fhir:display [ fhir:v "fluorouracil" ]
+  ] [
+     fhir:code [ fhir:v "4493" ] ;
+     fhir:display [ fhir:v "fluoxetine" ]
+  ] [
+     fhir:code [ fhir:v "4496" ] ;
+     fhir:display [ fhir:v "fluphenazine" ]
+  ] [
+     fhir:code [ fhir:v "4500" ] ;
+     fhir:display [ fhir:v "flurandrenolide" ]
+  ] [
+     fhir:code [ fhir:v "4530" ] ;
+     fhir:display [ fhir:v "formaldehyde" ]
+  ] [
+     fhir:code [ fhir:v "4603" ] ;
+     fhir:display [ fhir:v "furosemide" ]
+  ] [
+     fhir:code [ fhir:v "46041" ] ;
+     fhir:display [ fhir:v "alendronate" ]
+  ] [
+     fhir:code [ fhir:v "461016" ] ;
+     fhir:display [ fhir:v "eszopiclone" ]
+  ] [
+     fhir:code [ fhir:v "4637" ] ;
+     fhir:display [ fhir:v "galantamine" ]
+  ] [
+     fhir:code [ fhir:v "465397" ] ;
+     fhir:display [ fhir:v "ciprofloxacin / dexamethasone" ]
+  ] [
+     fhir:code [ fhir:v "466522" ] ;
+     fhir:display [ fhir:v "diphenhydramine / zinc acetate" ]
+  ] [
+     fhir:code [ fhir:v "466541" ] ;
+     fhir:display [ fhir:v "neomycin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "466549" ] ;
+     fhir:display [ fhir:v "aspirin / caffeine / orphenadrine" ]
+  ] [
+     fhir:code [ fhir:v "466553" ] ;
+     fhir:display [ fhir:v "penicillin G benzathine / penicillin G procaine" ]
+  ] [
+     fhir:code [ fhir:v "466566" ] ;
+     fhir:display [ fhir:v "acetaminophen / dextromethorphan / diphenhydramine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "466584" ] ;
+     fhir:display [ fhir:v "acetaminophen / aspirin / caffeine" ]
+  ] [
+     fhir:code [ fhir:v "4719" ] ;
+     fhir:display [ fhir:v "gemfibrozil" ]
+  ] [
+     fhir:code [ fhir:v "475968" ] ;
+     fhir:display [ fhir:v "liraglutide" ]
+  ] [
+     fhir:code [ fhir:v "477619" ] ;
+     fhir:display [ fhir:v "bacitracin / neomycin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "4815" ] ;
+     fhir:display [ fhir:v "glyburide" ]
+  ] [
+     fhir:code [ fhir:v "48203" ] ;
+     fhir:display [ fhir:v "clavulanate" ]
+  ] [
+     fhir:code [ fhir:v "4821" ] ;
+     fhir:display [ fhir:v "glipizide" ]
+  ] [
+     fhir:code [ fhir:v "484139" ] ;
+     fhir:display [ fhir:v "chlorhexidine / isopropyl alcohol" ]
+  ] [
+     fhir:code [ fhir:v "484211" ] ;
+     fhir:display [ fhir:v "ezetimibe / simvastatin" ]
+  ] [
+     fhir:code [ fhir:v "4850" ] ;
+     fhir:display [ fhir:v "glucose" ]
+  ] [
+     fhir:code [ fhir:v "4917" ] ;
+     fhir:display [ fhir:v "nitroglycerin" ]
+  ] [
+     fhir:code [ fhir:v "49276" ] ;
+     fhir:display [ fhir:v "doxazosin" ]
+  ] [
+     fhir:code [ fhir:v "50166" ] ;
+     fhir:display [ fhir:v "fosinopril" ]
+  ] [
+     fhir:code [ fhir:v "5021" ] ;
+     fhir:display [ fhir:v "griseofulvin" ]
+  ] [
+     fhir:code [ fhir:v "5032" ] ;
+     fhir:display [ fhir:v "guaifenesin" ]
+  ] [
+     fhir:code [ fhir:v "5093" ] ;
+     fhir:display [ fhir:v "haloperidol" ]
+  ] [
+     fhir:code [ fhir:v "51272" ] ;
+     fhir:display [ fhir:v "quetiapine" ]
+  ] [
+     fhir:code [ fhir:v "519" ] ;
+     fhir:display [ fhir:v "allopurinol" ]
+  ] [
+     fhir:code [ fhir:v "52175" ] ;
+     fhir:display [ fhir:v "losartan" ]
+  ] [
+     fhir:code [ fhir:v "5224" ] ;
+     fhir:display [ fhir:v "heparin" ]
+  ] [
+     fhir:code [ fhir:v "52582" ] ;
+     fhir:display [ fhir:v "mesalamine" ]
+  ] [
+     fhir:code [ fhir:v "5470" ] ;
+     fhir:display [ fhir:v "hydralazine" ]
+  ] [
+     fhir:code [ fhir:v "5487" ] ;
+     fhir:display [ fhir:v "hydrochlorothiazide" ]
+  ] [
+     fhir:code [ fhir:v "5489" ] ;
+     fhir:display [ fhir:v "hydrocodone" ]
+  ] [
+     fhir:code [ fhir:v "5492" ] ;
+     fhir:display [ fhir:v "hydrocortisone" ]
+  ] [
+     fhir:code [ fhir:v "5499" ] ;
+     fhir:display [ fhir:v "hydrogen peroxide" ]
+  ] [
+     fhir:code [ fhir:v "5521" ] ;
+     fhir:display [ fhir:v "hydroxychloroquine" ]
+  ] [
+     fhir:code [ fhir:v "5553" ] ;
+     fhir:display [ fhir:v "hydroxyzine" ]
+  ] [
+     fhir:code [ fhir:v "5640" ] ;
+     fhir:display [ fhir:v "ibuprofen" ]
+  ] [
+     fhir:code [ fhir:v "5691" ] ;
+     fhir:display [ fhir:v "imipramine" ]
+  ] [
+     fhir:code [ fhir:v "56946" ] ;
+     fhir:display [ fhir:v "paclitaxel" ]
+  ] [
+     fhir:code [ fhir:v "57258" ] ;
+     fhir:display [ fhir:v "tizanidine" ]
+  ] [
+     fhir:code [ fhir:v "5764" ] ;
+     fhir:display [ fhir:v "indapamide" ]
+  ] [
+     fhir:code [ fhir:v "5781" ] ;
+     fhir:display [ fhir:v "indomethacin" ]
+  ] [
+     fhir:code [ fhir:v "588250" ] ;
+     fhir:display [ fhir:v "milnacipran" ]
+  ] [
+     fhir:code [ fhir:v "59078" ] ;
+     fhir:display [ fhir:v "metaxalone" ]
+  ] [
+     fhir:code [ fhir:v "591622" ] ;
+     fhir:display [ fhir:v "varenicline" ]
+  ] [
+     fhir:code [ fhir:v "5933" ] ;
+     fhir:display [ fhir:v "iodine" ]
+  ] [
+     fhir:code [ fhir:v "593411" ] ;
+     fhir:display [ fhir:v "sitagliptin" ]
+  ] [
+     fhir:code [ fhir:v "594040" ] ;
+     fhir:display [ fhir:v "atropine / diphenoxylate" ]
+  ] [
+     fhir:code [ fhir:v "5956" ] ;
+     fhir:display [ fhir:v "iohexol" ]
+  ] [
+     fhir:code [ fhir:v "596" ] ;
+     fhir:display [ fhir:v "alprazolam" ]
+  ] [
+     fhir:code [ fhir:v "596723" ] ;
+     fhir:display [ fhir:v "cerivastatin" ]
+  ] [
+     fhir:code [ fhir:v "597142" ] ;
+     fhir:display [ fhir:v "brimonidine / timolol" ]
+  ] [
+     fhir:code [ fhir:v "5992" ] ;
+     fhir:display [ fhir:v "iron-dextran complex" ]
+  ] [
+     fhir:code [ fhir:v "60207" ] ;
+     fhir:display [ fhir:v "dorzolamide" ]
+  ] [
+     fhir:code [ fhir:v "6038" ] ;
+     fhir:display [ fhir:v "isoniazid" ]
+  ] [
+     fhir:code [ fhir:v "60548" ] ;
+     fhir:display [ fhir:v "exenatide" ]
+  ] [
+     fhir:code [ fhir:v "6057" ] ;
+     fhir:display [ fhir:v "isosorbide" ]
+  ] [
+     fhir:code [ fhir:v "6058" ] ;
+     fhir:display [ fhir:v "isosorbide dinitrate" ]
+  ] [
+     fhir:code [ fhir:v "611854" ] ;
+     fhir:display [ fhir:v "chlordiazepoxide / clidinium" ]
+  ] [
+     fhir:code [ fhir:v "6130" ] ;
+     fhir:display [ fhir:v "ketamine" ]
+  ] [
+     fhir:code [ fhir:v "6135" ] ;
+     fhir:display [ fhir:v "ketoconazole" ]
+  ] [
+     fhir:code [ fhir:v "61381" ] ;
+     fhir:display [ fhir:v "olanzapine" ]
+  ] [
+     fhir:code [ fhir:v "6142" ] ;
+     fhir:display [ fhir:v "ketoprofen" ]
+  ] [
+     fhir:code [ fhir:v "6185" ] ;
+     fhir:display [ fhir:v "labetalol" ]
+  ] [
+     fhir:code [ fhir:v "620" ] ;
+     fhir:display [ fhir:v "amantadine" ]
+  ] [
+     fhir:code [ fhir:v "6218" ] ;
+     fhir:display [ fhir:v "lactulose" ]
+  ] [
+     fhir:code [ fhir:v "6227" ] ;
+     fhir:display [ fhir:v "lanolin" ]
+  ] [
+     fhir:code [ fhir:v "6387" ] ;
+     fhir:display [ fhir:v "lidocaine" ]
+  ] [
+     fhir:code [ fhir:v "639194" ] ;
+     fhir:display [ fhir:v "acetaminophen / propoxyphene" ]
+  ] [
+     fhir:code [ fhir:v "6398" ] ;
+     fhir:display [ fhir:v "lincomycin" ]
+  ] [
+     fhir:code [ fhir:v "6448" ] ;
+     fhir:display [ fhir:v "lithium" ]
+  ] [
+     fhir:code [ fhir:v "645555" ] ;
+     fhir:display [ fhir:v "bacitracin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "6468" ] ;
+     fhir:display [ fhir:v "loperamide" ]
+  ] [
+     fhir:code [ fhir:v "6470" ] ;
+     fhir:display [ fhir:v "lorazepam" ]
+  ] [
+     fhir:code [ fhir:v "6472" ] ;
+     fhir:display [ fhir:v "lovastatin" ]
+  ] [
+     fhir:code [ fhir:v "6574" ] ;
+     fhir:display [ fhir:v "magnesium" ]
+  ] [
+     fhir:code [ fhir:v "6585" ] ;
+     fhir:display [ fhir:v "magnesium sulfate" ]
+  ] [
+     fhir:code [ fhir:v "662263" ] ;
+     fhir:display [ fhir:v "dorzolamide / timolol" ]
+  ] [
+     fhir:code [ fhir:v "6676" ] ;
+     fhir:display [ fhir:v "meclizine" ]
+  ] [
+     fhir:code [ fhir:v "6691" ] ;
+     fhir:display [ fhir:v "medroxyprogesterone" ]
+  ] [
+     fhir:code [ fhir:v "67108" ] ;
+     fhir:display [ fhir:v "enoxaparin" ]
+  ] [
+     fhir:code [ fhir:v "6711" ] ;
+     fhir:display [ fhir:v "melatonin" ]
+  ] [
+     fhir:code [ fhir:v "6719" ] ;
+     fhir:display [ fhir:v "memantine" ]
+  ] [
+     fhir:code [ fhir:v "6750" ] ;
+     fhir:display [ fhir:v "menthol" ]
+  ] [
+     fhir:code [ fhir:v "6754" ] ;
+     fhir:display [ fhir:v "meperidine" ]
+  ] [
+     fhir:code [ fhir:v "6809" ] ;
+     fhir:display [ fhir:v "metformin" ]
+  ] [
+     fhir:code [ fhir:v "6813" ] ;
+     fhir:display [ fhir:v "methadone" ]
+  ] [
+     fhir:code [ fhir:v "6835" ] ;
+     fhir:display [ fhir:v "methimazole" ]
+  ] [
+     fhir:code [ fhir:v "6845" ] ;
+     fhir:display [ fhir:v "methocarbamol" ]
+  ] [
+     fhir:code [ fhir:v "6851" ] ;
+     fhir:display [ fhir:v "methotrexate" ]
+  ] [
+     fhir:code [ fhir:v "6876" ] ;
+     fhir:display [ fhir:v "methyldopa" ]
+  ] [
+     fhir:code [ fhir:v "689" ] ;
+     fhir:display [ fhir:v "aminophylline" ]
+  ] [
+     fhir:code [ fhir:v "689467" ] ;
+     fhir:display [ fhir:v "oxytetracycline / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "689518" ] ;
+     fhir:display [ fhir:v "aspirin / caffeine / propoxyphene" ]
+  ] [
+     fhir:code [ fhir:v "689556" ] ;
+     fhir:display [ fhir:v "acetaminophen / aspirin / phenylpropanolamine" ]
+  ] [
+     fhir:code [ fhir:v "689558" ] ;
+     fhir:display [ fhir:v "acetaminophen / brompheniramine / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "689561" ] ;
+     fhir:display [ fhir:v "acetaminophen / butalbital / caffeine / codeine" ]
+  ] [
+     fhir:code [ fhir:v "689582" ] ;
+     fhir:display [ fhir:v "acetaminophen / chlorpheniramine / dextromethorphan / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "689606" ] ;
+     fhir:display [ fhir:v "atropine / hyoscyamine / phenobarbital / scopolamine" ]
+  ] [
+     fhir:code [ fhir:v "689623" ] ;
+     fhir:display [ fhir:v "bacitracin / hydrocortisone / neomycin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "690077" ] ;
+     fhir:display [ fhir:v "benzalkonium / lidocaine" ]
+  ] [
+     fhir:code [ fhir:v "6901" ] ;
+     fhir:display [ fhir:v "methylphenidate" ]
+  ] [
+     fhir:code [ fhir:v "6902" ] ;
+     fhir:display [ fhir:v "methylprednisolone" ]
+  ] [
+     fhir:code [ fhir:v "690693" ] ;
+     fhir:display [ fhir:v "diphenhydramine / phenylephrine" ]
+  ] [
+     fhir:code [ fhir:v "690808" ] ;
+     fhir:display [ fhir:v "brompheniramine / dextromethorphan / pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "69120" ] ;
+     fhir:display [ fhir:v "tiotropium" ]
+  ] [
+     fhir:code [ fhir:v "6915" ] ;
+     fhir:display [ fhir:v "metoclopramide" ]
+  ] [
+     fhir:code [ fhir:v "6916" ] ;
+     fhir:display [ fhir:v "metolazone" ]
+  ] [
+     fhir:code [ fhir:v "6918" ] ;
+     fhir:display [ fhir:v "metoprolol" ]
+  ] [
+     fhir:code [ fhir:v "6922" ] ;
+     fhir:display [ fhir:v "metronidazole" ]
+  ] [
+     fhir:code [ fhir:v "692794" ] ;
+     fhir:display [ fhir:v "gramicidin / neomycin / polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "6932" ] ;
+     fhir:display [ fhir:v "miconazole" ]
+  ] [
+     fhir:code [ fhir:v "6960" ] ;
+     fhir:display [ fhir:v "midazolam" ]
+  ] [
+     fhir:code [ fhir:v "69749" ] ;
+     fhir:display [ fhir:v "valsartan" ]
+  ] [
+     fhir:code [ fhir:v "6980" ] ;
+     fhir:display [ fhir:v "minocycline" ]
+  ] [
+     fhir:code [ fhir:v "6984" ] ;
+     fhir:display [ fhir:v "minoxidil" ]
+  ] [
+     fhir:code [ fhir:v "703" ] ;
+     fhir:display [ fhir:v "amiodarone" ]
+  ] [
+     fhir:code [ fhir:v "704" ] ;
+     fhir:display [ fhir:v "amitriptyline" ]
+  ] [
+     fhir:code [ fhir:v "7052" ] ;
+     fhir:display [ fhir:v "morphine" ]
+  ] [
+     fhir:code [ fhir:v "705258" ] ;
+     fhir:display [ fhir:v "acetaminophen / dextromethorphan / doxylamine" ]
+  ] [
+     fhir:code [ fhir:v "7213" ] ;
+     fhir:display [ fhir:v "ipratropium" ]
+  ] [
+     fhir:code [ fhir:v "72143" ] ;
+     fhir:display [ fhir:v "raloxifene" ]
+  ] [
+     fhir:code [ fhir:v "72236" ] ;
+     fhir:display [ fhir:v "fosphenytoin" ]
+  ] [
+     fhir:code [ fhir:v "723" ] ;
+     fhir:display [ fhir:v "amoxicillin" ]
+  ] [
+     fhir:code [ fhir:v "72302" ] ;
+     fhir:display [ fhir:v "ropinirole" ]
+  ] [
+     fhir:code [ fhir:v "7233" ] ;
+     fhir:display [ fhir:v "nafcillin" ]
+  ] [
+     fhir:code [ fhir:v "7238" ] ;
+     fhir:display [ fhir:v "nalbuphine" ]
+  ] [
+     fhir:code [ fhir:v "7243" ] ;
+     fhir:display [ fhir:v "naltrexone" ]
+  ] [
+     fhir:code [ fhir:v "725" ] ;
+     fhir:display [ fhir:v "amphetamine" ]
+  ] [
+     fhir:code [ fhir:v "7258" ] ;
+     fhir:display [ fhir:v "naproxen" ]
+  ] [
+     fhir:code [ fhir:v "72625" ] ;
+     fhir:display [ fhir:v "duloxetine" ]
+  ] [
+     fhir:code [ fhir:v "7299" ] ;
+     fhir:display [ fhir:v "neomycin" ]
+  ] [
+     fhir:code [ fhir:v "73056" ] ;
+     fhir:display [ fhir:v "risedronate" ]
+  ] [
+     fhir:code [ fhir:v "733" ] ;
+     fhir:display [ fhir:v "ampicillin" ]
+  ] [
+     fhir:code [ fhir:v "73494" ] ;
+     fhir:display [ fhir:v "telmisartan" ]
+  ] [
+     fhir:code [ fhir:v "73645" ] ;
+     fhir:display [ fhir:v "valacyclovir" ]
+  ] [
+     fhir:code [ fhir:v "7393" ] ;
+     fhir:display [ fhir:v "niacin" ]
+  ] [
+     fhir:code [ fhir:v "7407" ] ;
+     fhir:display [ fhir:v "nicotine" ]
+  ] [
+     fhir:code [ fhir:v "74169" ] ;
+     fhir:display [ fhir:v "piperacillin / tazobactam" ]
+  ] [
+     fhir:code [ fhir:v "7417" ] ;
+     fhir:display [ fhir:v "nifedipine" ]
+  ] [
+     fhir:code [ fhir:v "7454" ] ;
+     fhir:display [ fhir:v "nitrofurantoin" ]
+  ] [
+     fhir:code [ fhir:v "746741" ] ;
+     fhir:display [ fhir:v "pramipexole" ]
+  ] [
+     fhir:code [ fhir:v "7486" ] ;
+     fhir:display [ fhir:v "nitrous oxide" ]
+  ] [
+     fhir:code [ fhir:v "7517" ] ;
+     fhir:display [ fhir:v "norfloxacin" ]
+  ] [
+     fhir:code [ fhir:v "7531" ] ;
+     fhir:display [ fhir:v "nortriptyline" ]
+  ] [
+     fhir:code [ fhir:v "7597" ] ;
+     fhir:display [ fhir:v "nystatin" ]
+  ] [
+     fhir:code [ fhir:v "7623" ] ;
+     fhir:display [ fhir:v "ofloxacin" ]
+  ] [
+     fhir:code [ fhir:v "7646" ] ;
+     fhir:display [ fhir:v "omeprazole" ]
+  ] [
+     fhir:code [ fhir:v "7676" ] ;
+     fhir:display [ fhir:v "opium" ]
+  ] [
+     fhir:code [ fhir:v "7715" ] ;
+     fhir:display [ fhir:v "orphenadrine" ]
+  ] [
+     fhir:code [ fhir:v "77492" ] ;
+     fhir:display [ fhir:v "tamsulosin" ]
+  ] [
+     fhir:code [ fhir:v "7804" ] ;
+     fhir:display [ fhir:v "oxycodone" ]
+  ] [
+     fhir:code [ fhir:v "7821" ] ;
+     fhir:display [ fhir:v "oxytetracycline" ]
+  ] [
+     fhir:code [ fhir:v "787390" ] ;
+     fhir:display [ fhir:v "tapentadol" ]
+  ] [
+     fhir:code [ fhir:v "7975" ] ;
+     fhir:display [ fhir:v "penicillamine" ]
+  ] [
+     fhir:code [ fhir:v "797541" ] ;
+     fhir:display [ fhir:v "isopropyl alcohol" ]
+  ] [
+     fhir:code [ fhir:v "7980" ] ;
+     fhir:display [ fhir:v "penicillin G" ]
+  ] [
+     fhir:code [ fhir:v "7984" ] ;
+     fhir:display [ fhir:v "penicillin V" ]
+  ] [
+     fhir:code [ fhir:v "7994" ] ;
+     fhir:display [ fhir:v "pentamidine" ]
+  ] [
+     fhir:code [ fhir:v "8001" ] ;
+     fhir:display [ fhir:v "pentazocine" ]
+  ] [
+     fhir:code [ fhir:v "8120" ] ;
+     fhir:display [ fhir:v "phenazopyridine" ]
+  ] [
+     fhir:code [ fhir:v "8134" ] ;
+     fhir:display [ fhir:v "phenobarbital" ]
+  ] [
+     fhir:code [ fhir:v "815166" ] ;
+     fhir:display [ fhir:v "dextromethorphan / doxylamine" ]
+  ] [
+     fhir:code [ fhir:v "8163" ] ;
+     fhir:display [ fhir:v "phenylephrine" ]
+  ] [
+     fhir:code [ fhir:v "816346" ] ;
+     fhir:display [ fhir:v "dexlansoprazole" ]
+  ] [
+     fhir:code [ fhir:v "8175" ] ;
+     fhir:display [ fhir:v "phenylpropanolamine" ]
+  ] [
+     fhir:code [ fhir:v "817579" ] ;
+     fhir:display [ fhir:v "acetaminophen / codeine" ]
+  ] [
+     fhir:code [ fhir:v "817958" ] ;
+     fhir:display [ fhir:v "aspirin / calcium carbonate" ]
+  ] [
+     fhir:code [ fhir:v "8183" ] ;
+     fhir:display [ fhir:v "phenytoin" ]
+  ] [
+     fhir:code [ fhir:v "82122" ] ;
+     fhir:display [ fhir:v "levofloxacin" ]
+  ] [
+     fhir:code [ fhir:v "822929" ] ;
+     fhir:display [ fhir:v "amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate" ]
+  ] [
+     fhir:code [ fhir:v "83367" ] ;
+     fhir:display [ fhir:v "atorvastatin" ]
+  ] [
+     fhir:code [ fhir:v "8356" ] ;
+     fhir:display [ fhir:v "piroxicam" ]
+  ] [
+     fhir:code [ fhir:v "83818" ] ;
+     fhir:display [ fhir:v "irbesartan" ]
+  ] [
+     fhir:code [ fhir:v "84108" ] ;
+     fhir:display [ fhir:v "rosiglitazone" ]
+  ] [
+     fhir:code [ fhir:v "8536" ] ;
+     fhir:display [ fhir:v "polymyxin B" ]
+  ] [
+     fhir:code [ fhir:v "857974" ] ;
+     fhir:display [ fhir:v "saxagliptin" ]
+  ] [
+     fhir:code [ fhir:v "8588" ] ;
+     fhir:display [ fhir:v "potassium" ]
+  ] [
+     fhir:code [ fhir:v "8591" ] ;
+     fhir:display [ fhir:v "potassium chloride" ]
+  ] [
+     fhir:code [ fhir:v "8610" ] ;
+     fhir:display [ fhir:v "povidone" ]
+  ] [
+     fhir:code [ fhir:v "8611" ] ;
+     fhir:display [ fhir:v "povidone-iodine" ]
+  ] [
+     fhir:code [ fhir:v "861634" ] ;
+     fhir:display [ fhir:v "pitavastatin" ]
+  ] [
+     fhir:code [ fhir:v "8629" ] ;
+     fhir:display [ fhir:v "prazosin" ]
+  ] [
+     fhir:code [ fhir:v "8638" ] ;
+     fhir:display [ fhir:v "prednisolone" ]
+  ] [
+     fhir:code [ fhir:v "8640" ] ;
+     fhir:display [ fhir:v "prednisone" ]
+  ] [
+     fhir:code [ fhir:v "8687" ] ;
+     fhir:display [ fhir:v "primaquine" ]
+  ] [
+     fhir:code [ fhir:v "8691" ] ;
+     fhir:display [ fhir:v "primidone" ]
+  ] [
+     fhir:code [ fhir:v "8698" ] ;
+     fhir:display [ fhir:v "probenecid" ]
+  ] [
+     fhir:code [ fhir:v "8700" ] ;
+     fhir:display [ fhir:v "procainamide" ]
+  ] [
+     fhir:code [ fhir:v "8701" ] ;
+     fhir:display [ fhir:v "procaine" ]
+  ] [
+     fhir:code [ fhir:v "8703" ] ;
+     fhir:display [ fhir:v "fenofibrate" ]
+  ] [
+     fhir:code [ fhir:v "8704" ] ;
+     fhir:display [ fhir:v "prochlorperazine" ]
+  ] [
+     fhir:code [ fhir:v "8727" ] ;
+     fhir:display [ fhir:v "progesterone" ]
+  ] [
+     fhir:code [ fhir:v "8745" ] ;
+     fhir:display [ fhir:v "promethazine" ]
+  ] [
+     fhir:code [ fhir:v "8754" ] ;
+     fhir:display [ fhir:v "propafenone" ]
+  ] [
+     fhir:code [ fhir:v "87636" ] ;
+     fhir:display [ fhir:v "fexofenadine" ]
+  ] [
+     fhir:code [ fhir:v "8782" ] ;
+     fhir:display [ fhir:v "propofol" ]
+  ] [
+     fhir:code [ fhir:v "8785" ] ;
+     fhir:display [ fhir:v "propoxyphene" ]
+  ] [
+     fhir:code [ fhir:v "8787" ] ;
+     fhir:display [ fhir:v "propranolol" ]
+  ] [
+     fhir:code [ fhir:v "8794" ] ;
+     fhir:display [ fhir:v "propylthiouracil" ]
+  ] [
+     fhir:code [ fhir:v "88014" ] ;
+     fhir:display [ fhir:v "rizatriptan" ]
+  ] [
+     fhir:code [ fhir:v "88249" ] ;
+     fhir:display [ fhir:v "montelukast" ]
+  ] [
+     fhir:code [ fhir:v "883815" ] ;
+     fhir:display [ fhir:v "dexamethasone / tobramycin" ]
+  ] [
+     fhir:code [ fhir:v "8896" ] ;
+     fhir:display [ fhir:v "pseudoephedrine" ]
+  ] [
+     fhir:code [ fhir:v "89013" ] ;
+     fhir:display [ fhir:v "aripiprazole" ]
+  ] [
+     fhir:code [ fhir:v "8928" ] ;
+     fhir:display [ fhir:v "psyllium" ]
+  ] [
+     fhir:code [ fhir:v "8948" ] ;
+     fhir:display [ fhir:v "purified protein derivative of tuberculin" ]
+  ] [
+     fhir:code [ fhir:v "90176" ] ;
+     fhir:display [ fhir:v "iron" ]
+  ] [
+     fhir:code [ fhir:v "9068" ] ;
+     fhir:display [ fhir:v "quinidine" ]
+  ] [
+     fhir:code [ fhir:v "9071" ] ;
+     fhir:display [ fhir:v "quinine" ]
+  ] [
+     fhir:code [ fhir:v "91263" ] ;
+     fhir:display [ fhir:v "aloe extract" ]
+  ] [
+     fhir:code [ fhir:v "9143" ] ;
+     fhir:display [ fhir:v "ranitidine" ]
+  ] [
+     fhir:code [ fhir:v "9384" ] ;
+     fhir:display [ fhir:v "rifampin" ]
+  ] [
+     fhir:code [ fhir:v "9524" ] ;
+     fhir:display [ fhir:v "sulfasalazine" ]
+  ] [
+     fhir:code [ fhir:v "9601" ] ;
+     fhir:display [ fhir:v "scopolamine" ]
+  ] [
+     fhir:code [ fhir:v "9778" ] ;
+     fhir:display [ fhir:v "silicones" ]
+  ] [
+     fhir:code [ fhir:v "9793" ] ;
+     fhir:display [ fhir:v "silver sulfadiazine" ]
+  ] [
+     fhir:code [ fhir:v "9947" ] ;
+     fhir:display [ fhir:v "sotalol" ]
+  ] [
+     fhir:code [ fhir:v "9997" ] ;
+     fhir:display [ fhir:v "spironolactone" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

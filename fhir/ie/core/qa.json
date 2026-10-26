@@ -1,0 +1,20 @@
+{
+  "url" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core",
+  "name" : "IECore",
+  "title" : "IE (Ireland) Core Implementation Guide",
+  "description" : "The IE Core Implementation Guide is based on FHIR Version R4 and defines the minimum conformance requirements for accessing patient data.",
+  "ig-date" : "2024-10-09",
+  "status" : "active",
+  "package-id" : "iehr.fhir.ie.core",
+  "ig-ver" : "1.0.0-ballot",
+  "date" : "Tue, 13 May, 2025 21:39:05 -0400",
+  "dateISO8601" : "2025-05-13T21:39:05-04:00",
+  "errs" : 151,
+  "warnings" : 120,
+  "hints" : 228,
+  "suppressed-hints" : 84,
+  "suppressed-warnings" : 59,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3150360376
+}

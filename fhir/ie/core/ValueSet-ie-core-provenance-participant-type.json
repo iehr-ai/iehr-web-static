@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-provenance-participant-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-provenance-participant-type</b></p><a name=\"ie-core-provenance-participant-type\"> </a><a name=\"hcie-core-provenance-participant-type\"> </a><a name=\"ie-core-provenance-participant-type-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ie-core-provenance-participant-type.html\"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-provenance-participant-type.html\"><code>http://terminology.hl7.org/CodeSystem/provenance-participant-type</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-provenance-participant-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.21"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreProvenancePaticipantTypeCodes",
+  "title" : "IE Core Provenance Participant Type Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "The type of participation a provenance agent played for a given target.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "purpose" : "So API consumers can identify the provenance participant type.",
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "system" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+      "version" : "4.0.1"
+    }]
+  }
+}

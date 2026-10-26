@@ -1,0 +1,865 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-allergy-intolerance-set"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-allergy-intolerance-set</b></p><a name=\"ie-core-allergy-intolerance-set\"> </a><a name=\"hcie-core-allergy-intolerance-set\"> </a><a name=\"ie-core-allergy-intolerance-set-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1003736004\">1003736004</a></td><td>Mammalian milk based food (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1003774007\">1003774007</a></td><td>No known Hevea brasiliensis latex allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/102259006\">102259006</a></td><td>Citrus fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102261002\">102261002</a></td><td>Strawberry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102262009\">102262009</a></td><td>Chocolate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102263004\">102263004</a></td><td>Eggs (edible) (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102264005\">102264005</a></td><td>Cheese (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/105908007\">105908007</a></td><td>Medicinal product containing macrolide and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108417002\">108417002</a></td><td>Product containing 5-hydroxytryptamine-3-receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108661002\">108661002</a></td><td>Product containing histamine H2 receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108665006\">108665006</a></td><td>Product containing hydrogen/potassium adenosine triphosphatase enzyme system inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108787006\">108787006</a></td><td>Medicinal product containing anthracycline and acting as antineoplastic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108807002\">108807002</a></td><td>Product containing monoclonal antibody (product)</td></tr><tr><td><a href=\"http://snomed.info/id/111088007\">111088007</a></td><td>Latex (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1137358000\">1137358000</a></td><td>Piper (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/11526002\">11526002</a></td><td>Aspartame (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/11563006\">11563006</a></td><td>Product containing vitamin D and/or vitamin D derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/116085009\">116085009</a></td><td>Product containing retinoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/116274004\">116274004</a></td><td>Artificial sweetener (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/116596006\">116596006</a></td><td>Product containing glucocorticoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1181000221105\">1181000221105</a></td><td>Vaccine product containing only Influenza virus antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/123954005\">123954005</a></td><td>Product containing prostaglandin-endoperoxide synthase isoform 2 inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/126175007\">126175007</a></td><td>Product containing anabolic steroid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/129473008\">129473008</a></td><td>Medicinal product containing echinocandin and acting as antifungal agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/13577000\">13577000</a></td><td>Nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/16047007\">16047007</a></td><td>Product containing benzodiazepine (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1631000175102\">1631000175102</a></td><td>Patient not asked (contextual qualifier) (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/16403005\">16403005</a></td><td>Non-steroidal anti-inflammatory agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1801000221105\">1801000221105</a></td><td>Vaccine product containing only Streptococcus pneumoniae capsular polysaccharide antigen conjugated (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/226723006\">226723006</a></td><td>Buckwheat - cereal (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226734009\">226734009</a></td><td>Wheatgerm (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226915003\">226915003</a></td><td>Red meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226916002\">226916002</a></td><td>Beef (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226934003\">226934003</a></td><td>Pork (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226955001\">226955001</a></td><td>Chicken - meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226967004\">226967004</a></td><td>Turkey - meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227144008\">227144008</a></td><td>Tuna fish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227151004\">227151004</a></td><td>Prawns (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227208008\">227208008</a></td><td>Abalone canned in brine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227219006\">227219006</a></td><td>Eggplant (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227313005\">227313005</a></td><td>Pulse vegetable (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227388008\">227388008</a></td><td>Cinnamon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227400003\">227400003</a></td><td>Ginger (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227421003\">227421003</a></td><td>Cranberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227444000\">227444000</a></td><td>Raspberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227493005\">227493005</a></td><td>Cashew nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227512001\">227512001</a></td><td>Pistachio nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227598003\">227598003</a></td><td>Honey (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/228102000\">228102000</a></td><td>Sodium nitrate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/255641001\">255641001</a></td><td>Caffeine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256259004\">256259004</a></td><td>Pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256277009\">256277009</a></td><td>Grass pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256306003\">256306003</a></td><td>Orange - fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256307007\">256307007</a></td><td>Banana (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256313003\">256313003</a></td><td>Ananas comosus (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256315005\">256315005</a></td><td>Grapefruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256317002\">256317002</a></td><td>Grapes (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256319004\">256319004</a></td><td>Carrot (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256326004\">256326004</a></td><td>Celery (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256329006\">256329006</a></td><td>Spinach (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256350002\">256350002</a></td><td>Almond (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256351003\">256351003</a></td><td>Brazil nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256352005\">256352005</a></td><td>Walnut - nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256353000\">256353000</a></td><td>Hazelnut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256354006\">256354006</a></td><td>Bean (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256417003\">256417003</a></td><td>Horse dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256440004\">256440004</a></td><td>Vespidae venom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/2596005\">2596005</a></td><td>Product containing lincomycin (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/260152009\">260152009</a></td><td>Cat dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260154005\">260154005</a></td><td>Dog dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260167008\">260167008</a></td><td>Sesame seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260176001\">260176001</a></td><td>Kiwi fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260177005\">260177005</a></td><td>Cucumis (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260179008\">260179008</a></td><td>Mango fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260184002\">260184002</a></td><td>Pea (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260189007\">260189007</a></td><td>Pecan nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260205009\">260205009</a></td><td>Sunflower seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/264287008\">264287008</a></td><td>Animal dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/264337003\">264337003</a></td><td>Seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/28230009\">28230009</a></td><td>Poultry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/282831004\">282831004</a></td><td>Medicinal product containing tetracycline structure and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/288328004\">288328004</a></td><td>Bee venom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/28942008\">28942008</a></td><td>Coconut oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/29263009\">29263009</a></td><td>Coffee (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/320073005\">320073005</a></td><td>Product containing beta-2 adrenergic receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/33008008\">33008008</a></td><td>Dust (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/33219003\">33219003</a></td><td>Medicinal product containing tricyclic compound and acting as antidepressant agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/33252009\">33252009</a></td><td>Product containing beta adrenergic receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/332955008\">332955008</a></td><td>Product containing undecenoate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/34012005\">34012005</a></td><td>Product containing sulfonylurea (product)</td></tr><tr><td><a href=\"http://snomed.info/id/346636007\">346636007</a></td><td>Plasma protein solution (product)</td></tr><tr><td><a href=\"http://snomed.info/id/349854005\">349854005</a></td><td>Product containing selective serotonin re-uptake inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350134005\">350134005</a></td><td>Product containing carbapenem (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350157004\">350157004</a></td><td>Product containing nitroimidazole (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350196005\">350196005</a></td><td>Medicinal product containing imidazole and acting as antifungal agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350222007\">350222007</a></td><td>Medicinal product containing aminoquinoline and acting as antimalarial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350294001\">350294001</a></td><td>Product containing methadone analog (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350312004\">350312004</a></td><td>Product containing salicylate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/35748005\">35748005</a></td><td>Wine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/360204007\">360204007</a></td><td>Product containing opioid receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/363560004\">363560004</a></td><td>Product containing serotonin 5-hydroxytryptamine-1 receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/3692009\">3692009</a></td><td>Sodium sulfite (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/37084008\">37084008</a></td><td>Medicinal product containing quinolone and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/372783007\">372783007</a></td><td>Antiparkinsonian agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/373531009\">373531009</a></td><td>Gelatin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386127005\">386127005</a></td><td>Formula milk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/391737006\">391737006</a></td><td>Almond oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/391739009\">391739009</a></td><td>Aloe (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/39487003\">39487003</a></td><td>Product containing insulin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/400266000\">400266000</a></td><td>Product containing hydrocolloid (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/407935004\">407935004</a></td><td>Contrast media (product)</td></tr><tr><td><a href=\"http://snomed.info/id/409137002\">409137002</a></td><td>No known drug allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/411600004\">411600004</a></td><td>Horse serum proteins diagnostic allergen extract (product)</td></tr><tr><td><a href=\"http://snomed.info/id/412061001\">412061001</a></td><td>Blueberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412062008\">412062008</a></td><td>Cantaloupe (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412068007\">412068007</a></td><td>Rye (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412071004\">412071004</a></td><td>Wheat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412357001\">412357001</a></td><td>Zea mays (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412533000\">412533000</a></td><td>Wheat bran (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412534006\">412534006</a></td><td>Yeast (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412583005\">412583005</a></td><td>Bee pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/41549009\">41549009</a></td><td>Product containing angiotensin-converting enzyme inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/416636000\">416636000</a></td><td>Product containing glucagon-like peptide 1 receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/416897008\">416897008</a></td><td>Product containing tumor necrosis factor alpha inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/417889008\">417889008</a></td><td>Arachis oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/418504009\">418504009</a></td><td>Oat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/418920007\">418920007</a></td><td>Adhesive agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/419420009\">419420009</a></td><td>Citrullus lanatus (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/421556008\">421556008</a></td><td>Capsicum (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/422292008\">422292008</a></td><td>Medicinal product containing streptogramin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/424369009\">424369009</a></td><td>Product containing beta-galactosidase (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/426722004\">426722004</a></td><td>Iodinated contrast media (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/428607008\">428607008</a></td><td>No known environmental allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/429625007\">429625007</a></td><td>No known food allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/43735007\">43735007</a></td><td>Sulfur (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/43921001\">43921001</a></td><td>Nickel compound (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/44027008\">44027008</a></td><td>Seafood (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/441508005\">441508005</a></td><td>Product containing C1 esterase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/442571000124108\">442571000124108</a></td><td>Tree nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/442771000124102\">442771000124102</a></td><td>Pepperoni (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/44588005\">44588005</a></td><td>Iodine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/446273004\">446273004</a></td><td>Red food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/446274005\">446274005</a></td><td>Yellow food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/45518007\">45518007</a></td><td>Medicinal product containing thiazide and acting as diuretic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/47703008\">47703008</a></td><td>Lactose (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/48698004\">48698004</a></td><td>Product containing calcium channel blocker (product)</td></tr><tr><td><a href=\"http://snomed.info/id/50321000087101\">50321000087101</a></td><td>Blue food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/51386004\">51386004</a></td><td>Food preservative (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/51905005\">51905005</a></td><td>Mustard (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/53041004\">53041004</a></td><td>Substance with alcohol structure (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/60978003\">60978003</a></td><td>Product containing barbiturate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/61789006\">61789006</a></td><td>Dye (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/61946003\">61946003</a></td><td>Product containing estrogen receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/62294009\">62294009</a></td><td>Product containing Varicella-zoster virus antibody (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/63045006\">63045006</a></td><td>Berry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/63094006\">63094006</a></td><td>Medicinal product acting as anticonvulsant agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/63338004\">63338004</a></td><td>Drug flavoring (product)</td></tr><tr><td><a href=\"http://snomed.info/id/6369005\">6369005</a></td><td>Medicinal product containing penicillin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/6425004\">6425004</a></td><td>Product containing histamine receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/67324005\">67324005</a></td><td>Rice (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/703677008\">703677008</a></td><td>Product containing sodium glucose cotransporter subtype 2 inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/70813002\">70813002</a></td><td>Milk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/710179004\">710179004</a></td><td>Lupine seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/713382001\">713382001</a></td><td>Medicinal product containing nitrofuran derivative and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/713764001\">713764001</a></td><td>Medicinal product containing rifamycin structure and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/716186003\">716186003</a></td><td>No known allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/720687003\">720687003</a></td><td>Dust mite protein (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/72511004\">72511004</a></td><td>Fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/726730005\">726730005</a></td><td>Yam (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/734881000\">734881000</a></td><td>Tomato (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735006003\">735006003</a></td><td>Squid (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735009005\">735009005</a></td><td>Salmon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735029006\">735029006</a></td><td>Shellfish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735030001\">735030001</a></td><td>Garlic (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735043001\">735043001</a></td><td>Mackerel (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735045008\">735045008</a></td><td>Mushroom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735047000\">735047000</a></td><td>Onion (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735049002\">735049002</a></td><td>Peach (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735050002\">735050002</a></td><td>Pear (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735051003\">735051003</a></td><td>Plum (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735053000\">735053000</a></td><td>Potato (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735123009\">735123009</a></td><td>Broccoli (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735124003\">735124003</a></td><td>Barley (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735211005\">735211005</a></td><td>Coconut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735212003\">735212003</a></td><td>Papaya (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735213008\">735213008</a></td><td>Cucumber (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735214002\">735214002</a></td><td>Apricot (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735215001\">735215001</a></td><td>Apple (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735248001\">735248001</a></td><td>Cherry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735249009\">735249009</a></td><td>Avocado (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735340006\">735340006</a></td><td>Lemon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735959004\">735959004</a></td><td>Marine mollusk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735971005\">735971005</a></td><td>Fish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735977009\">735977009</a></td><td>Marine crustacean (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736027000\">736027000</a></td><td>Scallop (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736030007\">736030007</a></td><td>Clam (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736031006\">736031006</a></td><td>Oyster (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736159005\">736159005</a></td><td>Crab (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736162008\">736162008</a></td><td>Lobster (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/74226000\">74226000</a></td><td>Product containing vitamin K and/or vitamin K derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/74632002\">74632002</a></td><td>Product containing succinimide (product)</td></tr><tr><td><a href=\"http://snomed.info/id/74801000\">74801000</a></td><td>Simple carbohydrate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/75665004\">75665004</a></td><td>Monosodium glutamate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/762952008\">762952008</a></td><td>Peanut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/763875007\">763875007</a></td><td>Product containing sulfonamide (product)</td></tr><tr><td><a href=\"http://snomed.info/id/764299009\">764299009</a></td><td>Medicinal product containing cephalosporin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/764357006\">764357006</a></td><td>Phenylpiperazine derivative (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/765419002\">765419002</a></td><td>Product containing methylated xanthine derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/767151005\">767151005</a></td><td>Product containing carbamate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/767365002\">767365002</a></td><td>Product containing potassium and/or potassium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768431001\">768431001</a></td><td>Product containing selenium and/or selenium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768435005\">768435005</a></td><td>Product containing magnesium and/or magnesium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768449001\">768449001</a></td><td>Product containing chromium and/or chromium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768451002\">768451002</a></td><td>Product containing calcium and/or calcium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768457003\">768457003</a></td><td>Product containing bismuth and/or bismuth compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768592009\">768592009</a></td><td>Product containing gold and/or gold compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768600002\">768600002</a></td><td>Product containing coumarin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768614002\">768614002</a></td><td>Product containing phenothiazine and/or phenothiazine derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768618004\">768618004</a></td><td>Product containing titanium and/or titanium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768621002\">768621002</a></td><td>Product containing platinum and/or platinum compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768688006\">768688006</a></td><td>Product containing strontium and/or strontium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768697005\">768697005</a></td><td>Product containing barium and/or barium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768699008\">768699008</a></td><td>Product containing manganese and/or manganese compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768759001\">768759001</a></td><td>Product containing steroid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768763008\">768763008</a></td><td>Product containing gadolinium and/or gadolinium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768766000\">768766000</a></td><td>Product containing mercury and/or mercury compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768865007\">768865007</a></td><td>Product containing interferon (product)</td></tr><tr><td><a href=\"http://snomed.info/id/770377009\">770377009</a></td><td>Product containing 5-alpha reductase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/770387008\">770387008</a></td><td>Medicinal product containing aminoglycoside and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/771344003\">771344003</a></td><td>Product containing paraben and/or paraben derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/7791007\">7791007</a></td><td>Glycine max protein (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/788032009\">788032009</a></td><td>Medicinal product acting as adhesive (product)</td></tr><tr><td><a href=\"http://snomed.info/id/788541006\">788541006</a></td><td>Product containing synthetic cannabinoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/789250004\">789250004</a></td><td>Product containing acetylcholinesterase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/79440004\">79440004</a></td><td>Product containing corticosteroid and/or corticosteroid derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/80259003\">80259003</a></td><td>Food flavoring agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/830118008\">830118008</a></td><td>Medicinal product acting as loop diuretic (product)</td></tr><tr><td><a href=\"http://snomed.info/id/836398006\">836398006</a></td><td>Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/84489001\">84489001</a></td><td>Mold (organism)</td></tr><tr><td><a href=\"http://snomed.info/id/860818003\">860818003</a></td><td>Vaccine product containing only Bacillus anthracis antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871727001\">871727001</a></td><td>Vaccine product containing only Vaccinia virus antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871742003\">871742003</a></td><td>Vaccine product containing only Clostridium tetani antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871758000\">871758000</a></td><td>Vaccine product containing only Bordetella pertussis antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871826000\">871826000</a></td><td>Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871839001\">871839001</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871875004\">871875004</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871919004\">871919004</a></td><td>Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/87233003\">87233003</a></td><td>Product containing low molecular weight heparin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/89119000\">89119000</a></td><td>Nitrate salt (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/895560003\">895560003</a></td><td>Medicinal product containing Vinca alkaloid and acting as antineoplastic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/89707004\">89707004</a></td><td>Sesame oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/89811004\">89811004</a></td><td>Gluten (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/90614001\">90614001</a></td><td>Medicinal product containing beta-lactam and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/961000221100\">961000221100</a></td><td>Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/96281001\">96281001</a></td><td>Product containing bisphosphonate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/96302009\">96302009</a></td><td>Product containing 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/96308008\">96308008</a></td><td>Product containing angiotensin II receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/981000221107\">981000221107</a></td><td>Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-ie-core-allergy-intolerance-codes.html\"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes</code></a></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.48.52" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreAllergyIntoleranceSet"] ; # 
+  fhir:title [ fhir:v "IE Core Allergy Intolerance Set"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of IE Core, SNOMED_CT, and LOINC concepts to classify Allergy Intolerance Codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1003736004" ] ;
+         fhir:display [ fhir:v "Mammalian milk based food (substance)" ]
+       ] [
+         fhir:code [ fhir:v "1003774007" ] ;
+         fhir:display [ fhir:v "No known Hevea brasiliensis latex allergy (situation)" ]
+       ] [
+         fhir:code [ fhir:v "102259006" ] ;
+         fhir:display [ fhir:v "Citrus fruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "102261002" ] ;
+         fhir:display [ fhir:v "Strawberry (substance)" ]
+       ] [
+         fhir:code [ fhir:v "102262009" ] ;
+         fhir:display [ fhir:v "Chocolate (substance)" ]
+       ] [
+         fhir:code [ fhir:v "102263004" ] ;
+         fhir:display [ fhir:v "Eggs (edible) (substance)" ]
+       ] [
+         fhir:code [ fhir:v "102264005" ] ;
+         fhir:display [ fhir:v "Cheese (substance)" ]
+       ] [
+         fhir:code [ fhir:v "105908007" ] ;
+         fhir:display [ fhir:v "Medicinal product containing macrolide and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "108417002" ] ;
+         fhir:display [ fhir:v "Product containing 5-hydroxytryptamine-3-receptor antagonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "108661002" ] ;
+         fhir:display [ fhir:v "Product containing histamine H2 receptor antagonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "108665006" ] ;
+         fhir:display [ fhir:v "Product containing hydrogen/potassium adenosine triphosphatase enzyme system inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "108787006" ] ;
+         fhir:display [ fhir:v "Medicinal product containing anthracycline and acting as antineoplastic agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "108807002" ] ;
+         fhir:display [ fhir:v "Product containing monoclonal antibody (product)" ]
+       ] [
+         fhir:code [ fhir:v "111088007" ] ;
+         fhir:display [ fhir:v "Latex (substance)" ]
+       ] [
+         fhir:code [ fhir:v "1137358000" ] ;
+         fhir:display [ fhir:v "Piper (substance)" ]
+       ] [
+         fhir:code [ fhir:v "11526002" ] ;
+         fhir:display [ fhir:v "Aspartame (substance)" ]
+       ] [
+         fhir:code [ fhir:v "11563006" ] ;
+         fhir:display [ fhir:v "Product containing vitamin D and/or vitamin D derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "116085009" ] ;
+         fhir:display [ fhir:v "Product containing retinoid (product)" ]
+       ] [
+         fhir:code [ fhir:v "116274004" ] ;
+         fhir:display [ fhir:v "Artificial sweetener (substance)" ]
+       ] [
+         fhir:code [ fhir:v "116596006" ] ;
+         fhir:display [ fhir:v "Product containing glucocorticoid (product)" ]
+       ] [
+         fhir:code [ fhir:v "1181000221105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Influenza virus antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "123954005" ] ;
+         fhir:display [ fhir:v "Product containing prostaglandin-endoperoxide synthase isoform 2 inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "126175007" ] ;
+         fhir:display [ fhir:v "Product containing anabolic steroid (product)" ]
+       ] [
+         fhir:code [ fhir:v "129473008" ] ;
+         fhir:display [ fhir:v "Medicinal product containing echinocandin and acting as antifungal agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "13577000" ] ;
+         fhir:display [ fhir:v "Nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "16047007" ] ;
+         fhir:display [ fhir:v "Product containing benzodiazepine (product)" ]
+       ] [
+         fhir:code [ fhir:v "1631000175102" ] ;
+         fhir:display [ fhir:v "Patient not asked (contextual qualifier) (qualifier value)" ]
+       ] [
+         fhir:code [ fhir:v "16403005" ] ;
+         fhir:display [ fhir:v "Non-steroidal anti-inflammatory agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "1801000221105" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae capsular polysaccharide antigen conjugated (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "226723006" ] ;
+         fhir:display [ fhir:v "Buckwheat - cereal (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226734009" ] ;
+         fhir:display [ fhir:v "Wheatgerm (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226915003" ] ;
+         fhir:display [ fhir:v "Red meat (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226916002" ] ;
+         fhir:display [ fhir:v "Beef (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226934003" ] ;
+         fhir:display [ fhir:v "Pork (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226955001" ] ;
+         fhir:display [ fhir:v "Chicken - meat (substance)" ]
+       ] [
+         fhir:code [ fhir:v "226967004" ] ;
+         fhir:display [ fhir:v "Turkey - meat (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227144008" ] ;
+         fhir:display [ fhir:v "Tuna fish (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227151004" ] ;
+         fhir:display [ fhir:v "Prawns (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227208008" ] ;
+         fhir:display [ fhir:v "Abalone canned in brine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227219006" ] ;
+         fhir:display [ fhir:v "Eggplant (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227313005" ] ;
+         fhir:display [ fhir:v "Pulse vegetable (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227388008" ] ;
+         fhir:display [ fhir:v "Cinnamon (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227400003" ] ;
+         fhir:display [ fhir:v "Ginger (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227421003" ] ;
+         fhir:display [ fhir:v "Cranberries (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227444000" ] ;
+         fhir:display [ fhir:v "Raspberries (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227493005" ] ;
+         fhir:display [ fhir:v "Cashew nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227512001" ] ;
+         fhir:display [ fhir:v "Pistachio nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "227598003" ] ;
+         fhir:display [ fhir:v "Honey (substance)" ]
+       ] [
+         fhir:code [ fhir:v "228102000" ] ;
+         fhir:display [ fhir:v "Sodium nitrate (substance)" ]
+       ] [
+         fhir:code [ fhir:v "255641001" ] ;
+         fhir:display [ fhir:v "Caffeine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256259004" ] ;
+         fhir:display [ fhir:v "Pollen (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256277009" ] ;
+         fhir:display [ fhir:v "Grass pollen (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256306003" ] ;
+         fhir:display [ fhir:v "Orange - fruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256307007" ] ;
+         fhir:display [ fhir:v "Banana (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256313003" ] ;
+         fhir:display [ fhir:v "Ananas comosus (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256315005" ] ;
+         fhir:display [ fhir:v "Grapefruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256317002" ] ;
+         fhir:display [ fhir:v "Grapes (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256319004" ] ;
+         fhir:display [ fhir:v "Carrot (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256326004" ] ;
+         fhir:display [ fhir:v "Celery (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256329006" ] ;
+         fhir:display [ fhir:v "Spinach (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256350002" ] ;
+         fhir:display [ fhir:v "Almond (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256351003" ] ;
+         fhir:display [ fhir:v "Brazil nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256352005" ] ;
+         fhir:display [ fhir:v "Walnut - nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256353000" ] ;
+         fhir:display [ fhir:v "Hazelnut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256354006" ] ;
+         fhir:display [ fhir:v "Bean (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256417003" ] ;
+         fhir:display [ fhir:v "Horse dander (substance)" ]
+       ] [
+         fhir:code [ fhir:v "256440004" ] ;
+         fhir:display [ fhir:v "Vespidae venom (substance)" ]
+       ] [
+         fhir:code [ fhir:v "2596005" ] ;
+         fhir:display [ fhir:v "Product containing lincomycin (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "260152009" ] ;
+         fhir:display [ fhir:v "Cat dander (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260154005" ] ;
+         fhir:display [ fhir:v "Dog dander (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260167008" ] ;
+         fhir:display [ fhir:v "Sesame seed (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260176001" ] ;
+         fhir:display [ fhir:v "Kiwi fruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260177005" ] ;
+         fhir:display [ fhir:v "Cucumis (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260179008" ] ;
+         fhir:display [ fhir:v "Mango fruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260184002" ] ;
+         fhir:display [ fhir:v "Pea (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260189007" ] ;
+         fhir:display [ fhir:v "Pecan nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "260205009" ] ;
+         fhir:display [ fhir:v "Sunflower seed (substance)" ]
+       ] [
+         fhir:code [ fhir:v "264287008" ] ;
+         fhir:display [ fhir:v "Animal dander (substance)" ]
+       ] [
+         fhir:code [ fhir:v "264337003" ] ;
+         fhir:display [ fhir:v "Seed (substance)" ]
+       ] [
+         fhir:code [ fhir:v "28230009" ] ;
+         fhir:display [ fhir:v "Poultry (substance)" ]
+       ] [
+         fhir:code [ fhir:v "282831004" ] ;
+         fhir:display [ fhir:v "Medicinal product containing tetracycline structure and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "288328004" ] ;
+         fhir:display [ fhir:v "Bee venom (substance)" ]
+       ] [
+         fhir:code [ fhir:v "28942008" ] ;
+         fhir:display [ fhir:v "Coconut oil (substance)" ]
+       ] [
+         fhir:code [ fhir:v "29263009" ] ;
+         fhir:display [ fhir:v "Coffee (substance)" ]
+       ] [
+         fhir:code [ fhir:v "320073005" ] ;
+         fhir:display [ fhir:v "Product containing beta-2 adrenergic receptor agonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "33008008" ] ;
+         fhir:display [ fhir:v "Dust (substance)" ]
+       ] [
+         fhir:code [ fhir:v "33219003" ] ;
+         fhir:display [ fhir:v "Medicinal product containing tricyclic compound and acting as antidepressant agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "33252009" ] ;
+         fhir:display [ fhir:v "Product containing beta adrenergic receptor antagonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "332955008" ] ;
+         fhir:display [ fhir:v "Product containing undecenoate (product)" ]
+       ] [
+         fhir:code [ fhir:v "34012005" ] ;
+         fhir:display [ fhir:v "Product containing sulfonylurea (product)" ]
+       ] [
+         fhir:code [ fhir:v "346636007" ] ;
+         fhir:display [ fhir:v "Plasma protein solution (product)" ]
+       ] [
+         fhir:code [ fhir:v "349854005" ] ;
+         fhir:display [ fhir:v "Product containing selective serotonin re-uptake inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "350134005" ] ;
+         fhir:display [ fhir:v "Product containing carbapenem (product)" ]
+       ] [
+         fhir:code [ fhir:v "350157004" ] ;
+         fhir:display [ fhir:v "Product containing nitroimidazole (product)" ]
+       ] [
+         fhir:code [ fhir:v "350196005" ] ;
+         fhir:display [ fhir:v "Medicinal product containing imidazole and acting as antifungal agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "350222007" ] ;
+         fhir:display [ fhir:v "Medicinal product containing aminoquinoline and acting as antimalarial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "350294001" ] ;
+         fhir:display [ fhir:v "Product containing methadone analog (product)" ]
+       ] [
+         fhir:code [ fhir:v "350312004" ] ;
+         fhir:display [ fhir:v "Product containing salicylate (product)" ]
+       ] [
+         fhir:code [ fhir:v "35748005" ] ;
+         fhir:display [ fhir:v "Wine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "360204007" ] ;
+         fhir:display [ fhir:v "Product containing opioid receptor agonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "363560004" ] ;
+         fhir:display [ fhir:v "Product containing serotonin 5-hydroxytryptamine-1 receptor agonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "3692009" ] ;
+         fhir:display [ fhir:v "Sodium sulfite (substance)" ]
+       ] [
+         fhir:code [ fhir:v "37084008" ] ;
+         fhir:display [ fhir:v "Medicinal product containing quinolone and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "372783007" ] ;
+         fhir:display [ fhir:v "Antiparkinsonian agent (substance)" ]
+       ] [
+         fhir:code [ fhir:v "373531009" ] ;
+         fhir:display [ fhir:v "Gelatin (substance)" ]
+       ] [
+         fhir:code [ fhir:v "386127005" ] ;
+         fhir:display [ fhir:v "Formula milk (substance)" ]
+       ] [
+         fhir:code [ fhir:v "391737006" ] ;
+         fhir:display [ fhir:v "Almond oil (substance)" ]
+       ] [
+         fhir:code [ fhir:v "391739009" ] ;
+         fhir:display [ fhir:v "Aloe (substance)" ]
+       ] [
+         fhir:code [ fhir:v "39487003" ] ;
+         fhir:display [ fhir:v "Product containing insulin (product)" ]
+       ] [
+         fhir:code [ fhir:v "400266000" ] ;
+         fhir:display [ fhir:v "Product containing hydrocolloid (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "407935004" ] ;
+         fhir:display [ fhir:v "Contrast media (product)" ]
+       ] [
+         fhir:code [ fhir:v "409137002" ] ;
+         fhir:display [ fhir:v "No known drug allergy (situation)" ]
+       ] [
+         fhir:code [ fhir:v "411600004" ] ;
+         fhir:display [ fhir:v "Horse serum proteins diagnostic allergen extract (product)" ]
+       ] [
+         fhir:code [ fhir:v "412061001" ] ;
+         fhir:display [ fhir:v "Blueberries (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412062008" ] ;
+         fhir:display [ fhir:v "Cantaloupe (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412068007" ] ;
+         fhir:display [ fhir:v "Rye (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412071004" ] ;
+         fhir:display [ fhir:v "Wheat (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412357001" ] ;
+         fhir:display [ fhir:v "Zea mays (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412533000" ] ;
+         fhir:display [ fhir:v "Wheat bran (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412534006" ] ;
+         fhir:display [ fhir:v "Yeast (substance)" ]
+       ] [
+         fhir:code [ fhir:v "412583005" ] ;
+         fhir:display [ fhir:v "Bee pollen (substance)" ]
+       ] [
+         fhir:code [ fhir:v "41549009" ] ;
+         fhir:display [ fhir:v "Product containing angiotensin-converting enzyme inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "416636000" ] ;
+         fhir:display [ fhir:v "Product containing glucagon-like peptide 1 receptor agonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "416897008" ] ;
+         fhir:display [ fhir:v "Product containing tumor necrosis factor alpha inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "417889008" ] ;
+         fhir:display [ fhir:v "Arachis oil (substance)" ]
+       ] [
+         fhir:code [ fhir:v "418504009" ] ;
+         fhir:display [ fhir:v "Oat (substance)" ]
+       ] [
+         fhir:code [ fhir:v "418920007" ] ;
+         fhir:display [ fhir:v "Adhesive agent (substance)" ]
+       ] [
+         fhir:code [ fhir:v "419420009" ] ;
+         fhir:display [ fhir:v "Citrullus lanatus (substance)" ]
+       ] [
+         fhir:code [ fhir:v "421556008" ] ;
+         fhir:display [ fhir:v "Capsicum (substance)" ]
+       ] [
+         fhir:code [ fhir:v "422292008" ] ;
+         fhir:display [ fhir:v "Medicinal product containing streptogramin and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "424369009" ] ;
+         fhir:display [ fhir:v "Product containing beta-galactosidase (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "426722004" ] ;
+         fhir:display [ fhir:v "Iodinated contrast media (substance)" ]
+       ] [
+         fhir:code [ fhir:v "428607008" ] ;
+         fhir:display [ fhir:v "No known environmental allergy (situation)" ]
+       ] [
+         fhir:code [ fhir:v "429625007" ] ;
+         fhir:display [ fhir:v "No known food allergy (situation)" ]
+       ] [
+         fhir:code [ fhir:v "43735007" ] ;
+         fhir:display [ fhir:v "Sulfur (substance)" ]
+       ] [
+         fhir:code [ fhir:v "43921001" ] ;
+         fhir:display [ fhir:v "Nickel compound (substance)" ]
+       ] [
+         fhir:code [ fhir:v "44027008" ] ;
+         fhir:display [ fhir:v "Seafood (substance)" ]
+       ] [
+         fhir:code [ fhir:v "441508005" ] ;
+         fhir:display [ fhir:v "Product containing C1 esterase inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "442571000124108" ] ;
+         fhir:display [ fhir:v "Tree nut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "442771000124102" ] ;
+         fhir:display [ fhir:v "Pepperoni (substance)" ]
+       ] [
+         fhir:code [ fhir:v "44588005" ] ;
+         fhir:display [ fhir:v "Iodine (substance)" ]
+       ] [
+         fhir:code [ fhir:v "446273004" ] ;
+         fhir:display [ fhir:v "Red food coloring (substance)" ]
+       ] [
+         fhir:code [ fhir:v "446274005" ] ;
+         fhir:display [ fhir:v "Yellow food coloring (substance)" ]
+       ] [
+         fhir:code [ fhir:v "45518007" ] ;
+         fhir:display [ fhir:v "Medicinal product containing thiazide and acting as diuretic agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "47703008" ] ;
+         fhir:display [ fhir:v "Lactose (substance)" ]
+       ] [
+         fhir:code [ fhir:v "48698004" ] ;
+         fhir:display [ fhir:v "Product containing calcium channel blocker (product)" ]
+       ] [
+         fhir:code [ fhir:v "50321000087101" ] ;
+         fhir:display [ fhir:v "Blue food coloring (substance)" ]
+       ] [
+         fhir:code [ fhir:v "51386004" ] ;
+         fhir:display [ fhir:v "Food preservative (substance)" ]
+       ] [
+         fhir:code [ fhir:v "51905005" ] ;
+         fhir:display [ fhir:v "Mustard (substance)" ]
+       ] [
+         fhir:code [ fhir:v "53041004" ] ;
+         fhir:display [ fhir:v "Substance with alcohol structure (substance)" ]
+       ] [
+         fhir:code [ fhir:v "60978003" ] ;
+         fhir:display [ fhir:v "Product containing barbiturate (product)" ]
+       ] [
+         fhir:code [ fhir:v "61789006" ] ;
+         fhir:display [ fhir:v "Dye (substance)" ]
+       ] [
+         fhir:code [ fhir:v "61946003" ] ;
+         fhir:display [ fhir:v "Product containing estrogen receptor agonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "62294009" ] ;
+         fhir:display [ fhir:v "Product containing Varicella-zoster virus antibody (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "63045006" ] ;
+         fhir:display [ fhir:v "Berry (substance)" ]
+       ] [
+         fhir:code [ fhir:v "63094006" ] ;
+         fhir:display [ fhir:v "Medicinal product acting as anticonvulsant agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "63338004" ] ;
+         fhir:display [ fhir:v "Drug flavoring (product)" ]
+       ] [
+         fhir:code [ fhir:v "6369005" ] ;
+         fhir:display [ fhir:v "Medicinal product containing penicillin and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "6425004" ] ;
+         fhir:display [ fhir:v "Product containing histamine receptor antagonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "67324005" ] ;
+         fhir:display [ fhir:v "Rice (substance)" ]
+       ] [
+         fhir:code [ fhir:v "703677008" ] ;
+         fhir:display [ fhir:v "Product containing sodium glucose cotransporter subtype 2 inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "70813002" ] ;
+         fhir:display [ fhir:v "Milk (substance)" ]
+       ] [
+         fhir:code [ fhir:v "710179004" ] ;
+         fhir:display [ fhir:v "Lupine seed (substance)" ]
+       ] [
+         fhir:code [ fhir:v "713382001" ] ;
+         fhir:display [ fhir:v "Medicinal product containing nitrofuran derivative and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "713764001" ] ;
+         fhir:display [ fhir:v "Medicinal product containing rifamycin structure and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "716186003" ] ;
+         fhir:display [ fhir:v "No known allergy (situation)" ]
+       ] [
+         fhir:code [ fhir:v "720687003" ] ;
+         fhir:display [ fhir:v "Dust mite protein (substance)" ]
+       ] [
+         fhir:code [ fhir:v "72511004" ] ;
+         fhir:display [ fhir:v "Fruit (substance)" ]
+       ] [
+         fhir:code [ fhir:v "726730005" ] ;
+         fhir:display [ fhir:v "Yam (substance)" ]
+       ] [
+         fhir:code [ fhir:v "734881000" ] ;
+         fhir:display [ fhir:v "Tomato (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735006003" ] ;
+         fhir:display [ fhir:v "Squid (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735009005" ] ;
+         fhir:display [ fhir:v "Salmon (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735029006" ] ;
+         fhir:display [ fhir:v "Shellfish (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735030001" ] ;
+         fhir:display [ fhir:v "Garlic (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735043001" ] ;
+         fhir:display [ fhir:v "Mackerel (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735045008" ] ;
+         fhir:display [ fhir:v "Mushroom (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735047000" ] ;
+         fhir:display [ fhir:v "Onion (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735049002" ] ;
+         fhir:display [ fhir:v "Peach (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735050002" ] ;
+         fhir:display [ fhir:v "Pear (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735051003" ] ;
+         fhir:display [ fhir:v "Plum (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735053000" ] ;
+         fhir:display [ fhir:v "Potato (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735123009" ] ;
+         fhir:display [ fhir:v "Broccoli (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735124003" ] ;
+         fhir:display [ fhir:v "Barley (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735211005" ] ;
+         fhir:display [ fhir:v "Coconut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735212003" ] ;
+         fhir:display [ fhir:v "Papaya (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735213008" ] ;
+         fhir:display [ fhir:v "Cucumber (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735214002" ] ;
+         fhir:display [ fhir:v "Apricot (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735215001" ] ;
+         fhir:display [ fhir:v "Apple (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735248001" ] ;
+         fhir:display [ fhir:v "Cherry (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735249009" ] ;
+         fhir:display [ fhir:v "Avocado (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735340006" ] ;
+         fhir:display [ fhir:v "Lemon (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735959004" ] ;
+         fhir:display [ fhir:v "Marine mollusk (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735971005" ] ;
+         fhir:display [ fhir:v "Fish (substance)" ]
+       ] [
+         fhir:code [ fhir:v "735977009" ] ;
+         fhir:display [ fhir:v "Marine crustacean (substance)" ]
+       ] [
+         fhir:code [ fhir:v "736027000" ] ;
+         fhir:display [ fhir:v "Scallop (substance)" ]
+       ] [
+         fhir:code [ fhir:v "736030007" ] ;
+         fhir:display [ fhir:v "Clam (substance)" ]
+       ] [
+         fhir:code [ fhir:v "736031006" ] ;
+         fhir:display [ fhir:v "Oyster (substance)" ]
+       ] [
+         fhir:code [ fhir:v "736159005" ] ;
+         fhir:display [ fhir:v "Crab (substance)" ]
+       ] [
+         fhir:code [ fhir:v "736162008" ] ;
+         fhir:display [ fhir:v "Lobster (substance)" ]
+       ] [
+         fhir:code [ fhir:v "74226000" ] ;
+         fhir:display [ fhir:v "Product containing vitamin K and/or vitamin K derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "74632002" ] ;
+         fhir:display [ fhir:v "Product containing succinimide (product)" ]
+       ] [
+         fhir:code [ fhir:v "74801000" ] ;
+         fhir:display [ fhir:v "Simple carbohydrate (substance)" ]
+       ] [
+         fhir:code [ fhir:v "75665004" ] ;
+         fhir:display [ fhir:v "Monosodium glutamate (substance)" ]
+       ] [
+         fhir:code [ fhir:v "762952008" ] ;
+         fhir:display [ fhir:v "Peanut (substance)" ]
+       ] [
+         fhir:code [ fhir:v "763875007" ] ;
+         fhir:display [ fhir:v "Product containing sulfonamide (product)" ]
+       ] [
+         fhir:code [ fhir:v "764299009" ] ;
+         fhir:display [ fhir:v "Medicinal product containing cephalosporin and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "764357006" ] ;
+         fhir:display [ fhir:v "Phenylpiperazine derivative (substance)" ]
+       ] [
+         fhir:code [ fhir:v "765419002" ] ;
+         fhir:display [ fhir:v "Product containing methylated xanthine derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "767151005" ] ;
+         fhir:display [ fhir:v "Product containing carbamate (product)" ]
+       ] [
+         fhir:code [ fhir:v "767365002" ] ;
+         fhir:display [ fhir:v "Product containing potassium and/or potassium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768431001" ] ;
+         fhir:display [ fhir:v "Product containing selenium and/or selenium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768435005" ] ;
+         fhir:display [ fhir:v "Product containing magnesium and/or magnesium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768449001" ] ;
+         fhir:display [ fhir:v "Product containing chromium and/or chromium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768451002" ] ;
+         fhir:display [ fhir:v "Product containing calcium and/or calcium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768457003" ] ;
+         fhir:display [ fhir:v "Product containing bismuth and/or bismuth compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768592009" ] ;
+         fhir:display [ fhir:v "Product containing gold and/or gold compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768600002" ] ;
+         fhir:display [ fhir:v "Product containing coumarin (product)" ]
+       ] [
+         fhir:code [ fhir:v "768614002" ] ;
+         fhir:display [ fhir:v "Product containing phenothiazine and/or phenothiazine derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "768618004" ] ;
+         fhir:display [ fhir:v "Product containing titanium and/or titanium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768621002" ] ;
+         fhir:display [ fhir:v "Product containing platinum and/or platinum compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768688006" ] ;
+         fhir:display [ fhir:v "Product containing strontium and/or strontium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768697005" ] ;
+         fhir:display [ fhir:v "Product containing barium and/or barium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768699008" ] ;
+         fhir:display [ fhir:v "Product containing manganese and/or manganese compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768759001" ] ;
+         fhir:display [ fhir:v "Product containing steroid (product)" ]
+       ] [
+         fhir:code [ fhir:v "768763008" ] ;
+         fhir:display [ fhir:v "Product containing gadolinium and/or gadolinium compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768766000" ] ;
+         fhir:display [ fhir:v "Product containing mercury and/or mercury compound (product)" ]
+       ] [
+         fhir:code [ fhir:v "768865007" ] ;
+         fhir:display [ fhir:v "Product containing interferon (product)" ]
+       ] [
+         fhir:code [ fhir:v "770377009" ] ;
+         fhir:display [ fhir:v "Product containing 5-alpha reductase inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "770387008" ] ;
+         fhir:display [ fhir:v "Medicinal product containing aminoglycoside and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "771344003" ] ;
+         fhir:display [ fhir:v "Product containing paraben and/or paraben derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "7791007" ] ;
+         fhir:display [ fhir:v "Glycine max protein (substance)" ]
+       ] [
+         fhir:code [ fhir:v "788032009" ] ;
+         fhir:display [ fhir:v "Medicinal product acting as adhesive (product)" ]
+       ] [
+         fhir:code [ fhir:v "788541006" ] ;
+         fhir:display [ fhir:v "Product containing synthetic cannabinoid (product)" ]
+       ] [
+         fhir:code [ fhir:v "789250004" ] ;
+         fhir:display [ fhir:v "Product containing acetylcholinesterase inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "79440004" ] ;
+         fhir:display [ fhir:v "Product containing corticosteroid and/or corticosteroid derivative (product)" ]
+       ] [
+         fhir:code [ fhir:v "80259003" ] ;
+         fhir:display [ fhir:v "Food flavoring agent (substance)" ]
+       ] [
+         fhir:code [ fhir:v "830118008" ] ;
+         fhir:display [ fhir:v "Medicinal product acting as loop diuretic (product)" ]
+       ] [
+         fhir:code [ fhir:v "836398006" ] ;
+         fhir:display [ fhir:v "Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "84489001" ] ;
+         fhir:display [ fhir:v "Mold (organism)" ]
+       ] [
+         fhir:code [ fhir:v "860818003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bacillus anthracis antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871727001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Vaccinia virus antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871742003" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Clostridium tetani antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871758000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871826000" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871839001" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871875004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "871919004" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "87233003" ] ;
+         fhir:display [ fhir:v "Product containing low molecular weight heparin (product)" ]
+       ] [
+         fhir:code [ fhir:v "89119000" ] ;
+         fhir:display [ fhir:v "Nitrate salt (substance)" ]
+       ] [
+         fhir:code [ fhir:v "895560003" ] ;
+         fhir:display [ fhir:v "Medicinal product containing Vinca alkaloid and acting as antineoplastic agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "89707004" ] ;
+         fhir:display [ fhir:v "Sesame oil (substance)" ]
+       ] [
+         fhir:code [ fhir:v "89811004" ] ;
+         fhir:display [ fhir:v "Gluten (substance)" ]
+       ] [
+         fhir:code [ fhir:v "90614001" ] ;
+         fhir:display [ fhir:v "Medicinal product containing beta-lactam and acting as antibacterial agent (product)" ]
+       ] [
+         fhir:code [ fhir:v "961000221100" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" ]
+       ] [
+         fhir:code [ fhir:v "96281001" ] ;
+         fhir:display [ fhir:v "Product containing bisphosphonate (product)" ]
+       ] [
+         fhir:code [ fhir:v "96302009" ] ;
+         fhir:display [ fhir:v "Product containing 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor (product)" ]
+       ] [
+         fhir:code [ fhir:v "96308008" ] ;
+         fhir:display [ fhir:v "Product containing angiotensin II receptor antagonist (product)" ]
+       ] [
+         fhir:code [ fhir:v "981000221107" ] ;
+         fhir:display [ fhir:v "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-observation-smoking-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-observation-smoking-status</b></p><a name=\"ie-core-observation-smoking-status\"> </a><a name=\"hcie-core-observation-smoking-status\"> </a><a name=\"ie-core-observation-smoking-status-en-US\"> </a><ul><li>Import all the codes that are contained in <a href=\"ValueSet-ie-core-smoking-status.html\">IE Core Smoking Status</a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-observation-smoking-status",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.16"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreObservationSmokingStatus",
+  "title" : "IE Core Status for Smoking Status Observation",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "Codes providing the status of an observation for smoking status. Constrained to `final`and `entered-in-error`.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status"]
+    }]
+  }
+}

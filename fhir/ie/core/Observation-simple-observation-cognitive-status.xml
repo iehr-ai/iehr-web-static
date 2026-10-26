@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="simple-observation-cognitive-status"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Simple Observation Cognitive Status Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This *IE Core Simple Observation Profile* is a cognitive status determination which is not based on any formal assessment tool or survey. (This example is adapted from the [PACIO Cognitive Status Implementation Guide ver 0.1.0](https://build.fhir.org/ig/HL7/PACIO-CognitiveStatus/).)"/>
+    </extension>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-simple-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation simple-observation-cognitive-status</b></p><a name="simple-observation-cognitive-status"> </a><a name="hcsimple-observation-cognitive-status"> </a><a name="simple-observation-cognitive-status-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category cognitive-status}">Cognitive Status</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 11332-4}">History of Cognitive Function Narrative</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>effective</b>: 2022-11-27 19:22:02+0000</p><p><b>performer</b>: <a href="Practitioner-practitioner-1.html">Practitioner Ronald Bone </a></p><p><b>value</b>: Alert and oriented x 3. She is independent in household finances, social and community activities, coherent and appropriate communication. Appropriate attire for location and weather.</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"/>
+      <code value="cognitive-status"/>
+      <display value="Cognitive Status"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11332-4"/>
+      <display value="History of Cognitive Function Narrative"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2022-11-27T19:22:02Z"/>
+  <performer>
+    <reference value="Practitioner/practitioner-1"/>
+  </performer>
+  <valueString value="Alert and oriented x 3. She is independent in household finances, social and community activities, coherent and appropriate communication. Appropriate attire for location and weather."/>
+</Observation>

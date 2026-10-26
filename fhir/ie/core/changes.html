@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Change Log - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Change Log</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>Change Log</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="version--100">Version = 1.0.0</h3>
+<ul>
+  <li>Publication Date: 2024-11-13</li>
+  <li>url: <a href="https://iehr.ai/fhir/ie/core/1.0.0">https://iehr.ai/fhir/ie/core/1.0.0</a></li>
+  <li>Based on FHIR version : 4.0.1</li>
+</ul>
+
+<h4 id="changes">Changes:</h4>
+<p>Initial Version</p>
+
+<hr />
+
+<!--
+<div class="bg-success" markdown="1">
+To review changes to IE Core versions earlier than 1.1.1, refer to the [IECore 1.0.0 Change Log](https://iehr.ai/fhir/ie/core/STU7/changes.html).
+</div><!-- new-content -->
+
+<!--
+
+[`_revinclude`]: http://hl7.org/fhir/R4/search.html#include
+[(how to search by date)]: http://hl7.org/fhir/R4/search.html#date
+[(how to search by reference)]: http://hl7.org/fhir/R4/search.html#reference
+[(how to search by token)]: http://hl7.org/fhir/R4/search.html#token
+[http://hl7.org/fhir/R4/StructureDefinition/data-absent-reason]: http://hl7.org/fhir/R4/StructureDefinition/data-absent-reason
+[`_include`]: http://hl7.org/fhir/R4/search.html#include
+[`Accept-Language`]: https://www.ietf.org/rfc/rfc2616.txt
+[`asserted-date`]: SearchParameter-ie-core-condition-asserted-date.html
+[`CarePlan.status`]: http://hl7.org/fhir/R4/careplan.html
+[`description`]: SearchParameter-ie-core-goal-description.html
+[`discharge-disposition`]: SearchParameter-ie-core-encounter-discharge-disposition.html
+[`ethnicity`]: SearchParameter-ie-core-ethnicity.html
+[`gender-identity`]: SearchParameter-ie-core-patient-gender-identity.html
+[`role`]: SearchParameter-ie-core-careteam-role.html
+[$docref operation]: OperationDefinition-docref.html
+[$expand]: http://hl7.org/fhir/R4/valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
+[2022 Edition General Practice Software Management Systems Requirements (GPSMSR)]: https://www.iehr.ai/healthit/sites/default/files/GPSMSR_reference_document_v1_1.pdf
+[21st Century Cures Act for accessing patient data]: https://www.federalregister.gov/d/2020-07419/p-1177
+[34133-9]: http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive
+[5 Common Clinical Notes]: ValueSet-ie-core-clinical-note-type.html
+[AllergyIntolerance]: http://hl7.org/fhir/R4/allergyintolerance.html
+[API Resource Collection in Health (ARCH)]: https://www.iehr.ai/healthit/isa/api-resource-collection-health-arch
+[Appendix B in iEHR IE Core Data for Interoperability (IECDI) Task Force 2021 HITAC Phase 3 Recommendations Report Letter]: https://www.iehr.ai/healthit/sites/default/files/page/2021-10/2021-09-09_IECDI_TF_2021_HITAC_Phase%203_%20Recommendations%20Report_Signed_508.pdf
+[Argonaut Data Query]: http://www.fhir.org/guides/argonaut/r2/
+[Argonaut Provider Directory]: http://www.fhir.org/guides/argonaut/pd//release1/index.html
+[Argonaut]: http://argonautwiki.hl7.org/index.php?title=Main_Page
+[asserted-date]: SearchParameter-ie-core-condition-asserted-date.html
+[assertedDate Extension]: http://hl7.org/fhir/R4/extension-condition-asserteddate.html
+[Audit Logging]: http://hl7.org/fhir/R4/security.html#audit
+[Audit Logging]: http://hl7.org/fhir/R4/security.html#audit%20logging
+[AuditEvent]: http://hl7.org/fhir/R4/auditevent.html
+[Authentication]: http://hl7.org/fhir/R4/security.html#authentication
+[Authorization/Access Control]: http://hl7.org/fhir/R4/security.html#authorization/access%20control
+[base resource differential]: http://hl7.org/fhir/R4/diff.html
+[Basic Provenance]: basic-provenance.html
+[Blood pressure systolic and diastolic]: http://hl7.org/fhir/R4/bp.html
+[Body height]: http://hl7.org/fhir/R4/bodyheight.html
+[Body temperature]: http://hl7.org/fhir/R4/bodytemp.html
+[Body weight]: http://hl7.org/fhir/R4/bodyweight.html
+[boundaries section]: http://hl7.org/fhir/R4/documentreference.html#bnr
+[boundaries section]: http://hl7.org/fhir/R4/DocumentReference.html#bnr
+[boundaries section]: http://hl7.org/fhir/R4/medicationrequest.html#bnr
+[Capability Statements]: capability-statements.html
+[capabilitystatement-expectation]: http://hl7.org/fhir/extension-capabilitystatement-expectation.html
+[CapabilityStatement]: http://hl7.org/fhir/R4/capabilitystatement.html
+[Cardiology (LP29708-2)]: https://loinc.org/LP29708-2
+[CarePlan]: http://hl7.org/fhir/R4/careplan.html
+[chain]:http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.chain
+[chains]: http://hl7.org/fhir/R4/search.html#chaining
+[Change Log]: changes.html
+[Changes Between Versions]: changes-between-versions.html
+[CIMI]:http://www.hl7.org/Special/Committees/cimi/index.cfm
+[Clinical Laboratory Improvement Amendments (CLIA)]: http://www.cdc.gov/clia/
+[Clinical Notes]: clinical-notes.html
+[clinical safety]:  http://hl7.org/fhir/R4/safety.html
+[ClinicalImpression]: http://hl7.org/fhir/R4/clinicalimpression.html
+[Code on Dental Procedures and Nomenclature (CDT Code)]: http://www.ada.org/en/publications/cdt/
+[Coded Elements]: general-requirements.html#using-codes-in-ie-core-profiles
+[CodeSystem]: http://hl7.org/fhir/R4/codesystem.html
+[Communications]: http://hl7.org/fhir/R4/security.html#http
+[comparator]:http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.comparator
+[comparators]: http://hl7.org/fhir/R4/search.html#prefix
+[compartment]: http://hl7.org/fhir/R4/compartmentdefinition.html
+[component]:  http://hl7.org/fhir/R4/observation.html#gr-comp
+[composites]: http://hl7.org/fhir/R4/search.html#combining
+[Composition]: http://hl7.org/fhir/R4/composition.html
+[ConceptMap]: http://hl7.org/fhir/R4/conceptmap.html
+[Condition Quick Start]: StructureDefinition-ie-core-condition-encounter-diagnosis.html#search
+[Condition]: http://hl7.org/fhir/R4/condition.html
+[Conformance Requirements for Client]: CapabilityStatement-ie-core-client.html "Conformance Requirements for Client Page"
+[Conformance Requirements for Server]: CapabilityStatement-ie-core-server.html "Conformance Requirements for Server Page"
+[Conformance requirements for the IE Core Server]: CapabilityStatement-ie-core-server.html
+[Conformance Requirements]: capability-statements.html "CapabilityStatements defined for this Guide"
+[Conformance]: conformance.html
+[Consent]: http://hl7.org/fhir/R4/consent.html
+[Consultation Note (11488-4)]: https://loinc.org/11488-4.html
+[Contained resources]: http://hl7.org/fhir/R4/references.html#contained
+[contained]: http://hl7.org/fhir/R4/references.html#contained
+[converted from a new element]: http://hl7.org/fhir/R4/versions.html#extensions
+[core specification]: http://hl7.org/fhir/R4/extensibility.html#2.20.0.2.2
+[Coverage]: http://hl7.org/fhir/R4/coverage.html
+[CPT-4/HCPC for procedures]: http://hl7.org/fhir/R4/valueset-procedure-code.html
+[CVX vaccine codes]: https://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp
+[DAF-Research]: http://hl7.org/fhir/us/daf-research/index.html
+[Data Access Framework]: https://oncprojectracking.iehr.ai/healthit/wiki/display/TechLabSC/DAF+Home
+[DataAbsentReason Code System]: http://hl7.org/fhir/R4/codesystem-data-absent-reason.html
+[DataAbsentReason Extension]: http://hl7.org/fhir/R4/extension-data-absent-reason.html
+[Deletion Safety Checks]: http://hl7.org/fhir/R4/safety.html#conformance
+[description]: SearchParameter-ie-core-goal-description.html
+[Device search parameters]: http://hl7.org/fhir/R4/device.html#search
+[Device]: http://hl7.org/fhir/R4/device.html
+[DiagnosticReport]:  http://hl7.org/fhir/R4/diagnosticreport.html
+[DiagnosticReport]: http://hl7.org/fhir/R4/diagnosticreport.html
+[DiagnosticReport]:http://hl7.org/fhir/R4/diagnosticreport.html
+[differential view]: http://hl7.org/fhir/R4/profiling.html#snapshot
+[Digital Signatures]: http://hl7.org/fhir/R4/security.html#digital%20signatures
+[Direct address]: https://www.iehr.ai/healthit/sites/default/files/directbasicsforprovidersqa_05092014.pdf
+[Directory of published versions]: http://iehr.ai/fhir/ie/core/history.html
+[Discharge Summary (18842-5)]: https://loinc.org/18842-5.html
+[discharge-disposition]: SearchParameter-ie-core-encounter-discharge-disposition.html
+[Document Class Value Set]: http://hl7.org/fhir/R4/valueset-document-classcodes.html
+[DocumentReference Format]: http://hl7.org/fhir/ValueSet-formatcodes.html
+[DocumentReference vs DiagnosticReport]: clinical-notes-guidance.html#documentreference-vs-diagnosticreport
+[DocumentReference-episode-summary]: DocumentReference-episode-summary.html
+[DocumentReference]: http://hl7.org/fhir/R4/documentreference.html
+[DocumentReferenceStatus]: http://hl7.org/fhir/ValueSet-document-reference-status.html
+[Downloads]: downloads.html "Downloads Page"
+[ElementDefinition.pattern]: http://hl7.org/fhir/R4/elementdefinition-definitions.html#ElementDefinition.pattern_x_
+[Encounter]: http://hl7.org/fhir/R4/encounter.html
+[ethnicity]: SearchParameter-ie-core-ethnicity.html
+[Examples]: examples.html
+[Extensible Binding]: http://hl7.org/fhir/R4/terminologies.html#extensible
+[extensible]: http://hl7.org/fhir/R4/terminologies.html#extensible
+[preferred]: http://hl7.org/fhir/R4/terminologies.html#preferred
+[FHIR Artifacts]: artifacts.html
+[FHIR Binary Resource]: http://hl7.org/fhir/binary.html
+[FHIR Bulk Data Access (Flat FHIR)]: http://hl7.org/fhir/uv/bulkdata/index.html
+[FHIR Communications Security]: http://hl7.org/fhir/R4/security.html#http
+[FHIR Communications]: http://hl7.org/fhir/R4/security.html#http
+[FHIR Conformance Rules]: http://hl7.org/fhir/R4/conformance-rules.html
+[FHIR Data Types]: http://hl7.org/fhir/R4/datatypes.html
+[FHIR Digital Signatures]: http://hl7.org/fhir/R4/security.html#digital%20signatures
+[FHIR Documents]: http://hl7.org/fhir/R4/documents.html
+[FHIR Must Support]: http://hl7.org/fhir/R4/profiling.html#mustsupport
+[FHIR Paging]: http://hl7.org/fhir/R4/http.html#paging
+[FHIR Provenance]: http://hl7.org/fhir/R4/provenance.html
+[FHIR Resource]: http://hl7.org/fhir/R4/resource.html
+[FHIR RESTful API]: http://hl7.org/fhir/R4/http.html
+[FHIR RESTful operations]: http://hl7.org/fhir/R4/operations.html
+[FHIR RESTful Search API]: http://hl7.org/fhir/R4/http.html#search
+[FHIR Search]: http://hl7.org/fhir/R4/search.html
+[FHIR Security Labels]: http://hl7.org/fhir/R4/security-labels.html
+[FHIR Terminology]: http://hl7.org/fhir/R4/terminologies.html
+[FHIR Version 4.0.1]: http://hl7.org/fhir/R4/index.html "FHIR Specification Home Page"
+[FHIR Version DSTU2]: http://hl7.org/fhir/DSTU2/index.html "FHIR Version DSTU2 Specification Home Page"
+[FHIR Version R4]: http://hl7.org/fhir/R4/index.html "FHIR Version R4 Specification Home Page"
+[FHIR Version STU3]: http://hl7.org/fhir/STU3/index.html "FHIR Version STU3 Specification Home Page"
+[FindHelp.org]: https://company.findhelp.com/
+[Formal Views]: #profile
+[Future of IE Core]: future-of-IE-core.html
+[gender-identity]: SearchParameter-ie-core-patient-gender-identity.html
+[General Guidance]: general-guidance.html  "General Guidance Page"
+[General Requirements]: general-requirements.html
+[General Security Considerations]: security.html
+[Goal]: http://hl7.org/fhir/R4/goal.html
+[Guidance]: guidance.html
+[Guide to Resources]: http://hl7.org/fhir/R4/resourceguide.html
+[Head circumference]: http://hl7.org/fhir/R4/headcircum.html
+[Head Circumference]: http://hl7.org/fhir/R4/headcircum.html
+[Heart rate]: http://hl7.org/fhir/R4/heartrate.html
+[History & Physical Note (34117-2)]: https://loinc.org/34117-2.html
+[HL7 C-CDA]: https://hl7.org/cda/us/ccda/history.html
+[HL7 Cross Paradigm Implementation Guide: UDI Pattern]: http://www.hl7.org/documentcenter/private/standards/HL7_IG_UDI_R2_2020JUN.pdf
+[HL7 Gender Harmony Project]: https://confluence.hl7.org/display/VOC/The+Gender+Harmony+Project
+[HL7 Irish Data Access Framework (DAF)]: https://oncprojectracking.iehr.ai/healthit/wiki/display/TechLabSC/DAF+Home
+[Home]: index.html "Home Page"
+[how to search by date]: http://hl7.org/fhir/R4/search.html#date
+[how to search by reference]: http://hl7.org/fhir/R4/search.html#reference
+[how to search by string]: http://hl7.org/fhir/R4/search.html#string
+[how to search by the logical id]: http://hl7.org/fhir/R4/references.html#logical
+[how to search by token]: http://hl7.org/fhir/R4/search.html#token
+[HTTP]: http://hl7.org/fhir/R4/http.html
+[ICD-10-PCS codes]: http://www.cms.gov/Medicare/Coding/ICD10
+[IHE Healthcare Provider Directory]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf
+[IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf
+[IHE XDS]: https://wiki.ihe.net/index.php/Cross-Enterprise_Document_Sharing
+[IHE XDSclassCode]: https://wiki.ihe.net/index.php/XDS_classCode_Metadata_Coding_System
+[Imaging Narrative (18748-4)]: https://loinc.org/18748-4.html
+[ImagingStudy]:  http://hl7.org/fhir/R4/imagingstudy.html
+[Immunization]:  http://hl7.org/fhir/R4/immunization.html
+[Implantable device list]: https://www.iehr.ai/healthit/test-method/implantable-device-list
+[ImplementationGuide]: http://hl7.org/fhir/R4/implementationguide.html
+[Interpretative Guidelines for Laboratories]: http://www.cms.gov/Regulations-andGuidance/Legislation/CLIA/Interpretive_Guidelines_for_Laboratories.html
+[Laboratory Report Narrative (11502-2)]: https://loinc.org/11502-2.html
+[Location]:  http://hl7.org/fhir/R4/location.html
+[logical view]: http://hl7.org/fhir/R4/formats.html#table
+[LOINC scale type to FHIR data type mapping]: http://hl7.org/fhir/R4/loinc.html#dataelements
+[LOINC]: http://loinc.org
+[managing returned resources]: http://hl7.org/fhir/R4/search.html#return
+[Mandatory]: must-support.html
+[mapping]: general-guidance.html
+[Maturity Level]: http://hl7.org/fhir/R4/versions.html#maturity
+[Media]:  http://hl7.org/fhir/R4/media.html
+[Medication Clinical Drug (HPRA)]: https://www.hpra.ie/homepage/medicines
+[Medication List]: medication-list.html
+[Medication]: http://hl7.org/fhir/R4/medication.html
+[MedicationAdministration]: http://hl7.org/fhir/R4/medicationadministration.html
+[MedicationDispense]: http://hl7.org/fhir/R4/medicationdispense.html
+[MedicationRequest examples]: StructureDefinition-ie-core-medicationrequest-examples.html
+[MedicationRequest Quick Start]: StructureDefinition-ie-core-medicationrequest.html#search
+[MedicationRequest]: http://hl7.org/fhir/R4/medicationrequest.html
+[MedicationRequestStatus]: http://hl7.org/fhir/R4/valueset-medicationrequest-status.html
+[Medications Module]: http://hl7.org/fhir/R4/medications-module.html
+[MedicationStatement]: http://hl7.org/fhir/R4/medicationstatement.html
+[MedicationStatementStatus]: http://hl7.org/fhir/R4/valueset-medication-statement-status.html
+[MimeType]: http://www.rfc-editor.org/bcp/bcp13.txt#
+[Missing Data]: general-requirements.html#missing-data
+[modifier]:http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.modifier
+[modifiers]: http://hl7.org/fhir/R4/search.html#modifiers
+[Human Language]: http://hl7.org/fhir/R4/extension-language.html
+[Translation]: http://hl7.org/fhir/R4/extension-translation.html
+[Multi-Language support in FHIR (Localization/Internationalization)]: http://hl7.org/fhir/R4/languages.html
+[multipleAnd]: http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleAnd
+[multipleOr]:http://hl7.org/fhir/R4/searchparameter-definitions.html#SearchParameter.multipleOr
+[Must Support]: must-support.html
+[NamingSystem]: http://hl7.org/fhir/R4/namingsystem.html
+[Narrative documentation]: http://hl7.org/fhir/R4/narrative.html
+[Narrative]: http://hl7.org/fhir/R4/security.html#narrative
+[Nurse Note (34746-8)]: https://loinc.org/34746-8.html
+[Observation Grouping]: http://hl7.org/fhir/R4/observation.html#obsgrouping
+[Observation Summary Table]: observation-summary.html
+[Observation Value Absent Reason]: http://hl7.org/fhir/ValueSet/data-absent-reason
+[Observation]: http://hl7.org/fhir/R4/observation.html
+[Occupational Data for Health (ODH)]: http://hl7.org/fhir/us/odh/index.html
+[The Irish College of General Practitioners]: https://www.irishcollegeofgps.ie/
+[Health Information and Quality Authority]: https://www.hiqa.ie/
+[eHelath Ireland]: https://www.ehealthireland.ie/
+[OperationOutcome]: http://hl7.org/fhir/R4/operationoutcome.html
+[Organization]: http://hl7.org/fhir/R4/organization.html
+[Oxygen saturation]: http://hl7.org/fhir/R4/oxygensat.html
+[Pathology (LP7839-6)]: https://loinc.org/LP7839-6
+[Pathology Report Narrative (11526-1)]: https://loinc.org/11526-1.html
+[Patient]: http://hl7.org/fhir/R4/patient.html
+[Practitioner]: http://hl7.org/fhir/R4/practitioner.html
+[PractitionerRole]: http://hl7.org/fhir/R4/practitionerrole.html
+[Procedure]: http://hl7.org/fhir/R4/procedure.html
+[Procedures Note (28570-0)]: https://loinc.org/28570-0.html
+[ProcedureStatus]: http://hl7.org/fhir/R4/valueset-procedure-status.html
+[Profiles and Extensions]: profiles-and-extensions.html
+[profiles]: http://hl7.org/fhir/R4/profiling.html
+[Profiles]: profiles-and-extensions.html "Profiles and Extensions Page"
+[Progress Note (11506-3)]: https://loinc.org/11506-3.html
+[Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences (PRAPARE) Survey]: https://www.nachc.org/research-and-data/prapare/
+[Provenance Agent Type]: ValueSet-ie-core-provenance-participant-type.html
+[Provenance]: http://hl7.org/fhir/R4/provenance.html
+[QI-Core]:http://hl7.org/fhir/us/qicore/
+[Quantity]: http://hl7.org/fhir/R4/datatypes.html#quantity
+[quantity]: http://hl7.org/fhir/R4/search.html#quantity
+[Questionnaire]: http://hl7.org/fhir/R4/questionnaire.html
+[QuestionnaireResponse]: http://hl7.org/fhir/R4/questionnaireresponse.html
+[Quick Start]: #search
+[Radiology (LP29684-5)]: https://loinc.org/LP29684-5
+[Record or update]: future-of-IE-core.html#future-candidate-requirements-under-consideration
+[reference]: http://hl7.org/fhir/R4/references.html
+[Reference]: http://hl7.org/fhir/R4/references.html
+[Referencing IE Core Profiles]: general-guidance.html#referencing-ie-core-profiles
+[Referral Note (57133-1)]: https://loinc.org/57133-1.html
+[Required Binding]: http://hl7.org/fhir/R4/terminologies.html#required
+[Respiratory rate]: http://hl7.org/fhir/R4/resprate.html
+[role]: SearchParameter-ie-core-careteam-role.html
+[Screening and Assessments]: screening-and-assessments.html
+[SDOH Clinical Care]: http://hl7.org/fhir/us/sdoh-clinicalcare/index.html
+[Search Parameter Registry]: http://hl7.org/fhir/R4/searchparameter-registry.html
+[Search Parameters and Operations]: search-parameters-and-operations.html
+[search]: http://hl7.org/fhir/search.html
+[security considerations]: http://hl7.org/fhir/R4/security.html
+[Security Labels]: http://hl7.org/fhir/R4/security-labels.html
+[Security]: security.html
+[Servers Requiring Status]: general-requirements.html#search-for-servers-requiring-status
+[ServiceRequest]: http://hl7.org/fhir/R4/servicerequest.html
+[slicing]: http://hl7.org/fhir/R4/profiling.html#slicing
+[SMART App Launch]: http://hl7.org/fhir/smart-app-launch/STU2.2
+[SMART App Launch version]: http://hl7.org/fhir/smart-app-launch/history.html
+[SNOMED CT]:  http://snomed.info/sct/731000124108 "SNOMED CT IE Edition"
+[Social Determinants of Health (SDOH)]: screening-and-assessments.html
+[Structured Data Capture (SDC) Questionnaire Response Profile]: http://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaireresponse.html
+[Structured Data Capture (SDC)]: http://hl7.org/fhir/uv/sdc
+[StructureDefinitions]: http://hl7.org/fhir/R4/structuredefinition.html
+[Suppressed Data]: general-guidance.html#suppressed-data
+[Surgical Operation Note (11504-8)]: https://loinc.org/11504-8.html
+[Terminology Binding Extensible]: http://hl7.org/fhir/R4/terminologies.html#extensible
+[Terminology]: terminology.html "Terminology Page"
+[timezone extension]: http://hl7.org/fhir/R4/extension-tz-code.html
+[iEHR IE Core Data for Interoperability (IECDI) v1]: https://www.iehr.ai
+[iEHR IE Core Data for Interoperability (IECDI) v2]: https://www.iehr.ai
+[iEHR IE Core Data for Interoperability (IECDI) v3]: https://www.iehr.ai
+[iEHR IE Core Data for Interoperability (IECDI) v4]: https://www.iehr.ai
+[iEHR IE Core Data for Interoperability (IECDI)]: https://www.iehr.ai
+[UCUM Codes value set]: http://hl7.org/fhir/R4/valueset-ucum-units.html
+[UCUM Codes ValueSet]: http://hl7.org/fhir/R4/valueset-ucum-units.html
+[UCUM]: http://unitsofmeasure.org
+[IE Core Allergies Profile]: StructureDefinition-ie-core-allergyintolerance.html
+[IE Core AllergyIntolerance Profile]: StructureDefinition-ie-core-allergyintolerance.html
+[IE Core Blood Pressure Profile]: StructureDefinition-ie-core-blood-pressure.html
+[IE Core Average Blood Pressure Profile]: StructureDefinition-ie-core-average-blood-pressure.html
+[IE Core BMI Profile]: StructureDefinition-ie-core-bmi.html
+[IE Core Birth Sex Extension]: StructureDefinition-ie-core-birthsex.html
+[IE Core Sex Extension]: StructureDefinition-ie-core-sex.html
+[IE Core Body Height Profile]: StructureDefinition-ie-core-body-height.html
+[IE Core Body Temperature Profile]: StructureDefinition-ie-core-body-temperature.html
+[IE Core Body Weight Profile]: StructureDefinition-ie-core-body-weight.html
+[IE Core CarePlan Profile]: StructureDefinition-ie-core-careplan.html
+[IE Core CareTeam Profile]: StructureDefinition-ie-core-careteam.html
+[IE Core Client CapabilityStatement]: CapabilityStatement-ie-core-client.html
+[IE Core Common SDOH Assessments]: ValueSet-ie-core-common-sdoh-assessments.html
+[IE Core Condition Category Codes]: ValueSet-ie-core-condition-category.html
+[IE Core Condition Codes]: ValueSet-ie-core-condition-code.html
+[IE Core Condition Encounter Diagnosis Profile]: StructureDefinition-ie-core-condition-encounter-diagnosis.html
+[IE Core Condition Problems and Health Concerns Profile]: StructureDefinition-ie-core-condition-problems-health-concerns.html
+[IE Core Coverage Profile]: StructureDefinition-ie-core-coverage.html
+[IE Core Diagnostic Imaging Result Observation Profile]: StructureDefinition-ie-core-observation-imaging.html
+[IE Core Diagnostic Imaging Result Observation Profile]: StructureDefinition-ie-core-observation-imaging.html
+[IE Core DiagnosticReport Category Codes]: ValueSet-ie-core-diagnosticreport-category.html
+[IE Core DiagnosticReport Profile for Laboratory Results Reporting]: StructureDefinition-ie-core-diagnosticreport-lab.html
+[IE Core DiagnosticReport Profile for Report and Note exchange]: StructureDefinition-ie-core-diagnosticreport-note.html
+[IE Core DocumentReference Category]: ValueSet-ie-core-documentreference-category.html
+[IE Core DocumentReference Profile]: StructureDefinition-ie-core-documentreference.html
+[IE Core DocumentReference Type Value Set]: ValueSet-ie-core-documentreference-type.html
+[IE Core DocumentReference]: StructureDefinition-ie-core-documentreference.html
+[IE Core DocumentReferences Category Value Set]: ValueSet-ie-core-documentreference-category.html
+[IE Core Encounter Profile]: StructureDefinition-ie-core-encounter.html
+[IE Core Extension Questionnaire URI]: StructureDefinition-ie-core-extension-questionnaire-uri.html
+[IE Core FHIR RESTful Search API]: general-requirements.html#fhir-restful-search-api-requirements
+[IE Core Gender Identity Extension]: StructureDefinition-ie-core-genderIdentity.html
+[IE Core Goal Profile]: StructureDefinition-ie-core-goal.html
+[IE Core Head Circumference Profile]: StructureDefinition-ie-core-head-circumference.html
+[IE Core Heart Rate Profile]: StructureDefinition-ie-core-heart-rate.html
+[IE Core Immunization Profile]: StructureDefinition-ie-core-immunization.html
+[IE Core Implantable Device Profile]: StructureDefinition-ie-core-implantable-device.html
+[IE Core ImplementationGuide Resource]: ImplementationGuide-iehr.fhir.ie.core.html
+[IE Core Laboratory Result Observation Profile]: StructureDefinition-ie-core-observation-lab.html
+[IE Core Location Profile]: StructureDefinition-ie-core-location.html
+[IE Core Medication Profile]: StructureDefinition-ie-core-medication.html
+[IE Core MedicationDispense Profile]: StructureDefinition-ie-core-medicationdispense.html
+[IE Core Medication Statement Profile]: StructureDefinition-ie-core-medicationstatement.html
+[IE Core MedicationRequest Profile]: StructureDefinition-ie-core-medicationrequest.html
+[IE Core Medication Adherence Extension]: StructureDefinition-ie-core-medication-adherence.html
+[IE Core Medication Adherence ValueSet]: StructureDefinition-ie-core-medication-adherence.html
+[IE Core Simple Observation Profile]: StructureDefinition-ie-core-simple-observation.html
+[IE Core Specimen Profile]: StructureDefinition-ie-core-specimen.html
+[IE Core Observation Clinical Result Profile]: StructureDefinition-ie-core-observation-clinical-result.html
+[IE Core Observation Screening Assessment Profile]: StructureDefinition-ie-core-observation-screening-assessment.html
+[IE Core Observation Occupation Profile]: StructureDefinition-ie-core-observation-occupation.html
+[IE Core Observation Sexual Orientation Profile]: StructureDefinition-ie-core-observation-sexual-orientation.html
+[IE Core Organization Profile]: StructureDefinition-ie-core-organization.html
+[IE Core Patient Profile]: StructureDefinition-ie-core-patient.html
+[IE Core Pediatric BMI for Age Observation Profile]: StructureDefinition-pediatric-bmi-for-age.html
+[IE Core Pediatric Head Occipital Frontal Circumference Observation Profile]: StructureDefinition-head-occipital-frontal-circumference-percentile.html
+[IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile]: StructureDefinition-head-occipital-frontal-circumference-percentile.html
+[IE Core Pediatric Weight for Height Observation Profile]: StructureDefinition-pediatric-weight-for-height.html
+[IE Core Practitioner Profile]: StructureDefinition-ie-core-practitioner.html
+[IE Core PractitionerRole Profile]: StructureDefinition-ie-core-practitionerrole.html
+[IE Core Procedure Codes]: ValueSet-ie-core-procedure-code.html
+[IE Core Procedure Profile]: StructureDefinition-ie-core-procedure.html
+[IE Core Provenance Profile]: StructureDefinition-ie-core-provenance.html
+[IE Core Pulse Oximetry Profile]: StructureDefinition-ie-core-pulse-oximetry.html
+[IE Core QuestionnaireResponse Profile]: StructureDefinition-ie-core-questionnaireresponse.html
+[IE Core RelatedPerson Profile]: StructureDefinition-ie-core-relatedperson.html
+[IE Core Respiratory Rate Profile]: StructureDefinition-ie-core-respiratory-rate.html
+[IE Core Security]: security.html
+[IE Core Server Capability Statement]: CapabilityStatement-ie-core-server.html
+[IE Core Server CapabilityStatement]: CapabilityStatement-ie-core-server.html
+[IE Core ServiceRequest Category Codes]: ValueSet-ie-core-servicerequest-category.html
+[IE Core ServiceRequest Profile]: StructureDefinition-ie-core-servicerequest.html
+[IE Core Smoking Status Observation Profile]: StructureDefinition-ie-core-smokingstatus.html
+[IE Core Observation Pregnancy Status Profile]: StructureDefinition-ie-core-observation-pregnancystatus.html
+[IE Core Observation Pregnancy Intent Profile]: StructureDefinition-ie-core-observation-pregnancyintent.html
+[IE Core Pregnancy Status Codes]: ValueSet-ie-core-pregnancy-status.html
+[IE Core Pregnancy Intent Codes]: ValueSet-ie-core-pregnancy-intent.html
+[IE Core Tribal Affiliation Extension]: StructureDefinition-ie-core-tribal-affiliation.html
+[IE Core Vital Signs Profile]: StructureDefinition-ie-core-vital-signs.html
+[IE Core Treatment Intervention Preference Profile]: StructureDefinition-ie-core-treatment-intervention-preference.html
+[IE Core Care Experience Preference Profile]: StructureDefinition-ie-core-care-experience-preference.html
+[IE Core IECDI Requirement Extension]: StructureDefinition-iecdi-requirement.html
+[Additional IECDI Requirements]: must-support.html#additional-iecdi-requirements
+[IECDI v2]: https://www.iehr.ai/healthit/isa/united-states-core-data-interoperability-iecdi#iecdi-v2
+[IECDI v3]: https://www.iehr.ai/healthit/isa/united-states-core-data-interoperability-iecdi#iecdi-v3
+[IECDI]: iecdi.html
+[iEHR]:  https://www.iehr.ai/
+[Using multiple codes with CodeableConcept Datatype]: general-requirements.html#translations
+[Using SNOMED CT with FHIR]: http://hl7.org/fhir/R4/snomedct.html
+[validating profiles and resources]: http://hl7.org/fhir/R4/validation.html
+[Value sets]: terminology.html
+[Vital Signs Profile]: http://hl7.org/fhir/R4/observation-vitalsigns.html
+[Vital Signs Quick Start]: vitals-search.html
+[vital signs table]: http://hl7.org/fhir/R4/observation-vitalsigns.html#vitals-table
+[writing and updating]: future-of-IE-core.html#future-candidate-requirements-under-consideration
+[Parameters]: http://hl7.org/fhir/R4/parameters.html
+[Patient Example]: Patient-example.html 
+[SNOMED CT]: http://snomed.info/sct
+[Observation Category Codes]: http://hl7.org/fhir/R4/valueset-observation-category.html
+[IE Core Common SDOH Assessments ValueSet]: ValueSet-ie-core-common-sdoh-assessments.html
+[Gravity Project]: https://hl7.org/gravity
+[SDOH Clinical Care]: http://hl7.org/fhir/us/sdoh-clinicalcare/
+[technical requirements]: general-requirements.html#required-bindings-when-slicing-by-valuesets
+[SDC Base Questionnaire]: http://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html
+[`Questionnaire.useContext`]: http://hl7.org/fhir/R4/questionnaire-definitions.html#Questionnaire.useContext
+[IE Core Category]: CodeSystem-ie-core-category.html
+[Required Bindings When Slicing by Value Sets]: general-requirements.html#required-bindings-when-slicing-by-valuesets
+[The IE Core DocumentReferences Type Value Set]: ValueSet-ie-core-documentreference-category.html
+[Endpoint]: http://hl7.org/fhir/R4/endpoint.html
+[IE Core Direct email Extension]: StructureDefinition-ie-core-direct.html
+[Target Element]: http://hl7.org/fhir/StructureDefinition/targetElement
+[Element Level Provenance]: basic-provenance.html#element-level-provenance
+[modifier element]: http://hl7.org/fhir/R4/conformance-rules.html#isModifier
+[certification]: https://www.irishcollegeofgps.ie
+[Certifying systems]: https://www.irishcollegeofgps.ie
+[modifier elements]: general-requirements.html#modifier-elements
+[PHDSC Payer Type Committee User's Guide]: https://www.nahdo.org/sites/default/files/2020-12/SourceofPaymentTypologyUsersGuideVersion9.2December2020.pdf
+[resource level scopes]: http://hl7.org/fhir/smart-app-launch/STU2.2/scopes-and-launch-context.html#scopes-for-requesting-clinical-data
+[granular scopes]: http://hl7.org/fhir/smart-app-launch/STU2.2/scopes-and-launch-context.html#finer-grained-resource-constraints-using-search-parameters
+[SMART on FHIR Obligations and Capabilities]: scopes.html
+[IE Core SMART Scopes]: scopes.html#smart-scopes
+[PHQ-9]: https://en.wikipedia.org/wiki/PHQ-9
+[Apgar score]: https://en.wikipedia.org/wiki/Apgar_score
+[HL7 Terminology (THO)]: https://terminology.hl7.org
+[FHIR Extension]: https://hl7.org/fhir/extensions/
+[IE Core Data for Interoperability IECDI Table]: iecdi.html
+[Vital Signs with Qualifying Elements: Average Blood Pressure Profile]: https://hl7.org/fhir/us/vitals/STU1/StructureDefinition-average-blood-pressure.html
+[Writing Vital Signs]: vitals-write.html
+[HTI-1 final rule]: https://www.federalregister.gov/documents/2023/04/18/2023-07229/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and
+[FHIRpath]: https://hl7.org/fhirpath/N1/
+[principle of least privilege]: https://en.wikipedia.org/wiki/Principle_of_least_privilege
+[Project IE@ Technical Specification for Patient Addresses Final Version 1.0]: https://asapnet.org/wp-content/uploads/2022/03/Project_US_FINAL_Technical_Specification_Version_1.0.pdf
+[Physical Activity Implementation Guide]: https://hl7.org/fhir/us/physical-activity/
+[American Heart Association]: http://heart.org/
+[Physical Activity Alliance]: http://paamovewithus.org/
+[extension]: http://hl7.org/fhir/R4/extensibility.html
+[Extensions]: http://hl7.org/fhir/R4/extensibility.html
+[Multiple Chronic Condition (MCC) Care Plan Implementation Guide]: https://hl7.org/fhir/us/mcc/2023Sep/
+[FHIR R5 Patient Resource Gender and Sex Notes]: https://hl7.org/fhir/R5/patient.html#gender
+[`Meta.lastUpdated`]: http://hl7.org/fhir/R4/resource.html#Meta
+[`_lastUpdated`]: http://hl7.org/fhir/R4/search.html#lastUpdated
+[FHIR Topic-Based Subscription]: https://hl7.org/fhir/R5/subscriptions.html
+[FHIR-45012]: https://jira.hl7.org/browse/FHIR-45012
+[Event Location Extension]: http://hl7.org/fhir/StructureDefinition/event-location
+[FHIR OAuth authorization Endpoints and Capabilities]: http://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#smart-on-fhir-oauth-authorization-endpoints-and-capabilities
+[Patient Access for Standalone Apps]: http://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#patient-access-for-standalone-apps
+[Clinician Access for EHR Launch]: http://hl7.org/fhir/smart-app-launch/STU2.2/conformance.html#clinician-access-for-standalone
+[Token Introspection]: http://hl7.org/fhir/smart-app-launch/STU2.2/token-introspection.html#token-introspection)
+[Well-Known Uniform Resource Identifiers (URIs)]: https://hl7.org/fhir/smart-app-launch/STU2/conformance.html#using-well-known
+[Enclosed Precondition Extension]: http://hl7.org/fhir/us/pacio-adi/StructureDefinition/adi-enclosedPrecondition-extension
+[HTA-1 final rule]: https://www.federalregister.gov/documents/2023/04/18/2023-07229/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and#p-991+
+[example binding]: http://hl7.org/fhir/R4/terminologies.html#example
+[example]: http://hl7.org/fhir/R4/terminologies.html#example
+[current]: https://hl7.org/fhir/R5/terminologies.html#binding
+[Searching Using lastUpdated]: general-guidance.html#searching-using-lastupdated
+[registry of standard extensions]: http://hl7.org/fhir/R4/extensibility-registry.html
+[HL7 v2]: http://www.hl7.org/implement/standards/product_brief.cfm?product_id=185
+[Clinical Information Reconciliation and Incorporation (CIRI)]: https://www.iehr.ai/healthit/test-method/clinical-information-reconciliation-and-incorporation
+[Normative]: http://hl7.org/fhir/R4/versions.html#maturity
+[Irish Steering Committee (IESC)]: https://www.iehr.ai/ie
+[$expand]: http://hl7.org/fhir/R4/valueset-operation-expand.html  "An operation used to create a simple collection of codes suitable for use for data entry or validation"
+[108252007 Laboratory procedure (procedure)]: https://browser.ihtsdotools.org/?perspective=full&conceptId1=108252007&edition=MAIN/2024-10-01&release=&languages=en&latestRedirect=false
+[363679005 Imaging (procedure)]: https://browser.ihtsdotools.org/?perspective=full&conceptId1=363679005&edition=MAIN/2024-10-01&release=&languages=en&latestRedirect=false
+[386053000 Evaluation procedure (procedure)]: https://browser.ihtsdotools.org/?perspective=full&conceptId1=386053000&edition=MAIN/2024-10-01&release=&languages=en&latestRedirect=false
+[387713003 Surgical procedure (procedure)]: https://browser.ihtsdotools.org/?perspective=full&conceptId1=387713003&edition=MAIN/2024-10-01&release=&languages=en&latestRedirect=false
+[410606002 Social service procedure (procedure)]: https://browser.ihtsdotools.org/?perspective=full&conceptId1=410606002&edition=MAIN/2024-10-01&release=&languages=en&latestRedirect=false
+[Emergency Department Note (34111-5)]: https://loinc.org/34111-5.html
+[Emergency Department Note (34111-5)]: https://loinc.org/34111-5.html
+[HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation, Edition 1]: https://hl7.org/xprod/ig/uv/gender-harmony/
+[Immunization-imm-1]: Immunization-imm-1.html
+[Individual Pronouns Extension]: http://hl7.org/fhir/StructureDefinition/individual-pronouns
+[Patient Proficiency Extension]: https://hl7.org/fhir/extensions/StructureDefinition-patient-proficiency.html
+[Patient Sex Parameter For Clinical Use]: http://hl7.org/fhir/extensions/StructureDefinition-patient-sexParameterForClinicalUse.html
+[Performer function Extension]: http://hl7.org/fhir/StructureDefinition/event-performerFunction
+[Supporting Info Extension]: https://hl7.org/fhir/extensions/StructureDefinition-workflow-supportingInfo.html
+[iEHR IE Core Data for Interoperability (IECDI) v5]: https://www.iehr.ai/healthit/isa/united-states-core-data-interoperability-iecdi#iecdi-v5
+[IE Core ADI DocumentReference Profile]: StructureDefinition-ie-core-adi-documentreference.html
+[IE Core Authentication Time Extension]: StructureDefinition-ie-core-authentication-time.html
+[IE Core Interpreter Required Extension]: StructureDefinition-ie-core-interpreter-required.html
+[IE Core Observation ADI Documentation Profile]: StructureDefinition-ie-core-observation-adi-documentation.html
+[www.loinc.org/usage/orders]: https://loinc.org/usage/orders/
+[Healthcare Facility Patient Care Location (HSLOC)]: https://www.cdc.gov/nhsn/cdaportal/terminology/codesystem/hsloc.html
+
+-->
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

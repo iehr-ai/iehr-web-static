@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IE Core Client CapabilityStatement - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.1"}
+    h3,h4,h5,h6{--heading-prefix:"13.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IE Core Client CapabilityStatement</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CapabilityStatement-ie-core-client.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-ie-core-client.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CapabilityStatement-ie-core-client.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">CapabilityStatement: IE Core Client CapabilityStatement
+
+  </h2>
+
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-client<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-client"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-client|1.0.0-ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IeCoreClientCapabilityStatement</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:1.3.6.1.4.1.54392.5.2690.13.1
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: iEHR.ai, all rights reserved Creative Commons License</p>
+</td>
+    </tr>
+
+  </table>
+
+
+<p>
+<p>This Section describes the expected capabilities of the IE Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by IE Core Servers are defined in the <a href="CapabilityStatement-ie-core-server.html">Conformance Requirements for Server</a>. IE Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="CapabilityStatement-ie-core-client.xml.html">XML</a>, <a href="CapabilityStatement-ie-core-client.json.html">JSON</a>, <a href="CapabilityStatement-ie-core-client.ttl.html">Turtle</a>
+  </p>-->
+
+  
+  <p>
+      <a href="ie-core-client.openapi.json" no-download="true">Raw OpenAPI-Swagger Definition file</a> | <a href="ie-core-client.openapi.json" download>Download</a>
+  </p>
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CapabilityStatement ie-core-client</b></p><a name="ie-core-client"> </a><a name="hcie-core-client"> </a><a name="ie-core-client-en-US"> </a><h2 id="title">IE Core Client CapabilityStatement</h2><ul><li>Implementation Guide Version: 1.0.0-ballot </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <strong>SHALL</strong> support <code>json</code>, <strong>SHOULD</strong> support <code>xml</code></li><li>Supported Patch Formats: <strong>SHOULD</strong> support <code>application/json-patch+json</code></li><li>Published on: 2024-11-11 12:01:20-0800 </li><li>Published by: iEHR.ai </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id="shouldIGs">SHOULD Support the Following Implementation Guides</h3><ul><li><a href="http://hl7.org/fhir/smart-app-launch/STU2.2/index.html">http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch</a></li></ul><h2 id="rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>client</code></h3></div><div class="panel-body"><div><p>The IE Core Client <strong>SHALL</strong>:</p>
+<ol>
+<li>Support fetching and querying of one or more IE Core profile(s), using the supported RESTful interactions and search parameters declared in the IE Core Server CapabilityStatement.</li>
+<li>Follow the requirements documented in the <a href="general-requirements.html">General Requirements</a> and <a href="must-support.html">Must Support</a> pages</li>
+</ol>
+</div><div class="lead"><em>Security</em></div><blockquote><div><ol>
+<li>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li>
+</ol>
+</div></blockquote><div class="lead"><em>Summary of System-wide Interactions</em></div><ul><li><strong>MAY </strong>support the <code>transaction</code>interaction.</li><li><strong>MAY </strong>support the <code>batch</code>interaction.</li><li><strong>MAY </strong>support the <code>search-system</code>interaction.</li><li><strong>MAY </strong>support the <code>history-system</code>interaction.</li></ul></div></div><h3 id="resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET past versions of resources (vread interaction)">V-R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="PATCH a new resource version (patch interaction)">P</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th class="text-center"><b title="DELETE a resource (delete interaction)">D</b></th><th class="text-center"><b title="GET changes to a resource (history interaction on instance)">H-I</b></th><th class="text-center"><b title="GET changes for all resources of the type (history interaction on type)">H-T</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#AllergyIntolerance1-1">AllergyIntolerance</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>clinical-status, patient, patient+clinical-status</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#CarePlan1-2">CarePlan</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-careplan.html">IE Core CarePlan Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>category, date, patient, status, patient+category+status+date, patient+category+date, patient+category, patient+category+status</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#CareTeam1-3">CareTeam</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-careteam.html">IE Core CareTeam Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, role, status, patient+status, patient+role</td><td><code>CareTeam:participant:PractitionerRole</code>, <code>CareTeam:participant:Practitioner</code>, <code>CareTeam:participant:Patient</code>, <code>CareTeam:participant:RelatedPerson</code></td><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Condition1-4">Condition</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-condition-encounter-diagnosis.html">IE Core Condition Encounter Diagnosis Profile</a><br/>  <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>abatement-date, asserted-date, category, clinical-status, code, encounter, onset-date, patient, recorded-date, _lastUpdated, patient+category+clinical-status, patient+onset-date, patient+abatement-date, patient+clinical-status, patient+asserted-date, patient+code, patient+category+encounter, patient+_lastUpdated, patient+recorded-date, patient+category</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Coverage1-5">Coverage</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Device1-6">Device</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-implantable-device.html">IE Core Implantable Device Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, status, type, patient+status, patient+type</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#DiagnosticReport1-7">DiagnosticReport</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a><br/>  <a href="StructureDefinition-ie-core-diagnosticreport-lab.html">IE Core DiagnosticReport Profile for Laboratory Results Reporting</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>category, code, date, _lastUpdated, patient, status, patient+code, patient+category+date, patient+code+date, patient+status, patient+category+_lastUpdated, patient+category</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#DocumentReference1-8">DocumentReference</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, category, date, patient, period, status, type, patient+type, patient+category+date, patient+type+period, patient+status, patient+category</td><td/><td><code>Provenance:target</code></td><td><code>$docref</code></td></tr><tr><td><a href="#Encounter1-9">Encounter</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, class, date, _lastUpdated, discharge-disposition, identifier, location, patient, status, type, date+patient, class+patient, patient+type, patient+_lastUpdated, patient+status, patient+location, patient+discharge-disposition</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Endpoint1-10">Endpoint</a></td><td> </td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#Goal1-11">Goal</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-goal.html">IE Core Goal Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>description, lifecycle-status, patient, target-date, patient+target-date, patient+lifecycle-status, patient+description</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#HealthcareService1-12">HealthcareService</a></td><td> </td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#Immunization1-13">Immunization</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>date, patient, status, patient+date, patient+status</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Location1-14">Location</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>address, address-city, address-postalcode, address-state, name</td><td/><td/><td/></tr><tr><td><a href="#Media1-15">Media</a></td><td> </td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#Medication1-16">Medication</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-medication.html">IE Core Medication Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#MedicationDispense1-17">MedicationDispense</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-medicationdispense.html">IE Core MedicationDispense Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>patient, status, type, patient+status+type, patient+status</td><td><code>MedicationDispense:medication</code></td><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#MedicationRequest1-18">MedicationRequest</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>authoredon, encounter, intent, patient, status, patient+intent+encounter, patient+intent+authoredon, patient+intent+status, patient+intent</td><td><code>MedicationRequest:medication</code></td><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Observation1-19">Observation</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-pregnancystatus.html">IE Core Observation Pregnancy Status Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-pregnancyintent.html">IE Core Observation Pregnancy Intent Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-occupation.html">IE Core Observation Occupation Profile</a><br/>  <a href="StructureDefinition-ie-core-respiratory-rate.html">IE Core Respiratory Rate Profile</a><br/>  <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile</a><br/>  <a href="StructureDefinition-ie-core-treatment-intervention-preference.html">IE Core Treatment Intervention Preference Profile</a><br/>  <a href="StructureDefinition-ie-core-care-experience-preference.html">IE Core Care Experience Preference Profile</a><br/>  <a href="StructureDefinition-ie-core-heart-rate.html">IE Core Heart Rate Profile</a><br/>  <a href="StructureDefinition-ie-core-body-temperature.html">IE Core Body Temperature Profile</a><br/>  <a href="StructureDefinition-pediatric-weight-for-height.html">IE Core Pediatric Weight for Height Observation Profile</a><br/>  <a href="StructureDefinition-ie-core-pulse-oximetry.html">IE Core Pulse Oximetry Profile</a><br/>  <a href="StructureDefinition-ie-core-smokingstatus.html">IE Core Smoking Status Observation Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-sexual-orientation.html">IE Core Observation Sexual Orientation Profile</a><br/>  <a href="StructureDefinition-ie-core-head-circumference.html">IE Core Head Circumference Profile</a><br/>  <a href="StructureDefinition-ie-core-body-height.html">IE Core Body Height Profile</a><br/>  <a href="StructureDefinition-ie-core-bmi.html">IE Core BMI Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-screening-assessment.html">IE Core Observation Screening Assessment Profile</a><br/>  <a href="StructureDefinition-ie-core-average-blood-pressure.html">IE Core Average Blood Pressure Profile</a><br/>  <a href="StructureDefinition-ie-core-blood-pressure.html">IE Core Blood Pressure Profile</a><br/>  <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a><br/>  <a href="StructureDefinition-pediatric-bmi-for-age.html">IE Core Pediatric BMI for Age Observation Profile</a><br/>  <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/>  <a href="StructureDefinition-ie-core-body-weight.html">IE Core Body Weight Profile</a><br/>  <a href="StructureDefinition-ie-core-vital-signs.html">IE Core Vital Signs Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>category, code, date, _lastUpdated, patient, status, patient+code, patient+category+date, patient+code+date, patient+category+status, patient+category+_lastUpdated, patient+category</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Organization1-20">Organization</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-organization.html">IE Core Organization Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>address, name</td><td/><td/><td/></tr><tr><td><a href="#Patient1-21">Patient</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, birthdate, death-date, family, gender, given, identifier, name, birthdate+name, family+gender, birthdate+family, gender+name, death-date+family</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Practitioner1-22">Practitioner</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-practitioner.html">IE Core Practitioner Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, identifier, name</td><td/><td/><td/></tr><tr><td><a href="#PractitionerRole1-23">PractitionerRole</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-practitionerrole.html">IE Core PractitionerRole Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>practitioner, specialty</td><td><code>PractitionerRole:endpoint</code>, <code>PractitionerRole:practitioner</code></td><td/><td/></tr><tr><td><a href="#Procedure1-24">Procedure</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-procedure.html">IE Core Procedure Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>code, date, patient, status, patient+code+date, patient+date, patient+status</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Provenance1-25">Provenance</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-provenance.html">IE Core Provenance Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#Questionnaire1-26">Questionnaire</a></td><td>Supported Profiles<br/>  <a href="http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html">SDCBaseQuestionnaire</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td></td><td/><td/><td/></tr><tr><td><a href="#QuestionnaireResponse1-27">QuestionnaireResponse</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-questionnaireresponse.html">IE Core QuestionnaireResponse Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, authored, patient, questionnaire, status, patient+questionnaire, patient+authored, patient+status</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#RelatedPerson1-28">RelatedPerson</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-relatedperson.html">IE Core RelatedPerson Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, name, patient, patient+name</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#ServiceRequest1-29">ServiceRequest</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, authored, category, code, patient, status, patient+code, patient+category+authored, patient+code+authored, patient+status, patient+category</td><td/><td><code>Provenance:target</code></td><td/></tr><tr><td><a href="#Specimen1-30">Specimen</a></td><td>Supported Profiles<br/>  <a href="StructureDefinition-ie-core-specimen.html">IE Core Specimen Profile</a></td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>_id, patient</td><td/><td/><td/></tr><tr><td><a href="#ValueSet1-31">ValueSet</a></td><td> </td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td></td><td/><td/><td><code>$expand</code></td></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="AllergyIntolerance1-1" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>AllergyIntolerance</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-allergyintolerance-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-allergyintolerance-clinical-status.html">clinical-status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-allergyintolerance-patient.html">patient</a>+<a href="SearchParameter-ie-core-allergyintolerance-clinical-status.html">clinical-status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="CarePlan1-2" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>CarePlan</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-careplan.html">IE Core CarePlan Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Additional considerations for systems aligning with <a href="http://www.hl7.org/implement/standards/product_brief.cfm?product_id=492">HL7 Consolidated (C-CDA)</a> Care Plan requirements:
+<ul>
+<li>IE Core Goal <strong>SHOULD</strong> be present in CarePlan.goal</li>
+<li>IE Core Condition <strong>SHOULD</strong> be present in CarePlan.addresses</li>
+<li>Assement and Plan <strong>MAY</strong> be included as narrative text</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careplan-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careplan-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careplan-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careplan-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-careplan-patient.html">patient</a>+<a href="SearchParameter-ie-core-careplan-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-careplan-patient.html">patient</a>+<a href="SearchParameter-ie-core-careplan-category.html">category</a>+<a href="SearchParameter-ie-core-careplan-status.html">status</a>+<a href="SearchParameter-ie-core-careplan-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-careplan-patient.html">patient</a>+<a href="SearchParameter-ie-core-careplan-category.html">category</a>+<a href="SearchParameter-ie-core-careplan-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-careplan-patient.html">patient</a>+<a href="SearchParameter-ie-core-careplan-category.html">category</a>+<a href="SearchParameter-ie-core-careplan-status.html">status</a></td><td><code>reference</code>+<code>token</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="CareTeam1-3" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>CareTeam</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/careteam.html">CareTeam</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-careteam.html">IE Core CareTeam Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>In order to access care team member's names, identifiers, locations, and contact information, the CareTeam profile supports several types of care team participants. They are represented as references to other profiles and include the following four profiles which are marked as must support:
+<ol>
+<li>IE Core Practitioner Profile</li>
+<li>IE Core PractitionerRole Profile</li>
+<li>IE Core Patient Profile</li>
+<li>IE Core RelatedPerson Profile</li>
+</ol>
+</li>
+<li>Although <em>both</em> IE Core Practitioner Profile and IE Core PractitionerRole are must support, the server system is not required to support both types of references, but <strong>SHALL</strong> support <em>at least</em> one of them.</li>
+<li>The client application <strong>SHALL</strong> support all four profile references.</li>
+<li>Bacause the <em>IE Core PractitionerRole Profile</em> supplies the provider's location and contact information and a reference to the Practitioner, server systems <strong>SHOULD</strong> reference it instead of the <em>IE Core Practitioner Profile</em>.</li>
+<li>Servers that support only IE Core Practitioner Profile and do not support the IE Core PractitionerRole Profile <strong>SHALL</strong> provide implementation specific guidance how to access a provider’s location and contact information using only the Practitioner resource.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-careteam-role.html">role</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careteam-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-careteam-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-careteam-patient.html">patient</a>+<a href="SearchParameter-ie-core-careteam-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-careteam-patient.html">patient</a>+<a href="SearchParameter-ie-core-careteam-role.html">role</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Condition1-4" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Condition</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-condition-encounter-diagnosis.html">IE Core Condition Encounter Diagnosis Profile</a><br/><a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Clients <strong>SHALL</strong> support at least one Condition Profile</li>
+<li>For Encounter Diagnosis use the <em>IE Core Condition Encounter Diagnosis Profile</em>.
+<ul>
+<li>When <code>Condition.category</code> is &quot;encounter-diagnosis&quot; the encounter, <strong>SHOULD</strong> be referenced in <code>Condition.encounter</code>.</li>
+</ul>
+</li>
+<li>For Problems and Health Concerns use the <em>IE Core Condition Problems and Health Concerns Profile</em>.
+<ul>
+<li>When <code>Condition.category</code> is a &quot;problems-list-item&quot;, the `Condition.clinicalStatus <strong>SHOULD NOT</strong> be unknown.</li>
+</ul>
+</li>
+<li>There is no single element in Condition that represents the date of diagnosis. It may be the assertedDate Extension, <code>Condition.onsetDateTime</code>, or <code>Condition.recordedDate</code>.
+<ul>
+<li>Although all three are marked as must support, the server is not required to support all.</li>
+<li>A server <strong>SHALL</strong> support <code>Condition.recordedDate</code>.</li>
+<li>A server <strong>SHALL</strong> support at least one of the assertedDate Extension and <code>Condition.onsetDateTime</code>. A server may support both, which means they support all three elements.</li>
+<li>The client application <strong>SHALL</strong> support all three elements.</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-abatement-date.html">abatement-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-asserted-date.html">asserted-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-clinical-status.html">clinical-status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-code.html">code</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-encounter.html">encounter</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-onset-date.html">onset-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-recorded-date.html">recorded-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-condition-lastupdated.html">_lastUpdated</a></td><td><code>date</code></td><td><div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+<p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-category.html">category</a>+<a href="SearchParameter-ie-core-condition-clinical-status.html">clinical-status</a></td><td><code>reference</code>+<code>token</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-onset-date.html">onset-date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-abatement-date.html">abatement-date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-clinical-status.html">clinical-status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-asserted-date.html">asserted-date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-code.html">code</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-category.html">category</a>+<a href="SearchParameter-ie-core-condition-encounter.html">encounter</a></td><td><code>reference</code>+<code>token</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-lastupdated.html">_lastUpdated</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-condition-patient.html">patient</a>+<a href="SearchParameter-ie-core-condition-recorded-date.html">recorded-date</a></td><td><code>reference</code>+<code>date</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Coverage1-5" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Coverage</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a></p></div></div><p/><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-coverage-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Device1-6" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Device</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/device.html">Device</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-implantable-device.html">IE Core Implantable Device Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>Implantable medical devices that have UDI information <strong>SHALL</strong> represent the UDI code in <code>Device.udiCarrier.carrierHRF</code>.</p>
+<ul>
+<li>All of the five UDI-PI elements that are present in the UDI code <strong>SHALL</strong> be represented in the corresponding IE Core Implantable Device Profile element.</li>
+</ul>
+<p>UDI may not be present in all scenarios such as historical implantable devices, patient reported implant information, payer reported devices, or improperly documented implants. If UDI is not present and the manufacturer and/or model number information is available, they <strong>SHOULD</strong> be included to support historical reports of implantable medical devices as follows:</p>
+<p>manufacturer -&gt; <code>Device.manufacturer</code><br/>
+model -&gt; <code>Device.model</code></p>
+</li>
+<li>
+<p>Servers <strong>SHOULD</strong> support query by Device.type to allow clients to request the patient's devices by a specific type. Note: The Device.type is too granular to differentiate implantable vs. non-implantable devices.</p>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-device-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-device-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-device-type.html">type</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-device-patient.html">patient</a>+<a href="SearchParameter-ie-core-device-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-device-patient.html">patient</a>+<a href="SearchParameter-ie-core-device-type.html">type</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="DiagnosticReport1-7" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>DiagnosticReport</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code><br/><code>create</code><div><p>This conformance expectation applies <strong>only</strong>  to the <em>IE Core DiagnosticReport Profile for Report and Note exchange</em> profile.  The conformance expectation for the <em>IE Core DiagnosticReport Profile for Laboratory Results Reporting</em> is  <strong>MAY</strong>.</p>
+</div></li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a><br/><a href="StructureDefinition-ie-core-diagnosticreport-lab.html">IE Core DiagnosticReport Profile for Laboratory Results Reporting</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Clients <strong>SHALL</strong> support at least one DiagnosticReport Profile</li>
+<li>When <code>DiagnosticReport.category</code> is &quot;LAB&quot; the encounter, Updates to Meta.lastUpdated <strong>SHOULD</strong> reflect:
+<ul>
+<li>New laboratory reports</li>
+<li>Changes in the status of laboratory reports including events that trigger the same status (e.g., amended → amended).</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-code.html">code</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-lastupdated.html">_lastUpdated</a></td><td><code>date</code></td><td><div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+<p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-code.html">code</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-category.html">category</a>+<a href="SearchParameter-ie-core-diagnosticreport-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-code.html">code</a>+<a href="SearchParameter-ie-core-diagnosticreport-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-ie-core-diagnosticreport-category.html">category</a>+<a href="SearchParameter-ie-core-diagnosticreport-lastupdated.html">_lastUpdated</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="DocumentReference1-8" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>DocumentReference</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>create</code>, <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>The <code>DocumentReference.type</code> binding <strong>SHALL</strong> support at a minimum the <a href="ValueSet-ie-core-clinical-note-type.html">5 Common Clinical Notes</a> and may extend to the full IE Core DocumentReference Type Value Set</li>
+<li>The DocumentReference resources can represent the referenced content using either an address where the document can be retrieved using <code>DocumentReference.attachment.url</code> or the content as inline base64 encoded data using <code>DocumentReference.attachment.data</code>.
+<ul>
+<li>Although both are marked as must support, the server system is not required to support an address, and inline base64 encoded data, but <strong>SHALL</strong> support at least one of these elements.</li>
+<li>The client application <strong>SHALL</strong> support both elements.</li>
+<li>The <code>content.url</code> may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]), FHIR Document Bundle (i.e [base]/Bundle/[id] or another endpoint.
+<ul>
+<li>If the endpoint is outside the FHIR base URL, it <strong>SHOULD NOT</strong> require additional authorization to access.</li>
+</ul>
+</li>
+<li>If there are multiple <code>DocumentReference.content</code> element repetitions, these <strong>SHALL</strong> all represent the same document in different format or attachment metadata. The content element <strong>SHALL NOT</strong> contain different versions of the same content. For version handling use multiple DocumentReferences with <code>DocumentReference.relatesTo</code></li>
+</ul>
+</li>
+<li>Every DocumentReference must have a responsible Organization. The organization responsible for the DocumentReference <strong>SHALL</strong> be present either in <code>DocumentReference.custodian</code> or accessible in the Provenance resource targeting the DocumentReference using <code>Provenance.agent.who</code> or <code>Provenance.agent.onBehalfOf</code>.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-documentreference-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-documentreference-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-documentreference-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-documentreference-period.html">period</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-documentreference-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-documentreference-type.html">type</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-ie-core-documentreference-type.html">type</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-ie-core-documentreference-category.html">category</a>+<a href="SearchParameter-ie-core-documentreference-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-ie-core-documentreference-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-ie-core-documentreference-type.html">type</a>+<a href="SearchParameter-ie-core-documentreference-period.html">period</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-ie-core-documentreference-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div><div class="row"><div class="col-12"><span class="lead">Extended Operations</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="OperationDefinition-docref.html">$docref</a></td><td><div><p>A client <strong>SHOULD</strong> be capable of transacting a $docref operation and capable of receiving at least a reference to a generated CCD document, and  <strong>MAY</strong> be able to receive other document types, if available.   <strong>SHOULD</strong>  be capable of receiving documents as included resources in response to the operation.</p>
+<p><code>GET [base]/DocumentReference/$docref?patient=[id]</code></p>
+</div></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Encounter1-9" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Encounter</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>The Encounter resource can represent a reason using either a code with <code>Encounter.reasonCode</code>, or a reference with <code>Encounter.reasonReference</code> to  Condition or other resource.</p>
+<ul>
+<li>Although both are marked as must support, the server systems are not required to support both a code and a reference, but they <strong>SHALL</strong> support <em>at least one</em> of these elements.</li>
+<li>The client application <strong>SHALL</strong> support both elements.</li>
+<li>if <code>Encounter.reasonReference</code> references an Observation, it <strong>SHOULD</strong> conform to a IE Core Observation if applicable. (for example, a laboratory result should conform to the IE Core Laboratory Result Observation Profile)</li>
+</ul>
+</li>
+<li>
+<p>The location address can be represented by either by the Location referenced by <code>Encounter.location.location</code> or indirectly through the Organization referenced by <code>Encounter.serviceProvider</code>.</p>
+<ul>
+<li>Although both are marked as must support, the server systems are not required to support both <code>Encounter.location.location</code> and <code>Encounter.serviceProvider</code>, but they <strong>SHALL</strong> support <em>at least one</em> of these elements.</li>
+<li>The client application <strong>SHALL</strong> support both elements.</li>
+</ul>
+</li>
+<li>
+<p>If the event facility/location differs from the <code>Encounter.location</code>, systems <strong>SHOULD</strong> reference it directly:</p>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-encounter-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-identifier.html">identifier</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-class.html">class</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-lastupdated.html">_lastUpdated</a></td><td><code>date</code></td><td><div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+<p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-discharge-disposition.html">discharge-disposition</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-location.html">location</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-encounter-type.html">type</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-encounter-date.html">date</a>+<a href="SearchParameter-ie-core-encounter-patient.html">patient</a></td><td><code>date</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-class.html">class</a>+<a href="SearchParameter-ie-core-encounter-patient.html">patient</a></td><td><code>token</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a>+<a href="SearchParameter-ie-core-encounter-type.html">type</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a>+<a href="SearchParameter-ie-core-encounter-lastupdated.html">_lastUpdated</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a>+<a href="SearchParameter-ie-core-encounter-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a>+<a href="SearchParameter-ie-core-encounter-location.html">location</a></td><td><code>reference</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-encounter-patient.html">patient</a>+<a href="SearchParameter-ie-core-encounter-discharge-disposition.html">discharge-disposition</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Endpoint1-10" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Endpoint</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/endpoint.html">Endpoint</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>vread</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>The Media Resource is a Must Suppot referenced resource when using the IE Core PracitionerRole Profile.</p>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Goal1-11" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Goal</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/goal.html">Goal</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-goal.html">IE Core Goal Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Although both <code>Goal.startDate</code> and <code>Goal.target.dueDate</code> are marked as must support, the server system is not required to support both, but <strong>SHALL</strong> support at least one of these elements. The client application <strong>SHALL</strong> support both elements.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-goal-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-goal-description.html">description</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-goal-lifecycle-status.html">lifecycle-status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-goal-target-date.html">target-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+<p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-goal-patient.html">patient</a>+<a href="SearchParameter-ie-core-goal-target-date.html">target-date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-goal-patient.html">patient</a>+<a href="SearchParameter-ie-core-goal-lifecycle-status.html">lifecycle-status</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-goal-patient.html">patient</a>+<a href="SearchParameter-ie-core-goal-description.html">description</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="HealthcareService1-12" class="panel-title"><span style="float: right;">Resource Conformance: MAY </span>HealthcareService</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/healthcareservice.html">HealthcareService</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>vread</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>The HealthcareService Resource is a referenced resource when using the IE Core PracitionRole Profile and subject to constraint ie-core-13: &quot;SHALL have a practitioner, an organization, a healthcare service, or a location.&quot;</p>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Immunization1-13" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Immunization</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Based upon the iEHR IE Core Data for Interoperability (IECDI) requirements, vaccine codes are required.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-immunization-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-immunization-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-immunization-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-immunization-patient.html">patient</a>+<a href="SearchParameter-ie-core-immunization-date.html">date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-immunization-patient.html">patient</a>+<a href="SearchParameter-ie-core-immunization-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Location1-14" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Location</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/location.html">Location</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Systems <strong>SHOULD</strong> follow the Project IE@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for <code>Location.address.line</code> and  <code>Location.address.city</code>.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-location-address.html">address</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-location-name.html">name</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-location-address-city.html">address-city</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-location-address-postalcode.html">address-postalcode</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-location-address-state.html">address-state</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Media1-15" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Media</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/media.html">Media</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>vread</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>The Media Resource is a Must Suppot referenced resource when using the IE Core DiagnosticReport Profile for Report and Note Exchange.</p>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Medication1-16" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Medication</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medication.html">Medication</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-medication.html">IE Core Medication Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>The  MedicationRequest resource can represent a medication, using an external reference to a Medication resource. If an external Medication Resource is used in a MedicationRequest, then the READ  <strong>SHALL</strong>  be supported.</li>
+</ul>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="MedicationDispense1-17" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>MedicationDispense</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medicationdispense.html">MedicationDispense</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-medicationdispense.html">IE Core MedicationDispense Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>The MedicationDispense resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource. The server application <strong>MAY</strong> choose any one way or more than one method, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the _include` parameter for searching this element. The client application must support all methods.
+<ul>
+<li>For example, A server <strong>SHALL</strong> be capable of returning dispense records for all medications for a patient using one of or both:
+<ul>
+<li><code>GET /MedicationDispense?patient=[id]</code></li>
+<li><code>GET /MedicationDispense?patient=[id]&amp;_include=MedicationDispense:medication</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-medicationdispense-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationdispense-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationdispense-type.html">type</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-medicationdispense-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationdispense-status.html">status</a>+<a href="SearchParameter-ie-core-medicationdispense-type.html">type</a></td><td><code>reference</code>+<code>token</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-medicationdispense-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationdispense-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="MedicationRequest1-18" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>MedicationRequest</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>The MedicationRequest resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be <a href="http://hl7.org/fhir/R4/references.html#contained">contained</a> or an external resource. The server application <strong>MAY</strong> choose any one way or more than one method, but if an external reference to Medication is used, the server <strong>SHALL</strong> support the _include` parameter for searching this element. The client application must support all methods.</p>
+<ul>
+<li>For example, A server <strong>SHALL</strong> be capable of returning all medications for a patient using one of or both:
+<ul>
+<li><code>GET /MedicationRequest?patient=[id]</code></li>
+<li><code>GET /MedicationRequest?patient=[id]&amp;_include=MedicationRequest:medication</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>The MedicationRequest resource can represent that information is from a secondary source using either a boolean flag or reference in <code>MedicationRequest.reportedBoolean</code>, or a reference using <code>MedicationRequest.reportedReference</code> to Practitioner or other resource.</p>
+<ul>
+<li>Although both are marked as must support, the server systems are not required to support both a boolean and a reference, but <strong>SHALL</strong> choose to support at least one of these elements.</li>
+<li>The client application <strong>SHALL</strong> support both elements.</li>
+</ul>
+</li>
+<li>
+<p>When recording “self-prescribed” medication, requester <strong>SHOULD</strong> be used to indicate the Patient or RelatedPerson as the prescriber. (See the Medication List section for guidance on accessing a patient medications including over the counter (OTC) medication and other substances taken for medical and recreational use.)</p>
+</li>
+<li>
+<p>The MedicationRequest resource can communicate the reason or indication for treatment using either a code in MedicationRequest.reasonCode or a reference using MedicationRequest.reasonReference.</p>
+</li>
+<li>
+<p>Although both <code>MedicationRequest.reasonCode</code> and <code>MedicationRequest.reasonReference</code> are marked as Additional IECDI Requirements. The certifying server system is not required to support both but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.</p>
+<ul>
+<li>when using MedicationRequest.reasonReference:
+<ul>
+<li>Servers <strong>SHALL</strong> support at least one target resource in <code>MedicationRequest.reasonReference</code>. Clients <strong>SHALL</strong> support all target resources.</li>
+<li>The referenced resources <strong>SHOULD</strong> be a IE Core Profile as documented in Referencing IE Core Profiles.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationrequest-authoredon.html">authoredon</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationrequest-encounter.html">encounter</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationrequest-intent.html">intent</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationrequest-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-medicationrequest-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-ie-core-medicationrequest-status.html">status</a></td><td><code>reference</code>+<code>token</code>+<code>token</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationrequest-intent.html">intent</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-ie-core-medicationrequest-encounter.html">encounter</a></td><td><code>reference</code>+<code>token</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-ie-core-medicationrequest-authoredon.html">authoredon</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Observation1-19" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Observation</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/observation.html">Observation</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a><br/><a href="StructureDefinition-ie-core-observation-pregnancystatus.html">IE Core Observation Pregnancy Status Profile</a><br/><a href="StructureDefinition-ie-core-observation-pregnancyintent.html">IE Core Observation Pregnancy Intent Profile</a><br/><a href="StructureDefinition-ie-core-observation-occupation.html">IE Core Observation Occupation Profile</a><br/><a href="StructureDefinition-ie-core-respiratory-rate.html">IE Core Respiratory Rate Profile</a><br/><a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile</a><br/><a href="StructureDefinition-ie-core-treatment-intervention-preference.html">IE Core Treatment Intervention Preference Profile</a><br/><a href="StructureDefinition-ie-core-care-experience-preference.html">IE Core Care Experience Preference Profile</a><br/><a href="StructureDefinition-ie-core-heart-rate.html">IE Core Heart Rate Profile</a><br/><a href="StructureDefinition-ie-core-body-temperature.html">IE Core Body Temperature Profile</a><br/><a href="StructureDefinition-pediatric-weight-for-height.html">IE Core Pediatric Weight for Height Observation Profile</a><br/><a href="StructureDefinition-ie-core-pulse-oximetry.html">IE Core Pulse Oximetry Profile</a><br/><a href="StructureDefinition-ie-core-smokingstatus.html">IE Core Smoking Status Observation Profile</a><br/><a href="StructureDefinition-ie-core-observation-sexual-orientation.html">IE Core Observation Sexual Orientation Profile</a><br/><a href="StructureDefinition-ie-core-head-circumference.html">IE Core Head Circumference Profile</a><br/><a href="StructureDefinition-ie-core-body-height.html">IE Core Body Height Profile</a><br/><a href="StructureDefinition-ie-core-bmi.html">IE Core BMI Profile</a><br/><a href="StructureDefinition-ie-core-observation-screening-assessment.html">IE Core Observation Screening Assessment Profile</a><br/><a href="StructureDefinition-ie-core-average-blood-pressure.html">IE Core Average Blood Pressure Profile</a><br/><a href="StructureDefinition-ie-core-blood-pressure.html">IE Core Blood Pressure Profile</a><br/><a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a><br/><a href="StructureDefinition-pediatric-bmi-for-age.html">IE Core Pediatric BMI for Age Observation Profile</a><br/><a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/><a href="StructureDefinition-ie-core-body-weight.html">IE Core Body Weight Profile</a><br/><a href="StructureDefinition-ie-core-vital-signs.html">IE Core Vital Signs Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Clients <strong>SHALL</strong> support at least one Observation Profile</li>
+<li>Systems <strong>SHOULD</strong> support <code>Observation.effectivePeriod</code> to accurately represent tests that are collected over a period of time (for example, a 24-Hour Urine Collection test).</li>
+<li>An Observation without a value, <strong>SHALL</strong> include a reason why the data is absent unless there are component observations, or references to other Observations that are grouped within it
+<ul>
+<li>Systems that never provide an observation without a value are not required to support <code>Observation.dataAbsentReason</code></li>
+</ul>
+</li>
+<li>An <code>Observation.component</code> without a value, <strong>SHALL</strong> include a reason why the data is absent.
+<ul>
+<li>Systems that never provide an component observation without a component value are not required to support <code>Observation.component.dataAbsentReason</code>.</li>
+</ul>
+</li>
+<li>When <code>Observation.category</code> is &quot;laboratory&quot; the encounter, Updates to Meta.lastUpdated <strong>SHOULD</strong> reflect:
+<ul>
+<li>New laboratory results</li>
+<li>Changes in the status of laboratory results including events that trigger the same status (e.g., amended → amended).</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-code.html">code</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-lastupdated.html">_lastUpdated</a></td><td><code>date</code></td><td><div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+<p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-observation-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-code.html">code</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-category.html">category</a>+<a href="SearchParameter-ie-core-observation-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-code.html">code</a>+<a href="SearchParameter-ie-core-observation-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-category.html">category</a>+<a href="SearchParameter-ie-core-observation-status.html">status</a></td><td><code>reference</code>+<code>token</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-observation-patient.html">patient</a>+<a href="SearchParameter-ie-core-observation-category.html">category</a>+<a href="SearchParameter-ie-core-observation-lastupdated.html">_lastUpdated</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Organization1-20" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Organization</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/organization.html">Organization</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-organization.html">IE Core Organization Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Systems <strong>SHALL</strong> support National Provider Identifier (NPI) for organizations and <strong>SHOULD</strong> support Clinical Laboratory Improvement Amendments (CLIA) identifiers for <code>Organization.Identifier</code>.</li>
+<li>Systems <strong>SHOULD</strong> follow the Project IE@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for <code>Organization.address.line</code> and  <code>Organization.address.city</code>.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-organization-address.html">address</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-organization-name.html">name</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Patient1-21" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Patient</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>For IECDI requirements, each Patient must support the following additional elements. These elements are included in the formal definition of the profile. The patient examples include all of these elements.</p>
+<ol>
+<li>contact detail (e.g. a telephone number or an email address)</li>
+<li>a communication language</li>
+<li>an ethnicity</li>
+<li>previous name
+<ul>
+<li>Previous name is represented by providing an end date in the <code>Patient.name.period</code> element for a previous name.</li>
+</ul>
+</li>
+<li>suffix
+<ul>
+<li>Suffix is represented using the <code>Patient.name.suffix</code> element.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>The Patient's Social Security Numbers (i.e. PPS) <strong>SHOULD NOT</strong> be used as a patient identifier in <code>Patient.identifier.value</code>.</p>
+</li>
+<li>
+<p>Although Patient.deceased[x] is marked as &#x1D5D4;&#x1D5D7;&#x1D5D7;&#x1D5DC;&#x1D5E7;&#x1D5DC;&#x1D5E2;&#x1D5E1;&#x1D5D4;&#x1D5DF; &#x1D5DC;&#x1D5D8;&#x1D5D6;&#x1D5D7;&#x1D5DC;, certifying systems are not required to support both choices, but <strong>SHALL</strong> support at least <code>Patient.deceasedDateTime</code>.</p>
+</li>
+<li>
+<p>Certifying systems <strong>SHALL</strong> and non-certifying systems <strong>SHOULD</strong> follow the Project IE@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for <code>Patient.address.line</code> and  <code>Patient.address.city</code> for new and updated records.</p>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-patient-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-patient-identifier.html">identifier</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-patient-name.html">name</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-patient-birthdate.html">birthdate</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+<p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-patient-death-date.html">death-date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+<p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-patient-family.html">family</a></td><td><code>string</code></td><td><div><p>A server <strong>SHALL</strong> support a value precise to the <em>day</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-patient-gender.html">gender</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-patient-given.html">given</a></td><td><code>string</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-patient-birthdate.html">birthdate</a>+<a href="SearchParameter-ie-core-patient-name.html">name</a></td><td><code>date</code>+<code>string</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-patient-gender.html">gender</a>+<a href="SearchParameter-ie-core-patient-name.html">name</a></td><td><code>token</code>+<code>string</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-patient-family.html">family</a>+<a href="SearchParameter-ie-core-patient-gender.html">gender</a></td><td><code>string</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-patient-birthdate.html">birthdate</a>+<a href="SearchParameter-ie-core-patient-family.html">family</a></td><td><code>date</code>+<code>string</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-patient-death-date.html">death-date</a>+<a href="SearchParameter-ie-core-patient-family.html">family</a></td><td><code>date</code>+<code>string</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Practitioner1-22" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Practitioner</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-practitioner.html">IE Core Practitioner Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Servers that support only IE Core Practitioner Profile <strong>SHALL</strong> provide implementation specific guidance how to access a provider’s location and contact information using only the Practitioner resource.
+<ul>
+<li>Although Practitioner.address is marked as Must Support, the server system is not required to support it if they support the IE Core PractitionerRole Profile, but <strong>SHALL</strong> support it if they do not support the IE Core PractitionerRole Profile. The client application <strong>SHALL</strong> support both.</li>
+</ul>
+</li>
+<li>Systems <strong>SHOULD</strong> follow the Project IE@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for <code>Practitioner.address.line</code> and  <code>Practitioner.address.city</code>.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-practitioner-identifier.html">identifier</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-practitioner-name.html">name</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-practitioner-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="PractitionerRole1-23" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>PractitionerRole</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-practitionerrole.html">IE Core PractitionerRole Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Due to implementer feedback, some IE Core Profiles reference the PractitionerRole resource instead of the IE Core PractitionerRole Profile. However the IE Core PractitionerRole Profile <strong>SHOULD</strong> be used as the default profile if referenced by another IE Core profile.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-practitionerrole-practitioner.html">practitioner</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-practitionerrole-specialty.html">specialty</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Procedure1-24" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Procedure</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-procedure.html">IE Core Procedure Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Procedure codes can be taken from SNOMED-CT, CPT, HCPCS II, ICD-10-PCS, CDT. LOINC.
+<ul>
+<li>Only LOINC concepts that reflect actual procedures <strong>SHOULD</strong> be used</li>
+</ul>
+</li>
+<li>A procedure including an implantable device <strong>SHOULD</strong> use <code>Procedure.focalDevice</code> with a reference to the <em>IE Core Implantable Device Profile</em>.</li>
+<li>Servers and Clients <strong>SHALL</strong> support both IE Core ServiceRequest and IE Core Procedure Profiles for communicating the reason or justification for a referral as Additional IECDI Requirements. Typically, the reason or justification for a referral or consultation is communicated through <code>Procedure.basedOn</code> linking the Procedure to the IE Core ServiceRequest Profile that includes either <code>ServiceRequest.reasonCode</code> or <code>ServiceRequest.reasonReference</code>. When the Procedure does not have an associated ServiceRequest, it is communicated through the IE Core Procedure Profile's <code>Procedure.reasonCode</code> or <code>Procedure.reasonReference</code>.  Depending on the procedure being documented, a server will select the appropriate Profile to use.
+<ul>
+<li>Although both <code>Procedure.reasonCode</code> and <code>Procedure.reasonReference</code> are marked as Additional IECDI Requirements. The certifying server system is not required to support both but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.
+<ul>
+<li>when using  <code>Procedure.reasonReference</code>:
+<ul>
+<li>Servers <strong>SHALL</strong> support <em>at least one</em> target resource in <code>Procedure.reasonReference</code>. Clients <strong>SHALL</strong> support all target resources .</li>
+<li>The referenced resources <strong>SHOULD</strong> be a IE Core Profile.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-procedure-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-procedure-code.html">code</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-procedure-date.html">date</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-procedure-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-procedure-patient.html">patient</a>+<a href="SearchParameter-ie-core-procedure-date.html">date</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-procedure-patient.html">patient</a>+<a href="SearchParameter-ie-core-procedure-code.html">code</a>+<a href="SearchParameter-ie-core-procedure-date.html">date</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-procedure-patient.html">patient</a>+<a href="SearchParameter-ie-core-procedure-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Provenance1-25" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Provenance</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-provenance.html">IE Core Provenance Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>The IE Core Provenance resource <strong>SHALL</strong> be supported for these IE Core resources:
+<ul>
+<li>AllergyIntolerance</li>
+<li>CarePlan</li>
+<li>CareTeam</li>
+<li>Condition</li>
+<li>Coverage</li>
+<li>Device</li>
+<li>DiagnosticReport</li>
+<li>DocumentReference</li>
+<li>Encounter</li>
+<li>Goal</li>
+<li>Immunization</li>
+<li>MedicationDispense</li>
+<li>MedicationRequest</li>
+<li>Observation</li>
+<li>Patient</li>
+<li>Procedure</li>
+<li>QuestionnaireResponse</li>
+<li>RelatedPerson</li>
+<li>ServiceRequest</li>
+</ul>
+</li>
+<li>If a system receives a provider in <code>Provenance.agent.who</code> as free text they must capture who sent them the information as the organization. On request they <strong>SHALL</strong> provide this organization as the source and <strong>MAY</strong> include the free text provider.</li>
+<li>Systems that need to know the activity has occurred <strong>SHOULD</strong> populate the activity.</li>
+</ul>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Questionnaire1-26" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Questionnaire</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>vread</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-instance</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html">SDCBaseQuestionnaire</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>IE Core defines two ways to represent the questions and responses to screening and assessment instruments:</p>
+<ul>
+<li>Observation: IE Core Observation Screening Assessment Profile</li>
+<li>Questionnaire/QuestionnaireResponse: SDC Base Questionnaire/IE Core QuestionnaireResponse Profile</li>
+</ul>
+</li>
+<li>
+<p>IE Core Servers <strong>SHALL</strong> support IE Core Observation Screening Assessment Profile and <strong>SHOULD</strong> support the  SDC Base Questionnaire Profile/IE Core QuestionnaireResponse Profile</p>
+</li>
+</ul>
+</div></blockquote></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="QuestionnaireResponse1-27" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>QuestionnaireResponse</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>, <code>read</code>, <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-questionnaireresponse.html">IE Core QuestionnaireResponse Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>
+<p>IE Core defines two ways to represent the questions and responses to screening and assessment instruments:</p>
+<ul>
+<li>Observation: IE Core Observation Screening Assessment Profile</li>
+<li>Questionnaire/QuestionnaireResponse: SDC Base Questionnaire/IE Core QuestionnaireResponse Profile</li>
+</ul>
+</li>
+<li>
+<p>IE Core Servers <strong>SHALL</strong> support IE Core Observation Screening Assessment Profile and <strong>SHOULD</strong> support the  SDC Base Questionnaire Profile/IE Core QuestionnaireResponse Profile</p>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-authored.html">authored</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-questionnaire.html">questionnaire</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-ie-core-questionnaireresponse-questionnaire.html">questionnaire</a></td><td><code>reference</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-ie-core-questionnaireresponse-authored.html">authored</a></td><td><code>reference</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-ie-core-questionnaireresponse-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="RelatedPerson1-28" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>RelatedPerson</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-relatedperson.html">IE Core RelatedPerson Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Systems <strong>SHOULD</strong> follow the Project IE@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for <code>RelatedPerson.address.line</code> and  <code>RelatedPerson.address.city</code>.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-relatedperson-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-relatedperson-name.html">name</a></td><td><code>string</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-relatedperson-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-relatedperson-patient.html">patient</a>+<a href="SearchParameter-ie-core-relatedperson-name.html">name</a></td><td><code>reference</code>+<code>string</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="ServiceRequest1-29" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>ServiceRequest</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>search-type</code>, <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Servers and Clients <strong>SHALL</strong> support both IE Core ServiceRequest and IE Core Procedure Profiles for communicating the reason or justification for a referral as Additional IECDI Requirements. Typically, the reason or justification for a referral or consultation is communicated through <code>Procedure.basedOn</code> linking the Procedure to the IE Core ServiceRequest Profile that includes either <code>ServiceRequest.reasonCode</code> or <code>ServiceRequest.reasonReference</code>. When the Procedure does not have an associated ServiceRequest, it is communicated through the IE Core Procedure Profile's <code>Procedure.reasonCode</code> or <code>Procedure.reasonReference</code>.  Depending on the procedure being documented, a server will select the appropriate Profile to use.
+<ul>
+<li><code>ServiceRequest.reasonCode</code> and <code>ServiceRequest.reasonReference</code> are marked as Additional IECDI Requirements. The certifying server system is not required to support both but <strong>SHALL</strong> support at least one of these elements. The certifying client application <strong>SHALL</strong> support both elements.
+<ul>
+<li>when using  <code>ServiceRequest.reasonReference</code>:
+<ul>
+<li>Servers <strong>SHALL</strong> support <em>at least one</em> target resource in <code>ServiceRequest.reasonReference</code>. Clients <strong>SHALL</strong> support all target resources.</li>
+<li>The referenced resources <strong>SHOULD</strong> be a IE Core Profile.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-servicerequest-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a></td><td><code>reference</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-servicerequest-authored.html">authored</a></td><td><code>date</code></td><td><div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+<p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-servicerequest-category.html">category</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-servicerequest-code.html">code</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td><a href="SearchParameter-ie-core-servicerequest-status.html">status</a></td><td><code>token</code></td><td><div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+<p>The server <strong>SHALL</strong> support both.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"><span class="lead">Combined Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-servicerequest-code.html">code</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-servicerequest-category.html">category</a>+<a href="SearchParameter-ie-core-servicerequest-authored.html">authored</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-servicerequest-category.html">category</a></td><td><code>reference</code>+<code>token</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-servicerequest-code.html">code</a>+<a href="SearchParameter-ie-core-servicerequest-authored.html">authored</a></td><td><code>reference</code>+<code>token</code>+<code>date</code></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-ie-core-servicerequest-status.html">status</a></td><td><code>reference</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Specimen1-30" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>Specimen</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/><code>resolves</code></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>read</code>.</li><li><strong>SHOULD</strong> support <code>vread</code>, <code>history-instance</code>.</li><li><strong>MAY</strong> support <code>create</code>, <code>search-type</code>, <code>update</code>, <code>patch</code>, <code>delete</code>, <code>history-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-ie-core-specimen.html">IE Core Specimen Profile</a></p></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><ul>
+<li>Although both <code>Specimen.identifier</code> and <code>Specimen.accessionIdentifier</code> are marked as Must Support, the server system is not required to support both, but <strong>SHALL</strong> support at least one of these elements. The client application <strong>SHALL</strong> support both.</li>
+</ul>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="SearchParameter-ie-core-specimen-id.html">_id</a></td><td><code>token</code></td><td><div/></td></tr><tr><td><b>SHOULD</b></td><td><a href="SearchParameter-ie-core-specimen-patient.html">patient</a></td><td><code>reference</code></td><td><div/></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="ValueSet1-31" class="panel-title"><span style="float: right;">Resource Conformance: SHOULD </span>ValueSet</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul/></div></div><p/><p/><div class="row"><div class="col-12"><span class="lead">Extended Operations</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td>$expand</td><td><div><p>If a server supports DocumentReference for creating, using, and sharing clinical notes, it <strong>SHOULD</strong> also support the <code>context</code> and <code>contextdirection</code> parameters of the $expand operation to enable clients to determine the supported note and report types, as well as the supported read/write formats for notes on the server.</p>
+</div></td></tr></tbody></table></div></div></div></div></div></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,89 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-survey-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-survey-codes</b></p><a name=\"ie-core-survey-codes\"> </a><a name=\"hcie-core-survey-codes\"> </a><a name=\"ie-core-survey-codes-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where CLASSTYPE  = 4</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where CLASSTYPE  = 2</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where CLASS  = LP62408-7 (PANEL.NEONAT)</li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-survey-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.27"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreSurveyCodes",
+  "title" : "IE Core Survey Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "This value set includes screening and assessment panel codes in LOINC (Refer to [Appendix A](https://loinc.org/kb/users-guide/loinc-database-structure/) of LOINC Users' Guide).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "4"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "LP62408-7"
+      }]
+    }]
+  }
+}

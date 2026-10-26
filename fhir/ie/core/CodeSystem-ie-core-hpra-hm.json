@@ -1,0 +1,65 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-hpra-hm",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-hpra-hm</b></p><a name=\"ie-core-hpra-hm\"> </a><a name=\"hcie-core-hpra-hm\"> </a><a name=\"ie-core-hpra-hm-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm</code> defines codes, but no codes are represented here</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.18"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreHpraHm",
+  "title" : "IE Core HPRA HM",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "HPRA - Human Medicines Authorised Products",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "not-present"
+}

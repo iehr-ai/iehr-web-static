@@ -1,0 +1,111 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-ethnicity-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-ethnicity-codes</b></p><a name=\"ie-core-ethnicity-codes\"> </a><a name=\"hcie-core-ethnicity-codes\"> </a><a name=\"ie-core-ethnicity-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">WI<a name=\"ie-core-ethnicity-codes-WI\"> </a></td><td>White Irish</td><td>White Irish</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"ie-core-ethnicity-codes-IT\"> </a></td><td>Irish Travelers</td><td>Irish Travelers</td></tr><tr><td style=\"white-space:nowrap\">OW<a name=\"ie-core-ethnicity-codes-OW\"> </a></td><td>other White</td><td>other White</td></tr><tr><td style=\"white-space:nowrap\">BI<a name=\"ie-core-ethnicity-codes-BI\"> </a></td><td>Black Irish or African</td><td>Black Irish or African</td></tr><tr><td style=\"white-space:nowrap\">OBA<a name=\"ie-core-ethnicity-codes-OBA\"> </a></td><td>other Black</td><td>other Black</td></tr><tr><td style=\"white-space:nowrap\">CHI<a name=\"ie-core-ethnicity-codes-CHI\"> </a></td><td>Chinese</td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">OA<a name=\"ie-core-ethnicity-codes-OA\"> </a></td><td>other Asian</td><td>other Asian</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"ie-core-ethnicity-codes-OTH\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">NS<a name=\"ie-core-ethnicity-codes-NS\"> </a></td><td>Not stated</td><td>Not stated</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.7"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreEthnicityCodes",
+  "title" : "IE Core Ethnicity Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "This extension applies to the Patient, Person, and RelatedPerson resources and is used to indicate Ethnicity.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "WI",
+    "display" : "White Irish",
+    "definition" : "White Irish"
+  },
+  {
+    "code" : "IT",
+    "display" : "Irish Travelers",
+    "definition" : "Irish Travelers"
+  },
+  {
+    "code" : "OW",
+    "display" : "other White",
+    "definition" : "other White"
+  },
+  {
+    "code" : "BI",
+    "display" : "Black Irish or African",
+    "definition" : "Black Irish or African"
+  },
+  {
+    "code" : "OBA",
+    "display" : "other Black",
+    "definition" : "other Black"
+  },
+  {
+    "code" : "CHI",
+    "display" : "Chinese",
+    "definition" : "Chinese"
+  },
+  {
+    "code" : "OA",
+    "display" : "other Asian",
+    "definition" : "other Asian"
+  },
+  {
+    "code" : "OTH",
+    "display" : "Other",
+    "definition" : "Other"
+  },
+  {
+    "code" : "NS",
+    "display" : "Not stated",
+    "definition" : "Not stated"
+  }]
+}

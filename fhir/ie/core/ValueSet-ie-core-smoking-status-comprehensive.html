@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IE Core Smoking status comprehensive - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.228"}
+    h3,h4,h5,h6{--heading-prefix:"13.228"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IE Core Smoking status comprehensive</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-smoking-status-comprehensive.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-smoking-status-comprehensive.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-smoking-status-comprehensive.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: IE Core Smoking status comprehensive
+
+  </h2>
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive|1.0.0-ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IECoreSmokingStatusComprehensive</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:1.3.6.1.4.1.54392.5.2690.48.44
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: iEHR.ai, all rights reserved Creative Commons License</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>A set of SNOMED concepts to classify Smoking status comprehensive</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-ie-core-smokingstatus.html">IE Core Smoking Status Observation Profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-smoking-status-comprehensive</b></p><a name="ie-core-smoking-status-comprehensive"> </a><a name="hcie-core-smoking-status-comprehensive"> </a><a name="ie-core-smoking-status-comprehensive-en-US"> </a>
+<ul><li>Include these codes as defined in <a href="http://www.snomed.org"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/100801000119107">100801000119107</a></td><td>Maternal tobacco use in pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/105539002">105539002</a></td><td>Non-smoker for personal reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/105540000">105540000</a></td><td>Non-smoker for religious reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/105541001">105541001</a></td><td>Non-smoker for medical reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/10761391000119102">10761391000119102</a></td><td>Tobacco use in mother complicating childbirth (finding)</td></tr><tr><td><a href="http://snomed.info/id/110483000">110483000</a></td><td>Tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/1137691001">1137691001</a></td><td>Trying to give up using electronic cigarette (finding)</td></tr><tr><td><a href="http://snomed.info/id/134406006">134406006</a></td><td>Smoking reduced (finding)</td></tr><tr><td><a href="http://snomed.info/id/160603005">160603005</a></td><td>Light cigarette smoker (1-9 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160604004">160604004</a></td><td>Moderate cigarette smoker (10-19 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160605003">160605003</a></td><td>Heavy cigarette smoker (20-39 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160606002">160606002</a></td><td>Very heavy cigarette smoker (40+ cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160612007">160612007</a></td><td>Keeps trying to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160613002">160613002</a></td><td>Admitted tobacco consumption possibly untrue (finding)</td></tr><tr><td><a href="http://snomed.info/id/160614008">160614008</a></td><td>Tobacco consumption unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/160616005">160616005</a></td><td>Trying to give up smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160617001">160617001</a></td><td>Stopped smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160619003">160619003</a></td><td>Rolls own cigarettes (finding)</td></tr><tr><td><a href="http://snomed.info/id/160620009">160620009</a></td><td>Ex-pipe smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/160621008">160621008</a></td><td>Ex-cigar smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/16090371000119103">16090371000119103</a></td><td>Exposure to second hand tobacco smoke (event)</td></tr><tr><td><a href="http://snomed.info/id/16090771000119104">16090771000119104</a></td><td>Occupational exposure to environmental tobacco smoke (event)</td></tr><tr><td><a href="http://snomed.info/id/161077003">161077003</a></td><td>Father smokes (situation)</td></tr><tr><td><a href="http://snomed.info/id/161078008">161078008</a></td><td>Mother smokes (situation)</td></tr><tr><td><a href="http://snomed.info/id/161079000">161079000</a></td><td>Both parents smoke (situation)</td></tr><tr><td><a href="http://snomed.info/id/169940006">169940006</a></td><td>Maternal tobacco abuse (finding)</td></tr><tr><td><a href="http://snomed.info/id/228491005">228491005</a></td><td>Does not use snuff (finding)</td></tr><tr><td><a href="http://snomed.info/id/228492003">228492003</a></td><td>Never used snuff (finding)</td></tr><tr><td><a href="http://snomed.info/id/228493008">228493008</a></td><td>Ex-snuff user (finding)</td></tr><tr><td><a href="http://snomed.info/id/228494002">228494002</a></td><td>Snuff user (finding)</td></tr><tr><td><a href="http://snomed.info/id/228499007">228499007</a></td><td>Finding relating to moist tobacco use (finding)</td></tr><tr><td><a href="http://snomed.info/id/228501004">228501004</a></td><td>Does not use moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228502006">228502006</a></td><td>Never used moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228503001">228503001</a></td><td>Ex-user of moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228504007">228504007</a></td><td>User of moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228509002">228509002</a></td><td>Finding relating to tobacco chewing (finding)</td></tr><tr><td><a href="http://snomed.info/id/228511006">228511006</a></td><td>Does not chew tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228512004">228512004</a></td><td>Never chewed tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228513009">228513009</a></td><td>Ex-tobacco chewer (finding)</td></tr><tr><td><a href="http://snomed.info/id/228514003">228514003</a></td><td>Chews plug tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228515002">228515002</a></td><td>Chews twist tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228516001">228516001</a></td><td>Chews loose leaf tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228517005">228517005</a></td><td>Chews fine cut tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228518000">228518000</a></td><td>Chews products containing tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228523000">228523000</a></td><td>Exposed to tobacco smoke at work (finding)</td></tr><tr><td><a href="http://snomed.info/id/228524006">228524006</a></td><td>Exposed to tobacco smoke at home (finding)</td></tr><tr><td><a href="http://snomed.info/id/228525007">228525007</a></td><td>Exposed to tobacco smoke in public places (finding)</td></tr><tr><td><a href="http://snomed.info/id/230059006">230059006</a></td><td>Occasional cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230060001">230060001</a></td><td>Light cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230062009">230062009</a></td><td>Moderate cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230063004">230063004</a></td><td>Heavy cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230064005">230064005</a></td><td>Very heavy cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230065006">230065006</a></td><td>Chain smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/266919005">266919005</a></td><td>Never smoked tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/266920004">266920004</a></td><td>Trivial cigarette smoker (less than one cigarette/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266921000">266921000</a></td><td>Ex-trivial cigarette smoker (&lt;1/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266922007">266922007</a></td><td>Ex-light cigarette smoker (1-9/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266923002">266923002</a></td><td>Ex-moderate cigarette smoker (10-19/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266924008">266924008</a></td><td>Ex-heavy cigarette smoker (20-39/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266925009">266925009</a></td><td>Ex-very heavy cigarette smoker (40+/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266927001">266927001</a></td><td>Tobacco smoking consumption unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/266928006">266928006</a></td><td>Ex-cigarette smoker amount unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/266929003">266929003</a></td><td>Smoking started (finding)</td></tr><tr><td><a href="http://snomed.info/id/275105001">275105001</a></td><td>Smoker in the family (situation)</td></tr><tr><td><a href="http://snomed.info/id/281018007">281018007</a></td><td>Ex-cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/308438006">308438006</a></td><td>Smoking restarted (finding)</td></tr><tr><td><a href="http://snomed.info/id/35341000087101">35341000087101</a></td><td>Uses electronic cigarette daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/35371000087109">35371000087109</a></td><td>Uses electronic cigarette occasionally (finding)</td></tr><tr><td><a href="http://snomed.info/id/360890004">360890004</a></td><td>Intolerant ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360900008">360900008</a></td><td>Aggressive ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360918006">360918006</a></td><td>Aggressive non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360929005">360929005</a></td><td>Intolerant non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/365981007">365981007</a></td><td>Finding of tobacco smoking behavior (finding)</td></tr><tr><td><a href="http://snomed.info/id/365982000">365982000</a></td><td>Finding of tobacco smoking consumption (finding)</td></tr><tr><td><a href="http://snomed.info/id/365983005">365983005</a></td><td>Finding of snuff use (finding)</td></tr><tr><td><a href="http://snomed.info/id/394871007">394871007</a></td><td>Thinking about stopping smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/394872000">394872000</a></td><td>Ready to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/394873005">394873005</a></td><td>Not interested in stopping smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/405746006">405746006</a></td><td>Current non smoker but past smoking history unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/427189007">427189007</a></td><td>Maternal tobacco use (finding)</td></tr><tr><td><a href="http://snomed.info/id/428041000124106">428041000124106</a></td><td>Occasional tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428061000124105">428061000124105</a></td><td>Light tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428071000124103">428071000124103</a></td><td>Heavy tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428081000124100">428081000124100</a></td><td>Former heavy tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428091000124102">428091000124102</a></td><td>Former light tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/43381005">43381005</a></td><td>Passive smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/446172000">446172000</a></td><td>Failed attempt to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/449345000">449345000</a></td><td>Smoked before confirmation of pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449368009">449368009</a></td><td>Stopped smoking during pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449369001">449369001</a></td><td>Stopped smoking before pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449867007">449867007</a></td><td>Uses moist tobacco occasionally (finding)</td></tr><tr><td><a href="http://snomed.info/id/449868002">449868002</a></td><td>Smokes tobacco daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/449869005">449869005</a></td><td>Uses moist tobacco daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/450811000124104">450811000124104</a></td><td>Cigarette smoker (5-9 cigarettes/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/450821000124107">450821000124107</a></td><td>Cigarette smoker (1-4 cigarettes/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/451371000124109">451371000124109</a></td><td>Tobacco non-user (finding)</td></tr><tr><td><a href="http://snomed.info/id/451381000124107">451381000124107</a></td><td>Smokeless tobacco non-user (finding)</td></tr><tr><td><a href="http://snomed.info/id/451881000124101">451881000124101</a></td><td>Tobacco use in mother complicating puerperium (finding)</td></tr><tr><td><a href="http://snomed.info/id/451891000124103">451891000124103</a></td><td>Tobacco use in mother complicating pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/451901000124104">451901000124104</a></td><td>Tobacco smoking in mother complicating puerperium (finding)</td></tr><tr><td><a href="http://snomed.info/id/451911000124101">451911000124101</a></td><td>Tobacco smoking in mother complicating childbirth (finding)</td></tr><tr><td><a href="http://snomed.info/id/451921000124109">451921000124109</a></td><td>Tobacco smoking in mother complicating pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/456711000124105">456711000124105</a></td><td>Former smokeless tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/48031000119106">48031000119106</a></td><td>Ex-smoker for more than 1 year (finding)</td></tr><tr><td><a href="http://snomed.info/id/51441000087107">51441000087107</a></td><td>Cannabis-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/53896009">53896009</a></td><td>Tolerant ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/56578002">56578002</a></td><td>Moderate smoker (20 or less per day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/56771006">56771006</a></td><td>Heavy smoker (over 20 per day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/598071000005103">598071000005103</a></td><td>Stopped smoking in first trimester (finding)</td></tr><tr><td><a href="http://snomed.info/id/598081000005100">598081000005100</a></td><td>Stopped smoking after first trimester (finding)</td></tr><tr><td><a href="http://snomed.info/id/59978006">59978006</a></td><td>Cigar smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/65568007">65568007</a></td><td>Cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/699009004">699009004</a></td><td>History of exposure to second hand smoke (situation)</td></tr><tr><td><a href="http://snomed.info/id/702975009">702975009</a></td><td>Ex-tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/702979003">702979003</a></td><td>Never used tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/711563001">711563001</a></td><td>No known exposure to tobacco smoke (finding)</td></tr><tr><td><a href="http://snomed.info/id/713914004">713914004</a></td><td>User of smokeless tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/722499006">722499006</a></td><td>Electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/735128000">735128000</a></td><td>Ex-smoker for less than 1 year (finding)</td></tr><tr><td><a href="http://snomed.info/id/762296001">762296001</a></td><td>History of exposure to tobacco smoke in perinatal period (situation)</td></tr><tr><td><a href="http://snomed.info/id/77176002">77176002</a></td><td>Smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/785889008">785889008</a></td><td>Nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/786063001">786063001</a></td><td>Non-nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/81703003">81703003</a></td><td>Chews tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/82302008">82302008</a></td><td>Pipe smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/8392000">8392000</a></td><td>Non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/8517006">8517006</a></td><td>Ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/87739003">87739003</a></td><td>Tolerant non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/35361000087100">35361000087100</a></td><td>Ex-vaper (finding)</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT United States edition 01-Mar 2025</p><p>This value set contains 129 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Inactive</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-100801000119107"> </a>  <a href="http://snomed.info/id/100801000119107">100801000119107</a></td><td>http://snomed.info/sct</td><td>Maternal tobacco use in pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105539002"> </a>  <a href="http://snomed.info/id/105539002">105539002</a></td><td>http://snomed.info/sct</td><td>Non-smoker for personal reasons</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105540000"> </a>  <a href="http://snomed.info/id/105540000">105540000</a></td><td>http://snomed.info/sct</td><td>Non-smoker for religious reasons</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105541001"> </a>  <a href="http://snomed.info/id/105541001">105541001</a></td><td>http://snomed.info/sct</td><td>Non-smoker for medical reasons</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-10761391000119102"> </a>  <a href="http://snomed.info/id/10761391000119102">10761391000119102</a></td><td>http://snomed.info/sct</td><td>Tobacco use in mother complicating childbirth (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-110483000"> </a>  <a href="http://snomed.info/id/110483000">110483000</a></td><td>http://snomed.info/sct</td><td>Tobacco user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1137691001"> </a>  <a href="http://snomed.info/id/1137691001">1137691001</a></td><td>http://snomed.info/sct</td><td>Trying to give up vaping</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-134406006"> </a>  <a href="http://snomed.info/id/134406006">134406006</a></td><td>http://snomed.info/sct</td><td>Smoking reduced</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160603005"> </a>  <a href="http://snomed.info/id/160603005">160603005</a></td><td>http://snomed.info/sct</td><td>Light cigarette smoker (1-9 cigs/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160604004"> </a>  <a href="http://snomed.info/id/160604004">160604004</a></td><td>http://snomed.info/sct</td><td>Moderate cigarette smoker (10-19 cigs/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160605003"> </a>  <a href="http://snomed.info/id/160605003">160605003</a></td><td>http://snomed.info/sct</td><td>Heavy cigarette smoker (20-39 cigs/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160606002"> </a>  <a href="http://snomed.info/id/160606002">160606002</a></td><td>http://snomed.info/sct</td><td>Very heavy cigarette smoker (40+ cigs/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160612007"> </a>  <a href="http://snomed.info/id/160612007">160612007</a></td><td>http://snomed.info/sct</td><td>Keeps trying to stop smoking</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160613002"> </a>  <a href="http://snomed.info/id/160613002">160613002</a></td><td>http://snomed.info/sct</td><td>Admitted tobacco consumption possibly untrue (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160614008"> </a>  <a href="http://snomed.info/id/160614008">160614008</a></td><td>http://snomed.info/sct</td><td>Tobacco consumption unknown</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160616005"> </a>  <a href="http://snomed.info/id/160616005">160616005</a></td><td>http://snomed.info/sct</td><td>Trying to give up smoking</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160617001"> </a>  <a href="http://snomed.info/id/160617001">160617001</a></td><td>http://snomed.info/sct</td><td>Stopped smoking</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160619003"> </a>  <a href="http://snomed.info/id/160619003">160619003</a></td><td>http://snomed.info/sct</td><td>Rolls own cigarettes</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160620009"> </a>  <a href="http://snomed.info/id/160620009">160620009</a></td><td>http://snomed.info/sct</td><td>Ex-pipe smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160621008"> </a>  <a href="http://snomed.info/id/160621008">160621008</a></td><td>http://snomed.info/sct</td><td>Ex-cigar smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-16090371000119103"> </a>  <a href="http://snomed.info/id/16090371000119103">16090371000119103</a></td><td>http://snomed.info/sct</td><td>Exposure to second hand tobacco smoke (event)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-16090771000119104"> </a>  <a href="http://snomed.info/id/16090771000119104">16090771000119104</a></td><td>http://snomed.info/sct</td><td>Occupational exposure to environmental tobacco smoke (event)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-161077003"> </a>  <a href="http://snomed.info/id/161077003">161077003</a></td><td>http://snomed.info/sct</td><td>Father smokes</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-161078008"> </a>  <a href="http://snomed.info/id/161078008">161078008</a></td><td>http://snomed.info/sct</td><td>Mother smokes</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-161079000"> </a>  <a href="http://snomed.info/id/161079000">161079000</a></td><td>http://snomed.info/sct</td><td>Both parents smoke</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-169940006"> </a>  <a href="http://snomed.info/id/169940006">169940006</a></td><td>http://snomed.info/sct</td><td>Maternal tobacco abuse</td><td>inactive</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228491005"> </a>  <a href="http://snomed.info/id/228491005">228491005</a></td><td>http://snomed.info/sct</td><td>Does not use snuff</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228492003"> </a>  <a href="http://snomed.info/id/228492003">228492003</a></td><td>http://snomed.info/sct</td><td>Never used snuff</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228493008"> </a>  <a href="http://snomed.info/id/228493008">228493008</a></td><td>http://snomed.info/sct</td><td>Ex-snuff user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228494002"> </a>  <a href="http://snomed.info/id/228494002">228494002</a></td><td>http://snomed.info/sct</td><td>Snuff user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228499007"> </a>  <a href="http://snomed.info/id/228499007">228499007</a></td><td>http://snomed.info/sct</td><td>Finding relating to moist tobacco use</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228501004"> </a>  <a href="http://snomed.info/id/228501004">228501004</a></td><td>http://snomed.info/sct</td><td>Does not use moist powdered tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228502006"> </a>  <a href="http://snomed.info/id/228502006">228502006</a></td><td>http://snomed.info/sct</td><td>Never used moist powdered tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228503001"> </a>  <a href="http://snomed.info/id/228503001">228503001</a></td><td>http://snomed.info/sct</td><td>Ex-user of moist powdered tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228504007"> </a>  <a href="http://snomed.info/id/228504007">228504007</a></td><td>http://snomed.info/sct</td><td>User of moist powdered tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228509002"> </a>  <a href="http://snomed.info/id/228509002">228509002</a></td><td>http://snomed.info/sct</td><td>Finding relating to tobacco chewing</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228511006"> </a>  <a href="http://snomed.info/id/228511006">228511006</a></td><td>http://snomed.info/sct</td><td>Does not chew tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228512004"> </a>  <a href="http://snomed.info/id/228512004">228512004</a></td><td>http://snomed.info/sct</td><td>Never chewed tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228513009"> </a>  <a href="http://snomed.info/id/228513009">228513009</a></td><td>http://snomed.info/sct</td><td>Ex-tobacco chewer</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228514003"> </a>  <a href="http://snomed.info/id/228514003">228514003</a></td><td>http://snomed.info/sct</td><td>Chews plug tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228515002"> </a>  <a href="http://snomed.info/id/228515002">228515002</a></td><td>http://snomed.info/sct</td><td>Chews twist tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228516001"> </a>  <a href="http://snomed.info/id/228516001">228516001</a></td><td>http://snomed.info/sct</td><td>Chews loose leaf tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228517005"> </a>  <a href="http://snomed.info/id/228517005">228517005</a></td><td>http://snomed.info/sct</td><td>Chews fine cut tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228518000"> </a>  <a href="http://snomed.info/id/228518000">228518000</a></td><td>http://snomed.info/sct</td><td>Chews products containing tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228523000"> </a>  <a href="http://snomed.info/id/228523000">228523000</a></td><td>http://snomed.info/sct</td><td>Exposed to tobacco smoke at work</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228524006"> </a>  <a href="http://snomed.info/id/228524006">228524006</a></td><td>http://snomed.info/sct</td><td>Exposed to tobacco smoke at home</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228525007"> </a>  <a href="http://snomed.info/id/228525007">228525007</a></td><td>http://snomed.info/sct</td><td>Exposed to tobacco smoke in public places</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230059006"> </a>  <a href="http://snomed.info/id/230059006">230059006</a></td><td>http://snomed.info/sct</td><td>Occasional cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230060001"> </a>  <a href="http://snomed.info/id/230060001">230060001</a></td><td>http://snomed.info/sct</td><td>Light cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230062009"> </a>  <a href="http://snomed.info/id/230062009">230062009</a></td><td>http://snomed.info/sct</td><td>Moderate cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230063004"> </a>  <a href="http://snomed.info/id/230063004">230063004</a></td><td>http://snomed.info/sct</td><td>Heavy cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230064005"> </a>  <a href="http://snomed.info/id/230064005">230064005</a></td><td>http://snomed.info/sct</td><td>Very heavy cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-230065006"> </a>  <a href="http://snomed.info/id/230065006">230065006</a></td><td>http://snomed.info/sct</td><td>Chain smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266919005"> </a>  <a href="http://snomed.info/id/266919005">266919005</a></td><td>http://snomed.info/sct</td><td>Never smoked</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266920004"> </a>  <a href="http://snomed.info/id/266920004">266920004</a></td><td>http://snomed.info/sct</td><td>Trivial cigarette smoker (less than one cigarette/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266921000"> </a>  <a href="http://snomed.info/id/266921000">266921000</a></td><td>http://snomed.info/sct</td><td>Ex-trivial cigarette smoker (&lt;1/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266922007"> </a>  <a href="http://snomed.info/id/266922007">266922007</a></td><td>http://snomed.info/sct</td><td>Ex-light cigarette smoker (1-9/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266923002"> </a>  <a href="http://snomed.info/id/266923002">266923002</a></td><td>http://snomed.info/sct</td><td>Ex-moderate cigarette smoker (10-19/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266924008"> </a>  <a href="http://snomed.info/id/266924008">266924008</a></td><td>http://snomed.info/sct</td><td>Ex-heavy cigarette smoker (20-39/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266925009"> </a>  <a href="http://snomed.info/id/266925009">266925009</a></td><td>http://snomed.info/sct</td><td>Ex-very heavy cigarette smoker (40+/day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266927001"> </a>  <a href="http://snomed.info/id/266927001">266927001</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking consumption unknown</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266928006"> </a>  <a href="http://snomed.info/id/266928006">266928006</a></td><td>http://snomed.info/sct</td><td>Ex-cigarette smoker amount unknown</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266929003"> </a>  <a href="http://snomed.info/id/266929003">266929003</a></td><td>http://snomed.info/sct</td><td>Smoking started (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-275105001"> </a>  <a href="http://snomed.info/id/275105001">275105001</a></td><td>http://snomed.info/sct</td><td>Smoker in the family</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-281018007"> </a>  <a href="http://snomed.info/id/281018007">281018007</a></td><td>http://snomed.info/sct</td><td>Ex-cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-308438006"> </a>  <a href="http://snomed.info/id/308438006">308438006</a></td><td>http://snomed.info/sct</td><td>Smoking restarted (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-35341000087101"> </a>  <a href="http://snomed.info/id/35341000087101">35341000087101</a></td><td>http://snomed.info/sct</td><td>Daily e-cigarette user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-35371000087109"> </a>  <a href="http://snomed.info/id/35371000087109">35371000087109</a></td><td>http://snomed.info/sct</td><td>Occasional e-cigarette user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-360890004"> </a>  <a href="http://snomed.info/id/360890004">360890004</a></td><td>http://snomed.info/sct</td><td>Intolerant ex-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-360900008"> </a>  <a href="http://snomed.info/id/360900008">360900008</a></td><td>http://snomed.info/sct</td><td>Aggressive ex-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-360918006"> </a>  <a href="http://snomed.info/id/360918006">360918006</a></td><td>http://snomed.info/sct</td><td>Aggressive non-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-360929005"> </a>  <a href="http://snomed.info/id/360929005">360929005</a></td><td>http://snomed.info/sct</td><td>Intolerant non-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365981007"> </a>  <a href="http://snomed.info/id/365981007">365981007</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking behavior - finding</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365982000"> </a>  <a href="http://snomed.info/id/365982000">365982000</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking consumption - finding</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365983005"> </a>  <a href="http://snomed.info/id/365983005">365983005</a></td><td>http://snomed.info/sct</td><td>Snuff use - finding</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-394871007"> </a>  <a href="http://snomed.info/id/394871007">394871007</a></td><td>http://snomed.info/sct</td><td>Thinking about stopping smoking</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-394872000"> </a>  <a href="http://snomed.info/id/394872000">394872000</a></td><td>http://snomed.info/sct</td><td>Ready to stop smoking (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-394873005"> </a>  <a href="http://snomed.info/id/394873005">394873005</a></td><td>http://snomed.info/sct</td><td>Not interested in stopping smoking (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-405746006"> </a>  <a href="http://snomed.info/id/405746006">405746006</a></td><td>http://snomed.info/sct</td><td>Current non smoker but past smoking history unknown (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-427189007"> </a>  <a href="http://snomed.info/id/427189007">427189007</a></td><td>http://snomed.info/sct</td><td>Maternal tobacco use (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-428041000124106"> </a>  <a href="http://snomed.info/id/428041000124106">428041000124106</a></td><td>http://snomed.info/sct</td><td>Occasional tobacco smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-428061000124105"> </a>  <a href="http://snomed.info/id/428061000124105">428061000124105</a></td><td>http://snomed.info/sct</td><td>Light tobacco smoker (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-428071000124103"> </a>  <a href="http://snomed.info/id/428071000124103">428071000124103</a></td><td>http://snomed.info/sct</td><td>Heavy tobacco smoker (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-428081000124100"> </a>  <a href="http://snomed.info/id/428081000124100">428081000124100</a></td><td>http://snomed.info/sct</td><td>Former heavy tobacco smoker (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-428091000124102"> </a>  <a href="http://snomed.info/id/428091000124102">428091000124102</a></td><td>http://snomed.info/sct</td><td>Former light tobacco smoker (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-43381005"> </a>  <a href="http://snomed.info/id/43381005">43381005</a></td><td>http://snomed.info/sct</td><td>Passive smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-446172000"> </a>  <a href="http://snomed.info/id/446172000">446172000</a></td><td>http://snomed.info/sct</td><td>Failed attempt to stop smoking (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449345000"> </a>  <a href="http://snomed.info/id/449345000">449345000</a></td><td>http://snomed.info/sct</td><td>Smoked before confirmation of pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449368009"> </a>  <a href="http://snomed.info/id/449368009">449368009</a></td><td>http://snomed.info/sct</td><td>Stopped smoking during pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449369001"> </a>  <a href="http://snomed.info/id/449369001">449369001</a></td><td>http://snomed.info/sct</td><td>Stopped smoking before pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449867007"> </a>  <a href="http://snomed.info/id/449867007">449867007</a></td><td>http://snomed.info/sct</td><td>Uses moist tobacco occasionally (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449868002"> </a>  <a href="http://snomed.info/id/449868002">449868002</a></td><td>http://snomed.info/sct</td><td>Smokes tobacco daily</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-449869005"> </a>  <a href="http://snomed.info/id/449869005">449869005</a></td><td>http://snomed.info/sct</td><td>Uses moist tobacco daily</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-450811000124104"> </a>  <a href="http://snomed.info/id/450811000124104">450811000124104</a></td><td>http://snomed.info/sct</td><td>Cigarette smoker (5-9 cigarettes/day) (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-450821000124107"> </a>  <a href="http://snomed.info/id/450821000124107">450821000124107</a></td><td>http://snomed.info/sct</td><td>Cigarette smoker (1-4 cigarettes/day) (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451371000124109"> </a>  <a href="http://snomed.info/id/451371000124109">451371000124109</a></td><td>http://snomed.info/sct</td><td>Tobacco non-user (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451381000124107"> </a>  <a href="http://snomed.info/id/451381000124107">451381000124107</a></td><td>http://snomed.info/sct</td><td>Smokeless tobacco non-user (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451881000124101"> </a>  <a href="http://snomed.info/id/451881000124101">451881000124101</a></td><td>http://snomed.info/sct</td><td>Tobacco use in mother complicating puerperium (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451891000124103"> </a>  <a href="http://snomed.info/id/451891000124103">451891000124103</a></td><td>http://snomed.info/sct</td><td>Tobacco use in mother complicating pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451901000124104"> </a>  <a href="http://snomed.info/id/451901000124104">451901000124104</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking in mother complicating puerperium (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451911000124101"> </a>  <a href="http://snomed.info/id/451911000124101">451911000124101</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking in mother complicating childbirth (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-451921000124109"> </a>  <a href="http://snomed.info/id/451921000124109">451921000124109</a></td><td>http://snomed.info/sct</td><td>Tobacco smoking in mother complicating pregnancy (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-456711000124105"> </a>  <a href="http://snomed.info/id/456711000124105">456711000124105</a></td><td>http://snomed.info/sct</td><td>Former smokeless tobacco user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-48031000119106"> </a>  <a href="http://snomed.info/id/48031000119106">48031000119106</a></td><td>http://snomed.info/sct</td><td>Ex-smoker for more than 1 year (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-51441000087107"> </a>  <a href="http://snomed.info/id/51441000087107">51441000087107</a></td><td>http://snomed.info/sct</td><td>Cannabis-filled electronic cigarette user (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-53896009"> </a>  <a href="http://snomed.info/id/53896009">53896009</a></td><td>http://snomed.info/sct</td><td>Tolerant ex-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-56578002"> </a>  <a href="http://snomed.info/id/56578002">56578002</a></td><td>http://snomed.info/sct</td><td>Moderate smoker (20 or less per day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-56771006"> </a>  <a href="http://snomed.info/id/56771006">56771006</a></td><td>http://snomed.info/sct</td><td>Heavy smoker (over 20 per day)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-598071000005103"> </a>  <a href="http://snomed.info/id/598071000005103">598071000005103</a></td><td>http://snomed.info/sct</td><td>Stopped smoking in first trimester</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-598081000005100"> </a>  <a href="http://snomed.info/id/598081000005100">598081000005100</a></td><td>http://snomed.info/sct</td><td>Stopped smoking after first trimester (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-59978006"> </a>  <a href="http://snomed.info/id/59978006">59978006</a></td><td>http://snomed.info/sct</td><td>Cigar smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-65568007"> </a>  <a href="http://snomed.info/id/65568007">65568007</a></td><td>http://snomed.info/sct</td><td>Cigarette smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-699009004"> </a>  <a href="http://snomed.info/id/699009004">699009004</a></td><td>http://snomed.info/sct</td><td>History of exposure to second hand smoke</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-702975009"> </a>  <a href="http://snomed.info/id/702975009">702975009</a></td><td>http://snomed.info/sct</td><td>Ex-tobacco user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-702979003"> </a>  <a href="http://snomed.info/id/702979003">702979003</a></td><td>http://snomed.info/sct</td><td>Never used tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-711563001"> </a>  <a href="http://snomed.info/id/711563001">711563001</a></td><td>http://snomed.info/sct</td><td>No known exposure to tobacco smoke (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-713914004"> </a>  <a href="http://snomed.info/id/713914004">713914004</a></td><td>http://snomed.info/sct</td><td>User of smokeless tobacco (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-722499006"> </a>  <a href="http://snomed.info/id/722499006">722499006</a></td><td>http://snomed.info/sct</td><td>Electronic cigarette user (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-735128000"> </a>  <a href="http://snomed.info/id/735128000">735128000</a></td><td>http://snomed.info/sct</td><td>Ex-smoker for less than 1 year (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-762296001"> </a>  <a href="http://snomed.info/id/762296001">762296001</a></td><td>http://snomed.info/sct</td><td>History of exposure to tobacco smoke in perinatal period</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-77176002"> </a>  <a href="http://snomed.info/id/77176002">77176002</a></td><td>http://snomed.info/sct</td><td>Smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-785889008"> </a>  <a href="http://snomed.info/id/785889008">785889008</a></td><td>http://snomed.info/sct</td><td>Nicotine-filled electronic cigarette user (finding)</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-786063001"> </a>  <a href="http://snomed.info/id/786063001">786063001</a></td><td>http://snomed.info/sct</td><td>Non-nicotine-filled electronic cigarette user</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-81703003"> </a>  <a href="http://snomed.info/id/81703003">81703003</a></td><td>http://snomed.info/sct</td><td>Chews tobacco</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-82302008"> </a>  <a href="http://snomed.info/id/82302008">82302008</a></td><td>http://snomed.info/sct</td><td>Pipe smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-8392000"> </a>  <a href="http://snomed.info/id/8392000">8392000</a></td><td>http://snomed.info/sct</td><td>Non-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-8517006"> </a>  <a href="http://snomed.info/id/8517006">8517006</a></td><td>http://snomed.info/sct</td><td>Former smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-87739003"> </a>  <a href="http://snomed.info/id/87739003">87739003</a></td><td>http://snomed.info/sct</td><td>Tolerant non-smoker</td><td/></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-35361000087100"> </a>  <a href="http://snomed.info/id/35361000087100">35361000087100</a></td><td>http://snomed.info/sct</td><td>Ex-electronic cigarette user (finding)</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

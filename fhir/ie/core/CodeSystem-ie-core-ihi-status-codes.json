@@ -1,0 +1,91 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-ihi-status-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-ihi-status-codes</b></p><a name=\"ie-core-ihi-status-codes\"> </a><a name=\"hcie-core-ihi-status-codes\"> </a><a name=\"ie-core-ihi-status-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"ie-core-ihi-status-codes-active\"> </a></td><td>Active Individual Healthcare Identifier status recorded when the Individual Healthcare Identifier does not have a date of death on the record and the number status is not expired, retired, resolved or deceased.</td></tr><tr><td style=\"white-space:nowrap\">deceased<a name=\"ie-core-ihi-status-codes-deceased\"> </a></td><td>Deceased Individual Healthcare Identifier status where a date of death is present on the record, but it has not yet been matched with Fact of Death Data from Births, Deaths and Marriages Registries and age is not greater than 130 years.</td></tr><tr><td style=\"white-space:nowrap\">retired<a name=\"ie-core-ihi-status-codes-retired\"> </a></td><td>Retired Individual Healthcare Identifier status where a date of death is present on the record which has been matched with Fact of Death Data from Births, Deaths and Marriages Registries, or has reached an age of 130 years (verified Individual Healthcare Identifier records only).</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"ie-core-ihi-status-codes-expired\"> </a></td><td>Expired Individual Healthcare Identifier status where the record status is provisional and there has been no activity on the record for 90 days, or where it is unverified and has reached an age of 130 years.</td></tr><tr><td style=\"white-space:nowrap\">resolved<a name=\"ie-core-ihi-status-codes-resolved\"> </a></td><td>Resolved Individual Healthcare Identifier status where it has been linked with another record as part of resolving a provisional or duplicate record, or end dated as part of the replica resolution process.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.7"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreIndividualHealthcareIdentifierStatusCodes",
+  "title" : "IE Core Individual Healthcare Identifier Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "The Individual Healthcare Identifier Status code system defines concepts that may be used to describe the classification status of an Individual Healthcare Identifier.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "active",
+    "display" : "active",
+    "definition" : "Active Individual Healthcare Identifier status recorded when the Individual Healthcare Identifier does not have a date of death on the record and the number status is not expired, retired, resolved or deceased."
+  },
+  {
+    "code" : "deceased",
+    "display" : "deceased",
+    "definition" : "Deceased Individual Healthcare Identifier status where a date of death is present on the record, but it has not yet been matched with Fact of Death Data from Births, Deaths and Marriages Registries and age is not greater than 130 years."
+  },
+  {
+    "code" : "retired",
+    "display" : "retired",
+    "definition" : "Retired Individual Healthcare Identifier status where a date of death is present on the record which has been matched with Fact of Death Data from Births, Deaths and Marriages Registries, or has reached an age of 130 years (verified Individual Healthcare Identifier records only)."
+  },
+  {
+    "code" : "expired",
+    "display" : "expired",
+    "definition" : "Expired Individual Healthcare Identifier status where the record status is provisional and there has been no activity on the record for 90 days, or where it is unverified and has reached an age of 130 years."
+  },
+  {
+    "code" : "resolved",
+    "display" : "resolved",
+    "definition" : "Resolved Individual Healthcare Identifier status where it has been linked with another record as part of resolving a provisional or duplicate record, or end dated as part of the replica resolution process."
+  }]
+}

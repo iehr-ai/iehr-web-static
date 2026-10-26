@@ -1,0 +1,77 @@
+{
+  "resourceType" : "SearchParameter",
+  "id" : "ie-core-procedure-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: SearchParameter ie-core-procedure-code</b></p><a name=\"ie-core-procedure-code\"> </a><a name=\"hcie-core-procedure-code\"> </a><a name=\"ie-core-procedure-code-en-US\"> </a><h2>IECoreProcedureCode <a style=\"padding-left: 3px; padding-right: 3px; border: 1px grey solid; font-weight: bold; color: black; background-color: #fff5e6\" href=\"http://hl7.org/fhir/R4/versions.html#std-process\" title=\"Standards Status = Trial Use\">TU</a></h2><p>Parameter <code>code</code>:<code>token</code></p><div><p><strong>A code to identify a  procedure</strong><br/>\n<strong>NOTE</strong>: This IE Core SearchParameter definition extends the usage context of the\n<a href=\"http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html\">Conformance expectation extension</a></p>\n<ul>\n<li>multipleAnd</li>\n<li>multipleOr</li>\n<li>comparator</li>\n<li>modifier</li>\n<li>chain</li>\n</ul>\n</div><table class=\"grid\"><tr><td>Resource</td><td><a href=\"http://hl7.org/fhir/R4/procedure.html\">Procedure</a></td></tr><tr><td>Expression</td><td><code>Procedure.code</code></td></tr><tr><td>Processing Mode</td><td>Normal</td></tr><tr><td>Multiples</td><td><ul><li>multipleAnd: The parameter may repeat in order to specify multiple values that must all be true</li><li>multipleOr: The parameter may have multiple values (separated by comma) where at least one must be true</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-procedure-code",
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreProcedureCode",
+  "derivedFrom" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2022-04-14",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "**A code to identify a  procedure**  \n**NOTE**: This IE Core SearchParameter definition extends the usage context of the\n[Conformance expectation extension](http://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)\n - multipleAnd\n - multipleOr\n - comparator\n - modifier\n - chain",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "code" : "code",
+  "base" : ["Procedure"],
+  "type" : "token",
+  "expression" : "Procedure.code",
+  "xpathUsage" : "normal",
+  "multipleOr" : true,
+  "_multipleOr" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+      "valueCode" : "SHOULD"
+    }]
+  },
+  "multipleAnd" : true,
+  "_multipleAnd" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+      "valueCode" : "MAY"
+    }]
+  }
+}

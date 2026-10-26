@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ie-core-diagnosticreport-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-diagnosticreport-category</b></p><a name="ie-core-diagnosticreport-category"> </a><a name="hcie-core-diagnosticreport-category"> </a><a name="ie-core-diagnosticreport-category-en-US"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LP29684-5/">LP29684-5</a></td><td>Radiology</td></tr><tr><td><a href="https://loinc.org/LP29708-2/">LP29708-2</a></td><td>Cardiology</td></tr><tr><td><a href="https://loinc.org/LP7839-6/">LP7839-6</a></td><td>Pathology</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cgp"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-category"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.3.6.1.4.1.54392.5.2690.48.6"/>
+  </identifier>
+  <version value="1.0.0-ballot"/>
+  <name value="IECoreDiagnosticReportCategory"/>
+  <title value="IE Core Diagnostic Report Category Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-13T21:38:29-04:00"/>
+  <publisher value="iEHR.ai"/>
+  <contact>
+    <name value="iEHR.ai"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.iehr.ai"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@iehr.ai"/>
+    </telecom>
+  </contact>
+  <description value="The IE Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LP29684-5"/>
+        <display value="Radiology"/>
+      </concept>
+      <concept>
+        <code value="LP29708-2"/>
+        <display value="Cardiology"/>
+      </concept>
+      <concept>
+        <code value="LP7839-6"/>
+        <display value="Pathology"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

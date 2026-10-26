@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_iehr_web=self.webpackChunk_iehr_web||[]).push([[8947],{6600:a=>{a.exports=JSON.parse('{"authors":[{"name":"Hamid Jahanzad","title":"CTO","url":"https://www.linkedin.com/in/hamidjahanzad","imageURL":"https://github.com/hamidrj.png","key":"hamid","page":null,"count":0}]}')}}]);

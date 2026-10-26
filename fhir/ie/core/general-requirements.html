@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>General Requirements - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='conformance.html'><b>Conformance</b></a></li><li><b>General Requirements</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>General Requirements</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#ie-core-conformance-artifacts" id="markdown-toc-ie-core-conformance-artifacts">IE Core Conformance Artifacts</a></li>
+  <li><a href="#conforming-to-ie-core" id="markdown-toc-conforming-to-ie-core">Conforming to IE Core</a></li>
+  <li><a href="#using-codes-in-ie-core-profiles" id="markdown-toc-using-codes-in-ie-core-profiles">Using Codes in IE Core Profiles</a></li>
+  <li><a href="#modifier-elements" id="markdown-toc-modifier-elements">Modifier Elements</a></li>
+  <li><a href="#missing-data" id="markdown-toc-missing-data">Missing Data</a></li>
+  <li><a href="#fhir-restful-search-api-requirements" id="markdown-toc-fhir-restful-search-api-requirements">FHIR RESTful Search API Requirements</a></li>
+  <li><a href="#search-for-servers-requiring-status" id="markdown-toc-search-for-servers-requiring-status">Search for Servers Requiring Status</a></li>
+</ul>
+
+</div>
+
+<p>This page documents requirements common to all IE Core actors in this guide. The conformance verbs - <strong>SHALL</strong>, <strong>SHOULD</strong>, <strong>MAY</strong> - used in this guide are defined in <a href="http://hl7.org/fhir/R4/conformance-rules.html">FHIR Conformance Rules</a>.</p>
+
+<!-- This page defines how CapabilityStatements are used and the expectations for mandatory and Must Support elements in the IE Core Profiles. It provides guidance on how a system may support *only* the resources as profiled by IE Core to represent clinical information (Profile Support) versus a system claiming conformance to *both* the IE Core Profile content structure *and* the RESTful interactions defined for it (Profile Support + Interaction Support).  Note that the conformance verbs - **SHALL**, **SHOULD**, **MAY** - used in this guide are defined in [FHIR Conformance Rules]. -->
+
+<h3 id="ie-core-conformance-artifacts">IE Core Conformance Artifacts</h3>
+
+<p>The <a href="profiles-and-extensions.html">Profiles and Extensions</a> page lists the IE Core Profiles defined for this implementation guide.  IE Core Profile <a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinitions</a> define the <em>minimum</em> elements, extensions, vocabularies, and ValueSets that <strong>SHALL</strong> be present and constrains how the elements are used when using the profile. Each IE Core Profile page has a "Quick Start" guide to the supported FHIR RESTfUL transactions for each profile.</p>
+
+<p>The IE Core Profile elements include <em>Mandatory</em>, <em>Must Support</em>, and <em>Additional IECDI Requirements</em>.  Mandatory elements are required and have a minimum cardinality of 1 (min=1). Must Support element server and client expectations are defined by IE Core. Additional IECDI Requirements elements are neither Mandatory nor Must Support but designated IECDI Requirements for certification and, for certified systems, are equivalent to Must Support elements. All Mandatory, Must Support, or Additional IECDI Requirements are in scope for <a href="https://www.irishcollegeofgps.ie">certification</a>  testing. The <a href="must-support.html">Must Support</a> page defines the server and client expectations for processing these different element requirements and illustrates how they are displayed and documented.</p>
+
+<p>The <a href="capability-statements.html">Capability Statements</a> page outlines conformance requirements and expectations for the IE Core Servers and Client applications. In addition, the <a href="CapabilityStatement-ie-core-server.html">IE Core Server CapabilityStatement</a> and <a href="CapabilityStatement-ie-core-client.html">IE Core Client CapabilityStatement</a> identify the specific profiles and RESTful transactions that need support. The IE Core Profiles identify the structural constraints, terminology bindings, and invariants.  Similarly, each IE Core SearchParameter and Operation resource specify how the server understands them. However, implementers must refer to the CapabilityStatement for details on the RESTful transactions, specific profiles, and the search parameters applicable to each IE Core actor.</p>
+
+<h3 id="conforming-to-ie-core">Conforming to IE Core</h3>
+
+<p>There are two different ways to implement IE Core:</p>
+
+<ol>
+  <li>Profile Only Support:  Systems may support <em>only</em> the IE Core Profiles to represent clinical information.</li>
+  <li>Profile Support + Interaction Support: Systems may support <em>both</em> the IE Core Profile content structure <em>and</em> the RESTful interactions defined for a resource.</li>
+</ol>
+
+<h4 id="profile-only-support">Profile Only Support</h4>
+
+<p>Systems may deploy and support one or more IE Core Profiles to represent clinical information. They use the profile's content model without any expectations to implement the IE Core interactions.</p>
+
+<p>An example scenario would be a server using only the <a href="http://hl7.org/fhir/uv/bulkdata/index.html">FHIR Bulk Data Access (Flat FHIR)</a> approach to export the IE Core Data for Interoperability resources.  For this server, the IE Core interactions are unnecessary.</p>
+
+<p>To support a IE Core Profile, a server:</p>
+
+<ul>
+  <li><strong>SHALL</strong> Be able to populate all profile data elements that are mandatory and flagged as Must Support as defined by that profile's StructureDefinition.</li>
+  <li><strong>SHOULD</strong> declare support for a IE Core Profile by including its official URL in the server's <code class="language-plaintext highlighter-rouge">CapabilityStatement.rest.resource.supportedProfile</code> element.
+    <ul>
+      <li>
+        <p>The IE Core Profile's official or "canonical" URL is located on each IE Core Profile page</p>
+
+        <p>example CapabilityStatement snippet for a server supporting the IE Core Patient Profile:</p>
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "resourceType": "CapabilityStatement",
+  ...
+  "rest": [
+    {
+      "mode": "server",
+      ...
+      "resource": [
+        ...
+        {
+          "type": "Patient",
+          "supportedProfile": [
+            "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"
+          ],
+          ...
+        }
+      ]
+    }
+  ]
+}
+</code></pre></div>        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="profile-support--interaction-support">Profile Support + Interaction Support</h4>
+
+<p>Servers may deploy and support one or more IE Core Profiles to represent clinical information <em>and</em> one or more of the following IE Core interactions:</p>
+
+<ul>
+  <li>"Quick Start" defined for each Profile</li>
+  <li><a href="clinical-notes.html">Clinical Notes</a></li>
+  <li><a href="medication-list.html">Medication List</a></li>
+  <li><a href="basic-provenance.html">Basic Provenance</a></li>
+  <li><a href="screening-and-assessments.html">Screening and Assessments</a></li>
+</ul>
+
+<p>Servers implementing both can claim conformance to the IE Core Profile content structure and the RESTful interactions defined by implementing all or parts of the IE Core CapabilityStatement into their capabilities as described below.
+A server that certifies to the <a href="https://www.federalregister.gov/d/2020-07419/p-1177">21st Century Cures Act for accessing patient data</a> must implement all components in the IECDI and the IE Core CapabilityStatement.</p>
+
+<h5 id="claiming-conformance-to-a-ie-core-profile">Claiming conformance to a IE Core Profile</h5>
+
+<p>A conformant server:</p>
+
+<ul>
+  <li><strong>SHALL</strong> Be able to populate all profile data elements that are mandatory and/or flagged as Must Support as defined by that profile's StructureDefinition.</li>
+  <li>
+    <p><strong>SHOULD</strong> declare conformance with the <a href="CapabilityStatement-ie-core-server.html">IE Core Server Capability Statement</a> by including its official URL in the server's <code class="language-plaintext highlighter-rouge">CapabilityStatement.instantiates</code> element: <code class="language-plaintext highlighter-rouge">http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-server</code></p>
+  </li>
+  <li><strong>SHALL</strong> specify the full capability details from the IE Core CapabilityStatement it claims to implement.
+    <ul>
+      <li>Declare support for the IE Core Profile by including its official URL in the server's <code class="language-plaintext highlighter-rouge">CapabilityStatement.rest.resource.supportedProfile</code> element.
+        <ul>
+          <li>the IE Core Profile's official or "canonical" URL is located on each IE Core Profile page.</li>
+        </ul>
+      </li>
+      <li>Declare support for the IE Core Profile's FHIR RESTful transactions.
+        <ul>
+          <li>The restful transactions for the IE Core Profiles are documented in the "Quick Start" section on every profile page.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Example CapabilityStatement snippet for a server conforming to the IE Core Patient Profile:</p>
+  </li>
+</ul>
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#conform-patient" aria-expanded="false" aria-controls="collapseExample">
+    Click Here for an example CapabilityStatement snippet for a server conforming to the IE Core Patient Profile:
+  </button>
+</p>
+
+<div class="collapse" id="conform-patient">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "resourceType": "CapabilityStatement",
+  ...
+  "instantiates": [
+    "http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-server"
+  ],
+  ...
+  "rest": [
+    {
+      "mode": "server",
+      ...
+      "resource": [
+        ...
+        {
+          [
+            {
+              "extension": [
+                  {
+                    "url": "required",
+                    "valueString": "birthdate"
+                  },
+                  {
+                    "url": "required",
+                    "valueString": "name"
+                  }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "required",
+                      "valueString": "family"
+                    },
+                    {
+                      "url": "required",
+                      "valueString": "gender"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                },
+                {
+                    {
+                      "url": "required",
+                      "valueString": "birthdate"
+                    },
+                    {
+                      "url": "required",
+                      "valueString": "family"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                },
+                {
+                  "extension": [
+                    {
+                      "url": "required",
+                      "valueString": "gender"
+                    },
+                    {
+                      "url": "required",
+                      "valueString": "name"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+                }
+              ]
+            }
+          ]
+          "type": "Patient",
+          "supportedProfile": [
+            "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"
+          ],
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "read"
+            }
+          ],
+          "referencePolicy": [
+            "resolves"
+          ],
+          "searchRevInclude": [
+            "Provenance:target"
+          ],
+          "searchParam": [
+            {
+              "name": "_id",
+              "definition": "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-id",
+              "type": "token"
+            },
+            {
+              "name": "identifier",
+              "definition": "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-identifier",
+              "type": "token",
+              "documentation": "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
+            },
+            {
+              "name": "name",
+              "definition": "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-name",
+              "type": "string"
+            }
+
+          ],
+          ...
+        }
+      ]
+    }
+  ]
+}
+</code></pre></div>    </div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<h3 id="using-codes-in-ie-core-profiles">Using Codes in IE Core Profiles</h3>
+
+<p>The following rules summarize the requirements defined by <a href="http://hl7.org/fhir/R4/terminologies.html">FHIR Terminology</a> for coded elements (CodeableConcept, Coding, and code datatypes).</p>
+
+<h4 id="required-bindings-for-coded-elements">Required Bindings For Coded Elements</h4>
+
+<p><a href="http://hl7.org/fhir/R4/terminologies.html#required">Required binding</a> to a ValueSet definition means that one of the codes from the specified ValueSet <strong>SHALL</strong> be used. For <code class="language-plaintext highlighter-rouge">CodeableConcept</code>, which permits multiple codings and a text element, this rule applies to <em>at least</em> one of the codings, and only text is <em>not</em> valid.</p>
+
+<p>For example, the <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a> <code class="language-plaintext highlighter-rouge">clinicalStatus</code> element has a required binding to the IECoreAllergyIntoleranceClinicalStatus ValueSet. Therefore, when claiming conformance to this profile:</p>
+
+<ul>
+  <li>IE Core Responders <strong>SHALL</strong> provide a code <em>exclusively</em> from this ValueSet in  <code class="language-plaintext highlighter-rouge">AllergyIntolerance.clinicalStatus.code</code>.</li>
+  <li>IE Core Requestors <strong>SHALL</strong> be capable of processing the code in <code class="language-plaintext highlighter-rouge">AllergyIntolerance.clinicalStatus.code</code>.</li>
+</ul>
+
+<h4 id="required-bindings-when-slicing-by-valuesets">Required Bindings When Slicing by ValueSets</h4>
+
+<p>Because of the  FHIR conformance rule:</p>
+
+<blockquote>
+  <p>If an extensible binding is applied to an element with maximum cardinality &gt; 1, the binding applies to all the elements. (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible">Terminology Binding Extensible</a>)</p>
+</blockquote>
+
+<p>FHIR profiles use <a href="http://hl7.org/fhir/R4/profiling.html#slicing">slicing</a> when a coded element is a repeating element, and a particular ValueSet is desired for at least one of the repeats. This is a special case where a <em>required</em> ValueSet binding is used to differentiate the repeat.  In this guide, the minimum cardinality for these 'slices' is set to 0 so that other codes are allowed when no suitable code exists in the ValueSet (equivalent to  Extensible Binding below). <em>Note that slicing by valueset does not affect the over the wire structure or validation of instances of these resources.</em>  The example in Figure 2 below illustrates this structure for the repeating <code class="language-plaintext highlighter-rouge">DocumentReference.category</code> element:</p>
+
+<ul>
+  <li>This structure allows 0..* concept(s) from the <em>required</em> ValueSet.</li>
+  <li>By being 0..*, thie structure permits servers to send concepts not in the required ValueSet.</li>
+</ul>
+
+<h4 id="extensible-binding-for-coded-elements">Extensible Binding for Coded Elements</h4>
+
+<p><a href="http://hl7.org/fhir/R4/terminologies.html#extensible">Extensible Binding</a>  means that one of the codes from the specified ValueSet <strong>SHALL</strong> be used if an applicable concept is present.  If no suitable code exists in the ValueSet, alternate code(s) may be provided.  For <code class="language-plaintext highlighter-rouge">CodeableConcept</code>, which permits multiple codings and a text element, this rule applies to <em>at least</em> one of the codings. If only text is available and it has no conceptual overlap with the bound coded values, then just text may be used.</p>
+
+<p>The <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a> illustrates the extensible binding rules for the CodeableConcept datatype.  The <code class="language-plaintext highlighter-rouge">AllergyIntolerance.code</code> element has an extensible binding to the IE Core Vaccines ValueSet "Common substances for allergy and intolerance documentation including refutations" Allergy. When claiming conformance to this profile:</p>
+
+<ul>
+  <li>IE Core Responders <strong>SHALL</strong> provide:
+    <ul>
+      <li>A code from this valueset in <code class="language-plaintext highlighter-rouge">AllergyIntolerance.code.code</code> <em>if the concept exists</em> in the ValueSet</li>
+      <li>Or an alternative code <em>if the concept does not exist</em> in the ValueSet</li>
+      <li>Or text in `AllergyIntolerance.code. text' if only text is available.</li>
+    </ul>
+  </li>
+  <li>IE Core Requestors <strong>SHALL</strong> be capable of processing the code in <code class="language-plaintext highlighter-rouge">AllergyIntolerance.code.code</code> or text in <code class="language-plaintext highlighter-rouge">AllergyIntolerance.code.text</code></li>
+</ul>
+
+<h4 id="current-binding-for-coded-elements">Current Binding for Coded Elements</h4>
+
+<p>The FHIR rules for extensible bindings state that <em>all conceptual overlaps</em>, including free text, should be mapped to the coded values in the bindings. IE Core adopts the <a href="https://hl7.org/fhir/R5/terminologies.html#binding">current</a> additional binding from FHIR R5 for more flexibility in exchanging legacy and text-only data. The current binding requires newly recorded, non-legacy data to be drawn from the value set.</p>
+
+<p>For example, the <a href="ValueSet-ie-core-procedure-code.html">IE Core Procedure Codes</a> and  <a href="ValueSet-ie-core-condition-code.html">IE Core Condition Codes</a> ValueSets cover the entire domain. For data not captured by fine-grained code, it is possible to provide a high-level abstract code, such as SNOMED CT "Procedure". Therefore, instead of requiring systems to map all legacy and text data to standard codes, the value set uses a "current" binding</p>
+
+<div class="stu-note">
+
+  <p>The "current" binding corresponds to the IE Core's interpretation of extensible bindings IE Core version 0.1.0 and earlier.</p>
+</div>
+<!-- stu-note -->
+
+<h3 class="no_toc" id="translations">Using multiple codes with CodeableConcept Datatype</h3>
+
+<p>Alternate codes may be provided in addition to the standard codes defined in required or extensible ValueSets. These alternate codes are called "translations". They may be equivalent to or narrower in meaning than the standard concept code.</p>
+
+<p>Example of multiple translations for Body Weight concept code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    "code": {
+        "coding": [
+         {
+            "system": "http://loinc.org",  //NOTE: this is the standard concept defined in the ValueSet//
+            "code": "29463-7",
+            "display": "Body Weight"
+          },
+    //NOTE: this is a translation to a more specific concept
+         {
+            "system": "http://loinc.org",
+            "code": "3141-9",
+            "display": "Body Weight Measured"
+          },
+    //NOTE: this is a translation to a different code system (Snomed CT)
+         {
+            "system": "http://snomed.info/sct",
+            "code": "364589006",
+            "display": "Body Weight"
+          }
+    //NOTE: this is a translation to a locally defined code
+         {
+            "system": "http://AcmeHealthCare.org",
+            "code": "BWT",
+            "display": "Body Weight"
+          }
+        ],
+        "text": "weight"
+      },
+</code></pre></div></div>
+
+<h3 id="modifier-elements">Modifier Elements</h3>
+
+<p>A FHIR <a href="http://hl7.org/fhir/R4/conformance-rules.html#isModifier">modifier element</a> is an element that modifies the meaning of a resource element. Although servers and clients <strong>SHALL</strong> be able to process  <a href="must-support.html">Mandatory</a> or <a href="must-support.html">Must Support</a> elements, not all modifier elements are  Mandatory or Must Support, and there is no requirement for supporting them. Therefore, FHIR clients need to be aware of unexpected modifier elements in the data they receive because they can alter the meaning of the data and can potentially lead to errors or even security risks if not properly handled. In addition, modifiers can be introduced when the data is created, edited, or transmitted, so it is crucial to ensure that all modifiers are understood and handled correctly.</p>
+
+<p>In addition to declaring which IE Core profiles they support, Servers <strong>MAY</strong> communicate a system-wide profile in their CapabilityStatement to identify which additional elements, including modifier elements, they support. However, systems are free to include other data elements - and receivers <strong>SHOULD</strong> accept instances that even contain unexpected data elements <em>except</em> when those elements are modifier elements. Unless a client determines they can process it safely, rejection is typically the only safe action if unexpected modifier elements are present. For example, an app or system may process modifier elements nested inside an ignored element or in a resource only for human review.</p>
+
+<p>Some examples of modifiers that are not Must Support elements in IE Core Profiles include:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">implicitRules</code> element common to all profiles</li>
+  <li><code class="language-plaintext highlighter-rouge">modifierExtension</code> element common to all profiles</li>
+  <li><code class="language-plaintext highlighter-rouge">Observation.value[x].comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Practitioner.identifier.use</code></li>
+  <li><code class="language-plaintext highlighter-rouge">Patient.active</code></li>
+</ul>
+
+<p>Implementers <strong>SHOULD</strong> review the "Key Elements Tab" on the IE Core profile pages. This view lists all the Must Support and modifier elements for a profil.</p>
+
+<h3 id="missing-data">Missing Data</h3>
+
+<p>There are situations when information on a particular data element is missing, and the source system does not know the reason for the absence of data. If the source system does not have data for an element with a minimum cardinality = 0 (including elements labeled <em>Must Support</em>), the data element <strong>SHALL</strong> be omitted from the resource. However, if the data element is a <em>Mandatory</em> element (in other words, where the minimum cardinality is &gt; 0), it <strong>SHALL</strong> be present <em>even if</em> the source system does not have data. The core specification guides what to do in this situation, which is summarized below:</p>
+
+<ol>
+  <li>For <em>non-coded</em> data elements, use the <a href="http://hl7.org/fhir/R4/extension-data-absent-reason.html">DataAbsentReason Extension</a> in the data type
+    <ul>
+      <li>Use the code <code class="language-plaintext highlighter-rouge">unknown</code> - The value is expected to exist but is not known.</li>
+    </ul>
+
+    <p>Example: Patient resource where the patient name is not available.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "resourceType": "Patient",
+       ...
+       "name": [
+         {
+           "extension": [
+             {
+               "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+               "valueCode": "unknown"
+             }
+           ]
+         }
+       ]
+        "telecom":
+        ...
+     }
+</code></pre></div>    </div>
+  </li>
+  <li>For <em>coded</em> data elements:
+    <ul>
+      <li><em>example</em>, <em>preferred</em>, or <em>extensible</em> binding strengths (CodeableConcept or Coding datatypes):
+        <ul>
+          <li>If the source system has text but no coded data, only the <code class="language-plaintext highlighter-rouge">text</code> element is used.
+            <ul>
+              <li>For Coding datatypes, the text-only data is represented as a <code class="language-plaintext highlighter-rouge">display</code> element.</li>
+            </ul>
+          </li>
+          <li>If there is neither text nor coded data:
+            <ul>
+              <li>Use the appropriate "unknown" concept code from the ValueSet if available.</li>
+              <li>If the ValueSet does not have the appropriate "unknown" concept code, use <code class="language-plaintext highlighter-rouge">unknown</code> from the <a href="http://hl7.org/fhir/R4/codesystem-data-absent-reason.html">DataAbsentReason Code System</a>.</li>
+            </ul>
+
+            <p>Example: CareTeam resource where the mandatory <code class="language-plaintext highlighter-rouge">CareTeam.participant.role</code> value is unknown.</p>
+            <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>...
+"participant": [
+    {
+        "role": [
+            {
+                "coding": [
+                    {
+                        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                        "code": "unknown",
+                        "display": "unknown"
+                    }
+                ]
+            }
+        ],
+        "member": {
+            "reference": "Practitioner/practitioner-1",
+            "display": "Ronald Bone, MD"
+        }
+    },
+...
+</code></pre></div>            </div>
+          </li>
+        </ul>
+      </li>
+      <li><em>required</em> binding strength (CodeableConcept or code datatypes):
+        <ul>
+          <li>use the appropriate "unknown" concept code from the ValueSet if available</li>
+          <li>
+            <p>if the ValueSet does not have the appropriate "unknown" concept code, you must use a concept from the ValueSet. Otherwise, the instance will not be conformant</p>
+
+            <ul>
+              <li>For the IE Core profiles, the following mandatory or conditionally mandatory* status elements with required binding have no appropriate "unknown" concept code:
+                <ul>
+                  <li><code class="language-plaintext highlighter-rouge">AllergyIntolerance.clinicalStatus</code>*</li>
+                  <li><code class="language-plaintext highlighter-rouge">Condition.clinicalStatus</code>*</li>
+                  <li><code class="language-plaintext highlighter-rouge">DocumentReference.status</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">Immunization.status</code></li>
+                  <li><code class="language-plaintext highlighter-rouge">Goal.lifecycleStatus</code></li>
+                </ul>
+              </li>
+            </ul>
+
+            <p>*The <code class="language-plaintext highlighter-rouge">clinicalStatus</code> element is conditionally mandatory based on resource-specific constraints.</p>
+
+            <p>If any of these status codes is missing, a <code class="language-plaintext highlighter-rouge">404</code> HTTP error code and an OperationOutcome <strong>SHALL</strong> be returned in response to a read transaction on the resource. If returning a response to a search, the problematic resource <strong>SHALL</strong> be excluded from the search set, and a <em>warning</em> OperationOutcome <strong>SHOULD</strong> be included indicating that other search results were found but could not be compliantly expressed and have been suppressed.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="fhir-restful-search-api-requirements">FHIR RESTful Search API Requirements</h3>
+
+<p>The <a href="http://hl7.org/fhir/R4/http.html#search">FHIR RESTful Search API</a> requires that servers that support search <strong>SHALL</strong> support the HTTP <code class="language-plaintext highlighter-rouge">POST</code>-based search. For all the supported search interactions in this guide, servers <strong>SHALL</strong> also support the <code class="language-plaintext highlighter-rouge">GET</code>-based search.</p>
+
+<ul>
+  <li>When searching using the <code class="language-plaintext highlighter-rouge">token</code> type searchparameter  <a href="http://hl7.org/fhir/R4/search.html#token">(how to search by token)</a>
+    <ul>
+      <li>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</li>
+      <li>The server <strong>SHALL</strong> support both.</li>
+    </ul>
+  </li>
+  <li>When searching using the <code class="language-plaintext highlighter-rouge">reference</code> type searchparameter  <a href="http://hl7.org/fhir/R4/search.html#reference">(how to search by reference)</a>
+    <ul>
+      <li>The client <strong>SHALL</strong> provide at least an id value and <strong>MAY</strong> provide both the Type and id values.</li>
+      <li>The server <strong>SHALL</strong> support both.</li>
+    </ul>
+  </li>
+  <li>When searching using the <code class="language-plaintext highlighter-rouge">date</code> type searchparameter <a href="http://hl7.org/fhir/R4/search.html#date">(how to search by date)</a>:
+    <ul>
+      <li>The client <strong>SHALL</strong> provide values precise to the <em>day</em> for elements of datatype <code class="language-plaintext highlighter-rouge">date</code> and to the <em>second + time offset</em> for elements of datatype <code class="language-plaintext highlighter-rouge">dateTime</code>.</li>
+      <li>The server <strong>SHALL</strong> support values precise to the <em>day</em> for elements of datatype <code class="language-plaintext highlighter-rouge">date</code> and  to the <em>second + time offset</em> for elements of datatype <code class="language-plaintext highlighter-rouge">dateTime</code>.</li>
+    </ul>
+
+    <p>The table below summarizes the date precision:</p>
+
+    <table class="grid">
+      <thead>
+        <tr>
+          <th>SearchParameter</th>
+          <th>Element Datatype</th>
+          <th>Minimum Date Precision</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>date</td>
+          <td>date</td>
+          <td>day</td>
+          <td><code class="language-plaintext highlighter-rouge">GET [base]/Patient?family=Shaw&amp;birthdate=2007-03-20</code></td>
+        </tr>
+        <tr>
+          <td>date</td>
+          <td>dateTime, Period</td>
+          <td>second + time offset</td>
+          <td><code class="language-plaintext highlighter-rouge">GET [base]Observation?patient=555580&amp;category=laboratory&amp;date=ge2018-03-14T00:00:00-08:00</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="search-for-servers-requiring-status">Search for Servers Requiring Status</h3>
+
+<p class="highlight-note">Servers are <em>strongly</em> encouraged to support a query for resources <em>without</em> requiring a status parameter.  However, if business requirements prohibit this, they <strong>SHALL</strong> follow the guidelines here.</p>
+
+<p>For searches where the client does not supply a status parameter, an implementation's business rules may override the FHIR RESTful search expectations and require a status parameter to be provided.  These systems are allowed to reject such requests as follows:</p>
+
+<ul>
+  <li><strong>SHALL</strong> return an HTTP <code class="language-plaintext highlighter-rouge">400</code> status</li>
+  <li><strong>SHALL</strong> return an <a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a> specifying that status(es) must be present.</li>
+  <li><strong>SHALL</strong> support search with status if status required</li>
+  <li><strong>SHALL NOT</strong> restrict search results ( i.e., apply 'hidden' filters) when a client includes status parameters in the query.
+    <ul>
+      <li>
+        <p>If a system doesn't support a specific status code value that is queried, it  <strong>SHOULD</strong> return an HTTP <code class="language-plaintext highlighter-rouge">200</code> status with a search bundle. The search bundle <strong>SHOULD</strong> contain resources matching the search criteria <em>and</em> an OperationOutcome warning the client which status code value is not supported.</p>
+      </li>
+      <li>
+        <p>For example, in a query enumerating all the <code class="language-plaintext highlighter-rouge">AllergyIntolerance.verificationStatus</code> statuses to a system that supports concepts <code class="language-plaintext highlighter-rouge">unconfirmed</code>, <code class="language-plaintext highlighter-rouge">confirmed</code>, and <code class="language-plaintext highlighter-rouge">entered-in-error</code> but not the concept <code class="language-plaintext highlighter-rouge">refuted</code>, the search parameter refers to an unsupported code since <code class="language-plaintext highlighter-rouge">refuted</code> is not known to the server.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>
+  <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#missing-status" aria-expanded="false" aria-controls="collapseExample">
+    Click Here to See a Rejected Search Due to Missing Status Example
+  </button>
+</p>
+
+<div class="collapse" id="missing-status">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px">
+
+    <p><strong>Storyboard for this example</strong></p>
+
+    <p>This example is based upon the following scenario:</p>
+
+    <p>Patient 1137192 uses an App to request all his encounters from the provider. The provider system requires status and rejects the request returning a <code class="language-plaintext highlighter-rouge">400</code> and an OperationOutcome specifying that a status parameter is required for this search.</p>
+
+    <p><strong>Request:</strong></p>
+
+    <p>Get “all encounters” for a patient 1137192 by querying Encounter using the patient search parameter.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Encounter?patient=1137192
+</code></pre></div>    </div>
+
+    <p><strong>Response:</strong></p>
+
+    <p>Instead of returning a search Bundle resource containing all the Encounter for the patient, the server return a <code class="language-plaintext highlighter-rouge">400 Not Found</code> and an OperationOutcome detailing that a status parameter is required for this search.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Not Found
+[other headers]
+{
+  "resourceType": "OperationOutcome",
+  "id": "no-status",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "business-rule",
+      "details": {
+        "text": "A \"status\" search parameter is required for this search"
+      },
+      "diagnostics": "valid statuses for Encounter include planned | arrived | triaged | in-progress | onleave | finished | cancelled | entered-in-error | unknown"
+    }
+  ]
+}
+</code></pre></div>    </div>
+
+  </div>
+</div>
+<p><br /></p>
+
+<ul>
+  <li><strong>SHALL</strong> document this behavior in its CapabilityStatement for the "search-type" interaction in <code class="language-plaintext highlighter-rouge">CapabilityStatement.rest.resource.interaction.documentation</code>.</li>
+  <li>For "entered-in-error" status, see the <a href="general-guidance.html#representing-entered-in-error-information">representing entered in error information</a> section.</li>
+</ul>
+
+<p><br /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

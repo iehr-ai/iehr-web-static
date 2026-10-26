@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Patient/example-targeted-provenance> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-targeted-provenance"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Targeted Provenance Patient Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is a patient example for the *IE Core Patient Profile* to demonstrate how Provenance can be used to document the source of individual elements such as Race and Ethnicity (R/E), gender identity."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:id [ fhir:v "genderIdentity" ] ;
+     fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-genderIdentity"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "UNK" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1032702" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Shaw" ] ;
+     fhir:given ( [ fhir:v "Amy" ] [ fhir:v "V." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1 234 5678" ]
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "female" ;
+     fhir:id [ fhir:v "gender" ]
+  ] ; # 
+  fhir:birthDate [ fhir:v "1987-02-20"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "183 MOUNTAIN VIEW ST" ] ) ;
+     fhir:city [ fhir:v "Sandyford" ] ;
+     fhir:state [ fhir:v "Galway" ] ;
+     fhir:postalCode [ fhir:v "H91 CV48" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="iecore-med1"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Iecore Med1 Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is a iecore med1 example for the *IE Core Medication Profile*."/>
+    </extension>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication iecore-med1</b></p><a name="iecore-med1"> </a><a name="hciecore-med1"> </a><a name="iecore-med1-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-medication.html">IE Core Medication Profile</a></p></div><p><b>code</b>: <span title="Codes:{http://www.nlm.nih.gov/research/umls/rxnorm 206765}">Prinivil (lisinopril) oral 10 mg</span></p></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <code value="206765"/>
+      <display value="lisinopril 10 MG Oral Tablet [Prinivil]"/>
+    </coding>
+    <text value="Prinivil (lisinopril) oral 10 mg"/>
+  </code>
+</Medication>

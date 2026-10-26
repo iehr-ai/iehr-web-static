@@ -1,0 +1,363 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-advance-directives-content-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-advance-directives-content-type</b></p><a name=\"ie-core-advance-directives-content-type\"> </a><a name=\"hcie-core-advance-directives-content-type\"> </a><a name=\"ie-core-advance-directives-content-type-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/100821-8/\">100821-8</a></td><td>National POLST form: portable medical order panel</td></tr><tr><td><a href=\"https://loinc.org/104144-1/\">104144-1</a></td><td>Mental health Advance directives</td></tr><tr><td><a href=\"https://loinc.org/42348-3/\">42348-3</a></td><td>Advance directives</td></tr><tr><td><a href=\"https://loinc.org/64298-3/\">64298-3</a></td><td>Power of attorney</td></tr><tr><td><a href=\"https://loinc.org/75773-2/\">75773-2</a></td><td>Goals, preferences, and priorities for medical treatment [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75775-7/\">75775-7</a></td><td>Decision to inform doctors and nurses about the role religion, faith, culture, or spirituality play in my life [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75776-5/\">75776-5</a></td><td>Preference on consulting a supportive and palliative care team to help treat physical, emotional, and spiritual discomfort and support family [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75777-3/\">75777-3</a></td><td>Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75778-1/\">75778-1</a></td><td>Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75779-9/\">75779-9</a></td><td>Thoughts on cardiopulmonary resuscitation (CPR) [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75780-7/\">75780-7</a></td><td>Preferred location to spend final days if possible to choose [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75781-5/\">75781-5</a></td><td>Thoughts on organ and tissue donations [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75782-3/\">75782-3</a></td><td>Thoughts regarding autopsy [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75783-1/\">75783-1</a></td><td>Primary healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75784-9/\">75784-9</a></td><td>First alternate healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75785-6/\">75785-6</a></td><td>Second alternate healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75786-4/\">75786-4</a></td><td>Powers granted to healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75787-2/\">75787-2</a></td><td>Advance directive - request for intubation</td></tr><tr><td><a href=\"https://loinc.org/75788-0/\">75788-0</a></td><td>Advance directive - request for tube feeding</td></tr><tr><td><a href=\"https://loinc.org/75789-8/\">75789-8</a></td><td>Advance directive - request for life support</td></tr><tr><td><a href=\"https://loinc.org/75790-6/\">75790-6</a></td><td>Advance directive - request for IV fluid and support</td></tr><tr><td><a href=\"https://loinc.org/75791-4/\">75791-4</a></td><td>Advance directive - request for antibiotics</td></tr><tr><td><a href=\"https://loinc.org/75792-2/\">75792-2</a></td><td>Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation</td></tr><tr><td><a href=\"https://loinc.org/75793-0/\">75793-0</a></td><td>Other directives that have not otherwise been documented [Reported]</td></tr><tr><td><a href=\"https://loinc.org/77352-3/\">77352-3</a></td><td>Thoughts on artificial nutrition and hydration [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81329-5/\">81329-5</a></td><td>Thoughts on resuscitation [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81330-3/\">81330-3</a></td><td>Thoughts on intubation [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81331-1/\">81331-1</a></td><td>Thoughts on tube feeding [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81332-9/\">81332-9</a></td><td>Thoughts on IV fluid and support [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81333-7/\">81333-7</a></td><td>Thoughts on antibiotics [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81334-5/\">81334-5</a></td><td>Patient Personal advance care plan</td></tr><tr><td><a href=\"https://loinc.org/81335-2/\">81335-2</a></td><td>Patient Healthcare agent</td></tr><tr><td><a href=\"https://loinc.org/81340-2/\">81340-2</a></td><td>Goals AndOr preferences in order of priority [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81343-6/\">81343-6</a></td><td>Healthcare agent advisor [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81349-3/\">81349-3</a></td><td>Thoughts on life-sustaining procedures if pregnant [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81350-1/\">81350-1</a></td><td>Thoughts on pain management [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81353-5/\">81353-5</a></td><td>Thoughts on hastening death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81356-8/\">81356-8</a></td><td>Death arrangements [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81357-6/\">81357-6</a></td><td>Messages to be delivered after death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81358-4/\">81358-4</a></td><td>Person(s) to notify upon death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81359-2/\">81359-2</a></td><td>Near death thoughts and feelings to be shared [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81360-0/\">81360-0</a></td><td>My likes and joys [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81361-8/\">81361-8</a></td><td>Things that make me laugh [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81362-6/\">81362-6</a></td><td>My dislikes and fears [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81363-4/\">81363-4</a></td><td>Things that matter to me [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81364-2/\">81364-2</a></td><td>Religious or cultural beliefs [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81365-9/\">81365-9</a></td><td>Religious or cultural affiliation contact to notify [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81366-7/\">81366-7</a></td><td>Unfinished business [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81376-6/\">81376-6</a></td><td>Mental health treatment preferences [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81379-0/\">81379-0</a></td><td>Goals, preferences, and priorities upon death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/84095-9/\">84095-9</a></td><td>Do not resuscitate</td></tr><tr><td><a href=\"https://loinc.org/86533-7/\">86533-7</a></td><td>Patient Living will</td></tr><tr><td><a href=\"https://loinc.org/92664-2/\">92664-2</a></td><td>Power of attorney and Living will</td></tr><tr><td><a href=\"https://loinc.org/93037-0/\">93037-0</a></td><td>Portable medical order form</td></tr><tr><td><a href=\"https://loinc.org/95541-9/\">95541-9</a></td><td>Care experience preference</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/103735009\">103735009</a></td><td>Palliative care (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/108259003\">108259003</a></td><td>Autopsy pathology procedure AND/OR service (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/225365006\">225365006</a></td><td>Care regime (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/229912004\">229912004</a></td><td>Enteral feeding (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/25156005\">25156005</a></td><td>Intravenous feeding of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/271298009\">271298009</a></td><td>Organ retrieval operation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/281789004\">281789004</a></td><td>Antibiotic therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/281800008\">281800008</a></td><td>Intravenous fluid replacement (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363259005\">363259005</a></td><td>Patient management procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/385741000\">385741000</a></td><td>Management of funeral arrangements (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/385763009\">385763009</a></td><td>Hospice care (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/386367000\">386367000</a></td><td>Mutual goal setting (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/405083000\">405083000</a></td><td>Healthcare decision making (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/52765003\">52765003</a></td><td>Intubation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/61420007\">61420007</a></td><td>Tube feeding of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/71388002\">71388002</a></td><td>Procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/78823007\">78823007</a></td><td>Life support procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/89666000\">89666000</a></td><td>Cardiopulmonary resuscitation (procedure)</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.35"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreAdvanceDirectivesContentType",
+  "title" : "IE Core Advance Directives Content Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "A set of SNOMED CT and LOINC concepts to classify Advance Directives Content",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "100821-8",
+        "display" : "National POLST form: portable medical order panel"
+      },
+      {
+        "code" : "104144-1",
+        "display" : "Mental health Advance directives"
+      },
+      {
+        "code" : "42348-3",
+        "display" : "Advance directives"
+      },
+      {
+        "code" : "64298-3",
+        "display" : "Power of attorney"
+      },
+      {
+        "code" : "75773-2",
+        "display" : "Goals, preferences, and priorities for medical treatment [Reported]"
+      },
+      {
+        "code" : "75775-7",
+        "display" : "Decision to inform doctors and nurses about the role religion, faith, culture, or spirituality play in my life [Reported]"
+      },
+      {
+        "code" : "75776-5",
+        "display" : "Preference on consulting a supportive and palliative care team to help treat physical, emotional, and spiritual discomfort and support family [Reported]"
+      },
+      {
+        "code" : "75777-3",
+        "display" : "Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]"
+      },
+      {
+        "code" : "75778-1",
+        "display" : "Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]"
+      },
+      {
+        "code" : "75779-9",
+        "display" : "Thoughts on cardiopulmonary resuscitation (CPR) [Reported]"
+      },
+      {
+        "code" : "75780-7",
+        "display" : "Preferred location to spend final days if possible to choose [Reported]"
+      },
+      {
+        "code" : "75781-5",
+        "display" : "Thoughts on organ and tissue donations [Reported]"
+      },
+      {
+        "code" : "75782-3",
+        "display" : "Thoughts regarding autopsy [Reported]"
+      },
+      {
+        "code" : "75783-1",
+        "display" : "Primary healthcare agent [Reported]"
+      },
+      {
+        "code" : "75784-9",
+        "display" : "First alternate healthcare agent [Reported]"
+      },
+      {
+        "code" : "75785-6",
+        "display" : "Second alternate healthcare agent [Reported]"
+      },
+      {
+        "code" : "75786-4",
+        "display" : "Powers granted to healthcare agent [Reported]"
+      },
+      {
+        "code" : "75787-2",
+        "display" : "Advance directive - request for intubation"
+      },
+      {
+        "code" : "75788-0",
+        "display" : "Advance directive - request for tube feeding"
+      },
+      {
+        "code" : "75789-8",
+        "display" : "Advance directive - request for life support"
+      },
+      {
+        "code" : "75790-6",
+        "display" : "Advance directive - request for IV fluid and support"
+      },
+      {
+        "code" : "75791-4",
+        "display" : "Advance directive - request for antibiotics"
+      },
+      {
+        "code" : "75792-2",
+        "display" : "Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation"
+      },
+      {
+        "code" : "75793-0",
+        "display" : "Other directives that have not otherwise been documented [Reported]"
+      },
+      {
+        "code" : "77352-3",
+        "display" : "Thoughts on artificial nutrition and hydration [Reported]"
+      },
+      {
+        "code" : "81329-5",
+        "display" : "Thoughts on resuscitation [Reported]"
+      },
+      {
+        "code" : "81330-3",
+        "display" : "Thoughts on intubation [Reported]"
+      },
+      {
+        "code" : "81331-1",
+        "display" : "Thoughts on tube feeding [Reported]"
+      },
+      {
+        "code" : "81332-9",
+        "display" : "Thoughts on IV fluid and support [Reported]"
+      },
+      {
+        "code" : "81333-7",
+        "display" : "Thoughts on antibiotics [Reported]"
+      },
+      {
+        "code" : "81334-5",
+        "display" : "Patient Personal advance care plan"
+      },
+      {
+        "code" : "81335-2",
+        "display" : "Patient Healthcare agent"
+      },
+      {
+        "code" : "81340-2",
+        "display" : "Goals AndOr preferences in order of priority [Reported]"
+      },
+      {
+        "code" : "81343-6",
+        "display" : "Healthcare agent advisor [Reported]"
+      },
+      {
+        "code" : "81349-3",
+        "display" : "Thoughts on life-sustaining procedures if pregnant [Reported]"
+      },
+      {
+        "code" : "81350-1",
+        "display" : "Thoughts on pain management [Reported]"
+      },
+      {
+        "code" : "81353-5",
+        "display" : "Thoughts on hastening death [Reported]"
+      },
+      {
+        "code" : "81356-8",
+        "display" : "Death arrangements [Reported]"
+      },
+      {
+        "code" : "81357-6",
+        "display" : "Messages to be delivered after death [Reported]"
+      },
+      {
+        "code" : "81358-4",
+        "display" : "Person(s) to notify upon death [Reported]"
+      },
+      {
+        "code" : "81359-2",
+        "display" : "Near death thoughts and feelings to be shared [Reported]"
+      },
+      {
+        "code" : "81360-0",
+        "display" : "My likes and joys [Reported]"
+      },
+      {
+        "code" : "81361-8",
+        "display" : "Things that make me laugh [Reported]"
+      },
+      {
+        "code" : "81362-6",
+        "display" : "My dislikes and fears [Reported]"
+      },
+      {
+        "code" : "81363-4",
+        "display" : "Things that matter to me [Reported]"
+      },
+      {
+        "code" : "81364-2",
+        "display" : "Religious or cultural beliefs [Reported]"
+      },
+      {
+        "code" : "81365-9",
+        "display" : "Religious or cultural affiliation contact to notify [Reported]"
+      },
+      {
+        "code" : "81366-7",
+        "display" : "Unfinished business [Reported]"
+      },
+      {
+        "code" : "81376-6",
+        "display" : "Mental health treatment preferences [Reported]"
+      },
+      {
+        "code" : "81379-0",
+        "display" : "Goals, preferences, and priorities upon death [Reported]"
+      },
+      {
+        "code" : "84095-9",
+        "display" : "Do not resuscitate"
+      },
+      {
+        "code" : "86533-7",
+        "display" : "Patient Living will"
+      },
+      {
+        "code" : "92664-2",
+        "display" : "Power of attorney and Living will"
+      },
+      {
+        "code" : "93037-0",
+        "display" : "Portable medical order form"
+      },
+      {
+        "code" : "95541-9",
+        "display" : "Care experience preference"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "103735009",
+        "display" : "Palliative care (regime/therapy)"
+      },
+      {
+        "code" : "108259003",
+        "display" : "Autopsy pathology procedure AND/OR service (procedure)"
+      },
+      {
+        "code" : "225365006",
+        "display" : "Care regime (regime/therapy)"
+      },
+      {
+        "code" : "229912004",
+        "display" : "Enteral feeding (regime/therapy)"
+      },
+      {
+        "code" : "25156005",
+        "display" : "Intravenous feeding of patient (regime/therapy)"
+      },
+      {
+        "code" : "271298009",
+        "display" : "Organ retrieval operation (procedure)"
+      },
+      {
+        "code" : "281789004",
+        "display" : "Antibiotic therapy (procedure)"
+      },
+      {
+        "code" : "281800008",
+        "display" : "Intravenous fluid replacement (procedure)"
+      },
+      {
+        "code" : "363259005",
+        "display" : "Patient management procedure (procedure)"
+      },
+      {
+        "code" : "385741000",
+        "display" : "Management of funeral arrangements (procedure)"
+      },
+      {
+        "code" : "385763009",
+        "display" : "Hospice care (regime/therapy)"
+      },
+      {
+        "code" : "386367000",
+        "display" : "Mutual goal setting (regime/therapy)"
+      },
+      {
+        "code" : "405083000",
+        "display" : "Healthcare decision making (observable entity)"
+      },
+      {
+        "code" : "52765003",
+        "display" : "Intubation (procedure)"
+      },
+      {
+        "code" : "61420007",
+        "display" : "Tube feeding of patient (regime/therapy)"
+      },
+      {
+        "code" : "71388002",
+        "display" : "Procedure (procedure)"
+      },
+      {
+        "code" : "78823007",
+        "display" : "Life support procedure (procedure)"
+      },
+      {
+        "code" : "89666000",
+        "display" : "Cardiopulmonary resuscitation (procedure)"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ie-core-smoking-status-comprehensive"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-smoking-status-comprehensive</b></p><a name="ie-core-smoking-status-comprehensive"> </a><a name="hcie-core-smoking-status-comprehensive"> </a><a name="ie-core-smoking-status-comprehensive-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/100801000119107">100801000119107</a></td><td>Maternal tobacco use in pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/105539002">105539002</a></td><td>Non-smoker for personal reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/105540000">105540000</a></td><td>Non-smoker for religious reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/105541001">105541001</a></td><td>Non-smoker for medical reasons (finding)</td></tr><tr><td><a href="http://snomed.info/id/10761391000119102">10761391000119102</a></td><td>Tobacco use in mother complicating childbirth (finding)</td></tr><tr><td><a href="http://snomed.info/id/110483000">110483000</a></td><td>Tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/1137691001">1137691001</a></td><td>Trying to give up using electronic cigarette (finding)</td></tr><tr><td><a href="http://snomed.info/id/134406006">134406006</a></td><td>Smoking reduced (finding)</td></tr><tr><td><a href="http://snomed.info/id/160603005">160603005</a></td><td>Light cigarette smoker (1-9 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160604004">160604004</a></td><td>Moderate cigarette smoker (10-19 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160605003">160605003</a></td><td>Heavy cigarette smoker (20-39 cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160606002">160606002</a></td><td>Very heavy cigarette smoker (40+ cigs/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/160612007">160612007</a></td><td>Keeps trying to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160613002">160613002</a></td><td>Admitted tobacco consumption possibly untrue (finding)</td></tr><tr><td><a href="http://snomed.info/id/160614008">160614008</a></td><td>Tobacco consumption unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/160616005">160616005</a></td><td>Trying to give up smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160617001">160617001</a></td><td>Stopped smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/160619003">160619003</a></td><td>Rolls own cigarettes (finding)</td></tr><tr><td><a href="http://snomed.info/id/160620009">160620009</a></td><td>Ex-pipe smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/160621008">160621008</a></td><td>Ex-cigar smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/16090371000119103">16090371000119103</a></td><td>Exposure to second hand tobacco smoke (event)</td></tr><tr><td><a href="http://snomed.info/id/16090771000119104">16090771000119104</a></td><td>Occupational exposure to environmental tobacco smoke (event)</td></tr><tr><td><a href="http://snomed.info/id/161077003">161077003</a></td><td>Father smokes (situation)</td></tr><tr><td><a href="http://snomed.info/id/161078008">161078008</a></td><td>Mother smokes (situation)</td></tr><tr><td><a href="http://snomed.info/id/161079000">161079000</a></td><td>Both parents smoke (situation)</td></tr><tr><td><a href="http://snomed.info/id/169940006">169940006</a></td><td>Maternal tobacco abuse (finding)</td></tr><tr><td><a href="http://snomed.info/id/228491005">228491005</a></td><td>Does not use snuff (finding)</td></tr><tr><td><a href="http://snomed.info/id/228492003">228492003</a></td><td>Never used snuff (finding)</td></tr><tr><td><a href="http://snomed.info/id/228493008">228493008</a></td><td>Ex-snuff user (finding)</td></tr><tr><td><a href="http://snomed.info/id/228494002">228494002</a></td><td>Snuff user (finding)</td></tr><tr><td><a href="http://snomed.info/id/228499007">228499007</a></td><td>Finding relating to moist tobacco use (finding)</td></tr><tr><td><a href="http://snomed.info/id/228501004">228501004</a></td><td>Does not use moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228502006">228502006</a></td><td>Never used moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228503001">228503001</a></td><td>Ex-user of moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228504007">228504007</a></td><td>User of moist powdered tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228509002">228509002</a></td><td>Finding relating to tobacco chewing (finding)</td></tr><tr><td><a href="http://snomed.info/id/228511006">228511006</a></td><td>Does not chew tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228512004">228512004</a></td><td>Never chewed tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228513009">228513009</a></td><td>Ex-tobacco chewer (finding)</td></tr><tr><td><a href="http://snomed.info/id/228514003">228514003</a></td><td>Chews plug tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228515002">228515002</a></td><td>Chews twist tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228516001">228516001</a></td><td>Chews loose leaf tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228517005">228517005</a></td><td>Chews fine cut tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228518000">228518000</a></td><td>Chews products containing tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/228523000">228523000</a></td><td>Exposed to tobacco smoke at work (finding)</td></tr><tr><td><a href="http://snomed.info/id/228524006">228524006</a></td><td>Exposed to tobacco smoke at home (finding)</td></tr><tr><td><a href="http://snomed.info/id/228525007">228525007</a></td><td>Exposed to tobacco smoke in public places (finding)</td></tr><tr><td><a href="http://snomed.info/id/230059006">230059006</a></td><td>Occasional cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230060001">230060001</a></td><td>Light cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230062009">230062009</a></td><td>Moderate cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230063004">230063004</a></td><td>Heavy cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230064005">230064005</a></td><td>Very heavy cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/230065006">230065006</a></td><td>Chain smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/266919005">266919005</a></td><td>Never smoked tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/266920004">266920004</a></td><td>Trivial cigarette smoker (less than one cigarette/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266921000">266921000</a></td><td>Ex-trivial cigarette smoker (&lt;1/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266922007">266922007</a></td><td>Ex-light cigarette smoker (1-9/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266923002">266923002</a></td><td>Ex-moderate cigarette smoker (10-19/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266924008">266924008</a></td><td>Ex-heavy cigarette smoker (20-39/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266925009">266925009</a></td><td>Ex-very heavy cigarette smoker (40+/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/266927001">266927001</a></td><td>Tobacco smoking consumption unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/266928006">266928006</a></td><td>Ex-cigarette smoker amount unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/266929003">266929003</a></td><td>Smoking started (finding)</td></tr><tr><td><a href="http://snomed.info/id/275105001">275105001</a></td><td>Smoker in the family (situation)</td></tr><tr><td><a href="http://snomed.info/id/281018007">281018007</a></td><td>Ex-cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/308438006">308438006</a></td><td>Smoking restarted (finding)</td></tr><tr><td><a href="http://snomed.info/id/35341000087101">35341000087101</a></td><td>Uses electronic cigarette daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/35371000087109">35371000087109</a></td><td>Uses electronic cigarette occasionally (finding)</td></tr><tr><td><a href="http://snomed.info/id/360890004">360890004</a></td><td>Intolerant ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360900008">360900008</a></td><td>Aggressive ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360918006">360918006</a></td><td>Aggressive non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/360929005">360929005</a></td><td>Intolerant non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/365981007">365981007</a></td><td>Finding of tobacco smoking behavior (finding)</td></tr><tr><td><a href="http://snomed.info/id/365982000">365982000</a></td><td>Finding of tobacco smoking consumption (finding)</td></tr><tr><td><a href="http://snomed.info/id/365983005">365983005</a></td><td>Finding of snuff use (finding)</td></tr><tr><td><a href="http://snomed.info/id/394871007">394871007</a></td><td>Thinking about stopping smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/394872000">394872000</a></td><td>Ready to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/394873005">394873005</a></td><td>Not interested in stopping smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/405746006">405746006</a></td><td>Current non smoker but past smoking history unknown (finding)</td></tr><tr><td><a href="http://snomed.info/id/427189007">427189007</a></td><td>Maternal tobacco use (finding)</td></tr><tr><td><a href="http://snomed.info/id/428041000124106">428041000124106</a></td><td>Occasional tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428061000124105">428061000124105</a></td><td>Light tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428071000124103">428071000124103</a></td><td>Heavy tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428081000124100">428081000124100</a></td><td>Former heavy tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/428091000124102">428091000124102</a></td><td>Former light tobacco smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/43381005">43381005</a></td><td>Passive smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/446172000">446172000</a></td><td>Failed attempt to stop smoking (finding)</td></tr><tr><td><a href="http://snomed.info/id/449345000">449345000</a></td><td>Smoked before confirmation of pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449368009">449368009</a></td><td>Stopped smoking during pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449369001">449369001</a></td><td>Stopped smoking before pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/449867007">449867007</a></td><td>Uses moist tobacco occasionally (finding)</td></tr><tr><td><a href="http://snomed.info/id/449868002">449868002</a></td><td>Smokes tobacco daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/449869005">449869005</a></td><td>Uses moist tobacco daily (finding)</td></tr><tr><td><a href="http://snomed.info/id/450811000124104">450811000124104</a></td><td>Cigarette smoker (5-9 cigarettes/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/450821000124107">450821000124107</a></td><td>Cigarette smoker (1-4 cigarettes/day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/451371000124109">451371000124109</a></td><td>Tobacco non-user (finding)</td></tr><tr><td><a href="http://snomed.info/id/451381000124107">451381000124107</a></td><td>Smokeless tobacco non-user (finding)</td></tr><tr><td><a href="http://snomed.info/id/451881000124101">451881000124101</a></td><td>Tobacco use in mother complicating puerperium (finding)</td></tr><tr><td><a href="http://snomed.info/id/451891000124103">451891000124103</a></td><td>Tobacco use in mother complicating pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/451901000124104">451901000124104</a></td><td>Tobacco smoking in mother complicating puerperium (finding)</td></tr><tr><td><a href="http://snomed.info/id/451911000124101">451911000124101</a></td><td>Tobacco smoking in mother complicating childbirth (finding)</td></tr><tr><td><a href="http://snomed.info/id/451921000124109">451921000124109</a></td><td>Tobacco smoking in mother complicating pregnancy (finding)</td></tr><tr><td><a href="http://snomed.info/id/456711000124105">456711000124105</a></td><td>Former smokeless tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/48031000119106">48031000119106</a></td><td>Ex-smoker for more than 1 year (finding)</td></tr><tr><td><a href="http://snomed.info/id/51441000087107">51441000087107</a></td><td>Cannabis-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/53896009">53896009</a></td><td>Tolerant ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/56578002">56578002</a></td><td>Moderate smoker (20 or less per day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/56771006">56771006</a></td><td>Heavy smoker (over 20 per day) (finding)</td></tr><tr><td><a href="http://snomed.info/id/598071000005103">598071000005103</a></td><td>Stopped smoking in first trimester (finding)</td></tr><tr><td><a href="http://snomed.info/id/598081000005100">598081000005100</a></td><td>Stopped smoking after first trimester (finding)</td></tr><tr><td><a href="http://snomed.info/id/59978006">59978006</a></td><td>Cigar smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/65568007">65568007</a></td><td>Cigarette smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/699009004">699009004</a></td><td>History of exposure to second hand smoke (situation)</td></tr><tr><td><a href="http://snomed.info/id/702975009">702975009</a></td><td>Ex-tobacco user (finding)</td></tr><tr><td><a href="http://snomed.info/id/702979003">702979003</a></td><td>Never used tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/711563001">711563001</a></td><td>No known exposure to tobacco smoke (finding)</td></tr><tr><td><a href="http://snomed.info/id/713914004">713914004</a></td><td>User of smokeless tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/722499006">722499006</a></td><td>Electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/735128000">735128000</a></td><td>Ex-smoker for less than 1 year (finding)</td></tr><tr><td><a href="http://snomed.info/id/762296001">762296001</a></td><td>History of exposure to tobacco smoke in perinatal period (situation)</td></tr><tr><td><a href="http://snomed.info/id/77176002">77176002</a></td><td>Smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/785889008">785889008</a></td><td>Nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/786063001">786063001</a></td><td>Non-nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href="http://snomed.info/id/81703003">81703003</a></td><td>Chews tobacco (finding)</td></tr><tr><td><a href="http://snomed.info/id/82302008">82302008</a></td><td>Pipe smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/8392000">8392000</a></td><td>Non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/8517006">8517006</a></td><td>Ex-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/87739003">87739003</a></td><td>Tolerant non-smoker (finding)</td></tr><tr><td><a href="http://snomed.info/id/35361000087100">35361000087100</a></td><td>Ex-vaper (finding)</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cgp"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.3.6.1.4.1.54392.5.2690.48.44"/>
+  </identifier>
+  <version value="1.0.0-ballot"/>
+  <name value="IECoreSmokingStatusComprehensive"/>
+  <title value="IE Core Smoking status comprehensive"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-13T21:38:29-04:00"/>
+  <publisher value="iEHR.ai"/>
+  <contact>
+    <name value="iEHR.ai"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.iehr.ai"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@iehr.ai"/>
+    </telecom>
+  </contact>
+  <description value="A set of SNOMED concepts to classify Smoking status comprehensive"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="iEHR.ai, all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="100801000119107"/>
+        <display value="Maternal tobacco use in pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="105539002"/>
+        <display value="Non-smoker for personal reasons (finding)"/>
+      </concept>
+      <concept>
+        <code value="105540000"/>
+        <display value="Non-smoker for religious reasons (finding)"/>
+      </concept>
+      <concept>
+        <code value="105541001"/>
+        <display value="Non-smoker for medical reasons (finding)"/>
+      </concept>
+      <concept>
+        <code value="10761391000119102"/>
+        <display value="Tobacco use in mother complicating childbirth (finding)"/>
+      </concept>
+      <concept>
+        <code value="110483000"/>
+        <display value="Tobacco user (finding)"/>
+      </concept>
+      <concept>
+        <code value="1137691001"/>
+        <display value="Trying to give up using electronic cigarette (finding)"/>
+      </concept>
+      <concept>
+        <code value="134406006"/>
+        <display value="Smoking reduced (finding)"/>
+      </concept>
+      <concept>
+        <code value="160603005"/>
+        <display value="Light cigarette smoker (1-9 cigs/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="160604004"/>
+        <display value="Moderate cigarette smoker (10-19 cigs/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="160605003"/>
+        <display value="Heavy cigarette smoker (20-39 cigs/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="160606002"/>
+        <display value="Very heavy cigarette smoker (40+ cigs/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="160612007"/>
+        <display value="Keeps trying to stop smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="160613002"/>
+        <display value="Admitted tobacco consumption possibly untrue (finding)"/>
+      </concept>
+      <concept>
+        <code value="160614008"/>
+        <display value="Tobacco consumption unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="160616005"/>
+        <display value="Trying to give up smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="160617001"/>
+        <display value="Stopped smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="160619003"/>
+        <display value="Rolls own cigarettes (finding)"/>
+      </concept>
+      <concept>
+        <code value="160620009"/>
+        <display value="Ex-pipe smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="160621008"/>
+        <display value="Ex-cigar smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="16090371000119103"/>
+        <display value="Exposure to second hand tobacco smoke (event)"/>
+      </concept>
+      <concept>
+        <code value="16090771000119104"/>
+        <display value="Occupational exposure to environmental tobacco smoke (event)"/>
+      </concept>
+      <concept>
+        <code value="161077003"/>
+        <display value="Father smokes (situation)"/>
+      </concept>
+      <concept>
+        <code value="161078008"/>
+        <display value="Mother smokes (situation)"/>
+      </concept>
+      <concept>
+        <code value="161079000"/>
+        <display value="Both parents smoke (situation)"/>
+      </concept>
+      <concept>
+        <code value="169940006"/>
+        <display value="Maternal tobacco abuse (finding)"/>
+      </concept>
+      <concept>
+        <code value="228491005"/>
+        <display value="Does not use snuff (finding)"/>
+      </concept>
+      <concept>
+        <code value="228492003"/>
+        <display value="Never used snuff (finding)"/>
+      </concept>
+      <concept>
+        <code value="228493008"/>
+        <display value="Ex-snuff user (finding)"/>
+      </concept>
+      <concept>
+        <code value="228494002"/>
+        <display value="Snuff user (finding)"/>
+      </concept>
+      <concept>
+        <code value="228499007"/>
+        <display value="Finding relating to moist tobacco use (finding)"/>
+      </concept>
+      <concept>
+        <code value="228501004"/>
+        <display value="Does not use moist powdered tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228502006"/>
+        <display value="Never used moist powdered tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228503001"/>
+        <display value="Ex-user of moist powdered tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228504007"/>
+        <display value="User of moist powdered tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228509002"/>
+        <display value="Finding relating to tobacco chewing (finding)"/>
+      </concept>
+      <concept>
+        <code value="228511006"/>
+        <display value="Does not chew tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228512004"/>
+        <display value="Never chewed tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228513009"/>
+        <display value="Ex-tobacco chewer (finding)"/>
+      </concept>
+      <concept>
+        <code value="228514003"/>
+        <display value="Chews plug tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228515002"/>
+        <display value="Chews twist tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228516001"/>
+        <display value="Chews loose leaf tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228517005"/>
+        <display value="Chews fine cut tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228518000"/>
+        <display value="Chews products containing tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="228523000"/>
+        <display value="Exposed to tobacco smoke at work (finding)"/>
+      </concept>
+      <concept>
+        <code value="228524006"/>
+        <display value="Exposed to tobacco smoke at home (finding)"/>
+      </concept>
+      <concept>
+        <code value="228525007"/>
+        <display value="Exposed to tobacco smoke in public places (finding)"/>
+      </concept>
+      <concept>
+        <code value="230059006"/>
+        <display value="Occasional cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230060001"/>
+        <display value="Light cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230062009"/>
+        <display value="Moderate cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230063004"/>
+        <display value="Heavy cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230064005"/>
+        <display value="Very heavy cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="230065006"/>
+        <display value="Chain smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="266919005"/>
+        <display value="Never smoked tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="266920004"/>
+        <display value="Trivial cigarette smoker (less than one cigarette/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266921000"/>
+        <display value="Ex-trivial cigarette smoker (&lt;1/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266922007"/>
+        <display value="Ex-light cigarette smoker (1-9/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266923002"/>
+        <display value="Ex-moderate cigarette smoker (10-19/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266924008"/>
+        <display value="Ex-heavy cigarette smoker (20-39/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266925009"/>
+        <display value="Ex-very heavy cigarette smoker (40+/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="266927001"/>
+        <display value="Tobacco smoking consumption unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="266928006"/>
+        <display value="Ex-cigarette smoker amount unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="266929003"/>
+        <display value="Smoking started (finding)"/>
+      </concept>
+      <concept>
+        <code value="275105001"/>
+        <display value="Smoker in the family (situation)"/>
+      </concept>
+      <concept>
+        <code value="281018007"/>
+        <display value="Ex-cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="308438006"/>
+        <display value="Smoking restarted (finding)"/>
+      </concept>
+      <concept>
+        <code value="35341000087101"/>
+        <display value="Uses electronic cigarette daily (finding)"/>
+      </concept>
+      <concept>
+        <code value="35371000087109"/>
+        <display value="Uses electronic cigarette occasionally (finding)"/>
+      </concept>
+      <concept>
+        <code value="360890004"/>
+        <display value="Intolerant ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="360900008"/>
+        <display value="Aggressive ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="360918006"/>
+        <display value="Aggressive non-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="360929005"/>
+        <display value="Intolerant non-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="365981007"/>
+        <display value="Finding of tobacco smoking behavior (finding)"/>
+      </concept>
+      <concept>
+        <code value="365982000"/>
+        <display value="Finding of tobacco smoking consumption (finding)"/>
+      </concept>
+      <concept>
+        <code value="365983005"/>
+        <display value="Finding of snuff use (finding)"/>
+      </concept>
+      <concept>
+        <code value="394871007"/>
+        <display value="Thinking about stopping smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="394872000"/>
+        <display value="Ready to stop smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="394873005"/>
+        <display value="Not interested in stopping smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="405746006"/>
+        <display value="Current non smoker but past smoking history unknown (finding)"/>
+      </concept>
+      <concept>
+        <code value="427189007"/>
+        <display value="Maternal tobacco use (finding)"/>
+      </concept>
+      <concept>
+        <code value="428041000124106"/>
+        <display value="Occasional tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428061000124105"/>
+        <display value="Light tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428071000124103"/>
+        <display value="Heavy tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428081000124100"/>
+        <display value="Former heavy tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="428091000124102"/>
+        <display value="Former light tobacco smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="43381005"/>
+        <display value="Passive smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="446172000"/>
+        <display value="Failed attempt to stop smoking (finding)"/>
+      </concept>
+      <concept>
+        <code value="449345000"/>
+        <display value="Smoked before confirmation of pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="449368009"/>
+        <display value="Stopped smoking during pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="449369001"/>
+        <display value="Stopped smoking before pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="449867007"/>
+        <display value="Uses moist tobacco occasionally (finding)"/>
+      </concept>
+      <concept>
+        <code value="449868002"/>
+        <display value="Smokes tobacco daily (finding)"/>
+      </concept>
+      <concept>
+        <code value="449869005"/>
+        <display value="Uses moist tobacco daily (finding)"/>
+      </concept>
+      <concept>
+        <code value="450811000124104"/>
+        <display value="Cigarette smoker (5-9 cigarettes/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="450821000124107"/>
+        <display value="Cigarette smoker (1-4 cigarettes/day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="451371000124109"/>
+        <display value="Tobacco non-user (finding)"/>
+      </concept>
+      <concept>
+        <code value="451381000124107"/>
+        <display value="Smokeless tobacco non-user (finding)"/>
+      </concept>
+      <concept>
+        <code value="451881000124101"/>
+        <display value="Tobacco use in mother complicating puerperium (finding)"/>
+      </concept>
+      <concept>
+        <code value="451891000124103"/>
+        <display value="Tobacco use in mother complicating pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="451901000124104"/>
+        <display value="Tobacco smoking in mother complicating puerperium (finding)"/>
+      </concept>
+      <concept>
+        <code value="451911000124101"/>
+        <display value="Tobacco smoking in mother complicating childbirth (finding)"/>
+      </concept>
+      <concept>
+        <code value="451921000124109"/>
+        <display value="Tobacco smoking in mother complicating pregnancy (finding)"/>
+      </concept>
+      <concept>
+        <code value="456711000124105"/>
+        <display value="Former smokeless tobacco user (finding)"/>
+      </concept>
+      <concept>
+        <code value="48031000119106"/>
+        <display value="Ex-smoker for more than 1 year (finding)"/>
+      </concept>
+      <concept>
+        <code value="51441000087107"/>
+        <display value="Cannabis-filled electronic cigarette user (finding)"/>
+      </concept>
+      <concept>
+        <code value="53896009"/>
+        <display value="Tolerant ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="56578002"/>
+        <display value="Moderate smoker (20 or less per day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="56771006"/>
+        <display value="Heavy smoker (over 20 per day) (finding)"/>
+      </concept>
+      <concept>
+        <code value="598071000005103"/>
+        <display value="Stopped smoking in first trimester (finding)"/>
+      </concept>
+      <concept>
+        <code value="598081000005100"/>
+        <display value="Stopped smoking after first trimester (finding)"/>
+      </concept>
+      <concept>
+        <code value="59978006"/>
+        <display value="Cigar smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="65568007"/>
+        <display value="Cigarette smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="699009004"/>
+        <display value="History of exposure to second hand smoke (situation)"/>
+      </concept>
+      <concept>
+        <code value="702975009"/>
+        <display value="Ex-tobacco user (finding)"/>
+      </concept>
+      <concept>
+        <code value="702979003"/>
+        <display value="Never used tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="711563001"/>
+        <display value="No known exposure to tobacco smoke (finding)"/>
+      </concept>
+      <concept>
+        <code value="713914004"/>
+        <display value="User of smokeless tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="722499006"/>
+        <display value="Electronic cigarette user (finding)"/>
+      </concept>
+      <concept>
+        <code value="735128000"/>
+        <display value="Ex-smoker for less than 1 year (finding)"/>
+      </concept>
+      <concept>
+        <code value="762296001"/>
+        <display value="History of exposure to tobacco smoke in perinatal period (situation)"/>
+      </concept>
+      <concept>
+        <code value="77176002"/>
+        <display value="Smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="785889008"/>
+        <display value="Nicotine-filled electronic cigarette user (finding)"/>
+      </concept>
+      <concept>
+        <code value="786063001"/>
+        <display value="Non-nicotine-filled electronic cigarette user (finding)"/>
+      </concept>
+      <concept>
+        <code value="81703003"/>
+        <display value="Chews tobacco (finding)"/>
+      </concept>
+      <concept>
+        <code value="82302008"/>
+        <display value="Pipe smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="8392000"/>
+        <display value="Non-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="8517006"/>
+        <display value="Ex-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="87739003"/>
+        <display value="Tolerant non-smoker (finding)"/>
+      </concept>
+      <concept>
+        <code value="35361000087100"/>
+        <display value="Ex-vaper (finding)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

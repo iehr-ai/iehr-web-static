@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Patient/example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Patient Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is a patient example for the *IE Core Patient Profile*."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient example</b></p><a name=\"example\"> </a><a name=\"hcexample\"> </a><a name=\"example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ie-core-patient.html\">IE Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Amy V. Shaw (Old)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1 234 5678(Home)</li><li><a href=\"mailto:amy.shaw@example.com\">amy.shaw@example.com</a></li><li>49 MEADOW ST Sandyford Galway D18 CV48 IE (old)</li><li>183 MOUNTAIN VIEW ST Sandyford Galway H91 CV48 IE </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:ietf:bcp:47 es}\">Spanish</span> (preferred)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical Record Number" ]
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1032702" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "old" ] ;
+     fhir:family [ fhir:v "Shaw" ] ;
+     fhir:given ( [ fhir:v "Amy" ] [ fhir:v "V." ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-12-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:family [ fhir:v "Baxter" ] ;
+     fhir:given ( [ fhir:v "Amy" ] [ fhir:v "V." ] ) ;
+     fhir:suffix ( [ fhir:v "PharmD" ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1 234 5678" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "amy.shaw@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1987-02-20"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "old" ] ;
+     fhir:line ( [ fhir:v "49 MEADOW ST" ] ) ;
+     fhir:city [ fhir:v "Sandyford" ] ;
+     fhir:state [ fhir:v "Galway" ] ;
+     fhir:postalCode [ fhir:v "D18 CV48" ] ;
+     fhir:country [ fhir:v "IE" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-12-06"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] [
+     fhir:line ( [ fhir:v "183 MOUNTAIN VIEW ST" ] ) ;
+     fhir:city [ fhir:v "Sandyford" ] ;
+     fhir:state [ fhir:v "Galway" ] ;
+     fhir:postalCode [ fhir:v "H91 CV48" ] ;
+     fhir:country [ fhir:v "IE" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-22"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "es" ] ;
+         fhir:display [ fhir:v "Spanish" ]
+       ] )
+     ] ;
+     fhir:preferred [ fhir:v true ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Organization/holy-healthcare> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "holy-healthcare"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Organization Holy Healthcare Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is an example managing organization using the *IE Core Organization Profile*."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization holy-healthcare</b></p><a name=\"holy-healthcare\"> </a><a name=\"hcholy-healthcare\"> </a><a name=\"holy-healthcare-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ie-core-organization.html\">IE Core Organization Profile</a></p></div><p><b>identifier</b>: <code>http://iehr.ai/fhir/sid/ie/crn</code>/1234567893</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}\">Provider</span></p><p><b>name</b>: Holy Healthcare</p><p><b>telecom</b>: ph: (+353) 1 234 5678, <a href=\"mailto:hq@holyhealthcare.org\">hq@holyhealthcare.org</a></p><p><b>address</b>: 100 MANAGING ORGANIZATION AVE Amherst Dublin D18 CV48 IE </p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://iehr.ai/fhir/sid/ie/crn"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567893" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/organization-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "prov" ]
+     ] ) ;
+     fhir:text [ fhir:v "Provider" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Holy Healthcare"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(+353) 1 234 5678" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "hq@holyhealthcare.org" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "100 MANAGING ORGANIZATION AVE" ] ) ;
+     fhir:city [ fhir:v "Amherst" ] ;
+     fhir:state [ fhir:v "Dublin" ] ;
+     fhir:postalCode [ fhir:v "D18 CV48" ] ;
+     fhir:country [ fhir:v "IE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

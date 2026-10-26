@@ -1,0 +1,130 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/ValueSet/ie-core-information-source-for-medication-adherence> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-information-source-for-medication-adherence"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-information-source-for-medication-adherence</b></p><a name=\"ie-core-information-source-for-medication-adherence\"> </a><a name=\"hcie-core-information-source-for-medication-adherence\"> </a><a name=\"ie-core-information-source-for-medication-adherence-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-ie-core-information-source-for-medication-adherence-codes.html\"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes</code></a></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/106292003\">106292003</a></td><td>Professional nurse (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/116154003\">116154003</a></td><td>Patient (person)</td></tr><tr><td><a href=\"http://snomed.info/id/129465004\">129465004</a></td><td>Medical record, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/133932002\">133932002</a></td><td>Caregiver (person)</td></tr><tr><td><a href=\"http://snomed.info/id/224571005\">224571005</a></td><td>Nurse practitioner (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/229774002\">229774002</a></td><td>Caregiver (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/303069001\">303069001</a></td><td>Person in the transport environment (person)</td></tr><tr><td><a href=\"http://snomed.info/id/309343006\">309343006</a></td><td>Physician (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/38472000\">38472000</a></td><td>Medical alert identification bracelet, device (physical object)</td></tr><tr><td><a href=\"http://snomed.info/id/449161006\">449161006</a></td><td>Physician assistant (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/451161000124100\">451161000124100</a></td><td>Default healthcare surrogate (person)</td></tr><tr><td><a href=\"http://snomed.info/id/451171000124107\">451171000124107</a></td><td>Appointed healthcare surrogate (person)</td></tr><tr><td><a href=\"http://snomed.info/id/46255001\">46255001</a></td><td>Pharmacist (occupation)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-information-source-for-medication-adherence"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.48.41" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreInformationSourceForMedicationAdherence"] ; # 
+  fhir:title [ fhir:v "IE Core Information Source for Medication Adherence"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of concepts to classify Information Source for Medication Adherence"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "106292003" ] ;
+         fhir:display [ fhir:v "Professional nurse (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "116154003" ] ;
+         fhir:display [ fhir:v "Patient (person)" ]
+       ] [
+         fhir:code [ fhir:v "129465004" ] ;
+         fhir:display [ fhir:v "Medical record, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "133932002" ] ;
+         fhir:display [ fhir:v "Caregiver (person)" ]
+       ] [
+         fhir:code [ fhir:v "224571005" ] ;
+         fhir:display [ fhir:v "Nurse practitioner (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "229774002" ] ;
+         fhir:display [ fhir:v "Caregiver (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "303069001" ] ;
+         fhir:display [ fhir:v "Person in the transport environment (person)" ]
+       ] [
+         fhir:code [ fhir:v "309343006" ] ;
+         fhir:display [ fhir:v "Physician (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "38472000" ] ;
+         fhir:display [ fhir:v "Medical alert identification bracelet, device (physical object)" ]
+       ] [
+         fhir:code [ fhir:v "449161006" ] ;
+         fhir:display [ fhir:v "Physician assistant (occupation)" ]
+       ] [
+         fhir:code [ fhir:v "451161000124100" ] ;
+         fhir:display [ fhir:v "Default healthcare surrogate (person)" ]
+       ] [
+         fhir:code [ fhir:v "451171000124107" ] ;
+         fhir:display [ fhir:v "Appointed healthcare surrogate (person)" ]
+       ] [
+         fhir:code [ fhir:v "46255001" ] ;
+         fhir:display [ fhir:v "Pharmacist (occupation)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

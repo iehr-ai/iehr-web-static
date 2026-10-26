@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Practitioner/practitioner-1> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-1"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Practitioner 1 Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is a practitioner 1 example for the *IE Core Practitioner Profile*."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-1</b></p><a name=\"practitioner-1\"> </a><a name=\"hcpractitioner-1\"> </a><a name=\"practitioner-1-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ie-core-practitioner.html\">IE Core Practitioner Profile</a></p></div><p><b>identifier</b>: <code>http://iehr.ai/fhir/sid/ie/imc</code>/254567</p><p><b>name</b>: Ronald Bone </p><p><b>address</b>: 1003 HEALTHCARE DR AMHERST Dublin D18 CV48 (work)</p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://iehr.ai/fhir/sid/ie/imc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "254567" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Bone" ] ;
+     fhir:given ( [ fhir:v "Ronald" ] ) ;
+     fhir:prefix ( [ fhir:v "Dr" ] )
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:line ( [ fhir:v "1003 HEALTHCARE DR" ] ) ;
+     fhir:city [ fhir:v "AMHERST" ] ;
+     fhir:state [ fhir:v "Dublin" ] ;
+     fhir:postalCode [ fhir:v "D18 CV48" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,132 @@
+<svg viewBox="0 0 1280 720" overflow="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+    <path d="m223.8 419.15 172.32-99.544 175.61 101.39-0.046 199.01-172.32 99.543-175.61-101.39z" fill="none"
+        fill-rule="evenodd" stroke="#f00" stroke-dasharray="12 9" stroke-linejoin="round" stroke-miterlimit="10"
+        stroke-width="3" />
+    <rect x="239.5" y="475.5" width="120" height="43" fill="none" stroke="#46B1E1" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(259.8 502)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Public Key</text>
+    <rect x="239.5" y="518.5" width="120" height="43" fill="none" stroke="#7030A0" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(257.52 545)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Private Key</text>
+    <rect x="433.5" y="455.5" width="119" height="43" fill="none" stroke="#E97132" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(464.55 471)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Access</text>
+    <text transform="translate(470.31 493)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Token</text>
+    <rect x="338.5" y="381.5" width="120" height="43" fill="none" stroke="#FFC000" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(376.75 397)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">DPoP</text>
+    <text transform="translate(360.24 419)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Proof JWT</text>
+    <rect x="338.5" y="615.5" width="120" height="43" fill="none" stroke="#FFC000" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(376.75 631)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">DPoP</text>
+    <text transform="translate(360.24 653)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Proof JWT</text>
+    <path d="m300 466.71v-63.214c0-0.276 0.224-0.5 0.5-0.5h31.49v1h-31.49l0.5-0.5v63.214zm30.656-67.214 8 4-8 4z"
+        fill="#808080" />
+    <rect x="234.5" y="466.5" width="131" height="102" fill="none" stroke="#808080" stroke-linejoin="round"
+        stroke-miterlimit="10" />
+    <path transform="matrix(0,1,1,0,300.5,568.5)"
+        d="m0-0.5h68.358c0.2761 0 0.5 0.22386 0.5 0.5v31.49h-1v-31.49l0.5 0.5h-68.358zm72.358 30.656-4 8-4-8z"
+        fill="#808080" />
+    <text transform="translate(183.47 443)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">1.Create DPoP</text>
+    <text transform="translate(183.47 606)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">6.Create DPoP</text>
+    <path d="m716.05 417.45 171.06-100.76 180.44 102.14 1.64 198.52-171.05 100.76-180.44-102.14z" fill="none"
+        fill-rule="evenodd" stroke="#946AF9" stroke-dasharray="12 9" stroke-linejoin="round" stroke-miterlimit="10"
+        stroke-width="3" />
+    <path d="m737 179.5v60.238h-1v-60.238zm3.5 58.905-4 8-4-8z" fill="#808080" />
+    <path d="m464.82 105.2 172.03-97.938 177.36 103.89-1.289 197.95-172.03 97.938-177.36-103.89z" fill="none"
+        fill-rule="evenodd" stroke="#2ABD41" stroke-dasharray="12 9" stroke-linejoin="round" stroke-miterlimit="10"
+        stroke-width="3" />
+    <rect x="481.5" y="132.5" width="131" height="47" fill="none" stroke="#FFC000" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(525.5 150)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">DPoP</text>
+    <text transform="translate(508.99,172)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Proof JWT</text>
+    <rect x="670.5" y="132.5" width="131" height="47" fill="none" stroke="#46B1E1" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(696.47 161)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Public Key</text>
+    <rect x="670.5" y="246.5" width="131" height="46" fill="none" stroke="#E10098" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(691.27 274)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Thumbprint</text>
+    <rect x="481.5" y="246.5" width="131" height="46" fill="none" stroke="#E97132" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(494.59,274)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Access Token</text>
+    <path d="m612.5 156h51.874v1h-51.874zm50.541-3.5 8 4-8 4z" fill="#808080" />
+    <path
+        d="m736.35 132.5v-33.333l0.5 0.5h-189.35l0.5-0.5v26.75h-1v-26.75c0-0.2761 0.224-0.5 0.5-0.5h189.35c0.276 0 0.5 0.2239 0.5 0.5v33.333zm-184.85-7.916-4 8-4-8z"
+        fill="#808080" />
+    <text transform="translate(618.33 81)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">3.Verify</text>
+    <path d="m671.04 270h-51.874v-1h51.874zm-50.541 3.5-8-4 8-4z" fill="#808080" />
+    <text transform="translate(619.01 241)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">4.Bind</text>
+    <g fill="#808080">
+        <path
+            d="m398 382.24v-225.74c0-0.276 0.224-0.5 0.5-0.5h76.682v1h-76.682l0.5-0.5v225.74zm75.848-229.74 8 4-8 4z" />
+        <path
+            d="m547.04 292.5v81.198c0 0.276-0.224 0.5-0.5 0.5h-54.035l0.5-0.5v74.532h-1v-74.532c0-0.276 0.224-0.5 0.5-0.5h54.035l-0.5 0.5v-81.198zm-50.535 154.4-4 8-4-8z" />
+        <path d="m737 179.5v60.238h-1v-60.238zm3.5 58.905-4 8-4-8z" />
+    </g>
+    <rect x="738.5" y="551.5" width="130" height="46" fill="none" stroke="#FFC000" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(781.95 569)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">DPoP</text>
+    <text transform="translate(765.44 591)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Proof JWT</text>
+    <rect x="920.5" y="551.5" width="131" height="46" fill="none" stroke="#46B1E1" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(946.41 579)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Public Key</text>
+    <rect x="921.5" y="453.5" width="131" height="47" fill="none" stroke="#E10098" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(942.31 482)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Thumbprint</text>
+    <rect x="736.5" y="453.5" width="131" height="47" fill="none" stroke="#E97132" stroke-linejoin="round"
+        stroke-miterlimit="10" stroke-width="3" />
+    <text transform="translate(749.82 482)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="17.773" font-weight="400">Access Token</text>
+    <path d="m398 615.76v-41.265c0-0.276 0.224-0.5 0.5-0.5h333.13v1h-333.13l0.5-0.5v41.265zm332.3-45.265 8 4-8 4z"
+        fill="#808080" />
+    <text transform="translate(257.32 233)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">2.Send Request</text>
+    <rect x="597.5" y="463.5" width="96" height="131" fill="none" stroke="#808080" stroke-dasharray="1 3"
+        stroke-linejoin="round" stroke-miterlimit="10" />
+    <g fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="16" font-weight="400">
+        <text transform="translate(561.04 343)">5.Issue Access Token</text>
+        <text transform="translate(608.74 528)">7.FHIR API</text>
+        <text transform="translate(616.29 547)">Request</text>
+    </g>
+    <g fill="#808080">
+        <path transform="matrix(1,0,0,-1,552.5,476.57)"
+            d="m1.8983e-4 -0.5 177.22 0.067285v1l-177.22-0.067285zm175.89-3.4332 7.999 4.003-8.002 3.997z" />
+        <path d="m868.5 574h45.365v1h-45.365zm44.032-3.5 8 4-8 4z" />
+        <path transform="matrix(0,1,1,0,803.5,597.5)"
+            d="m6.6667-0.5h26.667c0.2762 0 0.5 0.22386 0.5 0.5v182.84c0 0.276-0.2238 0.5-0.5 0.5h-33.249v-1h33.249l-0.5 0.5v-182.84l0.5 0.5h-26.667zm1.3333 4.5-8-4 8-4z" />
+    </g>
+    <text transform="translate(869.36 665)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="16" font-weight="400">8.Verify</text>
+    <image transform="translate(830 160) scale(1)" href="/img/animate/iEHR-Securus-Big.svg" />
+    <image transform="translate(1085 500) scale(.47)" href="/img/animate/iEHR-Archiva-Big.svg" />
+    <image transform="translate(10 500) scale(.47)" href="/img/animate/iEHR-Medicus-Big.svg" />
+    <image transform="translate(1100 550) scale(.4)" href="/img/iEHR-FHIR.svg" />
+    <g fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="18.667" font-weight="400">
+        <text transform="translate(1100.6 456)">Resource Server</text>
+        <text transform="translate(1100.6 479)">e.g.</text>
+        <text transform="translate(28.089 456)">Client App</text>
+        <text transform="translate(28.089 479)">e.g.</text>
+    </g>
+</svg>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IE Core Drinking Status - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.201"}
+    h3,h4,h5,h6{--heading-prefix:"13.201"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IE Core Drinking Status</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-alcohol-drinking-status.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-alcohol-drinking-status.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-alcohol-drinking-status.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: IE Core Drinking Status
+
+  </h2>
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status|1.0.0-ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IECoreAlcoholDrinkingStatus</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:1.3.6.1.4.1.54392.5.2690.48.57
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright © 2022 iEHR.ai - All rights reserved. This content is licensed under a Creative Commons Attribution 4.0 International License. See https://creativecommons.org/licenses/by/4.0/.</p>
+
+<p>This resource includes SNOMED Clinical Terms™ (SNOMED CT®) which is used by permission of the International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of the IHTSDO.</p>
+
+<p>The rights to use and implement or implementation of SNOMED CT content are limited to the extent it is necessary to allow for the end use of this material.  No further rights are granted in respect of the International Release and no further use of any SNOMED CT content by any other party is permitted.</p>
+
+<p>All copies of this resource must include this copyright statement and all information contained in this statement.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>The Drinking Status value set includes values that may be used to represent an individual’s current behaviour of alcohol drinking.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-alcohol-drinking-status</b></p><a name="ie-core-alcohol-drinking-status"> </a><a name="hcie-core-alcohol-drinking-status"> </a><a name="ie-core-alcohol-drinking-status-en-US"> </a><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include these codes as defined in <a href="http://www.snomed.org"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/219006">219006</a></td><td>Current drinker</td></tr><tr><td><a href="http://snomed.info/id/105542008">105542008</a></td><td>Non - drinker</td></tr><tr><td><a href="http://snomed.info/id/82581004">82581004</a></td><td>Ex-drinker</td></tr><tr><td><a href="http://snomed.info/id/86933000">86933000</a></td><td>Heavy drinker</td></tr><tr><td><a href="http://snomed.info/id/228277002">228277002</a></td><td>Light drinker</td></tr><tr><td><a href="http://snomed.info/id/43783005">43783005</a></td><td>Moderate drinker</td></tr><tr><td><a href="http://snomed.info/id/28127009">28127009</a></td><td>Social drinker</td></tr></table></li>
+<li>Include codes from<a href="http://www.snomed.org"><code>http://snomed.info/sct</code></a> where concept  is-a 228273003 (Finding relating to alcohol drinking behavior)</li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on SNOMED CT United States edition 01-Mar 2025</p><p>This value set expansion contains 129 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-219006"> </a>  <a href="http://snomed.info/id/219006">219006</a></td><td>http://snomed.info/sct</td><td>Alcohol user</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105542008"> </a>  <a href="http://snomed.info/id/105542008">105542008</a></td><td>http://snomed.info/sct</td><td>Abstinent</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-82581004"> </a>  <a href="http://snomed.info/id/82581004">82581004</a></td><td>http://snomed.info/sct</td><td>Ex-drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-86933000"> </a>  <a href="http://snomed.info/id/86933000">86933000</a></td><td>http://snomed.info/sct</td><td>Heavy drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228277002"> </a>  <a href="http://snomed.info/id/228277002">228277002</a></td><td>http://snomed.info/sct</td><td>Light drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-43783005"> </a>  <a href="http://snomed.info/id/43783005">43783005</a></td><td>http://snomed.info/sct</td><td>Moderate drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-28127009"> </a>  <a href="http://snomed.info/id/28127009">28127009</a></td><td>http://snomed.info/sct</td><td>Social drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228273003"> </a>  <a href="http://snomed.info/id/228273003">228273003</a></td><td>http://snomed.info/sct</td><td>Finding relating to alcohol drinking behavior</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-32553006"> </a>  <a href="http://snomed.info/id/32553006">32553006</a></td><td>http://snomed.info/sct</td><td>Hangover</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105543003"> </a>  <a href="http://snomed.info/id/105543003">105543003</a></td><td>http://snomed.info/sct</td><td>Non-drinker for personal reasons</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105544009"> </a>  <a href="http://snomed.info/id/105544009">105544009</a></td><td>http://snomed.info/sct</td><td>Non-drinker for religious reasons</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-105545005"> </a>  <a href="http://snomed.info/id/105545005">105545005</a></td><td>http://snomed.info/sct</td><td>Non-drinker for medical reasons</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160575005"> </a>  <a href="http://snomed.info/id/160575005">160575005</a></td><td>http://snomed.info/sct</td><td>Light drinker - 1-2u/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160576006"> </a>  <a href="http://snomed.info/id/160576006">160576006</a></td><td>http://snomed.info/sct</td><td>Moderate drinker - 3-6u/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160577002"> </a>  <a href="http://snomed.info/id/160577002">160577002</a></td><td>http://snomed.info/sct</td><td>Heavy drinker - 7-9u/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160578007"> </a>  <a href="http://snomed.info/id/160578007">160578007</a></td><td>http://snomed.info/sct</td><td>Very heavy drinker - greater than 9 units/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160579004"> </a>  <a href="http://snomed.info/id/160579004">160579004</a></td><td>http://snomed.info/sct</td><td>Stopped drinking alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160582009"> </a>  <a href="http://snomed.info/id/160582009">160582009</a></td><td>http://snomed.info/sct</td><td>Ex-trivial drinker - less than 1 unit/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160583004"> </a>  <a href="http://snomed.info/id/160583004">160583004</a></td><td>http://snomed.info/sct</td><td>Ex-light drinker - (1-2u/day)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160584005"> </a>  <a href="http://snomed.info/id/160584005">160584005</a></td><td>http://snomed.info/sct</td><td>Ex-moderate drinker - (3-6u/d)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160585006"> </a>  <a href="http://snomed.info/id/160585006">160585006</a></td><td>http://snomed.info/sct</td><td>Ex-heavy drinker - (7-9u/day)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160587003"> </a>  <a href="http://snomed.info/id/160587003">160587003</a></td><td>http://snomed.info/sct</td><td>Ex-very heavy drinker-(&gt;9u/d)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160588008"> </a>  <a href="http://snomed.info/id/160588008">160588008</a></td><td>http://snomed.info/sct</td><td>Spirit drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160589000"> </a>  <a href="http://snomed.info/id/160589000">160589000</a></td><td>http://snomed.info/sct</td><td>Beer drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160590009"> </a>  <a href="http://snomed.info/id/160590009">160590009</a></td><td>http://snomed.info/sct</td><td>Drinks beer and spirits</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-160591008"> </a>  <a href="http://snomed.info/id/160591008">160591008</a></td><td>http://snomed.info/sct</td><td>Drinks wine</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228276006"> </a>  <a href="http://snomed.info/id/228276006">228276006</a></td><td>http://snomed.info/sct</td><td>Occasional drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228278007"> </a>  <a href="http://snomed.info/id/228278007">228278007</a></td><td>http://snomed.info/sct</td><td>Fairly heavy drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228279004"> </a>  <a href="http://snomed.info/id/228279004">228279004</a></td><td>http://snomed.info/sct</td><td>Very heavy drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228280001"> </a>  <a href="http://snomed.info/id/228280001">228280001</a></td><td>http://snomed.info/sct</td><td>Hidden drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228281002"> </a>  <a href="http://snomed.info/id/228281002">228281002</a></td><td>http://snomed.info/sct</td><td>Alcoholic</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228285006"> </a>  <a href="http://snomed.info/id/228285006">228285006</a></td><td>http://snomed.info/sct</td><td>Drinks at home</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228286007"> </a>  <a href="http://snomed.info/id/228286007">228286007</a></td><td>http://snomed.info/sct</td><td>Drinks at other people's homes</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228287003"> </a>  <a href="http://snomed.info/id/228287003">228287003</a></td><td>http://snomed.info/sct</td><td>Drinks in public places</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228288008"> </a>  <a href="http://snomed.info/id/228288008">228288008</a></td><td>http://snomed.info/sct</td><td>Park drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228289000"> </a>  <a href="http://snomed.info/id/228289000">228289000</a></td><td>http://snomed.info/sct</td><td>Street drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228290009"> </a>  <a href="http://snomed.info/id/228290009">228290009</a></td><td>http://snomed.info/sct</td><td>Drinks at work</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228291008"> </a>  <a href="http://snomed.info/id/228291008">228291008</a></td><td>http://snomed.info/sct</td><td>Drinks in licensed premises</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228292001"> </a>  <a href="http://snomed.info/id/228292001">228292001</a></td><td>http://snomed.info/sct</td><td>Drinks in public houses</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228293006"> </a>  <a href="http://snomed.info/id/228293006">228293006</a></td><td>http://snomed.info/sct</td><td>Drinks at restaurants</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228294000"> </a>  <a href="http://snomed.info/id/228294000">228294000</a></td><td>http://snomed.info/sct</td><td>Drinks at hotels</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228295004"> </a>  <a href="http://snomed.info/id/228295004">228295004</a></td><td>http://snomed.info/sct</td><td>Drinks at night clubs</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228297007"> </a>  <a href="http://snomed.info/id/228297007">228297007</a></td><td>http://snomed.info/sct</td><td>Drinks alone</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228298002"> </a>  <a href="http://snomed.info/id/228298002">228298002</a></td><td>http://snomed.info/sct</td><td>Drinks in company</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228299005"> </a>  <a href="http://snomed.info/id/228299005">228299005</a></td><td>http://snomed.info/sct</td><td>Drinks with family</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228300002"> </a>  <a href="http://snomed.info/id/228300002">228300002</a></td><td>http://snomed.info/sct</td><td>Drinks with spouse</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228301003"> </a>  <a href="http://snomed.info/id/228301003">228301003</a></td><td>http://snomed.info/sct</td><td>Drinks with children</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228302005"> </a>  <a href="http://snomed.info/id/228302005">228302005</a></td><td>http://snomed.info/sct</td><td>Drinks with friends</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228303000"> </a>  <a href="http://snomed.info/id/228303000">228303000</a></td><td>http://snomed.info/sct</td><td>Drinks with work colleagues</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228304006"> </a>  <a href="http://snomed.info/id/228304006">228304006</a></td><td>http://snomed.info/sct</td><td>Drinks with business associates</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228305007"> </a>  <a href="http://snomed.info/id/228305007">228305007</a></td><td>http://snomed.info/sct</td><td>Drinks with acquaintances</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228306008"> </a>  <a href="http://snomed.info/id/228306008">228306008</a></td><td>http://snomed.info/sct</td><td>Drinks with strangers</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228310006"> </a>  <a href="http://snomed.info/id/228310006">228310006</a></td><td>http://snomed.info/sct</td><td>Drinks in morning to get rid of hangover</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228312003"> </a>  <a href="http://snomed.info/id/228312003">228312003</a></td><td>http://snomed.info/sct</td><td>Drinks alcohol evenly through week</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228313008"> </a>  <a href="http://snomed.info/id/228313008">228313008</a></td><td>http://snomed.info/sct</td><td>Drinks alcohol unevenly through week</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228314002"> </a>  <a href="http://snomed.info/id/228314002">228314002</a></td><td>http://snomed.info/sct</td><td>Weekend drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228315001"> </a>  <a href="http://snomed.info/id/228315001">228315001</a></td><td>http://snomed.info/sct</td><td>Binge drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228316000"> </a>  <a href="http://snomed.info/id/228316000">228316000</a></td><td>http://snomed.info/sct</td><td>Alcoholic binges exceeding sensible amounts</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228317009"> </a>  <a href="http://snomed.info/id/228317009">228317009</a></td><td>http://snomed.info/sct</td><td>Alcoholic binges exceeding safe amounts</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228319007"> </a>  <a href="http://snomed.info/id/228319007">228319007</a></td><td>http://snomed.info/sct</td><td>Daily drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228320001"> </a>  <a href="http://snomed.info/id/228320001">228320001</a></td><td>http://snomed.info/sct</td><td>Habitual drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228321002"> </a>  <a href="http://snomed.info/id/228321002">228321002</a></td><td>http://snomed.info/sct</td><td>Drinks on empty stomach</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228322009"> </a>  <a href="http://snomed.info/id/228322009">228322009</a></td><td>http://snomed.info/sct</td><td>Drinking episode</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228323004"> </a>  <a href="http://snomed.info/id/228323004">228323004</a></td><td>http://snomed.info/sct</td><td>Drinking bout</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228324005"> </a>  <a href="http://snomed.info/id/228324005">228324005</a></td><td>http://snomed.info/sct</td><td>Drinking session</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228325006"> </a>  <a href="http://snomed.info/id/228325006">228325006</a></td><td>http://snomed.info/sct</td><td>Heavy drinking session</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228326007"> </a>  <a href="http://snomed.info/id/228326007">228326007</a></td><td>http://snomed.info/sct</td><td>Drinking binge</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228327003"> </a>  <a href="http://snomed.info/id/228327003">228327003</a></td><td>http://snomed.info/sct</td><td>Drinking day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228332002"> </a>  <a href="http://snomed.info/id/228332002">228332002</a></td><td>http://snomed.info/sct</td><td>Salience of drink-related activities</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228334001"> </a>  <a href="http://snomed.info/id/228334001">228334001</a></td><td>http://snomed.info/sct</td><td>Priority given to drink-related activities</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228335000"> </a>  <a href="http://snomed.info/id/228335000">228335000</a></td><td>http://snomed.info/sct</td><td>Drinking takes priority over social obligations</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228336004"> </a>  <a href="http://snomed.info/id/228336004">228336004</a></td><td>http://snomed.info/sct</td><td>Drinking takes priority over family obligations</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228337008"> </a>  <a href="http://snomed.info/id/228337008">228337008</a></td><td>http://snomed.info/sct</td><td>Drinking takes priority over financial obligations</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228339006"> </a>  <a href="http://snomed.info/id/228339006">228339006</a></td><td>http://snomed.info/sct</td><td>Able to control drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228340008"> </a>  <a href="http://snomed.info/id/228340008">228340008</a></td><td>http://snomed.info/sct</td><td>Unable to control drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228341007"> </a>  <a href="http://snomed.info/id/228341007">228341007</a></td><td>http://snomed.info/sct</td><td>Unable to abstain from drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228342000"> </a>  <a href="http://snomed.info/id/228342000">228342000</a></td><td>http://snomed.info/sct</td><td>Unable to control drinking once started</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228343005"> </a>  <a href="http://snomed.info/id/228343005">228343005</a></td><td>http://snomed.info/sct</td><td>Unable to control spontaneous drinking bouts</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228344004"> </a>  <a href="http://snomed.info/id/228344004">228344004</a></td><td>http://snomed.info/sct</td><td>Unable to stop drinking before intoxication</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228346002"> </a>  <a href="http://snomed.info/id/228346002">228346002</a></td><td>http://snomed.info/sct</td><td>Has no stratagem to control drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228347006"> </a>  <a href="http://snomed.info/id/228347006">228347006</a></td><td>http://snomed.info/sct</td><td>Uses stratagems to control drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228348001"> </a>  <a href="http://snomed.info/id/228348001">228348001</a></td><td>http://snomed.info/sct</td><td>Makes rules about drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228350009"> </a>  <a href="http://snomed.info/id/228350009">228350009</a></td><td>http://snomed.info/sct</td><td>Behavioural tolerance to alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228351008"> </a>  <a href="http://snomed.info/id/228351008">228351008</a></td><td>http://snomed.info/sct</td><td>Physical tolerance to alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228352001"> </a>  <a href="http://snomed.info/id/228352001">228352001</a></td><td>http://snomed.info/sct</td><td>Psychological tolerance to alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228353006"> </a>  <a href="http://snomed.info/id/228353006">228353006</a></td><td>http://snomed.info/sct</td><td>Reverse tolerance to alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228354000"> </a>  <a href="http://snomed.info/id/228354000">228354000</a></td><td>http://snomed.info/sct</td><td>Drink driving</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228355004"> </a>  <a href="http://snomed.info/id/228355004">228355004</a></td><td>http://snomed.info/sct</td><td>Charged with drink driving offence</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228356003"> </a>  <a href="http://snomed.info/id/228356003">228356003</a></td><td>http://snomed.info/sct</td><td>Convicted of drunk driving</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228357007"> </a>  <a href="http://snomed.info/id/228357007">228357007</a></td><td>http://snomed.info/sct</td><td>Persistent effect of alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228358002"> </a>  <a href="http://snomed.info/id/228358002">228358002</a></td><td>http://snomed.info/sct</td><td>Feels effect of alcohol at work</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228359005"> </a>  <a href="http://snomed.info/id/228359005">228359005</a></td><td>http://snomed.info/sct</td><td>Difficulty getting up after drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228361001"> </a>  <a href="http://snomed.info/id/228361001">228361001</a></td><td>http://snomed.info/sct</td><td>Ashamed of drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228362008"> </a>  <a href="http://snomed.info/id/228362008">228362008</a></td><td>http://snomed.info/sct</td><td>Feels should cut down drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228363003"> </a>  <a href="http://snomed.info/id/228363003">228363003</a></td><td>http://snomed.info/sct</td><td>Feels drinking is out of control</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228364009"> </a>  <a href="http://snomed.info/id/228364009">228364009</a></td><td>http://snomed.info/sct</td><td>Feels afraid of being an alcoholic</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-228365005"> </a>  <a href="http://snomed.info/id/228365005">228365005</a></td><td>http://snomed.info/sct</td><td>Craving for alcohol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-266917007"> </a>  <a href="http://snomed.info/id/266917007">266917007</a></td><td>http://snomed.info/sct</td><td>Trivial drinker - &lt;1u/day</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-286857004"> </a>  <a href="http://snomed.info/id/286857004">286857004</a></td><td>http://snomed.info/sct</td><td>Ex-problem drinker</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-289151002"> </a>  <a href="http://snomed.info/id/289151002">289151002</a></td><td>http://snomed.info/sct</td><td>Finding of drinking pattern</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-289152009"> </a>  <a href="http://snomed.info/id/289152009">289152009</a></td><td>http://snomed.info/sct</td><td>Finding of frequency of drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-300939009"> </a>  <a href="http://snomed.info/id/300939009">300939009</a></td><td>http://snomed.info/sct</td><td>Abstinent alcoholic</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365968000"> </a>  <a href="http://snomed.info/id/365968000">365968000</a></td><td>http://snomed.info/sct</td><td>Drinking habits - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365969008"> </a>  <a href="http://snomed.info/id/365969008">365969008</a></td><td>http://snomed.info/sct</td><td>Drinking environment - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365970009"> </a>  <a href="http://snomed.info/id/365970009">365970009</a></td><td>http://snomed.info/sct</td><td>Company when drinking - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365972001"> </a>  <a href="http://snomed.info/id/365972001">365972001</a></td><td>http://snomed.info/sct</td><td>Pattern of drinking through day - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365973006"> </a>  <a href="http://snomed.info/id/365973006">365973006</a></td><td>http://snomed.info/sct</td><td>Pattern of alcohol consumption through week - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365975004"> </a>  <a href="http://snomed.info/id/365975004">365975004</a></td><td>http://snomed.info/sct</td><td>Finding related to ability to control drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365976003"> </a>  <a href="http://snomed.info/id/365976003">365976003</a></td><td>http://snomed.info/sct</td><td>Use of stratagems to control drinking - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365978002"> </a>  <a href="http://snomed.info/id/365978002">365978002</a></td><td>http://snomed.info/sct</td><td>Tolerance to alcohol - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-365979005"> </a>  <a href="http://snomed.info/id/365979005">365979005</a></td><td>http://snomed.info/sct</td><td>Attitude to drinking - finding</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-413968004"> </a>  <a href="http://snomed.info/id/413968004">413968004</a></td><td>http://snomed.info/sct</td><td>Denies alcohol abuse (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-427013000"> </a>  <a href="http://snomed.info/id/427013000">427013000</a></td><td>http://snomed.info/sct</td><td>Alcohol consumption during pregnancy (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-447087000"> </a>  <a href="http://snomed.info/id/447087000">447087000</a></td><td>http://snomed.info/sct</td><td>Drinks alcoholic cider (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-704197006"> </a>  <a href="http://snomed.info/id/704197006">704197006</a></td><td>http://snomed.info/sct</td><td>Admits alcohol use (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-704198001"> </a>  <a href="http://snomed.info/id/704198001">704198001</a></td><td>http://snomed.info/sct</td><td>Denies alcohol use</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-713989000"> </a>  <a href="http://snomed.info/id/713989000">713989000</a></td><td>http://snomed.info/sct</td><td>Able to abstain from drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-714413008"> </a>  <a href="http://snomed.info/id/714413008">714413008</a></td><td>http://snomed.info/sct</td><td>Difficulty abstaining from drinking</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-714423004"> </a>  <a href="http://snomed.info/id/714423004">714423004</a></td><td>http://snomed.info/sct</td><td>Does abstain from drinking (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-714857001"> </a>  <a href="http://snomed.info/id/714857001">714857001</a></td><td>http://snomed.info/sct</td><td>Does not abstain from drinking (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-783261004"> </a>  <a href="http://snomed.info/id/783261004">783261004</a></td><td>http://snomed.info/sct</td><td>Lifetime non-drinker of alcohol (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1234768002"> </a>  <a href="http://snomed.info/id/1234768002">1234768002</a></td><td>http://snomed.info/sct</td><td>Psychotic behaviour caused by ethanol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1234773008"> </a>  <a href="http://snomed.info/id/1234773008">1234773008</a></td><td>http://snomed.info/sct</td><td>Aggression caused by ethanol (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1234777009"> </a>  <a href="http://snomed.info/id/1234777009">1234777009</a></td><td>http://snomed.info/sct</td><td>Disinhibition caused by ethanol</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-1351240009"> </a>  <a href="http://snomed.info/id/1351240009">1351240009</a></td><td>http://snomed.info/sct</td><td>Alcohol drinking with meals</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-5581000175102"> </a>  <a href="http://snomed.info/id/5581000175102">5581000175102</a></td><td>http://snomed.info/sct</td><td>Mixes medication with alcohol (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-12481000175105"> </a>  <a href="http://snomed.info/id/12481000175105">12481000175105</a></td><td>http://snomed.info/sct</td><td>Has access to alcohol (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-568171000005100"> </a>  <a href="http://snomed.info/id/568171000005100">568171000005100</a></td><td>http://snomed.info/sct</td><td>Drinker of alcohol before confirmation of pregnancy (finding)</td></tr><tr><td style="white-space:nowrap"><a name="x-http://snomed.info/sct-10939881000119105"> </a>  <a href="http://snomed.info/id/10939881000119105">10939881000119105</a></td><td>http://snomed.info/sct</td><td>Unhealthy alcohol drinking behavior (finding)</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

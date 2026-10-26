@@ -1,0 +1,567 @@
+{
+  "package": "iehr.fhir.ie.core",
+  "version": "1.0.0-ballot",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "IE",
+  "extensions": [
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-authentication-time",
+      "title": "IE Core Authentication Time Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-direct",
+      "title": "IE Core Direct email Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ethnicity",
+      "title": "IE Core Ethnicity Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-extension-questionnaire-uri",
+      "title": "IE Core Extension Questionnaire URI",
+      "types": [
+        "uri"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-genderIdentity",
+      "title": "IE Core Gender Identity Extension",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-record-status",
+      "title": "IE Core IHI Record Status",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-status",
+      "title": "IE Core IHI Status",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-verified-date",
+      "title": "IE Core IHI Verification Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-interpreter-required",
+      "title": "IE Core Interpreter Required Extension",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication-adherence",
+      "title": "IE Core Medication Adherence Extension",
+      "types": [
+        "CodeableConcept",
+        "dateTime",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient-mother-maiden-name",
+      "title": "Patient Mother\u0027s Maiden Name",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/iecdi-requirement",
+      "title": "IE Core IECDI Requirement Extension",
+      "types": [
+        "boolean"
+      ]
+    }
+  ],
+  "profiles": {
+    "Observation": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-treatment-intervention-preference",
+        "title": "IE Core Treatment Intervention Preference Profile"
+      },
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-vital-signs",
+        "title": "IE Core Vital Signs Profile"
+      },
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/pediatric-bmi-for-age",
+        "title": "IE Core Pediatric BMI for Age Observation Profile"
+      },
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/pediatric-weight-for-height",
+        "title": "IE Core Pediatric Weight for Height Observation Profile"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-documentreference",
+        "title": "IE Core DocumentReference Profile"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-allergyintolerance",
+        "title": "IE Core AllergyIntolerance Profile"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-careplan",
+        "title": "IE Core CarePlan Profile"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-careteam",
+        "title": "IE Core CareTeam Profile"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-condition-encounter-diagnosis",
+        "title": "IE Core Condition Encounter Diagnosis Profile"
+      },
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-condition-problems-health-concerns",
+        "title": "IE Core Condition Problems and Health Concerns Profile"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-coverage",
+        "title": "IE Core Coverage Profile"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-diagnosticreport-lab",
+        "title": "IE Core DiagnosticReport Profile for Laboratory Results Reporting"
+      },
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-diagnosticreport-note",
+        "title": "IE Core DiagnosticReport Profile for Report and Note Exchange"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-encounter",
+        "title": "IE Core Encounter Profile"
+      }
+    ],
+    "Goal": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-goal",
+        "title": "IE Core Goal Profile"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-immunization",
+        "title": "IE Core Immunization Profile"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-implantable-device",
+        "title": "IE Core Implantable Device Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-location",
+        "title": "IE Core Location Profile"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication",
+        "title": "IE Core Medication Profile"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medicationdispense",
+        "title": "IE Core MedicationDispense Profile"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medicationrequest",
+        "title": "IE Core MedicationRequest Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization",
+        "title": "IE Core Organization Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient",
+        "title": "IE Core Patient Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitioner",
+        "title": "IE Core Practitioner Profile"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitionerrole",
+        "title": "IE Core PractitionerRole Profile"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-procedure",
+        "title": "IE Core Procedure Profile"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-provenance",
+        "title": "IE Core Provenance Profile"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-questionnaireresponse",
+        "title": "IE Core QuestionnaireResponse Profile"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-relatedperson",
+        "title": "IE Core RelatedPerson Profile"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-servicerequest",
+        "title": "IE Core ServiceRequest Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-specimen",
+        "title": "IE Core Specimen Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.format",
+      "CapabilityStatement.implementationGuide",
+      "CapabilityStatement.patchFormat",
+      "CapabilityStatement.rest.interaction",
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.operation",
+      "CapabilityStatement.rest.resource.referencePolicy",
+      "CapabilityStatement.rest.resource.searchInclude",
+      "CapabilityStatement.rest.resource.searchParam",
+      "CapabilityStatement.rest.resource.searchRevInclude",
+      "CapabilityStatement.rest.resource.supportedProfile",
+      "SearchParameter.chain",
+      "SearchParameter.comparator",
+      "SearchParameter.multipleAnd",
+      "SearchParameter.multipleOr"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
+      "CapabilityStatement.rest.resource"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/codesystem-replacedby": [
+      "CodeSystem.concept"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
+      "StructureDefinition.snapshot.element.type.targetProfile"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/individual-pronouns": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "AllergyIntolerance.meta",
+      "Bundle.meta",
+      "CarePlan.meta",
+      "CareTeam.meta",
+      "Condition.meta",
+      "Coverage.meta",
+      "Device.meta",
+      "DiagnosticReport.meta",
+      "DocumentReference.meta",
+      "Encounter.meta",
+      "Goal.meta",
+      "Immunization.meta",
+      "Location.meta",
+      "Media.meta",
+      "Medication.meta",
+      "MedicationDispense.meta",
+      "MedicationRequest.meta",
+      "Observation.meta",
+      "Organization.meta",
+      "Patient.meta",
+      "Practitioner.meta",
+      "Procedure.meta",
+      "Provenance.meta",
+      "Questionnaire.meta",
+      "QuestionnaireResponse.meta",
+      "RelatedPerson.meta",
+      "ServiceRequest.meta",
+      "Specimen.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "AllergyIntolerance.meta",
+      "Bundle.meta",
+      "CarePlan.meta",
+      "CareTeam.meta",
+      "Condition.meta",
+      "Coverage.meta",
+      "Device.meta",
+      "DiagnosticReport.meta",
+      "DocumentReference.meta",
+      "Encounter.meta",
+      "Goal.meta",
+      "Immunization.meta",
+      "Location.meta",
+      "Media.meta",
+      "Medication.meta",
+      "MedicationDispense.meta",
+      "MedicationRequest.meta",
+      "Observation.meta",
+      "Organization.meta",
+      "Patient.meta",
+      "Practitioner.meta",
+      "Procedure.meta",
+      "Provenance.meta",
+      "Questionnaire.meta",
+      "QuestionnaireResponse.meta",
+      "RelatedPerson.meta",
+      "ServiceRequest.meta",
+      "Specimen.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/ordinalValue": [
+      "Observation.valueCodeableConcept.coding",
+      "Questionnaire.item.answerOption",
+      "Questionnaire.item.item.item.answerOption"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
+      "Questionnaire.item",
+      "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix": [
+      "Questionnaire.item.answerOption",
+      "Questionnaire.item.item.item.answerOption"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "OperationDefinition",
+      "SearchParameter",
+      "StructureDefinition",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/targetElement": [
+      "Provenance.target"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page",
+      "ImplementationGuide.definition.page.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-authentication-time": [
+      "DocumentReference"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-direct": [
+      "Practitioner.telecom"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ethnicity": [
+      "Patient"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-extension-questionnaire-uri": [
+      "QuestionnaireResponse.questionnaire"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-genderIdentity": [
+      "Patient"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-record-status": [
+      "Identifier"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-status": [
+      "Identifier"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-verified-date": [
+      "Identifier"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-interpreter-required": [
+      "Encounter",
+      "Patient"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication-adherence": [
+      "MedicationRequest"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient-mother-maiden-name": [
+      "Patient"
+    ],
+    "http://iehr.ai/fhir/ie/core/StructureDefinition/iecdi-requirement": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ]
+  }
+}

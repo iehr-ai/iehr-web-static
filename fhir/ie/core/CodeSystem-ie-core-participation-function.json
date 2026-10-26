@@ -1,0 +1,262 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-participation-function",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-participation-function</b></p><a name=\"ie-core-participation-function\"> </a><a name=\"hcie-core-participation-function\"> </a><a name=\"ie-core-participation-function-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ADMPHYS<a name=\"ie-core-participation-function-ADMPHYS\"> </a></td><td>admitting physician</td></tr><tr><td style=\"white-space:nowrap\">ANEST<a name=\"ie-core-participation-function-ANEST\"> </a></td><td>anesthesist</td></tr><tr><td style=\"white-space:nowrap\">ANRS<a name=\"ie-core-participation-function-ANRS\"> </a></td><td>anesthesia nurse</td></tr><tr><td style=\"white-space:nowrap\">ASSEMBLER<a name=\"ie-core-participation-function-ASSEMBLER\"> </a></td><td>assembly software</td></tr><tr><td style=\"white-space:nowrap\">ATTPHYS<a name=\"ie-core-participation-function-ATTPHYS\"> </a></td><td>attending physician</td></tr><tr><td style=\"white-space:nowrap\">AUCG<a name=\"ie-core-participation-function-AUCG\"> </a></td><td>caregiver information receiver</td></tr><tr><td style=\"white-space:nowrap\">AUCOV<a name=\"ie-core-participation-function-AUCOV\"> </a></td><td>consent overrider</td></tr><tr><td style=\"white-space:nowrap\">AUEMROV<a name=\"ie-core-participation-function-AUEMROV\"> </a></td><td>emergency overrider</td></tr><tr><td style=\"white-space:nowrap\">AULR<a name=\"ie-core-participation-function-AULR\"> </a></td><td>legitimate relationship information receiver</td></tr><tr><td style=\"white-space:nowrap\">AUTM<a name=\"ie-core-participation-function-AUTM\"> </a></td><td>care team information receiver</td></tr><tr><td style=\"white-space:nowrap\">AUWA<a name=\"ie-core-participation-function-AUWA\"> </a></td><td>work area information receiver</td></tr><tr><td style=\"white-space:nowrap\">CLMADJ<a name=\"ie-core-participation-function-CLMADJ\"> </a></td><td>claims adjudication</td></tr><tr><td style=\"white-space:nowrap\">COMPOSER<a name=\"ie-core-participation-function-COMPOSER\"> </a></td><td>composer software</td></tr><tr><td style=\"white-space:nowrap\">DISPHYS<a name=\"ie-core-participation-function-DISPHYS\"> </a></td><td>discharging physician</td></tr><tr><td style=\"white-space:nowrap\">ENROLL<a name=\"ie-core-participation-function-ENROLL\"> </a></td><td>enrollment broker</td></tr><tr><td style=\"white-space:nowrap\">FASST<a name=\"ie-core-participation-function-FASST\"> </a></td><td>first assistant surgeon</td></tr><tr><td style=\"white-space:nowrap\">FFSMGT<a name=\"ie-core-participation-function-FFSMGT\"> </a></td><td>ffs management</td></tr><tr><td style=\"white-space:nowrap\">FULINRD<a name=\"ie-core-participation-function-FULINRD\"> </a></td><td>fully insured</td></tr><tr><td style=\"white-space:nowrap\">GRDCON<a name=\"ie-core-participation-function-GRDCON\"> </a></td><td>legal guardian consent author</td></tr><tr><td style=\"white-space:nowrap\">MCMGT<a name=\"ie-core-participation-function-MCMGT\"> </a></td><td>managed care management</td></tr><tr><td style=\"white-space:nowrap\">MDWF<a name=\"ie-core-participation-function-MDWF\"> </a></td><td>midwife</td></tr><tr><td style=\"white-space:nowrap\">NASST<a name=\"ie-core-participation-function-NASST\"> </a></td><td>nurse assistant</td></tr><tr><td style=\"white-space:nowrap\">PAYORCNTR<a name=\"ie-core-participation-function-PAYORCNTR\"> </a></td><td>payor contracting</td></tr><tr><td style=\"white-space:nowrap\">PCP<a name=\"ie-core-participation-function-PCP\"> </a></td><td>primary care physician</td></tr><tr><td style=\"white-space:nowrap\">POACON<a name=\"ie-core-participation-function-POACON\"> </a></td><td>healthcare power of attorney consent author</td></tr><tr><td style=\"white-space:nowrap\">PRCON<a name=\"ie-core-participation-function-PRCON\"> </a></td><td>personal representative consent author</td></tr><tr><td style=\"white-space:nowrap\">PRISURG<a name=\"ie-core-participation-function-PRISURG\"> </a></td><td>primary surgeon</td></tr><tr><td style=\"white-space:nowrap\">PROMSK<a name=\"ie-core-participation-function-PROMSK\"> </a></td><td>authorized provider masking author</td></tr><tr><td style=\"white-space:nowrap\">PROVMGT<a name=\"ie-core-participation-function-PROVMGT\"> </a></td><td>provider management</td></tr><tr><td style=\"white-space:nowrap\">REINS<a name=\"ie-core-participation-function-REINS\"> </a></td><td>reinsures</td></tr><tr><td style=\"white-space:nowrap\">RETROCES<a name=\"ie-core-participation-function-RETROCES\"> </a></td><td>retrocessionaires</td></tr><tr><td style=\"white-space:nowrap\">REVIEWER<a name=\"ie-core-participation-function-REVIEWER\"> </a></td><td>reviewer</td></tr><tr><td style=\"white-space:nowrap\">RNDPHYS<a name=\"ie-core-participation-function-RNDPHYS\"> </a></td><td>rounding physician</td></tr><tr><td style=\"white-space:nowrap\">SASST<a name=\"ie-core-participation-function-SASST\"> </a></td><td>second assistant surgeon</td></tr><tr><td style=\"white-space:nowrap\">SELFINRD<a name=\"ie-core-participation-function-SELFINRD\"> </a></td><td>self insured</td></tr><tr><td style=\"white-space:nowrap\">SNRS<a name=\"ie-core-participation-function-SNRS\"> </a></td><td>scrub nurse</td></tr><tr><td style=\"white-space:nowrap\">SUBCON<a name=\"ie-core-participation-function-SUBCON\"> </a></td><td>subject of consent author</td></tr><tr><td style=\"white-space:nowrap\">SUBCTRT<a name=\"ie-core-participation-function-SUBCTRT\"> </a></td><td>subcontracting risk</td></tr><tr><td style=\"white-space:nowrap\">TASST<a name=\"ie-core-participation-function-TASST\"> </a></td><td>third assistant</td></tr><tr><td style=\"white-space:nowrap\">UMGT<a name=\"ie-core-participation-function-UMGT\"> </a></td><td>utilization management</td></tr><tr><td style=\"white-space:nowrap\">UNDERWRTNG<a name=\"ie-core-participation-function-UNDERWRTNG\"> </a></td><td>underwriting</td></tr><tr><td style=\"white-space:nowrap\">_AuthorizedParticipationFunction<a name=\"ie-core-participation-function-_AuthorizedParticipationFunction\"> </a></td><td>AuthorizedParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_AuthorizedReceiverParticipationFunction<a name=\"ie-core-participation-function-_AuthorizedReceiverParticipationFunction\"> </a></td><td>AuthorizedReceiverParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_ConsenterParticipationFunction<a name=\"ie-core-participation-function-_ConsenterParticipationFunction\"> </a></td><td>ConsenterParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_CoverageParticipationFunction<a name=\"ie-core-participation-function-_CoverageParticipationFunction\"> </a></td><td>CoverageParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_OverriderParticipationFunction<a name=\"ie-core-participation-function-_OverriderParticipationFunction\"> </a></td><td>OverriderParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_PayorParticipationFunction<a name=\"ie-core-participation-function-_PayorParticipationFunction\"> </a></td><td>PayorParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_SponsorParticipationFunction<a name=\"ie-core-participation-function-_SponsorParticipationFunction\"> </a></td><td>SponsorParticipationFunction</td></tr><tr><td style=\"white-space:nowrap\">_UnderwriterParticipationFunction<a name=\"ie-core-participation-function-_UnderwriterParticipationFunction\"> </a></td><td>UnderwriterParticipationFunction</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.15"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreParticipationFunction",
+  "title" : "IE Core Participation Function",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "Set of codes that are needed for implementation of the IE Core Participation Function",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 49,
+  "concept" : [{
+    "code" : "ADMPHYS",
+    "display" : "admitting physician"
+  },
+  {
+    "code" : "ANEST",
+    "display" : "anesthesist"
+  },
+  {
+    "code" : "ANRS",
+    "display" : "anesthesia nurse"
+  },
+  {
+    "code" : "ASSEMBLER",
+    "display" : "assembly software"
+  },
+  {
+    "code" : "ATTPHYS",
+    "display" : "attending physician"
+  },
+  {
+    "code" : "AUCG",
+    "display" : "caregiver information receiver"
+  },
+  {
+    "code" : "AUCOV",
+    "display" : "consent overrider"
+  },
+  {
+    "code" : "AUEMROV",
+    "display" : "emergency overrider"
+  },
+  {
+    "code" : "AULR",
+    "display" : "legitimate relationship information receiver"
+  },
+  {
+    "code" : "AUTM",
+    "display" : "care team information receiver"
+  },
+  {
+    "code" : "AUWA",
+    "display" : "work area information receiver"
+  },
+  {
+    "code" : "CLMADJ",
+    "display" : "claims adjudication"
+  },
+  {
+    "code" : "COMPOSER",
+    "display" : "composer software"
+  },
+  {
+    "code" : "DISPHYS",
+    "display" : "discharging physician"
+  },
+  {
+    "code" : "ENROLL",
+    "display" : "enrollment broker"
+  },
+  {
+    "code" : "FASST",
+    "display" : "first assistant surgeon"
+  },
+  {
+    "code" : "FFSMGT",
+    "display" : "ffs management"
+  },
+  {
+    "code" : "FULINRD",
+    "display" : "fully insured"
+  },
+  {
+    "code" : "GRDCON",
+    "display" : "legal guardian consent author"
+  },
+  {
+    "code" : "MCMGT",
+    "display" : "managed care management"
+  },
+  {
+    "code" : "MDWF",
+    "display" : "midwife"
+  },
+  {
+    "code" : "NASST",
+    "display" : "nurse assistant"
+  },
+  {
+    "code" : "PAYORCNTR",
+    "display" : "payor contracting"
+  },
+  {
+    "code" : "PCP",
+    "display" : "primary care physician"
+  },
+  {
+    "code" : "POACON",
+    "display" : "healthcare power of attorney consent author"
+  },
+  {
+    "code" : "PRCON",
+    "display" : "personal representative consent author"
+  },
+  {
+    "code" : "PRISURG",
+    "display" : "primary surgeon"
+  },
+  {
+    "code" : "PROMSK",
+    "display" : "authorized provider masking author"
+  },
+  {
+    "code" : "PROVMGT",
+    "display" : "provider management"
+  },
+  {
+    "code" : "REINS",
+    "display" : "reinsures"
+  },
+  {
+    "code" : "RETROCES",
+    "display" : "retrocessionaires"
+  },
+  {
+    "code" : "REVIEWER",
+    "display" : "reviewer"
+  },
+  {
+    "code" : "RNDPHYS",
+    "display" : "rounding physician"
+  },
+  {
+    "code" : "SASST",
+    "display" : "second assistant surgeon"
+  },
+  {
+    "code" : "SELFINRD",
+    "display" : "self insured"
+  },
+  {
+    "code" : "SNRS",
+    "display" : "scrub nurse"
+  },
+  {
+    "code" : "SUBCON",
+    "display" : "subject of consent author"
+  },
+  {
+    "code" : "SUBCTRT",
+    "display" : "subcontracting risk"
+  },
+  {
+    "code" : "TASST",
+    "display" : "third assistant"
+  },
+  {
+    "code" : "UMGT",
+    "display" : "utilization management"
+  },
+  {
+    "code" : "UNDERWRTNG",
+    "display" : "underwriting"
+  },
+  {
+    "code" : "_AuthorizedParticipationFunction",
+    "display" : "AuthorizedParticipationFunction"
+  },
+  {
+    "code" : "_AuthorizedReceiverParticipationFunction",
+    "display" : "AuthorizedReceiverParticipationFunction"
+  },
+  {
+    "code" : "_ConsenterParticipationFunction",
+    "display" : "ConsenterParticipationFunction"
+  },
+  {
+    "code" : "_CoverageParticipationFunction",
+    "display" : "CoverageParticipationFunction"
+  },
+  {
+    "code" : "_OverriderParticipationFunction",
+    "display" : "OverriderParticipationFunction"
+  },
+  {
+    "code" : "_PayorParticipationFunction",
+    "display" : "PayorParticipationFunction"
+  },
+  {
+    "code" : "_SponsorParticipationFunction",
+    "display" : "SponsorParticipationFunction"
+  },
+  {
+    "code" : "_UnderwriterParticipationFunction",
+    "display" : "UnderwriterParticipationFunction"
+  }]
+}

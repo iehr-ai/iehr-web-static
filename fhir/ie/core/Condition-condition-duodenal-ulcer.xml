@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-duodenal-ulcer"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Condition Duodenal Ulcer Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This example of a IE Core Condition Problems and Health Concerns Profile illustrates its use to capture information about a patient's active duodenal ulcer with a category of 'problem-list-item'."/>
+    </extension>
+    <lastUpdated value="2016-08-10T07:15:07-08:00"/>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-condition-problems-health-concerns"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Condition condition-duodenal-ulcer</b></p><a name="condition-duodenal-ulcer"> </a><a name="hccondition-duodenal-ulcer"> </a><a name="condition-duodenal-ulcer-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2016-08-10 07:15:07-0800</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a></p></div><p><b>Condition Asserted Date</b>: 2016-08-10</p><p><b>clinicalStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}">Confirmed</span></p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}">Problem List Item</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 51868009}">Active Duodenal Ulcer</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Shaw</a></p><p><b>recordedDate</b>: 2016-08-10 07:15:07-0800</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
+    <valueDateTime value="2016-08-10"/>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+    <text value="Active"/>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+    <text value="Confirmed"/>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+      <display value="Problem List Item"/>
+    </coding>
+    <text value="Problem List Item"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108"/>
+      <code value="51868009"/>
+      <display value="Ulcer of duodenum (disorder)"/>
+    </coding>
+    <text value="Active Duodenal Ulcer"/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+    <display value="Amy V. Shaw"/>
+  </subject>
+  <recordedDate value="2016-08-10T07:15:07-08:00"/>
+</Condition>

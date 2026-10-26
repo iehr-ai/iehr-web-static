@@ -1,0 +1,311 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-advance-directives-content-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-advance-directives-content-type</b></p><a name=\"ie-core-advance-directives-content-type\"> </a><a name=\"hcie-core-advance-directives-content-type\"> </a><a name=\"ie-core-advance-directives-content-type-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/100821-8/\">100821-8</a></td><td>National POLST form: portable medical order panel</td></tr><tr><td><a href=\"https://loinc.org/104144-1/\">104144-1</a></td><td>Mental health Advance directives</td></tr><tr><td><a href=\"https://loinc.org/42348-3/\">42348-3</a></td><td>Advance directives</td></tr><tr><td><a href=\"https://loinc.org/64298-3/\">64298-3</a></td><td>Power of attorney</td></tr><tr><td><a href=\"https://loinc.org/75773-2/\">75773-2</a></td><td>Goals, preferences, and priorities for medical treatment [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75775-7/\">75775-7</a></td><td>Decision to inform doctors and nurses about the role religion, faith, culture, or spirituality play in my life [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75776-5/\">75776-5</a></td><td>Preference on consulting a supportive and palliative care team to help treat physical, emotional, and spiritual discomfort and support family [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75777-3/\">75777-3</a></td><td>Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75778-1/\">75778-1</a></td><td>Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75779-9/\">75779-9</a></td><td>Thoughts on cardiopulmonary resuscitation (CPR) [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75780-7/\">75780-7</a></td><td>Preferred location to spend final days if possible to choose [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75781-5/\">75781-5</a></td><td>Thoughts on organ and tissue donations [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75782-3/\">75782-3</a></td><td>Thoughts regarding autopsy [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75783-1/\">75783-1</a></td><td>Primary healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75784-9/\">75784-9</a></td><td>First alternate healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75785-6/\">75785-6</a></td><td>Second alternate healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75786-4/\">75786-4</a></td><td>Powers granted to healthcare agent [Reported]</td></tr><tr><td><a href=\"https://loinc.org/75787-2/\">75787-2</a></td><td>Advance directive - request for intubation</td></tr><tr><td><a href=\"https://loinc.org/75788-0/\">75788-0</a></td><td>Advance directive - request for tube feeding</td></tr><tr><td><a href=\"https://loinc.org/75789-8/\">75789-8</a></td><td>Advance directive - request for life support</td></tr><tr><td><a href=\"https://loinc.org/75790-6/\">75790-6</a></td><td>Advance directive - request for IV fluid and support</td></tr><tr><td><a href=\"https://loinc.org/75791-4/\">75791-4</a></td><td>Advance directive - request for antibiotics</td></tr><tr><td><a href=\"https://loinc.org/75792-2/\">75792-2</a></td><td>Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation</td></tr><tr><td><a href=\"https://loinc.org/75793-0/\">75793-0</a></td><td>Other directives that have not otherwise been documented [Reported]</td></tr><tr><td><a href=\"https://loinc.org/77352-3/\">77352-3</a></td><td>Thoughts on artificial nutrition and hydration [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81329-5/\">81329-5</a></td><td>Thoughts on resuscitation [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81330-3/\">81330-3</a></td><td>Thoughts on intubation [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81331-1/\">81331-1</a></td><td>Thoughts on tube feeding [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81332-9/\">81332-9</a></td><td>Thoughts on IV fluid and support [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81333-7/\">81333-7</a></td><td>Thoughts on antibiotics [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81334-5/\">81334-5</a></td><td>Patient Personal advance care plan</td></tr><tr><td><a href=\"https://loinc.org/81335-2/\">81335-2</a></td><td>Patient Healthcare agent</td></tr><tr><td><a href=\"https://loinc.org/81340-2/\">81340-2</a></td><td>Goals AndOr preferences in order of priority [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81343-6/\">81343-6</a></td><td>Healthcare agent advisor [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81349-3/\">81349-3</a></td><td>Thoughts on life-sustaining procedures if pregnant [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81350-1/\">81350-1</a></td><td>Thoughts on pain management [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81353-5/\">81353-5</a></td><td>Thoughts on hastening death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81356-8/\">81356-8</a></td><td>Death arrangements [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81357-6/\">81357-6</a></td><td>Messages to be delivered after death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81358-4/\">81358-4</a></td><td>Person(s) to notify upon death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81359-2/\">81359-2</a></td><td>Near death thoughts and feelings to be shared [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81360-0/\">81360-0</a></td><td>My likes and joys [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81361-8/\">81361-8</a></td><td>Things that make me laugh [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81362-6/\">81362-6</a></td><td>My dislikes and fears [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81363-4/\">81363-4</a></td><td>Things that matter to me [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81364-2/\">81364-2</a></td><td>Religious or cultural beliefs [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81365-9/\">81365-9</a></td><td>Religious or cultural affiliation contact to notify [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81366-7/\">81366-7</a></td><td>Unfinished business [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81376-6/\">81376-6</a></td><td>Mental health treatment preferences [Reported]</td></tr><tr><td><a href=\"https://loinc.org/81379-0/\">81379-0</a></td><td>Goals, preferences, and priorities upon death [Reported]</td></tr><tr><td><a href=\"https://loinc.org/84095-9/\">84095-9</a></td><td>Do not resuscitate</td></tr><tr><td><a href=\"https://loinc.org/86533-7/\">86533-7</a></td><td>Patient Living will</td></tr><tr><td><a href=\"https://loinc.org/92664-2/\">92664-2</a></td><td>Power of attorney and Living will</td></tr><tr><td><a href=\"https://loinc.org/93037-0/\">93037-0</a></td><td>Portable medical order form</td></tr><tr><td><a href=\"https://loinc.org/95541-9/\">95541-9</a></td><td>Care experience preference</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/103735009\">103735009</a></td><td>Palliative care (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/108259003\">108259003</a></td><td>Autopsy pathology procedure AND/OR service (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/225365006\">225365006</a></td><td>Care regime (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/229912004\">229912004</a></td><td>Enteral feeding (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/25156005\">25156005</a></td><td>Intravenous feeding of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/271298009\">271298009</a></td><td>Organ retrieval operation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/281789004\">281789004</a></td><td>Antibiotic therapy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/281800008\">281800008</a></td><td>Intravenous fluid replacement (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363259005\">363259005</a></td><td>Patient management procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/385741000\">385741000</a></td><td>Management of funeral arrangements (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/385763009\">385763009</a></td><td>Hospice care (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/386367000\">386367000</a></td><td>Mutual goal setting (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/405083000\">405083000</a></td><td>Healthcare decision making (observable entity)</td></tr><tr><td><a href=\"http://snomed.info/id/52765003\">52765003</a></td><td>Intubation (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/61420007\">61420007</a></td><td>Tube feeding of patient (regime/therapy)</td></tr><tr><td><a href=\"http://snomed.info/id/71388002\">71388002</a></td><td>Procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/78823007\">78823007</a></td><td>Life support procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/89666000\">89666000</a></td><td>Cardiopulmonary resuscitation (procedure)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.48.35" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreAdvanceDirectivesContentType"] ; # 
+  fhir:title [ fhir:v "IE Core Advance Directives Content Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of SNOMED CT and LOINC concepts to classify Advance Directives Content"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "100821-8" ] ;
+         fhir:display [ fhir:v "National POLST form: portable medical order panel" ]
+       ] [
+         fhir:code [ fhir:v "104144-1" ] ;
+         fhir:display [ fhir:v "Mental health Advance directives" ]
+       ] [
+         fhir:code [ fhir:v "42348-3" ] ;
+         fhir:display [ fhir:v "Advance directives" ]
+       ] [
+         fhir:code [ fhir:v "64298-3" ] ;
+         fhir:display [ fhir:v "Power of attorney" ]
+       ] [
+         fhir:code [ fhir:v "75773-2" ] ;
+         fhir:display [ fhir:v "Goals, preferences, and priorities for medical treatment [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75775-7" ] ;
+         fhir:display [ fhir:v "Decision to inform doctors and nurses about the role religion, faith, culture, or spirituality play in my life [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75776-5" ] ;
+         fhir:display [ fhir:v "Preference on consulting a supportive and palliative care team to help treat physical, emotional, and spiritual discomfort and support family [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75777-3" ] ;
+         fhir:display [ fhir:v "Information to tell doctors if my health deteriorates due to a terminal illness and I am unable to interact meaningfully with family, friends, or surroundings [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75778-1" ] ;
+         fhir:display [ fhir:v "Information to tell doctors if I have a severe, irreversible brain injury or illness and can't dress, feed, or bathe myself, or communicate my medical wishes, but can be kept alive [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75779-9" ] ;
+         fhir:display [ fhir:v "Thoughts on cardiopulmonary resuscitation (CPR) [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75780-7" ] ;
+         fhir:display [ fhir:v "Preferred location to spend final days if possible to choose [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75781-5" ] ;
+         fhir:display [ fhir:v "Thoughts on organ and tissue donations [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75782-3" ] ;
+         fhir:display [ fhir:v "Thoughts regarding autopsy [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75783-1" ] ;
+         fhir:display [ fhir:v "Primary healthcare agent [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75784-9" ] ;
+         fhir:display [ fhir:v "First alternate healthcare agent [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75785-6" ] ;
+         fhir:display [ fhir:v "Second alternate healthcare agent [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75786-4" ] ;
+         fhir:display [ fhir:v "Powers granted to healthcare agent [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "75787-2" ] ;
+         fhir:display [ fhir:v "Advance directive - request for intubation" ]
+       ] [
+         fhir:code [ fhir:v "75788-0" ] ;
+         fhir:display [ fhir:v "Advance directive - request for tube feeding" ]
+       ] [
+         fhir:code [ fhir:v "75789-8" ] ;
+         fhir:display [ fhir:v "Advance directive - request for life support" ]
+       ] [
+         fhir:code [ fhir:v "75790-6" ] ;
+         fhir:display [ fhir:v "Advance directive - request for IV fluid and support" ]
+       ] [
+         fhir:code [ fhir:v "75791-4" ] ;
+         fhir:display [ fhir:v "Advance directive - request for antibiotics" ]
+       ] [
+         fhir:code [ fhir:v "75792-2" ] ;
+         fhir:display [ fhir:v "Advance directive - request for resuscitation that differs from cardiopulmonary resuscitation" ]
+       ] [
+         fhir:code [ fhir:v "75793-0" ] ;
+         fhir:display [ fhir:v "Other directives that have not otherwise been documented [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "77352-3" ] ;
+         fhir:display [ fhir:v "Thoughts on artificial nutrition and hydration [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81329-5" ] ;
+         fhir:display [ fhir:v "Thoughts on resuscitation [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81330-3" ] ;
+         fhir:display [ fhir:v "Thoughts on intubation [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81331-1" ] ;
+         fhir:display [ fhir:v "Thoughts on tube feeding [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81332-9" ] ;
+         fhir:display [ fhir:v "Thoughts on IV fluid and support [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81333-7" ] ;
+         fhir:display [ fhir:v "Thoughts on antibiotics [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81334-5" ] ;
+         fhir:display [ fhir:v "Patient Personal advance care plan" ]
+       ] [
+         fhir:code [ fhir:v "81335-2" ] ;
+         fhir:display [ fhir:v "Patient Healthcare agent" ]
+       ] [
+         fhir:code [ fhir:v "81340-2" ] ;
+         fhir:display [ fhir:v "Goals AndOr preferences in order of priority [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81343-6" ] ;
+         fhir:display [ fhir:v "Healthcare agent advisor [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81349-3" ] ;
+         fhir:display [ fhir:v "Thoughts on life-sustaining procedures if pregnant [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81350-1" ] ;
+         fhir:display [ fhir:v "Thoughts on pain management [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81353-5" ] ;
+         fhir:display [ fhir:v "Thoughts on hastening death [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81356-8" ] ;
+         fhir:display [ fhir:v "Death arrangements [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81357-6" ] ;
+         fhir:display [ fhir:v "Messages to be delivered after death [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81358-4" ] ;
+         fhir:display [ fhir:v "Person(s) to notify upon death [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81359-2" ] ;
+         fhir:display [ fhir:v "Near death thoughts and feelings to be shared [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81360-0" ] ;
+         fhir:display [ fhir:v "My likes and joys [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81361-8" ] ;
+         fhir:display [ fhir:v "Things that make me laugh [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81362-6" ] ;
+         fhir:display [ fhir:v "My dislikes and fears [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81363-4" ] ;
+         fhir:display [ fhir:v "Things that matter to me [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81364-2" ] ;
+         fhir:display [ fhir:v "Religious or cultural beliefs [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81365-9" ] ;
+         fhir:display [ fhir:v "Religious or cultural affiliation contact to notify [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81366-7" ] ;
+         fhir:display [ fhir:v "Unfinished business [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81376-6" ] ;
+         fhir:display [ fhir:v "Mental health treatment preferences [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "81379-0" ] ;
+         fhir:display [ fhir:v "Goals, preferences, and priorities upon death [Reported]" ]
+       ] [
+         fhir:code [ fhir:v "84095-9" ] ;
+         fhir:display [ fhir:v "Do not resuscitate" ]
+       ] [
+         fhir:code [ fhir:v "86533-7" ] ;
+         fhir:display [ fhir:v "Patient Living will" ]
+       ] [
+         fhir:code [ fhir:v "92664-2" ] ;
+         fhir:display [ fhir:v "Power of attorney and Living will" ]
+       ] [
+         fhir:code [ fhir:v "93037-0" ] ;
+         fhir:display [ fhir:v "Portable medical order form" ]
+       ] [
+         fhir:code [ fhir:v "95541-9" ] ;
+         fhir:display [ fhir:v "Care experience preference" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "103735009" ] ;
+         fhir:display [ fhir:v "Palliative care (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "108259003" ] ;
+         fhir:display [ fhir:v "Autopsy pathology procedure AND/OR service (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "225365006" ] ;
+         fhir:display [ fhir:v "Care regime (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "229912004" ] ;
+         fhir:display [ fhir:v "Enteral feeding (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "25156005" ] ;
+         fhir:display [ fhir:v "Intravenous feeding of patient (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "271298009" ] ;
+         fhir:display [ fhir:v "Organ retrieval operation (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "281789004" ] ;
+         fhir:display [ fhir:v "Antibiotic therapy (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "281800008" ] ;
+         fhir:display [ fhir:v "Intravenous fluid replacement (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "363259005" ] ;
+         fhir:display [ fhir:v "Patient management procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "385741000" ] ;
+         fhir:display [ fhir:v "Management of funeral arrangements (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "385763009" ] ;
+         fhir:display [ fhir:v "Hospice care (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "386367000" ] ;
+         fhir:display [ fhir:v "Mutual goal setting (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "405083000" ] ;
+         fhir:display [ fhir:v "Healthcare decision making (observable entity)" ]
+       ] [
+         fhir:code [ fhir:v "52765003" ] ;
+         fhir:display [ fhir:v "Intubation (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "61420007" ] ;
+         fhir:display [ fhir:v "Tube feeding of patient (regime/therapy)" ]
+       ] [
+         fhir:code [ fhir:v "71388002" ] ;
+         fhir:display [ fhir:v "Procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "78823007" ] ;
+         fhir:display [ fhir:v "Life support procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "89666000" ] ;
+         fhir:display [ fhir:v "Cardiopulmonary resuscitation (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

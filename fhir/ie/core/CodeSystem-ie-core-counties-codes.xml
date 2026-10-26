@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ie-core-counties-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ie-core-counties-codes</b></p><a name="ie-core-counties-codes"> </a><a name="hcie-core-counties-codes"> </a><a name="ie-core-counties-codes-en-US"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">CW<a name="ie-core-counties-codes-CW"> </a></td><td>Carlow</td><td>Carlow</td></tr><tr><td style="white-space:nowrap">CN<a name="ie-core-counties-codes-CN"> </a></td><td>Cavan</td><td>Cavan</td></tr><tr><td style="white-space:nowrap">CE<a name="ie-core-counties-codes-CE"> </a></td><td>Clare</td><td>Clare</td></tr><tr><td style="white-space:nowrap">CO<a name="ie-core-counties-codes-CO"> </a></td><td>Cork</td><td>Cork</td></tr><tr><td style="white-space:nowrap">DL<a name="ie-core-counties-codes-DL"> </a></td><td>Donegal</td><td>Donegal</td></tr><tr><td style="white-space:nowrap">D<a name="ie-core-counties-codes-D"> </a></td><td>Dublin</td><td>Dublin</td></tr><tr><td style="white-space:nowrap">G<a name="ie-core-counties-codes-G"> </a></td><td>Galway</td><td>Galway</td></tr><tr><td style="white-space:nowrap">KY<a name="ie-core-counties-codes-KY"> </a></td><td>Kerry</td><td>Kerry</td></tr><tr><td style="white-space:nowrap">KE<a name="ie-core-counties-codes-KE"> </a></td><td>Kildare</td><td>Kildare</td></tr><tr><td style="white-space:nowrap">KK<a name="ie-core-counties-codes-KK"> </a></td><td>Kilkenny</td><td>Kilkenny</td></tr><tr><td style="white-space:nowrap">LS<a name="ie-core-counties-codes-LS"> </a></td><td>Laois</td><td>Laois</td></tr><tr><td style="white-space:nowrap">LM<a name="ie-core-counties-codes-LM"> </a></td><td>Leitrim</td><td>Leitrim</td></tr><tr><td style="white-space:nowrap">LK<a name="ie-core-counties-codes-LK"> </a></td><td>Limerick</td><td>Limerick</td></tr><tr><td style="white-space:nowrap">LD<a name="ie-core-counties-codes-LD"> </a></td><td>Longford</td><td>Longford</td></tr><tr><td style="white-space:nowrap">LH<a name="ie-core-counties-codes-LH"> </a></td><td>Louth</td><td>Louth</td></tr><tr><td style="white-space:nowrap">MO<a name="ie-core-counties-codes-MO"> </a></td><td>Mayo</td><td>Mayo</td></tr><tr><td style="white-space:nowrap">MH<a name="ie-core-counties-codes-MH"> </a></td><td>Meath</td><td>Meath</td></tr><tr><td style="white-space:nowrap">MN<a name="ie-core-counties-codes-MN"> </a></td><td>Monaghan</td><td>Monaghan</td></tr><tr><td style="white-space:nowrap">OY<a name="ie-core-counties-codes-OY"> </a></td><td>Offaly</td><td>Offaly</td></tr><tr><td style="white-space:nowrap">RN<a name="ie-core-counties-codes-RN"> </a></td><td>Roscommon</td><td>Roscommon</td></tr><tr><td style="white-space:nowrap">SO<a name="ie-core-counties-codes-SO"> </a></td><td>Sligo</td><td>Sligo</td></tr><tr><td style="white-space:nowrap">TA<a name="ie-core-counties-codes-TA"> </a></td><td>Tipperary</td><td>Tipperary</td></tr><tr><td style="white-space:nowrap">WD<a name="ie-core-counties-codes-WD"> </a></td><td>Waterford</td><td>Waterford</td></tr><tr><td style="white-space:nowrap">WH<a name="ie-core-counties-codes-WH"> </a></td><td>Westmeath</td><td>Westmeath</td></tr><tr><td style="white-space:nowrap">WX<a name="ie-core-counties-codes-WX"> </a></td><td>Wexford</td><td>Wexford</td></tr><tr><td style="white-space:nowrap">WW<a name="ie-core-counties-codes-WW"> </a></td><td>Wicklow</td><td>Wicklow</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cgp"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.3.6.1.4.1.54392.5.2690.16.6"/>
+  </identifier>
+  <version value="1.0.0-ballot"/>
+  <name value="IECoreCountiesCodes"/>
+  <title value="Irish Counties"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-13T21:38:29-04:00"/>
+  <publisher value="iEHR.ai"/>
+  <contact>
+    <name value="iEHR.ai"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.iehr.ai"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@iehr.ai"/>
+    </telecom>
+  </contact>
+  <description value="The Irish Counties code system defines concepts that represent the Irish Counties."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="iEHR.ai, all rights reserved Creative Commons License"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="26"/>
+  <concept>
+    <code value="CW"/>
+    <display value="Carlow"/>
+    <definition value="Carlow"/>
+  </concept>
+  <concept>
+    <code value="CN"/>
+    <display value="Cavan"/>
+    <definition value="Cavan"/>
+  </concept>
+  <concept>
+    <code value="CE"/>
+    <display value="Clare"/>
+    <definition value="Clare"/>
+  </concept>
+  <concept>
+    <code value="CO"/>
+    <display value="Cork"/>
+    <definition value="Cork"/>
+  </concept>
+  <concept>
+    <code value="DL"/>
+    <display value="Donegal"/>
+    <definition value="Donegal"/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Dublin"/>
+    <definition value="Dublin"/>
+  </concept>
+  <concept>
+    <code value="G"/>
+    <display value="Galway"/>
+    <definition value="Galway"/>
+  </concept>
+  <concept>
+    <code value="KY"/>
+    <display value="Kerry"/>
+    <definition value="Kerry"/>
+  </concept>
+  <concept>
+    <code value="KE"/>
+    <display value="Kildare"/>
+    <definition value="Kildare"/>
+  </concept>
+  <concept>
+    <code value="KK"/>
+    <display value="Kilkenny"/>
+    <definition value="Kilkenny"/>
+  </concept>
+  <concept>
+    <code value="LS"/>
+    <display value="Laois"/>
+    <definition value="Laois"/>
+  </concept>
+  <concept>
+    <code value="LM"/>
+    <display value="Leitrim"/>
+    <definition value="Leitrim"/>
+  </concept>
+  <concept>
+    <code value="LK"/>
+    <display value="Limerick"/>
+    <definition value="Limerick"/>
+  </concept>
+  <concept>
+    <code value="LD"/>
+    <display value="Longford"/>
+    <definition value="Longford"/>
+  </concept>
+  <concept>
+    <code value="LH"/>
+    <display value="Louth"/>
+    <definition value="Louth"/>
+  </concept>
+  <concept>
+    <code value="MO"/>
+    <display value="Mayo"/>
+    <definition value="Mayo"/>
+  </concept>
+  <concept>
+    <code value="MH"/>
+    <display value="Meath"/>
+    <definition value="Meath"/>
+  </concept>
+  <concept>
+    <code value="MN"/>
+    <display value="Monaghan"/>
+    <definition value="Monaghan"/>
+  </concept>
+  <concept>
+    <code value="OY"/>
+    <display value="Offaly"/>
+    <definition value="Offaly"/>
+  </concept>
+  <concept>
+    <code value="RN"/>
+    <display value="Roscommon"/>
+    <definition value="Roscommon"/>
+  </concept>
+  <concept>
+    <code value="SO"/>
+    <display value="Sligo"/>
+    <definition value="Sligo"/>
+  </concept>
+  <concept>
+    <code value="TA"/>
+    <display value="Tipperary"/>
+    <definition value="Tipperary"/>
+  </concept>
+  <concept>
+    <code value="WD"/>
+    <display value="Waterford"/>
+    <definition value="Waterford"/>
+  </concept>
+  <concept>
+    <code value="WH"/>
+    <display value="Westmeath"/>
+    <definition value="Westmeath"/>
+  </concept>
+  <concept>
+    <code value="WX"/>
+    <display value="Wexford"/>
+    <definition value="Wexford"/>
+  </concept>
+  <concept>
+    <code value="WW"/>
+    <display value="Wicklow"/>
+    <definition value="Wicklow"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-v2-0203"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-v2-0203</b></p><a name=\"ie-core-v2-0203\"> </a><a name=\"hcie-core-v2-0203\"> </a><a name=\"ie-core-v2-0203-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">IMC<a name=\"ie-core-v2-0203-IMC\"> </a></td><td>Irish Health Practitioner Regulation Agency Registration Number</td><td>An Irish Medical Council (Imc) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession.</td></tr><tr><td style=\"white-space:nowrap\">EIRCODE<a name=\"ie-core-v2-0203-EIRCODE\"> </a></td><td>Eircode</td><td>Department of the Environment, Climate and Communications Eircode associated with a place.</td></tr><tr><td style=\"white-space:nowrap\">CRN<a name=\"ie-core-v2-0203-CRN\"> </a></td><td>Company Registration Number</td><td>Company Registration Number (CRN) assigned by Companies Registration Office Ireland (CRO) to a registered company.</td></tr><tr><td style=\"white-space:nowrap\">HPI<a name=\"ie-core-v2-0203-HPI\"> </a></td><td>Health Service Provider Identifier</td><td>Health Service Provider Identifier (HPI) assigned by HSE.</td></tr><tr><td style=\"white-space:nowrap\">GMS<a name=\"ie-core-v2-0203-GMS\"> </a></td><td>General Medical Service</td><td>Medical Card/GP Visit Cards - General Medical Service (GMS) in an Irish context.</td></tr><tr><td style=\"white-space:nowrap\">DPS<a name=\"ie-core-v2-0203-DPS\"> </a></td><td>Drugs Payment Scheme</td><td>Drugs Payment Scheme (DPS) in an Irish context.</td></tr><tr><td style=\"white-space:nowrap\">HAA<a name=\"ie-core-v2-0203-HAA\"> </a></td><td>Health Amendment Act</td><td>Health Amendment Act (HAA) in an Irish context.</td></tr><tr><td style=\"white-space:nowrap\">LTI<a name=\"ie-core-v2-0203-LTI\"> </a></td><td>Long Term Illness</td><td>Long Term Illness (LTI) in an Irish context.</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.16.16" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreIdentifierType"] ; # 
+  fhir:title [ fhir:v "IE Core IdentifierType IE"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Additional concept codes for identifier type defined for use in an Irish context. These are additional identifier type codes to the HL7 International code set and suitable for use with Irish identifiers and may be used in HL7 V2.x identifier representations."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:compositional [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "IMC" ] ;
+     fhir:display [ fhir:v "Irish Health Practitioner Regulation Agency Registration Number" ] ;
+     fhir:definition [ fhir:v "An Irish Medical Council (Imc) registration number assigned to a practitioner for each profession in which they are registered. Practitioners registered in more than one profession have one registration number for each profession." ]
+  ] [
+     fhir:code [ fhir:v "EIRCODE" ] ;
+     fhir:display [ fhir:v "Eircode" ] ;
+     fhir:definition [ fhir:v "Department of the Environment, Climate and Communications Eircode associated with a place." ]
+  ] [
+     fhir:code [ fhir:v "CRN" ] ;
+     fhir:display [ fhir:v "Company Registration Number" ] ;
+     fhir:definition [ fhir:v "Company Registration Number (CRN) assigned by Companies Registration Office Ireland (CRO) to a registered company." ]
+  ] [
+     fhir:code [ fhir:v "HPI" ] ;
+     fhir:display [ fhir:v "Health Service Provider Identifier" ] ;
+     fhir:definition [ fhir:v "Health Service Provider Identifier (HPI) assigned by HSE." ]
+  ] [
+     fhir:code [ fhir:v "GMS" ] ;
+     fhir:display [ fhir:v "General Medical Service" ] ;
+     fhir:definition [ fhir:v "Medical Card/GP Visit Cards - General Medical Service (GMS) in an Irish context." ]
+  ] [
+     fhir:code [ fhir:v "DPS" ] ;
+     fhir:display [ fhir:v "Drugs Payment Scheme" ] ;
+     fhir:definition [ fhir:v "Drugs Payment Scheme (DPS) in an Irish context." ]
+  ] [
+     fhir:code [ fhir:v "HAA" ] ;
+     fhir:display [ fhir:v "Health Amendment Act" ] ;
+     fhir:definition [ fhir:v "Health Amendment Act (HAA) in an Irish context." ]
+  ] [
+     fhir:code [ fhir:v "LTI" ] ;
+     fhir:display [ fhir:v "Long Term Illness" ] ;
+     fhir:definition [ fhir:v "Long Term Illness (LTI) in an Irish context." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

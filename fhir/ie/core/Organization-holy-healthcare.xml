@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="holy-healthcare"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Organization Holy Healthcare Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example managing organization using the *IE Core Organization Profile*."/>
+    </extension>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization holy-healthcare</b></p><a name="holy-healthcare"> </a><a name="hcholy-healthcare"> </a><a name="holy-healthcare-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-organization.html">IE Core Organization Profile</a></p></div><p><b>identifier</b>: <code>http://iehr.ai/fhir/sid/ie/crn</code>/1234567893</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type prov}">Provider</span></p><p><b>name</b>: Holy Healthcare</p><p><b>telecom</b>: ph: (+353) 1 234 5678, <a href="mailto:hq@holyhealthcare.org">hq@holyhealthcare.org</a></p><p><b>address</b>: 100 MANAGING ORGANIZATION AVE Amherst Dublin D18 CV48 IE </p></div>
+  </text>
+  <identifier>
+    <system value="http://iehr.ai/fhir/sid/ie/crn"/>
+    <value value="1234567893"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="prov"/>
+    </coding>
+    <text value="Provider"/>
+  </type>
+  <name value="Holy Healthcare"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(+353) 1 234 5678"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="hq@holyhealthcare.org"/>
+  </telecom>
+  <address>
+    <line value="100 MANAGING ORGANIZATION AVE"/>
+    <city value="Amherst"/>
+    <state value="Dublin"/>
+    <postalCode value="D18 CV48"/>
+    <country value="IE"/>
+  </address>
+</Organization>

@@ -1,0 +1,2440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ie-core-care-team-member-function"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-care-team-member-function</b></p><a name="ie-core-care-team-member-function"> </a><a name="hcie-core-care-team-member-function"> </a><a name="ie-core-care-team-member-function-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/1012901000168106">1012901000168106</a></td><td>Gynecologic oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1032781000168105">1032781000168105</a></td><td>Kinesiology practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106289002">106289002</a></td><td>Dentist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106292003">106292003</a></td><td>Professional nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106293008">106293008</a></td><td>Nursing personnel (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106294002">106294002</a></td><td>Midwifery personnel (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106310008">106310008</a></td><td>Worker in religion (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106311007">106311007</a></td><td>Minister of religion/related member of religious order (occupation)</td></tr><tr><td><a href="http://snomed.info/id/106330007">106330007</a></td><td>Philologist, translator/interpreter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/11015003">11015003</a></td><td>Minister of religion (occupation)</td></tr><tr><td><a href="http://snomed.info/id/116154003">116154003</a></td><td>Patient (person)</td></tr><tr><td><a href="http://snomed.info/id/11661002">11661002</a></td><td>Neuropathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1172950003">1172950003</a></td><td>Massage therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1186716007">1186716007</a></td><td>Intellectual disability psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1186914001">1186914001</a></td><td>Intellectual disability nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/11911009">11911009</a></td><td>Nephrologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/119246008">119246008</a></td><td>Imam (occupation)</td></tr><tr><td><a href="http://snomed.info/id/11935004">11935004</a></td><td>Obstetrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1251537007">1251537007</a></td><td>Sport medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1251542004">1251542004</a></td><td>Medical coder (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1251548000">1251548000</a></td><td>Neuroradiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1254982001">1254982001</a></td><td>Medical surgical nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1254983006">1254983006</a></td><td>Chronic care nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1254984000">1254984000</a></td><td>Rehabilitation nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255370008">1255370008</a></td><td>Specialist in naturopathy (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255371007">1255371007</a></td><td>Specialist in homeopathy (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255372000">1255372000</a></td><td>Phytotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255373005">1255373005</a></td><td>Specialist in traditional Chinese medicine (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255374004">1255374004</a></td><td>Clinical nutritionist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255514008">1255514008</a></td><td>Regulatory affairs pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255515009">1255515009</a></td><td>Pharmacogenomics pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255517001">1255517001</a></td><td>Intern in healthcare (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255518006">1255518006</a></td><td>Organizational and social psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255519003">1255519003</a></td><td>Cardiopulmonary technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1255719001">1255719001</a></td><td>Neurophysiology technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1256114007">1256114007</a></td><td>Nuclear medicine technologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1259214004">1259214004</a></td><td>Immunohemotherapy specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1259964002">1259964002</a></td><td>Oral medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1268923002">1268923002</a></td><td>Obstetric nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1271000175101">1271000175101</a></td><td>Primary obstetrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1276561000168102">1276561000168102</a></td><td>Prosthetist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1276571000168108">1276571000168108</a></td><td>Orthotist and prosthetist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1287116005">1287116005</a></td><td>Chaperone (person)</td></tr><tr><td><a href="http://snomed.info/id/1287641002">1287641002</a></td><td>Oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1290289004">1290289004</a></td><td>Fellow physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1304201007">1304201007</a></td><td>Neurological physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1304209009">1304209009</a></td><td>Cardiorespiratory physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1304210004">1304210004</a></td><td>Musculoskeletal physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/133932002">133932002</a></td><td>Caregiver (person)</td></tr><tr><td><a href="http://snomed.info/id/13580004">13580004</a></td><td>School dental assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/1421009">1421009</a></td><td>Specialized surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/14613005">14613005</a></td><td>Ordained rabbi (occupation)</td></tr><tr><td><a href="http://snomed.info/id/14698002">14698002</a></td><td>Medical microbiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158939004">158939004</a></td><td>Child care officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158942005">158942005</a></td><td>Residential child care worker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158943000">158943000</a></td><td>Residential youth care worker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158965000">158965000</a></td><td>Medical practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158966004">158966004</a></td><td>Medical administrator - national (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158967008">158967008</a></td><td>Consultant physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158968003">158968003</a></td><td>Consultant surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158969006">158969006</a></td><td>Consultant gynecology/obstetrics (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158971006">158971006</a></td><td>Hospital registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158972004">158972004</a></td><td>House officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158973009">158973009</a></td><td>Occupational physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158974003">158974003</a></td><td>Clinical medical officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158975002">158975002</a></td><td>Medical practitioner - teaching (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158977005">158977005</a></td><td>Dental administrator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158978000">158978000</a></td><td>Dental consultant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158979008">158979008</a></td><td>Dental general practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158980006">158980006</a></td><td>Dental practitioner - teaching (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158983008">158983008</a></td><td>Nurse administrator - national (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158984002">158984002</a></td><td>Nursing officer - region (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158985001">158985001</a></td><td>Nursing officer - district (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158986000">158986000</a></td><td>Nursing administrator - professional body (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158987009">158987009</a></td><td>Nursing officer - division (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158988004">158988004</a></td><td>Nurse education director (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158989007">158989007</a></td><td>Occupational health nursing officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158990003">158990003</a></td><td>Nursing officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158992006">158992006</a></td><td>Midwifery sister (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158993001">158993001</a></td><td>Nursing sister (theater) (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158994007">158994007</a></td><td>Staff nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158995008">158995008</a></td><td>Staff midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158996009">158996009</a></td><td>State enrolled nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158997000">158997000</a></td><td>District nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158998005">158998005</a></td><td>Private nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/158999002">158999002</a></td><td>Community midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159001001">159001001</a></td><td>Clinic nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159002008">159002008</a></td><td>Practice nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159003003">159003003</a></td><td>School nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159004009">159004009</a></td><td>Nurse teacher (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159005005">159005005</a></td><td>Student nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159006006">159006006</a></td><td>Dental nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159007002">159007002</a></td><td>Community pediatric nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159010009">159010009</a></td><td>Hospital pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159011008">159011008</a></td><td>Retail pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159012001">159012001</a></td><td>Industrial pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159014000">159014000</a></td><td>Trainee pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159016003">159016003</a></td><td>Medical radiographer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159017007">159017007</a></td><td>Diagnostic radiographer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159018002">159018002</a></td><td>Therapeutic radiographer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159019005">159019005</a></td><td>Trainee radiographer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159021000">159021000</a></td><td>Ophthalmic optician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159022007">159022007</a></td><td>Trainee optician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159025009">159025009</a></td><td>Remedial gymnast (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159026005">159026005</a></td><td>Speech/language therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159027001">159027001</a></td><td>Orthoptist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159028006">159028006</a></td><td>Trainee remedial therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159033005">159033005</a></td><td>Dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159034004">159034004</a></td><td>Podiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159035003">159035003</a></td><td>Dental auxiliary (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159036002">159036002</a></td><td>Electrocardiogram technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159037006">159037006</a></td><td>Electroencephalogram technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159038001">159038001</a></td><td>Artificial limb fitter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159039009">159039009</a></td><td>Audiology technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159040006">159040006</a></td><td>Pharmacy technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159041005">159041005</a></td><td>Trainee medical technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159141008">159141008</a></td><td>Geneticist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159148002">159148002</a></td><td>Research chemist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159174008">159174008</a></td><td>Civil engineer - research (occupation)</td></tr><tr><td><a href="http://snomed.info/id/159972006">159972006</a></td><td>Surgical corset fitter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/160008000">160008000</a></td><td>Dental technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/17561000">17561000</a></td><td>Cardiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/184152007">184152007</a></td><td>Care assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/184154008">184154008</a></td><td>Care manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/18803008">18803008</a></td><td>Dermatologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/18850004">18850004</a></td><td>Laboratory hematologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/19244007">19244007</a></td><td>Gerodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/20145008">20145008</a></td><td>Removable prosthodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/21365001">21365001</a></td><td>Specialized dentist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/21450003">21450003</a></td><td>Neuropsychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224529009">224529009</a></td><td>Clinical assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224530004">224530004</a></td><td>Senior registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224531000">224531000</a></td><td>Registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224532007">224532007</a></td><td>Senior house officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224533002">224533002</a></td><td>Medical officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224534008">224534008</a></td><td>Health visitor, nurse/midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224535009">224535009</a></td><td>Registered nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224536005">224536005</a></td><td>Midwifery tutor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224537001">224537001</a></td><td>Accident and Emergency nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224538006">224538006</a></td><td>Triage nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224540001">224540001</a></td><td>Community nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224541002">224541002</a></td><td>Nursing continence advisor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224542009">224542009</a></td><td>Coronary care nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224543004">224543004</a></td><td>Diabetic nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224544005">224544005</a></td><td>Family planning nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224545006">224545006</a></td><td>Care of the elderly nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224546007">224546007</a></td><td>Infection control nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224547003">224547003</a></td><td>Intensive therapy nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224548008">224548008</a></td><td>Learning disabilities nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224549000">224549000</a></td><td>Neonatal nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224550000">224550000</a></td><td>Neurology nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224551001">224551001</a></td><td>Industrial nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224552008">224552008</a></td><td>Oncology nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224554009">224554009</a></td><td>Marie Curie nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224555005">224555005</a></td><td>Pain control nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224556006">224556006</a></td><td>Palliative care nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224557002">224557002</a></td><td>Chemotherapy nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224558007">224558007</a></td><td>Radiotherapy nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224559004">224559004</a></td><td>Recovery nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224560009">224560009</a></td><td>Stoma care nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224562001">224562001</a></td><td>Pediatric nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224563006">224563006</a></td><td>Mental health nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224564000">224564000</a></td><td>Community mental health nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224565004">224565004</a></td><td>Renal nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224566003">224566003</a></td><td>Hemodialysis nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224567007">224567007</a></td><td>Tissue viability nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224569005">224569005</a></td><td>Nurse grade (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224570006">224570006</a></td><td>Clinical nurse specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224571005">224571005</a></td><td>Nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224572003">224572003</a></td><td>Nursing sister (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224573008">224573008</a></td><td>Charge nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224574002">224574002</a></td><td>Ward manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224575001">224575001</a></td><td>Nursing team leader (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224576000">224576000</a></td><td>Nursing assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224577009">224577009</a></td><td>Healthcare assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224578004">224578004</a></td><td>Nursery nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224579007">224579007</a></td><td>Healthcare service manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224580005">224580005</a></td><td>Occupational health service manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224581009">224581009</a></td><td>Community nurse manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224583007">224583007</a></td><td>Behavior therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224584001">224584001</a></td><td>Behavior therapy assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224585000">224585000</a></td><td>Drama therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224586004">224586004</a></td><td>Domiciliary occupational therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224587008">224587008</a></td><td>Occupational therapy helper (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224588003">224588003</a></td><td>Psychotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224589006">224589006</a></td><td>Community-based physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224590002">224590002</a></td><td>Play therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224591003">224591003</a></td><td>Play specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224592005">224592005</a></td><td>Play leader (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224593000">224593000</a></td><td>Community-based speech/language therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224594006">224594006</a></td><td>Speech/language assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224595007">224595007</a></td><td>Professional counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224596008">224596008</a></td><td>Marriage guidance counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224597004">224597004</a></td><td>Trained nurse counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224598009">224598009</a></td><td>Trained social worker counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224599001">224599001</a></td><td>Trained personnel counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224600003">224600003</a></td><td>Psychoanalyst (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224601004">224601004</a></td><td>Assistant psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224602006">224602006</a></td><td>Community-based podiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224603001">224603001</a></td><td>Foot care worker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224604007">224604007</a></td><td>Audiometrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224606009">224606009</a></td><td>Technical healthcare occupation (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224607000">224607000</a></td><td>Occupational therapy technical instructor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224608005">224608005</a></td><td>Administrative healthcare staff (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224609002">224609002</a></td><td>Complementary health worker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224610007">224610007</a></td><td>Supporting services personnel (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224614003">224614003</a></td><td>Research associate (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224615002">224615002</a></td><td>Research nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224620002">224620002</a></td><td>Human aid to communication (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224621003">224621003</a></td><td>Palantypist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224622005">224622005</a></td><td>Note taker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224623000">224623000</a></td><td>Cuer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224624006">224624006</a></td><td>Lipspeaker (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224625007">224625007</a></td><td>Interpreter for British sign language (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224626008">224626008</a></td><td>Interpreter for Signs supporting English (occupation)</td></tr><tr><td><a href="http://snomed.info/id/224936003">224936003</a></td><td>General practitioner locum (occupation)</td></tr><tr><td><a href="http://snomed.info/id/22515006">22515006</a></td><td>Medical assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/225725005">225725005</a></td><td>Chaplain (occupation)</td></tr><tr><td><a href="http://snomed.info/id/225726006">225726006</a></td><td>Lactation consultant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/225727002">225727002</a></td><td>Midwife counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/22731001">22731001</a></td><td>Orthopedic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/229774002">229774002</a></td><td>Caregiver (occupation)</td></tr><tr><td><a href="http://snomed.info/id/22983004">22983004</a></td><td>Thoracic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/23278007">23278007</a></td><td>Community health physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/24430003">24430003</a></td><td>Physical medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/24590004">24590004</a></td><td>Urologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/25941000087102">25941000087102</a></td><td>Adult gerontology primary care nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/25961008">25961008</a></td><td>Electroencephalography specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/26031000087100">26031000087100</a></td><td>Pediatric nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/26042002">26042002</a></td><td>Dental hygienist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/26071000087103">26071000087103</a></td><td>Primary health care nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/26091000087104">26091000087104</a></td><td>Public health nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/26369006">26369006</a></td><td>Public health nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/265937000">265937000</a></td><td>Nursing occupation (occupation)</td></tr><tr><td><a href="http://snomed.info/id/265939002">265939002</a></td><td>Medical/dental technicians (occupation)</td></tr><tr><td><a href="http://snomed.info/id/28229004">28229004</a></td><td>Optometrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/283875005">283875005</a></td><td>Parkinson's disease nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/28411006">28411006</a></td><td>Neonatologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/28544002">28544002</a></td><td>Medical biochemist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/302211009">302211009</a></td><td>Specialist registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/303124005">303124005</a></td><td>Member of mental health review tribunal (occupation)</td></tr><tr><td><a href="http://snomed.info/id/303129000">303129000</a></td><td>Hospital manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/303133007">303133007</a></td><td>Responsible medical officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/303134001">303134001</a></td><td>Independent doctor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/304291006">304291006</a></td><td>Bereavement counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/304292004">304292004</a></td><td>Surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/307988006">307988006</a></td><td>Medical technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/308002005">308002005</a></td><td>Remedial therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309294001">309294001</a></td><td>Emergency department physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309295000">309295000</a></td><td>Clinical oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309296004">309296004</a></td><td>Family planning doctor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309322005">309322005</a></td><td>Associate general practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309323000">309323000</a></td><td>Partner of general practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309324006">309324006</a></td><td>General practitioner assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309326008">309326008</a></td><td>Deputizing general practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309327004">309327004</a></td><td>General practitioner registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309328009">309328009</a></td><td>Ambulatory pediatrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309329001">309329001</a></td><td>Community pediatrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309330006">309330006</a></td><td>Pediatric cardiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309331005">309331005</a></td><td>Pediatric endocrinologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309332003">309332003</a></td><td>Pediatric gastroenterologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309333008">309333008</a></td><td>Pediatric nephrologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309334002">309334002</a></td><td>Pediatric neurologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309335001">309335001</a></td><td>Pediatric rheumatologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309336000">309336000</a></td><td>Pediatric oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309337009">309337009</a></td><td>Pain management specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309338004">309338004</a></td><td>Intensive care specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309339007">309339007</a></td><td>Adult intensive care specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309340009">309340009</a></td><td>Pediatric intensive care specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309341008">309341008</a></td><td>Blood transfusion doctor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309342001">309342001</a></td><td>Histopathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309343006">309343006</a></td><td>Physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309345004">309345004</a></td><td>Chest physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309346003">309346003</a></td><td>Thoracic physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309347007">309347007</a></td><td>Clinical hematologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309348002">309348002</a></td><td>Clinical neurophysiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309349005">309349005</a></td><td>Clinical physiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309350005">309350005</a></td><td>Diabetologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309351009">309351009</a></td><td>Andrologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309352002">309352002</a></td><td>Neuroendocrinologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309353007">309353007</a></td><td>Reproductive endocrinologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309354001">309354001</a></td><td>Thyroidologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309355000">309355000</a></td><td>Clinical geneticist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309356004">309356004</a></td><td>Clinical cytogeneticist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309357008">309357008</a></td><td>Clinical molecular geneticist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309358003">309358003</a></td><td>Genitourinary medicine physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309359006">309359006</a></td><td>Palliative care physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309360001">309360001</a></td><td>Rehabilitation physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309361002">309361002</a></td><td>Child and adolescent psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309362009">309362009</a></td><td>Forensic psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309363004">309363004</a></td><td>Liaison psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309364005">309364005</a></td><td>Psychogeriatrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309366007">309366007</a></td><td>Rehabilitation psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309367003">309367003</a></td><td>Obstetrician and gynecologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309368008">309368008</a></td><td>Breast surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309369000">309369000</a></td><td>Cardiothoracic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309371000">309371000</a></td><td>Cardiac surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309372007">309372007</a></td><td>Ear, nose and throat surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309373002">309373002</a></td><td>Endocrine surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309374008">309374008</a></td><td>Thyroid surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309375009">309375009</a></td><td>Pituitary surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309376005">309376005</a></td><td>Gastrointestinal surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309377001">309377001</a></td><td>General gastrointestinal surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309378006">309378006</a></td><td>Upper gastrointestinal surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309379003">309379003</a></td><td>Colorectal surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309380000">309380000</a></td><td>Hand surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309381001">309381001</a></td><td>Hepatobiliary surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309382008">309382008</a></td><td>Ophthalmic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309383003">309383003</a></td><td>Pediatric surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309384009">309384009</a></td><td>Pancreatic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309385005">309385005</a></td><td>Transplant surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309386006">309386006</a></td><td>Trauma surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309388007">309388007</a></td><td>Vascular surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309389004">309389004</a></td><td>Medical practitioner grade (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309390008">309390008</a></td><td>Hospital consultant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309391007">309391007</a></td><td>Visiting specialist registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309392000">309392000</a></td><td>Research registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309393005">309393005</a></td><td>General practitioner grade (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309394004">309394004</a></td><td>General practitioner principal (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309395003">309395003</a></td><td>Hospital specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309396002">309396002</a></td><td>Associate specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309397006">309397006</a></td><td>Research fellow (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309398001">309398001</a></td><td>Profession allied to medicine (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309399009">309399009</a></td><td>Hospital-based dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309400002">309400002</a></td><td>Domiciliary physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309401003">309401003</a></td><td>General practitioner-based physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309402005">309402005</a></td><td>Hospital-based physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309403000">309403000</a></td><td>Private physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309404006">309404006</a></td><td>Physiotherapy helper (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309409001">309409001</a></td><td>Hospital-based speech and language therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309410006">309410006</a></td><td>Arts therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309411005">309411005</a></td><td>Dance therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309412003">309412003</a></td><td>Music therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309413008">309413008</a></td><td>Renal dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309414002">309414002</a></td><td>Liver dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309415001">309415001</a></td><td>Oncology dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309416000">309416000</a></td><td>Pediatric dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309417009">309417009</a></td><td>Diabetes dietitian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309418004">309418004</a></td><td>Audiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309419007">309419007</a></td><td>Hearing therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309420001">309420001</a></td><td>Audiological scientist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309421002">309421002</a></td><td>Hearing aid dispenser (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309422009">309422009</a></td><td>Community-based occupational therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309423004">309423004</a></td><td>Hospital-based occupational therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309427003">309427003</a></td><td>Social services occupational therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309428008">309428008</a></td><td>Orthotist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309429000">309429000</a></td><td>Surgical fitter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309434001">309434001</a></td><td>Hospital-based podiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309435000">309435000</a></td><td>Podiatry assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309436004">309436004</a></td><td>Lymphedema nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309437008">309437008</a></td><td>Community learning disabilities nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309439006">309439006</a></td><td>Clinical nurse teacher (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309440008">309440008</a></td><td>Community practice nurse teacher (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309441007">309441007</a></td><td>Nurse tutor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309442000">309442000</a></td><td>Nurse teacher practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309443005">309443005</a></td><td>Nurse lecturer practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309444004">309444004</a></td><td>Outreach nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309445003">309445003</a></td><td>Anesthetic nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309446002">309446002</a></td><td>Nurse manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309450009">309450009</a></td><td>Nurse administrator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309452001">309452001</a></td><td>Midwifery grade (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309453006">309453006</a></td><td>Registered midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309454000">309454000</a></td><td>Student midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309455004">309455004</a></td><td>Parentcraft sister (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309457007">309457007</a></td><td>Vicar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309459005">309459005</a></td><td>Healthcare professional grade (occupation)</td></tr><tr><td><a href="http://snomed.info/id/309460000">309460000</a></td><td>Restorative dentist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310170009">310170009</a></td><td>Pediatric audiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310171008">310171008</a></td><td>Immunopathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310172001">310172001</a></td><td>Audiological physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310173006">310173006</a></td><td>Clinical pharmacologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310174000">310174000</a></td><td>Private doctor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310175004">310175004</a></td><td>Agency nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310176003">310176003</a></td><td>Behavioral therapist nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310177007">310177007</a></td><td>Cardiac rehabilitation nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310178002">310178002</a></td><td>Genitourinary nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310179005">310179005</a></td><td>Rheumatology nurse specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310180008">310180008</a></td><td>Continence nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310181007">310181007</a></td><td>Contact tracing nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310182000">310182000</a></td><td>General nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310184004">310184004</a></td><td>Liaison nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310185003">310185003</a></td><td>Diabetic liaison nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310186002">310186002</a></td><td>Nurse psychotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310187006">310187006</a></td><td>Company nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310188001">310188001</a></td><td>Hospital midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310189009">310189009</a></td><td>Genetic counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310190000">310190000</a></td><td>Mental health counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310191001">310191001</a></td><td>Clinical psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310192008">310192008</a></td><td>Educational psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310193003">310193003</a></td><td>Coroner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310194009">310194009</a></td><td>Appliance officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/310512001">310512001</a></td><td>Medical oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/311441001">311441001</a></td><td>School medical officer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/312485001">312485001</a></td><td>Integrated midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/3430008">3430008</a></td><td>Radiation therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/36682004">36682004</a></td><td>Physiotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/37154003">37154003</a></td><td>Periodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/372102007">372102007</a></td><td>Registered nurse first assist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/373864002">373864002</a></td><td>Outpatient (person)</td></tr><tr><td><a href="http://snomed.info/id/37504001">37504001</a></td><td>Orthodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/3842006">3842006</a></td><td>Chiropractor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/387619007">387619007</a></td><td>Optician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/394572006">394572006</a></td><td>Medical secretary (occupation)</td></tr><tr><td><a href="http://snomed.info/id/394618009">394618009</a></td><td>Hospital nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/39677007">39677007</a></td><td>Internal medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/397897005">397897005</a></td><td>Paramedic (occupation)</td></tr><tr><td><a href="http://snomed.info/id/397903001">397903001</a></td><td>Staff grade obstetrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/397908005">397908005</a></td><td>Staff grade practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/3981000175106">3981000175106</a></td><td>Nurse complex case manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/398130009">398130009</a></td><td>Medical student (occupation)</td></tr><tr><td><a href="http://snomed.info/id/398238009">398238009</a></td><td>Acting obstetric registrar (occupation)</td></tr><tr><td><a href="http://snomed.info/id/40127002">40127002</a></td><td>Dietitian (general) (occupation)</td></tr><tr><td><a href="http://snomed.info/id/40204001">40204001</a></td><td>Hematologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/404940000">404940000</a></td><td>Physiotherapist technical instructor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405277009">405277009</a></td><td>Resident physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405278004">405278004</a></td><td>Certified registered nurse anesthetist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405279007">405279007</a></td><td>Attending physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405623001">405623001</a></td><td>Assigned practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405684005">405684005</a></td><td>Professional initiating surgical case (occupation)</td></tr><tr><td><a href="http://snomed.info/id/405685006">405685006</a></td><td>Professional providing staff relief during surgical procedure (occupation)</td></tr><tr><td><a href="http://snomed.info/id/40570005">40570005</a></td><td>Interpreter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/407542009">407542009</a></td><td>Informal caregiver (person)</td></tr><tr><td><a href="http://snomed.info/id/407543004">407543004</a></td><td>Primary caregiver (person)</td></tr><tr><td><a href="http://snomed.info/id/408290003">408290003</a></td><td>Diabetes key contact (occupation)</td></tr><tr><td><a href="http://snomed.info/id/408798009">408798009</a></td><td>Consultant pediatrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/408799001">408799001</a></td><td>Consultant neonatologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/409974004">409974004</a></td><td>Health educator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/409975003">409975003</a></td><td>Certified health education specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/413854007">413854007</a></td><td>Circulating nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/415075003">415075003</a></td><td>Perioperative nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/415506007">415506007</a></td><td>Scrub nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/416034003">416034003</a></td><td>Primary screener (person)</td></tr><tr><td><a href="http://snomed.info/id/416035002">416035002</a></td><td>Secondary screener (person)</td></tr><tr><td><a href="http://snomed.info/id/416160000">416160000</a></td><td>Fellow of American Academy of Osteopathy (occupation)</td></tr><tr><td><a href="http://snomed.info/id/4162009">4162009</a></td><td>Dental assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/41672002">41672002</a></td><td>Respiratory disease specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/416800000">416800000</a></td><td>Inpatient (person)</td></tr><tr><td><a href="http://snomed.info/id/41904004">41904004</a></td><td>Medical X-ray technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/420158005">420158005</a></td><td>Performer of method (person)</td></tr><tr><td><a href="http://snomed.info/id/420409002">420409002</a></td><td>Oculoplastic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/420678001">420678001</a></td><td>Retinal surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/421841007">421841007</a></td><td>Admitting physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/422140007">422140007</a></td><td>Medical ophthalmologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/422234006">422234006</a></td><td>Ophthalmologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/428024001">428024001</a></td><td>Clinical trial participant (person)</td></tr><tr><td><a href="http://snomed.info/id/429577009">429577009</a></td><td>Patient advocate (person)</td></tr><tr><td><a href="http://snomed.info/id/43018001">43018001</a></td><td>Babysitter (occupation)</td></tr><tr><td><a href="http://snomed.info/id/432100008">432100008</a></td><td>Health coach (occupation)</td></tr><tr><td><a href="http://snomed.info/id/43702002">43702002</a></td><td>Occupational health nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/440051000124108">440051000124108</a></td><td>Medical examiner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/442251000124100">442251000124100</a></td><td>Licensed practical nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/442867008">442867008</a></td><td>Respiratory therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/443090005">443090005</a></td><td>Podiatric surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/444912007">444912007</a></td><td>Hypnotherapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/445313000">445313000</a></td><td>Asthma nurse specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/445451001">445451001</a></td><td>Nurse case manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/445521000124102">445521000124102</a></td><td>Advanced practice midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/445531000124104">445531000124104</a></td><td>Lay midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/446050000">446050000</a></td><td>Primary care physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/44652006">44652006</a></td><td>Pharmaceutical assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/446701002">446701002</a></td><td>Addiction medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/449161006">449161006</a></td><td>Physician assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/450044741000087104">450044741000087104</a></td><td>Acupuncturist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45181000087107">45181000087107</a></td><td>Pediatric ophthalmologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45191000087109">45191000087109</a></td><td>Pediatric otorhinolaryngologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45201000087106">45201000087106</a></td><td>Pediatric urologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/453061000124100">453061000124100</a></td><td>Pharmacist specialist (person)</td></tr><tr><td><a href="http://snomed.info/id/453071000124107">453071000124107</a></td><td>Primary care pharmacist (person)</td></tr><tr><td><a href="http://snomed.info/id/453081000124105">453081000124105</a></td><td>Infusion pharmacist (person)</td></tr><tr><td><a href="http://snomed.info/id/453091000124108">453091000124108</a></td><td>Receiving provider (person)</td></tr><tr><td><a href="http://snomed.info/id/453101000124102">453101000124102</a></td><td>Consultant pharmacist (person)</td></tr><tr><td><a href="http://snomed.info/id/453111000124104">453111000124104</a></td><td>Dispensing pharmacist (person)</td></tr><tr><td><a href="http://snomed.info/id/453121000124107">453121000124107</a></td><td>Emergency department healthcare professional (occupation)</td></tr><tr><td><a href="http://snomed.info/id/453231000124104">453231000124104</a></td><td>Primary care provider (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45440000">45440000</a></td><td>Rheumatologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45544007">45544007</a></td><td>Neurosurgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/457141000124107">457141000124107</a></td><td>Locum tenens attending physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/457151000124109">457151000124109</a></td><td>Locum tenens admitting physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/45956004">45956004</a></td><td>Sanitarian (occupation)</td></tr><tr><td><a href="http://snomed.info/id/46255001">46255001</a></td><td>Pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/471302004">471302004</a></td><td>Government midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/48639005">48639005</a></td><td>Ordained minister (occupation)</td></tr><tr><td><a href="http://snomed.info/id/48740002">48740002</a></td><td>Philologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/49203003">49203003</a></td><td>Dispensing optician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/49993003">49993003</a></td><td>Oral surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/50149000">50149000</a></td><td>Endodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/50681000087109">50681000087109</a></td><td>Bariatric surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/5191000124109">5191000124109</a></td><td>Private midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/5275007">5275007</a></td><td>Auxiliary nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/53564008">53564008</a></td><td>Ordained clergy (occupation)</td></tr><tr><td><a href="http://snomed.info/id/54503009">54503009</a></td><td>Faith healer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/56397003">56397003</a></td><td>Neurologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/56466003">56466003</a></td><td>Public health physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/56542007">56542007</a></td><td>Medical record administrator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/56545009">56545009</a></td><td>Cardiovascular surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/57654006">57654006</a></td><td>Fixed prosthodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/59058001">59058001</a></td><td>General physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/59169001">59169001</a></td><td>Orthopedic technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/59317003">59317003</a></td><td>Dental prosthesis maker and repairer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/59944000">59944000</a></td><td>Psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/60008001">60008001</a></td><td>Public health nutritionist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/611581000124105">611581000124105</a></td><td>Cognitive neuropsychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/611601000124100">611601000124100</a></td><td>Neonatal nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/611611000124102">611611000124102</a></td><td>Counseling psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/611621000124105">611621000124105</a></td><td>Clinical neuropsychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/611701000124107">611701000124107</a></td><td>Sleep psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/61207006">61207006</a></td><td>Medical pathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/61246008">61246008</a></td><td>Laboratory medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/61345009">61345009</a></td><td>Otorhinolaryngologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/61894003">61894003</a></td><td>Endocrinologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/62247001">62247001</a></td><td>Family medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/63098009">63098009</a></td><td>Clinical immunologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/64220005">64220005</a></td><td>Religious worker (member of religious order) (occupation)</td></tr><tr><td><a href="http://snomed.info/id/651501000124106">651501000124106</a></td><td>Pediatric emergency medicine physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/65803006">65803006</a></td><td>Missionary (occupation)</td></tr><tr><td><a href="http://snomed.info/id/66476003">66476003</a></td><td>Oral pathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/66862007">66862007</a></td><td>Radiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/671101000124102">671101000124102</a></td><td>Family nurse practitioner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/67811000052107">67811000052107</a></td><td>Pediatric hematology and oncology physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/6816002">6816002</a></td><td>Specialized nurse (occupation)</td></tr><tr><td><a href="http://snomed.info/id/68191000052106">68191000052106</a></td><td>Neuropsychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/6868009">6868009</a></td><td>Hospital administrator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/68867008">68867008</a></td><td>Public health dentist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/68950000">68950000</a></td><td>Prosthodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/69280009">69280009</a></td><td>Specialized physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/71838004">71838004</a></td><td>Gastroenterologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/720503005">720503005</a></td><td>Sleep medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721936008">721936008</a></td><td>Occupation medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721937004">721937004</a></td><td>Preventive medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721938009">721938009</a></td><td>Tropical medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721939001">721939001</a></td><td>Vascular medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721940004">721940004</a></td><td>Legal medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721941000">721941000</a></td><td>Health psychologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721942007">721942007</a></td><td>Cardiovascular perfusionist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/721943002">721943002</a></td><td>Clinical immunology and allergy specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/73265009">73265009</a></td><td>Nursing aid (occupation)</td></tr><tr><td><a href="http://snomed.info/id/734293001">734293001</a></td><td>Clinical pharmacist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/734294007">734294007</a></td><td>Pharmacist prescriber (occupation)</td></tr><tr><td><a href="http://snomed.info/id/75271001">75271001</a></td><td>Professional midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/76166008">76166008</a></td><td>Practical aid (pharmacy) (occupation)</td></tr><tr><td><a href="http://snomed.info/id/76231001">76231001</a></td><td>Osteopath (occupation)</td></tr><tr><td><a href="http://snomed.info/id/763292005">763292005</a></td><td>Radiation oncologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768730001">768730001</a></td><td>Home health aide (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768731002">768731002</a></td><td>Home helper (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768732009">768732009</a></td><td>School health educator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768733004">768733004</a></td><td>Spiritual advisor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768734005">768734005</a></td><td>Research study coordinator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768815003">768815003</a></td><td>Investigative specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768816002">768816002</a></td><td>Associate investigator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768817006">768817006</a></td><td>Co-principal investigator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768818001">768818001</a></td><td>Principal investigator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768819009">768819009</a></td><td>Medically responsible investigator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768820003">768820003</a></td><td>Care coordinator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768821004">768821004</a></td><td>Care team coordinator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768822006">768822006</a></td><td>Rehabilitation coordinator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768825008">768825008</a></td><td>Doula (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768826009">768826009</a></td><td>Crisis counselor (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768827000">768827000</a></td><td>Nutritionist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768828005">768828005</a></td><td>Epidemiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768829002">768829002</a></td><td>Community dietician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768832004">768832004</a></td><td>Case manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768833009">768833009</a></td><td>Discharging physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768834003">768834003</a></td><td>Disease manager (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768836001">768836001</a></td><td>Patient navigator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768837005">768837005</a></td><td>Hospitalist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/768839008">768839008</a></td><td>Consultant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/76899008">76899008</a></td><td>Infectious disease specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/769038007">769038007</a></td><td>Researcher (occupation)</td></tr><tr><td><a href="http://snomed.info/id/78703002">78703002</a></td><td>General surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/78729002">78729002</a></td><td>Diagnostic radiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/789543004">789543004</a></td><td>Sonographer (occupation)</td></tr><tr><td><a href="http://snomed.info/id/79898004">79898004</a></td><td>Auxiliary midwife (occupation)</td></tr><tr><td><a href="http://snomed.info/id/79918004">79918004</a></td><td>Ordained priest (occupation)</td></tr><tr><td><a href="http://snomed.info/id/80409005">80409005</a></td><td>Translator (occupation)</td></tr><tr><td><a href="http://snomed.info/id/80546007">80546007</a></td><td>Occupational therapist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/80584001">80584001</a></td><td>Psychiatrist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/80933006">80933006</a></td><td>Nuclear medicine specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/81464008">81464008</a></td><td>Clinical pathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/82296001">82296001</a></td><td>Pediatrician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/83273008">83273008</a></td><td>Anatomic pathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/83685006">83685006</a></td><td>Gynecologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/840583002">840583002</a></td><td>Allied health assistant (occupation)</td></tr><tr><td><a href="http://snomed.info/id/840584008">840584008</a></td><td>Allied health student (occupation)</td></tr><tr><td><a href="http://snomed.info/id/85733003">85733003</a></td><td>General pathologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/8724009">8724009</a></td><td>Plastic surgeon (occupation)</td></tr><tr><td><a href="http://snomed.info/id/878785002">878785002</a></td><td>Clinical respiratory physiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/878786001">878786001</a></td><td>Operating room technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/878787005">878787005</a></td><td>Anesthesia technician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/88189002">88189002</a></td><td>Anesthesiologist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/897187007">897187007</a></td><td>Sexual assault nurse examiner (occupation)</td></tr><tr><td><a href="http://snomed.info/id/90201008">90201008</a></td><td>Pedodontist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/90655003">90655003</a></td><td>Geriatrics specialist (occupation)</td></tr><tr><td><a href="http://snomed.info/id/90981000221101">90981000221101</a></td><td>Endoscopist physician (occupation)</td></tr><tr><td><a href="http://snomed.info/id/9371000175105">9371000175105</a></td><td>Adolescent medicine specialist (occupation)</td></tr></table></li><li>Include all codes defined in <a href="CodeSystem-ie-core-participation-function.html"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function</code></a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cgp"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.3.6.1.4.1.54392.5.2690.48.39"/>
+  </identifier>
+  <version value="1.0.0-ballot"/>
+  <name value="IECoreCareTeamMemberFunction"/>
+  <title value="IE Core Care Team Member Function"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-13T21:38:29-04:00"/>
+  <publisher value="iEHR.ai"/>
+  <contact>
+    <name value="iEHR.ai"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.iehr.ai"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@iehr.ai"/>
+    </telecom>
+  </contact>
+  <description value="A set of LOINC concepts to classify Care Team Member Function"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="iEHR.ai, all rights reserved Creative Commons License"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1012901000168106"/>
+        <display value="Gynecologic oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1032781000168105"/>
+        <display value="Kinesiology practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106289002"/>
+        <display value="Dentist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106292003"/>
+        <display value="Professional nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106293008"/>
+        <display value="Nursing personnel (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106294002"/>
+        <display value="Midwifery personnel (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106310008"/>
+        <display value="Worker in religion (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106311007"/>
+        <display value="Minister of religion/related member of religious order (occupation)"/>
+      </concept>
+      <concept>
+        <code value="106330007"/>
+        <display value="Philologist, translator/interpreter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="11015003"/>
+        <display value="Minister of religion (occupation)"/>
+      </concept>
+      <concept>
+        <code value="116154003"/>
+        <display value="Patient (person)"/>
+      </concept>
+      <concept>
+        <code value="11661002"/>
+        <display value="Neuropathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1172950003"/>
+        <display value="Massage therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1186716007"/>
+        <display value="Intellectual disability psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1186914001"/>
+        <display value="Intellectual disability nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="11911009"/>
+        <display value="Nephrologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="119246008"/>
+        <display value="Imam (occupation)"/>
+      </concept>
+      <concept>
+        <code value="11935004"/>
+        <display value="Obstetrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1251537007"/>
+        <display value="Sport medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1251542004"/>
+        <display value="Medical coder (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1251548000"/>
+        <display value="Neuroradiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1254982001"/>
+        <display value="Medical surgical nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1254983006"/>
+        <display value="Chronic care nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1254984000"/>
+        <display value="Rehabilitation nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255370008"/>
+        <display value="Specialist in naturopathy (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255371007"/>
+        <display value="Specialist in homeopathy (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255372000"/>
+        <display value="Phytotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255373005"/>
+        <display value="Specialist in traditional Chinese medicine (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255374004"/>
+        <display value="Clinical nutritionist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255514008"/>
+        <display value="Regulatory affairs pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255515009"/>
+        <display value="Pharmacogenomics pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255517001"/>
+        <display value="Intern in healthcare (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255518006"/>
+        <display value="Organizational and social psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255519003"/>
+        <display value="Cardiopulmonary technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1255719001"/>
+        <display value="Neurophysiology technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1256114007"/>
+        <display value="Nuclear medicine technologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1259214004"/>
+        <display value="Immunohemotherapy specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1259964002"/>
+        <display value="Oral medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1268923002"/>
+        <display value="Obstetric nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1271000175101"/>
+        <display value="Primary obstetrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1276561000168102"/>
+        <display value="Prosthetist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1276571000168108"/>
+        <display value="Orthotist and prosthetist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1287116005"/>
+        <display value="Chaperone (person)"/>
+      </concept>
+      <concept>
+        <code value="1287641002"/>
+        <display value="Oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1290289004"/>
+        <display value="Fellow physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1304201007"/>
+        <display value="Neurological physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1304209009"/>
+        <display value="Cardiorespiratory physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1304210004"/>
+        <display value="Musculoskeletal physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="133932002"/>
+        <display value="Caregiver (person)"/>
+      </concept>
+      <concept>
+        <code value="13580004"/>
+        <display value="School dental assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="1421009"/>
+        <display value="Specialized surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="14613005"/>
+        <display value="Ordained rabbi (occupation)"/>
+      </concept>
+      <concept>
+        <code value="14698002"/>
+        <display value="Medical microbiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158939004"/>
+        <display value="Child care officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158942005"/>
+        <display value="Residential child care worker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158943000"/>
+        <display value="Residential youth care worker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158965000"/>
+        <display value="Medical practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158966004"/>
+        <display value="Medical administrator - national (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158967008"/>
+        <display value="Consultant physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158968003"/>
+        <display value="Consultant surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158969006"/>
+        <display value="Consultant gynecology/obstetrics (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158971006"/>
+        <display value="Hospital registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158972004"/>
+        <display value="House officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158973009"/>
+        <display value="Occupational physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158974003"/>
+        <display value="Clinical medical officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158975002"/>
+        <display value="Medical practitioner - teaching (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158977005"/>
+        <display value="Dental administrator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158978000"/>
+        <display value="Dental consultant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158979008"/>
+        <display value="Dental general practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158980006"/>
+        <display value="Dental practitioner - teaching (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158983008"/>
+        <display value="Nurse administrator - national (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158984002"/>
+        <display value="Nursing officer - region (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158985001"/>
+        <display value="Nursing officer - district (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158986000"/>
+        <display value="Nursing administrator - professional body (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158987009"/>
+        <display value="Nursing officer - division (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158988004"/>
+        <display value="Nurse education director (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158989007"/>
+        <display value="Occupational health nursing officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158990003"/>
+        <display value="Nursing officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158992006"/>
+        <display value="Midwifery sister (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158993001"/>
+        <display value="Nursing sister (theater) (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158994007"/>
+        <display value="Staff nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158995008"/>
+        <display value="Staff midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158996009"/>
+        <display value="State enrolled nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158997000"/>
+        <display value="District nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158998005"/>
+        <display value="Private nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="158999002"/>
+        <display value="Community midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159001001"/>
+        <display value="Clinic nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159002008"/>
+        <display value="Practice nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159003003"/>
+        <display value="School nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159004009"/>
+        <display value="Nurse teacher (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159005005"/>
+        <display value="Student nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159006006"/>
+        <display value="Dental nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159007002"/>
+        <display value="Community pediatric nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159010009"/>
+        <display value="Hospital pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159011008"/>
+        <display value="Retail pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159012001"/>
+        <display value="Industrial pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159014000"/>
+        <display value="Trainee pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159016003"/>
+        <display value="Medical radiographer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159017007"/>
+        <display value="Diagnostic radiographer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159018002"/>
+        <display value="Therapeutic radiographer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159019005"/>
+        <display value="Trainee radiographer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159021000"/>
+        <display value="Ophthalmic optician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159022007"/>
+        <display value="Trainee optician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159025009"/>
+        <display value="Remedial gymnast (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159026005"/>
+        <display value="Speech/language therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159027001"/>
+        <display value="Orthoptist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159028006"/>
+        <display value="Trainee remedial therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159033005"/>
+        <display value="Dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159034004"/>
+        <display value="Podiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159035003"/>
+        <display value="Dental auxiliary (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159036002"/>
+        <display value="Electrocardiogram technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159037006"/>
+        <display value="Electroencephalogram technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159038001"/>
+        <display value="Artificial limb fitter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159039009"/>
+        <display value="Audiology technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159040006"/>
+        <display value="Pharmacy technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159041005"/>
+        <display value="Trainee medical technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159141008"/>
+        <display value="Geneticist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159148002"/>
+        <display value="Research chemist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159174008"/>
+        <display value="Civil engineer - research (occupation)"/>
+      </concept>
+      <concept>
+        <code value="159972006"/>
+        <display value="Surgical corset fitter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="160008000"/>
+        <display value="Dental technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="17561000"/>
+        <display value="Cardiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="184152007"/>
+        <display value="Care assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="184154008"/>
+        <display value="Care manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="18803008"/>
+        <display value="Dermatologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="18850004"/>
+        <display value="Laboratory hematologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="19244007"/>
+        <display value="Gerodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="20145008"/>
+        <display value="Removable prosthodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="21365001"/>
+        <display value="Specialized dentist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="21450003"/>
+        <display value="Neuropsychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224529009"/>
+        <display value="Clinical assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224530004"/>
+        <display value="Senior registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224531000"/>
+        <display value="Registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224532007"/>
+        <display value="Senior house officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224533002"/>
+        <display value="Medical officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224534008"/>
+        <display value="Health visitor, nurse/midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224535009"/>
+        <display value="Registered nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224536005"/>
+        <display value="Midwifery tutor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224537001"/>
+        <display value="Accident and Emergency nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224538006"/>
+        <display value="Triage nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224540001"/>
+        <display value="Community nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224541002"/>
+        <display value="Nursing continence advisor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224542009"/>
+        <display value="Coronary care nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224543004"/>
+        <display value="Diabetic nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224544005"/>
+        <display value="Family planning nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224545006"/>
+        <display value="Care of the elderly nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224546007"/>
+        <display value="Infection control nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224547003"/>
+        <display value="Intensive therapy nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224548008"/>
+        <display value="Learning disabilities nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224549000"/>
+        <display value="Neonatal nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224550000"/>
+        <display value="Neurology nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224551001"/>
+        <display value="Industrial nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224552008"/>
+        <display value="Oncology nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224554009"/>
+        <display value="Marie Curie nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224555005"/>
+        <display value="Pain control nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224556006"/>
+        <display value="Palliative care nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224557002"/>
+        <display value="Chemotherapy nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224558007"/>
+        <display value="Radiotherapy nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224559004"/>
+        <display value="Recovery nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224560009"/>
+        <display value="Stoma care nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224562001"/>
+        <display value="Pediatric nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224563006"/>
+        <display value="Mental health nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224564000"/>
+        <display value="Community mental health nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224565004"/>
+        <display value="Renal nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224566003"/>
+        <display value="Hemodialysis nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224567007"/>
+        <display value="Tissue viability nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224569005"/>
+        <display value="Nurse grade (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224570006"/>
+        <display value="Clinical nurse specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224571005"/>
+        <display value="Nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224572003"/>
+        <display value="Nursing sister (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224573008"/>
+        <display value="Charge nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224574002"/>
+        <display value="Ward manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224575001"/>
+        <display value="Nursing team leader (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224576000"/>
+        <display value="Nursing assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224577009"/>
+        <display value="Healthcare assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224578004"/>
+        <display value="Nursery nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224579007"/>
+        <display value="Healthcare service manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224580005"/>
+        <display value="Occupational health service manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224581009"/>
+        <display value="Community nurse manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224583007"/>
+        <display value="Behavior therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224584001"/>
+        <display value="Behavior therapy assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224585000"/>
+        <display value="Drama therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224586004"/>
+        <display value="Domiciliary occupational therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224587008"/>
+        <display value="Occupational therapy helper (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224588003"/>
+        <display value="Psychotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224589006"/>
+        <display value="Community-based physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224590002"/>
+        <display value="Play therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224591003"/>
+        <display value="Play specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224592005"/>
+        <display value="Play leader (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224593000"/>
+        <display value="Community-based speech/language therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224594006"/>
+        <display value="Speech/language assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224595007"/>
+        <display value="Professional counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224596008"/>
+        <display value="Marriage guidance counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224597004"/>
+        <display value="Trained nurse counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224598009"/>
+        <display value="Trained social worker counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224599001"/>
+        <display value="Trained personnel counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224600003"/>
+        <display value="Psychoanalyst (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224601004"/>
+        <display value="Assistant psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224602006"/>
+        <display value="Community-based podiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224603001"/>
+        <display value="Foot care worker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224604007"/>
+        <display value="Audiometrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224606009"/>
+        <display value="Technical healthcare occupation (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224607000"/>
+        <display value="Occupational therapy technical instructor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224608005"/>
+        <display value="Administrative healthcare staff (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224609002"/>
+        <display value="Complementary health worker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224610007"/>
+        <display value="Supporting services personnel (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224614003"/>
+        <display value="Research associate (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224615002"/>
+        <display value="Research nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224620002"/>
+        <display value="Human aid to communication (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224621003"/>
+        <display value="Palantypist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224622005"/>
+        <display value="Note taker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224623000"/>
+        <display value="Cuer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224624006"/>
+        <display value="Lipspeaker (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224625007"/>
+        <display value="Interpreter for British sign language (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224626008"/>
+        <display value="Interpreter for Signs supporting English (occupation)"/>
+      </concept>
+      <concept>
+        <code value="224936003"/>
+        <display value="General practitioner locum (occupation)"/>
+      </concept>
+      <concept>
+        <code value="22515006"/>
+        <display value="Medical assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="225725005"/>
+        <display value="Chaplain (occupation)"/>
+      </concept>
+      <concept>
+        <code value="225726006"/>
+        <display value="Lactation consultant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="225727002"/>
+        <display value="Midwife counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="22731001"/>
+        <display value="Orthopedic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="229774002"/>
+        <display value="Caregiver (occupation)"/>
+      </concept>
+      <concept>
+        <code value="22983004"/>
+        <display value="Thoracic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="23278007"/>
+        <display value="Community health physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="24430003"/>
+        <display value="Physical medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="24590004"/>
+        <display value="Urologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="25941000087102"/>
+        <display value="Adult gerontology primary care nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="25961008"/>
+        <display value="Electroencephalography specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="26031000087100"/>
+        <display value="Pediatric nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="26042002"/>
+        <display value="Dental hygienist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="26071000087103"/>
+        <display value="Primary health care nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="26091000087104"/>
+        <display value="Public health nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="26369006"/>
+        <display value="Public health nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="265937000"/>
+        <display value="Nursing occupation (occupation)"/>
+      </concept>
+      <concept>
+        <code value="265939002"/>
+        <display value="Medical/dental technicians (occupation)"/>
+      </concept>
+      <concept>
+        <code value="28229004"/>
+        <display value="Optometrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="283875005"/>
+        <display value="Parkinson's disease nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="28411006"/>
+        <display value="Neonatologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="28544002"/>
+        <display value="Medical biochemist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="302211009"/>
+        <display value="Specialist registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="303124005"/>
+        <display value="Member of mental health review tribunal (occupation)"/>
+      </concept>
+      <concept>
+        <code value="303129000"/>
+        <display value="Hospital manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="303133007"/>
+        <display value="Responsible medical officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="303134001"/>
+        <display value="Independent doctor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="304291006"/>
+        <display value="Bereavement counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="304292004"/>
+        <display value="Surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="307988006"/>
+        <display value="Medical technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="308002005"/>
+        <display value="Remedial therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309294001"/>
+        <display value="Emergency department physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309295000"/>
+        <display value="Clinical oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309296004"/>
+        <display value="Family planning doctor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309322005"/>
+        <display value="Associate general practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309323000"/>
+        <display value="Partner of general practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309324006"/>
+        <display value="General practitioner assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309326008"/>
+        <display value="Deputizing general practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309327004"/>
+        <display value="General practitioner registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309328009"/>
+        <display value="Ambulatory pediatrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309329001"/>
+        <display value="Community pediatrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309330006"/>
+        <display value="Pediatric cardiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309331005"/>
+        <display value="Pediatric endocrinologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309332003"/>
+        <display value="Pediatric gastroenterologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309333008"/>
+        <display value="Pediatric nephrologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309334002"/>
+        <display value="Pediatric neurologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309335001"/>
+        <display value="Pediatric rheumatologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309336000"/>
+        <display value="Pediatric oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309337009"/>
+        <display value="Pain management specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309338004"/>
+        <display value="Intensive care specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309339007"/>
+        <display value="Adult intensive care specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309340009"/>
+        <display value="Pediatric intensive care specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309341008"/>
+        <display value="Blood transfusion doctor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309342001"/>
+        <display value="Histopathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309343006"/>
+        <display value="Physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309345004"/>
+        <display value="Chest physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309346003"/>
+        <display value="Thoracic physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309347007"/>
+        <display value="Clinical hematologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309348002"/>
+        <display value="Clinical neurophysiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309349005"/>
+        <display value="Clinical physiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309350005"/>
+        <display value="Diabetologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309351009"/>
+        <display value="Andrologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309352002"/>
+        <display value="Neuroendocrinologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309353007"/>
+        <display value="Reproductive endocrinologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309354001"/>
+        <display value="Thyroidologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309355000"/>
+        <display value="Clinical geneticist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309356004"/>
+        <display value="Clinical cytogeneticist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309357008"/>
+        <display value="Clinical molecular geneticist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309358003"/>
+        <display value="Genitourinary medicine physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309359006"/>
+        <display value="Palliative care physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309360001"/>
+        <display value="Rehabilitation physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309361002"/>
+        <display value="Child and adolescent psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309362009"/>
+        <display value="Forensic psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309363004"/>
+        <display value="Liaison psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309364005"/>
+        <display value="Psychogeriatrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309366007"/>
+        <display value="Rehabilitation psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309367003"/>
+        <display value="Obstetrician and gynecologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309368008"/>
+        <display value="Breast surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309369000"/>
+        <display value="Cardiothoracic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309371000"/>
+        <display value="Cardiac surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309372007"/>
+        <display value="Ear, nose and throat surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309373002"/>
+        <display value="Endocrine surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309374008"/>
+        <display value="Thyroid surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309375009"/>
+        <display value="Pituitary surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309376005"/>
+        <display value="Gastrointestinal surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309377001"/>
+        <display value="General gastrointestinal surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309378006"/>
+        <display value="Upper gastrointestinal surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309379003"/>
+        <display value="Colorectal surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309380000"/>
+        <display value="Hand surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309381001"/>
+        <display value="Hepatobiliary surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309382008"/>
+        <display value="Ophthalmic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309383003"/>
+        <display value="Pediatric surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309384009"/>
+        <display value="Pancreatic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309385005"/>
+        <display value="Transplant surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309386006"/>
+        <display value="Trauma surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309388007"/>
+        <display value="Vascular surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309389004"/>
+        <display value="Medical practitioner grade (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309390008"/>
+        <display value="Hospital consultant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309391007"/>
+        <display value="Visiting specialist registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309392000"/>
+        <display value="Research registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309393005"/>
+        <display value="General practitioner grade (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309394004"/>
+        <display value="General practitioner principal (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309395003"/>
+        <display value="Hospital specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309396002"/>
+        <display value="Associate specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309397006"/>
+        <display value="Research fellow (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309398001"/>
+        <display value="Profession allied to medicine (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309399009"/>
+        <display value="Hospital-based dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309400002"/>
+        <display value="Domiciliary physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309401003"/>
+        <display value="General practitioner-based physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309402005"/>
+        <display value="Hospital-based physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309403000"/>
+        <display value="Private physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309404006"/>
+        <display value="Physiotherapy helper (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309409001"/>
+        <display value="Hospital-based speech and language therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309410006"/>
+        <display value="Arts therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309411005"/>
+        <display value="Dance therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309412003"/>
+        <display value="Music therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309413008"/>
+        <display value="Renal dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309414002"/>
+        <display value="Liver dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309415001"/>
+        <display value="Oncology dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309416000"/>
+        <display value="Pediatric dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309417009"/>
+        <display value="Diabetes dietitian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309418004"/>
+        <display value="Audiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309419007"/>
+        <display value="Hearing therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309420001"/>
+        <display value="Audiological scientist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309421002"/>
+        <display value="Hearing aid dispenser (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309422009"/>
+        <display value="Community-based occupational therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309423004"/>
+        <display value="Hospital-based occupational therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309427003"/>
+        <display value="Social services occupational therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309428008"/>
+        <display value="Orthotist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309429000"/>
+        <display value="Surgical fitter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309434001"/>
+        <display value="Hospital-based podiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309435000"/>
+        <display value="Podiatry assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309436004"/>
+        <display value="Lymphedema nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309437008"/>
+        <display value="Community learning disabilities nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309439006"/>
+        <display value="Clinical nurse teacher (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309440008"/>
+        <display value="Community practice nurse teacher (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309441007"/>
+        <display value="Nurse tutor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309442000"/>
+        <display value="Nurse teacher practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309443005"/>
+        <display value="Nurse lecturer practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309444004"/>
+        <display value="Outreach nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309445003"/>
+        <display value="Anesthetic nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309446002"/>
+        <display value="Nurse manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309450009"/>
+        <display value="Nurse administrator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309452001"/>
+        <display value="Midwifery grade (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309453006"/>
+        <display value="Registered midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309454000"/>
+        <display value="Student midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309455004"/>
+        <display value="Parentcraft sister (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309457007"/>
+        <display value="Vicar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309459005"/>
+        <display value="Healthcare professional grade (occupation)"/>
+      </concept>
+      <concept>
+        <code value="309460000"/>
+        <display value="Restorative dentist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310170009"/>
+        <display value="Pediatric audiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310171008"/>
+        <display value="Immunopathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310172001"/>
+        <display value="Audiological physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310173006"/>
+        <display value="Clinical pharmacologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310174000"/>
+        <display value="Private doctor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310175004"/>
+        <display value="Agency nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310176003"/>
+        <display value="Behavioral therapist nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310177007"/>
+        <display value="Cardiac rehabilitation nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310178002"/>
+        <display value="Genitourinary nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310179005"/>
+        <display value="Rheumatology nurse specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310180008"/>
+        <display value="Continence nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310181007"/>
+        <display value="Contact tracing nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310182000"/>
+        <display value="General nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310184004"/>
+        <display value="Liaison nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310185003"/>
+        <display value="Diabetic liaison nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310186002"/>
+        <display value="Nurse psychotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310187006"/>
+        <display value="Company nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310188001"/>
+        <display value="Hospital midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310189009"/>
+        <display value="Genetic counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310190000"/>
+        <display value="Mental health counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310191001"/>
+        <display value="Clinical psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310192008"/>
+        <display value="Educational psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310193003"/>
+        <display value="Coroner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310194009"/>
+        <display value="Appliance officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="310512001"/>
+        <display value="Medical oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="311441001"/>
+        <display value="School medical officer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="312485001"/>
+        <display value="Integrated midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="3430008"/>
+        <display value="Radiation therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="36682004"/>
+        <display value="Physiotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="37154003"/>
+        <display value="Periodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="372102007"/>
+        <display value="Registered nurse first assist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="373864002"/>
+        <display value="Outpatient (person)"/>
+      </concept>
+      <concept>
+        <code value="37504001"/>
+        <display value="Orthodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="3842006"/>
+        <display value="Chiropractor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="387619007"/>
+        <display value="Optician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="394572006"/>
+        <display value="Medical secretary (occupation)"/>
+      </concept>
+      <concept>
+        <code value="394618009"/>
+        <display value="Hospital nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="39677007"/>
+        <display value="Internal medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="397897005"/>
+        <display value="Paramedic (occupation)"/>
+      </concept>
+      <concept>
+        <code value="397903001"/>
+        <display value="Staff grade obstetrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="397908005"/>
+        <display value="Staff grade practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="3981000175106"/>
+        <display value="Nurse complex case manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="398130009"/>
+        <display value="Medical student (occupation)"/>
+      </concept>
+      <concept>
+        <code value="398238009"/>
+        <display value="Acting obstetric registrar (occupation)"/>
+      </concept>
+      <concept>
+        <code value="40127002"/>
+        <display value="Dietitian (general) (occupation)"/>
+      </concept>
+      <concept>
+        <code value="40204001"/>
+        <display value="Hematologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="404940000"/>
+        <display value="Physiotherapist technical instructor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405277009"/>
+        <display value="Resident physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405278004"/>
+        <display value="Certified registered nurse anesthetist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405279007"/>
+        <display value="Attending physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405623001"/>
+        <display value="Assigned practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405684005"/>
+        <display value="Professional initiating surgical case (occupation)"/>
+      </concept>
+      <concept>
+        <code value="405685006"/>
+        <display value="Professional providing staff relief during surgical procedure (occupation)"/>
+      </concept>
+      <concept>
+        <code value="40570005"/>
+        <display value="Interpreter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="407542009"/>
+        <display value="Informal caregiver (person)"/>
+      </concept>
+      <concept>
+        <code value="407543004"/>
+        <display value="Primary caregiver (person)"/>
+      </concept>
+      <concept>
+        <code value="408290003"/>
+        <display value="Diabetes key contact (occupation)"/>
+      </concept>
+      <concept>
+        <code value="408798009"/>
+        <display value="Consultant pediatrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="408799001"/>
+        <display value="Consultant neonatologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="409974004"/>
+        <display value="Health educator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="409975003"/>
+        <display value="Certified health education specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="413854007"/>
+        <display value="Circulating nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="415075003"/>
+        <display value="Perioperative nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="415506007"/>
+        <display value="Scrub nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="416034003"/>
+        <display value="Primary screener (person)"/>
+      </concept>
+      <concept>
+        <code value="416035002"/>
+        <display value="Secondary screener (person)"/>
+      </concept>
+      <concept>
+        <code value="416160000"/>
+        <display value="Fellow of American Academy of Osteopathy (occupation)"/>
+      </concept>
+      <concept>
+        <code value="4162009"/>
+        <display value="Dental assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="41672002"/>
+        <display value="Respiratory disease specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="416800000"/>
+        <display value="Inpatient (person)"/>
+      </concept>
+      <concept>
+        <code value="41904004"/>
+        <display value="Medical X-ray technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="420158005"/>
+        <display value="Performer of method (person)"/>
+      </concept>
+      <concept>
+        <code value="420409002"/>
+        <display value="Oculoplastic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="420678001"/>
+        <display value="Retinal surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="421841007"/>
+        <display value="Admitting physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="422140007"/>
+        <display value="Medical ophthalmologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="422234006"/>
+        <display value="Ophthalmologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="428024001"/>
+        <display value="Clinical trial participant (person)"/>
+      </concept>
+      <concept>
+        <code value="429577009"/>
+        <display value="Patient advocate (person)"/>
+      </concept>
+      <concept>
+        <code value="43018001"/>
+        <display value="Babysitter (occupation)"/>
+      </concept>
+      <concept>
+        <code value="432100008"/>
+        <display value="Health coach (occupation)"/>
+      </concept>
+      <concept>
+        <code value="43702002"/>
+        <display value="Occupational health nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="440051000124108"/>
+        <display value="Medical examiner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="442251000124100"/>
+        <display value="Licensed practical nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="442867008"/>
+        <display value="Respiratory therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="443090005"/>
+        <display value="Podiatric surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="444912007"/>
+        <display value="Hypnotherapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="445313000"/>
+        <display value="Asthma nurse specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="445451001"/>
+        <display value="Nurse case manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="445521000124102"/>
+        <display value="Advanced practice midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="445531000124104"/>
+        <display value="Lay midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="446050000"/>
+        <display value="Primary care physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="44652006"/>
+        <display value="Pharmaceutical assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="446701002"/>
+        <display value="Addiction medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="449161006"/>
+        <display value="Physician assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="450044741000087104"/>
+        <display value="Acupuncturist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45181000087107"/>
+        <display value="Pediatric ophthalmologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45191000087109"/>
+        <display value="Pediatric otorhinolaryngologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45201000087106"/>
+        <display value="Pediatric urologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="453061000124100"/>
+        <display value="Pharmacist specialist (person)"/>
+      </concept>
+      <concept>
+        <code value="453071000124107"/>
+        <display value="Primary care pharmacist (person)"/>
+      </concept>
+      <concept>
+        <code value="453081000124105"/>
+        <display value="Infusion pharmacist (person)"/>
+      </concept>
+      <concept>
+        <code value="453091000124108"/>
+        <display value="Receiving provider (person)"/>
+      </concept>
+      <concept>
+        <code value="453101000124102"/>
+        <display value="Consultant pharmacist (person)"/>
+      </concept>
+      <concept>
+        <code value="453111000124104"/>
+        <display value="Dispensing pharmacist (person)"/>
+      </concept>
+      <concept>
+        <code value="453121000124107"/>
+        <display value="Emergency department healthcare professional (occupation)"/>
+      </concept>
+      <concept>
+        <code value="453231000124104"/>
+        <display value="Primary care provider (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45440000"/>
+        <display value="Rheumatologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45544007"/>
+        <display value="Neurosurgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="457141000124107"/>
+        <display value="Locum tenens attending physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="457151000124109"/>
+        <display value="Locum tenens admitting physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="45956004"/>
+        <display value="Sanitarian (occupation)"/>
+      </concept>
+      <concept>
+        <code value="46255001"/>
+        <display value="Pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="471302004"/>
+        <display value="Government midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="48639005"/>
+        <display value="Ordained minister (occupation)"/>
+      </concept>
+      <concept>
+        <code value="48740002"/>
+        <display value="Philologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="49203003"/>
+        <display value="Dispensing optician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="49993003"/>
+        <display value="Oral surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="50149000"/>
+        <display value="Endodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="50681000087109"/>
+        <display value="Bariatric surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="5191000124109"/>
+        <display value="Private midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="5275007"/>
+        <display value="Auxiliary nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="53564008"/>
+        <display value="Ordained clergy (occupation)"/>
+      </concept>
+      <concept>
+        <code value="54503009"/>
+        <display value="Faith healer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="56397003"/>
+        <display value="Neurologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="56466003"/>
+        <display value="Public health physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="56542007"/>
+        <display value="Medical record administrator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="56545009"/>
+        <display value="Cardiovascular surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="57654006"/>
+        <display value="Fixed prosthodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="59058001"/>
+        <display value="General physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="59169001"/>
+        <display value="Orthopedic technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="59317003"/>
+        <display value="Dental prosthesis maker and repairer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="59944000"/>
+        <display value="Psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="60008001"/>
+        <display value="Public health nutritionist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="611581000124105"/>
+        <display value="Cognitive neuropsychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="611601000124100"/>
+        <display value="Neonatal nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="611611000124102"/>
+        <display value="Counseling psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="611621000124105"/>
+        <display value="Clinical neuropsychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="611701000124107"/>
+        <display value="Sleep psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="61207006"/>
+        <display value="Medical pathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="61246008"/>
+        <display value="Laboratory medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="61345009"/>
+        <display value="Otorhinolaryngologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="61894003"/>
+        <display value="Endocrinologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="62247001"/>
+        <display value="Family medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="63098009"/>
+        <display value="Clinical immunologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="64220005"/>
+        <display value="Religious worker (member of religious order) (occupation)"/>
+      </concept>
+      <concept>
+        <code value="651501000124106"/>
+        <display value="Pediatric emergency medicine physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="65803006"/>
+        <display value="Missionary (occupation)"/>
+      </concept>
+      <concept>
+        <code value="66476003"/>
+        <display value="Oral pathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="66862007"/>
+        <display value="Radiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="671101000124102"/>
+        <display value="Family nurse practitioner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="67811000052107"/>
+        <display value="Pediatric hematology and oncology physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="6816002"/>
+        <display value="Specialized nurse (occupation)"/>
+      </concept>
+      <concept>
+        <code value="68191000052106"/>
+        <display value="Neuropsychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="6868009"/>
+        <display value="Hospital administrator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="68867008"/>
+        <display value="Public health dentist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="68950000"/>
+        <display value="Prosthodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="69280009"/>
+        <display value="Specialized physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="71838004"/>
+        <display value="Gastroenterologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="720503005"/>
+        <display value="Sleep medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721936008"/>
+        <display value="Occupation medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721937004"/>
+        <display value="Preventive medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721938009"/>
+        <display value="Tropical medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721939001"/>
+        <display value="Vascular medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721940004"/>
+        <display value="Legal medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721941000"/>
+        <display value="Health psychologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721942007"/>
+        <display value="Cardiovascular perfusionist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="721943002"/>
+        <display value="Clinical immunology and allergy specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="73265009"/>
+        <display value="Nursing aid (occupation)"/>
+      </concept>
+      <concept>
+        <code value="734293001"/>
+        <display value="Clinical pharmacist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="734294007"/>
+        <display value="Pharmacist prescriber (occupation)"/>
+      </concept>
+      <concept>
+        <code value="75271001"/>
+        <display value="Professional midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="76166008"/>
+        <display value="Practical aid (pharmacy) (occupation)"/>
+      </concept>
+      <concept>
+        <code value="76231001"/>
+        <display value="Osteopath (occupation)"/>
+      </concept>
+      <concept>
+        <code value="763292005"/>
+        <display value="Radiation oncologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768730001"/>
+        <display value="Home health aide (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768731002"/>
+        <display value="Home helper (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768732009"/>
+        <display value="School health educator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768733004"/>
+        <display value="Spiritual advisor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768734005"/>
+        <display value="Research study coordinator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768815003"/>
+        <display value="Investigative specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768816002"/>
+        <display value="Associate investigator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768817006"/>
+        <display value="Co-principal investigator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768818001"/>
+        <display value="Principal investigator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768819009"/>
+        <display value="Medically responsible investigator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768820003"/>
+        <display value="Care coordinator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768821004"/>
+        <display value="Care team coordinator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768822006"/>
+        <display value="Rehabilitation coordinator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768825008"/>
+        <display value="Doula (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768826009"/>
+        <display value="Crisis counselor (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768827000"/>
+        <display value="Nutritionist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768828005"/>
+        <display value="Epidemiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768829002"/>
+        <display value="Community dietician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768832004"/>
+        <display value="Case manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768833009"/>
+        <display value="Discharging physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768834003"/>
+        <display value="Disease manager (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768836001"/>
+        <display value="Patient navigator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768837005"/>
+        <display value="Hospitalist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="768839008"/>
+        <display value="Consultant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="76899008"/>
+        <display value="Infectious disease specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="769038007"/>
+        <display value="Researcher (occupation)"/>
+      </concept>
+      <concept>
+        <code value="78703002"/>
+        <display value="General surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="78729002"/>
+        <display value="Diagnostic radiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="789543004"/>
+        <display value="Sonographer (occupation)"/>
+      </concept>
+      <concept>
+        <code value="79898004"/>
+        <display value="Auxiliary midwife (occupation)"/>
+      </concept>
+      <concept>
+        <code value="79918004"/>
+        <display value="Ordained priest (occupation)"/>
+      </concept>
+      <concept>
+        <code value="80409005"/>
+        <display value="Translator (occupation)"/>
+      </concept>
+      <concept>
+        <code value="80546007"/>
+        <display value="Occupational therapist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="80584001"/>
+        <display value="Psychiatrist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="80933006"/>
+        <display value="Nuclear medicine specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="81464008"/>
+        <display value="Clinical pathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="82296001"/>
+        <display value="Pediatrician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="83273008"/>
+        <display value="Anatomic pathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="83685006"/>
+        <display value="Gynecologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="840583002"/>
+        <display value="Allied health assistant (occupation)"/>
+      </concept>
+      <concept>
+        <code value="840584008"/>
+        <display value="Allied health student (occupation)"/>
+      </concept>
+      <concept>
+        <code value="85733003"/>
+        <display value="General pathologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="8724009"/>
+        <display value="Plastic surgeon (occupation)"/>
+      </concept>
+      <concept>
+        <code value="878785002"/>
+        <display value="Clinical respiratory physiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="878786001"/>
+        <display value="Operating room technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="878787005"/>
+        <display value="Anesthesia technician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="88189002"/>
+        <display value="Anesthesiologist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="897187007"/>
+        <display value="Sexual assault nurse examiner (occupation)"/>
+      </concept>
+      <concept>
+        <code value="90201008"/>
+        <display value="Pedodontist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="90655003"/>
+        <display value="Geriatrics specialist (occupation)"/>
+      </concept>
+      <concept>
+        <code value="90981000221101"/>
+        <display value="Endoscopist physician (occupation)"/>
+      </concept>
+      <concept>
+        <code value="9371000175105"/>
+        <display value="Adolescent medicine specialist (occupation)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Future of IE Core - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.7"}
+    h3,h4,h5,h6{--heading-prefix:"3.7.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>Guidance</b></a></li><li><b>Future of IE Core</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>Future of IE Core</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#ie-core-yearly-updates" id="markdown-toc-ie-core-yearly-updates">IE Core Yearly Updates</a></li>
+  <li><a href="#fhir-version-support" id="markdown-toc-fhir-version-support">FHIR Version Support</a></li>
+  <li><a href="#growth-path-of-ie-core" id="markdown-toc-growth-path-of-ie-core">Growth Path of IE Core</a></li>
+  <li><a href="#future-candidate-requirements-under-consideration" id="markdown-toc-future-candidate-requirements-under-consideration">Future Candidate Requirements Under Consideration</a></li>
+</ul>
+
+</div>
+
+<p>The IE Core FHIR Profiles are designed to be the base set of requirements for FHIR implementation in the IE. All Irish implementation guides <strong>SHALL</strong> use the IE Core Profiles or <strong>SHALL</strong> explicitly state why they are unable to use them. Throughout the development of IE Core, implementers, the government, and the clinical community have brought forward additional requirements. This section outlines the approach to growth and a place for items that may be added to IE Core.</p>
+
+<h3 id="ie-core-yearly-updates">IE Core Yearly Updates</h3>
+
+<p>Yearly IE Core updates reflect changes to <a href="https://www.iehr.ai">iEHR IE Core Data for Interoperability (IECDI)</a> and requests from the Irish FHIR community.</p>
+
+<h3 id="fhir-version-support">FHIR Version Support</h3>
+
+<p>IE Core has been based on <a href="http://hl7.org/fhir/R4/index.html" title="FHIR Version R4 Specification Home Page">FHIR Version R4</a> since IE Core version 0.1.0. FHIR Version R4 was released on Dec 27, 2018, and was the first version with <a href="http://hl7.org/fhir/R4/versions.html#maturity">Normative</a> content. HL7's <a href="https://www.iehr.ai/ie">Irish Steering Committee (IESC)</a> directs Irish activities, including this guide. In January 2024, the IESC decided that the next version of FHIR that IE Core will be based on will be the upcoming FHIR Version R6. As of the publication date, there is no timeline for this update. When we update to FHIR Version R6, these breaking updates to IE Core are under consideration.</p>
+
+<ul>
+  <li>Addition of MedicationStatement</li>
+  <li>Mandate supporting PractionerRole</li>
+</ul>
+
+<h3 id="growth-path-of-ie-core">Growth Path of IE Core</h3>
+
+<p>The IE Core Implementation Guide will grow following these steps:</p>
+
+<ol>
+  <li>Declare candidacy - this step can be completed by presenting a Project Proposal to the Irish Steering Committee.</li>
+  <li>Get published - Develop a formal profile, an implementation guide, or get requirements directly published in  FHIR Core. The initial publication could be an outside consortium or vendor publication.</li>
+  <li>Pilot—Coordinate an in-person or virtual connectathon with three or more implementers. Testing and piloting are ways to identify issues with the new proposal.</li>
+  <li>Propose candidate for IE Core to Irish Steering Committee - receive formal approval from the Irish SC to add.</li>
+  <li>Submit formal STU comments or propose through a ballot</li>
+</ol>
+
+<p>A new IE Regulatory requirement may skip some of these steps. However, regulators SHOULD be encouraged to complete pilot testing. Pilot testing makes it easier to understand how a change will affect real-world implementation.</p>
+
+<h3 id="future-candidate-requirements-under-consideration">Future Candidate Requirements Under Consideration</h3>
+
+<p>Past Balloters, STU commenters, and Accelerator Project teams submitted the following items for consideration for adding IE Core. Additional requirements gathering is required before testing may occur on these items:</p>
+
+<h4 id="device"><a href="http://hl7.org/fhir/R4/device.html">Device</a></h4>
+<p>The IE Core Implantable Device Profile is intended only for implantable devices. Please submit your successful implementation of a general non-implantable Device Profile (for example, software or crutches) for consideration in a future update of IE Core.</p>
+
+<h4 id="medicationadministration"><a href="http://hl7.org/fhir/R4/medicationadministration.html">MedicationAdministration</a></h4>
+<p>The IE Core design assumes that access to the Active Medication List is through searching MedicationRequest. (See: https://build.fhir.org/ig/HL7/IE-Core/medication-list-guidance.html.)  The orders (MedicationRequest) capture all the medications and whether they have been fulfilled. Medication Administration can be used as well, but systems will need to be careful to link to the appropriate MedicationRequest. Future versions of IE Core may test and add MedicationAdministration.</p>
+
+<h4 id="searching-for-multiple-patients">Searching for Multiple Patients</h4>
+<p>Searching for multiple patients has been called out in the certification Program. Defining capabilities for multiple patient access would focus on querying real-time data for a user-facing provider app across patients. Examples of the type of queries that would be addressed include searching for all of a provider's patients:</p>
+
+<ul>
+  <li>with recent lab results</li>
+  <li>currently in the Emergency Department</li>
+  <li>with an Allergy to X</li>
+  <li>being seen by a provider for the day</li>
+</ul>
+
+<h4 id="timezones-and-time-offsets">Timezones and Time Offsets</h4>
+<p>Clients face challenges displaying the source data's times and timezone regardless of the end user's current timezone. A solution is to define requirements and best practices for servers to preserve and represent time offsets and time zones.</p>
+
+<blockquote>
+  <p>A <em>timezone</em> is a geographical region in which residents observe the same standard time. A <em>time offset</em> is an amount of time subtracted from or added to Coordinated Universal Time (UTC) time to get the current civil time, whether it is standard time or daylight saving time (DST).<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+</blockquote>
+
+<p>A common practice is to preserve the source data time offsets as the original offset or convert them to Coordinated Universal Time (UTC) time. Making this a requirement is one consideration. Another is adding server best practices for preserving source timezones using the FHIR standard <a href="http://hl7.org/fhir/R4/extension-tz-code.html">timezone extension</a>. A third is providing a client algorithm for resolving time offsets and time zones.</p>
+
+<h4 id="record-or-update-data">Record or Update Data</h4>
+
+<p>Systems may use operations that create and update resources for any of the profiles in this IG. However, more guidance is needed on writing and updating data in the context of IE Core Profiles to support consistency between implementations. Multiple issues will need to be considered when defining expected behavior by the various actors to support updates and writes to the data, including:</p>
+
+<ul>
+  <li>Defining the overall approach
+    <ul>
+      <li>direct updates to a particular resource via FHIR RESTful transactions</li>
+      <li>new Profiles to represent the context and issue and request</li>
+    </ul>
+  </li>
+  <li>Write failure scenarios (e.g., insufficient data to create)</li>
+  <li>Recording and updating data in the context of the Must Support fields</li>
+  <li>Indicating the source of the update</li>
+</ul>
+
+<p>IE Core has defined <a href="vitals-write.html">Writing Vital Signs</a> for creating and updating vital sign Observations resources from patient-facing and provider-facing applications and expects to develop similar guidance for other Observation categories and resource types. After adequate testing by implementers, we will assess the feasibility of incorporating this guidance into the IE Core API.</p>
+
+<hr />
+<p>Footnotes</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://en.wikipedia.org/w/index.php?title=UTC_offset#Time_zones_and_time_offsets <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

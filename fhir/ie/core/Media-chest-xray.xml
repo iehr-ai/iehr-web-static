@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Media xmlns="http://hl7.org/fhir">
+  <id value="chest-xray"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Chest Xray Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example Media xray image that is reference by the *IE Core DiagnosticReport Note Profile*."/>
+    </extension>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Media chest-xray</b></p><a name="chest-xray"> </a><a name="hcchest-xray"> </a><a name="chest-xray-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/></div><p><b>status</b>: Completed</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/media-type image}">Image</span></p><p><b>modality</b>: <span title="Codes:{http://snomed.info/sct 399208008}">Plain X-ray of chest (procedure)</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><p><b>created</b>: 2019-02-04 19:43:30+0000</p><p><b>issued</b>: 2019-02-04 19:43:30+0000</p><blockquote><p><b>content</b></p><blockquote><p><b>id</b></p>a1</blockquote><p><b>contentType</b>: image/jpeg</p><p><b>url</b>: <a href="http://example.org/Binary/A12345">http://example.org/Binary/A12345</a></p><p><b>creation</b>: 2019-02-04 19:43:30+0000</p></blockquote></div>
+  </text>
+  <status value="completed"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/media-type"/>
+      <code value="image"/>
+      <display value="Image"/>
+    </coding>
+  </type>
+  <modality>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/731000124108"/>
+      <code value="399208008"/>
+      <display value="Plain X-ray of chest (procedure)"/>
+    </coding>
+  </modality>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <createdDateTime value="2019-02-04T19:43:30.000Z"/>
+  <issued value="2019-02-04T19:43:30.000Z"/>
+  <content id="a1">
+    <contentType value="image/jpeg"/>
+    <url value="http://example.org/Binary/A12345"/>
+    <creation value="2019-02-04T19:43:30.000Z"/>
+  </content>
+</Media>

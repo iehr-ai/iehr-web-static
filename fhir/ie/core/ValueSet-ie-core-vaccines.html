@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IE Core Vaccines - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"13.234"}
+    h3,h4,h5,h6{--heading-prefix:"13.234"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>IE Core Vaccines</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-vaccines.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-vaccines.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ie-core-vaccines.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: IE Core Vaccines
+
+  </h2>
+  <table class="colstu">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-ballot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines|1.0.0-ballot"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="3">
+        
+          <i>
+            
+            Standards status:
+          </i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Trial-use</a>
+          
+        
+      </td>
+
+      <td>
+        <a href="http://hl7.org/fhir/versions.html#maturity">Maturity Level</a>: 3
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">IECoreVaccines</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:1.3.6.1.4.1.54392.5.2690.48.54
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: iEHR.ai, all rights reserved Creative Commons License</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>A set of concepts to classify Vaccines Administered Vaccine Set</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-vaccines</b></p><a name="ie-core-vaccines"> </a><a name="hcie-core-vaccines"> </a><a name="ie-core-vaccines-en-US"> </a>
+<ul><li>Include all codes defined in <a href="CodeSystem-ie-core-vaccine-codes.html"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</code></a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>ValueSet </b></p><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on <a href="CodeSystem-ie-core-vaccine-codes.html">codesystem IE Core Vaccine Codes v1.0.0-ballot (CodeSystem)</a></p><p>This value set contains 280 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display (en-US)</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-143"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-143">143</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Adenovirus types 4 and 7</td><td><div><p>Adenovirus, type 4 and type 7, live, oral</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-54"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-54">54</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Adenovirus, type 4</td><td><div><p>Adenovirus vaccine, type 4, live, oral</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-55"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-55">55</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Adenovirus, type 7</td><td><div><p>Adenovirus vaccine, type 7, live, oral</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-82"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-82">82</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Adenovirus, unspecified formulation</td><td><div><p>Adenovirus vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-181"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-181">181</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Anthrax immune globulin</td><td><div><p>Anthrax immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-319"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-319">319</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Anthrax vaccine, unspecified</td><td><div><p>Anthrax vaccine, unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-318"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-318">318</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Anthrax, post-exposure prophylaxis</td><td><div><p>Anthrax vaccine, adsorbed, adjuvanted, post-exposure prophylaxis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-24"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-24">24</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Anthrax, pre-exposure prophylaxis, post-exposure prophylaxis</td><td><div><p>Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-801"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-801">801</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>As03 adjuvant</td><td><div><p>As03 adjuvant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-19"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-19">19</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Bcg</td><td><div><p>Bacillus calmette-guerin vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-27"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-27">27</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Botulinum antitoxin</td><td><div><p>Botulinum antitoxin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-317"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-317">317</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Chikungunya live attenuated vaccine, 0.5 ml, pf</td><td><div><p>Chikungunya, live attenuated vaccine, 0.5 ml, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-173"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-173">173</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cholera, bivwc</td><td><div><p>Cholera, bivwc</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-174"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-174">174</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cholera, live attenuated</td><td><div><p>Cholera, live attenuated</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-26"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-26">26</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cholera, unspecified formulation</td><td><div><p>Cholera vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-172"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-172">172</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cholera, wc-rbs</td><td><div><p>Cholera, wc-rbs</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-29"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-29">29</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cmvig</td><td><div><p>Cytomegalovirus immune globulin, intravenous</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-516"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-516">516</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)</td><td><div><p>Sars-cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-518"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-518">518</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 inactivated, non-us vaccine (vla2001, valneva)</td><td><div><p>Sars-cov-2 covid-19 inactivated, non-us vaccine (vla2001, valneva)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-510"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-510">510</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 iv non-us vaccine (bibp, sinopharm)</td><td><div><p>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (bibp, sinopharm)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-511"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-511">511</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 iv non-us vaccine (coronavac, sinovac)</td><td><div><p>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (coronavac, sinovac)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-502"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-502">502</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 iv non-us vaccine (covaxin)</td><td><div><p>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (covaxin)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-501"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-501">501</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 iv non-us vaccine (qazcovid-in)</td><td><div><p>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (qazcovid-in)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-503"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-503">503</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 lav non-us vaccine (covivac)</td><td><div><p>Sars-cov-2 covid-19 live attenuated virus non-us vaccine product (covivac)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-519"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-519">519</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna</td><td><div><p>Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-520"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-520">520</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product, pfizer-biontech</td><td><div><p>Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product (comirnaty bivalent), pfizer-biontech</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-500"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-500">500</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 non-us vaccine, product unknown</td><td><div><p>Sars-cov-2 covid-19 non-us vaccine, specific product unknown</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-507"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-507">507</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 ps non-us vaccine (anhui zhifei longcom biopharm + inst of micro, chinese acad of sciences)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom biopharmaceutical + institute of microbiology, chinese academy of sciences)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-509"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-509">509</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 ps non-us vaccine (epivaccorona)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (epivaccorona)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-508"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-508">508</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 ps non-us vaccine (jiangsu province centers for disease control and prevention)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (jiangsu province centers for disease control and prevention)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-521"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-521">521</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 sp, protein-based, adjuvanted (vidprevtyn beta), sanofi-gsk</td><td><div><p>Sars-cov-2 (covid-19) vaccine sp, protein-based, adjuvanted, b.1.351 strain (vidprevtyn beta), sanofi-gsk</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-212"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-212">212</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 vaccine, vector-nr, rs-ad26, pf, 0.5 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-ad26, preservative free, 0.5 ml</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-210"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-210">210</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 vaccine, vector-nr, rs-chadox1, pf, 0.5 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-chadox1, preservative free, 0.5 ml</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-506"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-506">506</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 vvnr non-us vaccine (cansino biological inc./beijing institute of biotechnology</td><td><div><p>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (convidecia), cansino biological inc./beijing institute of biotechnology</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-504"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-504">504</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 vvnr non-us vaccine (sputnik light)</td><td><div><p>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik light)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-505"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-505">505</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19 vvnr non-us vaccine (sputnik v)</td><td><div><p>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik v)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-226"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-226">226</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 10mcg/0.5ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 10mcg/0.5ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-225"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-225">225</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 5mcg/0.5ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 5mcg/0.5ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-230"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-230">230</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-301"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-301">301</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-302"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-302">302</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, bivalent, pf, 3 mcg/0.2 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 3 mcg/0.2 ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-300"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-300">300</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, bivalent, pf, 30 mcg/0.3 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 30 mcg/0.3 ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-229"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-229">229</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, bivalent, pf, 50 mcg/0.5 ml or 25mcg/0.25 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 50 mcg/0.5 ml or 25 mcg/0.25 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-218"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-218">218</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 10 mcg/0.2 ml dose, tris-sucrose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 10 mcg/0.2ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-207"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-207">207</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-311"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-311">311</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 25 mcg/0.25 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 25 mcg/0.25 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-219"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-219">219</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 3 mcg/0.2 ml dose, tris-sucrose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 3 mcg/0.2ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-208"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-208">208</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-217"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-217">217</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose, tris-sucrose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose, tris-sucrose formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-312"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-312">312</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-221"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-221">221</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-228"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-228">228</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, pediatric 25 mcg/0.25 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 25 mcg/0.25 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-227"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-227">227</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, pediatric 50 mcg/0.5 ml dose</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 50 mcg/0.5 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-310"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-310">310</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 10 mcg/0.3 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 10 mcg/0.3 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-308"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-308">308</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 3 mcg/0.3 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 3 mcg/0.3 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-309"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-309">309</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 30 mcg/0.3 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 30 mcg/0.3 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-313"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-313">313</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, subunit, rs-nanoparticle, adjuvanted, pf, 5 mcg/0.5 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 5 mcg/0.5 ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-211"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-211">211</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Covid-19, subunit, rs-nanoparticle+matrix-m1 adjuvant, pf, 0.5 ml</td><td><div><p>Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 0.5ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-56"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-56">56</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dengue fever tetravalent</td><td><div><p>Dengue fever vaccine, tetravalent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-12"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-12">12</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Diphtheria antitoxin</td><td><div><p>Diphtheria antitoxin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-28"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-28">28</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dt (pediatric)</td><td><div><p>Diphtheria and tetanus toxoids, adsorbed for pediatric use</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-195"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-195">195</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dt, ipv adsorbed</td><td><div><p>Diphtheria, tetanus, poliomyelitis adsorbed</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-20"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-20">20</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap</td><td><div><p>Diphtheria, tetanus toxoids and acellular pertussis vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-106"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-106">106</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap, 5 pertussis antigens</td><td><div><p>Diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-107"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-107">107</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap, unspecified formulation</td><td><div><p>Diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-146"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-146">146</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap,ipv,hib,hepb</td><td><div><p>Diphtheria and tetanus toxoids and acellular pertussis adsorbed, inactivated poliovirus, haemophilus b conjugate (meningococcal protein conjugate), and hepatitis b (recombinant) vaccine.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-170"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-170">170</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap/ipv/hib - non-us</td><td><div><p>Non-us diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-110"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-110">110</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap-hep b-ipv</td><td><div><p>Dtap-hepatitis b and poliovirus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-50"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-50">50</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap-hib</td><td><div><p>Dtap-haemophilus influenzae type b conjugate vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-120"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-120">120</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap-hib-ipv</td><td><div><p>Diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-130"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-130">130</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap-ipv</td><td><div><p>Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-132"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-132">132</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtap-ipv-hib-hep b, historical</td><td><div><p>Historical diphtheria and tetanus toxoids and acellular pertussis, poliovirus, haemophilus b conjugate and hepatitis b (recombinant) vaccine.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-01"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-01">01</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtp</td><td><div><p>Diphtheria, tetanus toxoids and pertussis vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-198"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-198">198</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtp-hepb-hib pentavalent non-us</td><td><div><p>Diphtheria, pertussis, tetanus, hepatitis b, haemophilus influenza type b, (pentavalent)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-22"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-22">22</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtp-hib</td><td><div><p>Dtp-haemophilus influenzae type b conjugate vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-102"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-102">102</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Dtp-hib-hep b</td><td><div><p>Dtp- haemophilus influenzae type b conjugate and hepatitis b vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-204"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-204">204</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Ebola zaire vaccine, live, recombinant, 1ml dose</td><td><div><p>Ebola zaire vaccine, live, recombinant, 1ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-214"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-214">214</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Ebola, unspecified</td><td><div><p>Ebola, unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-57"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-57">57</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hantavirus</td><td><div><p>Hantavirus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-30"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-30">30</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hbig</td><td><div><p>Hepatitis b immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-52"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-52">52</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, adult</td><td><div><p>Hepatitis a vaccine, adult dosage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-154"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-154">154</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, ig</td><td><div><p>Hepatitis a immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-169"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-169">169</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, live attenuated</td><td><div><p>Hep a, live attenuated-im</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-83"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-83">83</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, ped/adol, 2 dose</td><td><div><p>Hepatitis a vaccine, pediatric/adolescent dosage, 2 dose schedule</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-84"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-84">84</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, ped/adol, 3 dose</td><td><div><p>Hepatitis a vaccine, pediatric/adolescent dosage, 3 dose schedule</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-31"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-31">31</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, pediatric, unspecified formulation</td><td><div><p>Hepatitis a vaccine, pediatric dosage, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-85"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-85">85</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a, unspecified formulation</td><td><div><p>Hepatitis a vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-104"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-104">104</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a-hep b</td><td><div><p>Hepatitis a and hepatitis b vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-193"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-193">193</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep a-hep b, pediatric/adolescent</td><td><div><p>Hepatitis a and hepatitis b vaccine, pediatric/adolescent (non-us)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-08"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-08">08</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep b, adolescent or pediatric</td><td><div><p>Hepatitis b vaccine, pediatric or pediatric/adolescent dosage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-42"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-42">42</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep b, adolescent/high risk infant</td><td><div><p>Hepatitis b vaccine, adolescent/high risk infant dosage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-43"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-43">43</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep b, adult</td><td><div><p>Hepatitis b vaccine, adult dosage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-44"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-44">44</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep b, dialysis</td><td><div><p>Hepatitis b vaccine, dialysis patient dosage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-45"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-45">45</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep b, unspecified formulation</td><td><div><p>Hepatitis b vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-58"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-58">58</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep c</td><td><div><p>Hepatitis c vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-59"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-59">59</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hep e</td><td><div><p>Hepatitis e vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-220"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-220">220</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hepb recombinant, 3-antigen, al(oh)3</td><td><div><p>Hepatitis b vaccine (recombinant), 3-antigen, al(oh)3 adjuvanted</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-189"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-189">189</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hepb-cpg</td><td><div><p>Hepatitis b vaccine (recombinant), cpg adjuvanted</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-60"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-60">60</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Herpes simplex 2</td><td><div><p>Herpes simplex virus, type 2 vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-47"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-47">47</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib (hboc)</td><td><div><p>Haemophilus influenzae type b vaccine, hboc conjugate</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-46"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-46">46</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib (prp-d)</td><td><div><p>Haemophilus influenzae type b vaccine, prp-d conjugate</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-49"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-49">49</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib (prp-omp)</td><td><div><p>Haemophilus influenzae type b vaccine, prp-omp conjugate</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-48"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-48">48</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib (prp-t)</td><td><div><p>Haemophilus influenzae type b vaccine, prp-t conjugate</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-17"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-17">17</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib, unspecified formulation</td><td><div><p>Haemophilus influenzae type b vaccine, conjugate unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-51"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-51">51</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hib-hep b</td><td><div><p>Haemophilus influenzae type b conjugate and hepatitis b vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-61"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-61">61</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hiv</td><td><div><p>Human immunodeficiency virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-118"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-118">118</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hpv, bivalent</td><td><div><p>Human papilloma virus vaccine, bivalent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-62"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-62">62</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hpv, quadrivalent</td><td><div><p>Human papilloma virus vaccine, quadrivalent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-137"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-137">137</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hpv, unspecified formulation</td><td><div><p>Hpv, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-165"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-165">165</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Hpv9</td><td><div><p>Human papillomavirus 9-valent vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-86"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-86">86</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Ig</td><td><div><p>Immune globulin, intramuscular</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-14"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-14">14</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Ig, unspecified formulation</td><td><div><p>Immune globulin, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-87"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-87">87</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Igiv</td><td><div><p>Immune globulin, intravenous</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-160"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-160">160</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza a monovalent (h5n1), adjuvanted-2013</td><td><div><p>Influenza a monovalent (h5n1), adjuvanted, national stockpile 2013</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-151"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-151">151</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza nasal, unspecified formulation</td><td><div><p>Influenza nasal, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-205"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-205">205</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, adjuvanted, quadrivalent, pf</td><td><div><p>Influenza, adjuvanted, inactivated, quadrivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-168"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-168">168</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, adjuvanted, trivalent, pf</td><td><div><p>Influenza, adjuvanted, inactivated, trivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-123"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-123">123</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, h5n1-1203</td><td><div><p>Influenza virus vaccine, h5n1, a/vietnam/1203/2004 (national stockpile)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-197"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-197">197</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, high-dose, quadrivalent, pf</td><td><div><p>Influenza, high-dose, split virus, quadrivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-135"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-135">135</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, high-dose, trivalent, pf</td><td><div><p>Influenza, high-dose, split virus, trivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-161"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-161">161</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, injectable,quadrivalent, preservative free, pediatric</td><td><div><p>Influenza, injectable,quadrivalent, preservative free, pediatric</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-166"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-166">166</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, intradermal, quadrivalent, preservative free</td><td><div><p>Influenza, intradermal, quadrivalent, preservative free, injectable</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-149"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-149">149</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, live, quadrivalent, intranasal</td><td><div><p>Influenza, live, quadrivalent, intranasal</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-111"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-111">111</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, live, trivalent, intranasal</td><td><div><p>Influenza, live, trivalent, intranasal</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-171"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-171">171</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, mdck, quadrivalent, pf</td><td><div><p>Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-186"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-186">186</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, mdck, quadrivalent, preservative</td><td><div><p>Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, contains preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-153"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-153">153</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, mdck, trivalent, pf</td><td><div><p>Influenza, madin darby canine kidney, subunit, trivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-320"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-320">320</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, mdck, trivalent, preservative</td><td><div><p>Influenza, madin darby canine kidney, subunit, trivalent, injectable, contains preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-185"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-185">185</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, recombinant, quadrivalent, pf</td><td><div><p>Influenza, recombinant, quadrivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-155"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-155">155</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, recombinant, trivalent, pf</td><td><div><p>Influenza, recombinant, trivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-144"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-144">144</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, seasonal, intradermal, preservative free</td><td><div><p>Seasonal influenza, intradermal, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-194"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-194">194</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, southern hemisphere</td><td><div><p>Influenza, southern hemisphere, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-231"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-231">231</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, southern hemisphere, high-dose, quadrivalent</td><td><div><p>Influenza, seasonal, southern hemisphere, high-dose, quadrivalent, 0.7ml dose, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-200"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-200">200</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, southern hemisphere, pediatric, preservative free</td><td><div><p>Influenza, seasonal, southern hemisphere, quadrivalent, pediatric 0.25ml dose, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-201"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-201">201</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, southern hemisphere, preservative free</td><td><div><p>Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, no preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-202"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-202">202</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, southern hemisphere, quadrivalent, with preservative</td><td><div><p>Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, with preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-15"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-15">15</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, split (incl. purified surface antigen)</td><td><div><p>Influenza virus vaccine, split virus (incl. purified surface antigen)-retired code</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-150"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-150">150</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, split virus, quadrivalent, pf</td><td><div><p>Influenza, split virus, quadrivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-158"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-158">158</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, split virus, quadrivalent, preservative</td><td><div><p>Influenza, split virus, quadrivalent, injectable, contains preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-140"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-140">140</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, split virus, trivalent, pf</td><td><div><p>Influenza, split virus, trivalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-141"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-141">141</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, split virus, trivalent, preservative</td><td><div><p>Influenza, split virus, trivalent, injectable, contains preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-88"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-88">88</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, unspecified formulation</td><td><div><p>Influenza virus vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-16"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-16">16</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza, whole</td><td><div><p>Influenza virus vaccine, whole virus</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-323"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-323">323</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza-avian, h5, unspecified formulation</td><td><div><p>Influenza-avian, h5, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-321"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-321">321</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza-avian, h5n8, monovalent, pf</td><td><div><p>Influenza-avian, h5n8, viral-vector, monovalent, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-322"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-322">322</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Influenza-avian, h5n8, monovalent, preservative</td><td><div><p>Influenza-avian, h5n8, viral-vector, monovalent, injectable, contains preservative</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-10"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-10">10</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Ipv</td><td><div><p>Poliovirus vaccine, inactivated</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-134"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-134">134</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Japanese encephalitis im</td><td><div><p>Japanese encephalitis vaccine for intramuscular administration</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-39"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-39">39</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Japanese encephalitis sc</td><td><div><p>Japanese encephalitis vaccine sc</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-129"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-129">129</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Japanese encephalitis, unspecified formulation</td><td><div><p>Japanese encephalitis vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-63"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-63">63</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Junin virus</td><td><div><p>Junin virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-64"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-64">64</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Leishmaniasis</td><td><div><p>Leishmaniasis vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-65"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-65">65</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Leprosy</td><td><div><p>Leprosy vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-66"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-66">66</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Lyme disease</td><td><div><p>Lyme disease vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-04"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-04">04</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>M/r</td><td><div><p>Measles and rubella virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-67"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-67">67</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Malaria</td><td><div><p>Malaria vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-05"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-05">05</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Measles</td><td><div><p>Measles virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-68"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-68">68</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Melanoma</td><td><div><p>Melanoma vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-191"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-191">191</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal a polysaccharide (non-us)</td><td><div><p>Meningococcal a polysaccharide vaccine (non-us)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-192"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-192">192</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal ac polysaccharide (non-us)</td><td><div><p>Meningococcal ac polysaccharide vaccine (non-us)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-108"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-108">108</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal acwy, unspecified formulation</td><td><div><p>Meningococcal acwy vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-163"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-163">163</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal b, omv</td><td><div><p>Meningococcal b vaccine, recombinant, omv, adjuvanted</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-162"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-162">162</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal b, recombinant</td><td><div><p>Meningococcal b vaccine, fully recombinant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-164"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-164">164</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal b, unspecified</td><td><div><p>Meningococcal b, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-103"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-103">103</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal c conjugate</td><td><div><p>Meningococcal c conjugate vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-148"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-148">148</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal c/y-hib prp</td><td><div><p>Meningococcal groups c and y and haemophilus b tetanus toxoid conjugate vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-203"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-203">203</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal conjugate quadrivalent, menacwy-tt (mcv4)</td><td><div><p>Meningococcal polysaccharide (groups a, c, y, w-135) tetanus toxoid conjugate vaccine 0.5ml dose, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-147"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-147">147</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal mcv4, unspecified formulation</td><td><div><p>Meningococcal, mcv4, unspecified conjugate formulation(groups a, c, y and w-135)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-136"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-136">136</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal mcv4o</td><td><div><p>Meningococcal oligosaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4o)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-114"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-114">114</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal mcv4p</td><td><div><p>Meningococcal polysaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4p)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-32"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-32">32</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal mpsv4</td><td><div><p>Meningococcal polysaccharide vaccine (mpsv4)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-316"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-316">316</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal polysaccharide (menacwy-tt conjugate), (menb), pf</td><td><div><p>Meningococcal polysaccharide (groups a, c, y, w) tetanus toxoid conjugate, meningococcal b recombinant vaccine, 0.5ml, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-167"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-167">167</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Meningococcal, unknown serogroups</td><td><div><p>Meningococcal vaccine of unknown formulation and unknown serogroups</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-03"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-03">03</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Mmr</td><td><div><p>Measles, mumps and rubella virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-94"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-94">94</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Mmrv</td><td><div><p>Measles, mumps, rubella, and varicella virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-07"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-07">07</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Mumps</td><td><div><p>Mumps virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-998"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-998">998</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>No vaccine administered</td><td><div><p>No vaccine administered</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-127"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-127">127</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Novel influenza-h1n1-09</td><td><div><p>Novel influenza-h1n1-09, injectable</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-128"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-128">128</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Novel influenza-h1n1-09, all formulations</td><td><div><p>Novel influenza-h1n1-09, all formulations</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-125"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-125">125</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Novel influenza-h1n1-09, nasal</td><td><div><p>Novel influenza-h1n1-09, live virus for nasal administration</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-126"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-126">126</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Novel influenza-h1n1-09, preservative-free</td><td><div><p>Novel influenza-h1n1-09, preservative-free, injectable</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-02"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-02">02</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Opv</td><td><div><p>Trivalent poliovirus vaccine, live, oral</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-179"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-179">179</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Opv ,monovalent, unspecified</td><td><div><p>Non-us monovalent oral polio vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-178"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-178">178</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Opv bivalent</td><td><div><p>Non-us bivalent oral polio vaccine (types 1 and 3)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-182"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-182">182</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Opv, unspecified</td><td><div><p>Oral polio vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-69"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-69">69</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Parainfluenza-3</td><td><div><p>Parainfluenza-3 virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-177"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-177">177</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pcv10</td><td><div><p>Pneumococcal conjugate vaccine, 10 valent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-11"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-11">11</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pertussis</td><td><div><p>Pertussis vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-23"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-23">23</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Plague</td><td><div><p>Plague vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-133"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-133">133</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate pcv 13</td><td><div><p>Pneumococcal conjugate vaccine, 13 valent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-100"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-100">100</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate pcv 7</td><td><div><p>Pneumococcal conjugate vaccine, 7 valent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-215"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-215">215</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate pcv15, polysaccharide crm197 conjugate, adjuvant, pf</td><td><div><p>Pneumococcal conjugate vaccine 15-valent (pcv15), polysaccharide crm197 conjugate, adjuvant, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-216"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-216">216</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate pcv20, polysaccharide crm197 conjugate, adjuvant, pf</td><td><div><p>Pneumococcal conjugate vaccine 20-valent (pcv20), polysaccharide crm197 conjugate, adjuvant, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-327"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-327">327</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate pcv21, polysaccharide crm197 conjugate, pf</td><td><div><p>Pneumococcal conjugate vaccine, 21 valent (pcv21), polysaccharide crm197 conjugate, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-152"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-152">152</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal conjugate, unspecified formulation</td><td><div><p>Pneumococcal conjugate, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-33"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-33">33</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal polysaccharide ppv23</td><td><div><p>Pneumococcal polysaccharide vaccine, 23 valent</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-109"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-109">109</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Pneumococcal, unspecified formulation</td><td><div><p>Pneumococcal vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-89"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-89">89</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Polio, unspecified formulation</td><td><div><p>Poliovirus vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-324"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-324">324</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Poliovirus, inactivated, fractional-dose (fipv)</td><td><div><p>Poliovirus, inactivated, fractional-dose (fipv)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-70"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-70">70</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Q fever</td><td><div><p>Q fever vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-175"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-175">175</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rabies - im diploid cell culture</td><td><div><p>Human rabies vaccine from human diploid cell culture</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-176"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-176">176</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rabies - im fibroblast culture</td><td><div><p>Human rabies vaccine from chicken fibroblast culture</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-40"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-40">40</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rabies, intradermal injection</td><td><div><p>Rabies vaccine, for intradermal injection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-18"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-18">18</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rabies, intramuscular injection</td><td><div><p>Rabies vaccine, for intramuscular injection retired code</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-90"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-90">90</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rabies, unspecified formulation</td><td><div><p>Rabies vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-99"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-99">99</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Reserved - do not use</td><td><div><p>Reserved - do not use</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-315"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-315">315</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Respiratory syncytial virus (rsv) mab, unspecified</td><td><div><p>Respiratory syncytial virus (rsv) monoclonal antibody (mab), unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-314"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-314">314</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Respiratory syncytial virus (rsv) vaccine, unspecified</td><td><div><p>Respiratory syncytial virus (rsv) vaccine, unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-304"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-304">304</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Respiratory syncytial virus (rsv), unspecified</td><td><div><p>Respiratory syncytial virus (rsv), unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-72"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-72">72</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rheumatic fever</td><td><div><p>Rheumatic fever vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-159"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-159">159</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rho(d) - unspecified formulation</td><td><div><p>Rho(d) unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-157"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-157">157</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rho(d) -ig im</td><td><div><p>Rho(d) immune globulin - im</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-156"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-156">156</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rho(d)-ig</td><td><div><p>Rho(d) immune globulin- iv or im</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-73"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-73">73</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rift valley fever</td><td><div><p>Rift valley fever vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-34"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-34">34</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rig</td><td><div><p>Rabies immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-119"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-119">119</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rotavirus, monovalent</td><td><div><p>Rotavirus, live, monovalent vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-116"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-116">116</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rotavirus, pentavalent</td><td><div><p>Rotavirus, live, pentavalent vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-74"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-74">74</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rotavirus, tetravalent</td><td><div><p>Rotavirus, live, tetravalent vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-122"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-122">122</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rotavirus, unspecified formulation</td><td><div><p>Rotavirus vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-305"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-305">305</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv, bivalent, protein subunit rsvpref, diluent reconstituted, 0.5 ml, pf</td><td><div><p>Respiratory syncytial virus (rsv), vaccine, bivalent, protein subunit rsv prefusion f, diluent reconstituted, 0.5 ml, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-306"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-306">306</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv, mab, nirsevimab-alip, 0.5 ml, neonate to 24 months</td><td><div><p>Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 0.5 ml, neonates and children to 24 months</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-307"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-307">307</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv, mab, nirsevimab-alip, 1 ml, neonate to 24 months</td><td><div><p>Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 1 ml, neonates and children to 24 months</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-326"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-326">326</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv, mrna, injectable, pf</td><td><div><p>Respiratory syncytial virus (rsv), mrna, injectable, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-303"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-303">303</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv, recombinant, protein subunit rsvpref, adjuvant reconstituted, 0.5 ml, pf</td><td><div><p>Respiratory syncytial virus (rsv), vaccine, recombinant, protein subunit rsv prefusion f, adjuvant reconstituted, 0.5 ml, preservative free</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-71"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-71">71</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv-igiv</td><td><div><p>Respiratory syncytial virus immune globulin, intravenous</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-93"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-93">93</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv-mab</td><td><div><p>Respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-145"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-145">145</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rsv-mab (new)</td><td><div><p>Respiratory syncytial virus monoclonal antibody (motavizumab), intramuscular</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-06"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-06">06</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rubella</td><td><div><p>Rubella virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-38"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-38">38</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Rubella/mumps</td><td><div><p>Rubella and mumps virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-213"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-213">213</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 (covid-19) vaccine, unspecified</td><td><div><p>Sars-cov-2 (covid-19) vaccine, unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-514"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-514">514</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 covid-19 dna non-us vaccine (zydus cadila, zycov-d)</td><td><div><p>Sars-cov-2 covid-19 dna non-us vaccine product (zydus cadila, zycov-d)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-513"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-513">513</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 covid-19 ps non-us vaccine (anhui zhifei longcom, zifivax)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom, zifivax)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-517"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-517">517</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 covid-19 ps non-us vaccine (biological e limited, corbevax)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (biological e limited, corbevax)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-515"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-515">515</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 covid-19 ps non-us vaccine (medigen, mvc-cov1901)</td><td><div><p>Sars-cov-2 covid-19 protein subunit non-us vaccine product (medigen, mvc-cov1901)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-512"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-512">512</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Sars-cov-2 covid-19 vlp non-us vaccine (medicago, covifenz)</td><td><div><p>Sars-cov-2 covid-19 virus like particle (vlp) non-us vaccine product (medicago, covifenz)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-76"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-76">76</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Staphylococcus bacterio lysate</td><td><div><p>Staphylococcus bacteriophage lysate</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-138"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-138">138</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Td (adult)</td><td><div><p>Tetanus and diphtheria toxoids, not adsorbed, for adult use</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-09"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-09">09</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Td (adult), 2 lf tetanus toxoid, preservative free, adsorbed</td><td><div><p>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (2 lf of tetanus toxoid and 2 lf of diphtheria toxoid)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-113"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-113">113</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Td (adult), 5 lf tetanus toxoid, preservative free, adsorbed</td><td><div><p>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (5 lf of tetanus toxoid and 2 lf of diphtheria toxoid)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-139"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-139">139</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Td(adult) unspecified formulation</td><td><div><p>Td(adult) unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-196"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-196">196</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Td, adsorbed, preservative free, adult use, lf unspecified</td><td><div><p>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use, lf unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-115"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-115">115</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tdap</td><td><div><p>Tetanus toxoid, reduced diphtheria toxoid, and acellular pertussis vaccine, adsorbed</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-180"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-180">180</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tetanus immune globulin</td><td><div><p>Tetanus immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-35"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-35">35</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tetanus toxoid, adsorbed</td><td><div><p>Tetanus toxoid, adsorbed</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-142"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-142">142</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tetanus toxoid, not adsorbed</td><td><div><p>Tetanus toxoid, not adsorbed</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-112"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-112">112</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tetanus toxoid, unspecified formulation</td><td><div><p>Tetanus toxoid, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-77"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-77">77</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tick-borne encephalitis vaccine (non-us)</td><td><div><p>Tick-borne encephalitis vaccine (non-us)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-223"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-223">223</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tick-borne encephalitis, inactivated, pf, 0.25ml</td><td><div><p>Tick-borne encephalitis vaccine, inactivated, preservative free, 0.25ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-224"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-224">224</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tick-borne encephalitis, inactivated, pf, 0.5ml</td><td><div><p>Tick-borne encephalitis vaccine, inactivated, preservative free, 0.5ml dose</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-222"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-222">222</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tick-borne encephalitis, unspecified</td><td><div><p>Tick-borne encephalitis vaccine, unspecified</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-13"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-13">13</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tig</td><td><div><p>Tetanus immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-98"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-98">98</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tst, unspecified formulation</td><td><div><p>Tuberculin skin test; unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-95"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-95">95</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tst-ot tine test</td><td><div><p>Tuberculin skin test; old tuberculin, multipuncture device</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-96"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-96">96</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tst-ppd intradermal</td><td><div><p>Tuberculin skin test; purified protein derivative solution, intradermal</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-97"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-97">97</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tst-ppd tine test</td><td><div><p>Tuberculin skin test; purified protein derivative, multipuncture device</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-78"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-78">78</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Tularemia vaccine</td><td><div><p>Tularemia vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-190"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-190">190</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid conjugate vaccine (tcv)</td><td><div><p>Typhoid conjugate vaccine (non-us)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-25"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-25">25</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid, oral</td><td><div><p>Typhoid vaccine, live, oral</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-41"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-41">41</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid, parenteral</td><td><div><p>Typhoid vaccine, parenteral, other than acetone-killed, dried</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-53"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-53">53</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid, parenteral, akd (u.s. military)</td><td><div><p>Typhoid vaccine, parenteral, acetone-killed, dried (u.s. military)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-91"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-91">91</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid, unspecified formulation</td><td><div><p>Typhoid vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-101"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-101">101</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhoid, vicps</td><td><div><p>Typhoid vi capsular polysaccharide vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-131"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-131">131</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Typhus, historical</td><td><div><p>Historical record of a typhus vaccination</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-999"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-999">999</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Unknown</td><td><div><p>Unknown vaccine or immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-75"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-75">75</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vaccinia (smallpox)</td><td><div><p>Vaccinia (smallpox) vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-105"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-105">105</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vaccinia (smallpox) diluted</td><td><div><p>Vaccinia (smallpox) vaccine, diluted</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-79"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-79">79</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vaccinia immune globulin</td><td><div><p>Vaccinia immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-206"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-206">206</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vaccinia, smallpox mpox vaccine live, pf, sq or id injection</td><td><div><p>Vaccinia, smallpox monkeypox vaccine, live attenuated, preservative free, subcutaneous or intradermal injection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-21"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-21">21</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Varicella</td><td><div><p>Varicella virus vaccine</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-81"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-81">81</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vee, inactivated</td><td><div><p>Venezuelan equine encephalitis, inactivated</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-80"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-80">80</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vee, live</td><td><div><p>Venezuelan equine encephalitis, live, attenuated</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-92"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-92">92</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vee, unspecified formulation</td><td><div><p>Venezuelan equine encephalitis vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-36"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-36">36</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vzig</td><td><div><p>Varicella zoster immune globulin</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-117"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-117">117</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Vzig (ind)</td><td><div><p>Varicella zoster immune globulin (investigational new drug)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-37"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-37">37</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Yellow fever live</td><td><div><p>Yellow fever vaccine live</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-183"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-183">183</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Yellow fever vaccine live - alt</td><td><div><p>Yellow fever vaccine live - alternative formulation for vaccine shortage</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-184"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-184">184</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Yellow fever, unspecified</td><td><div><p>Yellow fever vaccine, unspecified formulation</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-121"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-121">121</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Zoster live</td><td><div><p>Zoster vaccine, live</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-187"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-187">187</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Zoster recombinant</td><td><div><p>Zoster vaccine recombinant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes-188"> </a>  <a href="CodeSystem-ie-core-vaccine-codes.html#ie-core-vaccine-codes-188">188</a></td><td>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</td><td>Zoster, unspecified formulation</td><td><div><p>Zoster vaccine, unspecified formulation</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

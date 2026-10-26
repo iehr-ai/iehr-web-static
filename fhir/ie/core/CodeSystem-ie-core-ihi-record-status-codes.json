@@ -1,0 +1,81 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-ihi-record-status-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-ihi-record-status-codes</b></p><a name=\"ie-core-ihi-record-status-codes\"> </a><a name=\"hcie-core-ihi-record-status-codes\"> </a><a name=\"ie-core-ihi-record-status-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">provisional<a name=\"ie-core-ihi-record-status-codes-provisional\"> </a></td><td>Provisional Individual Healthcare Identifier status for individuals presenting to a healthcare facility as unconscious or incapacitated, and unknown to the healthcare facility. Provisional Individual Healthcare Identifiers will expire after 90 days unless the status is changed.</td></tr><tr><td style=\"white-space:nowrap\">unverified<a name=\"ie-core-ihi-record-status-codes-unverified\"> </a></td><td>Unverified Individual Healthcare Identifier status where the information associated with the Individual Healthcare Identifier has not been confirmed through an Evidence of Identity process. </td></tr><tr><td style=\"white-space:nowrap\">verified<a name=\"ie-core-ihi-record-status-codes-verified\"> </a></td><td>Verified Individual Healthcare Identifier status where the information associated with the Individual Healthcare Identifier has been confirmed through an Evidence of Identity process.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.6"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreIndividualHealthcareIdentifierRecordStatusCodes",
+  "title" : "IE Core Individual Healthcare Identifier Record Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "The Individual Healthcare Identifier Record Status code system defines concepts that may be used to describe the classification status of a record of an Individual Healthcare Identifier.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "provisional",
+    "display" : "provisional",
+    "definition" : "Provisional Individual Healthcare Identifier status for individuals presenting to a healthcare facility as unconscious or incapacitated, and unknown to the healthcare facility. Provisional Individual Healthcare Identifiers will expire after 90 days unless the status is changed."
+  },
+  {
+    "code" : "unverified",
+    "display" : "unverified",
+    "definition" : "Unverified Individual Healthcare Identifier status where the information associated with the Individual Healthcare Identifier has not been confirmed through an Evidence of Identity process. "
+  },
+  {
+    "code" : "verified",
+    "display" : "verified",
+    "definition" : "Verified Individual Healthcare Identifier status where the information associated with the Individual Healthcare Identifier has been confirmed through an Evidence of Identity process."
+  }]
+}

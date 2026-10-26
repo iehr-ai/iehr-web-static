@@ -1,0 +1,1466 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-vaccine-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-vaccine-codes</b></p><a name=\"ie-core-vaccine-codes\"> </a><a name=\"hcie-core-vaccine-codes\"> </a><a name=\"ie-core-vaccine-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"ie-core-vaccine-codes-143\"> </a></td><td>Adenovirus types 4 and 7</td><td>Adenovirus, type 4 and type 7, live, oral</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"ie-core-vaccine-codes-54\"> </a></td><td>Adenovirus, type 4</td><td>Adenovirus vaccine, type 4, live, oral</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"ie-core-vaccine-codes-55\"> </a></td><td>Adenovirus, type 7</td><td>Adenovirus vaccine, type 7, live, oral</td></tr><tr><td style=\"white-space:nowrap\">82<a name=\"ie-core-vaccine-codes-82\"> </a></td><td>Adenovirus, unspecified formulation</td><td>Adenovirus vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">181<a name=\"ie-core-vaccine-codes-181\"> </a></td><td>Anthrax immune globulin</td><td>Anthrax immune globulin</td></tr><tr><td style=\"white-space:nowrap\">319<a name=\"ie-core-vaccine-codes-319\"> </a></td><td>Anthrax vaccine, unspecified</td><td>Anthrax vaccine, unspecified</td></tr><tr><td style=\"white-space:nowrap\">318<a name=\"ie-core-vaccine-codes-318\"> </a></td><td>Anthrax, post-exposure prophylaxis</td><td>Anthrax vaccine, adsorbed, adjuvanted, post-exposure prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"ie-core-vaccine-codes-24\"> </a></td><td>Anthrax, pre-exposure prophylaxis, post-exposure prophylaxis</td><td>Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis</td></tr><tr><td style=\"white-space:nowrap\">801<a name=\"ie-core-vaccine-codes-801\"> </a></td><td>As03 adjuvant</td><td>As03 adjuvant</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"ie-core-vaccine-codes-19\"> </a></td><td>Bcg</td><td>Bacillus calmette-guerin vaccine</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"ie-core-vaccine-codes-27\"> </a></td><td>Botulinum antitoxin</td><td>Botulinum antitoxin</td></tr><tr><td style=\"white-space:nowrap\">317<a name=\"ie-core-vaccine-codes-317\"> </a></td><td>Chikungunya live attenuated vaccine, 0.5 ml, pf</td><td>Chikungunya, live attenuated vaccine, 0.5 ml, preservative free</td></tr><tr><td style=\"white-space:nowrap\">173<a name=\"ie-core-vaccine-codes-173\"> </a></td><td>Cholera, bivwc</td><td>Cholera, bivwc</td></tr><tr><td style=\"white-space:nowrap\">174<a name=\"ie-core-vaccine-codes-174\"> </a></td><td>Cholera, live attenuated</td><td>Cholera, live attenuated</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"ie-core-vaccine-codes-26\"> </a></td><td>Cholera, unspecified formulation</td><td>Cholera vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">172<a name=\"ie-core-vaccine-codes-172\"> </a></td><td>Cholera, wc-rbs</td><td>Cholera, wc-rbs</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"ie-core-vaccine-codes-29\"> </a></td><td>Cmvig</td><td>Cytomegalovirus immune globulin, intravenous</td></tr><tr><td style=\"white-space:nowrap\">516<a name=\"ie-core-vaccine-codes-516\"> </a></td><td>Cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)</td><td>Sars-cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)</td></tr><tr><td style=\"white-space:nowrap\">518<a name=\"ie-core-vaccine-codes-518\"> </a></td><td>Covid-19 inactivated, non-us vaccine (vla2001, valneva)</td><td>Sars-cov-2 covid-19 inactivated, non-us vaccine (vla2001, valneva)</td></tr><tr><td style=\"white-space:nowrap\">510<a name=\"ie-core-vaccine-codes-510\"> </a></td><td>Covid-19 iv non-us vaccine (bibp, sinopharm)</td><td>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (bibp, sinopharm)</td></tr><tr><td style=\"white-space:nowrap\">511<a name=\"ie-core-vaccine-codes-511\"> </a></td><td>Covid-19 iv non-us vaccine (coronavac, sinovac)</td><td>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (coronavac, sinovac)</td></tr><tr><td style=\"white-space:nowrap\">502<a name=\"ie-core-vaccine-codes-502\"> </a></td><td>Covid-19 iv non-us vaccine (covaxin)</td><td>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (covaxin)</td></tr><tr><td style=\"white-space:nowrap\">501<a name=\"ie-core-vaccine-codes-501\"> </a></td><td>Covid-19 iv non-us vaccine (qazcovid-in)</td><td>Sars-cov-2 covid-19 inactivated virus non-us vaccine product (qazcovid-in)</td></tr><tr><td style=\"white-space:nowrap\">503<a name=\"ie-core-vaccine-codes-503\"> </a></td><td>Covid-19 lav non-us vaccine (covivac)</td><td>Sars-cov-2 covid-19 live attenuated virus non-us vaccine product (covivac)</td></tr><tr><td style=\"white-space:nowrap\">519<a name=\"ie-core-vaccine-codes-519\"> </a></td><td>Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna</td><td>Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna</td></tr><tr><td style=\"white-space:nowrap\">520<a name=\"ie-core-vaccine-codes-520\"> </a></td><td>Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product, pfizer-biontech</td><td>Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product (comirnaty bivalent), pfizer-biontech</td></tr><tr><td style=\"white-space:nowrap\">500<a name=\"ie-core-vaccine-codes-500\"> </a></td><td>Covid-19 non-us vaccine, product unknown</td><td>Sars-cov-2 covid-19 non-us vaccine, specific product unknown</td></tr><tr><td style=\"white-space:nowrap\">507<a name=\"ie-core-vaccine-codes-507\"> </a></td><td>Covid-19 ps non-us vaccine (anhui zhifei longcom biopharm + inst of micro, chinese acad of sciences)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom biopharmaceutical + institute of microbiology, chinese academy of sciences)</td></tr><tr><td style=\"white-space:nowrap\">509<a name=\"ie-core-vaccine-codes-509\"> </a></td><td>Covid-19 ps non-us vaccine (epivaccorona)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (epivaccorona)</td></tr><tr><td style=\"white-space:nowrap\">508<a name=\"ie-core-vaccine-codes-508\"> </a></td><td>Covid-19 ps non-us vaccine (jiangsu province centers for disease control and prevention)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (jiangsu province centers for disease control and prevention)</td></tr><tr><td style=\"white-space:nowrap\">521<a name=\"ie-core-vaccine-codes-521\"> </a></td><td>Covid-19 sp, protein-based, adjuvanted (vidprevtyn beta), sanofi-gsk</td><td>Sars-cov-2 (covid-19) vaccine sp, protein-based, adjuvanted, b.1.351 strain (vidprevtyn beta), sanofi-gsk</td></tr><tr><td style=\"white-space:nowrap\">212<a name=\"ie-core-vaccine-codes-212\"> </a></td><td>Covid-19 vaccine, vector-nr, rs-ad26, pf, 0.5 ml</td><td>Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-ad26, preservative free, 0.5 ml</td></tr><tr><td style=\"white-space:nowrap\">210<a name=\"ie-core-vaccine-codes-210\"> </a></td><td>Covid-19 vaccine, vector-nr, rs-chadox1, pf, 0.5 ml</td><td>Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-chadox1, preservative free, 0.5 ml</td></tr><tr><td style=\"white-space:nowrap\">506<a name=\"ie-core-vaccine-codes-506\"> </a></td><td>Covid-19 vvnr non-us vaccine (cansino biological inc./beijing institute of biotechnology</td><td>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (convidecia), cansino biological inc./beijing institute of biotechnology</td></tr><tr><td style=\"white-space:nowrap\">504<a name=\"ie-core-vaccine-codes-504\"> </a></td><td>Covid-19 vvnr non-us vaccine (sputnik light)</td><td>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik light)</td></tr><tr><td style=\"white-space:nowrap\">505<a name=\"ie-core-vaccine-codes-505\"> </a></td><td>Covid-19 vvnr non-us vaccine (sputnik v)</td><td>Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik v)</td></tr><tr><td style=\"white-space:nowrap\">226<a name=\"ie-core-vaccine-codes-226\"> </a></td><td>Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 10mcg/0.5ml</td><td>Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 10mcg/0.5ml dose</td></tr><tr><td style=\"white-space:nowrap\">225<a name=\"ie-core-vaccine-codes-225\"> </a></td><td>Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 5mcg/0.5ml</td><td>Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 5mcg/0.5ml dose</td></tr><tr><td style=\"white-space:nowrap\">230<a name=\"ie-core-vaccine-codes-230\"> </a></td><td>Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose</td></tr><tr><td style=\"white-space:nowrap\">301<a name=\"ie-core-vaccine-codes-301\"> </a></td><td>Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">302<a name=\"ie-core-vaccine-codes-302\"> </a></td><td>Covid-19, mrna, lnp-s, bivalent, pf, 3 mcg/0.2 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 3 mcg/0.2 ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">300<a name=\"ie-core-vaccine-codes-300\"> </a></td><td>Covid-19, mrna, lnp-s, bivalent, pf, 30 mcg/0.3 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 30 mcg/0.3 ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">229<a name=\"ie-core-vaccine-codes-229\"> </a></td><td>Covid-19, mrna, lnp-s, bivalent, pf, 50 mcg/0.5 ml or 25mcg/0.25 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 50 mcg/0.5 ml or 25 mcg/0.25 ml dose</td></tr><tr><td style=\"white-space:nowrap\">218<a name=\"ie-core-vaccine-codes-218\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 10 mcg/0.2 ml dose, tris-sucrose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 10 mcg/0.2ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">207<a name=\"ie-core-vaccine-codes-207\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose</td></tr><tr><td style=\"white-space:nowrap\">311<a name=\"ie-core-vaccine-codes-311\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 25 mcg/0.25 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 25 mcg/0.25 ml dose</td></tr><tr><td style=\"white-space:nowrap\">219<a name=\"ie-core-vaccine-codes-219\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 3 mcg/0.2 ml dose, tris-sucrose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 3 mcg/0.2ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">208<a name=\"ie-core-vaccine-codes-208\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose</td></tr><tr><td style=\"white-space:nowrap\">217<a name=\"ie-core-vaccine-codes-217\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose, tris-sucrose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose, tris-sucrose formulation</td></tr><tr><td style=\"white-space:nowrap\">312<a name=\"ie-core-vaccine-codes-312\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose</td></tr><tr><td style=\"white-space:nowrap\">221<a name=\"ie-core-vaccine-codes-221\"> </a></td><td>Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose</td></tr><tr><td style=\"white-space:nowrap\">228<a name=\"ie-core-vaccine-codes-228\"> </a></td><td>Covid-19, mrna, lnp-s, pf, pediatric 25 mcg/0.25 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 25 mcg/0.25 ml dose</td></tr><tr><td style=\"white-space:nowrap\">227<a name=\"ie-core-vaccine-codes-227\"> </a></td><td>Covid-19, mrna, lnp-s, pf, pediatric 50 mcg/0.5 ml dose</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 50 mcg/0.5 ml dose</td></tr><tr><td style=\"white-space:nowrap\">310<a name=\"ie-core-vaccine-codes-310\"> </a></td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 10 mcg/0.3 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 10 mcg/0.3 ml dose</td></tr><tr><td style=\"white-space:nowrap\">308<a name=\"ie-core-vaccine-codes-308\"> </a></td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 3 mcg/0.3 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 3 mcg/0.3 ml dose</td></tr><tr><td style=\"white-space:nowrap\">309<a name=\"ie-core-vaccine-codes-309\"> </a></td><td>Covid-19, mrna, lnp-s, pf, tris-sucrose, 30 mcg/0.3 ml</td><td>Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 30 mcg/0.3 ml dose</td></tr><tr><td style=\"white-space:nowrap\">313<a name=\"ie-core-vaccine-codes-313\"> </a></td><td>Covid-19, subunit, rs-nanoparticle, adjuvanted, pf, 5 mcg/0.5 ml</td><td>Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 5 mcg/0.5 ml dose</td></tr><tr><td style=\"white-space:nowrap\">211<a name=\"ie-core-vaccine-codes-211\"> </a></td><td>Covid-19, subunit, rs-nanoparticle+matrix-m1 adjuvant, pf, 0.5 ml</td><td>Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 0.5ml dose</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"ie-core-vaccine-codes-56\"> </a></td><td>Dengue fever tetravalent</td><td>Dengue fever vaccine, tetravalent</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"ie-core-vaccine-codes-12\"> </a></td><td>Diphtheria antitoxin</td><td>Diphtheria antitoxin</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"ie-core-vaccine-codes-28\"> </a></td><td>Dt (pediatric)</td><td>Diphtheria and tetanus toxoids, adsorbed for pediatric use</td></tr><tr><td style=\"white-space:nowrap\">195<a name=\"ie-core-vaccine-codes-195\"> </a></td><td>Dt, ipv adsorbed</td><td>Diphtheria, tetanus, poliomyelitis adsorbed</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"ie-core-vaccine-codes-20\"> </a></td><td>Dtap</td><td>Diphtheria, tetanus toxoids and acellular pertussis vaccine</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"ie-core-vaccine-codes-106\"> </a></td><td>Dtap, 5 pertussis antigens</td><td>Diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"ie-core-vaccine-codes-107\"> </a></td><td>Dtap, unspecified formulation</td><td>Diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">146<a name=\"ie-core-vaccine-codes-146\"> </a></td><td>Dtap,ipv,hib,hepb</td><td>Diphtheria and tetanus toxoids and acellular pertussis adsorbed, inactivated poliovirus, haemophilus b conjugate (meningococcal protein conjugate), and hepatitis b (recombinant) vaccine.</td></tr><tr><td style=\"white-space:nowrap\">170<a name=\"ie-core-vaccine-codes-170\"> </a></td><td>Dtap/ipv/hib - non-us</td><td>Non-us diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"ie-core-vaccine-codes-110\"> </a></td><td>Dtap-hep b-ipv</td><td>Dtap-hepatitis b and poliovirus vaccine</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"ie-core-vaccine-codes-50\"> </a></td><td>Dtap-hib</td><td>Dtap-haemophilus influenzae type b conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"ie-core-vaccine-codes-120\"> </a></td><td>Dtap-hib-ipv</td><td>Diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"ie-core-vaccine-codes-130\"> </a></td><td>Dtap-ipv</td><td>Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"ie-core-vaccine-codes-132\"> </a></td><td>Dtap-ipv-hib-hep b, historical</td><td>Historical diphtheria and tetanus toxoids and acellular pertussis, poliovirus, haemophilus b conjugate and hepatitis b (recombinant) vaccine.</td></tr><tr><td style=\"white-space:nowrap\">01<a name=\"ie-core-vaccine-codes-01\"> </a></td><td>Dtp</td><td>Diphtheria, tetanus toxoids and pertussis vaccine</td></tr><tr><td style=\"white-space:nowrap\">198<a name=\"ie-core-vaccine-codes-198\"> </a></td><td>Dtp-hepb-hib pentavalent non-us</td><td>Diphtheria, pertussis, tetanus, hepatitis b, haemophilus influenza type b, (pentavalent)</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"ie-core-vaccine-codes-22\"> </a></td><td>Dtp-hib</td><td>Dtp-haemophilus influenzae type b conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"ie-core-vaccine-codes-102\"> </a></td><td>Dtp-hib-hep b</td><td>Dtp- haemophilus influenzae type b conjugate and hepatitis b vaccine</td></tr><tr><td style=\"white-space:nowrap\">204<a name=\"ie-core-vaccine-codes-204\"> </a></td><td>Ebola zaire vaccine, live, recombinant, 1ml dose</td><td>Ebola zaire vaccine, live, recombinant, 1ml dose</td></tr><tr><td style=\"white-space:nowrap\">214<a name=\"ie-core-vaccine-codes-214\"> </a></td><td>Ebola, unspecified</td><td>Ebola, unspecified</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"ie-core-vaccine-codes-57\"> </a></td><td>Hantavirus</td><td>Hantavirus vaccine</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"ie-core-vaccine-codes-30\"> </a></td><td>Hbig</td><td>Hepatitis b immune globulin</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"ie-core-vaccine-codes-52\"> </a></td><td>Hep a, adult</td><td>Hepatitis a vaccine, adult dosage</td></tr><tr><td style=\"white-space:nowrap\">154<a name=\"ie-core-vaccine-codes-154\"> </a></td><td>Hep a, ig</td><td>Hepatitis a immune globulin</td></tr><tr><td style=\"white-space:nowrap\">169<a name=\"ie-core-vaccine-codes-169\"> </a></td><td>Hep a, live attenuated</td><td>Hep a, live attenuated-im</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"ie-core-vaccine-codes-83\"> </a></td><td>Hep a, ped/adol, 2 dose</td><td>Hepatitis a vaccine, pediatric/adolescent dosage, 2 dose schedule</td></tr><tr><td style=\"white-space:nowrap\">84<a name=\"ie-core-vaccine-codes-84\"> </a></td><td>Hep a, ped/adol, 3 dose</td><td>Hepatitis a vaccine, pediatric/adolescent dosage, 3 dose schedule</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"ie-core-vaccine-codes-31\"> </a></td><td>Hep a, pediatric, unspecified formulation</td><td>Hepatitis a vaccine, pediatric dosage, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"ie-core-vaccine-codes-85\"> </a></td><td>Hep a, unspecified formulation</td><td>Hepatitis a vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"ie-core-vaccine-codes-104\"> </a></td><td>Hep a-hep b</td><td>Hepatitis a and hepatitis b vaccine</td></tr><tr><td style=\"white-space:nowrap\">193<a name=\"ie-core-vaccine-codes-193\"> </a></td><td>Hep a-hep b, pediatric/adolescent</td><td>Hepatitis a and hepatitis b vaccine, pediatric/adolescent (non-us)</td></tr><tr><td style=\"white-space:nowrap\">08<a name=\"ie-core-vaccine-codes-08\"> </a></td><td>Hep b, adolescent or pediatric</td><td>Hepatitis b vaccine, pediatric or pediatric/adolescent dosage</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"ie-core-vaccine-codes-42\"> </a></td><td>Hep b, adolescent/high risk infant</td><td>Hepatitis b vaccine, adolescent/high risk infant dosage</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"ie-core-vaccine-codes-43\"> </a></td><td>Hep b, adult</td><td>Hepatitis b vaccine, adult dosage</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"ie-core-vaccine-codes-44\"> </a></td><td>Hep b, dialysis</td><td>Hepatitis b vaccine, dialysis patient dosage</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"ie-core-vaccine-codes-45\"> </a></td><td>Hep b, unspecified formulation</td><td>Hepatitis b vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"ie-core-vaccine-codes-58\"> </a></td><td>Hep c</td><td>Hepatitis c vaccine</td></tr><tr><td style=\"white-space:nowrap\">59<a name=\"ie-core-vaccine-codes-59\"> </a></td><td>Hep e</td><td>Hepatitis e vaccine</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"ie-core-vaccine-codes-220\"> </a></td><td>Hepb recombinant, 3-antigen, al(oh)3</td><td>Hepatitis b vaccine (recombinant), 3-antigen, al(oh)3 adjuvanted</td></tr><tr><td style=\"white-space:nowrap\">189<a name=\"ie-core-vaccine-codes-189\"> </a></td><td>Hepb-cpg</td><td>Hepatitis b vaccine (recombinant), cpg adjuvanted</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"ie-core-vaccine-codes-60\"> </a></td><td>Herpes simplex 2</td><td>Herpes simplex virus, type 2 vaccine</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"ie-core-vaccine-codes-47\"> </a></td><td>Hib (hboc)</td><td>Haemophilus influenzae type b vaccine, hboc conjugate</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"ie-core-vaccine-codes-46\"> </a></td><td>Hib (prp-d)</td><td>Haemophilus influenzae type b vaccine, prp-d conjugate</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"ie-core-vaccine-codes-49\"> </a></td><td>Hib (prp-omp)</td><td>Haemophilus influenzae type b vaccine, prp-omp conjugate</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"ie-core-vaccine-codes-48\"> </a></td><td>Hib (prp-t)</td><td>Haemophilus influenzae type b vaccine, prp-t conjugate</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"ie-core-vaccine-codes-17\"> </a></td><td>Hib, unspecified formulation</td><td>Haemophilus influenzae type b vaccine, conjugate unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"ie-core-vaccine-codes-51\"> </a></td><td>Hib-hep b</td><td>Haemophilus influenzae type b conjugate and hepatitis b vaccine</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"ie-core-vaccine-codes-61\"> </a></td><td>Hiv</td><td>Human immunodeficiency virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"ie-core-vaccine-codes-118\"> </a></td><td>Hpv, bivalent</td><td>Human papilloma virus vaccine, bivalent</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"ie-core-vaccine-codes-62\"> </a></td><td>Hpv, quadrivalent</td><td>Human papilloma virus vaccine, quadrivalent</td></tr><tr><td style=\"white-space:nowrap\">137<a name=\"ie-core-vaccine-codes-137\"> </a></td><td>Hpv, unspecified formulation</td><td>Hpv, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">165<a name=\"ie-core-vaccine-codes-165\"> </a></td><td>Hpv9</td><td>Human papillomavirus 9-valent vaccine</td></tr><tr><td style=\"white-space:nowrap\">86<a name=\"ie-core-vaccine-codes-86\"> </a></td><td>Ig</td><td>Immune globulin, intramuscular</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"ie-core-vaccine-codes-14\"> </a></td><td>Ig, unspecified formulation</td><td>Immune globulin, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">87<a name=\"ie-core-vaccine-codes-87\"> </a></td><td>Igiv</td><td>Immune globulin, intravenous</td></tr><tr><td style=\"white-space:nowrap\">160<a name=\"ie-core-vaccine-codes-160\"> </a></td><td>Influenza a monovalent (h5n1), adjuvanted-2013</td><td>Influenza a monovalent (h5n1), adjuvanted, national stockpile 2013</td></tr><tr><td style=\"white-space:nowrap\">151<a name=\"ie-core-vaccine-codes-151\"> </a></td><td>Influenza nasal, unspecified formulation</td><td>Influenza nasal, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">205<a name=\"ie-core-vaccine-codes-205\"> </a></td><td>Influenza, adjuvanted, quadrivalent, pf</td><td>Influenza, adjuvanted, inactivated, quadrivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">168<a name=\"ie-core-vaccine-codes-168\"> </a></td><td>Influenza, adjuvanted, trivalent, pf</td><td>Influenza, adjuvanted, inactivated, trivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"ie-core-vaccine-codes-123\"> </a></td><td>Influenza, h5n1-1203</td><td>Influenza virus vaccine, h5n1, a/vietnam/1203/2004 (national stockpile)</td></tr><tr><td style=\"white-space:nowrap\">197<a name=\"ie-core-vaccine-codes-197\"> </a></td><td>Influenza, high-dose, quadrivalent, pf</td><td>Influenza, high-dose, split virus, quadrivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"ie-core-vaccine-codes-135\"> </a></td><td>Influenza, high-dose, trivalent, pf</td><td>Influenza, high-dose, split virus, trivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">161<a name=\"ie-core-vaccine-codes-161\"> </a></td><td>Influenza, injectable,quadrivalent, preservative free, pediatric</td><td>Influenza, injectable,quadrivalent, preservative free, pediatric</td></tr><tr><td style=\"white-space:nowrap\">166<a name=\"ie-core-vaccine-codes-166\"> </a></td><td>Influenza, intradermal, quadrivalent, preservative free</td><td>Influenza, intradermal, quadrivalent, preservative free, injectable</td></tr><tr><td style=\"white-space:nowrap\">149<a name=\"ie-core-vaccine-codes-149\"> </a></td><td>Influenza, live, quadrivalent, intranasal</td><td>Influenza, live, quadrivalent, intranasal</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"ie-core-vaccine-codes-111\"> </a></td><td>Influenza, live, trivalent, intranasal</td><td>Influenza, live, trivalent, intranasal</td></tr><tr><td style=\"white-space:nowrap\">171<a name=\"ie-core-vaccine-codes-171\"> </a></td><td>Influenza, mdck, quadrivalent, pf</td><td>Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">186<a name=\"ie-core-vaccine-codes-186\"> </a></td><td>Influenza, mdck, quadrivalent, preservative</td><td>Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, contains preservative</td></tr><tr><td style=\"white-space:nowrap\">153<a name=\"ie-core-vaccine-codes-153\"> </a></td><td>Influenza, mdck, trivalent, pf</td><td>Influenza, madin darby canine kidney, subunit, trivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"ie-core-vaccine-codes-320\"> </a></td><td>Influenza, mdck, trivalent, preservative</td><td>Influenza, madin darby canine kidney, subunit, trivalent, injectable, contains preservative</td></tr><tr><td style=\"white-space:nowrap\">185<a name=\"ie-core-vaccine-codes-185\"> </a></td><td>Influenza, recombinant, quadrivalent, pf</td><td>Influenza, recombinant, quadrivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">155<a name=\"ie-core-vaccine-codes-155\"> </a></td><td>Influenza, recombinant, trivalent, pf</td><td>Influenza, recombinant, trivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"ie-core-vaccine-codes-144\"> </a></td><td>Influenza, seasonal, intradermal, preservative free</td><td>Seasonal influenza, intradermal, preservative free</td></tr><tr><td style=\"white-space:nowrap\">194<a name=\"ie-core-vaccine-codes-194\"> </a></td><td>Influenza, southern hemisphere</td><td>Influenza, southern hemisphere, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">231<a name=\"ie-core-vaccine-codes-231\"> </a></td><td>Influenza, southern hemisphere, high-dose, quadrivalent</td><td>Influenza, seasonal, southern hemisphere, high-dose, quadrivalent, 0.7ml dose, preservative free</td></tr><tr><td style=\"white-space:nowrap\">200<a name=\"ie-core-vaccine-codes-200\"> </a></td><td>Influenza, southern hemisphere, pediatric, preservative free</td><td>Influenza, seasonal, southern hemisphere, quadrivalent, pediatric 0.25ml dose, preservative free</td></tr><tr><td style=\"white-space:nowrap\">201<a name=\"ie-core-vaccine-codes-201\"> </a></td><td>Influenza, southern hemisphere, preservative free</td><td>Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, no preservative</td></tr><tr><td style=\"white-space:nowrap\">202<a name=\"ie-core-vaccine-codes-202\"> </a></td><td>Influenza, southern hemisphere, quadrivalent, with preservative</td><td>Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, with preservative</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"ie-core-vaccine-codes-15\"> </a></td><td>Influenza, split (incl. purified surface antigen)</td><td>Influenza virus vaccine, split virus (incl. purified surface antigen)-retired code</td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"ie-core-vaccine-codes-150\"> </a></td><td>Influenza, split virus, quadrivalent, pf</td><td>Influenza, split virus, quadrivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">158<a name=\"ie-core-vaccine-codes-158\"> </a></td><td>Influenza, split virus, quadrivalent, preservative</td><td>Influenza, split virus, quadrivalent, injectable, contains preservative</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"ie-core-vaccine-codes-140\"> </a></td><td>Influenza, split virus, trivalent, pf</td><td>Influenza, split virus, trivalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"ie-core-vaccine-codes-141\"> </a></td><td>Influenza, split virus, trivalent, preservative</td><td>Influenza, split virus, trivalent, injectable, contains preservative</td></tr><tr><td style=\"white-space:nowrap\">88<a name=\"ie-core-vaccine-codes-88\"> </a></td><td>Influenza, unspecified formulation</td><td>Influenza virus vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"ie-core-vaccine-codes-16\"> </a></td><td>Influenza, whole</td><td>Influenza virus vaccine, whole virus</td></tr><tr><td style=\"white-space:nowrap\">323<a name=\"ie-core-vaccine-codes-323\"> </a></td><td>Influenza-avian, h5, unspecified formulation</td><td>Influenza-avian, h5, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">321<a name=\"ie-core-vaccine-codes-321\"> </a></td><td>Influenza-avian, h5n8, monovalent, pf</td><td>Influenza-avian, h5n8, viral-vector, monovalent, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">322<a name=\"ie-core-vaccine-codes-322\"> </a></td><td>Influenza-avian, h5n8, monovalent, preservative</td><td>Influenza-avian, h5n8, viral-vector, monovalent, injectable, contains preservative</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"ie-core-vaccine-codes-10\"> </a></td><td>Ipv</td><td>Poliovirus vaccine, inactivated</td></tr><tr><td style=\"white-space:nowrap\">134<a name=\"ie-core-vaccine-codes-134\"> </a></td><td>Japanese encephalitis im</td><td>Japanese encephalitis vaccine for intramuscular administration</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"ie-core-vaccine-codes-39\"> </a></td><td>Japanese encephalitis sc</td><td>Japanese encephalitis vaccine sc</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"ie-core-vaccine-codes-129\"> </a></td><td>Japanese encephalitis, unspecified formulation</td><td>Japanese encephalitis vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"ie-core-vaccine-codes-63\"> </a></td><td>Junin virus</td><td>Junin virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"ie-core-vaccine-codes-64\"> </a></td><td>Leishmaniasis</td><td>Leishmaniasis vaccine</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"ie-core-vaccine-codes-65\"> </a></td><td>Leprosy</td><td>Leprosy vaccine</td></tr><tr><td style=\"white-space:nowrap\">66<a name=\"ie-core-vaccine-codes-66\"> </a></td><td>Lyme disease</td><td>Lyme disease vaccine</td></tr><tr><td style=\"white-space:nowrap\">04<a name=\"ie-core-vaccine-codes-04\"> </a></td><td>M/r</td><td>Measles and rubella virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"ie-core-vaccine-codes-67\"> </a></td><td>Malaria</td><td>Malaria vaccine</td></tr><tr><td style=\"white-space:nowrap\">05<a name=\"ie-core-vaccine-codes-05\"> </a></td><td>Measles</td><td>Measles virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"ie-core-vaccine-codes-68\"> </a></td><td>Melanoma</td><td>Melanoma vaccine</td></tr><tr><td style=\"white-space:nowrap\">191<a name=\"ie-core-vaccine-codes-191\"> </a></td><td>Meningococcal a polysaccharide (non-us)</td><td>Meningococcal a polysaccharide vaccine (non-us)</td></tr><tr><td style=\"white-space:nowrap\">192<a name=\"ie-core-vaccine-codes-192\"> </a></td><td>Meningococcal ac polysaccharide (non-us)</td><td>Meningococcal ac polysaccharide vaccine (non-us)</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"ie-core-vaccine-codes-108\"> </a></td><td>Meningococcal acwy, unspecified formulation</td><td>Meningococcal acwy vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">163<a name=\"ie-core-vaccine-codes-163\"> </a></td><td>Meningococcal b, omv</td><td>Meningococcal b vaccine, recombinant, omv, adjuvanted</td></tr><tr><td style=\"white-space:nowrap\">162<a name=\"ie-core-vaccine-codes-162\"> </a></td><td>Meningococcal b, recombinant</td><td>Meningococcal b vaccine, fully recombinant</td></tr><tr><td style=\"white-space:nowrap\">164<a name=\"ie-core-vaccine-codes-164\"> </a></td><td>Meningococcal b, unspecified</td><td>Meningococcal b, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"ie-core-vaccine-codes-103\"> </a></td><td>Meningococcal c conjugate</td><td>Meningococcal c conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">148<a name=\"ie-core-vaccine-codes-148\"> </a></td><td>Meningococcal c/y-hib prp</td><td>Meningococcal groups c and y and haemophilus b tetanus toxoid conjugate vaccine</td></tr><tr><td style=\"white-space:nowrap\">203<a name=\"ie-core-vaccine-codes-203\"> </a></td><td>Meningococcal conjugate quadrivalent, menacwy-tt (mcv4)</td><td>Meningococcal polysaccharide (groups a, c, y, w-135) tetanus toxoid conjugate vaccine 0.5ml dose, preservative free</td></tr><tr><td style=\"white-space:nowrap\">147<a name=\"ie-core-vaccine-codes-147\"> </a></td><td>Meningococcal mcv4, unspecified formulation</td><td>Meningococcal, mcv4, unspecified conjugate formulation(groups a, c, y and w-135)</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"ie-core-vaccine-codes-136\"> </a></td><td>Meningococcal mcv4o</td><td>Meningococcal oligosaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4o)</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"ie-core-vaccine-codes-114\"> </a></td><td>Meningococcal mcv4p</td><td>Meningococcal polysaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4p)</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"ie-core-vaccine-codes-32\"> </a></td><td>Meningococcal mpsv4</td><td>Meningococcal polysaccharide vaccine (mpsv4)</td></tr><tr><td style=\"white-space:nowrap\">316<a name=\"ie-core-vaccine-codes-316\"> </a></td><td>Meningococcal polysaccharide (menacwy-tt conjugate), (menb), pf</td><td>Meningococcal polysaccharide (groups a, c, y, w) tetanus toxoid conjugate, meningococcal b recombinant vaccine, 0.5ml, preservative free</td></tr><tr><td style=\"white-space:nowrap\">167<a name=\"ie-core-vaccine-codes-167\"> </a></td><td>Meningococcal, unknown serogroups</td><td>Meningococcal vaccine of unknown formulation and unknown serogroups</td></tr><tr><td style=\"white-space:nowrap\">03<a name=\"ie-core-vaccine-codes-03\"> </a></td><td>Mmr</td><td>Measles, mumps and rubella virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"ie-core-vaccine-codes-94\"> </a></td><td>Mmrv</td><td>Measles, mumps, rubella, and varicella virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">07<a name=\"ie-core-vaccine-codes-07\"> </a></td><td>Mumps</td><td>Mumps virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">998<a name=\"ie-core-vaccine-codes-998\"> </a></td><td>No vaccine administered</td><td>No vaccine administered</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"ie-core-vaccine-codes-127\"> </a></td><td>Novel influenza-h1n1-09</td><td>Novel influenza-h1n1-09, injectable</td></tr><tr><td style=\"white-space:nowrap\">128<a name=\"ie-core-vaccine-codes-128\"> </a></td><td>Novel influenza-h1n1-09, all formulations</td><td>Novel influenza-h1n1-09, all formulations</td></tr><tr><td style=\"white-space:nowrap\">125<a name=\"ie-core-vaccine-codes-125\"> </a></td><td>Novel influenza-h1n1-09, nasal</td><td>Novel influenza-h1n1-09, live virus for nasal administration</td></tr><tr><td style=\"white-space:nowrap\">126<a name=\"ie-core-vaccine-codes-126\"> </a></td><td>Novel influenza-h1n1-09, preservative-free</td><td>Novel influenza-h1n1-09, preservative-free, injectable</td></tr><tr><td style=\"white-space:nowrap\">02<a name=\"ie-core-vaccine-codes-02\"> </a></td><td>Opv</td><td>Trivalent poliovirus vaccine, live, oral</td></tr><tr><td style=\"white-space:nowrap\">179<a name=\"ie-core-vaccine-codes-179\"> </a></td><td>Opv ,monovalent, unspecified</td><td>Non-us monovalent oral polio vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">178<a name=\"ie-core-vaccine-codes-178\"> </a></td><td>Opv bivalent</td><td>Non-us bivalent oral polio vaccine (types 1 and 3)</td></tr><tr><td style=\"white-space:nowrap\">182<a name=\"ie-core-vaccine-codes-182\"> </a></td><td>Opv, unspecified</td><td>Oral polio vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">69<a name=\"ie-core-vaccine-codes-69\"> </a></td><td>Parainfluenza-3</td><td>Parainfluenza-3 virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">177<a name=\"ie-core-vaccine-codes-177\"> </a></td><td>Pcv10</td><td>Pneumococcal conjugate vaccine, 10 valent</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"ie-core-vaccine-codes-11\"> </a></td><td>Pertussis</td><td>Pertussis vaccine</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"ie-core-vaccine-codes-23\"> </a></td><td>Plague</td><td>Plague vaccine</td></tr><tr><td style=\"white-space:nowrap\">133<a name=\"ie-core-vaccine-codes-133\"> </a></td><td>Pneumococcal conjugate pcv 13</td><td>Pneumococcal conjugate vaccine, 13 valent</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"ie-core-vaccine-codes-100\"> </a></td><td>Pneumococcal conjugate pcv 7</td><td>Pneumococcal conjugate vaccine, 7 valent</td></tr><tr><td style=\"white-space:nowrap\">215<a name=\"ie-core-vaccine-codes-215\"> </a></td><td>Pneumococcal conjugate pcv15, polysaccharide crm197 conjugate, adjuvant, pf</td><td>Pneumococcal conjugate vaccine 15-valent (pcv15), polysaccharide crm197 conjugate, adjuvant, preservative free</td></tr><tr><td style=\"white-space:nowrap\">216<a name=\"ie-core-vaccine-codes-216\"> </a></td><td>Pneumococcal conjugate pcv20, polysaccharide crm197 conjugate, adjuvant, pf</td><td>Pneumococcal conjugate vaccine 20-valent (pcv20), polysaccharide crm197 conjugate, adjuvant, preservative free</td></tr><tr><td style=\"white-space:nowrap\">327<a name=\"ie-core-vaccine-codes-327\"> </a></td><td>Pneumococcal conjugate pcv21, polysaccharide crm197 conjugate, pf</td><td>Pneumococcal conjugate vaccine, 21 valent (pcv21), polysaccharide crm197 conjugate, preservative free</td></tr><tr><td style=\"white-space:nowrap\">152<a name=\"ie-core-vaccine-codes-152\"> </a></td><td>Pneumococcal conjugate, unspecified formulation</td><td>Pneumococcal conjugate, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"ie-core-vaccine-codes-33\"> </a></td><td>Pneumococcal polysaccharide ppv23</td><td>Pneumococcal polysaccharide vaccine, 23 valent</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"ie-core-vaccine-codes-109\"> </a></td><td>Pneumococcal, unspecified formulation</td><td>Pneumococcal vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">89<a name=\"ie-core-vaccine-codes-89\"> </a></td><td>Polio, unspecified formulation</td><td>Poliovirus vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">324<a name=\"ie-core-vaccine-codes-324\"> </a></td><td>Poliovirus, inactivated, fractional-dose (fipv)</td><td>Poliovirus, inactivated, fractional-dose (fipv)</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"ie-core-vaccine-codes-70\"> </a></td><td>Q fever</td><td>Q fever vaccine</td></tr><tr><td style=\"white-space:nowrap\">175<a name=\"ie-core-vaccine-codes-175\"> </a></td><td>Rabies - im diploid cell culture</td><td>Human rabies vaccine from human diploid cell culture</td></tr><tr><td style=\"white-space:nowrap\">176<a name=\"ie-core-vaccine-codes-176\"> </a></td><td>Rabies - im fibroblast culture</td><td>Human rabies vaccine from chicken fibroblast culture</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"ie-core-vaccine-codes-40\"> </a></td><td>Rabies, intradermal injection</td><td>Rabies vaccine, for intradermal injection</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"ie-core-vaccine-codes-18\"> </a></td><td>Rabies, intramuscular injection</td><td>Rabies vaccine, for intramuscular injection retired code</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"ie-core-vaccine-codes-90\"> </a></td><td>Rabies, unspecified formulation</td><td>Rabies vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"ie-core-vaccine-codes-99\"> </a></td><td>Reserved - do not use</td><td>Reserved - do not use</td></tr><tr><td style=\"white-space:nowrap\">315<a name=\"ie-core-vaccine-codes-315\"> </a></td><td>Respiratory syncytial virus (rsv) mab, unspecified</td><td>Respiratory syncytial virus (rsv) monoclonal antibody (mab), unspecified</td></tr><tr><td style=\"white-space:nowrap\">314<a name=\"ie-core-vaccine-codes-314\"> </a></td><td>Respiratory syncytial virus (rsv) vaccine, unspecified</td><td>Respiratory syncytial virus (rsv) vaccine, unspecified</td></tr><tr><td style=\"white-space:nowrap\">304<a name=\"ie-core-vaccine-codes-304\"> </a></td><td>Respiratory syncytial virus (rsv), unspecified</td><td>Respiratory syncytial virus (rsv), unspecified</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"ie-core-vaccine-codes-72\"> </a></td><td>Rheumatic fever</td><td>Rheumatic fever vaccine</td></tr><tr><td style=\"white-space:nowrap\">159<a name=\"ie-core-vaccine-codes-159\"> </a></td><td>Rho(d) - unspecified formulation</td><td>Rho(d) unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">157<a name=\"ie-core-vaccine-codes-157\"> </a></td><td>Rho(d) -ig im</td><td>Rho(d) immune globulin - im</td></tr><tr><td style=\"white-space:nowrap\">156<a name=\"ie-core-vaccine-codes-156\"> </a></td><td>Rho(d)-ig</td><td>Rho(d) immune globulin- iv or im</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"ie-core-vaccine-codes-73\"> </a></td><td>Rift valley fever</td><td>Rift valley fever vaccine</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"ie-core-vaccine-codes-34\"> </a></td><td>Rig</td><td>Rabies immune globulin</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"ie-core-vaccine-codes-119\"> </a></td><td>Rotavirus, monovalent</td><td>Rotavirus, live, monovalent vaccine</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"ie-core-vaccine-codes-116\"> </a></td><td>Rotavirus, pentavalent</td><td>Rotavirus, live, pentavalent vaccine</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"ie-core-vaccine-codes-74\"> </a></td><td>Rotavirus, tetravalent</td><td>Rotavirus, live, tetravalent vaccine</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"ie-core-vaccine-codes-122\"> </a></td><td>Rotavirus, unspecified formulation</td><td>Rotavirus vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">305<a name=\"ie-core-vaccine-codes-305\"> </a></td><td>Rsv, bivalent, protein subunit rsvpref, diluent reconstituted, 0.5 ml, pf</td><td>Respiratory syncytial virus (rsv), vaccine, bivalent, protein subunit rsv prefusion f, diluent reconstituted, 0.5 ml, preservative free</td></tr><tr><td style=\"white-space:nowrap\">306<a name=\"ie-core-vaccine-codes-306\"> </a></td><td>Rsv, mab, nirsevimab-alip, 0.5 ml, neonate to 24 months</td><td>Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 0.5 ml, neonates and children to 24 months</td></tr><tr><td style=\"white-space:nowrap\">307<a name=\"ie-core-vaccine-codes-307\"> </a></td><td>Rsv, mab, nirsevimab-alip, 1 ml, neonate to 24 months</td><td>Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 1 ml, neonates and children to 24 months</td></tr><tr><td style=\"white-space:nowrap\">326<a name=\"ie-core-vaccine-codes-326\"> </a></td><td>Rsv, mrna, injectable, pf</td><td>Respiratory syncytial virus (rsv), mrna, injectable, preservative free</td></tr><tr><td style=\"white-space:nowrap\">303<a name=\"ie-core-vaccine-codes-303\"> </a></td><td>Rsv, recombinant, protein subunit rsvpref, adjuvant reconstituted, 0.5 ml, pf</td><td>Respiratory syncytial virus (rsv), vaccine, recombinant, protein subunit rsv prefusion f, adjuvant reconstituted, 0.5 ml, preservative free</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"ie-core-vaccine-codes-71\"> </a></td><td>Rsv-igiv</td><td>Respiratory syncytial virus immune globulin, intravenous</td></tr><tr><td style=\"white-space:nowrap\">93<a name=\"ie-core-vaccine-codes-93\"> </a></td><td>Rsv-mab</td><td>Respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular</td></tr><tr><td style=\"white-space:nowrap\">145<a name=\"ie-core-vaccine-codes-145\"> </a></td><td>Rsv-mab (new)</td><td>Respiratory syncytial virus monoclonal antibody (motavizumab), intramuscular</td></tr><tr><td style=\"white-space:nowrap\">06<a name=\"ie-core-vaccine-codes-06\"> </a></td><td>Rubella</td><td>Rubella virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"ie-core-vaccine-codes-38\"> </a></td><td>Rubella/mumps</td><td>Rubella and mumps virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">213<a name=\"ie-core-vaccine-codes-213\"> </a></td><td>Sars-cov-2 (covid-19) vaccine, unspecified</td><td>Sars-cov-2 (covid-19) vaccine, unspecified</td></tr><tr><td style=\"white-space:nowrap\">514<a name=\"ie-core-vaccine-codes-514\"> </a></td><td>Sars-cov-2 covid-19 dna non-us vaccine (zydus cadila, zycov-d)</td><td>Sars-cov-2 covid-19 dna non-us vaccine product (zydus cadila, zycov-d)</td></tr><tr><td style=\"white-space:nowrap\">513<a name=\"ie-core-vaccine-codes-513\"> </a></td><td>Sars-cov-2 covid-19 ps non-us vaccine (anhui zhifei longcom, zifivax)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom, zifivax)</td></tr><tr><td style=\"white-space:nowrap\">517<a name=\"ie-core-vaccine-codes-517\"> </a></td><td>Sars-cov-2 covid-19 ps non-us vaccine (biological e limited, corbevax)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (biological e limited, corbevax)</td></tr><tr><td style=\"white-space:nowrap\">515<a name=\"ie-core-vaccine-codes-515\"> </a></td><td>Sars-cov-2 covid-19 ps non-us vaccine (medigen, mvc-cov1901)</td><td>Sars-cov-2 covid-19 protein subunit non-us vaccine product (medigen, mvc-cov1901)</td></tr><tr><td style=\"white-space:nowrap\">512<a name=\"ie-core-vaccine-codes-512\"> </a></td><td>Sars-cov-2 covid-19 vlp non-us vaccine (medicago, covifenz)</td><td>Sars-cov-2 covid-19 virus like particle (vlp) non-us vaccine product (medicago, covifenz)</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"ie-core-vaccine-codes-76\"> </a></td><td>Staphylococcus bacterio lysate</td><td>Staphylococcus bacteriophage lysate</td></tr><tr><td style=\"white-space:nowrap\">138<a name=\"ie-core-vaccine-codes-138\"> </a></td><td>Td (adult)</td><td>Tetanus and diphtheria toxoids, not adsorbed, for adult use</td></tr><tr><td style=\"white-space:nowrap\">09<a name=\"ie-core-vaccine-codes-09\"> </a></td><td>Td (adult), 2 lf tetanus toxoid, preservative free, adsorbed</td><td>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (2 lf of tetanus toxoid and 2 lf of diphtheria toxoid)</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"ie-core-vaccine-codes-113\"> </a></td><td>Td (adult), 5 lf tetanus toxoid, preservative free, adsorbed</td><td>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (5 lf of tetanus toxoid and 2 lf of diphtheria toxoid)</td></tr><tr><td style=\"white-space:nowrap\">139<a name=\"ie-core-vaccine-codes-139\"> </a></td><td>Td(adult) unspecified formulation</td><td>Td(adult) unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">196<a name=\"ie-core-vaccine-codes-196\"> </a></td><td>Td, adsorbed, preservative free, adult use, lf unspecified</td><td>Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use, lf unspecified</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"ie-core-vaccine-codes-115\"> </a></td><td>Tdap</td><td>Tetanus toxoid, reduced diphtheria toxoid, and acellular pertussis vaccine, adsorbed</td></tr><tr><td style=\"white-space:nowrap\">180<a name=\"ie-core-vaccine-codes-180\"> </a></td><td>Tetanus immune globulin</td><td>Tetanus immune globulin</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"ie-core-vaccine-codes-35\"> </a></td><td>Tetanus toxoid, adsorbed</td><td>Tetanus toxoid, adsorbed</td></tr><tr><td style=\"white-space:nowrap\">142<a name=\"ie-core-vaccine-codes-142\"> </a></td><td>Tetanus toxoid, not adsorbed</td><td>Tetanus toxoid, not adsorbed</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"ie-core-vaccine-codes-112\"> </a></td><td>Tetanus toxoid, unspecified formulation</td><td>Tetanus toxoid, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"ie-core-vaccine-codes-77\"> </a></td><td>Tick-borne encephalitis vaccine (non-us)</td><td>Tick-borne encephalitis vaccine (non-us)</td></tr><tr><td style=\"white-space:nowrap\">223<a name=\"ie-core-vaccine-codes-223\"> </a></td><td>Tick-borne encephalitis, inactivated, pf, 0.25ml</td><td>Tick-borne encephalitis vaccine, inactivated, preservative free, 0.25ml dose</td></tr><tr><td style=\"white-space:nowrap\">224<a name=\"ie-core-vaccine-codes-224\"> </a></td><td>Tick-borne encephalitis, inactivated, pf, 0.5ml</td><td>Tick-borne encephalitis vaccine, inactivated, preservative free, 0.5ml dose</td></tr><tr><td style=\"white-space:nowrap\">222<a name=\"ie-core-vaccine-codes-222\"> </a></td><td>Tick-borne encephalitis, unspecified</td><td>Tick-borne encephalitis vaccine, unspecified</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"ie-core-vaccine-codes-13\"> </a></td><td>Tig</td><td>Tetanus immune globulin</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"ie-core-vaccine-codes-98\"> </a></td><td>Tst, unspecified formulation</td><td>Tuberculin skin test; unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"ie-core-vaccine-codes-95\"> </a></td><td>Tst-ot tine test</td><td>Tuberculin skin test; old tuberculin, multipuncture device</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"ie-core-vaccine-codes-96\"> </a></td><td>Tst-ppd intradermal</td><td>Tuberculin skin test; purified protein derivative solution, intradermal</td></tr><tr><td style=\"white-space:nowrap\">97<a name=\"ie-core-vaccine-codes-97\"> </a></td><td>Tst-ppd tine test</td><td>Tuberculin skin test; purified protein derivative, multipuncture device</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"ie-core-vaccine-codes-78\"> </a></td><td>Tularemia vaccine</td><td>Tularemia vaccine</td></tr><tr><td style=\"white-space:nowrap\">190<a name=\"ie-core-vaccine-codes-190\"> </a></td><td>Typhoid conjugate vaccine (tcv)</td><td>Typhoid conjugate vaccine (non-us)</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"ie-core-vaccine-codes-25\"> </a></td><td>Typhoid, oral</td><td>Typhoid vaccine, live, oral</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"ie-core-vaccine-codes-41\"> </a></td><td>Typhoid, parenteral</td><td>Typhoid vaccine, parenteral, other than acetone-killed, dried</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"ie-core-vaccine-codes-53\"> </a></td><td>Typhoid, parenteral, akd (u.s. military)</td><td>Typhoid vaccine, parenteral, acetone-killed, dried (u.s. military)</td></tr><tr><td style=\"white-space:nowrap\">91<a name=\"ie-core-vaccine-codes-91\"> </a></td><td>Typhoid, unspecified formulation</td><td>Typhoid vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"ie-core-vaccine-codes-101\"> </a></td><td>Typhoid, vicps</td><td>Typhoid vi capsular polysaccharide vaccine</td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"ie-core-vaccine-codes-131\"> </a></td><td>Typhus, historical</td><td>Historical record of a typhus vaccination</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"ie-core-vaccine-codes-999\"> </a></td><td>Unknown</td><td>Unknown vaccine or immune globulin</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"ie-core-vaccine-codes-75\"> </a></td><td>Vaccinia (smallpox)</td><td>Vaccinia (smallpox) vaccine</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"ie-core-vaccine-codes-105\"> </a></td><td>Vaccinia (smallpox) diluted</td><td>Vaccinia (smallpox) vaccine, diluted</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"ie-core-vaccine-codes-79\"> </a></td><td>Vaccinia immune globulin</td><td>Vaccinia immune globulin</td></tr><tr><td style=\"white-space:nowrap\">206<a name=\"ie-core-vaccine-codes-206\"> </a></td><td>Vaccinia, smallpox mpox vaccine live, pf, sq or id injection</td><td>Vaccinia, smallpox monkeypox vaccine, live attenuated, preservative free, subcutaneous or intradermal injection</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"ie-core-vaccine-codes-21\"> </a></td><td>Varicella</td><td>Varicella virus vaccine</td></tr><tr><td style=\"white-space:nowrap\">81<a name=\"ie-core-vaccine-codes-81\"> </a></td><td>Vee, inactivated</td><td>Venezuelan equine encephalitis, inactivated</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"ie-core-vaccine-codes-80\"> </a></td><td>Vee, live</td><td>Venezuelan equine encephalitis, live, attenuated</td></tr><tr><td style=\"white-space:nowrap\">92<a name=\"ie-core-vaccine-codes-92\"> </a></td><td>Vee, unspecified formulation</td><td>Venezuelan equine encephalitis vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"ie-core-vaccine-codes-36\"> </a></td><td>Vzig</td><td>Varicella zoster immune globulin</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"ie-core-vaccine-codes-117\"> </a></td><td>Vzig (ind)</td><td>Varicella zoster immune globulin (investigational new drug)</td></tr><tr><td style=\"white-space:nowrap\">37<a name=\"ie-core-vaccine-codes-37\"> </a></td><td>Yellow fever live</td><td>Yellow fever vaccine live</td></tr><tr><td style=\"white-space:nowrap\">183<a name=\"ie-core-vaccine-codes-183\"> </a></td><td>Yellow fever vaccine live - alt</td><td>Yellow fever vaccine live - alternative formulation for vaccine shortage</td></tr><tr><td style=\"white-space:nowrap\">184<a name=\"ie-core-vaccine-codes-184\"> </a></td><td>Yellow fever, unspecified</td><td>Yellow fever vaccine, unspecified formulation</td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"ie-core-vaccine-codes-121\"> </a></td><td>Zoster live</td><td>Zoster vaccine, live</td></tr><tr><td style=\"white-space:nowrap\">187<a name=\"ie-core-vaccine-codes-187\"> </a></td><td>Zoster recombinant</td><td>Zoster vaccine recombinant</td></tr><tr><td style=\"white-space:nowrap\">188<a name=\"ie-core-vaccine-codes-188\"> </a></td><td>Zoster, unspecified formulation</td><td>Zoster vaccine, unspecified formulation</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.19"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreVaccineCodes",
+  "title" : "IE Core Vaccine Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "A set of concepts to classify Vaccines Administered Vaccine Set Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 280,
+  "concept" : [{
+    "code" : "143",
+    "display" : "Adenovirus types 4 and 7",
+    "definition" : "Adenovirus, type 4 and type 7, live, oral"
+  },
+  {
+    "code" : "54",
+    "display" : "Adenovirus, type 4",
+    "definition" : "Adenovirus vaccine, type 4, live, oral"
+  },
+  {
+    "code" : "55",
+    "display" : "Adenovirus, type 7",
+    "definition" : "Adenovirus vaccine, type 7, live, oral"
+  },
+  {
+    "code" : "82",
+    "display" : "Adenovirus, unspecified formulation",
+    "definition" : "Adenovirus vaccine, unspecified formulation"
+  },
+  {
+    "code" : "181",
+    "display" : "Anthrax immune globulin",
+    "definition" : "Anthrax immune globulin"
+  },
+  {
+    "code" : "319",
+    "display" : "Anthrax vaccine, unspecified",
+    "definition" : "Anthrax vaccine, unspecified"
+  },
+  {
+    "code" : "318",
+    "display" : "Anthrax, post-exposure prophylaxis",
+    "definition" : "Anthrax vaccine, adsorbed, adjuvanted, post-exposure prophylaxis"
+  },
+  {
+    "code" : "24",
+    "display" : "Anthrax, pre-exposure prophylaxis, post-exposure prophylaxis",
+    "definition" : "Anthrax vaccine, adsorbed, pre-exposure and post-exposure prophylaxis"
+  },
+  {
+    "code" : "801",
+    "display" : "As03 adjuvant",
+    "definition" : "As03 adjuvant"
+  },
+  {
+    "code" : "19",
+    "display" : "Bcg",
+    "definition" : "Bacillus calmette-guerin vaccine"
+  },
+  {
+    "code" : "27",
+    "display" : "Botulinum antitoxin",
+    "definition" : "Botulinum antitoxin"
+  },
+  {
+    "code" : "317",
+    "display" : "Chikungunya live attenuated vaccine, 0.5 ml, pf",
+    "definition" : "Chikungunya, live attenuated vaccine, 0.5 ml, preservative free"
+  },
+  {
+    "code" : "173",
+    "display" : "Cholera, bivwc",
+    "definition" : "Cholera, bivwc"
+  },
+  {
+    "code" : "174",
+    "display" : "Cholera, live attenuated",
+    "definition" : "Cholera, live attenuated"
+  },
+  {
+    "code" : "26",
+    "display" : "Cholera, unspecified formulation",
+    "definition" : "Cholera vaccine, unspecified formulation"
+  },
+  {
+    "code" : "172",
+    "display" : "Cholera, wc-rbs",
+    "definition" : "Cholera, wc-rbs"
+  },
+  {
+    "code" : "29",
+    "display" : "Cmvig",
+    "definition" : "Cytomegalovirus immune globulin, intravenous"
+  },
+  {
+    "code" : "516",
+    "display" : "Cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)",
+    "definition" : "Sars-cov-2 covid-19 inactivated non-us vaccine product (minhai biotechnology co, kconvac)"
+  },
+  {
+    "code" : "518",
+    "display" : "Covid-19 inactivated, non-us vaccine (vla2001, valneva)",
+    "definition" : "Sars-cov-2 covid-19 inactivated, non-us vaccine (vla2001, valneva)"
+  },
+  {
+    "code" : "510",
+    "display" : "Covid-19 iv non-us vaccine (bibp, sinopharm)",
+    "definition" : "Sars-cov-2 covid-19 inactivated virus non-us vaccine product (bibp, sinopharm)"
+  },
+  {
+    "code" : "511",
+    "display" : "Covid-19 iv non-us vaccine (coronavac, sinovac)",
+    "definition" : "Sars-cov-2 covid-19 inactivated virus non-us vaccine product (coronavac, sinovac)"
+  },
+  {
+    "code" : "502",
+    "display" : "Covid-19 iv non-us vaccine (covaxin)",
+    "definition" : "Sars-cov-2 covid-19 inactivated virus non-us vaccine product (covaxin)"
+  },
+  {
+    "code" : "501",
+    "display" : "Covid-19 iv non-us vaccine (qazcovid-in)",
+    "definition" : "Sars-cov-2 covid-19 inactivated virus non-us vaccine product (qazcovid-in)"
+  },
+  {
+    "code" : "503",
+    "display" : "Covid-19 lav non-us vaccine (covivac)",
+    "definition" : "Sars-cov-2 covid-19 live attenuated virus non-us vaccine product (covivac)"
+  },
+  {
+    "code" : "519",
+    "display" : "Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna",
+    "definition" : "Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine (spikevax bivalent), moderna"
+  },
+  {
+    "code" : "520",
+    "display" : "Covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product, pfizer-biontech",
+    "definition" : "Sars-cov-2 covid-19 mrna, bivalent, original/omicron ba.1, non-us vaccine product (comirnaty bivalent), pfizer-biontech"
+  },
+  {
+    "code" : "500",
+    "display" : "Covid-19 non-us vaccine, product unknown",
+    "definition" : "Sars-cov-2 covid-19 non-us vaccine, specific product unknown"
+  },
+  {
+    "code" : "507",
+    "display" : "Covid-19 ps non-us vaccine (anhui zhifei longcom biopharm + inst of micro, chinese acad of sciences)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom biopharmaceutical + institute of microbiology, chinese academy of sciences)"
+  },
+  {
+    "code" : "509",
+    "display" : "Covid-19 ps non-us vaccine (epivaccorona)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (epivaccorona)"
+  },
+  {
+    "code" : "508",
+    "display" : "Covid-19 ps non-us vaccine (jiangsu province centers for disease control and prevention)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (jiangsu province centers for disease control and prevention)"
+  },
+  {
+    "code" : "521",
+    "display" : "Covid-19 sp, protein-based, adjuvanted (vidprevtyn beta), sanofi-gsk",
+    "definition" : "Sars-cov-2 (covid-19) vaccine sp, protein-based, adjuvanted, b.1.351 strain (vidprevtyn beta), sanofi-gsk"
+  },
+  {
+    "code" : "212",
+    "display" : "Covid-19 vaccine, vector-nr, rs-ad26, pf, 0.5 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-ad26, preservative free, 0.5 ml"
+  },
+  {
+    "code" : "210",
+    "display" : "Covid-19 vaccine, vector-nr, rs-chadox1, pf, 0.5 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, vector non-replicating, recombinant spike protein-chadox1, preservative free, 0.5 ml"
+  },
+  {
+    "code" : "506",
+    "display" : "Covid-19 vvnr non-us vaccine (cansino biological inc./beijing institute of biotechnology",
+    "definition" : "Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (convidecia), cansino biological inc./beijing institute of biotechnology"
+  },
+  {
+    "code" : "504",
+    "display" : "Covid-19 vvnr non-us vaccine (sputnik light)",
+    "definition" : "Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik light)"
+  },
+  {
+    "code" : "505",
+    "display" : "Covid-19 vvnr non-us vaccine (sputnik v)",
+    "definition" : "Sars-cov-2 covid-19 viral vector non-replicating non-us vaccine product (sputnik v)"
+  },
+  {
+    "code" : "226",
+    "display" : "Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 10mcg/0.5ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 10mcg/0.5ml dose"
+  },
+  {
+    "code" : "225",
+    "display" : "Covid-19, d614, recomb, pres dtm, as03 adjuvant add, pf, 5mcg/0.5ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, d614, prefusion spike recombinant protein subunit (cov2 pres dtm), as03 adjuvant added, preservative free, 5mcg/0.5ml dose"
+  },
+  {
+    "code" : "230",
+    "display" : "Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose"
+  },
+  {
+    "code" : "301",
+    "display" : "Covid-19, mrna, lnp-s, bivalent, pf, 10 mcg/0.2 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 10 mcg/0.2 ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "302",
+    "display" : "Covid-19, mrna, lnp-s, bivalent, pf, 3 mcg/0.2 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 3 mcg/0.2 ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "300",
+    "display" : "Covid-19, mrna, lnp-s, bivalent, pf, 30 mcg/0.3 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 30 mcg/0.3 ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "229",
+    "display" : "Covid-19, mrna, lnp-s, bivalent, pf, 50 mcg/0.5 ml or 25mcg/0.25 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, bivalent, preservative free, 50 mcg/0.5 ml or 25 mcg/0.25 ml dose"
+  },
+  {
+    "code" : "218",
+    "display" : "Covid-19, mrna, lnp-s, pf, 10 mcg/0.2 ml dose, tris-sucrose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 10 mcg/0.2ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "207",
+    "display" : "Covid-19, mrna, lnp-s, pf, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 100 mcg/0.5ml dose or 50 mcg/0.25ml dose"
+  },
+  {
+    "code" : "311",
+    "display" : "Covid-19, mrna, lnp-s, pf, 25 mcg/0.25 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 25 mcg/0.25 ml dose"
+  },
+  {
+    "code" : "219",
+    "display" : "Covid-19, mrna, lnp-s, pf, 3 mcg/0.2 ml dose, tris-sucrose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 3 mcg/0.2ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "208",
+    "display" : "Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose"
+  },
+  {
+    "code" : "217",
+    "display" : "Covid-19, mrna, lnp-s, pf, 30 mcg/0.3 ml dose, tris-sucrose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 30 mcg/0.3ml dose, tris-sucrose formulation"
+  },
+  {
+    "code" : "312",
+    "display" : "Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose"
+  },
+  {
+    "code" : "221",
+    "display" : "Covid-19, mrna, lnp-s, pf, 50 mcg/0.5 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, 50 mcg/0.5 ml dose"
+  },
+  {
+    "code" : "228",
+    "display" : "Covid-19, mrna, lnp-s, pf, pediatric 25 mcg/0.25 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 25 mcg/0.25 ml dose"
+  },
+  {
+    "code" : "227",
+    "display" : "Covid-19, mrna, lnp-s, pf, pediatric 50 mcg/0.5 ml dose",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, pediatric 50 mcg/0.5 ml dose"
+  },
+  {
+    "code" : "310",
+    "display" : "Covid-19, mrna, lnp-s, pf, tris-sucrose, 10 mcg/0.3 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 10 mcg/0.3 ml dose"
+  },
+  {
+    "code" : "308",
+    "display" : "Covid-19, mrna, lnp-s, pf, tris-sucrose, 3 mcg/0.3 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 3 mcg/0.3 ml dose"
+  },
+  {
+    "code" : "309",
+    "display" : "Covid-19, mrna, lnp-s, pf, tris-sucrose, 30 mcg/0.3 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, mrna, spike protein, lnp, preservative free, tris-sucrose, 30 mcg/0.3 ml dose"
+  },
+  {
+    "code" : "313",
+    "display" : "Covid-19, subunit, rs-nanoparticle, adjuvanted, pf, 5 mcg/0.5 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 5 mcg/0.5 ml dose"
+  },
+  {
+    "code" : "211",
+    "display" : "Covid-19, subunit, rs-nanoparticle+matrix-m1 adjuvant, pf, 0.5 ml",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, subunit, recombinant spike protein-nanoparticle+matrix-m1 adjuvant, preservative free, 0.5ml dose"
+  },
+  {
+    "code" : "56",
+    "display" : "Dengue fever tetravalent",
+    "definition" : "Dengue fever vaccine, tetravalent"
+  },
+  {
+    "code" : "12",
+    "display" : "Diphtheria antitoxin",
+    "definition" : "Diphtheria antitoxin"
+  },
+  {
+    "code" : "28",
+    "display" : "Dt (pediatric)",
+    "definition" : "Diphtheria and tetanus toxoids, adsorbed for pediatric use"
+  },
+  {
+    "code" : "195",
+    "display" : "Dt, ipv adsorbed",
+    "definition" : "Diphtheria, tetanus, poliomyelitis adsorbed"
+  },
+  {
+    "code" : "20",
+    "display" : "Dtap",
+    "definition" : "Diphtheria, tetanus toxoids and acellular pertussis vaccine"
+  },
+  {
+    "code" : "106",
+    "display" : "Dtap, 5 pertussis antigens",
+    "definition" : "Diphtheria, tetanus toxoids and acellular pertussis vaccine, 5 pertussis antigens"
+  },
+  {
+    "code" : "107",
+    "display" : "Dtap, unspecified formulation",
+    "definition" : "Diphtheria, tetanus toxoids and acellular pertussis vaccine, unspecified formulation"
+  },
+  {
+    "code" : "146",
+    "display" : "Dtap,ipv,hib,hepb",
+    "definition" : "Diphtheria and tetanus toxoids and acellular pertussis adsorbed, inactivated poliovirus, haemophilus b conjugate (meningococcal protein conjugate), and hepatitis b (recombinant) vaccine."
+  },
+  {
+    "code" : "170",
+    "display" : "Dtap/ipv/hib - non-us",
+    "definition" : "Non-us diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)"
+  },
+  {
+    "code" : "110",
+    "display" : "Dtap-hep b-ipv",
+    "definition" : "Dtap-hepatitis b and poliovirus vaccine"
+  },
+  {
+    "code" : "50",
+    "display" : "Dtap-hib",
+    "definition" : "Dtap-haemophilus influenzae type b conjugate vaccine"
+  },
+  {
+    "code" : "120",
+    "display" : "Dtap-hib-ipv",
+    "definition" : "Diphtheria, tetanus toxoids and acellular pertussis vaccine, haemophilus influenzae type b conjugate, and poliovirus vaccine, inactivated (dtap-hib-ipv)"
+  },
+  {
+    "code" : "130",
+    "display" : "Dtap-ipv",
+    "definition" : "Diphtheria, tetanus toxoids and acellular pertussis vaccine, and poliovirus vaccine, inactivated"
+  },
+  {
+    "code" : "132",
+    "display" : "Dtap-ipv-hib-hep b, historical",
+    "definition" : "Historical diphtheria and tetanus toxoids and acellular pertussis, poliovirus, haemophilus b conjugate and hepatitis b (recombinant) vaccine."
+  },
+  {
+    "code" : "01",
+    "display" : "Dtp",
+    "definition" : "Diphtheria, tetanus toxoids and pertussis vaccine"
+  },
+  {
+    "code" : "198",
+    "display" : "Dtp-hepb-hib pentavalent non-us",
+    "definition" : "Diphtheria, pertussis, tetanus, hepatitis b, haemophilus influenza type b, (pentavalent)"
+  },
+  {
+    "code" : "22",
+    "display" : "Dtp-hib",
+    "definition" : "Dtp-haemophilus influenzae type b conjugate vaccine"
+  },
+  {
+    "code" : "102",
+    "display" : "Dtp-hib-hep b",
+    "definition" : "Dtp- haemophilus influenzae type b conjugate and hepatitis b vaccine"
+  },
+  {
+    "code" : "204",
+    "display" : "Ebola zaire vaccine, live, recombinant, 1ml dose",
+    "definition" : "Ebola zaire vaccine, live, recombinant, 1ml dose"
+  },
+  {
+    "code" : "214",
+    "display" : "Ebola, unspecified",
+    "definition" : "Ebola, unspecified"
+  },
+  {
+    "code" : "57",
+    "display" : "Hantavirus",
+    "definition" : "Hantavirus vaccine"
+  },
+  {
+    "code" : "30",
+    "display" : "Hbig",
+    "definition" : "Hepatitis b immune globulin"
+  },
+  {
+    "code" : "52",
+    "display" : "Hep a, adult",
+    "definition" : "Hepatitis a vaccine, adult dosage"
+  },
+  {
+    "code" : "154",
+    "display" : "Hep a, ig",
+    "definition" : "Hepatitis a immune globulin"
+  },
+  {
+    "code" : "169",
+    "display" : "Hep a, live attenuated",
+    "definition" : "Hep a, live attenuated-im"
+  },
+  {
+    "code" : "83",
+    "display" : "Hep a, ped/adol, 2 dose",
+    "definition" : "Hepatitis a vaccine, pediatric/adolescent dosage, 2 dose schedule"
+  },
+  {
+    "code" : "84",
+    "display" : "Hep a, ped/adol, 3 dose",
+    "definition" : "Hepatitis a vaccine, pediatric/adolescent dosage, 3 dose schedule"
+  },
+  {
+    "code" : "31",
+    "display" : "Hep a, pediatric, unspecified formulation",
+    "definition" : "Hepatitis a vaccine, pediatric dosage, unspecified formulation"
+  },
+  {
+    "code" : "85",
+    "display" : "Hep a, unspecified formulation",
+    "definition" : "Hepatitis a vaccine, unspecified formulation"
+  },
+  {
+    "code" : "104",
+    "display" : "Hep a-hep b",
+    "definition" : "Hepatitis a and hepatitis b vaccine"
+  },
+  {
+    "code" : "193",
+    "display" : "Hep a-hep b, pediatric/adolescent",
+    "definition" : "Hepatitis a and hepatitis b vaccine, pediatric/adolescent (non-us)"
+  },
+  {
+    "code" : "08",
+    "display" : "Hep b, adolescent or pediatric",
+    "definition" : "Hepatitis b vaccine, pediatric or pediatric/adolescent dosage"
+  },
+  {
+    "code" : "42",
+    "display" : "Hep b, adolescent/high risk infant",
+    "definition" : "Hepatitis b vaccine, adolescent/high risk infant dosage"
+  },
+  {
+    "code" : "43",
+    "display" : "Hep b, adult",
+    "definition" : "Hepatitis b vaccine, adult dosage"
+  },
+  {
+    "code" : "44",
+    "display" : "Hep b, dialysis",
+    "definition" : "Hepatitis b vaccine, dialysis patient dosage"
+  },
+  {
+    "code" : "45",
+    "display" : "Hep b, unspecified formulation",
+    "definition" : "Hepatitis b vaccine, unspecified formulation"
+  },
+  {
+    "code" : "58",
+    "display" : "Hep c",
+    "definition" : "Hepatitis c vaccine"
+  },
+  {
+    "code" : "59",
+    "display" : "Hep e",
+    "definition" : "Hepatitis e vaccine"
+  },
+  {
+    "code" : "220",
+    "display" : "Hepb recombinant, 3-antigen, al(oh)3",
+    "definition" : "Hepatitis b vaccine (recombinant), 3-antigen, al(oh)3 adjuvanted"
+  },
+  {
+    "code" : "189",
+    "display" : "Hepb-cpg",
+    "definition" : "Hepatitis b vaccine (recombinant), cpg adjuvanted"
+  },
+  {
+    "code" : "60",
+    "display" : "Herpes simplex 2",
+    "definition" : "Herpes simplex virus, type 2 vaccine"
+  },
+  {
+    "code" : "47",
+    "display" : "Hib (hboc)",
+    "definition" : "Haemophilus influenzae type b vaccine, hboc conjugate"
+  },
+  {
+    "code" : "46",
+    "display" : "Hib (prp-d)",
+    "definition" : "Haemophilus influenzae type b vaccine, prp-d conjugate"
+  },
+  {
+    "code" : "49",
+    "display" : "Hib (prp-omp)",
+    "definition" : "Haemophilus influenzae type b vaccine, prp-omp conjugate"
+  },
+  {
+    "code" : "48",
+    "display" : "Hib (prp-t)",
+    "definition" : "Haemophilus influenzae type b vaccine, prp-t conjugate"
+  },
+  {
+    "code" : "17",
+    "display" : "Hib, unspecified formulation",
+    "definition" : "Haemophilus influenzae type b vaccine, conjugate unspecified formulation"
+  },
+  {
+    "code" : "51",
+    "display" : "Hib-hep b",
+    "definition" : "Haemophilus influenzae type b conjugate and hepatitis b vaccine"
+  },
+  {
+    "code" : "61",
+    "display" : "Hiv",
+    "definition" : "Human immunodeficiency virus vaccine"
+  },
+  {
+    "code" : "118",
+    "display" : "Hpv, bivalent",
+    "definition" : "Human papilloma virus vaccine, bivalent"
+  },
+  {
+    "code" : "62",
+    "display" : "Hpv, quadrivalent",
+    "definition" : "Human papilloma virus vaccine, quadrivalent"
+  },
+  {
+    "code" : "137",
+    "display" : "Hpv, unspecified formulation",
+    "definition" : "Hpv, unspecified formulation"
+  },
+  {
+    "code" : "165",
+    "display" : "Hpv9",
+    "definition" : "Human papillomavirus 9-valent vaccine"
+  },
+  {
+    "code" : "86",
+    "display" : "Ig",
+    "definition" : "Immune globulin, intramuscular"
+  },
+  {
+    "code" : "14",
+    "display" : "Ig, unspecified formulation",
+    "definition" : "Immune globulin, unspecified formulation"
+  },
+  {
+    "code" : "87",
+    "display" : "Igiv",
+    "definition" : "Immune globulin, intravenous"
+  },
+  {
+    "code" : "160",
+    "display" : "Influenza a monovalent (h5n1), adjuvanted-2013",
+    "definition" : "Influenza a monovalent (h5n1), adjuvanted, national stockpile 2013"
+  },
+  {
+    "code" : "151",
+    "display" : "Influenza nasal, unspecified formulation",
+    "definition" : "Influenza nasal, unspecified formulation"
+  },
+  {
+    "code" : "205",
+    "display" : "Influenza, adjuvanted, quadrivalent, pf",
+    "definition" : "Influenza, adjuvanted, inactivated, quadrivalent, injectable, preservative free"
+  },
+  {
+    "code" : "168",
+    "display" : "Influenza, adjuvanted, trivalent, pf",
+    "definition" : "Influenza, adjuvanted, inactivated, trivalent, injectable, preservative free"
+  },
+  {
+    "code" : "123",
+    "display" : "Influenza, h5n1-1203",
+    "definition" : "Influenza virus vaccine, h5n1, a/vietnam/1203/2004 (national stockpile)"
+  },
+  {
+    "code" : "197",
+    "display" : "Influenza, high-dose, quadrivalent, pf",
+    "definition" : "Influenza, high-dose, split virus, quadrivalent, injectable, preservative free"
+  },
+  {
+    "code" : "135",
+    "display" : "Influenza, high-dose, trivalent, pf",
+    "definition" : "Influenza, high-dose, split virus, trivalent, injectable, preservative free"
+  },
+  {
+    "code" : "161",
+    "display" : "Influenza, injectable,quadrivalent, preservative free, pediatric",
+    "definition" : "Influenza, injectable,quadrivalent, preservative free, pediatric"
+  },
+  {
+    "code" : "166",
+    "display" : "Influenza, intradermal, quadrivalent, preservative free",
+    "definition" : "Influenza, intradermal, quadrivalent, preservative free, injectable"
+  },
+  {
+    "code" : "149",
+    "display" : "Influenza, live, quadrivalent, intranasal",
+    "definition" : "Influenza, live, quadrivalent, intranasal"
+  },
+  {
+    "code" : "111",
+    "display" : "Influenza, live, trivalent, intranasal",
+    "definition" : "Influenza, live, trivalent, intranasal"
+  },
+  {
+    "code" : "171",
+    "display" : "Influenza, mdck, quadrivalent, pf",
+    "definition" : "Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, preservative free"
+  },
+  {
+    "code" : "186",
+    "display" : "Influenza, mdck, quadrivalent, preservative",
+    "definition" : "Influenza, madin darby canine kidney, subunit, quadrivalent, injectable, contains preservative"
+  },
+  {
+    "code" : "153",
+    "display" : "Influenza, mdck, trivalent, pf",
+    "definition" : "Influenza, madin darby canine kidney, subunit, trivalent, injectable, preservative free"
+  },
+  {
+    "code" : "320",
+    "display" : "Influenza, mdck, trivalent, preservative",
+    "definition" : "Influenza, madin darby canine kidney, subunit, trivalent, injectable, contains preservative"
+  },
+  {
+    "code" : "185",
+    "display" : "Influenza, recombinant, quadrivalent, pf",
+    "definition" : "Influenza, recombinant, quadrivalent, injectable, preservative free"
+  },
+  {
+    "code" : "155",
+    "display" : "Influenza, recombinant, trivalent, pf",
+    "definition" : "Influenza, recombinant, trivalent, injectable, preservative free"
+  },
+  {
+    "code" : "144",
+    "display" : "Influenza, seasonal, intradermal, preservative free",
+    "definition" : "Seasonal influenza, intradermal, preservative free"
+  },
+  {
+    "code" : "194",
+    "display" : "Influenza, southern hemisphere",
+    "definition" : "Influenza, southern hemisphere, unspecified formulation"
+  },
+  {
+    "code" : "231",
+    "display" : "Influenza, southern hemisphere, high-dose, quadrivalent",
+    "definition" : "Influenza, seasonal, southern hemisphere, high-dose, quadrivalent, 0.7ml dose, preservative free"
+  },
+  {
+    "code" : "200",
+    "display" : "Influenza, southern hemisphere, pediatric, preservative free",
+    "definition" : "Influenza, seasonal, southern hemisphere, quadrivalent, pediatric 0.25ml dose, preservative free"
+  },
+  {
+    "code" : "201",
+    "display" : "Influenza, southern hemisphere, preservative free",
+    "definition" : "Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, no preservative"
+  },
+  {
+    "code" : "202",
+    "display" : "Influenza, southern hemisphere, quadrivalent, with preservative",
+    "definition" : "Influenza, seasonal, southern hemisphere, quadrivalent, 0.5ml dose, with preservative"
+  },
+  {
+    "code" : "15",
+    "display" : "Influenza, split (incl. purified surface antigen)",
+    "definition" : "Influenza virus vaccine, split virus (incl. purified surface antigen)-retired code"
+  },
+  {
+    "code" : "150",
+    "display" : "Influenza, split virus, quadrivalent, pf",
+    "definition" : "Influenza, split virus, quadrivalent, injectable, preservative free"
+  },
+  {
+    "code" : "158",
+    "display" : "Influenza, split virus, quadrivalent, preservative",
+    "definition" : "Influenza, split virus, quadrivalent, injectable, contains preservative"
+  },
+  {
+    "code" : "140",
+    "display" : "Influenza, split virus, trivalent, pf",
+    "definition" : "Influenza, split virus, trivalent, injectable, preservative free"
+  },
+  {
+    "code" : "141",
+    "display" : "Influenza, split virus, trivalent, preservative",
+    "definition" : "Influenza, split virus, trivalent, injectable, contains preservative"
+  },
+  {
+    "code" : "88",
+    "display" : "Influenza, unspecified formulation",
+    "definition" : "Influenza virus vaccine, unspecified formulation"
+  },
+  {
+    "code" : "16",
+    "display" : "Influenza, whole",
+    "definition" : "Influenza virus vaccine, whole virus"
+  },
+  {
+    "code" : "323",
+    "display" : "Influenza-avian, h5, unspecified formulation",
+    "definition" : "Influenza-avian, h5, unspecified formulation"
+  },
+  {
+    "code" : "321",
+    "display" : "Influenza-avian, h5n8, monovalent, pf",
+    "definition" : "Influenza-avian, h5n8, viral-vector, monovalent, injectable, preservative free"
+  },
+  {
+    "code" : "322",
+    "display" : "Influenza-avian, h5n8, monovalent, preservative",
+    "definition" : "Influenza-avian, h5n8, viral-vector, monovalent, injectable, contains preservative"
+  },
+  {
+    "code" : "10",
+    "display" : "Ipv",
+    "definition" : "Poliovirus vaccine, inactivated"
+  },
+  {
+    "code" : "134",
+    "display" : "Japanese encephalitis im",
+    "definition" : "Japanese encephalitis vaccine for intramuscular administration"
+  },
+  {
+    "code" : "39",
+    "display" : "Japanese encephalitis sc",
+    "definition" : "Japanese encephalitis vaccine sc"
+  },
+  {
+    "code" : "129",
+    "display" : "Japanese encephalitis, unspecified formulation",
+    "definition" : "Japanese encephalitis vaccine, unspecified formulation"
+  },
+  {
+    "code" : "63",
+    "display" : "Junin virus",
+    "definition" : "Junin virus vaccine"
+  },
+  {
+    "code" : "64",
+    "display" : "Leishmaniasis",
+    "definition" : "Leishmaniasis vaccine"
+  },
+  {
+    "code" : "65",
+    "display" : "Leprosy",
+    "definition" : "Leprosy vaccine"
+  },
+  {
+    "code" : "66",
+    "display" : "Lyme disease",
+    "definition" : "Lyme disease vaccine"
+  },
+  {
+    "code" : "04",
+    "display" : "M/r",
+    "definition" : "Measles and rubella virus vaccine"
+  },
+  {
+    "code" : "67",
+    "display" : "Malaria",
+    "definition" : "Malaria vaccine"
+  },
+  {
+    "code" : "05",
+    "display" : "Measles",
+    "definition" : "Measles virus vaccine"
+  },
+  {
+    "code" : "68",
+    "display" : "Melanoma",
+    "definition" : "Melanoma vaccine"
+  },
+  {
+    "code" : "191",
+    "display" : "Meningococcal a polysaccharide (non-us)",
+    "definition" : "Meningococcal a polysaccharide vaccine (non-us)"
+  },
+  {
+    "code" : "192",
+    "display" : "Meningococcal ac polysaccharide (non-us)",
+    "definition" : "Meningococcal ac polysaccharide vaccine (non-us)"
+  },
+  {
+    "code" : "108",
+    "display" : "Meningococcal acwy, unspecified formulation",
+    "definition" : "Meningococcal acwy vaccine, unspecified formulation"
+  },
+  {
+    "code" : "163",
+    "display" : "Meningococcal b, omv",
+    "definition" : "Meningococcal b vaccine, recombinant, omv, adjuvanted"
+  },
+  {
+    "code" : "162",
+    "display" : "Meningococcal b, recombinant",
+    "definition" : "Meningococcal b vaccine, fully recombinant"
+  },
+  {
+    "code" : "164",
+    "display" : "Meningococcal b, unspecified",
+    "definition" : "Meningococcal b, unspecified formulation"
+  },
+  {
+    "code" : "103",
+    "display" : "Meningococcal c conjugate",
+    "definition" : "Meningococcal c conjugate vaccine"
+  },
+  {
+    "code" : "148",
+    "display" : "Meningococcal c/y-hib prp",
+    "definition" : "Meningococcal groups c and y and haemophilus b tetanus toxoid conjugate vaccine"
+  },
+  {
+    "code" : "203",
+    "display" : "Meningococcal conjugate quadrivalent, menacwy-tt (mcv4)",
+    "definition" : "Meningococcal polysaccharide (groups a, c, y, w-135) tetanus toxoid conjugate vaccine 0.5ml dose, preservative free"
+  },
+  {
+    "code" : "147",
+    "display" : "Meningococcal mcv4, unspecified formulation",
+    "definition" : "Meningococcal, mcv4, unspecified conjugate formulation(groups a, c, y and w-135)"
+  },
+  {
+    "code" : "136",
+    "display" : "Meningococcal mcv4o",
+    "definition" : "Meningococcal oligosaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4o)"
+  },
+  {
+    "code" : "114",
+    "display" : "Meningococcal mcv4p",
+    "definition" : "Meningococcal polysaccharide (groups a, c, y and w-135) diphtheria toxoid conjugate vaccine (mcv4p)"
+  },
+  {
+    "code" : "32",
+    "display" : "Meningococcal mpsv4",
+    "definition" : "Meningococcal polysaccharide vaccine (mpsv4)"
+  },
+  {
+    "code" : "316",
+    "display" : "Meningococcal polysaccharide (menacwy-tt conjugate), (menb), pf",
+    "definition" : "Meningococcal polysaccharide (groups a, c, y, w) tetanus toxoid conjugate, meningococcal b recombinant vaccine, 0.5ml, preservative free"
+  },
+  {
+    "code" : "167",
+    "display" : "Meningococcal, unknown serogroups",
+    "definition" : "Meningococcal vaccine of unknown formulation and unknown serogroups"
+  },
+  {
+    "code" : "03",
+    "display" : "Mmr",
+    "definition" : "Measles, mumps and rubella virus vaccine"
+  },
+  {
+    "code" : "94",
+    "display" : "Mmrv",
+    "definition" : "Measles, mumps, rubella, and varicella virus vaccine"
+  },
+  {
+    "code" : "07",
+    "display" : "Mumps",
+    "definition" : "Mumps virus vaccine"
+  },
+  {
+    "code" : "998",
+    "display" : "No vaccine administered",
+    "definition" : "No vaccine administered"
+  },
+  {
+    "code" : "127",
+    "display" : "Novel influenza-h1n1-09",
+    "definition" : "Novel influenza-h1n1-09, injectable"
+  },
+  {
+    "code" : "128",
+    "display" : "Novel influenza-h1n1-09, all formulations",
+    "definition" : "Novel influenza-h1n1-09, all formulations"
+  },
+  {
+    "code" : "125",
+    "display" : "Novel influenza-h1n1-09, nasal",
+    "definition" : "Novel influenza-h1n1-09, live virus for nasal administration"
+  },
+  {
+    "code" : "126",
+    "display" : "Novel influenza-h1n1-09, preservative-free",
+    "definition" : "Novel influenza-h1n1-09, preservative-free, injectable"
+  },
+  {
+    "code" : "02",
+    "display" : "Opv",
+    "definition" : "Trivalent poliovirus vaccine, live, oral"
+  },
+  {
+    "code" : "179",
+    "display" : "Opv ,monovalent, unspecified",
+    "definition" : "Non-us monovalent oral polio vaccine, unspecified formulation"
+  },
+  {
+    "code" : "178",
+    "display" : "Opv bivalent",
+    "definition" : "Non-us bivalent oral polio vaccine (types 1 and 3)"
+  },
+  {
+    "code" : "182",
+    "display" : "Opv, unspecified",
+    "definition" : "Oral polio vaccine, unspecified formulation"
+  },
+  {
+    "code" : "69",
+    "display" : "Parainfluenza-3",
+    "definition" : "Parainfluenza-3 virus vaccine"
+  },
+  {
+    "code" : "177",
+    "display" : "Pcv10",
+    "definition" : "Pneumococcal conjugate vaccine, 10 valent"
+  },
+  {
+    "code" : "11",
+    "display" : "Pertussis",
+    "definition" : "Pertussis vaccine"
+  },
+  {
+    "code" : "23",
+    "display" : "Plague",
+    "definition" : "Plague vaccine"
+  },
+  {
+    "code" : "133",
+    "display" : "Pneumococcal conjugate pcv 13",
+    "definition" : "Pneumococcal conjugate vaccine, 13 valent"
+  },
+  {
+    "code" : "100",
+    "display" : "Pneumococcal conjugate pcv 7",
+    "definition" : "Pneumococcal conjugate vaccine, 7 valent"
+  },
+  {
+    "code" : "215",
+    "display" : "Pneumococcal conjugate pcv15, polysaccharide crm197 conjugate, adjuvant, pf",
+    "definition" : "Pneumococcal conjugate vaccine 15-valent (pcv15), polysaccharide crm197 conjugate, adjuvant, preservative free"
+  },
+  {
+    "code" : "216",
+    "display" : "Pneumococcal conjugate pcv20, polysaccharide crm197 conjugate, adjuvant, pf",
+    "definition" : "Pneumococcal conjugate vaccine 20-valent (pcv20), polysaccharide crm197 conjugate, adjuvant, preservative free"
+  },
+  {
+    "code" : "327",
+    "display" : "Pneumococcal conjugate pcv21, polysaccharide crm197 conjugate, pf",
+    "definition" : "Pneumococcal conjugate vaccine, 21 valent (pcv21), polysaccharide crm197 conjugate, preservative free"
+  },
+  {
+    "code" : "152",
+    "display" : "Pneumococcal conjugate, unspecified formulation",
+    "definition" : "Pneumococcal conjugate, unspecified formulation"
+  },
+  {
+    "code" : "33",
+    "display" : "Pneumococcal polysaccharide ppv23",
+    "definition" : "Pneumococcal polysaccharide vaccine, 23 valent"
+  },
+  {
+    "code" : "109",
+    "display" : "Pneumococcal, unspecified formulation",
+    "definition" : "Pneumococcal vaccine, unspecified formulation"
+  },
+  {
+    "code" : "89",
+    "display" : "Polio, unspecified formulation",
+    "definition" : "Poliovirus vaccine, unspecified formulation"
+  },
+  {
+    "code" : "324",
+    "display" : "Poliovirus, inactivated, fractional-dose (fipv)",
+    "definition" : "Poliovirus, inactivated, fractional-dose (fipv)"
+  },
+  {
+    "code" : "70",
+    "display" : "Q fever",
+    "definition" : "Q fever vaccine"
+  },
+  {
+    "code" : "175",
+    "display" : "Rabies - im diploid cell culture",
+    "definition" : "Human rabies vaccine from human diploid cell culture"
+  },
+  {
+    "code" : "176",
+    "display" : "Rabies - im fibroblast culture",
+    "definition" : "Human rabies vaccine from chicken fibroblast culture"
+  },
+  {
+    "code" : "40",
+    "display" : "Rabies, intradermal injection",
+    "definition" : "Rabies vaccine, for intradermal injection"
+  },
+  {
+    "code" : "18",
+    "display" : "Rabies, intramuscular injection",
+    "definition" : "Rabies vaccine, for intramuscular injection retired code"
+  },
+  {
+    "code" : "90",
+    "display" : "Rabies, unspecified formulation",
+    "definition" : "Rabies vaccine, unspecified formulation"
+  },
+  {
+    "code" : "99",
+    "display" : "Reserved - do not use",
+    "definition" : "Reserved - do not use"
+  },
+  {
+    "code" : "315",
+    "display" : "Respiratory syncytial virus (rsv) mab, unspecified",
+    "definition" : "Respiratory syncytial virus (rsv) monoclonal antibody (mab), unspecified"
+  },
+  {
+    "code" : "314",
+    "display" : "Respiratory syncytial virus (rsv) vaccine, unspecified",
+    "definition" : "Respiratory syncytial virus (rsv) vaccine, unspecified"
+  },
+  {
+    "code" : "304",
+    "display" : "Respiratory syncytial virus (rsv), unspecified",
+    "definition" : "Respiratory syncytial virus (rsv), unspecified"
+  },
+  {
+    "code" : "72",
+    "display" : "Rheumatic fever",
+    "definition" : "Rheumatic fever vaccine"
+  },
+  {
+    "code" : "159",
+    "display" : "Rho(d) - unspecified formulation",
+    "definition" : "Rho(d) unspecified formulation"
+  },
+  {
+    "code" : "157",
+    "display" : "Rho(d) -ig im",
+    "definition" : "Rho(d) immune globulin - im"
+  },
+  {
+    "code" : "156",
+    "display" : "Rho(d)-ig",
+    "definition" : "Rho(d) immune globulin- iv or im"
+  },
+  {
+    "code" : "73",
+    "display" : "Rift valley fever",
+    "definition" : "Rift valley fever vaccine"
+  },
+  {
+    "code" : "34",
+    "display" : "Rig",
+    "definition" : "Rabies immune globulin"
+  },
+  {
+    "code" : "119",
+    "display" : "Rotavirus, monovalent",
+    "definition" : "Rotavirus, live, monovalent vaccine"
+  },
+  {
+    "code" : "116",
+    "display" : "Rotavirus, pentavalent",
+    "definition" : "Rotavirus, live, pentavalent vaccine"
+  },
+  {
+    "code" : "74",
+    "display" : "Rotavirus, tetravalent",
+    "definition" : "Rotavirus, live, tetravalent vaccine"
+  },
+  {
+    "code" : "122",
+    "display" : "Rotavirus, unspecified formulation",
+    "definition" : "Rotavirus vaccine, unspecified formulation"
+  },
+  {
+    "code" : "305",
+    "display" : "Rsv, bivalent, protein subunit rsvpref, diluent reconstituted, 0.5 ml, pf",
+    "definition" : "Respiratory syncytial virus (rsv), vaccine, bivalent, protein subunit rsv prefusion f, diluent reconstituted, 0.5 ml, preservative free"
+  },
+  {
+    "code" : "306",
+    "display" : "Rsv, mab, nirsevimab-alip, 0.5 ml, neonate to 24 months",
+    "definition" : "Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 0.5 ml, neonates and children to 24 months"
+  },
+  {
+    "code" : "307",
+    "display" : "Rsv, mab, nirsevimab-alip, 1 ml, neonate to 24 months",
+    "definition" : "Respiratory syncytial virus (rsv) monoclonal antibody, igg1κ , (nirsevimab-alip), 1 ml, neonates and children to 24 months"
+  },
+  {
+    "code" : "326",
+    "display" : "Rsv, mrna, injectable, pf",
+    "definition" : "Respiratory syncytial virus (rsv), mrna, injectable, preservative free"
+  },
+  {
+    "code" : "303",
+    "display" : "Rsv, recombinant, protein subunit rsvpref, adjuvant reconstituted, 0.5 ml, pf",
+    "definition" : "Respiratory syncytial virus (rsv), vaccine, recombinant, protein subunit rsv prefusion f, adjuvant reconstituted, 0.5 ml, preservative free"
+  },
+  {
+    "code" : "71",
+    "display" : "Rsv-igiv",
+    "definition" : "Respiratory syncytial virus immune globulin, intravenous"
+  },
+  {
+    "code" : "93",
+    "display" : "Rsv-mab",
+    "definition" : "Respiratory syncytial virus monoclonal antibody (palivizumab), intramuscular"
+  },
+  {
+    "code" : "145",
+    "display" : "Rsv-mab (new)",
+    "definition" : "Respiratory syncytial virus monoclonal antibody (motavizumab), intramuscular"
+  },
+  {
+    "code" : "06",
+    "display" : "Rubella",
+    "definition" : "Rubella virus vaccine"
+  },
+  {
+    "code" : "38",
+    "display" : "Rubella/mumps",
+    "definition" : "Rubella and mumps virus vaccine"
+  },
+  {
+    "code" : "213",
+    "display" : "Sars-cov-2 (covid-19) vaccine, unspecified",
+    "definition" : "Sars-cov-2 (covid-19) vaccine, unspecified"
+  },
+  {
+    "code" : "514",
+    "display" : "Sars-cov-2 covid-19 dna non-us vaccine (zydus cadila, zycov-d)",
+    "definition" : "Sars-cov-2 covid-19 dna non-us vaccine product (zydus cadila, zycov-d)"
+  },
+  {
+    "code" : "513",
+    "display" : "Sars-cov-2 covid-19 ps non-us vaccine (anhui zhifei longcom, zifivax)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (anhui zhifei longcom, zifivax)"
+  },
+  {
+    "code" : "517",
+    "display" : "Sars-cov-2 covid-19 ps non-us vaccine (biological e limited, corbevax)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (biological e limited, corbevax)"
+  },
+  {
+    "code" : "515",
+    "display" : "Sars-cov-2 covid-19 ps non-us vaccine (medigen, mvc-cov1901)",
+    "definition" : "Sars-cov-2 covid-19 protein subunit non-us vaccine product (medigen, mvc-cov1901)"
+  },
+  {
+    "code" : "512",
+    "display" : "Sars-cov-2 covid-19 vlp non-us vaccine (medicago, covifenz)",
+    "definition" : "Sars-cov-2 covid-19 virus like particle (vlp) non-us vaccine product (medicago, covifenz)"
+  },
+  {
+    "code" : "76",
+    "display" : "Staphylococcus bacterio lysate",
+    "definition" : "Staphylococcus bacteriophage lysate"
+  },
+  {
+    "code" : "138",
+    "display" : "Td (adult)",
+    "definition" : "Tetanus and diphtheria toxoids, not adsorbed, for adult use"
+  },
+  {
+    "code" : "09",
+    "display" : "Td (adult), 2 lf tetanus toxoid, preservative free, adsorbed",
+    "definition" : "Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (2 lf of tetanus toxoid and 2 lf of diphtheria toxoid)"
+  },
+  {
+    "code" : "113",
+    "display" : "Td (adult), 5 lf tetanus toxoid, preservative free, adsorbed",
+    "definition" : "Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use (5 lf of tetanus toxoid and 2 lf of diphtheria toxoid)"
+  },
+  {
+    "code" : "139",
+    "display" : "Td(adult) unspecified formulation",
+    "definition" : "Td(adult) unspecified formulation"
+  },
+  {
+    "code" : "196",
+    "display" : "Td, adsorbed, preservative free, adult use, lf unspecified",
+    "definition" : "Tetanus and diphtheria toxoids, adsorbed, preservative free, for adult use, lf unspecified"
+  },
+  {
+    "code" : "115",
+    "display" : "Tdap",
+    "definition" : "Tetanus toxoid, reduced diphtheria toxoid, and acellular pertussis vaccine, adsorbed"
+  },
+  {
+    "code" : "180",
+    "display" : "Tetanus immune globulin",
+    "definition" : "Tetanus immune globulin"
+  },
+  {
+    "code" : "35",
+    "display" : "Tetanus toxoid, adsorbed",
+    "definition" : "Tetanus toxoid, adsorbed"
+  },
+  {
+    "code" : "142",
+    "display" : "Tetanus toxoid, not adsorbed",
+    "definition" : "Tetanus toxoid, not adsorbed"
+  },
+  {
+    "code" : "112",
+    "display" : "Tetanus toxoid, unspecified formulation",
+    "definition" : "Tetanus toxoid, unspecified formulation"
+  },
+  {
+    "code" : "77",
+    "display" : "Tick-borne encephalitis vaccine (non-us)",
+    "definition" : "Tick-borne encephalitis vaccine (non-us)"
+  },
+  {
+    "code" : "223",
+    "display" : "Tick-borne encephalitis, inactivated, pf, 0.25ml",
+    "definition" : "Tick-borne encephalitis vaccine, inactivated, preservative free, 0.25ml dose"
+  },
+  {
+    "code" : "224",
+    "display" : "Tick-borne encephalitis, inactivated, pf, 0.5ml",
+    "definition" : "Tick-borne encephalitis vaccine, inactivated, preservative free, 0.5ml dose"
+  },
+  {
+    "code" : "222",
+    "display" : "Tick-borne encephalitis, unspecified",
+    "definition" : "Tick-borne encephalitis vaccine, unspecified"
+  },
+  {
+    "code" : "13",
+    "display" : "Tig",
+    "definition" : "Tetanus immune globulin"
+  },
+  {
+    "code" : "98",
+    "display" : "Tst, unspecified formulation",
+    "definition" : "Tuberculin skin test; unspecified formulation"
+  },
+  {
+    "code" : "95",
+    "display" : "Tst-ot tine test",
+    "definition" : "Tuberculin skin test; old tuberculin, multipuncture device"
+  },
+  {
+    "code" : "96",
+    "display" : "Tst-ppd intradermal",
+    "definition" : "Tuberculin skin test; purified protein derivative solution, intradermal"
+  },
+  {
+    "code" : "97",
+    "display" : "Tst-ppd tine test",
+    "definition" : "Tuberculin skin test; purified protein derivative, multipuncture device"
+  },
+  {
+    "code" : "78",
+    "display" : "Tularemia vaccine",
+    "definition" : "Tularemia vaccine"
+  },
+  {
+    "code" : "190",
+    "display" : "Typhoid conjugate vaccine (tcv)",
+    "definition" : "Typhoid conjugate vaccine (non-us)"
+  },
+  {
+    "code" : "25",
+    "display" : "Typhoid, oral",
+    "definition" : "Typhoid vaccine, live, oral"
+  },
+  {
+    "code" : "41",
+    "display" : "Typhoid, parenteral",
+    "definition" : "Typhoid vaccine, parenteral, other than acetone-killed, dried"
+  },
+  {
+    "code" : "53",
+    "display" : "Typhoid, parenteral, akd (u.s. military)",
+    "definition" : "Typhoid vaccine, parenteral, acetone-killed, dried (u.s. military)"
+  },
+  {
+    "code" : "91",
+    "display" : "Typhoid, unspecified formulation",
+    "definition" : "Typhoid vaccine, unspecified formulation"
+  },
+  {
+    "code" : "101",
+    "display" : "Typhoid, vicps",
+    "definition" : "Typhoid vi capsular polysaccharide vaccine"
+  },
+  {
+    "code" : "131",
+    "display" : "Typhus, historical",
+    "definition" : "Historical record of a typhus vaccination"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown",
+    "definition" : "Unknown vaccine or immune globulin"
+  },
+  {
+    "code" : "75",
+    "display" : "Vaccinia (smallpox)",
+    "definition" : "Vaccinia (smallpox) vaccine"
+  },
+  {
+    "code" : "105",
+    "display" : "Vaccinia (smallpox) diluted",
+    "definition" : "Vaccinia (smallpox) vaccine, diluted"
+  },
+  {
+    "code" : "79",
+    "display" : "Vaccinia immune globulin",
+    "definition" : "Vaccinia immune globulin"
+  },
+  {
+    "code" : "206",
+    "display" : "Vaccinia, smallpox mpox vaccine live, pf, sq or id injection",
+    "definition" : "Vaccinia, smallpox monkeypox vaccine, live attenuated, preservative free, subcutaneous or intradermal injection"
+  },
+  {
+    "code" : "21",
+    "display" : "Varicella",
+    "definition" : "Varicella virus vaccine"
+  },
+  {
+    "code" : "81",
+    "display" : "Vee, inactivated",
+    "definition" : "Venezuelan equine encephalitis, inactivated"
+  },
+  {
+    "code" : "80",
+    "display" : "Vee, live",
+    "definition" : "Venezuelan equine encephalitis, live, attenuated"
+  },
+  {
+    "code" : "92",
+    "display" : "Vee, unspecified formulation",
+    "definition" : "Venezuelan equine encephalitis vaccine, unspecified formulation"
+  },
+  {
+    "code" : "36",
+    "display" : "Vzig",
+    "definition" : "Varicella zoster immune globulin"
+  },
+  {
+    "code" : "117",
+    "display" : "Vzig (ind)",
+    "definition" : "Varicella zoster immune globulin (investigational new drug)"
+  },
+  {
+    "code" : "37",
+    "display" : "Yellow fever live",
+    "definition" : "Yellow fever vaccine live"
+  },
+  {
+    "code" : "183",
+    "display" : "Yellow fever vaccine live - alt",
+    "definition" : "Yellow fever vaccine live - alternative formulation for vaccine shortage"
+  },
+  {
+    "code" : "184",
+    "display" : "Yellow fever, unspecified",
+    "definition" : "Yellow fever vaccine, unspecified formulation"
+  },
+  {
+    "code" : "121",
+    "display" : "Zoster live",
+    "definition" : "Zoster vaccine, live"
+  },
+  {
+    "code" : "187",
+    "display" : "Zoster recombinant",
+    "definition" : "Zoster vaccine recombinant"
+  },
+  {
+    "code" : "188",
+    "display" : "Zoster, unspecified formulation",
+    "definition" : "Zoster vaccine, unspecified formulation"
+  }]
+}

@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-information-source-for-medication-adherence-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-information-source-for-medication-adherence-codes</b></p><a name=\"ie-core-information-source-for-medication-adherence-codes\"> </a><a name=\"hcie-core-information-source-for-medication-adherence-codes\"> </a><a name=\"ie-core-information-source-for-medication-adherence-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1179-1<a name=\"ie-core-information-source-for-medication-adherence-codes-1179-1\"> </a></td><td>Pharmacy</td></tr><tr><td style=\"white-space:nowrap\">1192-4<a name=\"ie-core-information-source-for-medication-adherence-codes-1192-4\"> </a></td><td>Home Care</td></tr><tr><td style=\"white-space:nowrap\">1204-7<a name=\"ie-core-information-source-for-medication-adherence-codes-1204-7\"> </a></td><td>Location outside facility</td></tr><tr><td style=\"white-space:nowrap\">ADMPHYS<a name=\"ie-core-information-source-for-medication-adherence-codes-ADMPHYS\"> </a></td><td>admitting physician</td></tr><tr><td style=\"white-space:nowrap\">ATTPHYS<a name=\"ie-core-information-source-for-medication-adherence-codes-ATTPHYS\"> </a></td><td>attending physician</td></tr><tr><td style=\"white-space:nowrap\">CHILD<a name=\"ie-core-information-source-for-medication-adherence-codes-CHILD\"> </a></td><td>child</td></tr><tr><td style=\"white-space:nowrap\">FAMMEMB<a name=\"ie-core-information-source-for-medication-adherence-codes-FAMMEMB\"> </a></td><td>family member</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"ie-core-information-source-for-medication-adherence-codes-FRND\"> </a></td><td>unrelated friend</td></tr><tr><td style=\"white-space:nowrap\">GUARD<a name=\"ie-core-information-source-for-medication-adherence-codes-GUARD\"> </a></td><td>guardian</td></tr><tr><td style=\"white-space:nowrap\">PCP<a name=\"ie-core-information-source-for-medication-adherence-codes-PCP\"> </a></td><td>primary care physician</td></tr><tr><td style=\"white-space:nowrap\">PRN<a name=\"ie-core-information-source-for-medication-adherence-codes-PRN\"> </a></td><td>parent</td></tr><tr><td style=\"white-space:nowrap\">SELF<a name=\"ie-core-information-source-for-medication-adherence-codes-SELF\"> </a></td><td>self</td></tr><tr><td style=\"white-space:nowrap\">SIB<a name=\"ie-core-information-source-for-medication-adherence-codes-SIB\"> </a></td><td>sibling</td></tr><tr><td style=\"white-space:nowrap\">SIGOTHR<a name=\"ie-core-information-source-for-medication-adherence-codes-SIGOTHR\"> </a></td><td>significant other</td></tr><tr><td style=\"white-space:nowrap\">SPS<a name=\"ie-core-information-source-for-medication-adherence-codes-SPS\"> </a></td><td>spouse</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.16.10" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreInformationSourceForMedicationAdherenceCodes"] ; # 
+  fhir:title [ fhir:v "IE Core Information Source for Medication Adherence Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of concepts to classify Information Source for Medication Adherence Codes"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "15"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1179-1" ] ;
+     fhir:display [ fhir:v "Pharmacy" ]
+  ] [
+     fhir:code [ fhir:v "1192-4" ] ;
+     fhir:display [ fhir:v "Home Care" ]
+  ] [
+     fhir:code [ fhir:v "1204-7" ] ;
+     fhir:display [ fhir:v "Location outside facility" ]
+  ] [
+     fhir:code [ fhir:v "ADMPHYS" ] ;
+     fhir:display [ fhir:v "admitting physician" ]
+  ] [
+     fhir:code [ fhir:v "ATTPHYS" ] ;
+     fhir:display [ fhir:v "attending physician" ]
+  ] [
+     fhir:code [ fhir:v "CHILD" ] ;
+     fhir:display [ fhir:v "child" ]
+  ] [
+     fhir:code [ fhir:v "FAMMEMB" ] ;
+     fhir:display [ fhir:v "family member" ]
+  ] [
+     fhir:code [ fhir:v "FRND" ] ;
+     fhir:display [ fhir:v "unrelated friend" ]
+  ] [
+     fhir:code [ fhir:v "GUARD" ] ;
+     fhir:display [ fhir:v "guardian" ]
+  ] [
+     fhir:code [ fhir:v "PCP" ] ;
+     fhir:display [ fhir:v "primary care physician" ]
+  ] [
+     fhir:code [ fhir:v "PRN" ] ;
+     fhir:display [ fhir:v "parent" ]
+  ] [
+     fhir:code [ fhir:v "SELF" ] ;
+     fhir:display [ fhir:v "self" ]
+  ] [
+     fhir:code [ fhir:v "SIB" ] ;
+     fhir:display [ fhir:v "sibling" ]
+  ] [
+     fhir:code [ fhir:v "SIGOTHR" ] ;
+     fhir:display [ fhir:v "significant other" ]
+  ] [
+     fhir:code [ fhir:v "SPS" ] ;
+     fhir:display [ fhir:v "spouse" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

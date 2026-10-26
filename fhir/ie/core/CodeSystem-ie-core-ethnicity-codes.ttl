@@ -1,0 +1,123 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-ethnicity-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-ethnicity-codes</b></p><a name=\"ie-core-ethnicity-codes\"> </a><a name=\"hcie-core-ethnicity-codes\"> </a><a name=\"ie-core-ethnicity-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">WI<a name=\"ie-core-ethnicity-codes-WI\"> </a></td><td>White Irish</td><td>White Irish</td></tr><tr><td style=\"white-space:nowrap\">IT<a name=\"ie-core-ethnicity-codes-IT\"> </a></td><td>Irish Travelers</td><td>Irish Travelers</td></tr><tr><td style=\"white-space:nowrap\">OW<a name=\"ie-core-ethnicity-codes-OW\"> </a></td><td>other White</td><td>other White</td></tr><tr><td style=\"white-space:nowrap\">BI<a name=\"ie-core-ethnicity-codes-BI\"> </a></td><td>Black Irish or African</td><td>Black Irish or African</td></tr><tr><td style=\"white-space:nowrap\">OBA<a name=\"ie-core-ethnicity-codes-OBA\"> </a></td><td>other Black</td><td>other Black</td></tr><tr><td style=\"white-space:nowrap\">CHI<a name=\"ie-core-ethnicity-codes-CHI\"> </a></td><td>Chinese</td><td>Chinese</td></tr><tr><td style=\"white-space:nowrap\">OA<a name=\"ie-core-ethnicity-codes-OA\"> </a></td><td>other Asian</td><td>other Asian</td></tr><tr><td style=\"white-space:nowrap\">OTH<a name=\"ie-core-ethnicity-codes-OTH\"> </a></td><td>Other</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">NS<a name=\"ie-core-ethnicity-codes-NS\"> </a></td><td>Not stated</td><td>Not stated</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.16.7" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreEthnicityCodes"] ; # 
+  fhir:title [ fhir:v "IE Core Ethnicity Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This extension applies to the Patient, Person, and RelatedPerson resources and is used to indicate Ethnicity."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "WI" ] ;
+     fhir:display [ fhir:v "White Irish" ] ;
+     fhir:definition [ fhir:v "White Irish" ]
+  ] [
+     fhir:code [ fhir:v "IT" ] ;
+     fhir:display [ fhir:v "Irish Travelers" ] ;
+     fhir:definition [ fhir:v "Irish Travelers" ]
+  ] [
+     fhir:code [ fhir:v "OW" ] ;
+     fhir:display [ fhir:v "other White" ] ;
+     fhir:definition [ fhir:v "other White" ]
+  ] [
+     fhir:code [ fhir:v "BI" ] ;
+     fhir:display [ fhir:v "Black Irish or African" ] ;
+     fhir:definition [ fhir:v "Black Irish or African" ]
+  ] [
+     fhir:code [ fhir:v "OBA" ] ;
+     fhir:display [ fhir:v "other Black" ] ;
+     fhir:definition [ fhir:v "other Black" ]
+  ] [
+     fhir:code [ fhir:v "CHI" ] ;
+     fhir:display [ fhir:v "Chinese" ] ;
+     fhir:definition [ fhir:v "Chinese" ]
+  ] [
+     fhir:code [ fhir:v "OA" ] ;
+     fhir:display [ fhir:v "other Asian" ] ;
+     fhir:definition [ fhir:v "other Asian" ]
+  ] [
+     fhir:code [ fhir:v "OTH" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Other" ]
+  ] [
+     fhir:code [ fhir:v "NS" ] ;
+     fhir:display [ fhir:v "Not stated" ] ;
+     fhir:definition [ fhir:v "Not stated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

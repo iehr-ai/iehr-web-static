@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="xray-chest-findings"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Xray Chest Findings Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This example of a IE Core Observation Clinical Result Profile illustrates its use to capture information about a patient's radiology study findings."/>
+    </extension>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-clinical-result"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation xray-chest-findings</b></p><a name="xray-chest-findings"> </a><a name="hcxray-chest-findings"> </a><a name="xray-chest-findings-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category imaging}">Imaging</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 18782-3}">Findings</span></p><p><b>subject</b>: <a href="Patient-example.html">Amy Shaw</a></p><p><b>encounter</b>: ER Visit</p><p><b>effective</b>: 2019-02-03 19:43:30+0000</p><p><b>value</b>: LINES AND TUBES: None.\n LUNGS AND PLEURA:\n Clear lungs. Normal pulmonary vascularity.\n No pleural effusion.\n No pneumothorax.\n HEART, MEDIASTINUM AND HILA:\n Heart is normal in size.\n Normal mediastinal and hilar contour.\n BONES AND SOFT TISSUES:\n No acute abnormality.\n</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="imaging"/>
+      <display value="Imaging"/>
+    </coding>
+    <text value="Imaging"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18782-3"/>
+      <display value="Radiology Study observation (narrative)"/>
+    </coding>
+    <text value="Findings"/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+    <display value="Amy Shaw"/>
+  </subject>
+  <encounter>
+    <display value="ER Visit"/>
+  </encounter>
+  <effectiveDateTime value="2019-02-03T19:43:30.000Z"/>
+  <valueString value="LINES AND TUBES: None.\n LUNGS AND PLEURA:\n Clear lungs. Normal pulmonary vascularity.\n No pleural effusion.\n No pneumothorax.\n HEART, MEDIASTINUM AND HILA:\n Heart is normal in size.\n Normal mediastinal and hilar contour.\n BONES AND SOFT TISSUES:\n No acute abnormality.\n"/>
+</Observation>

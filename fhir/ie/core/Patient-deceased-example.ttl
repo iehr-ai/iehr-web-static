@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Patient/deceased-example> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "deceased-example"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Deceased Patient Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is a deceased patient example for the *IE Core Patient Profile*."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient deceased-example</b></p><a name=\"deceased-example\"> </a><a name=\"hcdeceased-example\"> </a><a name=\"deceased-example-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ie-core-patient.html\">IE Core Patient Profile</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Mary A. Shaw  Female, DoB: 1937-10-21 ( Medical Record Number: 55555555 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td colspan=\"3\">2022-07-22</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 1 234 5678(Home)</li><li><a href=\"mailto:mary.shaw@example.com\">mary.shaw@example.com</a></li><li>49 MEADOW ST Sandyford Galway D18 CV48 IE </li></ul></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MR" ] ;
+         fhir:display [ fhir:v "Medical Record Number" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical Record Number" ]
+     ] ;
+     fhir:system [ fhir:v "http://hospital.smarthealthit.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "55555555" ]
+  ] ) ; # 
+  fhir:active [ fhir:v true] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Shaw" ] ;
+     fhir:given ( [ fhir:v "Mary" ] [ fhir:v "A." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "1 234 5678" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "mary.shaw@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1937-10-21"^^xsd:date] ; # 
+  fhir:deceased [
+     a fhir:dateTime ;
+     fhir:v "2022-07-22"^^xsd:date
+  ] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "49 MEADOW ST" ] ) ;
+     fhir:city [ fhir:v "Sandyford" ] ;
+     fhir:state [ fhir:v "Galway" ] ;
+     fhir:postalCode [ fhir:v "D18 CV48" ] ;
+     fhir:country [ fhir:v "IE" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-12-06"^^xsd:date ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

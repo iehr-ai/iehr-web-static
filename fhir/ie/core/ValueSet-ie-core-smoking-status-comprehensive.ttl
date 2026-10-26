@@ -1,0 +1,476 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ie-core-smoking-status-comprehensive"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-smoking-status-comprehensive</b></p><a name=\"ie-core-smoking-status-comprehensive\"> </a><a name=\"hcie-core-smoking-status-comprehensive\"> </a><a name=\"ie-core-smoking-status-comprehensive-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/100801000119107\">100801000119107</a></td><td>Maternal tobacco use in pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/105539002\">105539002</a></td><td>Non-smoker for personal reasons (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/105540000\">105540000</a></td><td>Non-smoker for religious reasons (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/105541001\">105541001</a></td><td>Non-smoker for medical reasons (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/10761391000119102\">10761391000119102</a></td><td>Tobacco use in mother complicating childbirth (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/110483000\">110483000</a></td><td>Tobacco user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/1137691001\">1137691001</a></td><td>Trying to give up using electronic cigarette (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/134406006\">134406006</a></td><td>Smoking reduced (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160603005\">160603005</a></td><td>Light cigarette smoker (1-9 cigs/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160604004\">160604004</a></td><td>Moderate cigarette smoker (10-19 cigs/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160605003\">160605003</a></td><td>Heavy cigarette smoker (20-39 cigs/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160606002\">160606002</a></td><td>Very heavy cigarette smoker (40+ cigs/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160612007\">160612007</a></td><td>Keeps trying to stop smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160613002\">160613002</a></td><td>Admitted tobacco consumption possibly untrue (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160614008\">160614008</a></td><td>Tobacco consumption unknown (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160616005\">160616005</a></td><td>Trying to give up smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160617001\">160617001</a></td><td>Stopped smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160619003\">160619003</a></td><td>Rolls own cigarettes (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160620009\">160620009</a></td><td>Ex-pipe smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/160621008\">160621008</a></td><td>Ex-cigar smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/16090371000119103\">16090371000119103</a></td><td>Exposure to second hand tobacco smoke (event)</td></tr><tr><td><a href=\"http://snomed.info/id/16090771000119104\">16090771000119104</a></td><td>Occupational exposure to environmental tobacco smoke (event)</td></tr><tr><td><a href=\"http://snomed.info/id/161077003\">161077003</a></td><td>Father smokes (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/161078008\">161078008</a></td><td>Mother smokes (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/161079000\">161079000</a></td><td>Both parents smoke (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/169940006\">169940006</a></td><td>Maternal tobacco abuse (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228491005\">228491005</a></td><td>Does not use snuff (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228492003\">228492003</a></td><td>Never used snuff (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228493008\">228493008</a></td><td>Ex-snuff user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228494002\">228494002</a></td><td>Snuff user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228499007\">228499007</a></td><td>Finding relating to moist tobacco use (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228501004\">228501004</a></td><td>Does not use moist powdered tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228502006\">228502006</a></td><td>Never used moist powdered tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228503001\">228503001</a></td><td>Ex-user of moist powdered tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228504007\">228504007</a></td><td>User of moist powdered tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228509002\">228509002</a></td><td>Finding relating to tobacco chewing (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228511006\">228511006</a></td><td>Does not chew tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228512004\">228512004</a></td><td>Never chewed tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228513009\">228513009</a></td><td>Ex-tobacco chewer (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228514003\">228514003</a></td><td>Chews plug tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228515002\">228515002</a></td><td>Chews twist tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228516001\">228516001</a></td><td>Chews loose leaf tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228517005\">228517005</a></td><td>Chews fine cut tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228518000\">228518000</a></td><td>Chews products containing tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228523000\">228523000</a></td><td>Exposed to tobacco smoke at work (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228524006\">228524006</a></td><td>Exposed to tobacco smoke at home (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/228525007\">228525007</a></td><td>Exposed to tobacco smoke in public places (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230059006\">230059006</a></td><td>Occasional cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230060001\">230060001</a></td><td>Light cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230062009\">230062009</a></td><td>Moderate cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230063004\">230063004</a></td><td>Heavy cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230064005\">230064005</a></td><td>Very heavy cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/230065006\">230065006</a></td><td>Chain smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266919005\">266919005</a></td><td>Never smoked tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266920004\">266920004</a></td><td>Trivial cigarette smoker (less than one cigarette/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266921000\">266921000</a></td><td>Ex-trivial cigarette smoker (&lt;1/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266922007\">266922007</a></td><td>Ex-light cigarette smoker (1-9/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266923002\">266923002</a></td><td>Ex-moderate cigarette smoker (10-19/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266924008\">266924008</a></td><td>Ex-heavy cigarette smoker (20-39/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266925009\">266925009</a></td><td>Ex-very heavy cigarette smoker (40+/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266927001\">266927001</a></td><td>Tobacco smoking consumption unknown (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266928006\">266928006</a></td><td>Ex-cigarette smoker amount unknown (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/266929003\">266929003</a></td><td>Smoking started (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/275105001\">275105001</a></td><td>Smoker in the family (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/281018007\">281018007</a></td><td>Ex-cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/308438006\">308438006</a></td><td>Smoking restarted (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/35341000087101\">35341000087101</a></td><td>Uses electronic cigarette daily (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/35371000087109\">35371000087109</a></td><td>Uses electronic cigarette occasionally (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/360890004\">360890004</a></td><td>Intolerant ex-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/360900008\">360900008</a></td><td>Aggressive ex-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/360918006\">360918006</a></td><td>Aggressive non-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/360929005\">360929005</a></td><td>Intolerant non-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/365981007\">365981007</a></td><td>Finding of tobacco smoking behavior (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/365982000\">365982000</a></td><td>Finding of tobacco smoking consumption (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/365983005\">365983005</a></td><td>Finding of snuff use (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/394871007\">394871007</a></td><td>Thinking about stopping smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/394872000\">394872000</a></td><td>Ready to stop smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/394873005\">394873005</a></td><td>Not interested in stopping smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/405746006\">405746006</a></td><td>Current non smoker but past smoking history unknown (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/427189007\">427189007</a></td><td>Maternal tobacco use (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/428041000124106\">428041000124106</a></td><td>Occasional tobacco smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/428061000124105\">428061000124105</a></td><td>Light tobacco smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/428071000124103\">428071000124103</a></td><td>Heavy tobacco smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/428081000124100\">428081000124100</a></td><td>Former heavy tobacco smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/428091000124102\">428091000124102</a></td><td>Former light tobacco smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/43381005\">43381005</a></td><td>Passive smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/446172000\">446172000</a></td><td>Failed attempt to stop smoking (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449345000\">449345000</a></td><td>Smoked before confirmation of pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449368009\">449368009</a></td><td>Stopped smoking during pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449369001\">449369001</a></td><td>Stopped smoking before pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449867007\">449867007</a></td><td>Uses moist tobacco occasionally (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449868002\">449868002</a></td><td>Smokes tobacco daily (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/449869005\">449869005</a></td><td>Uses moist tobacco daily (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/450811000124104\">450811000124104</a></td><td>Cigarette smoker (5-9 cigarettes/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/450821000124107\">450821000124107</a></td><td>Cigarette smoker (1-4 cigarettes/day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451371000124109\">451371000124109</a></td><td>Tobacco non-user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451381000124107\">451381000124107</a></td><td>Smokeless tobacco non-user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451881000124101\">451881000124101</a></td><td>Tobacco use in mother complicating puerperium (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451891000124103\">451891000124103</a></td><td>Tobacco use in mother complicating pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451901000124104\">451901000124104</a></td><td>Tobacco smoking in mother complicating puerperium (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451911000124101\">451911000124101</a></td><td>Tobacco smoking in mother complicating childbirth (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/451921000124109\">451921000124109</a></td><td>Tobacco smoking in mother complicating pregnancy (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/456711000124105\">456711000124105</a></td><td>Former smokeless tobacco user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/48031000119106\">48031000119106</a></td><td>Ex-smoker for more than 1 year (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/51441000087107\">51441000087107</a></td><td>Cannabis-filled electronic cigarette user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/53896009\">53896009</a></td><td>Tolerant ex-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/56578002\">56578002</a></td><td>Moderate smoker (20 or less per day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/56771006\">56771006</a></td><td>Heavy smoker (over 20 per day) (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/598071000005103\">598071000005103</a></td><td>Stopped smoking in first trimester (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/598081000005100\">598081000005100</a></td><td>Stopped smoking after first trimester (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/59978006\">59978006</a></td><td>Cigar smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/65568007\">65568007</a></td><td>Cigarette smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/699009004\">699009004</a></td><td>History of exposure to second hand smoke (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/702975009\">702975009</a></td><td>Ex-tobacco user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/702979003\">702979003</a></td><td>Never used tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/711563001\">711563001</a></td><td>No known exposure to tobacco smoke (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/713914004\">713914004</a></td><td>User of smokeless tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/722499006\">722499006</a></td><td>Electronic cigarette user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/735128000\">735128000</a></td><td>Ex-smoker for less than 1 year (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/762296001\">762296001</a></td><td>History of exposure to tobacco smoke in perinatal period (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/77176002\">77176002</a></td><td>Smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/785889008\">785889008</a></td><td>Nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/786063001\">786063001</a></td><td>Non-nicotine-filled electronic cigarette user (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/81703003\">81703003</a></td><td>Chews tobacco (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/82302008\">82302008</a></td><td>Pipe smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/8392000\">8392000</a></td><td>Non-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/8517006\">8517006</a></td><td>Ex-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/87739003\">87739003</a></td><td>Tolerant non-smoker (finding)</td></tr><tr><td><a href=\"http://snomed.info/id/35361000087100\">35361000087100</a></td><td>Ex-vaper (finding)</td></tr></table></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "cgp"
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:integer ;
+       fhir:v 3 ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:canonical ;
+           fhir:v "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"^^xsd:anyURI ;
+           fhir:link <http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.3.6.1.4.1.54392.5.2690.48.44" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "1.0.0-ballot"] ; # 
+  fhir:name [ fhir:v "IECoreSmokingStatusComprehensive"] ; # 
+  fhir:title [ fhir:v "IE Core Smoking status comprehensive"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-05-13T21:38:29-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "iEHR.ai"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "iEHR.ai" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.iehr.ai" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@iehr.ai" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of SNOMED concepts to classify Smoking status comprehensive"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IE" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "iEHR.ai, all rights reserved Creative Commons License"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "100801000119107" ] ;
+         fhir:display [ fhir:v "Maternal tobacco use in pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "105539002" ] ;
+         fhir:display [ fhir:v "Non-smoker for personal reasons (finding)" ]
+       ] [
+         fhir:code [ fhir:v "105540000" ] ;
+         fhir:display [ fhir:v "Non-smoker for religious reasons (finding)" ]
+       ] [
+         fhir:code [ fhir:v "105541001" ] ;
+         fhir:display [ fhir:v "Non-smoker for medical reasons (finding)" ]
+       ] [
+         fhir:code [ fhir:v "10761391000119102" ] ;
+         fhir:display [ fhir:v "Tobacco use in mother complicating childbirth (finding)" ]
+       ] [
+         fhir:code [ fhir:v "110483000" ] ;
+         fhir:display [ fhir:v "Tobacco user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "1137691001" ] ;
+         fhir:display [ fhir:v "Trying to give up using electronic cigarette (finding)" ]
+       ] [
+         fhir:code [ fhir:v "134406006" ] ;
+         fhir:display [ fhir:v "Smoking reduced (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160603005" ] ;
+         fhir:display [ fhir:v "Light cigarette smoker (1-9 cigs/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160604004" ] ;
+         fhir:display [ fhir:v "Moderate cigarette smoker (10-19 cigs/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160605003" ] ;
+         fhir:display [ fhir:v "Heavy cigarette smoker (20-39 cigs/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160606002" ] ;
+         fhir:display [ fhir:v "Very heavy cigarette smoker (40+ cigs/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160612007" ] ;
+         fhir:display [ fhir:v "Keeps trying to stop smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160613002" ] ;
+         fhir:display [ fhir:v "Admitted tobacco consumption possibly untrue (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160614008" ] ;
+         fhir:display [ fhir:v "Tobacco consumption unknown (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160616005" ] ;
+         fhir:display [ fhir:v "Trying to give up smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160617001" ] ;
+         fhir:display [ fhir:v "Stopped smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160619003" ] ;
+         fhir:display [ fhir:v "Rolls own cigarettes (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160620009" ] ;
+         fhir:display [ fhir:v "Ex-pipe smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "160621008" ] ;
+         fhir:display [ fhir:v "Ex-cigar smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "16090371000119103" ] ;
+         fhir:display [ fhir:v "Exposure to second hand tobacco smoke (event)" ]
+       ] [
+         fhir:code [ fhir:v "16090771000119104" ] ;
+         fhir:display [ fhir:v "Occupational exposure to environmental tobacco smoke (event)" ]
+       ] [
+         fhir:code [ fhir:v "161077003" ] ;
+         fhir:display [ fhir:v "Father smokes (situation)" ]
+       ] [
+         fhir:code [ fhir:v "161078008" ] ;
+         fhir:display [ fhir:v "Mother smokes (situation)" ]
+       ] [
+         fhir:code [ fhir:v "161079000" ] ;
+         fhir:display [ fhir:v "Both parents smoke (situation)" ]
+       ] [
+         fhir:code [ fhir:v "169940006" ] ;
+         fhir:display [ fhir:v "Maternal tobacco abuse (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228491005" ] ;
+         fhir:display [ fhir:v "Does not use snuff (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228492003" ] ;
+         fhir:display [ fhir:v "Never used snuff (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228493008" ] ;
+         fhir:display [ fhir:v "Ex-snuff user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228494002" ] ;
+         fhir:display [ fhir:v "Snuff user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228499007" ] ;
+         fhir:display [ fhir:v "Finding relating to moist tobacco use (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228501004" ] ;
+         fhir:display [ fhir:v "Does not use moist powdered tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228502006" ] ;
+         fhir:display [ fhir:v "Never used moist powdered tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228503001" ] ;
+         fhir:display [ fhir:v "Ex-user of moist powdered tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228504007" ] ;
+         fhir:display [ fhir:v "User of moist powdered tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228509002" ] ;
+         fhir:display [ fhir:v "Finding relating to tobacco chewing (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228511006" ] ;
+         fhir:display [ fhir:v "Does not chew tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228512004" ] ;
+         fhir:display [ fhir:v "Never chewed tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228513009" ] ;
+         fhir:display [ fhir:v "Ex-tobacco chewer (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228514003" ] ;
+         fhir:display [ fhir:v "Chews plug tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228515002" ] ;
+         fhir:display [ fhir:v "Chews twist tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228516001" ] ;
+         fhir:display [ fhir:v "Chews loose leaf tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228517005" ] ;
+         fhir:display [ fhir:v "Chews fine cut tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228518000" ] ;
+         fhir:display [ fhir:v "Chews products containing tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228523000" ] ;
+         fhir:display [ fhir:v "Exposed to tobacco smoke at work (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228524006" ] ;
+         fhir:display [ fhir:v "Exposed to tobacco smoke at home (finding)" ]
+       ] [
+         fhir:code [ fhir:v "228525007" ] ;
+         fhir:display [ fhir:v "Exposed to tobacco smoke in public places (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230059006" ] ;
+         fhir:display [ fhir:v "Occasional cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230060001" ] ;
+         fhir:display [ fhir:v "Light cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230062009" ] ;
+         fhir:display [ fhir:v "Moderate cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230063004" ] ;
+         fhir:display [ fhir:v "Heavy cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230064005" ] ;
+         fhir:display [ fhir:v "Very heavy cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "230065006" ] ;
+         fhir:display [ fhir:v "Chain smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266919005" ] ;
+         fhir:display [ fhir:v "Never smoked tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266920004" ] ;
+         fhir:display [ fhir:v "Trivial cigarette smoker (less than one cigarette/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266921000" ] ;
+         fhir:display [ fhir:v "Ex-trivial cigarette smoker (<1/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266922007" ] ;
+         fhir:display [ fhir:v "Ex-light cigarette smoker (1-9/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266923002" ] ;
+         fhir:display [ fhir:v "Ex-moderate cigarette smoker (10-19/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266924008" ] ;
+         fhir:display [ fhir:v "Ex-heavy cigarette smoker (20-39/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266925009" ] ;
+         fhir:display [ fhir:v "Ex-very heavy cigarette smoker (40+/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266927001" ] ;
+         fhir:display [ fhir:v "Tobacco smoking consumption unknown (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266928006" ] ;
+         fhir:display [ fhir:v "Ex-cigarette smoker amount unknown (finding)" ]
+       ] [
+         fhir:code [ fhir:v "266929003" ] ;
+         fhir:display [ fhir:v "Smoking started (finding)" ]
+       ] [
+         fhir:code [ fhir:v "275105001" ] ;
+         fhir:display [ fhir:v "Smoker in the family (situation)" ]
+       ] [
+         fhir:code [ fhir:v "281018007" ] ;
+         fhir:display [ fhir:v "Ex-cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "308438006" ] ;
+         fhir:display [ fhir:v "Smoking restarted (finding)" ]
+       ] [
+         fhir:code [ fhir:v "35341000087101" ] ;
+         fhir:display [ fhir:v "Uses electronic cigarette daily (finding)" ]
+       ] [
+         fhir:code [ fhir:v "35371000087109" ] ;
+         fhir:display [ fhir:v "Uses electronic cigarette occasionally (finding)" ]
+       ] [
+         fhir:code [ fhir:v "360890004" ] ;
+         fhir:display [ fhir:v "Intolerant ex-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "360900008" ] ;
+         fhir:display [ fhir:v "Aggressive ex-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "360918006" ] ;
+         fhir:display [ fhir:v "Aggressive non-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "360929005" ] ;
+         fhir:display [ fhir:v "Intolerant non-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "365981007" ] ;
+         fhir:display [ fhir:v "Finding of tobacco smoking behavior (finding)" ]
+       ] [
+         fhir:code [ fhir:v "365982000" ] ;
+         fhir:display [ fhir:v "Finding of tobacco smoking consumption (finding)" ]
+       ] [
+         fhir:code [ fhir:v "365983005" ] ;
+         fhir:display [ fhir:v "Finding of snuff use (finding)" ]
+       ] [
+         fhir:code [ fhir:v "394871007" ] ;
+         fhir:display [ fhir:v "Thinking about stopping smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "394872000" ] ;
+         fhir:display [ fhir:v "Ready to stop smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "394873005" ] ;
+         fhir:display [ fhir:v "Not interested in stopping smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "405746006" ] ;
+         fhir:display [ fhir:v "Current non smoker but past smoking history unknown (finding)" ]
+       ] [
+         fhir:code [ fhir:v "427189007" ] ;
+         fhir:display [ fhir:v "Maternal tobacco use (finding)" ]
+       ] [
+         fhir:code [ fhir:v "428041000124106" ] ;
+         fhir:display [ fhir:v "Occasional tobacco smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "428061000124105" ] ;
+         fhir:display [ fhir:v "Light tobacco smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "428071000124103" ] ;
+         fhir:display [ fhir:v "Heavy tobacco smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "428081000124100" ] ;
+         fhir:display [ fhir:v "Former heavy tobacco smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "428091000124102" ] ;
+         fhir:display [ fhir:v "Former light tobacco smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "43381005" ] ;
+         fhir:display [ fhir:v "Passive smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "446172000" ] ;
+         fhir:display [ fhir:v "Failed attempt to stop smoking (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449345000" ] ;
+         fhir:display [ fhir:v "Smoked before confirmation of pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449368009" ] ;
+         fhir:display [ fhir:v "Stopped smoking during pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449369001" ] ;
+         fhir:display [ fhir:v "Stopped smoking before pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449867007" ] ;
+         fhir:display [ fhir:v "Uses moist tobacco occasionally (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449868002" ] ;
+         fhir:display [ fhir:v "Smokes tobacco daily (finding)" ]
+       ] [
+         fhir:code [ fhir:v "449869005" ] ;
+         fhir:display [ fhir:v "Uses moist tobacco daily (finding)" ]
+       ] [
+         fhir:code [ fhir:v "450811000124104" ] ;
+         fhir:display [ fhir:v "Cigarette smoker (5-9 cigarettes/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "450821000124107" ] ;
+         fhir:display [ fhir:v "Cigarette smoker (1-4 cigarettes/day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451371000124109" ] ;
+         fhir:display [ fhir:v "Tobacco non-user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451381000124107" ] ;
+         fhir:display [ fhir:v "Smokeless tobacco non-user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451881000124101" ] ;
+         fhir:display [ fhir:v "Tobacco use in mother complicating puerperium (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451891000124103" ] ;
+         fhir:display [ fhir:v "Tobacco use in mother complicating pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451901000124104" ] ;
+         fhir:display [ fhir:v "Tobacco smoking in mother complicating puerperium (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451911000124101" ] ;
+         fhir:display [ fhir:v "Tobacco smoking in mother complicating childbirth (finding)" ]
+       ] [
+         fhir:code [ fhir:v "451921000124109" ] ;
+         fhir:display [ fhir:v "Tobacco smoking in mother complicating pregnancy (finding)" ]
+       ] [
+         fhir:code [ fhir:v "456711000124105" ] ;
+         fhir:display [ fhir:v "Former smokeless tobacco user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "48031000119106" ] ;
+         fhir:display [ fhir:v "Ex-smoker for more than 1 year (finding)" ]
+       ] [
+         fhir:code [ fhir:v "51441000087107" ] ;
+         fhir:display [ fhir:v "Cannabis-filled electronic cigarette user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "53896009" ] ;
+         fhir:display [ fhir:v "Tolerant ex-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "56578002" ] ;
+         fhir:display [ fhir:v "Moderate smoker (20 or less per day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "56771006" ] ;
+         fhir:display [ fhir:v "Heavy smoker (over 20 per day) (finding)" ]
+       ] [
+         fhir:code [ fhir:v "598071000005103" ] ;
+         fhir:display [ fhir:v "Stopped smoking in first trimester (finding)" ]
+       ] [
+         fhir:code [ fhir:v "598081000005100" ] ;
+         fhir:display [ fhir:v "Stopped smoking after first trimester (finding)" ]
+       ] [
+         fhir:code [ fhir:v "59978006" ] ;
+         fhir:display [ fhir:v "Cigar smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "65568007" ] ;
+         fhir:display [ fhir:v "Cigarette smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "699009004" ] ;
+         fhir:display [ fhir:v "History of exposure to second hand smoke (situation)" ]
+       ] [
+         fhir:code [ fhir:v "702975009" ] ;
+         fhir:display [ fhir:v "Ex-tobacco user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "702979003" ] ;
+         fhir:display [ fhir:v "Never used tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "711563001" ] ;
+         fhir:display [ fhir:v "No known exposure to tobacco smoke (finding)" ]
+       ] [
+         fhir:code [ fhir:v "713914004" ] ;
+         fhir:display [ fhir:v "User of smokeless tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "722499006" ] ;
+         fhir:display [ fhir:v "Electronic cigarette user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "735128000" ] ;
+         fhir:display [ fhir:v "Ex-smoker for less than 1 year (finding)" ]
+       ] [
+         fhir:code [ fhir:v "762296001" ] ;
+         fhir:display [ fhir:v "History of exposure to tobacco smoke in perinatal period (situation)" ]
+       ] [
+         fhir:code [ fhir:v "77176002" ] ;
+         fhir:display [ fhir:v "Smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "785889008" ] ;
+         fhir:display [ fhir:v "Nicotine-filled electronic cigarette user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "786063001" ] ;
+         fhir:display [ fhir:v "Non-nicotine-filled electronic cigarette user (finding)" ]
+       ] [
+         fhir:code [ fhir:v "81703003" ] ;
+         fhir:display [ fhir:v "Chews tobacco (finding)" ]
+       ] [
+         fhir:code [ fhir:v "82302008" ] ;
+         fhir:display [ fhir:v "Pipe smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "8392000" ] ;
+         fhir:display [ fhir:v "Non-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "8517006" ] ;
+         fhir:display [ fhir:v "Ex-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "87739003" ] ;
+         fhir:display [ fhir:v "Tolerant non-smoker (finding)" ]
+       ] [
+         fhir:code [ fhir:v "35361000087100" ] ;
+         fhir:display [ fhir:v "Ex-vaper (finding)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

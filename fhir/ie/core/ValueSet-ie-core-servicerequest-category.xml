@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ie-core-servicerequest-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ie-core-servicerequest-category</b></p><a name="ie-core-servicerequest-category"> </a><a name="hcie-core-servicerequest-category"> </a><a name="ie-core-servicerequest-category-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-ie-core-category.html"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category</code></a></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/386053000">386053000</a></td><td>Evaluation procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/410606002">410606002</a></td><td>Social service procedure (procedure)</td></tr></table></li><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">Service Request Category Codes</a></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="cgp"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="3">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueInteger>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"/>
+      </extension>
+    </valueCode>
+  </extension>
+  <url value="http://iehr.ai/fhir/ie/core/ValueSet/ie-core-servicerequest-category"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.3.6.1.4.1.54392.5.2690.48.24"/>
+  </identifier>
+  <version value="1.0.0-ballot"/>
+  <name value="IECoreServiceRequestCategoryCodes"/>
+  <title value="IE Core ServiceRequest Category Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-05-13T21:38:29-04:00"/>
+  <publisher value="iEHR.ai"/>
+  <contact>
+    <name value="iEHR.ai"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.iehr.ai"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@iehr.ai"/>
+    </telecom>
+  </contact>
+  <description value="A set of SNOMED CT and LOINC concepts to classify a requested service"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IE"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="- This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.&#xA;- This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc&quot;/&gt;"/>
+  <compose>
+    <include>
+      <system value="http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="410606002"/>
+        <display value="Social service procedure (procedure)"/>
+      </concept>
+    </include>
+    <include>
+      <valueSet value="http://hl7.org/fhir/ValueSet/servicerequest-category"/>
+    </include>
+  </compose>
+</ValueSet>

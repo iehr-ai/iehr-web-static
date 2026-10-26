@@ -1,0 +1,196 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-counties-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-counties-codes</b></p><a name=\"ie-core-counties-codes\"> </a><a name=\"hcie-core-counties-codes\"> </a><a name=\"ie-core-counties-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">CW<a name=\"ie-core-counties-codes-CW\"> </a></td><td>Carlow</td><td>Carlow</td></tr><tr><td style=\"white-space:nowrap\">CN<a name=\"ie-core-counties-codes-CN\"> </a></td><td>Cavan</td><td>Cavan</td></tr><tr><td style=\"white-space:nowrap\">CE<a name=\"ie-core-counties-codes-CE\"> </a></td><td>Clare</td><td>Clare</td></tr><tr><td style=\"white-space:nowrap\">CO<a name=\"ie-core-counties-codes-CO\"> </a></td><td>Cork</td><td>Cork</td></tr><tr><td style=\"white-space:nowrap\">DL<a name=\"ie-core-counties-codes-DL\"> </a></td><td>Donegal</td><td>Donegal</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"ie-core-counties-codes-D\"> </a></td><td>Dublin</td><td>Dublin</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"ie-core-counties-codes-G\"> </a></td><td>Galway</td><td>Galway</td></tr><tr><td style=\"white-space:nowrap\">KY<a name=\"ie-core-counties-codes-KY\"> </a></td><td>Kerry</td><td>Kerry</td></tr><tr><td style=\"white-space:nowrap\">KE<a name=\"ie-core-counties-codes-KE\"> </a></td><td>Kildare</td><td>Kildare</td></tr><tr><td style=\"white-space:nowrap\">KK<a name=\"ie-core-counties-codes-KK\"> </a></td><td>Kilkenny</td><td>Kilkenny</td></tr><tr><td style=\"white-space:nowrap\">LS<a name=\"ie-core-counties-codes-LS\"> </a></td><td>Laois</td><td>Laois</td></tr><tr><td style=\"white-space:nowrap\">LM<a name=\"ie-core-counties-codes-LM\"> </a></td><td>Leitrim</td><td>Leitrim</td></tr><tr><td style=\"white-space:nowrap\">LK<a name=\"ie-core-counties-codes-LK\"> </a></td><td>Limerick</td><td>Limerick</td></tr><tr><td style=\"white-space:nowrap\">LD<a name=\"ie-core-counties-codes-LD\"> </a></td><td>Longford</td><td>Longford</td></tr><tr><td style=\"white-space:nowrap\">LH<a name=\"ie-core-counties-codes-LH\"> </a></td><td>Louth</td><td>Louth</td></tr><tr><td style=\"white-space:nowrap\">MO<a name=\"ie-core-counties-codes-MO\"> </a></td><td>Mayo</td><td>Mayo</td></tr><tr><td style=\"white-space:nowrap\">MH<a name=\"ie-core-counties-codes-MH\"> </a></td><td>Meath</td><td>Meath</td></tr><tr><td style=\"white-space:nowrap\">MN<a name=\"ie-core-counties-codes-MN\"> </a></td><td>Monaghan</td><td>Monaghan</td></tr><tr><td style=\"white-space:nowrap\">OY<a name=\"ie-core-counties-codes-OY\"> </a></td><td>Offaly</td><td>Offaly</td></tr><tr><td style=\"white-space:nowrap\">RN<a name=\"ie-core-counties-codes-RN\"> </a></td><td>Roscommon</td><td>Roscommon</td></tr><tr><td style=\"white-space:nowrap\">SO<a name=\"ie-core-counties-codes-SO\"> </a></td><td>Sligo</td><td>Sligo</td></tr><tr><td style=\"white-space:nowrap\">TA<a name=\"ie-core-counties-codes-TA\"> </a></td><td>Tipperary</td><td>Tipperary</td></tr><tr><td style=\"white-space:nowrap\">WD<a name=\"ie-core-counties-codes-WD\"> </a></td><td>Waterford</td><td>Waterford</td></tr><tr><td style=\"white-space:nowrap\">WH<a name=\"ie-core-counties-codes-WH\"> </a></td><td>Westmeath</td><td>Westmeath</td></tr><tr><td style=\"white-space:nowrap\">WX<a name=\"ie-core-counties-codes-WX\"> </a></td><td>Wexford</td><td>Wexford</td></tr><tr><td style=\"white-space:nowrap\">WW<a name=\"ie-core-counties-codes-WW\"> </a></td><td>Wicklow</td><td>Wicklow</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.6"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreCountiesCodes",
+  "title" : "Irish Counties",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "The Irish Counties code system defines concepts that represent the Irish Counties.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 26,
+  "concept" : [{
+    "code" : "CW",
+    "display" : "Carlow",
+    "definition" : "Carlow"
+  },
+  {
+    "code" : "CN",
+    "display" : "Cavan",
+    "definition" : "Cavan"
+  },
+  {
+    "code" : "CE",
+    "display" : "Clare",
+    "definition" : "Clare"
+  },
+  {
+    "code" : "CO",
+    "display" : "Cork",
+    "definition" : "Cork"
+  },
+  {
+    "code" : "DL",
+    "display" : "Donegal",
+    "definition" : "Donegal"
+  },
+  {
+    "code" : "D",
+    "display" : "Dublin",
+    "definition" : "Dublin"
+  },
+  {
+    "code" : "G",
+    "display" : "Galway",
+    "definition" : "Galway"
+  },
+  {
+    "code" : "KY",
+    "display" : "Kerry",
+    "definition" : "Kerry"
+  },
+  {
+    "code" : "KE",
+    "display" : "Kildare",
+    "definition" : "Kildare"
+  },
+  {
+    "code" : "KK",
+    "display" : "Kilkenny",
+    "definition" : "Kilkenny"
+  },
+  {
+    "code" : "LS",
+    "display" : "Laois",
+    "definition" : "Laois"
+  },
+  {
+    "code" : "LM",
+    "display" : "Leitrim",
+    "definition" : "Leitrim"
+  },
+  {
+    "code" : "LK",
+    "display" : "Limerick",
+    "definition" : "Limerick"
+  },
+  {
+    "code" : "LD",
+    "display" : "Longford",
+    "definition" : "Longford"
+  },
+  {
+    "code" : "LH",
+    "display" : "Louth",
+    "definition" : "Louth"
+  },
+  {
+    "code" : "MO",
+    "display" : "Mayo",
+    "definition" : "Mayo"
+  },
+  {
+    "code" : "MH",
+    "display" : "Meath",
+    "definition" : "Meath"
+  },
+  {
+    "code" : "MN",
+    "display" : "Monaghan",
+    "definition" : "Monaghan"
+  },
+  {
+    "code" : "OY",
+    "display" : "Offaly",
+    "definition" : "Offaly"
+  },
+  {
+    "code" : "RN",
+    "display" : "Roscommon",
+    "definition" : "Roscommon"
+  },
+  {
+    "code" : "SO",
+    "display" : "Sligo",
+    "definition" : "Sligo"
+  },
+  {
+    "code" : "TA",
+    "display" : "Tipperary",
+    "definition" : "Tipperary"
+  },
+  {
+    "code" : "WD",
+    "display" : "Waterford",
+    "definition" : "Waterford"
+  },
+  {
+    "code" : "WH",
+    "display" : "Westmeath",
+    "definition" : "Westmeath"
+  },
+  {
+    "code" : "WX",
+    "display" : "Wexford",
+    "definition" : "Wexford"
+  },
+  {
+    "code" : "WW",
+    "display" : "Wicklow",
+    "definition" : "Wicklow"
+  }]
+}

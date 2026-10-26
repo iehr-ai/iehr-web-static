@@ -1,0 +1,1103 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ie-core-allergy-intolerance-set",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ie-core-allergy-intolerance-set</b></p><a name=\"ie-core-allergy-intolerance-set\"> </a><a name=\"hcie-core-allergy-intolerance-set\"> </a><a name=\"ie-core-allergy-intolerance-set-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1003736004\">1003736004</a></td><td>Mammalian milk based food (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1003774007\">1003774007</a></td><td>No known Hevea brasiliensis latex allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/102259006\">102259006</a></td><td>Citrus fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102261002\">102261002</a></td><td>Strawberry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102262009\">102262009</a></td><td>Chocolate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102263004\">102263004</a></td><td>Eggs (edible) (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/102264005\">102264005</a></td><td>Cheese (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/105908007\">105908007</a></td><td>Medicinal product containing macrolide and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108417002\">108417002</a></td><td>Product containing 5-hydroxytryptamine-3-receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108661002\">108661002</a></td><td>Product containing histamine H2 receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108665006\">108665006</a></td><td>Product containing hydrogen/potassium adenosine triphosphatase enzyme system inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108787006\">108787006</a></td><td>Medicinal product containing anthracycline and acting as antineoplastic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/108807002\">108807002</a></td><td>Product containing monoclonal antibody (product)</td></tr><tr><td><a href=\"http://snomed.info/id/111088007\">111088007</a></td><td>Latex (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/1137358000\">1137358000</a></td><td>Piper (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/11526002\">11526002</a></td><td>Aspartame (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/11563006\">11563006</a></td><td>Product containing vitamin D and/or vitamin D derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/116085009\">116085009</a></td><td>Product containing retinoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/116274004\">116274004</a></td><td>Artificial sweetener (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/116596006\">116596006</a></td><td>Product containing glucocorticoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1181000221105\">1181000221105</a></td><td>Vaccine product containing only Influenza virus antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/123954005\">123954005</a></td><td>Product containing prostaglandin-endoperoxide synthase isoform 2 inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/126175007\">126175007</a></td><td>Product containing anabolic steroid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/129473008\">129473008</a></td><td>Medicinal product containing echinocandin and acting as antifungal agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/13577000\">13577000</a></td><td>Nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/16047007\">16047007</a></td><td>Product containing benzodiazepine (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1631000175102\">1631000175102</a></td><td>Patient not asked (contextual qualifier) (qualifier value)</td></tr><tr><td><a href=\"http://snomed.info/id/16403005\">16403005</a></td><td>Non-steroidal anti-inflammatory agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/1801000221105\">1801000221105</a></td><td>Vaccine product containing only Streptococcus pneumoniae capsular polysaccharide antigen conjugated (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/226723006\">226723006</a></td><td>Buckwheat - cereal (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226734009\">226734009</a></td><td>Wheatgerm (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226915003\">226915003</a></td><td>Red meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226916002\">226916002</a></td><td>Beef (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226934003\">226934003</a></td><td>Pork (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226955001\">226955001</a></td><td>Chicken - meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/226967004\">226967004</a></td><td>Turkey - meat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227144008\">227144008</a></td><td>Tuna fish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227151004\">227151004</a></td><td>Prawns (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227208008\">227208008</a></td><td>Abalone canned in brine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227219006\">227219006</a></td><td>Eggplant (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227313005\">227313005</a></td><td>Pulse vegetable (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227388008\">227388008</a></td><td>Cinnamon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227400003\">227400003</a></td><td>Ginger (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227421003\">227421003</a></td><td>Cranberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227444000\">227444000</a></td><td>Raspberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227493005\">227493005</a></td><td>Cashew nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227512001\">227512001</a></td><td>Pistachio nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/227598003\">227598003</a></td><td>Honey (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/228102000\">228102000</a></td><td>Sodium nitrate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/255641001\">255641001</a></td><td>Caffeine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256259004\">256259004</a></td><td>Pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256277009\">256277009</a></td><td>Grass pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256306003\">256306003</a></td><td>Orange - fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256307007\">256307007</a></td><td>Banana (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256313003\">256313003</a></td><td>Ananas comosus (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256315005\">256315005</a></td><td>Grapefruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256317002\">256317002</a></td><td>Grapes (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256319004\">256319004</a></td><td>Carrot (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256326004\">256326004</a></td><td>Celery (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256329006\">256329006</a></td><td>Spinach (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256350002\">256350002</a></td><td>Almond (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256351003\">256351003</a></td><td>Brazil nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256352005\">256352005</a></td><td>Walnut - nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256353000\">256353000</a></td><td>Hazelnut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256354006\">256354006</a></td><td>Bean (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256417003\">256417003</a></td><td>Horse dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/256440004\">256440004</a></td><td>Vespidae venom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/2596005\">2596005</a></td><td>Product containing lincomycin (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/260152009\">260152009</a></td><td>Cat dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260154005\">260154005</a></td><td>Dog dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260167008\">260167008</a></td><td>Sesame seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260176001\">260176001</a></td><td>Kiwi fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260177005\">260177005</a></td><td>Cucumis (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260179008\">260179008</a></td><td>Mango fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260184002\">260184002</a></td><td>Pea (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260189007\">260189007</a></td><td>Pecan nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/260205009\">260205009</a></td><td>Sunflower seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/264287008\">264287008</a></td><td>Animal dander (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/264337003\">264337003</a></td><td>Seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/28230009\">28230009</a></td><td>Poultry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/282831004\">282831004</a></td><td>Medicinal product containing tetracycline structure and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/288328004\">288328004</a></td><td>Bee venom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/28942008\">28942008</a></td><td>Coconut oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/29263009\">29263009</a></td><td>Coffee (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/320073005\">320073005</a></td><td>Product containing beta-2 adrenergic receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/33008008\">33008008</a></td><td>Dust (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/33219003\">33219003</a></td><td>Medicinal product containing tricyclic compound and acting as antidepressant agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/33252009\">33252009</a></td><td>Product containing beta adrenergic receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/332955008\">332955008</a></td><td>Product containing undecenoate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/34012005\">34012005</a></td><td>Product containing sulfonylurea (product)</td></tr><tr><td><a href=\"http://snomed.info/id/346636007\">346636007</a></td><td>Plasma protein solution (product)</td></tr><tr><td><a href=\"http://snomed.info/id/349854005\">349854005</a></td><td>Product containing selective serotonin re-uptake inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350134005\">350134005</a></td><td>Product containing carbapenem (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350157004\">350157004</a></td><td>Product containing nitroimidazole (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350196005\">350196005</a></td><td>Medicinal product containing imidazole and acting as antifungal agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350222007\">350222007</a></td><td>Medicinal product containing aminoquinoline and acting as antimalarial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350294001\">350294001</a></td><td>Product containing methadone analog (product)</td></tr><tr><td><a href=\"http://snomed.info/id/350312004\">350312004</a></td><td>Product containing salicylate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/35748005\">35748005</a></td><td>Wine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/360204007\">360204007</a></td><td>Product containing opioid receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/363560004\">363560004</a></td><td>Product containing serotonin 5-hydroxytryptamine-1 receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/3692009\">3692009</a></td><td>Sodium sulfite (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/37084008\">37084008</a></td><td>Medicinal product containing quinolone and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/372783007\">372783007</a></td><td>Antiparkinsonian agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/373531009\">373531009</a></td><td>Gelatin (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/386127005\">386127005</a></td><td>Formula milk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/391737006\">391737006</a></td><td>Almond oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/391739009\">391739009</a></td><td>Aloe (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/39487003\">39487003</a></td><td>Product containing insulin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/400266000\">400266000</a></td><td>Product containing hydrocolloid (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/407935004\">407935004</a></td><td>Contrast media (product)</td></tr><tr><td><a href=\"http://snomed.info/id/409137002\">409137002</a></td><td>No known drug allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/411600004\">411600004</a></td><td>Horse serum proteins diagnostic allergen extract (product)</td></tr><tr><td><a href=\"http://snomed.info/id/412061001\">412061001</a></td><td>Blueberries (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412062008\">412062008</a></td><td>Cantaloupe (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412068007\">412068007</a></td><td>Rye (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412071004\">412071004</a></td><td>Wheat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412357001\">412357001</a></td><td>Zea mays (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412533000\">412533000</a></td><td>Wheat bran (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412534006\">412534006</a></td><td>Yeast (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/412583005\">412583005</a></td><td>Bee pollen (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/41549009\">41549009</a></td><td>Product containing angiotensin-converting enzyme inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/416636000\">416636000</a></td><td>Product containing glucagon-like peptide 1 receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/416897008\">416897008</a></td><td>Product containing tumor necrosis factor alpha inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/417889008\">417889008</a></td><td>Arachis oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/418504009\">418504009</a></td><td>Oat (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/418920007\">418920007</a></td><td>Adhesive agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/419420009\">419420009</a></td><td>Citrullus lanatus (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/421556008\">421556008</a></td><td>Capsicum (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/422292008\">422292008</a></td><td>Medicinal product containing streptogramin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/424369009\">424369009</a></td><td>Product containing beta-galactosidase (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/426722004\">426722004</a></td><td>Iodinated contrast media (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/428607008\">428607008</a></td><td>No known environmental allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/429625007\">429625007</a></td><td>No known food allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/43735007\">43735007</a></td><td>Sulfur (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/43921001\">43921001</a></td><td>Nickel compound (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/44027008\">44027008</a></td><td>Seafood (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/441508005\">441508005</a></td><td>Product containing C1 esterase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/442571000124108\">442571000124108</a></td><td>Tree nut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/442771000124102\">442771000124102</a></td><td>Pepperoni (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/44588005\">44588005</a></td><td>Iodine (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/446273004\">446273004</a></td><td>Red food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/446274005\">446274005</a></td><td>Yellow food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/45518007\">45518007</a></td><td>Medicinal product containing thiazide and acting as diuretic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/47703008\">47703008</a></td><td>Lactose (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/48698004\">48698004</a></td><td>Product containing calcium channel blocker (product)</td></tr><tr><td><a href=\"http://snomed.info/id/50321000087101\">50321000087101</a></td><td>Blue food coloring (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/51386004\">51386004</a></td><td>Food preservative (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/51905005\">51905005</a></td><td>Mustard (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/53041004\">53041004</a></td><td>Substance with alcohol structure (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/60978003\">60978003</a></td><td>Product containing barbiturate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/61789006\">61789006</a></td><td>Dye (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/61946003\">61946003</a></td><td>Product containing estrogen receptor agonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/62294009\">62294009</a></td><td>Product containing Varicella-zoster virus antibody (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/63045006\">63045006</a></td><td>Berry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/63094006\">63094006</a></td><td>Medicinal product acting as anticonvulsant agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/63338004\">63338004</a></td><td>Drug flavoring (product)</td></tr><tr><td><a href=\"http://snomed.info/id/6369005\">6369005</a></td><td>Medicinal product containing penicillin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/6425004\">6425004</a></td><td>Product containing histamine receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/67324005\">67324005</a></td><td>Rice (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/703677008\">703677008</a></td><td>Product containing sodium glucose cotransporter subtype 2 inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/70813002\">70813002</a></td><td>Milk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/710179004\">710179004</a></td><td>Lupine seed (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/713382001\">713382001</a></td><td>Medicinal product containing nitrofuran derivative and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/713764001\">713764001</a></td><td>Medicinal product containing rifamycin structure and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/716186003\">716186003</a></td><td>No known allergy (situation)</td></tr><tr><td><a href=\"http://snomed.info/id/720687003\">720687003</a></td><td>Dust mite protein (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/72511004\">72511004</a></td><td>Fruit (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/726730005\">726730005</a></td><td>Yam (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/734881000\">734881000</a></td><td>Tomato (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735006003\">735006003</a></td><td>Squid (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735009005\">735009005</a></td><td>Salmon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735029006\">735029006</a></td><td>Shellfish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735030001\">735030001</a></td><td>Garlic (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735043001\">735043001</a></td><td>Mackerel (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735045008\">735045008</a></td><td>Mushroom (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735047000\">735047000</a></td><td>Onion (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735049002\">735049002</a></td><td>Peach (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735050002\">735050002</a></td><td>Pear (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735051003\">735051003</a></td><td>Plum (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735053000\">735053000</a></td><td>Potato (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735123009\">735123009</a></td><td>Broccoli (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735124003\">735124003</a></td><td>Barley (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735211005\">735211005</a></td><td>Coconut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735212003\">735212003</a></td><td>Papaya (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735213008\">735213008</a></td><td>Cucumber (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735214002\">735214002</a></td><td>Apricot (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735215001\">735215001</a></td><td>Apple (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735248001\">735248001</a></td><td>Cherry (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735249009\">735249009</a></td><td>Avocado (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735340006\">735340006</a></td><td>Lemon (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735959004\">735959004</a></td><td>Marine mollusk (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735971005\">735971005</a></td><td>Fish (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/735977009\">735977009</a></td><td>Marine crustacean (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736027000\">736027000</a></td><td>Scallop (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736030007\">736030007</a></td><td>Clam (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736031006\">736031006</a></td><td>Oyster (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736159005\">736159005</a></td><td>Crab (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/736162008\">736162008</a></td><td>Lobster (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/74226000\">74226000</a></td><td>Product containing vitamin K and/or vitamin K derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/74632002\">74632002</a></td><td>Product containing succinimide (product)</td></tr><tr><td><a href=\"http://snomed.info/id/74801000\">74801000</a></td><td>Simple carbohydrate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/75665004\">75665004</a></td><td>Monosodium glutamate (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/762952008\">762952008</a></td><td>Peanut (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/763875007\">763875007</a></td><td>Product containing sulfonamide (product)</td></tr><tr><td><a href=\"http://snomed.info/id/764299009\">764299009</a></td><td>Medicinal product containing cephalosporin and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/764357006\">764357006</a></td><td>Phenylpiperazine derivative (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/765419002\">765419002</a></td><td>Product containing methylated xanthine derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/767151005\">767151005</a></td><td>Product containing carbamate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/767365002\">767365002</a></td><td>Product containing potassium and/or potassium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768431001\">768431001</a></td><td>Product containing selenium and/or selenium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768435005\">768435005</a></td><td>Product containing magnesium and/or magnesium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768449001\">768449001</a></td><td>Product containing chromium and/or chromium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768451002\">768451002</a></td><td>Product containing calcium and/or calcium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768457003\">768457003</a></td><td>Product containing bismuth and/or bismuth compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768592009\">768592009</a></td><td>Product containing gold and/or gold compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768600002\">768600002</a></td><td>Product containing coumarin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768614002\">768614002</a></td><td>Product containing phenothiazine and/or phenothiazine derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768618004\">768618004</a></td><td>Product containing titanium and/or titanium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768621002\">768621002</a></td><td>Product containing platinum and/or platinum compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768688006\">768688006</a></td><td>Product containing strontium and/or strontium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768697005\">768697005</a></td><td>Product containing barium and/or barium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768699008\">768699008</a></td><td>Product containing manganese and/or manganese compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768759001\">768759001</a></td><td>Product containing steroid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768763008\">768763008</a></td><td>Product containing gadolinium and/or gadolinium compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768766000\">768766000</a></td><td>Product containing mercury and/or mercury compound (product)</td></tr><tr><td><a href=\"http://snomed.info/id/768865007\">768865007</a></td><td>Product containing interferon (product)</td></tr><tr><td><a href=\"http://snomed.info/id/770377009\">770377009</a></td><td>Product containing 5-alpha reductase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/770387008\">770387008</a></td><td>Medicinal product containing aminoglycoside and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/771344003\">771344003</a></td><td>Product containing paraben and/or paraben derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/7791007\">7791007</a></td><td>Glycine max protein (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/788032009\">788032009</a></td><td>Medicinal product acting as adhesive (product)</td></tr><tr><td><a href=\"http://snomed.info/id/788541006\">788541006</a></td><td>Product containing synthetic cannabinoid (product)</td></tr><tr><td><a href=\"http://snomed.info/id/789250004\">789250004</a></td><td>Product containing acetylcholinesterase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/79440004\">79440004</a></td><td>Product containing corticosteroid and/or corticosteroid derivative (product)</td></tr><tr><td><a href=\"http://snomed.info/id/80259003\">80259003</a></td><td>Food flavoring agent (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/830118008\">830118008</a></td><td>Medicinal product acting as loop diuretic (product)</td></tr><tr><td><a href=\"http://snomed.info/id/836398006\">836398006</a></td><td>Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/84489001\">84489001</a></td><td>Mold (organism)</td></tr><tr><td><a href=\"http://snomed.info/id/860818003\">860818003</a></td><td>Vaccine product containing only Bacillus anthracis antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871727001\">871727001</a></td><td>Vaccine product containing only Vaccinia virus antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871742003\">871742003</a></td><td>Vaccine product containing only Clostridium tetani antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871758000\">871758000</a></td><td>Vaccine product containing only Bordetella pertussis antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871826000\">871826000</a></td><td>Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871839001\">871839001</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871875004\">871875004</a></td><td>Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/871919004\">871919004</a></td><td>Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/87233003\">87233003</a></td><td>Product containing low molecular weight heparin (product)</td></tr><tr><td><a href=\"http://snomed.info/id/89119000\">89119000</a></td><td>Nitrate salt (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/895560003\">895560003</a></td><td>Medicinal product containing Vinca alkaloid and acting as antineoplastic agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/89707004\">89707004</a></td><td>Sesame oil (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/89811004\">89811004</a></td><td>Gluten (substance)</td></tr><tr><td><a href=\"http://snomed.info/id/90614001\">90614001</a></td><td>Medicinal product containing beta-lactam and acting as antibacterial agent (product)</td></tr><tr><td><a href=\"http://snomed.info/id/961000221100\">961000221100</a></td><td>Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)</td></tr><tr><td><a href=\"http://snomed.info/id/96281001\">96281001</a></td><td>Product containing bisphosphonate (product)</td></tr><tr><td><a href=\"http://snomed.info/id/96302009\">96302009</a></td><td>Product containing 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor (product)</td></tr><tr><td><a href=\"http://snomed.info/id/96308008\">96308008</a></td><td>Product containing angiotensin II receptor antagonist (product)</td></tr><tr><td><a href=\"http://snomed.info/id/981000221107\">981000221107</a></td><td>Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-ie-core-allergy-intolerance-codes.html\"><code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.48.52"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreAllergyIntoleranceSet",
+  "title" : "IE Core Allergy Intolerance Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "A set of IE Core, SNOMED_CT, and LOINC concepts to classify Allergy Intolerance Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1003736004",
+        "display" : "Mammalian milk based food (substance)"
+      },
+      {
+        "code" : "1003774007",
+        "display" : "No known Hevea brasiliensis latex allergy (situation)"
+      },
+      {
+        "code" : "102259006",
+        "display" : "Citrus fruit (substance)"
+      },
+      {
+        "code" : "102261002",
+        "display" : "Strawberry (substance)"
+      },
+      {
+        "code" : "102262009",
+        "display" : "Chocolate (substance)"
+      },
+      {
+        "code" : "102263004",
+        "display" : "Eggs (edible) (substance)"
+      },
+      {
+        "code" : "102264005",
+        "display" : "Cheese (substance)"
+      },
+      {
+        "code" : "105908007",
+        "display" : "Medicinal product containing macrolide and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "108417002",
+        "display" : "Product containing 5-hydroxytryptamine-3-receptor antagonist (product)"
+      },
+      {
+        "code" : "108661002",
+        "display" : "Product containing histamine H2 receptor antagonist (product)"
+      },
+      {
+        "code" : "108665006",
+        "display" : "Product containing hydrogen/potassium adenosine triphosphatase enzyme system inhibitor (product)"
+      },
+      {
+        "code" : "108787006",
+        "display" : "Medicinal product containing anthracycline and acting as antineoplastic agent (product)"
+      },
+      {
+        "code" : "108807002",
+        "display" : "Product containing monoclonal antibody (product)"
+      },
+      {
+        "code" : "111088007",
+        "display" : "Latex (substance)"
+      },
+      {
+        "code" : "1137358000",
+        "display" : "Piper (substance)"
+      },
+      {
+        "code" : "11526002",
+        "display" : "Aspartame (substance)"
+      },
+      {
+        "code" : "11563006",
+        "display" : "Product containing vitamin D and/or vitamin D derivative (product)"
+      },
+      {
+        "code" : "116085009",
+        "display" : "Product containing retinoid (product)"
+      },
+      {
+        "code" : "116274004",
+        "display" : "Artificial sweetener (substance)"
+      },
+      {
+        "code" : "116596006",
+        "display" : "Product containing glucocorticoid (product)"
+      },
+      {
+        "code" : "1181000221105",
+        "display" : "Vaccine product containing only Influenza virus antigen (medicinal product)"
+      },
+      {
+        "code" : "123954005",
+        "display" : "Product containing prostaglandin-endoperoxide synthase isoform 2 inhibitor (product)"
+      },
+      {
+        "code" : "126175007",
+        "display" : "Product containing anabolic steroid (product)"
+      },
+      {
+        "code" : "129473008",
+        "display" : "Medicinal product containing echinocandin and acting as antifungal agent (product)"
+      },
+      {
+        "code" : "13577000",
+        "display" : "Nut (substance)"
+      },
+      {
+        "code" : "16047007",
+        "display" : "Product containing benzodiazepine (product)"
+      },
+      {
+        "code" : "1631000175102",
+        "display" : "Patient not asked (contextual qualifier) (qualifier value)"
+      },
+      {
+        "code" : "16403005",
+        "display" : "Non-steroidal anti-inflammatory agent (product)"
+      },
+      {
+        "code" : "1801000221105",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae capsular polysaccharide antigen conjugated (medicinal product)"
+      },
+      {
+        "code" : "226723006",
+        "display" : "Buckwheat - cereal (substance)"
+      },
+      {
+        "code" : "226734009",
+        "display" : "Wheatgerm (substance)"
+      },
+      {
+        "code" : "226915003",
+        "display" : "Red meat (substance)"
+      },
+      {
+        "code" : "226916002",
+        "display" : "Beef (substance)"
+      },
+      {
+        "code" : "226934003",
+        "display" : "Pork (substance)"
+      },
+      {
+        "code" : "226955001",
+        "display" : "Chicken - meat (substance)"
+      },
+      {
+        "code" : "226967004",
+        "display" : "Turkey - meat (substance)"
+      },
+      {
+        "code" : "227144008",
+        "display" : "Tuna fish (substance)"
+      },
+      {
+        "code" : "227151004",
+        "display" : "Prawns (substance)"
+      },
+      {
+        "code" : "227208008",
+        "display" : "Abalone canned in brine (substance)"
+      },
+      {
+        "code" : "227219006",
+        "display" : "Eggplant (substance)"
+      },
+      {
+        "code" : "227313005",
+        "display" : "Pulse vegetable (substance)"
+      },
+      {
+        "code" : "227388008",
+        "display" : "Cinnamon (substance)"
+      },
+      {
+        "code" : "227400003",
+        "display" : "Ginger (substance)"
+      },
+      {
+        "code" : "227421003",
+        "display" : "Cranberries (substance)"
+      },
+      {
+        "code" : "227444000",
+        "display" : "Raspberries (substance)"
+      },
+      {
+        "code" : "227493005",
+        "display" : "Cashew nut (substance)"
+      },
+      {
+        "code" : "227512001",
+        "display" : "Pistachio nut (substance)"
+      },
+      {
+        "code" : "227598003",
+        "display" : "Honey (substance)"
+      },
+      {
+        "code" : "228102000",
+        "display" : "Sodium nitrate (substance)"
+      },
+      {
+        "code" : "255641001",
+        "display" : "Caffeine (substance)"
+      },
+      {
+        "code" : "256259004",
+        "display" : "Pollen (substance)"
+      },
+      {
+        "code" : "256277009",
+        "display" : "Grass pollen (substance)"
+      },
+      {
+        "code" : "256306003",
+        "display" : "Orange - fruit (substance)"
+      },
+      {
+        "code" : "256307007",
+        "display" : "Banana (substance)"
+      },
+      {
+        "code" : "256313003",
+        "display" : "Ananas comosus (substance)"
+      },
+      {
+        "code" : "256315005",
+        "display" : "Grapefruit (substance)"
+      },
+      {
+        "code" : "256317002",
+        "display" : "Grapes (substance)"
+      },
+      {
+        "code" : "256319004",
+        "display" : "Carrot (substance)"
+      },
+      {
+        "code" : "256326004",
+        "display" : "Celery (substance)"
+      },
+      {
+        "code" : "256329006",
+        "display" : "Spinach (substance)"
+      },
+      {
+        "code" : "256350002",
+        "display" : "Almond (substance)"
+      },
+      {
+        "code" : "256351003",
+        "display" : "Brazil nut (substance)"
+      },
+      {
+        "code" : "256352005",
+        "display" : "Walnut - nut (substance)"
+      },
+      {
+        "code" : "256353000",
+        "display" : "Hazelnut (substance)"
+      },
+      {
+        "code" : "256354006",
+        "display" : "Bean (substance)"
+      },
+      {
+        "code" : "256417003",
+        "display" : "Horse dander (substance)"
+      },
+      {
+        "code" : "256440004",
+        "display" : "Vespidae venom (substance)"
+      },
+      {
+        "code" : "2596005",
+        "display" : "Product containing lincomycin (medicinal product)"
+      },
+      {
+        "code" : "260152009",
+        "display" : "Cat dander (substance)"
+      },
+      {
+        "code" : "260154005",
+        "display" : "Dog dander (substance)"
+      },
+      {
+        "code" : "260167008",
+        "display" : "Sesame seed (substance)"
+      },
+      {
+        "code" : "260176001",
+        "display" : "Kiwi fruit (substance)"
+      },
+      {
+        "code" : "260177005",
+        "display" : "Cucumis (substance)"
+      },
+      {
+        "code" : "260179008",
+        "display" : "Mango fruit (substance)"
+      },
+      {
+        "code" : "260184002",
+        "display" : "Pea (substance)"
+      },
+      {
+        "code" : "260189007",
+        "display" : "Pecan nut (substance)"
+      },
+      {
+        "code" : "260205009",
+        "display" : "Sunflower seed (substance)"
+      },
+      {
+        "code" : "264287008",
+        "display" : "Animal dander (substance)"
+      },
+      {
+        "code" : "264337003",
+        "display" : "Seed (substance)"
+      },
+      {
+        "code" : "28230009",
+        "display" : "Poultry (substance)"
+      },
+      {
+        "code" : "282831004",
+        "display" : "Medicinal product containing tetracycline structure and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "288328004",
+        "display" : "Bee venom (substance)"
+      },
+      {
+        "code" : "28942008",
+        "display" : "Coconut oil (substance)"
+      },
+      {
+        "code" : "29263009",
+        "display" : "Coffee (substance)"
+      },
+      {
+        "code" : "320073005",
+        "display" : "Product containing beta-2 adrenergic receptor agonist (product)"
+      },
+      {
+        "code" : "33008008",
+        "display" : "Dust (substance)"
+      },
+      {
+        "code" : "33219003",
+        "display" : "Medicinal product containing tricyclic compound and acting as antidepressant agent (product)"
+      },
+      {
+        "code" : "33252009",
+        "display" : "Product containing beta adrenergic receptor antagonist (product)"
+      },
+      {
+        "code" : "332955008",
+        "display" : "Product containing undecenoate (product)"
+      },
+      {
+        "code" : "34012005",
+        "display" : "Product containing sulfonylurea (product)"
+      },
+      {
+        "code" : "346636007",
+        "display" : "Plasma protein solution (product)"
+      },
+      {
+        "code" : "349854005",
+        "display" : "Product containing selective serotonin re-uptake inhibitor (product)"
+      },
+      {
+        "code" : "350134005",
+        "display" : "Product containing carbapenem (product)"
+      },
+      {
+        "code" : "350157004",
+        "display" : "Product containing nitroimidazole (product)"
+      },
+      {
+        "code" : "350196005",
+        "display" : "Medicinal product containing imidazole and acting as antifungal agent (product)"
+      },
+      {
+        "code" : "350222007",
+        "display" : "Medicinal product containing aminoquinoline and acting as antimalarial agent (product)"
+      },
+      {
+        "code" : "350294001",
+        "display" : "Product containing methadone analog (product)"
+      },
+      {
+        "code" : "350312004",
+        "display" : "Product containing salicylate (product)"
+      },
+      {
+        "code" : "35748005",
+        "display" : "Wine (substance)"
+      },
+      {
+        "code" : "360204007",
+        "display" : "Product containing opioid receptor agonist (product)"
+      },
+      {
+        "code" : "363560004",
+        "display" : "Product containing serotonin 5-hydroxytryptamine-1 receptor agonist (product)"
+      },
+      {
+        "code" : "3692009",
+        "display" : "Sodium sulfite (substance)"
+      },
+      {
+        "code" : "37084008",
+        "display" : "Medicinal product containing quinolone and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "372783007",
+        "display" : "Antiparkinsonian agent (substance)"
+      },
+      {
+        "code" : "373531009",
+        "display" : "Gelatin (substance)"
+      },
+      {
+        "code" : "386127005",
+        "display" : "Formula milk (substance)"
+      },
+      {
+        "code" : "391737006",
+        "display" : "Almond oil (substance)"
+      },
+      {
+        "code" : "391739009",
+        "display" : "Aloe (substance)"
+      },
+      {
+        "code" : "39487003",
+        "display" : "Product containing insulin (product)"
+      },
+      {
+        "code" : "400266000",
+        "display" : "Product containing hydrocolloid (medicinal product)"
+      },
+      {
+        "code" : "407935004",
+        "display" : "Contrast media (product)"
+      },
+      {
+        "code" : "409137002",
+        "display" : "No known drug allergy (situation)"
+      },
+      {
+        "code" : "411600004",
+        "display" : "Horse serum proteins diagnostic allergen extract (product)"
+      },
+      {
+        "code" : "412061001",
+        "display" : "Blueberries (substance)"
+      },
+      {
+        "code" : "412062008",
+        "display" : "Cantaloupe (substance)"
+      },
+      {
+        "code" : "412068007",
+        "display" : "Rye (substance)"
+      },
+      {
+        "code" : "412071004",
+        "display" : "Wheat (substance)"
+      },
+      {
+        "code" : "412357001",
+        "display" : "Zea mays (substance)"
+      },
+      {
+        "code" : "412533000",
+        "display" : "Wheat bran (substance)"
+      },
+      {
+        "code" : "412534006",
+        "display" : "Yeast (substance)"
+      },
+      {
+        "code" : "412583005",
+        "display" : "Bee pollen (substance)"
+      },
+      {
+        "code" : "41549009",
+        "display" : "Product containing angiotensin-converting enzyme inhibitor (product)"
+      },
+      {
+        "code" : "416636000",
+        "display" : "Product containing glucagon-like peptide 1 receptor agonist (product)"
+      },
+      {
+        "code" : "416897008",
+        "display" : "Product containing tumor necrosis factor alpha inhibitor (product)"
+      },
+      {
+        "code" : "417889008",
+        "display" : "Arachis oil (substance)"
+      },
+      {
+        "code" : "418504009",
+        "display" : "Oat (substance)"
+      },
+      {
+        "code" : "418920007",
+        "display" : "Adhesive agent (substance)"
+      },
+      {
+        "code" : "419420009",
+        "display" : "Citrullus lanatus (substance)"
+      },
+      {
+        "code" : "421556008",
+        "display" : "Capsicum (substance)"
+      },
+      {
+        "code" : "422292008",
+        "display" : "Medicinal product containing streptogramin and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "424369009",
+        "display" : "Product containing beta-galactosidase (medicinal product)"
+      },
+      {
+        "code" : "426722004",
+        "display" : "Iodinated contrast media (substance)"
+      },
+      {
+        "code" : "428607008",
+        "display" : "No known environmental allergy (situation)"
+      },
+      {
+        "code" : "429625007",
+        "display" : "No known food allergy (situation)"
+      },
+      {
+        "code" : "43735007",
+        "display" : "Sulfur (substance)"
+      },
+      {
+        "code" : "43921001",
+        "display" : "Nickel compound (substance)"
+      },
+      {
+        "code" : "44027008",
+        "display" : "Seafood (substance)"
+      },
+      {
+        "code" : "441508005",
+        "display" : "Product containing C1 esterase inhibitor (product)"
+      },
+      {
+        "code" : "442571000124108",
+        "display" : "Tree nut (substance)"
+      },
+      {
+        "code" : "442771000124102",
+        "display" : "Pepperoni (substance)"
+      },
+      {
+        "code" : "44588005",
+        "display" : "Iodine (substance)"
+      },
+      {
+        "code" : "446273004",
+        "display" : "Red food coloring (substance)"
+      },
+      {
+        "code" : "446274005",
+        "display" : "Yellow food coloring (substance)"
+      },
+      {
+        "code" : "45518007",
+        "display" : "Medicinal product containing thiazide and acting as diuretic agent (product)"
+      },
+      {
+        "code" : "47703008",
+        "display" : "Lactose (substance)"
+      },
+      {
+        "code" : "48698004",
+        "display" : "Product containing calcium channel blocker (product)"
+      },
+      {
+        "code" : "50321000087101",
+        "display" : "Blue food coloring (substance)"
+      },
+      {
+        "code" : "51386004",
+        "display" : "Food preservative (substance)"
+      },
+      {
+        "code" : "51905005",
+        "display" : "Mustard (substance)"
+      },
+      {
+        "code" : "53041004",
+        "display" : "Substance with alcohol structure (substance)"
+      },
+      {
+        "code" : "60978003",
+        "display" : "Product containing barbiturate (product)"
+      },
+      {
+        "code" : "61789006",
+        "display" : "Dye (substance)"
+      },
+      {
+        "code" : "61946003",
+        "display" : "Product containing estrogen receptor agonist (product)"
+      },
+      {
+        "code" : "62294009",
+        "display" : "Product containing Varicella-zoster virus antibody (medicinal product)"
+      },
+      {
+        "code" : "63045006",
+        "display" : "Berry (substance)"
+      },
+      {
+        "code" : "63094006",
+        "display" : "Medicinal product acting as anticonvulsant agent (product)"
+      },
+      {
+        "code" : "63338004",
+        "display" : "Drug flavoring (product)"
+      },
+      {
+        "code" : "6369005",
+        "display" : "Medicinal product containing penicillin and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "6425004",
+        "display" : "Product containing histamine receptor antagonist (product)"
+      },
+      {
+        "code" : "67324005",
+        "display" : "Rice (substance)"
+      },
+      {
+        "code" : "703677008",
+        "display" : "Product containing sodium glucose cotransporter subtype 2 inhibitor (product)"
+      },
+      {
+        "code" : "70813002",
+        "display" : "Milk (substance)"
+      },
+      {
+        "code" : "710179004",
+        "display" : "Lupine seed (substance)"
+      },
+      {
+        "code" : "713382001",
+        "display" : "Medicinal product containing nitrofuran derivative and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "713764001",
+        "display" : "Medicinal product containing rifamycin structure and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "716186003",
+        "display" : "No known allergy (situation)"
+      },
+      {
+        "code" : "720687003",
+        "display" : "Dust mite protein (substance)"
+      },
+      {
+        "code" : "72511004",
+        "display" : "Fruit (substance)"
+      },
+      {
+        "code" : "726730005",
+        "display" : "Yam (substance)"
+      },
+      {
+        "code" : "734881000",
+        "display" : "Tomato (substance)"
+      },
+      {
+        "code" : "735006003",
+        "display" : "Squid (substance)"
+      },
+      {
+        "code" : "735009005",
+        "display" : "Salmon (substance)"
+      },
+      {
+        "code" : "735029006",
+        "display" : "Shellfish (substance)"
+      },
+      {
+        "code" : "735030001",
+        "display" : "Garlic (substance)"
+      },
+      {
+        "code" : "735043001",
+        "display" : "Mackerel (substance)"
+      },
+      {
+        "code" : "735045008",
+        "display" : "Mushroom (substance)"
+      },
+      {
+        "code" : "735047000",
+        "display" : "Onion (substance)"
+      },
+      {
+        "code" : "735049002",
+        "display" : "Peach (substance)"
+      },
+      {
+        "code" : "735050002",
+        "display" : "Pear (substance)"
+      },
+      {
+        "code" : "735051003",
+        "display" : "Plum (substance)"
+      },
+      {
+        "code" : "735053000",
+        "display" : "Potato (substance)"
+      },
+      {
+        "code" : "735123009",
+        "display" : "Broccoli (substance)"
+      },
+      {
+        "code" : "735124003",
+        "display" : "Barley (substance)"
+      },
+      {
+        "code" : "735211005",
+        "display" : "Coconut (substance)"
+      },
+      {
+        "code" : "735212003",
+        "display" : "Papaya (substance)"
+      },
+      {
+        "code" : "735213008",
+        "display" : "Cucumber (substance)"
+      },
+      {
+        "code" : "735214002",
+        "display" : "Apricot (substance)"
+      },
+      {
+        "code" : "735215001",
+        "display" : "Apple (substance)"
+      },
+      {
+        "code" : "735248001",
+        "display" : "Cherry (substance)"
+      },
+      {
+        "code" : "735249009",
+        "display" : "Avocado (substance)"
+      },
+      {
+        "code" : "735340006",
+        "display" : "Lemon (substance)"
+      },
+      {
+        "code" : "735959004",
+        "display" : "Marine mollusk (substance)"
+      },
+      {
+        "code" : "735971005",
+        "display" : "Fish (substance)"
+      },
+      {
+        "code" : "735977009",
+        "display" : "Marine crustacean (substance)"
+      },
+      {
+        "code" : "736027000",
+        "display" : "Scallop (substance)"
+      },
+      {
+        "code" : "736030007",
+        "display" : "Clam (substance)"
+      },
+      {
+        "code" : "736031006",
+        "display" : "Oyster (substance)"
+      },
+      {
+        "code" : "736159005",
+        "display" : "Crab (substance)"
+      },
+      {
+        "code" : "736162008",
+        "display" : "Lobster (substance)"
+      },
+      {
+        "code" : "74226000",
+        "display" : "Product containing vitamin K and/or vitamin K derivative (product)"
+      },
+      {
+        "code" : "74632002",
+        "display" : "Product containing succinimide (product)"
+      },
+      {
+        "code" : "74801000",
+        "display" : "Simple carbohydrate (substance)"
+      },
+      {
+        "code" : "75665004",
+        "display" : "Monosodium glutamate (substance)"
+      },
+      {
+        "code" : "762952008",
+        "display" : "Peanut (substance)"
+      },
+      {
+        "code" : "763875007",
+        "display" : "Product containing sulfonamide (product)"
+      },
+      {
+        "code" : "764299009",
+        "display" : "Medicinal product containing cephalosporin and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "764357006",
+        "display" : "Phenylpiperazine derivative (substance)"
+      },
+      {
+        "code" : "765419002",
+        "display" : "Product containing methylated xanthine derivative (product)"
+      },
+      {
+        "code" : "767151005",
+        "display" : "Product containing carbamate (product)"
+      },
+      {
+        "code" : "767365002",
+        "display" : "Product containing potassium and/or potassium compound (product)"
+      },
+      {
+        "code" : "768431001",
+        "display" : "Product containing selenium and/or selenium compound (product)"
+      },
+      {
+        "code" : "768435005",
+        "display" : "Product containing magnesium and/or magnesium compound (product)"
+      },
+      {
+        "code" : "768449001",
+        "display" : "Product containing chromium and/or chromium compound (product)"
+      },
+      {
+        "code" : "768451002",
+        "display" : "Product containing calcium and/or calcium compound (product)"
+      },
+      {
+        "code" : "768457003",
+        "display" : "Product containing bismuth and/or bismuth compound (product)"
+      },
+      {
+        "code" : "768592009",
+        "display" : "Product containing gold and/or gold compound (product)"
+      },
+      {
+        "code" : "768600002",
+        "display" : "Product containing coumarin (product)"
+      },
+      {
+        "code" : "768614002",
+        "display" : "Product containing phenothiazine and/or phenothiazine derivative (product)"
+      },
+      {
+        "code" : "768618004",
+        "display" : "Product containing titanium and/or titanium compound (product)"
+      },
+      {
+        "code" : "768621002",
+        "display" : "Product containing platinum and/or platinum compound (product)"
+      },
+      {
+        "code" : "768688006",
+        "display" : "Product containing strontium and/or strontium compound (product)"
+      },
+      {
+        "code" : "768697005",
+        "display" : "Product containing barium and/or barium compound (product)"
+      },
+      {
+        "code" : "768699008",
+        "display" : "Product containing manganese and/or manganese compound (product)"
+      },
+      {
+        "code" : "768759001",
+        "display" : "Product containing steroid (product)"
+      },
+      {
+        "code" : "768763008",
+        "display" : "Product containing gadolinium and/or gadolinium compound (product)"
+      },
+      {
+        "code" : "768766000",
+        "display" : "Product containing mercury and/or mercury compound (product)"
+      },
+      {
+        "code" : "768865007",
+        "display" : "Product containing interferon (product)"
+      },
+      {
+        "code" : "770377009",
+        "display" : "Product containing 5-alpha reductase inhibitor (product)"
+      },
+      {
+        "code" : "770387008",
+        "display" : "Medicinal product containing aminoglycoside and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "771344003",
+        "display" : "Product containing paraben and/or paraben derivative (product)"
+      },
+      {
+        "code" : "7791007",
+        "display" : "Glycine max protein (substance)"
+      },
+      {
+        "code" : "788032009",
+        "display" : "Medicinal product acting as adhesive (product)"
+      },
+      {
+        "code" : "788541006",
+        "display" : "Product containing synthetic cannabinoid (product)"
+      },
+      {
+        "code" : "789250004",
+        "display" : "Product containing acetylcholinesterase inhibitor (product)"
+      },
+      {
+        "code" : "79440004",
+        "display" : "Product containing corticosteroid and/or corticosteroid derivative (product)"
+      },
+      {
+        "code" : "80259003",
+        "display" : "Food flavoring agent (substance)"
+      },
+      {
+        "code" : "830118008",
+        "display" : "Medicinal product acting as loop diuretic (product)"
+      },
+      {
+        "code" : "836398006",
+        "display" : "Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)"
+      },
+      {
+        "code" : "84489001",
+        "display" : "Mold (organism)"
+      },
+      {
+        "code" : "860818003",
+        "display" : "Vaccine product containing only Bacillus anthracis antigen (medicinal product)"
+      },
+      {
+        "code" : "871727001",
+        "display" : "Vaccine product containing only Vaccinia virus antigen (medicinal product)"
+      },
+      {
+        "code" : "871742003",
+        "display" : "Vaccine product containing only Clostridium tetani antigen (medicinal product)"
+      },
+      {
+        "code" : "871758000",
+        "display" : "Vaccine product containing only Bordetella pertussis antigen (medicinal product)"
+      },
+      {
+        "code" : "871826000",
+        "display" : "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+      },
+      {
+        "code" : "871839001",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type b antigens (medicinal product)"
+      },
+      {
+        "code" : "871875004",
+        "display" : "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
+      },
+      {
+        "code" : "871919004",
+        "display" : "Vaccine product containing only Human alphaherpesvirus 3 antigen (medicinal product)"
+      },
+      {
+        "code" : "87233003",
+        "display" : "Product containing low molecular weight heparin (product)"
+      },
+      {
+        "code" : "89119000",
+        "display" : "Nitrate salt (substance)"
+      },
+      {
+        "code" : "895560003",
+        "display" : "Medicinal product containing Vinca alkaloid and acting as antineoplastic agent (product)"
+      },
+      {
+        "code" : "89707004",
+        "display" : "Sesame oil (substance)"
+      },
+      {
+        "code" : "89811004",
+        "display" : "Gluten (substance)"
+      },
+      {
+        "code" : "90614001",
+        "display" : "Medicinal product containing beta-lactam and acting as antibacterial agent (product)"
+      },
+      {
+        "code" : "961000221100",
+        "display" : "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)"
+      },
+      {
+        "code" : "96281001",
+        "display" : "Product containing bisphosphonate (product)"
+      },
+      {
+        "code" : "96302009",
+        "display" : "Product containing 3-hydroxy-3-methylglutaryl-coenzyme A reductase inhibitor (product)"
+      },
+      {
+        "code" : "96308008",
+        "display" : "Product containing angiotensin II receptor antagonist (product)"
+      },
+      {
+        "code" : "981000221107",
+        "display" : "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
+      }]
+    },
+    {
+      "system" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes"
+    }]
+  }
+}

@@ -1,0 +1,73 @@
+<svg overflow="hidden" version="1.1" viewBox="0 0 1280 720" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <path transform="matrix(0,1,1,0,373,630)"
+        d="m0-1h34.123v364.03h-2v-363.03l1 1h-33.123zm39.79 362.69-6.6666 13.333-6.6667-13.333z" fill="#156082" />
+    <g font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="18.667" font-weight="400">
+        <g fill="#7F7F7F"><text transform="translate(536.69,529)">Drugs &amp; Interactions</text><text
+                transform="translate(495 49)">AI Assistance &amp; Automation</text></g>
+        <g fill="#888"><text transform="translate(519.18 168)">Networks, Labs, Devices</text></g><text
+            transform="translate(519.78 653)" fill="#7F7F7F">Clinical Data Repository</text>
+    </g>
+    <path d="m372 95.495v-37.495h364.03v2h-363.03l1-1v36.495zm362.69-43.161 13.333 6.6667-13.333 6.6666z"
+        fill="#156082" /><text transform="translate(534.81 409)" fill="#7F7F7F"
+        font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="18.667" font-weight="400">Terminology Services</text>
+    <path
+        d="m36 175.17c0-41.514 33.654-75.168 75.168-75.168h300.66c41.514 0 75.168 33.654 75.168 75.168v374.66c0 41.514-33.654 75.168-75.168 75.168h-300.66c-41.514 0-75.168-33.654-75.168-75.168z"
+        fill="none" fill-rule="evenodd" stroke="#4EA72E" stroke-miterlimit="8" stroke-width="2" />
+    <g fill="#156082">
+        <g fill-rule="evenodd" stroke="#4EA72E" stroke-miterlimit="8" stroke-width="2">
+            <path d="m367 624.5c0-3.038 2.686-5.5 6-5.5s6 2.462 6 5.5-2.686 5.5-6 5.5-6-2.462-6-5.5z" />
+            <path d="m482 541c0-2.761 2.462-5 5.5-5s5.5 2.239 5.5 5-2.462 5-5.5 5-5.5-2.239-5.5-5z" />
+            <path d="m482 421c0-2.761 2.462-5 5.5-5s5.5 2.239 5.5 5-2.462 5-5.5 5-5.5-2.239-5.5-5z" />
+            <path d="m481 179c0-2.761 2.462-5 5.5-5s5.5 2.239 5.5 5-2.462 5-5.5 5-5.5-2.239-5.5-5z" />
+            <path d="m367 100.5c0-3.0376 2.686-5.5 6-5.5s6 2.4624 6 5.5c0 3.038-2.686 5.5-6 5.5s-6-2.462-6-5.5z" />
+        </g>
+        <path d="m493 540 242.62 1.011-8e-3 2-242.62-1.011zm241.31-4.661 13.306 6.722-13.361 6.611z" />
+        <path d="m492 178 243.97 0.6-5e-3 2-243.97-0.6zm242.65-5.069 13.317 6.699-13.35 6.634z" />
+        <path transform="matrix(1 0 0 -1 493 422.04)"
+            d="m0.004082-0.99999 242.96 0.99175-9e-3 2-242.96-0.99175zm241.65-4.6803 13.306 6.721-13.361 6.6122z" />
+    </g>
+    <image transform="translate(1060 630) scale(.3)" href="/img/fhir-logo-www.png" />
+    <image transform="translate(1010 0) scale(.45)" href="/img/etc/maestro-small.png" />
+    <image transform="translate(55 180) scale(1)" href="/img/animate/iEHR-Medicus-Big.svg" />
+    <image transform="translate(750 30) scale(.53)" href="/img/animate/iEHR-Maestro-Big.svg" />
+    <image transform="translate(750 150) scale(.53)" href="/img/animate/iEHR-Mapper-Big.svg" />
+    <image transform="translate(750 270) scale(.53)" href="/img/animate/iEHR-Scriptus-Big.svg" />
+    <image transform="translate(750 390) scale(.53)" href="/img/animate/iEHR-Termini-Big.svg" />
+    <image transform="translate(750 510) scale(.53)" href="/img/animate/iEHR-Remedia-Big.svg" />
+    <image transform="translate(750 635) scale(.53)" href="/img/animate/iEHR-Archiva-Big.svg" />
+
+    <g font-family="Aptos,Aptos_MSFontService,sans-serif"><text transform="translate(88.739 478)" fill="#40bc26"
+            font-size="37.333" font-weight="700">Doctor’s Best Friend</text><text transform="translate(94.985 511)"
+            fill="#7F7F7F" font-size="24" font-weight="400">AI Practice Management System</text></g>
+    <g fill="#156082">
+        <path
+            d="m975 179h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm2.24-3 8 4-8 4z" />
+        <path
+            d="m975.01 420 2 0.013-0.012 2-2-0.013zm4 0.025 2 0.013-0.012 2-2-0.013zm4 0.025 2 0.013-0.012 2-2-0.013zm4 0.025 2 0.013-0.013 2-2-0.013zm4 0.025 2 0.013-0.013 2-2-0.013zm4 0.026 2 0.012-0.013 2-2-0.013zm4 0.025 2.004 0.012-0.02 2-1.997-0.012zm4.004 0.025 2 0.012-0.02 2-2-0.012zm4 0.025 2 0.012-0.02 2-2-0.012zm4 0.025 2 0.012-0.02 2-2-0.012zm4 0.025 2 0.013-0.02 2-2-0.013zm4 0.025 2 0.013-0.02 2-2-0.013zm4 0.025 2 0.013-0.02 2-2-0.013zm4 0.025 2 0.013-0.02 2-2-0.013zm4 0.025 2 0.013-0.02 2-2-0.013zm4 0.026 2 0.012-0.02 2-2-0.012zm4 0.025 2 0.012-0.02 2-2-0.012zm3.99 0.025 2 0.012-0.01 2-2-0.012zm4 0.025 2 0.012-0.01 2-2-0.012zm4 0.025 2 0.013-0.01 1.999-2-0.012zm4 0.025 2 0.013-0.01 2-2-0.013zm4 0.025 2 0.013-0.01 2-2-0.013zm4 0.025 2 0.013-0.01 2-2-0.013zm4 0.025 2 0.013-0.01 2-2-0.013zm4 0.025 0.89 6e-3 -0.01 2-0.89-6e-3zm-0.42-3.002 7.97 4.05-8.02 3.95z" />
+        <path
+            d="m975 541h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h0.88v2h-0.88zm-0.45-3 8 4-8 4z" />
+    </g>
+        <text transform="translate(1093.1 159)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="21.333" font-weight="400">e.g.</text>
+    <image transform="translate(1093.7 410) scale(.1)" href="/img/etc/snomed-ct-logo.png"/><text transform="translate(1093.7 401)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="21.333" font-weight="400">e.g.</text>
+    <image transform="translate(1090 505) scale(.25)" href="/img/etc/hpra.png"/>
+    <g font-family="Aptos,Aptos_MSFontService,sans-serif" font-weight="400"><text transform="translate(1090.4 521)"
+            fill="#7F7F7F" font-size="21.333">e.g.</text><text transform="translate(510.54 284)" fill="#888888"
+            font-size="18.667">ePrescription &amp; eDispense</text></g>
+    <path d="m482 300c0-2.761 2.462-5 5.5-5s5.5 2.239 5.5 5-2.462 5-5.5 5-5.5-2.239-5.5-5z" fill="#156082"
+        fill-rule="evenodd" stroke="#4EA72E" stroke-miterlimit="8" stroke-width="2" />
+    <path transform="matrix(1 0 0 -1 493 300.32)"
+        d="m0.001258-1 242.96 0.30564-2e-3 2-242.96-0.30564zm241.63-5.3627 13.325 6.6834-13.342 6.6499z"
+        fill="#156082" />
+        <image transform="translate(1090 285) scale(.16)" href="/img/etc/healthmail-logo.png"/><text transform="translate(1096.4 279)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif"
+        font-size="21.333" font-weight="400">e.g.</text>
+    <path
+        d="m975 299 2 7e-3 -8e-3 2-2-7e-3zm4 0.015 2 7e-3 -8e-3 2-2-7e-3zm4 0.015 2 7e-3 -8e-3 2-2-7e-3zm4 0.014 2 8e-3 -8e-3 2-2-8e-3zm4 0.015 2 8e-3 -8e-3 2-2-8e-3zm4 0.015 2 8e-3 -8e-3 1.999-2-7e-3zm4 0.015 1.996 7e-3v2l-2.004-7e-3zm3.996 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.014 2 8e-3v2l-2-8e-3zm4 0.015 2 8e-3v2l-2-8e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.014 2 8e-3v2l-2-8e-3zm4 0.015 2 8e-3v2l-2-8e-3zm4 0.015 2 8e-3v2l-2-8e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.014 2 8e-3v2l-2-8e-3zm4 0.015 2 8e-3v2l-2-8e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 2 7e-3v2l-2-7e-3zm4 0.015 0.89 3e-3 -0.01 2-0.88-3e-3zm-0.43-3.002 7.98 4.03-8.01 3.97z"
+        fill="#156082" />
+ 
+        <image transform="translate(1090 160) scale(.33)" href="/img/etc/healthlink-logo.png"/>
+
+</svg>

@@ -1,0 +1,157 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/careplan-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCarePlanCategoryExtensionCodes",
+      "title" : "IE Core CarePlan Category Extension Codes",
+      "description" : "Set of codes that are needed for implementation of the IE-Core CarePlan Profile. These codes are used as extensions to the FHIR ValueSet.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.1"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/condition-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreConditionCategoryExtensionCodes",
+      "title" : "IE Core Condition Category Extension Codes",
+      "description" : "Set of codes that are needed for implementation of the IE-Core Condition Profile. These codes are used as extensions to the FHIR and IE Core value sets.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.2"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAllergyIntoleranceCodes",
+      "title" : "IE Core Allergy Intolerance Codes",
+      "description" : "IE Core concepts to classify Allergy Intolerance Codes",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.17"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCategory",
+      "title" : "IE Core Category",
+      "description" : "Category codes used across IE Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.3"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCountiesCodes",
+      "title" : "Irish Counties",
+      "description" : "The Irish Counties code system defines concepts that represent the Irish Counties.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.6"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-documentreference-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDocumentReferencesCategoryCodes",
+      "title" : "IE Core DocumentReferences Category Codes",
+      "description" : "The IE Core DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.4"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreEthnicityCodes",
+      "title" : "IE Core Ethnicity Codes",
+      "description" : "This extension applies to the Patient, Person, and RelatedPerson resources and is used to indicate Ethnicity.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.7"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-healthcare-provider-taxonomy-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHealthcareProviderTaxonomyCodes",
+      "title" : "IE Core Healthcare Provider Taxonomy Codes",
+      "description" : "A set of concepts to classify Healthcare Provider Taxonomy Codes",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.9"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHpraHm",
+      "title" : "IE Core HPRA HM",
+      "description" : "HPRA - Human Medicines Authorised Products",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.18"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierRecordStatusCodes",
+      "title" : "IE Core Individual Healthcare Identifier Record Status",
+      "description" : "The Individual Healthcare Identifier Record Status code system defines concepts that may be used to describe the classification status of a record of an Individual Healthcare Identifier.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.6"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierStatusCodes",
+      "title" : "IE Core Individual Healthcare Identifier Status",
+      "description" : "The Individual Healthcare Identifier Status code system defines concepts that may be used to describe the classification status of an Individual Healthcare Identifier.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.7"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreInformationSourceForMedicationAdherenceCodes",
+      "title" : "IE Core Information Source for Medication Adherence Codes",
+      "description" : "A set of concepts to classify Information Source for Medication Adherence Codes",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.10"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreParticipationFunction",
+      "title" : "IE Core Participation Function",
+      "description" : "Set of codes that are needed for implementation of the IE Core Participation Function",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.15"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-payer-type-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePayerTypeCodes",
+      "title" : "IE Core Payer Type Codes",
+      "description" : "A set of concepts to classify Payer Type Codes",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.12"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProvenancePaticipantTypeExtensionCodes",
+      "title" : "IE Core Provenance Participant Type Extension Codes",
+      "description" : "Set of codes that are needed for implementation of the IE-Core Provenance Profile. These codes are used as extensions to the FHIR value sets.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.5"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIdentifierType",
+      "title" : "IE Core IdentifierType IE",
+      "description" : "Additional concept codes for identifier type defined for use in an Irish context. These are additional identifier type codes to the HL7 International code set and suitable for use with Irish identifiers and may be used in HL7 V2.x identifier representations.",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.16"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreVaccineCodes",
+      "title" : "IE Core Vaccine Codes",
+      "description" : "A set of concepts to classify Vaccines Administered Vaccine Set Codes",
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.16.19"]
+    }
+  ]
+}

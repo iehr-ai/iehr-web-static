@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Patient",
+  "id" : "example-targeted-provenance",
+  "meta" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+      "valueString" : "Targeted Provenance Patient Example"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+      "valueMarkdown" : "This is a patient example for the *IE Core Patient Profile* to demonstrate how Provenance can be used to document the source of individual elements such as Race and Ethnicity (R/E), gender identity."
+    }],
+    "profile" : ["http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient"]
+  },
+  "extension" : [{
+    "id" : "genderIdentity",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-genderIdentity",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "code" : "UNK"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://hospital.smarthealthit.org",
+    "value" : "1032702"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Shaw",
+    "given" : ["Amy",
+    "V."]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "1 234 5678"
+  }],
+  "gender" : "female",
+  "_gender" : {
+    "id" : "gender"
+  },
+  "birthDate" : "1987-02-20",
+  "address" : [{
+    "line" : ["183 MOUNTAIN VIEW ST"],
+    "city" : "Sandyford",
+    "state" : "Galway",
+    "postalCode" : "H91 CV48"
+  }]
+}

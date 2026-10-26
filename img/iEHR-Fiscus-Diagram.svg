@@ -1,0 +1,44 @@
+<svg viewBox="0 0 1280 720" overflow="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <path d="m340 77.5c0-9.6652 7.835-17.5 17.5-17.5h192c9.665 0 17.5 7.8352 17.5 17.5v70c0 9.665-7.835 17.5-17.5 17.5h-192c-9.665 0-17.5-7.835-17.5-17.5z" fill="none" fill-rule="evenodd" stroke="#946AEE" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(417.17,120)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Patient</text>
+ <path d="m626 77.5c0-9.6653 7.835-17.5 17.5-17.5h191c9.665 0 17.5 7.8352 17.5 17.5v70c0 9.665-7.835 17.5-17.5 17.5h-191c-9.665 0-17.5-7.835-17.5-17.5z" fill="none" fill-rule="evenodd" stroke="#946AEE" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(699.2 105)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Related</text>
+ <text transform="translate(703.43,134)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Person</text>
+ <path d="m912 77.5c0-9.6653 7.835-17.5 17.5-17.5h191c9.66 0 17.5 7.8352 17.5 17.5v70c0 9.665-7.84 17.5-17.5 17.5h-191c-9.665 0-17.5-7.835-17.5-17.5z" fill="none" fill-rule="evenodd" stroke="#946AEE" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(959.11 120)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Organization</text>
+ <path d="m340 276.67c0-9.757 7.91-17.667 17.667-17.667h191.67c9.757 0 17.667 7.91 17.667 17.667v70.666c0 9.757-7.91 17.667-17.667 17.667h-191.67c-9.757 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(410.08 319)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Account</text>
+ <path d="m626 276.67c0-9.757 7.91-17.667 17.667-17.667h190.67c9.757 0 17.667 7.91 17.667 17.667v70.666c0 9.757-7.91 17.667-17.667 17.667h-190.67c-9.757 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(690.54,319)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Coverage</text>
+ <path d="m912 276.67c0-9.757 7.91-17.667 17.667-17.667h190.66c9.76 0 17.67 7.91 17.67 17.667v70.666c0 9.757-7.91 17.667-17.67 17.667h-190.66c-9.757 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(978.92 319)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Contract</text>
+ <path d="m296 56.667c0-16.385 13.282-29.667 29.667-29.667h826.66c16.39 0 29.67 13.282 29.67 29.667v118.67c0 16.385-13.28 29.667-29.67 29.667h-826.66c-16.385 0-29.667-13.282-29.667-29.667z" fill="none" fill-rule="evenodd" stroke="#4EA72E" stroke-miterlimit="8" stroke-width="2"/>
+ <path d="m738 259.17v-47.507h2v47.507zm-3-46.174 4-8 4 8z" fill="#7F7F7F"/>
+ <path d="m453 259.28v-87.614h2v87.614zm-3-86.281 4-8 4 8z" fill="#7F7F7F"/>
+ <path d="m340 436.5c0-9.665 7.835-17.5 17.5-17.5h192c9.665 0 17.5 7.835 17.5 17.5v70c0 9.665-7.835 17.5-17.5 17.5h-192c-9.665 0-17.5-7.835-17.5-17.5z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(413.53 465)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Invoice,</text>
+ <text transform="translate(390.43 494)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Charge Item</text>
+ <path d="m55 275.67c0-9.757 7.9098-17.667 17.667-17.667h190.67c9.757 0 17.667 7.91 17.667 17.667v70.666c0 9.757-7.91 17.667-17.667 17.667h-190.67c-9.7572 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(122.62 304)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Payment</text>
+ <text transform="translate(133.54 333)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Notice</text>
+ <path d="m55 594.67c0-9.757 7.9098-17.667 17.667-17.667h190.67c9.757 0 17.667 7.91 17.667 17.667v70.666c0 9.757-7.91 17.667-17.667 17.667h-190.67c-9.7572 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(122.62,623)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Payment</text>
+ <text transform="translate(93.647 652)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Reconciliation</text>
+ <path d="m626 592.5c0-9.665 7.835-17.5 17.5-17.5h191c9.665 0 17.5 7.835 17.5 17.5v70c0 9.665-7.835 17.5-17.5 17.5h-191c-9.665 0-17.5-7.835-17.5-17.5z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <text transform="translate(654.28,635)" fill="#7F7F7F" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Claim Response</text>
+ <path d="m626 432.67c0-9.757 7.91-17.667 17.667-17.667h190.67c9.757 0 17.667 7.91 17.667 17.667v70.666c0 9.757-7.91 17.667-17.667 17.667h-190.67c-9.757 0-17.667-7.91-17.667-17.667z" fill="none" fill-rule="evenodd" stroke="#ff8c5b" stroke-miterlimit="8" stroke-width="2"/>
+ <g fill="#7F7F7F">
+  <text transform="translate(708.2 475)" font-family="Aptos,Aptos_MSFontService,sans-serif" font-size="24" font-weight="400">Claim</text>
+  <path d="m852 311h52.596v2h-52.596zm51.262-3 8 4-8 4z"/>
+  <path d="m567 311h52.596v2h-52.596zm51.262-3 8 4-8 4z"/>
+  <path d="m169 364v207.04h-2v-207.04zm3 205.7-4 8-4-8z"/>
+  <path transform="matrix(1 0 0 -1 281 629.63)" d="m0.0076384-0.99997 338.13 2.5829-0.015 1.9999-338.13-2.5829zm336.82-0.42721 7.969 4.061-8.03 3.9388z"/>
+  <path transform="matrix(1 0 0 -1 454 419.17)" d="m1-1.938e-6 9e-5 47.508h-2l-9.2e-5 -47.507zm3.0001 46.174-4 8-4-8z"/>
+  <path transform="matrix(1 0 0 -1 739 575.17)" d="m1-1.938e-6 9e-5 47.507h-2l-9.2e-5 -47.507zm3.0001 46.174-4 8-4-8z"/>
+  <path transform="matrix(1 0 0 -1 1025 259.17)" d="m1-1.938e-6 9e-5 47.508h-2l-9.2e-5 -47.507zm3.0001 46.174-4 8-4-8z"/>
+  <path transform="matrix(1 0 0 -1 739 415.58)" d="m1-2.0756e-6 9e-5 43.916h-2l-9.1e-5 -43.916zm3.0001 42.583-4 8-4-8z"/>
+  <path transform="matrix(1 0 0 -1 852 467.98)" d="m0-1h361.36v353.98h-24.863v-2h23.863l-1 1v-351.98l1 1h-360.36zm337.83 356.98-8-4 8-4z"/>
+  <path d="m167 258.41v-143.41h122.44v2h-121.44l1-1v142.41zm121.1-146.41 8 4-8 4z"/>
+ </g>
+ <image transform="translate(870 585) scale(.8)" href="/img/animate/iEHR-Fiscus-Big.svg" />
+</svg>

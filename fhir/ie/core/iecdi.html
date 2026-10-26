@@ -1,0 +1,4087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>IECDI - IE (Ireland) Core Implementation Guide v1.0.0-ballot</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/iehr-ig.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  <script>!function(e,t,a,n){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var g=t.getElementsByTagName(a)[0],m=t.createElement(a);m.async=!0,m.src="https://www.googletagmanager.com/gtm.js?id=GTM-5VCL5N6S",g.parentNode.insertBefore(m,g)}(window,document,"script","dataLayer")</script></head>
+  <body class="navigation-with-keyboard"><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VCL5N6S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.8"}
+    h3,h4,h5,h6{--heading-prefix:"3.8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations --> <div id="project-nav"><a class="navbar__brand" href="/"><img src="/img/logo.svg" alt="iEHR Logo" width="32"><b> iEHR</b></a></div><div id="family-nav"><a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="24" alt="Visit the FHIR website" src="/img/fhir-logo.png"> </a></div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IE (Ireland) Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-ballot - Ballot
+
+
+
+  <img alt="Ireland flag" src="assets/images/irl.svg" height="16" title="Ireland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Conformance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-requirements.html">General Requirements</a>
+      </li>
+      <li>
+        <a href="must-support.html">Must Support</a>
+      </li>
+      <li>
+        <a href="scopes.html">SMART on FHIR Obligations and Capabilities</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="general-guidance.html">General Guidance</a>
+      </li>
+      <li>
+        <a href="clinical-notes.html">Clinical Notes</a>
+      </li>
+      <li>
+        <a href="medication-list.html">Medication List</a>
+      </li>
+      <li>
+        <a href="basic-provenance.html">Basic Provenance</a>
+      </li>
+      <li>
+        <a href="screening-and-assessments.html">Screening and Assessments</a>
+      </li>
+      <li>
+        <a href="future-of-IE-core.html">Future of IE Core</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">FHIR Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profiles-and-extensions.html#profiles">Profiles</a>
+      </li>
+      <li>
+        <a href="profiles-and-extensions.html#extensions">Extensions</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#search-parameters">Search Parameters</a>
+      </li>
+      <li>
+        <a href="search-parameters-and-operations.html#operations">Operations</a>
+      </li>
+      <li>
+        <a href="terminology.html">Terminology</a>
+      </li>
+      <li>
+        <a href="capability-statements.html">Capability Statements</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="security.html">Security</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='guidance.html'><b>Guidance</b></a></li><li><b>IECDI</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publication Build: This will be filled in by the publication tooling</p><!--EndReleaseHeader-->
+  <h2>IECDI</h2>
+  
+
+
+
+
+
+  <table class="colsi">
+    <tr>
+  
+      <td>
+        <i>Page standards status:</i> <a href="http://hl7.org/fhir/R4/versions.html#std-process" title="Standard Status">Informative</a>
+        
+      </td>
+  
+  
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<!--  to make the IECDI table
+
+need 
+
+source CSV file = `input/data/iecdi-table.csv`
+markdown page file = `input/pagecontent/iecdi.md`
+liquid template files = `input/includes/iecdi-iecore-map.html`,`input/includes/sd_link.html`
+icons (png files) = `input/images/<"kebab case" IECDI class names>.png`
+
+1. create the source CSV file with all the same column names
+    - FHIRPath column is not used for rendering so can replace with template name or whatever
+    - this file lives in the `input/data` folder
+    - It is copied to the `input/images` folder as both a csv and convert to excel file using a bash/python script.
+2. The pagecontent/iecdi.md page is where the table is rendered
+3. the liquid template tag "{% include iecdi-iecore-map.html %}" references `includes/iecdi-iecore-map.html` which does the rendering
+   - this file depends on another liquid template {% include sd_link.html title = title  %} which refererence `includes/sd_link.html` to get the profile page link.
+   1. icons (png images) are in the `input/images` are named using the "kebab case" IECDI class names. -->
+
+<p><a href="https://www.iehr.ai">iEHR</a> IE Core Data for Interoperability (IECDI) and FHIR IE Core are complementary initiatives, with IECDI defining high-level data requirements and FHIR IE Core providing detailed FHIR-based profiles for meeting those requirements. Mapping between them is necessary for achieving interoperability and consistency in healthcare data exchange within Ireland.</p>
+
+<p>Updates to IE Core depend upon community input, and we encourage our audience to submit questions and feedback to IE Core specifications by clicking on the <em>Propose a change</em> link in the footer of every page. In addition, we encourage our audience to request any necessary clarifications to IECDI will help inform future updates to FHIR IE Core.</p>
+
+<p>The table below defines the relationship between the IECDI Data Classes and Elements and IECore profiles. It lists the IE Core Profile used for the corresponding Data Classes and Elements.</p>
+
+<!-- Source =  This file is generated by liquid syntax below. The source table is input/data/iecdi-table.csv
+ where edits to the table contents are made  -->
+
+<style>
+  .panel {
+    background: #946AEE;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+    box-shadow: 1px 2px DarkGray;
+  }
+
+  .panel-body {
+    padding-left: 15px;
+  }
+
+  .panel table {
+    /* table-layout: fixed;
+    word-wrap: break-word;
+    width: auto; */
+    border: 0 !important;
+    padding-right: 20px;
+  }
+
+  .panel th,
+  td {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .panel a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .icon-right {
+    float: right;
+    padding: 6px
+  }
+</style>
+
+<div>
+  <p style="font-size: 300%; font-weight: bold;" class="text-center">IE Core Data for Interoperability IECDI</p>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Allergies and Intolerances</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Substance (Medication)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Substance (Drug Class)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Substance (Non-Medication)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Reaction</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-allergyintolerance.html">IE Core AllergyIntolerance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Care Team Members</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-careteam.html">IE Core CareTeam Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitioner.html">IE Core Practitioner Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html"> IE Core Patient Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-relatedperson.html"> IE Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitioner.html">IE Core Practitioner Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html"> IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Location</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitionerrole.html">IE Core PractitionerRole Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitioner.html"> IE Core Practitioner Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html"> IE Core Patient Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-relatedperson.html"> IE Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Telecom</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitionerrole.html">IE Core PractitionerRole Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-practitioner.html"> IE Core Practitioner Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html"> IE Core Patient Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-relatedperson.html"> IE Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Role</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-careteam.html">IE Core CareTeam Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Clinical Notes</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="clinical-notes.html">See Clinical Notes Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Consultation Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Discharge Summary Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;History &amp; Physical</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Imaging Narrative</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Procedure Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Progress Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Operative Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Emergency Department Note</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-documentreference.html">IE Core DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Clinical Tests</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Clinical Test</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Clinical Test Result/Report</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Diagnostic Imaging</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Diagnostic Imaging Test</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Diagnostic Imaging Result/Report</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-clinical-result.html">IE Core Observation Clinical Result Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html"> IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Encounter</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Type</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Diagnosis</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-encounter-diagnosis.html">IE Core Condition Encounter Diagnosis Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Time</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Location</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Disposition</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html">IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Facility Information</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="StructureDefinition-ie-core-location.html">See Facility Information Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Type</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-location.html">IE Core Location Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Goals and Preferences</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-goal.html">IE Core Goal Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Patient Goals</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-goal.html">IE Core Goal Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;SDOH Goals</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-goal.html">IE Core Goal Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Treatment Intervention Preference</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-treatment-intervention-preference.html">IE Core Treatment Intervention Preference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Care Experience Preference</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-care-experience-preference.html">IE Core Care Experience Preference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Health Insurance Information</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-organization.html"> IE Core Organization Profile </a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Coverage Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Coverage Type</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Relationship to Subscriber</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Member Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Subscriber Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Group Number</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Payer Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-coverage.html">IE Core Coverage Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-organization.html"> IE Core Organization Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Health Status Assessments</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Health Concerns</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Functional Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Disability Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Mental/Cognitive Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Pregnancy Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-pregnancystatus.html">IE Core Observation Pregnancy Status Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-pregnancyintent.html"> IE Core Observation Pregnancy Intent Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Alcohol Use</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Substance Use</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Physical Activity</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;SDOH Assessment</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-simple-observation.html">IE Core Simple Observation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html"> IE Core Condition Problems and Health Concerns Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-screening-assessment.html"> IE Core Observation Screening Assessment Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-questionnaireresponse.html"> IE Core QuestionnaireResponse Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Smoking Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-smokingstatus.html">IE Core Smoking Status Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Immunizations</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Immunizations</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Lot Number</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Laboratory</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-lab.html"> IE Core DiagnosticReport Profile for Laboratory Results Reporting </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-specimen.html"> IE Core Specimen Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Tests</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-lab.html"> IE Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Values/Results</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-lab.html"> IE Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Specimen Type</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-specimen.html"> IE Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Result Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-lab.html"> IE Core DiagnosticReport Profile for Laboratory Results Reporting</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Result Unit of Measure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Result Reference Range</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Result Interpretation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-lab.html">IE Core Laboratory Result Observation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Specimen Identifier</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-specimen.html">IE Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Specimen Source Site</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-specimen.html">IE Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Specimen Condition Acceptability</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-specimen.html">IE Core Specimen Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Medical Devices</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-implantable-device.html">IE Core Implantable Device Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Unique Device Identifier(s) for a Patient's Implantable Device(s)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-implantable-device.html">IE Core Implantable Device Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Medications</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationdispense.html"> IE Core MedicationDispense Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medication.html"> IE Core Medication Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="medication-list.html">See Medication List Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Medications</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medication.html">IE Core Medication Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html"> IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Dose</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Dose Unit of Measure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Route of Administration</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationdispense.html"> IE Core MedicationDispense Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Indication</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Medication Instructions</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Medication Adherence</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Fill Status</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationdispense.html">IE Core MedicationDispense Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Observation</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-adi-documentation.html"> IE Core Observation ADI Documentation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-adi-documentreference.html"> IE Core ADI DocumentReference Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html"> IE Core Patient Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Advance Directive Observation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-adi-documentation.html"> IE Core Observation ADI Documentation Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-adi-documentreference.html"> IE Core ADI DocumentReference Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Sex Parameter for Clinical Use</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Orders</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html"> IE Core ServiceRequest Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Medication Order</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-medicationrequest.html">IE Core MedicationRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Laboratory Order</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Diagnostic Imaging Order</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Clinical Test Order</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Procedure Order</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Patient Demographics</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-sexual-orientation.html"> IE Core Observation Sexual Orientation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-sexual-orientation.html"> IE Core Observation Sexual Orientation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-sexual-orientation.html"> IE Core Observation Sexual Orientation Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-occupation.html">IE Core Observation Occupation Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;First Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Last Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Previous Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Middle Name (including middle initial)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Suffix</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Name to Use</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Pronouns</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Sex</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href=""> IE Core Sex Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Date of Birth</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Date of Death</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Ethnicity</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-ethnicity.html"> IE Core Ethnicity Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Tribal Affiliation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href=""> IE Core Tribal Affiliation Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Gender Identity</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-genderIdentity.html"> IE Core Gender Identity Extension</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Sexual Orientation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-sexual-orientation.html">IE Core Observation Sexual Orientation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Preferred Language</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Interpreter Needed</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-encounter.html"> IE Core Encounter Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Address</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Previous Address</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Email</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Phone Number</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-patient.html">IE Core Patient Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Related Person's Name</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-relatedperson.html">IE Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Related Person's Relationship</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-relatedperson.html">IE Core RelatedPerson Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Occupation</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-occupation.html">IE Core Observation Occupation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Occupation Industry</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-observation-occupation.html">IE Core Observation Occupation Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Patient Summary and Plan</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-careplan.html">IE Core CarePlan Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Assessment and Plan of Treatment</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-careplan.html">IE Core CarePlan Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Problems</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Date of Resolution</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Date of Diagnosis</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;SDOH Problems/Health Concerns</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-condition-problems-health-concerns.html">IE Core Condition Problems and Health Concerns Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Procedures</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-procedure.html">IE Core Procedure Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html"> IE Core ServiceRequest Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Procedure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-procedure.html">IE Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Performance Time</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-procedure.html">IE Core Procedure Profile</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-diagnosticreport-note.html">IE Core DiagnosticReport Profile for Report and Note Exchange</a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-immunization.html">IE Core Immunization Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Reason for Referral</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-procedure.html"> IE Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;SDOH Interventions</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-servicerequest.html">IE Core ServiceRequest Profile </a>
+            
+            <br />
+            
+            
+            
+            <a href="StructureDefinition-ie-core-procedure.html"> IE Core Procedure Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href="screening-and-assessments.html">See Screening and Assessments Guidance</a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Provenance</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-provenance.html">IE Core Provenance Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href="basic-provenance.html">See Basic Provenance Guidance</a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Author Time Stamp</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-provenance.html">IE Core Provenance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Author Organization</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-provenance.html">IE Core Provenance Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-body">
+    <table class="table table-condensed">
+      <thead>
+        <tr>
+          <th class="col-sm-4">Vital Signs</th>
+          <th class="col-sm-4">
+            
+            
+            
+            <a href="StructureDefinition-ie-core-vital-signs.html">IE Core Vital Signs Profile</a>
+            
+            
+          </th>
+          <th class="col-sm-2"><a href=""></a></th>
+        </tr>
+      </thead>
+      <tbody>
+
+        
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Average Blood Pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-average-blood-pressure.html">IE Core Average Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Diastolic blood pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-blood-pressure.html">IE Core Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Systolic blood pressure</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-blood-pressure.html">IE Core Blood Pressure Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Body height</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-body-height.html">IE Core Body Height Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Body weight</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-body-weight.html">IE Core Body Weight Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Heart rate</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-heart-rate.html">IE Core Heart Rate Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Respiratory rate</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-respiratory-rate.html">IE Core Respiratory Rate Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Body temperature</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-body-temperature.html">IE Core Body Temperature Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Pulse oximetry</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-pulse-oximetry.html">IE Core Pulse Oximetry Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Inhaled oxygen concentration</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-ie-core-pulse-oximetry.html">IE Core Pulse Oximetry Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;BMI Percentile (2-20 years old)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-pediatric-bmi-for-age.html">IE Core Pediatric BMI for Age Observation Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Weight-for-length Percentile (Birth - 36 months)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-pediatric-weight-for-height.html">IE Core Pediatric Weight for Height Observation Profile </a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+
+
+
+
+        <tr>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&bull;Occipital Frontal Head Circumference Percentile (Birth - 36 months)</td>
+
+          <td>
+            
+            
+            
+            <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a>
+            
+            
+          </td>
+
+          <td>
+            <a href=""></a>
+          </td>
+        </tr>
+
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.iehr.ai">iEHR.ai</a>.  Package iehr.fhir.ie.core#1.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4">FHIR 4.0.1</a>.
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

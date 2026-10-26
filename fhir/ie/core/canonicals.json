@@ -1,0 +1,2098 @@
+[
+  {
+    "id" : "ie-core-client",
+    "type" : "CapabilityStatement",
+    "url" : "http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-client",
+    "version" : "1.0.0-ballot",
+    "name" : "IeCoreClientCapabilityStatement",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.13.1"]
+  },
+  {
+    "id" : "ie-core-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://iehr.ai/fhir/ie/core/CapabilityStatement/ie-core-server",
+    "version" : "1.0.0-ballot",
+    "name" : "IeCoreServerCapabilityStatement",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.13.2"]
+  },
+  {
+    "id" : "careplan-category",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/careplan-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCarePlanCategoryExtensionCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.1"]
+  },
+  {
+    "id" : "condition-category",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/condition-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionCategoryExtensionCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.2"]
+  },
+  {
+    "id" : "ie-core-allergy-intolerance-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAllergyIntoleranceCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.17"]
+  },
+  {
+    "id" : "ie-core-category",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.3"]
+  },
+  {
+    "id" : "ie-core-counties-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCountiesCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.6"]
+  },
+  {
+    "id" : "ie-core-documentreference-category",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-documentreference-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentReferencesCategoryCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.4"]
+  },
+  {
+    "id" : "ie-core-ethnicity-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEthnicityCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.7"]
+  },
+  {
+    "id" : "ie-core-healthcare-provider-taxonomy-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-healthcare-provider-taxonomy-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHealthcareProviderTaxonomyCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.9"]
+  },
+  {
+    "id" : "ie-core-hpra-hm",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHpraHm",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.18"]
+  },
+  {
+    "id" : "ie-core-ihi-record-status-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIndividualHealthcareIdentifierRecordStatusCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.6"]
+  },
+  {
+    "id" : "ie-core-ihi-status-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIndividualHealthcareIdentifierStatusCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.7"]
+  },
+  {
+    "id" : "ie-core-information-source-for-medication-adherence-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreInformationSourceForMedicationAdherenceCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.10"]
+  },
+  {
+    "id" : "ie-core-participation-function",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreParticipationFunction",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.15"]
+  },
+  {
+    "id" : "ie-core-payer-type-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-payer-type-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePayerTypeCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.12"]
+  },
+  {
+    "id" : "ie-core-provenance-participant-type",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProvenancePaticipantTypeExtensionCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.5"]
+  },
+  {
+    "id" : "ie-core-v2-0203",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIdentifierType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.16"]
+  },
+  {
+    "id" : "ie-core-vaccine-codes",
+    "type" : "CodeSystem",
+    "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreVaccineCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.16.19"]
+  },
+  {
+    "id" : "iehr.fhir.ie.core",
+    "type" : "ImplementationGuide",
+    "url" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core",
+    "version" : "1.0.0-ballot",
+    "name" : "IECore",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690"]
+  },
+  {
+    "id" : "docref",
+    "type" : "OperationDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/OperationDefinition/docref",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreFetchDocumentReference",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.33.1"]
+  },
+  {
+    "id" : "AUDIT-C",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/AUDIT-C",
+    "version" : "1.0.0-ballot",
+    "name" : "IEDIT_C",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.1"]
+  },
+  {
+    "id" : "TAPS",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/TAPS",
+    "version" : "1.0.0-ballot",
+    "name" : "TAPS",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.2"]
+  },
+  {
+    "id" : "exercise-vital-sign",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/exercise-vital-sign",
+    "version" : "1.0.0-ballot",
+    "name" : "ExerciseVitalSign",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.3"]
+  },
+  {
+    "id" : "hunger-vital-sign-example",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/hunger-vital-sign-example",
+    "version" : "1.0.0-ballot",
+    "name" : "HungerVitalSignExample",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.4"]
+  },
+  {
+    "id" : "phq-9-example",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/phq-9-example",
+    "version" : "1.0.0-ballot",
+    "name" : "PHQ9Example",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.5"]
+  },
+  {
+    "id" : "prapare-example",
+    "type" : "Questionnaire",
+    "url" : "http://iehr.ai/fhir/ie/core/Questionnaire/prapare-example",
+    "version" : "1.0.0-ballot",
+    "name" : "PRAPAREExample",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.35.6"]
+  },
+  {
+    "id" : "ie-core-allergyintolerance-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-allergyintolerance-clinical-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAllergyintoleranceClinicalStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.1"]
+  },
+  {
+    "id" : "ie-core-allergyintolerance-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-allergyintolerance-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAllergyintolerancePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.2"]
+  },
+  {
+    "id" : "ie-core-careplan-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careplan-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareplanCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.3"]
+  },
+  {
+    "id" : "ie-core-careplan-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careplan-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareplanDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.4"]
+  },
+  {
+    "id" : "ie-core-careplan-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careplan-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareplanPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.5"]
+  },
+  {
+    "id" : "ie-core-careplan-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careplan-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareplanStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.6"]
+  },
+  {
+    "id" : "ie-core-careteam-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careteam-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareteamPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.7"]
+  },
+  {
+    "id" : "ie-core-careteam-role",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careteam-role",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareTeamRole",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.8"]
+  },
+  {
+    "id" : "ie-core-careteam-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-careteam-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareteamStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.9"]
+  },
+  {
+    "id" : "ie-core-condition-abatement-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-abatement-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionAbatementDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.10"]
+  },
+  {
+    "id" : "ie-core-condition-asserted-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-asserted-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionAssertedDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.11"]
+  },
+  {
+    "id" : "ie-core-condition-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.12"]
+  },
+  {
+    "id" : "ie-core-condition-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-clinical-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionClinicalStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.13"]
+  },
+  {
+    "id" : "ie-core-condition-code",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionCode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.14"]
+  },
+  {
+    "id" : "ie-core-condition-encounter",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-encounter",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionEncounter",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.15"]
+  },
+  {
+    "id" : "ie-core-condition-lastupdated",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-lastupdated",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionLastUpdated",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.16"]
+  },
+  {
+    "id" : "ie-core-condition-onset-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-onset-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionOnsetDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.17"]
+  },
+  {
+    "id" : "ie-core-condition-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.18"]
+  },
+  {
+    "id" : "ie-core-condition-recorded-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-condition-recorded-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionRecordedDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.19"]
+  },
+  {
+    "id" : "ie-core-coverage-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-coverage-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCoveragePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.20"]
+  },
+  {
+    "id" : "ie-core-device-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-device-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDevicePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.21"]
+  },
+  {
+    "id" : "ie-core-device-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-device-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDeviceStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.22"]
+  },
+  {
+    "id" : "ie-core-device-type",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-device-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDeviceType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.23"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.24"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-code",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportCode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.25"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.26"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-lastupdated",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-lastupdated",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportLastUpdated",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.27"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.28"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-diagnosticreport-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticreportStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.29"]
+  },
+  {
+    "id" : "ie-core-documentreference-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferenceCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.30"]
+  },
+  {
+    "id" : "ie-core-documentreference-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferenceDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.31"]
+  },
+  {
+    "id" : "ie-core-documentreference-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferenceId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.32"]
+  },
+  {
+    "id" : "ie-core-documentreference-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferencePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.33"]
+  },
+  {
+    "id" : "ie-core-documentreference-period",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-period",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferencePeriod",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.34"]
+  },
+  {
+    "id" : "ie-core-documentreference-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferenceStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.35"]
+  },
+  {
+    "id" : "ie-core-documentreference-type",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-documentreference-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentreferenceType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.36"]
+  },
+  {
+    "id" : "ie-core-encounter-class",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-class",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterClass",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.37"]
+  },
+  {
+    "id" : "ie-core-encounter-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.38"]
+  },
+  {
+    "id" : "ie-core-encounter-discharge-disposition",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-discharge-disposition",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterDischargeDisposition",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.39"]
+  },
+  {
+    "id" : "ie-core-encounter-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.40"]
+  },
+  {
+    "id" : "ie-core-encounter-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterIdentifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.41"]
+  },
+  {
+    "id" : "ie-core-encounter-lastupdated",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-lastupdated",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterLastUpdated",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.42"]
+  },
+  {
+    "id" : "ie-core-encounter-location",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-location",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterLocation",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.43"]
+  },
+  {
+    "id" : "ie-core-encounter-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.44"]
+  },
+  {
+    "id" : "ie-core-encounter-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.45"]
+  },
+  {
+    "id" : "ie-core-encounter-type",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-encounter-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.46"]
+  },
+  {
+    "id" : "ie-core-ethnicity",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-ethnicity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEthnicity",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.47"]
+  },
+  {
+    "id" : "ie-core-goal-description",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-goal-description",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalDescription",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.48"]
+  },
+  {
+    "id" : "ie-core-goal-lifecycle-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-goal-lifecycle-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalLifecycleStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.49"]
+  },
+  {
+    "id" : "ie-core-goal-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-goal-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.50"]
+  },
+  {
+    "id" : "ie-core-goal-target-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-goal-target-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalTargetDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.51"]
+  },
+  {
+    "id" : "ie-core-immunization-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-immunization-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreImmunizationDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.52"]
+  },
+  {
+    "id" : "ie-core-immunization-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-immunization-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreImmunizationPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.53"]
+  },
+  {
+    "id" : "ie-core-immunization-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-immunization-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreImmunizationStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.54"]
+  },
+  {
+    "id" : "ie-core-location-address",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-location-address",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationAddress",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.58"]
+  },
+  {
+    "id" : "ie-core-location-address-city",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-location-address-city",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationAddressCity",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.55"]
+  },
+  {
+    "id" : "ie-core-location-address-postalcode",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-location-address-postalcode",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationAddressPostalcode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.56"]
+  },
+  {
+    "id" : "ie-core-location-address-state",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-location-address-state",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationAddressState",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.57"]
+  },
+  {
+    "id" : "ie-core-location-name",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-location-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.59"]
+  },
+  {
+    "id" : "ie-core-medicationdispense-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationdispense-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationdispensePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.60"]
+  },
+  {
+    "id" : "ie-core-medicationdispense-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationdispense-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationdispenseStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.61"]
+  },
+  {
+    "id" : "ie-core-medicationdispense-type",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationdispense-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationdispenseType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.62"]
+  },
+  {
+    "id" : "ie-core-medicationrequest-authoredon",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationrequest-authoredon",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationrequestAuthoredon",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.63"]
+  },
+  {
+    "id" : "ie-core-medicationrequest-encounter",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationrequest-encounter",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationrequestEncounter",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.64"]
+  },
+  {
+    "id" : "ie-core-medicationrequest-intent",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationrequest-intent",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationrequestIntent",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.65"]
+  },
+  {
+    "id" : "ie-core-medicationrequest-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationrequest-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationrequestPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.66"]
+  },
+  {
+    "id" : "ie-core-medicationrequest-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-medicationrequest-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationrequestStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.67"]
+  },
+  {
+    "id" : "ie-core-observation-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.68"]
+  },
+  {
+    "id" : "ie-core-observation-code",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationCode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.69"]
+  },
+  {
+    "id" : "ie-core-observation-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.70"]
+  },
+  {
+    "id" : "ie-core-observation-lastupdated",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-lastupdated",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationLastUpdated",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.71"]
+  },
+  {
+    "id" : "ie-core-observation-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.72"]
+  },
+  {
+    "id" : "ie-core-observation-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-observation-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.73"]
+  },
+  {
+    "id" : "ie-core-organization-address",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-organization-address",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreOrganizationAddress",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.74"]
+  },
+  {
+    "id" : "ie-core-organization-name",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-organization-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreOrganizationName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.75"]
+  },
+  {
+    "id" : "ie-core-patient-birthdate",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-birthdate",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientBirthdate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.76"]
+  },
+  {
+    "id" : "ie-core-patient-death-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-death-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientDeathDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.77"]
+  },
+  {
+    "id" : "ie-core-patient-family",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-family",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientFamily",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.78"]
+  },
+  {
+    "id" : "ie-core-patient-gender",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-gender",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientGender",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.80"]
+  },
+  {
+    "id" : "ie-core-patient-gender-identity",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-gender-identity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientGenderIdentity",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.79"]
+  },
+  {
+    "id" : "ie-core-patient-given",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-given",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientGiven",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.81"]
+  },
+  {
+    "id" : "ie-core-patient-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.82"]
+  },
+  {
+    "id" : "ie-core-patient-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientIdentifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.83"]
+  },
+  {
+    "id" : "ie-core-patient-name",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-patient-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.84"]
+  },
+  {
+    "id" : "ie-core-practitioner-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-practitioner-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.85"]
+  },
+  {
+    "id" : "ie-core-practitioner-identifier",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-practitioner-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerIdentifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.86"]
+  },
+  {
+    "id" : "ie-core-practitioner-name",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-practitioner-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.87"]
+  },
+  {
+    "id" : "ie-core-practitionerrole-practitioner",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-practitionerrole-practitioner",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerrolePractitioner",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.88"]
+  },
+  {
+    "id" : "ie-core-practitionerrole-specialty",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-practitionerrole-specialty",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerroleSpecialty",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.89"]
+  },
+  {
+    "id" : "ie-core-procedure-code",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-procedure-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedureCode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.90"]
+  },
+  {
+    "id" : "ie-core-procedure-date",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-procedure-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedureDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.91"]
+  },
+  {
+    "id" : "ie-core-procedure-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-procedure-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedurePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.92"]
+  },
+  {
+    "id" : "ie-core-procedure-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-procedure-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedureStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.93"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse-authored",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-questionnaireresponse-authored",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireresponseAuthored",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.94"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-questionnaireresponse-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireresponseId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.95"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-questionnaireresponse-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireresponsePatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.96"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse-questionnaire",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-questionnaireresponse-questionnaire",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireresponseQuestionnaire",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.97"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-questionnaireresponse-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireresponseStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.98"]
+  },
+  {
+    "id" : "ie-core-relatedperson-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-relatedperson-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreRelatedpersonId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.100"]
+  },
+  {
+    "id" : "ie-core-relatedperson-name",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-relatedperson-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreRelatedpersonName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.101"]
+  },
+  {
+    "id" : "ie-core-relatedperson-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-relatedperson-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreRelatedpersonPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.102"]
+  },
+  {
+    "id" : "ie-core-servicerequest-authored",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-authored",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestAuthored",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.103"]
+  },
+  {
+    "id" : "ie-core-servicerequest-category",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.104"]
+  },
+  {
+    "id" : "ie-core-servicerequest-code",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestCode",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.105"]
+  },
+  {
+    "id" : "ie-core-servicerequest-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.106"]
+  },
+  {
+    "id" : "ie-core-servicerequest-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.107"]
+  },
+  {
+    "id" : "ie-core-servicerequest-status",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-servicerequest-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServicerequestStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.108"]
+  },
+  {
+    "id" : "ie-core-specimen-id",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-specimen-id",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSpecimenId",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.109"]
+  },
+  {
+    "id" : "ie-core-specimen-patient",
+    "type" : "SearchParameter",
+    "url" : "http://iehr.ai/fhir/ie/core/SearchParameter/ie-core-specimen-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSpecimenPatient",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.40.110"]
+  },
+  {
+    "id" : "head-occipital-frontal-circumference-percentile",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/head-occipital-frontal-circumference-percentile",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePediatricHeadOccipitalFrontalCircumferencePercentileProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.1"]
+  },
+  {
+    "id" : "ie-core-adi-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-adi-documentreference",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreADIDocumentReferenceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.2"]
+  },
+  {
+    "id" : "ie-core-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-allergyintolerance",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAllergyIntoleranceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.3"]
+  },
+  {
+    "id" : "ie-core-authentication-time",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-authentication-time",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAuthenticationTimeExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.4"]
+  },
+  {
+    "id" : "ie-core-average-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-average-blood-pressure",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAverageBloodPressureProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.5"]
+  },
+  {
+    "id" : "ie-core-blood-pressure",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-blood-pressure",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreBloodPressureProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.7"]
+  },
+  {
+    "id" : "ie-core-bmi",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-bmi",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreBMIProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.8"]
+  },
+  {
+    "id" : "ie-core-body-height",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-body-height",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreBodyHeightProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.9"]
+  },
+  {
+    "id" : "ie-core-body-temperature",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-body-temperature",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreBodyTemperatureProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.10"]
+  },
+  {
+    "id" : "ie-core-body-weight",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-body-weight",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreBodyWeightProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.11"]
+  },
+  {
+    "id" : "ie-core-care-experience-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-care-experience-preference",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareExperiencePreferenceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.12"]
+  },
+  {
+    "id" : "ie-core-careplan",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-careplan",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCarePlanProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.13"]
+  },
+  {
+    "id" : "ie-core-careteam",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-careteam",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareTeam",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.14"]
+  },
+  {
+    "id" : "ie-core-company-registration-number",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-company-registration-number",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCompanyRegistrationNumber",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.71"]
+  },
+  {
+    "id" : "ie-core-condition-encounter-diagnosis",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-condition-encounter-diagnosis",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionEncounterDiagnosisProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.15"]
+  },
+  {
+    "id" : "ie-core-condition-problems-health-concerns",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-condition-problems-health-concerns",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionProblemsHealthConcernsProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.16"]
+  },
+  {
+    "id" : "ie-core-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-coverage",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCoverageProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.17"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-diagnosticreport-lab",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticReportProfileLaboratoryReporting",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.18"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-note",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-diagnosticreport-note",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticReportProfileNoteExchange",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.19"]
+  },
+  {
+    "id" : "ie-core-direct",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-direct",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDirectEmailExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.20"]
+  },
+  {
+    "id" : "ie-core-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-documentreference",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentReferenceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.21"]
+  },
+  {
+    "id" : "ie-core-drugs-payment-scheme",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-drugs-payment-scheme",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDrugsPaymentScheme",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.79"]
+  },
+  {
+    "id" : "ie-core-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-encounter",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.22"]
+  },
+  {
+    "id" : "ie-core-ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ethnicity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEthnicityExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.23"]
+  },
+  {
+    "id" : "ie-core-extension-questionnaire-uri",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-extension-questionnaire-uri",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreExtensionQuestionnaireUri",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.24"]
+  },
+  {
+    "id" : "ie-core-genderIdentity",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-genderIdentity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGenderIdentityExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.25"]
+  },
+  {
+    "id" : "ie-core-general-medical-service",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-general-medical-service",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGeneralMedicalService",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.80"]
+  },
+  {
+    "id" : "ie-core-goal",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-goal",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.26"]
+  },
+  {
+    "id" : "ie-core-head-circumference",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-head-circumference",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHeadCircumferenceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.27"]
+  },
+  {
+    "id" : "ie-core-health-amendment-act",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-health-amendment-act",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHealthAmendmentAct",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.81"]
+  },
+  {
+    "id" : "ie-core-health-service-provider-identifier",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-health-service-provider-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHealthServiceProviderIdentifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.78"]
+  },
+  {
+    "id" : "ie-core-heart-rate",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-heart-rate",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHeartRateProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.28"]
+  },
+  {
+    "id" : "ie-core-ihi-record-status",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-record-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIHIRecordStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.67"]
+  },
+  {
+    "id" : "ie-core-ihi-status",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIHIStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.68"]
+  },
+  {
+    "id" : "ie-core-ihi-verified-date",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-ihi-verified-date",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIHIVerifiedDate",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.69"]
+  },
+  {
+    "id" : "ie-core-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-immunization",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreImmunizationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.29"]
+  },
+  {
+    "id" : "ie-core-implantable-device",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-implantable-device",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreImplantableDeviceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.30"]
+  },
+  {
+    "id" : "ie-core-individual-healthcare-identifier",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-individual-healthcare-identifier",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIndividualHealthcareIdentifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.77"]
+  },
+  {
+    "id" : "ie-core-insurance-member-number",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-insurance-member-number",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreInsuranceMemberNumber",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.72"]
+  },
+  {
+    "id" : "ie-core-interpreter-required",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-interpreter-required",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreInterpreterRequiredExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.31"]
+  },
+  {
+    "id" : "ie-core-irish-medical-council",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-irish-medical-council",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIrishMedicalCouncil",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.76"]
+  },
+  {
+    "id" : "ie-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-location",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.32"]
+  },
+  {
+    "id" : "ie-core-long-term-illness",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-long-term-illness",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLongTermIllness",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.82"]
+  },
+  {
+    "id" : "ie-core-medical-record-number",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medical-record-number",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicalRecordNumber",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.73"]
+  },
+  {
+    "id" : "ie-core-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.34"]
+  },
+  {
+    "id" : "ie-core-medication-adherence",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medication-adherence",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationAdherenceExtension",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.33"]
+  },
+  {
+    "id" : "ie-core-medicationdispense",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medicationdispense",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationDispenseProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.35"]
+  },
+  {
+    "id" : "ie-core-medicationrequest",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-medicationrequest",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationRequestProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.36"]
+  },
+  {
+    "id" : "ie-core-observation-adi-documentation",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-adi-documentation",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationADIDocumentationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.37"]
+  },
+  {
+    "id" : "ie-core-observation-clinical-result",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-clinical-result",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationClinicalResultProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.38"]
+  },
+  {
+    "id" : "ie-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-lab",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLaboratoryResultObservationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.39"]
+  },
+  {
+    "id" : "ie-core-observation-occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-occupation",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationOccupationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.40"]
+  },
+  {
+    "id" : "ie-core-observation-pregnancyintent",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-pregnancyintent",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationPregnancyIntentProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.41"]
+  },
+  {
+    "id" : "ie-core-observation-pregnancystatus",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-pregnancystatus",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationPregnancyStatusProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.42"]
+  },
+  {
+    "id" : "ie-core-observation-screening-assessment",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-screening-assessment",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationScreeningAssessmentProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.43"]
+  },
+  {
+    "id" : "ie-core-observation-sexual-orientation",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-observation-sexual-orientation",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationSexualOrientationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.44"]
+  },
+  {
+    "id" : "ie-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreOrganizationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.45"]
+  },
+  {
+    "id" : "ie-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.46"]
+  },
+  {
+    "id" : "ie-core-patient-mother-maiden-name",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-patient-mother-maiden-name",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePatientMotherMaidenName",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.75"]
+  },
+  {
+    "id" : "ie-core-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitioner",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.47"]
+  },
+  {
+    "id" : "ie-core-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-practitionerrole",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePractitionerRoleProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.48"]
+  },
+  {
+    "id" : "ie-core-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-procedure",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedureProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.49"]
+  },
+  {
+    "id" : "ie-core-provenance",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-provenance",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProvenance",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.50"]
+  },
+  {
+    "id" : "ie-core-pulse-oximetry",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-pulse-oximetry",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePulseOximetryProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.51"]
+  },
+  {
+    "id" : "ie-core-questionnaireresponse",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-questionnaireresponse",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreQuestionnaireResponseProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.52"]
+  },
+  {
+    "id" : "ie-core-relatedperson",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-relatedperson",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreRelatedPersonProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.54"]
+  },
+  {
+    "id" : "ie-core-respiratory-rate",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-respiratory-rate",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreRespiratoryRateProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.55"]
+  },
+  {
+    "id" : "ie-core-servicerequest",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-servicerequest",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServiceRequestProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.56"]
+  },
+  {
+    "id" : "ie-core-simple-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-simple-observation",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSimpleObservationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.58"]
+  },
+  {
+    "id" : "ie-core-smokingstatus",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-smokingstatus",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSmokingStatusProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.59"]
+  },
+  {
+    "id" : "ie-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-specimen",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSpecimenProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.60"]
+  },
+  {
+    "id" : "ie-core-treatment-intervention-preference",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-treatment-intervention-preference",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreTreatmentInterventionPreferenceProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.61"]
+  },
+  {
+    "id" : "ie-core-vital-signs",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-vital-signs",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreVitalSignsProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.63"]
+  },
+  {
+    "id" : "iecdi-requirement",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/iecdi-requirement",
+    "version" : "1.0.0-ballot",
+    "name" : "IECDIRequirement",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.66"]
+  },
+  {
+    "id" : "pediatric-bmi-for-age",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/pediatric-bmi-for-age",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePediatricBMIforAgeObservationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.64"]
+  },
+  {
+    "id" : "pediatric-weight-for-height",
+    "type" : "StructureDefinition",
+    "url" : "http://iehr.ai/fhir/ie/core/StructureDefinition/pediatric-weight-for-height",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePediatricWeightForHeightObservationProfile",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.42.65"]
+  },
+  {
+    "id" : "ie-core-advance-directives-content-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAdvanceDirectivesContentType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.35"]
+  },
+  {
+    "id" : "ie-core-advance-healthcare-directive-categories-grouper",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-healthcare-directive-categories-grouper",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAdvanceHealthcareDirectiveCategoriesGrouper",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.36"]
+  },
+  {
+    "id" : "ie-core-alcohol-drinking-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAlcoholDrinkingStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.57"]
+  },
+  {
+    "id" : "ie-core-allergy-intolerance-set",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreAllergyIntoleranceSet",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.52"]
+  },
+  {
+    "id" : "ie-core-care-team-member-function",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCareTeamMemberFunction",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.39"]
+  },
+  {
+    "id" : "ie-core-clinical-note-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-note-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreClinicalNoteType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.3"]
+  },
+  {
+    "id" : "ie-core-clinical-result-observation-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-result-observation-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreClinicalResultObservationCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.4"]
+  },
+  {
+    "id" : "ie-core-condition-code",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-condition-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreConditionCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.5"]
+  },
+  {
+    "id" : "ie-core-counties",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-counties",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreCounties",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.2"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDiagnosticReportCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.6"]
+  },
+  {
+    "id" : "ie-core-diagnosticreport-report-and-note-codes",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-report-and-note-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreNonLaboratoryCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.7"]
+  },
+  {
+    "id" : "ie-core-discharge-disposition",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-discharge-disposition",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDischargeDisposition",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.8"]
+  },
+  {
+    "id" : "ie-core-documentreference-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentReferenceCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.9"]
+  },
+  {
+    "id" : "ie-core-documentreference-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreDocumentReferenceType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.10"]
+  },
+  {
+    "id" : "ie-core-encounter-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-encounter-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEncounterType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.11"]
+  },
+  {
+    "id" : "ie-core-ethnicity",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ethnicity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreEthnicity",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.1"]
+  },
+  {
+    "id" : "ie-core-gender-identity",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-gender-identity",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGenderIdentity",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.49"]
+  },
+  {
+    "id" : "ie-core-goal-description",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-goal-description",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreGoalCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.12"]
+  },
+  {
+    "id" : "ie-core-healthcare-provider-taxonomy",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-healthcare-provider-taxonomy",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHealthcareProviderTaxonomy",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.40"]
+  },
+  {
+    "id" : "ie-core-ihi-record-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-record-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIndividualHealthcareIdentifierRecordStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.31"]
+  },
+  {
+    "id" : "ie-core-ihi-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreIndividualHealthcareIdentifierStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.32"]
+  },
+  {
+    "id" : "ie-core-information-source-for-medication-adherence",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-information-source-for-medication-adherence",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreInformationSourceForMedicationAdherence",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.41"]
+  },
+  {
+    "id" : "ie-core-laboratory-test-codes",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-laboratory-test-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLaboratoryTestCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.13"]
+  },
+  {
+    "id" : "ie-core-location-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-location-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreLocationType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.14"]
+  },
+  {
+    "id" : "ie-core-medication-adherence",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-adherence",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationAdherence",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.55"]
+  },
+  {
+    "id" : "ie-core-medication-codes",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreMedicationCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.53"]
+  },
+  {
+    "id" : "ie-core-narrative-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-narrative-status",
+    "version" : "1.0.0-ballot",
+    "name" : "NarrativeStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.15"]
+  },
+  {
+    "id" : "ie-core-observation-smoking-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-observation-smoking-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreObservationSmokingStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.16"]
+  },
+  {
+    "id" : "ie-core-payer-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-payer-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePayerType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.42"]
+  },
+  {
+    "id" : "ie-core-pregnancy-intent",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-intent",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePregnancyIntentCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.17"]
+  },
+  {
+    "id" : "ie-core-pregnancy-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECorePregnancyStatusCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.18"]
+  },
+  {
+    "id" : "ie-core-problem-or-health-concern",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-problem-or-health-concern",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProblemOrHealthConcern",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.19"]
+  },
+  {
+    "id" : "ie-core-procedure-code",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-procedure-code",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProcedureCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.20"]
+  },
+  {
+    "id" : "ie-core-provenance-participant-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-provenance-participant-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreProvenancePaticipantTypeCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.21"]
+  },
+  {
+    "id" : "ie-core-screening-assessment-condition-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-condition-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreScreeningAssessmentConditionCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.22"]
+  },
+  {
+    "id" : "ie-core-screening-assessment-observation-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-observation-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreScreeningAssessmentObservationCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.23"]
+  },
+  {
+    "id" : "ie-core-servicerequest-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-servicerequest-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreServiceRequestCategoryCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.24"]
+  },
+  {
+    "id" : "ie-core-sexual-orientation-including-data-absent-reason",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-sexual-orientation-including-data-absent-reason",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSexualOrientationIncludingNullsAndDataAbsentReason",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.43"]
+  },
+  {
+    "id" : "ie-core-simple-observation-category",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-simple-observation-category",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSimpleObservationCategory",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.25"]
+  },
+  {
+    "id" : "ie-core-smoking-status",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSmokingStatus",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.51"]
+  },
+  {
+    "id" : "ie-core-smoking-status-comprehensive",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSmokingStatusComprehensive",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.44"]
+  },
+  {
+    "id" : "ie-core-smoking-status-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSmokingStatusType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.45"]
+  },
+  {
+    "id" : "ie-core-specimen-condition",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-condition",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSpecimenCondition",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.26"]
+  },
+  {
+    "id" : "ie-core-specimen-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSpecimenType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.46"]
+  },
+  {
+    "id" : "ie-core-survey-codes",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-survey-codes",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreSurveyCodes",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.27"]
+  },
+  {
+    "id" : "ie-core-v2-0203-extended",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-v2-0203-extended",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreHl7VSIdentifierTypeExtended",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.56"]
+  },
+  {
+    "id" : "ie-core-vaccines",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreVaccines",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.54"]
+  },
+  {
+    "id" : "ie-core-vital-sign-result-type",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vital-sign-result-type",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreVitalSignResultType",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.48"]
+  },
+  {
+    "id" : "ie-core-yes-no-unknowns",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-yes-no-unknowns",
+    "version" : "1.0.0-ballot",
+    "name" : "IECoreYesNoAndUnknowns",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.50"]
+  },
+  {
+    "id" : "simple-language",
+    "type" : "ValueSet",
+    "url" : "http://iehr.ai/fhir/ie/core/ValueSet/simple-language",
+    "version" : "1.0.0-ballot",
+    "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+    "oids" : ["1.3.6.1.4.1.54392.5.2690.48.29"]
+  }
+]

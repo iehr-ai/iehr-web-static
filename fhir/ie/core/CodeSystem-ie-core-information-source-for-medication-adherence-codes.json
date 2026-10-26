@@ -1,0 +1,126 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "ie-core-information-source-for-medication-adherence-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ie-core-information-source-for-medication-adherence-codes</b></p><a name=\"ie-core-information-source-for-medication-adherence-codes\"> </a><a name=\"hcie-core-information-source-for-medication-adherence-codes\"> </a><a name=\"ie-core-information-source-for-medication-adherence-codes-en-US\"> </a><p>This case-insensitive code system <code>http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1179-1<a name=\"ie-core-information-source-for-medication-adherence-codes-1179-1\"> </a></td><td>Pharmacy</td></tr><tr><td style=\"white-space:nowrap\">1192-4<a name=\"ie-core-information-source-for-medication-adherence-codes-1192-4\"> </a></td><td>Home Care</td></tr><tr><td style=\"white-space:nowrap\">1204-7<a name=\"ie-core-information-source-for-medication-adherence-codes-1204-7\"> </a></td><td>Location outside facility</td></tr><tr><td style=\"white-space:nowrap\">ADMPHYS<a name=\"ie-core-information-source-for-medication-adherence-codes-ADMPHYS\"> </a></td><td>admitting physician</td></tr><tr><td style=\"white-space:nowrap\">ATTPHYS<a name=\"ie-core-information-source-for-medication-adherence-codes-ATTPHYS\"> </a></td><td>attending physician</td></tr><tr><td style=\"white-space:nowrap\">CHILD<a name=\"ie-core-information-source-for-medication-adherence-codes-CHILD\"> </a></td><td>child</td></tr><tr><td style=\"white-space:nowrap\">FAMMEMB<a name=\"ie-core-information-source-for-medication-adherence-codes-FAMMEMB\"> </a></td><td>family member</td></tr><tr><td style=\"white-space:nowrap\">FRND<a name=\"ie-core-information-source-for-medication-adherence-codes-FRND\"> </a></td><td>unrelated friend</td></tr><tr><td style=\"white-space:nowrap\">GUARD<a name=\"ie-core-information-source-for-medication-adherence-codes-GUARD\"> </a></td><td>guardian</td></tr><tr><td style=\"white-space:nowrap\">PCP<a name=\"ie-core-information-source-for-medication-adherence-codes-PCP\"> </a></td><td>primary care physician</td></tr><tr><td style=\"white-space:nowrap\">PRN<a name=\"ie-core-information-source-for-medication-adherence-codes-PRN\"> </a></td><td>parent</td></tr><tr><td style=\"white-space:nowrap\">SELF<a name=\"ie-core-information-source-for-medication-adherence-codes-SELF\"> </a></td><td>self</td></tr><tr><td style=\"white-space:nowrap\">SIB<a name=\"ie-core-information-source-for-medication-adherence-codes-SIB\"> </a></td><td>sibling</td></tr><tr><td style=\"white-space:nowrap\">SIGOTHR<a name=\"ie-core-information-source-for-medication-adherence-codes-SIGOTHR\"> </a></td><td>significant other</td></tr><tr><td style=\"white-space:nowrap\">SPS<a name=\"ie-core-information-source-for-medication-adherence-codes-SPS\"> </a></td><td>spouse</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+    "valueCode" : "cgp"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 3,
+    "_valueInteger" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+    "valueCode" : "trial-use",
+    "_valueCode" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+        "valueCanonical" : "http://iehr.ai/fhir/ie/core/ImplementationGuide/iehr.fhir.ie.core"
+      }]
+    }
+  }],
+  "url" : "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.3.6.1.4.1.54392.5.2690.16.10"
+  }],
+  "version" : "1.0.0-ballot",
+  "name" : "IECoreInformationSourceForMedicationAdherenceCodes",
+  "title" : "IE Core Information Source for Medication Adherence Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-05-13T21:38:29-04:00",
+  "publisher" : "iEHR.ai",
+  "contact" : [{
+    "name" : "iEHR.ai",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.iehr.ai"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@iehr.ai"
+    }]
+  }],
+  "description" : "A set of concepts to classify Information Source for Medication Adherence Codes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IE"
+    }]
+  }],
+  "copyright" : "iEHR.ai, all rights reserved Creative Commons License",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 15,
+  "concept" : [{
+    "code" : "1179-1",
+    "display" : "Pharmacy"
+  },
+  {
+    "code" : "1192-4",
+    "display" : "Home Care"
+  },
+  {
+    "code" : "1204-7",
+    "display" : "Location outside facility"
+  },
+  {
+    "code" : "ADMPHYS",
+    "display" : "admitting physician"
+  },
+  {
+    "code" : "ATTPHYS",
+    "display" : "attending physician"
+  },
+  {
+    "code" : "CHILD",
+    "display" : "child"
+  },
+  {
+    "code" : "FAMMEMB",
+    "display" : "family member"
+  },
+  {
+    "code" : "FRND",
+    "display" : "unrelated friend"
+  },
+  {
+    "code" : "GUARD",
+    "display" : "guardian"
+  },
+  {
+    "code" : "PCP",
+    "display" : "primary care physician"
+  },
+  {
+    "code" : "PRN",
+    "display" : "parent"
+  },
+  {
+    "code" : "SELF",
+    "display" : "self"
+  },
+  {
+    "code" : "SIB",
+    "display" : "sibling"
+  },
+  {
+    "code" : "SIGOTHR",
+    "display" : "significant other"
+  },
+  {
+    "code" : "SPS",
+    "display" : "spouse"
+  }]
+}

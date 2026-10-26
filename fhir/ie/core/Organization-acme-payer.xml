@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="acme-payer"/>
+  <meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-name">
+      <valueString value="Organization Acme Payer Example"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/instance-description">
+      <valueMarkdown value="This is an example payer using the *IE Core Organization Profile*."/>
+    </extension>
+    <profile value="http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization acme-payer</b></p><a name="acme-payer"> </a><a name="hcacme-payer"> </a><a name="acme-payer-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ie-core-organization.html">IE Core Organization Profile</a></p></div><p><b>identifier</b>: <code>urn:oid:2.16.840.1.113883.6.300</code>/55555</p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type pay}">Payer</span></p><p><b>name</b>: Acme Health Plan</p><p><b>telecom</b>: ph: (+353) 1 234 5678, <a href="mailto:hq@acme.org">hq@acme.org</a></p><p><b>address</b>: 100 INSURANCE AVE AMHERST Dublin D18 CV48 IE </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:2.16.840.1.113883.6.300"/>
+    <value value="55555"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="pay"/>
+    </coding>
+    <text value="Payer"/>
+  </type>
+  <name value="Acme Health Plan"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(+353) 1 234 5678"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="hq@acme.org"/>
+  </telecom>
+  <address>
+    <line value="100 INSURANCE AVE"/>
+    <city value="AMHERST"/>
+    <state value="Dublin"/>
+    <postalCode value="D18 CV48"/>
+    <country value="IE"/>
+  </address>
+</Organization>

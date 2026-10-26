@@ -1,0 +1,3532 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-relatedperson.html" : "IE Core RelatedPerson Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile",
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentTypeValueSet",
+      "title" : "Document Type Value Set",
+      "description" : "This is the code specifying the precise type of document (e.g. Pulmonary History and  Physical, Discharge Summary, Ultrasound Report, etc.). The Document Type value set includes all LOINC  values listed in HITSP C80 Table 2-144 Document Class Value Set Definition above used for Document Class,  and all LOINC values whose SCALE is DOC in the LOINC database.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.47"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.47"],
+      "uses" : {
+      },
+      "OperationDefinition-docref.html" : "IE Core Fetch DocumentReference"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "FacilityTypeCodeValueSet",
+      "title" : "Facility Type Code Value Set",
+      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-team-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CareTeamCategory",
+      "title" : "Care Team category",
+      "description" : "Indicates the type of care team.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.155"],
+      "sources" : ["2.16.840.1.113883.4.642.3.155"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careteam.html" : "IE Core CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-team-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CareTeamStatus",
+      "title" : "CareTeamStatus",
+      "description" : "Indicates the status of the care team.",
+      "systems" : ["http://hl7.org/fhir/care-team-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.153"],
+      "sources" : ["2.16.840.1.113883.4.642.3.153"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careteam.html" : "IE Core CareTeam Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange",
+      "StructureDefinition-ie-core-careteam.html" : "IE Core CareTeam Profile",
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile",
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile",
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile",
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile",
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile",
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-class",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CoverageClassCodes",
+      "title" : "Coverage Class Codes",
+      "description" : "This value set includes Coverage Class codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/coverage-class"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1009"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1009"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-copay-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CoverageCopayTypeCodes",
+      "title" : "Coverage Copay Type Codes",
+      "description" : "This value set includes sample Coverage Copayment Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/coverage-copay-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.527"],
+      "sources" : ["2.16.840.1.113883.4.642.3.527"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-financial-exception",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleCoverageFinancialExceptionCodes",
+      "title" : "Example Coverage Financial Exception Codes",
+      "description" : "This value set includes Example Coverage Financial Exception Codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-coverage-financial-exception"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1328"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-action",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureDeviceActionCodes",
+      "title" : "Procedure Device Action Codes",
+      "description" : "Example codes indicating the change that happened to the device during the procedure.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.425"],
+      "sources" : ["2.16.840.1.113883.4.642.3.425"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceTypes",
+      "title" : "FHIR Device Types",
+      "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.208"],
+      "sources" : ["2.16.840.1.113883.4.642.3.208"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DeviceNameType",
+      "title" : "DeviceNameType",
+      "description" : "The type of name the device is referred by.",
+      "systems" : ["http://hl7.org/fhir/device-nametype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIRDeviceStatus",
+      "description" : "The availability status of the device.",
+      "systems" : ["http://hl7.org/fhir/device-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.209"],
+      "sources" : ["2.16.840.1.113883.4.642.3.209"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRDeviceStatusReason",
+      "title" : "FHIRDeviceStatusReason",
+      "description" : "The availability status reason of the device.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticServiceSectionCodes",
+      "title" : "Diagnostic Service Section Codes",
+      "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+      "oids" : ["2.16.840.1.113883.4.642.3.234"],
+      "sources" : ["2.16.840.1.113883.4.642.3.234"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.109"],
+      "sources" : ["2.16.840.1.113883.4.642.3.109"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "systems" : ["http://hl7.org/fhir/fm-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.592"],
+      "sources" : ["2.16.840.1.113883.4.642.3.592"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-achievement",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalAchievementStatus",
+      "title" : "Goal achievement status",
+      "description" : "Describes the progression, or lack thereof, towards the goal against the target.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-achievement"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1374"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalCategory",
+      "title" : "Goal category",
+      "description" : "Example codes for grouping goals to use for filtering or presentation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.275"],
+      "sources" : ["2.16.840.1.113883.4.642.3.275"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalPriority",
+      "title" : "Goal priority",
+      "description" : "Indicates the level of importance associated with reaching or sustaining a goal.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/goal-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.273"],
+      "sources" : ["2.16.840.1.113883.4.642.3.273"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-start-event",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalStartEvent",
+      "title" : "Goal start event",
+      "description" : "Identifies types of events that might trigger the start of a goal.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.279"],
+      "sources" : ["2.16.840.1.113883.4.642.3.279"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/goal-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "GoalLifecycleStatus",
+      "title" : "GoalLifecycleStatus",
+      "description" : "Codes that reflect the current state of a goal and whether the goal is still being targeted.",
+      "systems" : ["http://hl7.org/fhir/goal-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.271"],
+      "sources" : ["2.16.840.1.113883.4.642.3.271"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-health-amendment-act.html" : "IE Core Health Amendment Act",
+      "StructureDefinition-ie-core-general-medical-service.html" : "IE Core General Medical Service",
+      "StructureDefinition-ie-core-irish-medical-council.html" : "IE Core Irish Medical Council",
+      "StructureDefinition-ie-core-drugs-payment-scheme.html" : "IE Core Drugs Payment Scheme",
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile",
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile",
+      "StructureDefinition-ie-core-insurance-member-number.html" : "IE Core Insurance Member Number",
+      "StructureDefinition-ie-core-medical-record-number.html" : "IE Core Medical Record Number",
+      "StructureDefinition-ie-core-individual-healthcare-identifier.html" : "IE Core Individual Healthcare Identifier (IHI)",
+      "StructureDefinition-ie-core-long-term-illness.html" : "IE Core Long Term Illness"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-health-amendment-act.html" : "IE Core Health Amendment Act",
+      "StructureDefinition-ie-core-company-registration-number.html" : "IE Core Company Registration Number",
+      "StructureDefinition-ie-core-general-medical-service.html" : "IE Core General Medical Service",
+      "StructureDefinition-ie-core-irish-medical-council.html" : "IE Core Irish Medical Council",
+      "StructureDefinition-ie-core-drugs-payment-scheme.html" : "IE Core Drugs Payment Scheme",
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile",
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile",
+      "StructureDefinition-ie-core-insurance-member-number.html" : "IE Core Insurance Member Number",
+      "StructureDefinition-ie-core-medical-record-number.html" : "IE Core Medical Record Number",
+      "StructureDefinition-ie-core-health-service-provider-identifier.html" : "IE Core Health Service Provider Identifier (HPI)",
+      "StructureDefinition-ie-core-individual-healthcare-identifier.html" : "IE Core Individual Healthcare Identifier (IHI)",
+      "StructureDefinition-ie-core-long-term-illness.html" : "IE Core Long Term Illness"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFunctionCodes",
+      "title" : "Immunization Function Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the function a practitioner or organization may play in the immunization event. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0443"],
+      "oids" : ["2.16.840.1.113883.4.642.3.995"],
+      "sources" : ["2.16.840.1.113883.4.642.3.995"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-funding-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationFundingSource",
+      "title" : "Immunization Funding Source",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the vaccine administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-funding-source"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.293"],
+      "sources" : ["2.16.840.1.113883.4.642.3.293"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-origin",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationOriginCodes",
+      "title" : "Immunization Origin Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the source of the data when the report of the immunization event is not based on information from the person, entity or organization who administered the vaccine. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/immunization-origin"],
+      "oids" : ["2.16.840.1.113883.4.642.3.296"],
+      "sources" : ["2.16.840.1.113883.4.642.3.296"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-program-eligibility",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationProgramEligibility",
+      "title" : "Immunization Program Eligibility",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the patient's eligibility for a vaccination program. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-program-eligibility"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.291"],
+      "sources" : ["2.16.840.1.113883.4.642.3.291"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationReasonCodes",
+      "title" : "Immunization Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was administered. This value set is provided as a suggestive example.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.290"],
+      "sources" : ["2.16.840.1.113883.4.642.3.290"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CodesForImmunizationSiteOfAdministration",
+      "title" : "Codes for Immunization Site of Administration",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the body site where the vaccination occurred. This value set is provided as a suggestive example.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActSite"],
+      "oids" : ["2.16.840.1.113883.4.642.3.288"],
+      "sources" : ["2.16.840.1.113883.4.642.3.288"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusCodes",
+      "title" : "Immunization Status Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the current status of the administered dose of vaccine.",
+      "systems" : ["http://hl7.org/fhir/event-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.295"],
+      "sources" : ["2.16.840.1.113883.4.642.3.295"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationStatusReasonCodes",
+      "title" : "Immunization Status Reason Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose of vaccine was not administered. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.992"],
+      "sources" : ["2.16.840.1.113883.4.642.3.992"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-subpotent-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationSubpotentReason",
+      "title" : "Immunization Subpotent Reason",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the reason why a dose is considered to be subpotent. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/immunization-subpotent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.993"],
+      "sources" : ["2.16.840.1.113883.4.642.3.993"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-target-disease",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationTargetDiseaseCodes",
+      "title" : "Immunization Target Disease Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the disease that the dose is being administered against. This value set is provided as a suggestive example and includes the SNOMED CT concepts from the 64572001 (Disease) hierarchy.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1047"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1047"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile",
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile",
+      "StructureDefinition-ie-core-relatedperson.html" : "IE Core RelatedPerson Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-careteam.html" : "IE Core CareTeam Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange",
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile",
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile",
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile",
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile",
+      "StructureDefinition-ie-core-questionnaireresponse.html" : "IE Core QuestionnaireResponse Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile",
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile",
+      "StructureDefinition-ie-core-medication.html" : "IE Core Medication Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile",
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationMode",
+      "title" : "LocationMode",
+      "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+      "systems" : ["http://hl7.org/fhir/location-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.330"],
+      "sources" : ["2.16.840.1.113883.4.642.3.330"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationStatus",
+      "title" : "LocationStatus",
+      "description" : "Indicates whether the location is still in use.",
+      "systems" : ["http://hl7.org/fhir/location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.332"],
+      "sources" : ["2.16.840.1.113883.4.642.3.332"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medication.html" : "IE Core Medication Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medication-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.376"],
+      "sources" : ["2.16.840.1.113883.4.642.3.376"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medication.html" : "IE Core Medication Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Category Codes",
+      "title" : "Medication dispense  category  codes",
+      "description" : "MedicationDispense Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1314"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1314"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-performer-function",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Performer Function Codes",
+      "title" : "Medication dispense  performer  function  codes",
+      "description" : "MedicationDispense Performer Function Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1318"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1318"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Codes",
+      "title" : "Medication dispense  status  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationdispense-status"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1312"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1312"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationdispense-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationDispense Status Reason Codes",
+      "title" : "Medication dispense  status  reason  codes",
+      "description" : "MedicationDispense Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/fhir/CodeSystem/medicationdispense-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1316"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1316"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-course-of-therapy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Course of Therapy Codes",
+      "title" : "Medication request  course of  therapy  codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1326"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1326"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Status Reason Codes",
+      "title" : "Medication request  status  reason  codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1324"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1324"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/performer-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedurePerformerRoleCodes",
+      "title" : "Procedure Performer Role Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a role of a procedure performer.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.433"],
+      "sources" : ["2.16.840.1.113883.4.642.3.433"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCategoryCodes(SNOMEDCT)",
+      "title" : "Procedure Category Codes (SNOMED CT)",
+      "description" : "Procedure Category code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.430"],
+      "sources" : ["2.16.840.1.113883.4.642.3.430"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-followup",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureFollowUpCodes(SNOMEDCT)",
+      "title" : "Procedure Follow up Codes (SNOMED CT)",
+      "description" : "Procedure follow up codes: A selection of SNOMED CT codes relevant to procedure follow up.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.429"],
+      "sources" : ["2.16.840.1.113883.4.642.3.429"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-not-performed-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ProcedureNotPerformedReason(SNOMED-CT)",
+      "title" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "description" : "Situation codes describing the reason that a procedure, which might otherwise be expected, was not performed, or a procedure that was started and was not completed. Consists of SNOMED CT codes, children of procedure contraindicated (183932001), procedure discontinued (416406003), procedure not done (416237000), procedure not indicated (428119001), procedure not offered (416064006), procedure not wanted (416432009), procedure refused (183944003), and procedure stopped (394908001).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.431"],
+      "sources" : ["2.16.840.1.113883.4.642.3.431"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureOutcomeCodes(SNOMEDCT)",
+      "title" : "Procedure Outcome Codes (SNOMED CT)",
+      "description" : "Procedure Outcome code: A selection of relevant SNOMED CT codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.428"],
+      "sources" : ["2.16.840.1.113883.4.642.3.428"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/provenance-activity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProvenanceActivityType",
+      "title" : "Provenance activity type",
+      "description" : "This value set contains representative Activity Type codes, which includes codes from the HL7 DocumentCompletion, ActStatus, and DataOperations code system, W3C PROV-DM and PROV-N concepts and display names, several HL7 Lifecycle Event codes for which there are agreed upon definitions, and non-duplicated codes from the HL7 Security and Privacy Ontology Operations codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion",
+        "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.438"],
+      "sources" : ["2.16.840.1.113883.4.642.3.438"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/provenance-entity-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProvenanceEntityRole",
+      "title" : "ProvenanceEntityRole",
+      "description" : "How an entity was used in an activity.",
+      "systems" : ["http://hl7.org/fhir/provenance-entity-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.436"],
+      "sources" : ["2.16.840.1.113883.4.642.3.436"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireAnswerCodes",
+      "title" : "Questionnaire Answer Codes",
+      "description" : "Example list of codes for answers to questions. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.446"],
+      "sources" : ["2.16.840.1.113883.4.642.3.446"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-questionnaireresponse.html" : "IE Core QuestionnaireResponse Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireResponseStatus",
+      "title" : "QuestionnaireResponseStatus",
+      "description" : "Lifecycle status of the questionnaire response.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-answers-status"],
+      "oids" : ["required"],
+      "sources" : ["required"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-questionnaireresponse.html" : "IE Core QuestionnaireResponse Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile",
+      "StructureDefinition-ie-core-care-experience-preference.html" : "IE Core Care Experience Preference Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile",
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile",
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile",
+      "StructureDefinition-ie-core-treatment-intervention-preference.html" : "IE Core Treatment Intervention Preference Profile",
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-average-blood-pressure.html" : "IE Core Average Blood Pressure Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-observation-occupation.html" : "IE Core Observation Occupation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PatientRelationshipType",
+      "title" : "Patient relationship type",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.449"],
+      "sources" : ["2.16.840.1.113883.4.642.3.449"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-relatedperson.html" : "IE Core RelatedPerson Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-insurance-member-number.html" : "IE Core Insurance Member Number",
+      "StructureDefinition-ie-core-medical-record-number.html" : "IE Core Medical Record Number",
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile",
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile",
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SecurityRoleType",
+      "title" : "SecurityRoleType",
+      "description" : "This example FHIR value set is comprised of example Actor Type codes, which can be used to value FHIR agents, actors, and other role         elements such as those specified in financial transactions. The FHIR Actor value set is based on    DICOM Audit Message, C402;   ASTM Standard, E1762-95 [2013]; selected codes and          derived actor roles from HL7 RoleClass OID 2.16.840.1.113883.5.110;    HL7 Role Code 2.16.840.1.113883.5.111, including AgentRoleType;          HL7 ParticipationType OID: 2.16.840.1.113883.5.90; and    HL7 ParticipationFunction codes OID: 2.16.840.1.113883.5.88.           This value set includes, by reference, role codes from external code systems: NUCC Health Care Provider Taxonomy OID: 2.16.840.1.113883.6.101;          North American Industry Classification System [NAICS]OID: 2.16.840.1.113883.6.85; IndustryClassificationSystem 2.16.840.1.113883.1.11.16039;          and US Census Occupation Code OID: 2.16.840.1.113883.6.243 for relevant recipient or custodian codes not included in this value set.            If no source is indicated in the definition comments, then these are example FHIR codes.          It can be extended with appropriate roles described by SNOMED as well as those described in the HL7 Role Based Access Control Catalog and the          HL7 Healthcare (Security and Privacy) Access Control Catalog.            In Role-Based Access Control (RBAC), permissions are operations on an object that a user wishes to access. Permissions are grouped into roles.          A role characterizes the functions a user is allowed to perform. Roles are assigned to users. If the user's role has the appropriate permissions          to access an object, then that user is granted access to the object. FHIR readily enables RBAC, as FHIR Resources are object types and the CRUDE          events (the FHIR equivalent to permissions in the RBAC scheme) are operations on those objects.          In Attribute-Based Access Control (ABAC), a user requests to perform operations on objects. That user's access request is granted or denied          based on a set of access control policies that are specified in terms of attributes and conditions. FHIR readily enables ABAC, as instances of          a Resource in FHIR (again, Resources are object types) can have attributes associated with them. These attributes include security tags,          environment conditions, and a host of user and object characteristics, which are the same attributes as those used in ABAC. Attributes help          define the access control policies that determine the operations a user may perform on a Resource (in FHIR) or object (in ABAC). For example,          a tag (or attribute) may specify that the identified Resource (object) is not to be further disclosed without explicit consent from the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+        "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "http://dicom.nema.org/resources/ontology/DCM"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.978"],
+      "sources" : ["2.16.840.1.113883.4.642.3.978"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "ValueSet-ie-core-servicerequest-category.html" : "IE Core ServiceRequest Category Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-collection-method",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FHIRSpecimenCollectionMethod",
+      "title" : "FHIR Specimen Collection Method",
+      "description" : " This example value set defines a set of codes that can be used to indicate the method by which a specimen was collected.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.468"],
+      "sources" : ["2.16.840.1.113883.4.642.3.468"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-container-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenContainerType",
+      "title" : "Specimen Container Type",
+      "description" : "Checks on the patient prior specimen collection. All SNOMED CT concepts descendants of 706041008 |Device for body fluid and tissue collection/transfer/processing (physical object)|",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.470"],
+      "sources" : ["2.16.840.1.113883.4.642.3.470"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-processing-procedure",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenProcessingProcedure",
+      "title" : "Specimen processing procedure",
+      "description" : "The technique that is used to perform the process or preserve the specimen.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0373"],
+      "oids" : ["2.16.840.1.113883.4.642.3.469"],
+      "sources" : ["2.16.840.1.113883.4.642.3.469"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "systems" : ["http://hl7.org/fhir/specimen-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.471"],
+      "sources" : ["2.16.840.1.113883.4.642.3.471"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/subscriber-relationship",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubscriberRelationshipCodes",
+      "title" : "SubscriberPolicyholder Relationship Codes",
+      "description" : "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1385"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1385"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubstanceCode",
+      "title" : "Substance Code",
+      "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.473"],
+      "sources" : ["2.16.840.1.113883.4.642.3.473"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyLengthUnits",
+      "title" : "Body Length Units",
+      "description" : "UCUM units for recording body length measures such as height and head circumference",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.958"],
+      "sources" : ["2.16.840.1.113883.4.642.3.958"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodytemp",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyTemperatureUnits",
+      "title" : "Body Temperature Units",
+      "description" : "UCUM units for recording Body Temperature",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.957"],
+      "sources" : ["2.16.840.1.113883.4.642.3.957"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyWeightUnits",
+      "title" : "Body Weight Units",
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.956"],
+      "sources" : ["2.16.840.1.113883.4.642.3.956"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Common UCUM units",
+      "title" : null,
+      "description" : "Commonly encountered UCUM units (for purposes of helping populate look ups.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "VitalSignsUnits",
+      "title" : "Vital Signs Units",
+      "description" : "Common UCUM units for recording Vital Signs",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.955"],
+      "sources" : ["2.16.840.1.113883.4.642.3.955"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "UDIEntryType",
+      "title" : "UDIEntryType",
+      "description" : "Codes to identify how UDI data was entered.",
+      "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.211"],
+      "sources" : ["2.16.840.1.113883.4.642.3.211"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-implantable-device.html" : "IE Core Implantable Device Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-directives-content-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAdvanceDirectivesContentType",
+      "title" : "IE Core Advance Directives Content Type",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify Advance Directives Content",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.35"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.35"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-advance-healthcare-directive-categories-grouper",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAdvanceHealthcareDirectiveCategoriesGrouper",
+      "title" : "IE Core Advance Healthcare Directive Categories Grouper",
+      "description" : "A set of LOINC concepts to classify Advance Healthcare Directive Categories Grouper",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.36"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.36"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-alcohol-drinking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAlcoholDrinkingStatus",
+      "title" : "IE Core Drinking Status",
+      "description" : "The Drinking Status value set includes values that may be used to represent an individual’s current behaviour of alcohol drinking.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.57"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.57"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-allergy-intolerance-set",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreAllergyIntoleranceSet",
+      "title" : "IE Core Allergy Intolerance Set",
+      "description" : "A set of IE Core, SNOMED_CT, and LOINC concepts to classify Allergy Intolerance Codes",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-allergy-intolerance-codes",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.52"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.52"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-allergyintolerance.html" : "IE Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-care-team-member-function",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCareTeamMemberFunction",
+      "title" : "IE Core Care Team Member Function",
+      "description" : "A set of LOINC concepts to classify Care Team Member Function",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-participation-function",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.39"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.39"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careteam.html" : "IE Core CareTeam Profile",
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-note-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreClinicalNoteType",
+      "title" : "IE Core Clinical Note Type",
+      "description" : "The IE Core Clinical Note Type Value Set is a 'starter set' of types supported for fetching and storing clinical notes.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.3"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.3"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-clinical-result-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreClinicalResultObservationCategory",
+      "title" : "IE Core Clinical Result Observation Category",
+      "description" : "Used to classify the context of clinical result observations.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.4"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.4"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile",
+      "StructureDefinition-ie-core-observation-clinical-result.html" : "IE Core Observation Clinical Result Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-condition-code",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreConditionCodes",
+      "title" : "IE Core Condition Codes",
+      "description" : "This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions). ICD-10 is appropriate for Diagnosis information.",
+      "systems" : [
+        "http://id.who.int/icd/release/11/mms",
+        "http://hl7.org/fhir/sid/icd-10"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.5"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-encounter-diagnosis.html" : "IE Core Condition Encounter Diagnosis Profile",
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile",
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-counties",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreCounties",
+      "title" : "Ireland Counties",
+      "description" : "This value set defines county codes.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-counties-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.2"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.2"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile",
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile",
+      "StructureDefinition-ie-core-organization.html" : "IE Core Organization Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDiagnosticReportCategory",
+      "title" : "IE Core Diagnostic Report Category Codes",
+      "description" : "The IE Core Diagnostic Report Category Value Set is a 'starter set' of categories supported for fetching and Diagnostic Reports and notes.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.6"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.6"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-diagnosticreport-report-and-note-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreNonLaboratoryCodes",
+      "title" : "IE Core Non Laboratory Codes",
+      "description" : "This value set includes All LOINC codes defined as type \"clinical,\" therefore excluding laboratory tests, survey instruments, and claims documents. This includes observables such as vital signs, hemodynamics, intake/output, EKG, obstetric ultrasound, and cardiac echo, and includes discrete and narrative diagnostic observations and reports.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.7"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.7"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-note.html" : "IE Core DiagnosticReport Profile for Report and Note Exchange"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-discharge-disposition",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDischargeDisposition",
+      "title" : "IE Core Discharge Disposition",
+      "description" : "[National Uniform Billing Committee](http://www.nubc.org/), manual UB-04, UB form locator 17.",
+      "systems" : ["https://www.nubc.org/CodeSystem/PatDischargeStatus"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.8"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.8"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDocumentReferenceCategory",
+      "title" : "IE Core DocumentReference Category",
+      "description" : "The IE Core DocumentReferences Category Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-documentreference-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.9"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.9"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-documentreference-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreDocumentReferenceType",
+      "title" : "IE Core DocumentReference Type",
+      "description" : "The IE Core DocumentReference Type Value Set includes all LOINC values whose SCALE is \"Doc\" in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'",
+      "systems" : [
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.10"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.10"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-encounter-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreEncounterType",
+      "title" : "IE Core Encounter Type",
+      "description" : "The type of encounter: a specific code indicating type of service provided. This value set includes codes from SNOMED CT decending from the concept 308335008 (Patient encounter procedure (procedure)) and codes from the Current Procedure and Terminology (CPT) found in the following CPT sections:\n- 99211-99499 E/M - 99500-99600 home health (mainly nonphysician, such as newborn care in home) - 99605-99607 medication management - 98966-98968 non physician telephone services\n(subscription to AMA Required)",
+      "systems" : ["http://www.ama-assn.org/go/cpt", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.11"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.11"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ethnicity",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreEthnicity",
+      "title" : "IE Core ethnicity",
+      "description" : "This extension applies to the Patient, Person, and RelatedPerson resources and is used to indicate Ethnicity.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ethnicity-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.1"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.1"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-ethnicity.html" : "IE Core Ethnicity Extension"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-gender-identity",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreGenderIdentity",
+      "title" : "IE Core Gender Identity",
+      "description" : "Gender Identity",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.49"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.49"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-genderIdentity.html" : "IE Core Gender Identity Extension"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-goal-description",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreGoalCodes",
+      "title" : "IE Core Goal Codes",
+      "description" : "Concepts from CPT and LOINC code systems that can be used to indicate the goal.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.12"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.12"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-goal.html" : "IE Core Goal Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-healthcare-provider-taxonomy",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHealthcareProviderTaxonomy",
+      "title" : "IE Core Healthcare Provider Taxonomy",
+      "description" : "A set of concepts to classify Healthcare Provider Taxonomy",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-healthcare-provider-taxonomy-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.40"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.40"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitionerrole.html" : "IE Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-record-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierRecordStatus",
+      "title" : "IE Core Individual Healthcare Identifier Record Status",
+      "description" : "The Individual Healthcare Identifier Record Status value set includes values that may be used to describe the classification status of a record of an Individual Healthcare Identifier.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-record-status-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.31"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.31"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-ihi-record-status.html" : "IE Core IHI Record Status"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-ihi-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreIndividualHealthcareIdentifierStatus",
+      "title" : "IE Core Individual Healthcare Identifier Status",
+      "description" : "The Individual Healthcare Identifier Status value set includes values that may be used to describe the classification status of an Individual Healthcare Identifier.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-ihi-status-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.32"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.32"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-ihi-status.html" : "IE Core IHI Status"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-information-source-for-medication-adherence",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreInformationSourceForMedicationAdherence",
+      "title" : "IE Core Information Source for Medication Adherence",
+      "description" : "A set of concepts to classify Information Source for Medication Adherence",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-information-source-for-medication-adherence-codes",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.41"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.41"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medication-adherence.html" : "IE Core Medication Adherence Extension"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-laboratory-test-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreLaboratoryTestCodes",
+      "title" : "IE Core Laboratory Test Codes",
+      "description" : "Laboratory LOINC codes: From the introduction to August 2022 LOINC Users' guide; \"The current scope of the existing laboratory portion of the LOINC  database includes all observations reported by clinical laboratories, including the specialty areas: chemistry, including therapeutic drug monitoring and toxicology; hematology; serology; blood bank; microbiology; cytology; surgical pathology; and fertility.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.13"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.13"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-diagnosticreport-lab.html" : "IE Core DiagnosticReport Profile for Laboratory Results Reporting",
+      "StructureDefinition-ie-core-observation-lab.html" : "IE Core Laboratory Result Observation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-location-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreLocationType",
+      "title" : "IE Core Location Type",
+      "description" : "Concepts representing locations and settings where healthcare services are provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.14"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.14"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-adherence",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreMedicationAdherence",
+      "title" : "IE Core Medication Adherence",
+      "description" : "A set of SNOMED concepts to classify Medication Adherence",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.55"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.55"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medication-adherence.html" : "IE Core Medication Adherence Extension"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-medication-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreMedicationCodes",
+      "title" : "IE Core Medication Codes",
+      "description" : "Codes providing Medication used in Ireland.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-hpra-hm"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.53"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.53"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medication.html" : "IE Core Medication Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-narrative-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "NarrativeStatus",
+      "title" : "IE Core Narrative Status",
+      "description" : "The IE Core Narrative Status Value Set limits the text status for the resource narrative.",
+      "systems" : ["http://hl7.org/fhir/narrative-status"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.15"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.15"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-careplan.html" : "IE Core CarePlan Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-observation-smoking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreObservationSmokingStatus",
+      "title" : "IE Core Status for Smoking Status Observation",
+      "description" : "Codes providing the status of an observation for smoking status. Constrained to `final`and `entered-in-error`.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.16"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.16"]
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-payer-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePayerType",
+      "title" : "IE Core Payer Type",
+      "description" : "A set of concepts to classify Payer Type",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-payer-type-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.42"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.42"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-coverage.html" : "IE Core Coverage Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-intent",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePregnancyIntentCodes",
+      "title" : "IE Core Pregnancy Intent Codes",
+      "description" : "This value set includes SNOMED CT codes and the HL7 V3 code for the concept \"unknown\".",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.17"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.17"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-pregnancyintent.html" : "IE Core Observation Pregnancy Intent Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-pregnancy-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECorePregnancyStatusCodes",
+      "title" : "IE Core Pregnancy Status Codes",
+      "description" : "This value set includes SNOMED CT codes and the HL7 V3 code for the concept \"unknown\". These codes have historically been used to communicate the pregnancy status of a patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.18"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.18"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-pregnancystatus.html" : "IE Core Observation Pregnancy Status Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-problem-or-health-concern",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProblemOrHealthConcern",
+      "title" : "IE Core Problem or Health Concern",
+      "description" : "Code set for category codes for *IE Core Condition Problems and Health Concerns Profile* consisting of the concepts \"problem\" and \"health-concern\".",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/condition-category",
+        "http://iehr.ai/fhir/ie/core/CodeSystem/condition-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.19"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.19"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-procedure-code",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProcedureCodes",
+      "title" : "IE Core Procedure Codes",
+      "description" : "Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumeric Codes, ICD-10-PCS,CDT and LOINC code systems that can be used to indicate the type of procedure performed.",
+      "systems" : [
+        "http://www.ada.org/cdt",
+        "http://www.ama-assn.org/go/cpt",
+        "http://loinc.org",
+        "https://www.cms.gov/Medicare/Coding/HCPCSReleaseCodeSets",
+        "http://www.cms.gov/Medicare/Coding/ICD10",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.20"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-procedure.html" : "IE Core Procedure Profile",
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-provenance-participant-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreProvenancePaticipantTypeCodes",
+      "title" : "IE Core Provenance Participant Type Codes",
+      "description" : "The type of participation a provenance agent played for a given target.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-provenance-participant-type"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.21"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.21"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-condition-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreScreeningAssessmentConditionCategory",
+      "title" : "IE Core Screening Assessment Condition Category",
+      "description" : "Category codes used in the IE Core Condition Screening Assessment Profile to help identify the type of IECDI Health Status/Assessment data class being reported.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.22"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.22"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-condition-problems-health-concerns.html" : "IE Core Condition Problems and Health Concerns Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-screening-assessment-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreScreeningAssessmentObservationCategory",
+      "title" : "IE Core Screening Assessment Observation Category",
+      "description" : "Category codes used in the IE Core Observation Screening Assessment Profile to help identify the type of IECDI Health Status/Assessment data class being reported.",
+      "systems" : ["http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.23"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.23"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-servicerequest-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreServiceRequestCategoryCodes",
+      "title" : "IE Core ServiceRequest Category Codes",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify a requested service",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.24"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.24"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-sexual-orientation-including-data-absent-reason",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSexualOrientationIncludingNullsAndDataAbsentReason",
+      "title" : "IE Core Sexual Orientation Including nulls and Data Absent Reason",
+      "description" : "Sexual Orientation Including nulls and Data Absent Reason",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.43"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.43"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-sexual-orientation.html" : "IE Core Observation Sexual Orientation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-simple-observation-category",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSimpleObservationCategory",
+      "title" : "IE Core Simple Observation Category",
+      "description" : "Used to classify the context of a survey, screening or assessment for simple observations and may be used to assist with indexing and searching for appropriate instances.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-category",
+        "http://terminology.hl7.org/CodeSystem/observation-category"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.25"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.25"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-simple-observation.html" : "IE Core Simple Observation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatus",
+      "title" : "IE Core Smoking Status",
+      "description" : "The Smoking Status value set includes values that may be used to represent an individual’s current behaviour of tobacco smoking.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.51"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.51"],
+      "uses" : {
+      },
+      "ValueSet-ie-core-observation-smoking-status.html" : "IE Core Status for Smoking Status Observation"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-comprehensive",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatusComprehensive",
+      "title" : "IE Core Smoking status comprehensive",
+      "description" : "A set of SNOMED concepts to classify Smoking status comprehensive",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.44"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.44"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-smoking-status-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSmokingStatusType",
+      "title" : "IE Core Smoking Status Type",
+      "description" : "A set of LOINC concepts to classify Smoking Status Type",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.45"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-condition",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSpecimenCondition",
+      "title" : "IE Core Specimen Condition",
+      "description" : "This value set contains concepts the provide information regarding a specimen, including the container, that does not meet a laboratory’s criteria for acceptability.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v2-0493",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.26"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.26"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-specimen-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSpecimenType",
+      "title" : "IE Core Specimen type",
+      "description" : "A set of SNOMED concepts to classify Specimen type",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.46"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.46"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-survey-codes",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreSurveyCodes",
+      "title" : "IE Core Survey Codes",
+      "description" : "This value set includes screening and assessment panel codes in LOINC (Refer to [Appendix A](https://loinc.org/kb/users-guide/loinc-database-structure/) of LOINC Users' Guide).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.27"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.27"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-observation-screening-assessment.html" : "IE Core Observation Screening Assessment Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-v2-0203-extended",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreHl7VSIdentifierTypeExtended",
+      "title" : "hl7VS-identifierType - IE Extended",
+      "description" : "Extended value set of identifier types for use in an Irish context. Includes HL7 international codes plus Irish additions to create a complete set. NOTE: codes contained LACN Laboratory Accession ID and ACN Accession ID are exclusive concepts and not consider related in this terminology.",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-v2-0203",
+        "http://terminology.hl7.org/CodeSystem/v2-0203"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.56"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.56"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-company-registration-number.html" : "IE Core Company Registration Number",
+      "StructureDefinition-ie-core-health-service-provider-identifier.html" : "IE Core Health Service Provider Identifier (HPI)"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vaccines",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreVaccines",
+      "title" : "IE Core Vaccines",
+      "description" : "A set of concepts to classify Vaccines Administered Vaccine Set",
+      "systems" : [
+        "http://iehr.ai/fhir/ie/core/CodeSystem/ie-core-vaccine-codes"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.54"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.54"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-immunization.html" : "IE Core Immunization Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-vital-sign-result-type",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreVitalSignResultType",
+      "title" : "IE Core Vital Sign Result Type",
+      "description" : "A set of SNOMED CT and LOINC concepts to classify Vital Sign Result Type",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.48"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.48"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-body-temperature.html" : "IE Core Body Temperature Profile",
+      "StructureDefinition-pediatric-bmi-for-age.html" : "IE Core Pediatric BMI for Age Observation Profile",
+      "StructureDefinition-ie-core-vital-signs.html" : "IE Core Vital Signs Profile",
+      "StructureDefinition-ie-core-pulse-oximetry.html" : "IE Core Pulse Oximetry Profile",
+      "StructureDefinition-ie-core-blood-pressure.html" : "IE Core Blood Pressure Profile",
+      "StructureDefinition-pediatric-weight-for-height.html" : "IE Core Pediatric Weight for Height Observation Profile",
+      "StructureDefinition-ie-core-head-circumference.html" : "IE Core Head Circumference Profile",
+      "StructureDefinition-ie-core-bmi.html" : "IE Core BMI Profile",
+      "StructureDefinition-ie-core-body-height.html" : "IE Core Body Height Profile",
+      "StructureDefinition-ie-core-heart-rate.html" : "IE Core Heart Rate Profile",
+      "StructureDefinition-ie-core-body-weight.html" : "IE Core Body Weight Profile",
+      "StructureDefinition-ie-core-respiratory-rate.html" : "IE Core Respiratory Rate Profile",
+      "StructureDefinition-head-occipital-frontal-circumference-percentile.html" : "IE Core Pediatric Head Occipital Frontal Circumference Percentile Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/ie-core-yes-no-unknowns",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "IECoreYesNoAndUnknowns",
+      "title" : "IE Core Yes, No, and Unknowns",
+      "description" : "Yes, No, and Unknowns",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.50"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.50"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-interpreter-required.html" : "IE Core Interpreter Required Extension",
+      "StructureDefinition-ie-core-observation-adi-documentation.html" : "IE Core Observation ADI Documentation Profile"
+    },
+    {
+      "url" : "http://iehr.ai/fhir/ie/core/ValueSet/simple-language",
+      "version" : "1.0.0-ballot",
+      "status" : "active",
+      "name" : "LanguageCodesWithLanguageAndOptionallyARegionModifier",
+      "title" : "Language codes with language and optionally a region modifier",
+      "description" : "This value set includes codes from [BCP-47](http://tools.ietf.org/html/bcp47). This value set matches the LanguageCommunication data element value set within C-CDA to use a 2 character language code if one exists,   and a 3 character code if a 2 character code does not exist. It points back to [RFC 5646](https://tools.ietf.org/html/rfc5646), however only the language codes are required, all other elements are optional.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["1.3.6.1.4.1.54392.5.2690.48.29"],
+      "sources" : ["1.3.6.1.4.1.54392.5.2690.48.29"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-patient.html" : "IE Core Patient Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSBedStatus",
+      "title" : "hl7VS-bedStatus",
+      "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+      "oids" : ["2.16.840.1.113883.21.51"],
+      "sources" : ["2.16.840.1.113883.21.51"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0371",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdditivePreservative",
+      "title" : "hl7VS-additivePreservative",
+      "description" : "Concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0371"],
+      "oids" : ["2.16.840.1.113883.21.245"],
+      "sources" : ["2.16.840.1.113883.21.245"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0493",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSSpecimenCondition",
+      "title" : "hl7VS-specimenCondition",
+      "description" : "Concepts of modes or states of being that describe the nature of a specimen.  Used in Version 2 messaging in the SPM segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0493"],
+      "oids" : ["2.16.840.1.113883.21.333"],
+      "sources" : ["2.16.840.1.113883.21.333"],
+      "uses" : {
+      },
+      "ValueSet-ie-core-specimen-condition.html" : "IE Core Specimen Condition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0916",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRelevantClincialInformation",
+      "title" : "hl7VS-relevantClincialInformation",
+      "description" : "Value Set of codes that specify additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0916"],
+      "oids" : ["2.16.840.1.113883.21.440"],
+      "sources" : ["2.16.840.1.113883.21.440"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-specimen.html" : "IE Core Specimen Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-practitioner.html" : "IE Core Practitioner Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPharmacySupplyType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPharmacySupplyType",
+      "title" : "ActPharmacySupplyType",
+      "description" : "Identifies types of dispensing events",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.16208"],
+      "sources" : ["2.16.840.1.113883.1.11.16208"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-encounter.html" : "IE Core Encounter Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActSubstanceAdminSubstitutionCode",
+      "title" : "ActSubstanceAdminSubstitutionCode",
+      "description" : "***No description***",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"
+      ],
+      "oids" : ["2.16.840.1.113883.1.11.16621"],
+      "sources" : ["2.16.840.1.113883.1.11.16621"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "HL7FormatCodes",
+      "title" : "HL7 ValueSet of Format Codes for use with Document Sharing",
+      "description" : "The HL7-FormatCodes value set is defined to be the set of FormatCode(s) defined by implementation guides published by HL7 and other SDOs. The use of a formatCode from the FormatCodes value set specifies the technical format that a document conforms to. The formatCode is a further specialization more detailed than the mime-type. The formatCode provides sufficient information to allow any potential document content consumer to know if it can process and/or display the content of the document based on the document encoding, structure and template conformance indicated by the formatCode. The set of formatCodes is intended to be extensible. The Content Logical Description is defined intentionally to permit formatCodes defined by other Standards Development Organizations to be added by inclusion of additional formatCode Code Systems.",
+      "systems" : [
+        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+        "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes"
+      ],
+      "oids" : ["2.16.840.1.113883.11.19752"],
+      "sources" : ["2.16.840.1.113883.11.19752"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-documentreference.html" : "IE Core DocumentReference Profile",
+      "StructureDefinition-ie-core-adi-documentreference.html" : "IE Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "PurposeOfUse",
+      "title" : "PurposeOfUse",
+      "description" : "Supports communication of purpose of use at a general level.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.20448"],
+      "sources" : ["2.16.840.1.113883.1.11.20448"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-provenance.html" : "IE Core Provenance Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-servicerequest.html" : "IE Core ServiceRequest Profile",
+      "ValueSet-ie-core-location-type.html" : "IE Core Location Type",
+      "StructureDefinition-ie-core-location.html" : "IE Core Location Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitutionReason",
+      "title" : "SubstanceAdminSubstitutionReason",
+      "description" : "***No description***",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "oids" : ["2.16.840.1.113883.1.11.19377"],
+      "sources" : ["2.16.840.1.113883.1.11.19377"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-medicationdispense.html" : "IE Core MedicationDispense Profile",
+      "StructureDefinition-ie-core-medicationrequest.html" : "IE Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-UnitsOfMeasureCaseSensitive",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "UnitsOfMeasureCaseSensitive",
+      "title" : "UnitsOfMeasureCaseSensitive",
+      "description" : "**Description:** All units of measure.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.1.11.12839"],
+      "sources" : ["2.16.840.1.113883.1.11.12839"],
+      "uses" : {
+      },
+      "StructureDefinition-ie-core-smokingstatus.html" : "IE Core Smoking Status Observation Profile"
+    }
+  ]
+}

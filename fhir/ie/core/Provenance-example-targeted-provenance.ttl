@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://iehr.ai/fhir/ie/core/Provenance/example-targeted-provenance> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-targeted-provenance"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Targeted Provenance Example"
+       ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "This is a provenance example for the *IE Core Provenance Profile* to demonstrate how Provenance can be used to document the source of individual elements such as Race and Ethnicity (R/E), gender identity."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-provenance"^^xsd:anyURI ;
+       fhir:link <http://iehr.ai/fhir/ie/core/StructureDefinition/ie-core-provenance>
+     ] )
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://iehr.ai/fhir/ie/core/Patient/example-targeted-provenance> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/targetElement"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:uri ;
+         fhir:v "ethnicity"^^xsd:anyURI
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "Patient/example-targeted-provenance" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2023-02-28T15:26:23.217+00:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "informant" ] ;
+         fhir:display [ fhir:v "Informant" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://iehr.ai/fhir/ie/core/Patient/example-targeted-provenance> ;
+       fhir:reference [ fhir:v "Patient/example-targeted-provenance" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:display [ fhir:v "admission form" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
